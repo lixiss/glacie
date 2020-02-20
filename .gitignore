@@ -1,0 +1,13 @@
+# Build Results
+[Bb]in/
+[Oo]bj/
+
+# IDE: Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# IDE: Visual Studio Code
+!.vscode/
