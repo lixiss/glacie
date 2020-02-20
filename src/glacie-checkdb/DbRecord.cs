@@ -34,6 +34,11 @@
             }
         }
 
+        public bool TryGetPropertyValue(string key, out string value)
+        {
+            return TryGetPropertyValue(_content, key, out value);
+        }
+
         private static bool TryGetPropertyValue(string content, string key, out string value)
         {
             var startIndex = content.IndexOf(key);

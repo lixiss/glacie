@@ -46,10 +46,8 @@ namespace Glacie
             foreach (var srcFile in srcFiles)
             {
                 var relativePath = context.GetRelativeDatabasePath(srcFile);
-                var content = context.GetContent(srcFile);
-                var dbRecord = new DbRecord(context, relativePath, content);
-
-                Rules.ProcessDbRecord(dbRecord);
+                var dbr = context.OpenDbRecord(relativePath);
+                Rules.ProcessDbRecord(dbr);
             }
         }
     }

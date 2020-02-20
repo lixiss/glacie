@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 
 namespace Glacie
@@ -47,13 +48,28 @@ namespace Glacie
             if (Path.IsPathRooted(path))
             {
                 realPath = path;
+                return File.ReadAllText(realPath);
             }
             else
             {
                 realPath = GetAbsoluteDatabasePath(path);
+                if (File.Exists(realPath))
+                {
+                    return File.ReadAllText(realPath);
+                }
+                else // try read item from secondary database path
+                {
+                    realPath = Path.Combine(SecondaryDatabasePath, path);
+                    return File.ReadAllText(realPath);
+                }
             }
+        }
 
-            return File.ReadAllText(realPath);
+        public DbRecord OpenDbRecord(string relativePath)
+        {
+            var content = GetContent(relativePath);
+            var dbRecord = new DbRecord(this, relativePath, content);
+            return dbRecord;
         }
 
         public void Report(string message)
@@ -62,5 +78,10 @@ namespace Glacie
             Console.WriteLine(message);
         }
 
+        public void Report(string format, params object[] args)
+        {
+            var message = string.Format(CultureInfo.InvariantCulture, format, args);
+            Report(message);
+        }
     }
 }
