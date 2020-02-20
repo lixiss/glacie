@@ -7,5 +7,6 @@ namespace Glacie
     internal sealed class Settings
     {
         public string DatabasePath { get; set; }
+        public string SecondaryDatabasePath { get; internal set; }
     }
 }

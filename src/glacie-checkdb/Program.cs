@@ -7,20 +7,31 @@ namespace Glacie
     {
         private static int Main(string[] args)
         {
-            if (args.Length != 1)
+            if (args.Length < 1 || args.Length > 2)
             {
                 Console.WriteLine("Help:");
-                Console.WriteLine("  glacie-checkdb <path-to-database>");
+                Console.WriteLine("  glacie-checkdb <path-to-mod-database> [<path-to-game-database>]");
                 return 1;
             }
 
 
-            var settings = new Settings
-            {
-                DatabasePath = args[0],
-            };
+            var settings = new Settings { };
+            settings.DatabasePath = args[0];
+            if (args.Length >= 2) settings.SecondaryDatabasePath = args[1];
 
-            var context = new Context(settings.DatabasePath);
+            if (!Directory.Exists(settings.DatabasePath))
+            {
+                Console.WriteLine("ES0002: Directory \"{0}\" is not exist.", settings.DatabasePath);
+                return 1;
+            }
+
+            if (!string.IsNullOrEmpty(settings.SecondaryDatabasePath) && !Directory.Exists(settings.SecondaryDatabasePath))
+            {
+                Console.WriteLine("ES0002: Directory \"{0}\" is not exist.", settings.SecondaryDatabasePath);
+                return 1;
+            }
+
+            var context = new Context(settings.DatabasePath, settings.SecondaryDatabasePath);
 
             Console.WriteLine("Processing database...");
 
