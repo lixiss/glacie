@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Glacie.Data.Compression.runtime.win-x86</id>
+    <version>0.1.0</version>
+    <tags>native</tags>
+    <authors>Lixiss's Glacie Authors</authors>
+    <description>Native assets for Glacie.Data.Compression</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="./libdeflate-1.6/win-x86/libdeflate.dll" target="/runtimes/win-x86/native/libdeflate.dll" />
+  </files>
+</package>

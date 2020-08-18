@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Glacie.Private.Core</AssemblyName>
+    <RootNamespace>Glacie</RootNamespace>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Buffers\DataBuffer.cs" />
+    <Compile Include="ChecksumAlgorithms\Adler32.cs" />
+    <Compile Include="Core\Check.Argument.cs" />
+    <Compile Include="Core\Check.cs" />
+    <Compile Include="Core\DebugCheck.cs" />
+    <Compile Include="Core\Error.cs" />
+    <Compile Include="Core\StringExtensions.cs" />
+    <Compile Include="System.IO\ReadOnlySegmentStream.cs" />
+    <Compile Include="Utilities\Multitargeting.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

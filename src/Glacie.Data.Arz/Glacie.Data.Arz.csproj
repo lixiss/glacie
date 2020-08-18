@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+<!--
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1</TargetFrameworks>
+-->
+    <AssemblyName>Glacie.Data.Arz</AssemblyName>
+    <RootNamespace>Glacie.Data.Arz</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ArzFieldDataBlock.cs" />
+    <Compile Include="ArzWriter.Pipeline.cs" />
+    <Compile Include="ArzWriter.cs" />
+    <Compile Include="ArzWriterOptions.cs" />
+    <Compile Include="ArzReader.cs" />
+    <Compile Include="Context\ArzContext.cs" />
+    <Compile Include="ArzReaderOptions.cs" />
+    <Compile Include="ArzFieldCursor.cs" />
+    <Compile Include="ArzReadingMode.cs" />
+    <Compile Include="ArzFieldDataCodec.cs" />
+    <Compile Include="Context\ArzFileContext.Multithreading.cs" />
+    <Compile Include="Context\ArzFileContext.cs" />
+    <Compile Include="ArzDatabase.cs" />
+    <Compile Include="ArzField.cs" />
+    <Compile Include="arz_field_ptr.cs" />
+    <Compile Include="Context\ArzMemoryContext.cs" />
+    <Compile Include="FileFormat\ArzFileFooter.cs" />
+    <Compile Include="FileFormat\ArzFileHeader.cs" />
+    <Compile Include="Infrastructure\ArzFileLayout.cs" />
+    <Compile Include="Infrastructure\ArzFileLayoutExtensions.cs" />
+    <Compile Include="FileFormat\ArzFileRecord.cs" />
+    <Compile Include="FileFormat\ArzFileStream.cs" />
+    <Compile Include="Infrastructure\ArzRecordClassTable.cs" />
+    <Compile Include="Infrastructure\ArzStringEncoder.cs" />
+    <Compile Include="Infrastructure\ArzStringTable.cs" />
+    <Compile Include="Infrastructure\arz_string_id.cs" />
+    <Compile Include="Infrastructure\IArzRecordMetrics.cs" />
+    <Compile Include="Utilities\ArzChecksum.cs" />
+    <Compile Include="Utilities\ArzVerifier.cs" />
+    <Compile Include="Utilities\Multitargeting.cs" />
+    <Compile Include="Utilities\MultithreadingHelpers.cs" />
+    <Compile Include="Utilities\_ArzInspector.cs" />
+    <Compile Include="ArzRecord.cs" />
+    <Compile Include="WellKnownFieldNames.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

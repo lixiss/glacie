@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Glacie.All</AssemblyName>
+    <RootNamespace>Glacie.All</RootNamespace>
+
+    <IsPackable>true</IsPackable>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie\Glacie.csproj" />
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,14 @@
+{
+  "runtimes": {
+    "win-x64": {
+      "Glacie.Data.Compression.runtime": {
+        "Glacie.Data.Compression.runtime.win-x64": "0.1.0"
+      }
+    },
+    "win-x86": {
+      "Glacie.Data.Compression.runtime": {
+        "Glacie.Data.Compression.runtime.win-x86": "0.1.0"
+      }
+    }
+  }
+}

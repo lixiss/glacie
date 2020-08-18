@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Glacie.Core</AssemblyName>
+    <RootNamespace>Glacie</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Abstractions\IArzRecord.cs" />
+    <Compile Include="Abstractions\IArzDatabase.cs" />
+    <Compile Include="Abstractions\IFieldApi.cs" />
+    <Compile Include="Abstractions\IRecordFieldCollectionApi.cs" />
+    <Compile Include="Abstractions\IRecordApi.cs" />
+    <Compile Include="Abstractions\IDatabaseApi.cs" />
+    <Compile Include="Data\Arz\ArzValueType.cs" />
+    <Compile Include="Variant.cs" />
+    <Compile Include="VariantType.cs" />
+    <Compile Include="Data\Arz\ArzError.cs" />
+    <Compile Include="Data\Arz\ArzException.cs" />
+    <Compile Include="Data\Arz\Infrastructure\ArzBitConverter.cs" />
+    <Compile Include="Data\Arz\Features.cs" />
+    <Compile Include="InternalsVisibleTo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

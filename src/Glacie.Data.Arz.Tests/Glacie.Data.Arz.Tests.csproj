@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Data.Arz.Tests</AssemblyName>
+    <RootNamespace>Glacie.Data.Arz.Tests</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ArzVerifierTests.cs" />
+    <Compile Include="ArzWriterTests.cs" />
+    <Compile Include="DatabaseApi.cs" />
+    <Compile Include="RecordValueEncodingApi.cs" />
+    <Compile Include="MutatingRecordApi.cs" />
+    <Compile Include="FieldApi.cs" />
+    <Compile Include="RecordApi.cs" />
+    <Compile Include="TestData.cs" />
+    <Compile Include="TestDataUtilities.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="test-data\gtd-tqae-0.arz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="test-data\gtd-tqae-1.arz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="test-data\gtd-tqae-2.arz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="test-data\gtd-tqgd-0-nc.arz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="test-data\gtd-tqgd-0.arz">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

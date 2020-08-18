@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
+    <RuntimeIdentifiers>any;win-x64;win-x86</RuntimeIdentifiers>
+    <AssemblyName>Glacie.Data.Compression</AssemblyName>
+    <RootNamespace>Glacie.Data.Compression</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Decoder.cs" />
+    <Compile Include="Encoder.cs" />
+    <Compile Include="Interop\Interop.Libraries.cs" />
+    <Compile Include="Interop\Interop.LibDeflate.cs" />
+    <Compile Include="Utilities\LibDeflatePlatformSupport.cs" />
+    <Compile Include="Utilities\Multitargeting.cs" />
+    <Compile Include="Utilities\SharedBufferPool.cs" />
+    <Compile Include="Utilities\ZlibUtilities.cs" />
+    <Compile Include="ZlibLibDeflateDecoder.cs" />
+    <Compile Include="ZlibLibDeflateEncoder.cs" />
+    <Compile Include="Lz4Decoder.cs" />
+    <Compile Include="Lz4Encoder.cs" />
+    <Compile Include="ZlibDecoder.cs" />
+    <Compile Include="ZlibEncoder.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Glacie.Data.Compression.runtime.win-x64" Version="0.1.0" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <PackageReference Include="Glacie.Data.Compression.runtime.win-x86" Version="0.1.0" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <PackageReference Include="K4os.Compression.LZ4" Version="1.1.11" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>
