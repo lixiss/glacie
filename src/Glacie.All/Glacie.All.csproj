@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Glacie\Glacie.csproj" />
     <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
     <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
     <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" />
   </ItemGroup>

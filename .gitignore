@@ -6,6 +6,7 @@
 /artifacts/
 /.nuget-feed/
 /.nuget-cache/
+/.tools
 
 # Build Results
 [Bb]in/

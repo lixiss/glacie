@@ -1,0 +1,12 @@
+Usage: archiveTool <file> <command> [command arguments]
+commands: 
+    -add <directory> <base> [compression (0-9)]: add a file/directory
+    -replace <directory> <base> [compression (0-9)]: replace a file/directory
+    -update <directory> <base> [compression (0-9)]: update a file/directory
+    -remove <file> : remove a file from the archive
+    -extract <location> [file] : extract files
+    -database <location> [file] : extract database files
+    -removeMissing <file> <base> : remove files not in the specified directory
+    -compact : compact the archive removing unused files
+    -list : list the files in the archive
+    -stats : display the archive statistics

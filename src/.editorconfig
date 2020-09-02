@@ -1,4 +1,9 @@
 ﻿# Glacie EditorConfig
+# TODO: complete this file which would match code style.
+
+[*.{cs,vb}]
+dotnet_sort_system_directives_first = true
+dotnet_separate_import_directive_groups = true
 
 [*.cs]
 # IDE0032: Use auto property

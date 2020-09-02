@@ -17,7 +17,13 @@
     <Compile Include="Abstractions\IRecordFieldCollectionApi.cs" />
     <Compile Include="Abstractions\IRecordApi.cs" />
     <Compile Include="Abstractions\IDatabaseApi.cs" />
+    <Compile Include="ExtendedConsole\ConsoleProgressBar.cs" />
+    <Compile Include="ExtendedConsole\_ConsoleEx.cs" />
     <Compile Include="Data\Arz\ArzValueType.cs" />
+    <Compile Include="Data\Compression\CompressionLevel.cs" />
+    <Compile Include="IProgress.cs" />
+    <Compile Include="ExtendedConsole\ProgressBar.cs" />
+    <Compile Include="ProgressExtensions.cs" />
     <Compile Include="Variant.cs" />
     <Compile Include="VariantType.cs" />
     <Compile Include="Data\Arz\ArzError.cs" />

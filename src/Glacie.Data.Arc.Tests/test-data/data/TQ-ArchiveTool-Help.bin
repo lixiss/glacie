@@ -1,0 +1,16 @@
+Usage: archiveTool <file> <command> [command arguuments]
+commands: 
+    -add <directory> <base> [compression (0: min, 9: max)]: add a file or directory
+        relative to the base directory. If a file is already in the archive it will not be added.
+    -replace <directory> <base> [compression (0: min, 9: max)]: replace a file or directory
+        relative to the base directory. If a file is already in the archive it will be overwritten.
+    -update <directory> <base> [compression (0: min, 9: max)]: update a file or directory
+        relative to the base directory. Files will only be added if they are newer than
+        those already in the archive.
+    -remove <file> : remove a file from the archive.
+    -extract <location> [file] : extract the files or specified file to the
+        specified location.
+    -removeMissing <file> <base> : remove the files that are not in the specified directory.
+    -compact : compact the archive removing unused files.
+    -list : list the files in the archive.
+    -stats : display the archive statistics.

@@ -75,6 +75,16 @@ namespace Glacie
             return new IndexOutOfRangeException();
         }
 
+        public static ObjectDisposedException ObjectDisposed(string objectName)
+        {
+            return new ObjectDisposedException(objectName);
+        }
+
+        public static ObjectDisposedException ObjectDisposed(string objectName, string message)
+        {
+            return new ObjectDisposedException(objectName, message);
+        }
+
         // TODO: (VeryLow) Add Format helper, and use more overloads / generic parameters.
         private static string Format(string format, params object[] args)
         {

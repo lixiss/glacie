@@ -59,7 +59,7 @@ namespace Glacie.Buffers
         /// </summary>
         public static DataBuffer Create(int length)
         {
-            return Create(Multitargeting.AllocateUninitializedByteArray(length), length);
+            return Create(ArrayUtilities.AllocateUninitializedArray<byte>(length), length);
         }
 
         /// <summary>

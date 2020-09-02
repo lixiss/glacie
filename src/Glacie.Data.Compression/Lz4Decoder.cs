@@ -7,7 +7,7 @@ namespace Glacie.Data.Compression
 {
     public sealed class Lz4Decoder : Decoder
     {
-        private const int MaxInputBufferOnStackSize = 7 * 1024;
+        private const int MaxInputBufferOnStackSize = 8 * 1024;
 
         private static readonly Lz4Decoder s_decoder = new Lz4Decoder();
 
@@ -53,6 +53,12 @@ namespace Glacie.Data.Compression
                     SharedBufferPool.Return(rentedSourceBuffer);
                 }
             }
+        }
+
+        public override void Decode(ReadOnlySpan<byte> input, Span<byte> output)
+        {
+            var bytesWritten = LZ4I.LZ4Codec.Decode(input, output);
+            Check.True(bytesWritten == output.Length);
         }
     }
 }

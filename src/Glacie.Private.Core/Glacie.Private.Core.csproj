@@ -10,13 +10,14 @@
   <ItemGroup>
     <Compile Include="Buffers\DataBuffer.cs" />
     <Compile Include="ChecksumAlgorithms\Adler32.cs" />
+    <Compile Include="Collections\ReferenceValueList.cs" />
     <Compile Include="Core\Check.Argument.cs" />
     <Compile Include="Core\Check.cs" />
     <Compile Include="Core\DebugCheck.cs" />
     <Compile Include="Core\Error.cs" />
     <Compile Include="Core\StringExtensions.cs" />
     <Compile Include="System.IO\ReadOnlySegmentStream.cs" />
-    <Compile Include="Utilities\Multitargeting.cs" />
+    <Compile Include="Utilities\ArrayUtilities.cs" />
   </ItemGroup>
 
   <ItemGroup>

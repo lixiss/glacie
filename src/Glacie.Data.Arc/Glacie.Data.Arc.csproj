@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+<!--
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1</TargetFrameworks>
+-->
+    <AssemblyName>Glacie.Data.Arc</AssemblyName>
+    <RootNamespace>Glacie.Data.Arc</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ArcArchive.Entry.cs" />
+    <Compile Include="ArcArchive.cs" />
+    <Compile Include="ArcArchiveMode.cs" />
+    <Compile Include="ArcArchiveOptions.cs" />
+    <Compile Include="ArcEntry.cs" />
+    <Compile Include="Infrastructure\AllocatedSegment.cs" />
+    <Compile Include="Infrastructure\ArcLayoutInfo.cs" />
+    <Compile Include="Infrastructure\FileSegment.cs" />
+    <Compile Include="Streams\ReadingStoreEntryStream.cs" />
+    <Compile Include="Streams\ReadingChunkedEntryStream.cs" />
+    <Compile Include="Streams\ArcEntryStream.cs" />
+    <Compile Include="ArcError.cs" />
+    <Compile Include="ArcException.cs" />
+    <Compile Include="Streams\WritingChunkedEntryStream.cs" />
+    <Compile Include="Streams\WritingStoreEntryStream.cs" />
+    <Compile Include="ArcStream.cs" />
+    <Compile Include="arc_entry_id.cs" />
+    <Compile Include="FileFormat\ArcFileEntryType.cs" />
+    <Compile Include="Infrastructure\ArcFileFormat.cs" />
+    <Compile Include="FileFormat\ArcFileEntry.cs" />
+    <Compile Include="FileFormat\ArcFileHeader.cs" />
+    <Compile Include="Infrastructure\ArcEntryChunk.cs" />
+    <Compile Include="Infrastructure\ArcEntryChunkCollection.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

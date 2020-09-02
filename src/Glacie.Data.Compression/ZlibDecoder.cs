@@ -43,6 +43,36 @@ namespace Glacie.Data.Compression
             return ReadZlibStream(source, sourceLength, decompressedSize);
         }
 
+        public override unsafe void Decode(ReadOnlySpan<byte> input, Span<byte> output)
+        {
+            if (!ZlibUtilities.IsRfc1950StreamHeader(input))
+            {
+                throw Error.InvalidOperation("Not a zlib stream.");
+            }
+
+            if (input.Length < 6) throw Error.InvalidOperation("Not a zlib stream.");
+
+            // We skip two bytes of header.
+            fixed (byte* pInput = &input[2])
+            fixed (byte* pOutput = &output[0])
+            {
+                using (var inputStream = new IO.UnmanagedMemoryStream(pInput, input.Length - 2))
+                using (var outputStream = new IO.UnmanagedMemoryStream(pOutput, output.Length, output.Length, IO.FileAccess.Write))
+                using (var inputDeflateStream = new IO.Compression.DeflateStream(inputStream,
+                    IO.Compression.CompressionMode.Decompress, leaveOpen: false))
+                {
+                    inputDeflateStream.CopyTo(outputStream);
+                    Check.True(outputStream.Position == output.Length);
+                }
+            }
+        }
+
+        public override void Decode(IO.Stream input, int inputLength, Span<byte> output)
+        {
+            // TODO: (VeryLow) (ZlibDecoder) Provide better implementation.
+            base.Decode(input, inputLength, output);
+        }
+
         private static byte[] ReadZlibStream(IO.Stream source, int sourceLength, int decompressedSize = 0)
         {
             // DeflateStream implementation hold another data buffer, so as result it will consume

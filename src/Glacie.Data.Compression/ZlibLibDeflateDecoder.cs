@@ -70,6 +70,16 @@ namespace Glacie.Data.Compression
             }
         }
 
+        public override void Decode(ReadOnlySpan<byte> input, Span<byte> output)
+        {
+            if (!TryDecode(input, output, out var outputLength))
+            {
+                throw Error.InvalidOperation("Fail to decode buffer.");
+            }
+
+            Check.True(outputLength == output.Length);
+        }
+
         private unsafe void DecodeInternal(ReadOnlySpan<byte> source, int decompressedSize, out byte[] target)
         {
             if (decompressedSize > 0)

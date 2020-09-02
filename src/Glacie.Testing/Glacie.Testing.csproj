@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Testing</AssemblyName>
+    <RootNamespace>Glacie.Testing</RootNamespace>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>false</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ConfigurationReader.cs" />
+    <Compile Include="Profiles.cs" />
+    <Compile Include="Configuration.cs" />
+    <Compile Include="TestFileInfo.cs" />
+    <Compile Include="TestSuiteData.cs" />
+    <Compile Include="GrimDawnProfile.cs" />
+    <Compile Include="TitanQuestImmortalThroneProfile.cs" />
+    <Compile Include="TitanQuestAnniversaryEditionProfile.cs" />
+    <Compile Include="Xunit\AlphabeticalOrderer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit.core" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" />
+  </ItemGroup>
+
+</Project>
