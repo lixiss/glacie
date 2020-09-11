@@ -1,4 +1,6 @@
-﻿namespace Glacie.Data.Arz.Infrastructure
+﻿using System.Linq;
+
+namespace Glacie.Data.Arz.Infrastructure
 {
     public sealed class ArzStringEncoder
     {
@@ -36,6 +38,20 @@
                     return _map[(int)sourceStringIndex] = encodedValue;
                 }
             }
+        }
+
+        public bool IsLinear()
+        {
+            if (_source.Count == _target.Count)
+            {
+                for (var i = 0; i < _map.Length; i++)
+                {
+                    if (_map[i] != (arz_string_id)i)
+                        return false;
+                }
+                return true;
+            }
+            return false;
         }
     }
 }

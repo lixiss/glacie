@@ -53,6 +53,8 @@ namespace Glacie.Data.Arz
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public T Get<T>(int index) => _record.GetFieldValue<T>(_fieldPtr, index);
 
+        internal int GetRawValue(int index) => _record.GetRawFieldValue(_fieldPtr, index);
+
         // TODO: (ArzField) May be need a Get<>(index) which will be limited by actual array length,
         // so might be useful for reading difficulty triples / or 3x6 values.
         // However may be better to do this at higher level only?

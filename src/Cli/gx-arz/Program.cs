@@ -52,6 +52,9 @@ namespace Glacie.Cli.Arz
                 CreateBuildCommand(Commands.BuildCommand.Mode.RemoveMissing),
 
                 // TODO: Remove command
+
+                CreateDumpStringTableCommand(),
+
             };
             rootCommand.AddGlobalOption(new Option<bool?>("--use-libdeflate",
                 "Use libdeflate for zlib compression"));
@@ -67,6 +70,17 @@ namespace Glacie.Cli.Arz
             };
             command.AddAlias("ls");
             command.Handler = CommandHandler.Create((Commands.ListCommand cmd) => cmd.Run());
+            return command;
+        }
+
+        private static Command CreateDumpStringTableCommand()
+        {
+            var command = new Command("dump-string-table", "List contents of database's string table")
+            {
+                new Argument<string>("database", "Path to database (.arz) file")
+            };
+            command.AddAlias("dump-strtable");
+            command.Handler = CommandHandler.Create((Commands.DumpStringTableCommand cmd) => cmd.Run());
             return command;
         }
 
@@ -111,7 +125,9 @@ namespace Glacie.Cli.Arz
                 new Argument<string>("database", "Path to database (.arz) file"),
                 new Option<string>("--output", "Path to output database file. If not specified, input database will be replaced"),
                 new Option<bool>("-Odbrref", () => false, "Optimize .dbr file references (normalize dbr file name strings which may result into smaller string table)"),
-                new Option<bool>("-Ostrtable", () => false, "Rebuild string table, so if there is exist unused strings, they will not be included in output file"),
+                new Option<bool>("-Otplref", () => false, "Optimize .tpl file references (normalize tpl file name strings)"),
+                new Option<bool>("-Orstrtable", () => false, "Rebuild string table, so if there is exist unused strings, they will not be included in output file"),
+                new Option<bool>("-Oostrtable", () => false, "Optimize string table, so it contents will be stable, with possibility of better overall compression"),
                 new Option<bool>("-Orecompress", () => false, "Force recompress all records"),
                 new Option<bool>("--repack", () => false, "Enable all optimizations"),
                 new Option<CompressionLevel>("--compression-level",

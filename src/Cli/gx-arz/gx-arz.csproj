@@ -10,6 +10,7 @@
   <ItemGroup>
     <Compile Include="Commands\DatabaseCommand.cs" />
     <Compile Include="Commands\BuildCommand.cs" />
+    <Compile Include="Commands\DumpStringTableCommand.cs" />
     <Compile Include="Commands\VerifyCommand.cs" />
     <Compile Include="Commands\OptimizeCommand.cs" />
     <Compile Include="Commands\InfoCommand.cs" />
@@ -18,6 +19,7 @@
     <Compile Include="Dbr\DbrReader.cs" />
     <Compile Include="Dbr\DbrRenderer.cs" />
     <Compile Include="Dbr\DbrUtility.cs" />
+    <Compile Include="Processors\ArzTplRefOptimizer.cs" />
     <Compile Include="Templates\FieldDefinition.cs" />
     <Compile Include="Templates\IRecordDefinitionProvider.cs" />
     <Compile Include="Templates\RecordDefinitionBuilder.cs" />
@@ -48,10 +50,6 @@
     <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
     <ProjectReference Include="..\..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
     <ProjectReference Include="..\..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Adapters\" />
   </ItemGroup>
 
 </Project>

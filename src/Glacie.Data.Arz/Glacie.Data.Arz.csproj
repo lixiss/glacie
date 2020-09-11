@@ -33,6 +33,7 @@
     <Compile Include="FileFormat\ArzFileHeader.cs" />
     <Compile Include="FileFormat\ArzFileRecord.cs" />
     <Compile Include="FileFormat\ArzFileStream.cs" />
+    <Compile Include="Infrastructure\ArzStringEncoderFactory.cs" />
     <Compile Include="Infrastructure\ArzRecordClassTable.cs" />
     <Compile Include="Infrastructure\ArzStringEncoder.cs" />
     <Compile Include="Infrastructure\ArzStringTable.cs" />
@@ -40,6 +41,7 @@
     <Compile Include="Infrastructure\IArzRecordMetrics.cs" />
     <Compile Include="Utilities\ArrayUtilities.cs" />
     <Compile Include="Utilities\ArzChecksum.cs" />
+    <Compile Include="Infrastructure\IArzStringEncoderFactory.cs" />
     <Compile Include="Utilities\ArzVerifier.cs" />
     <Compile Include="Utilities\MultithreadingHelpers.cs" />
     <Compile Include="Utilities\_ArzInspector.cs" />

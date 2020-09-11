@@ -16,6 +16,8 @@ namespace Glacie.Cli.Arz.Commands
         private string Database { get; }
         private string? OutputDatabase { get; }
         private bool OptimizeDbrRef { get; }
+        private bool OptimizeTplRef { get; }
+        private bool RebuildStrTable { get; }
         private bool OptimizeStrTable { get; }
         private bool OptimizeRecompress { get; }
         private bool Repack { get; }
@@ -26,7 +28,9 @@ namespace Glacie.Cli.Arz.Commands
 
         public OptimizeCommand(string database,
             bool oDbrRef,
-            bool oStrTable,
+            bool oTplRef,
+            bool oRStrTable,
+            bool oOStrTable,
             bool oRecompress,
             bool repack,
             CompressionLevel compressionLevel,
@@ -37,7 +41,9 @@ namespace Glacie.Cli.Arz.Commands
             Database = database;
             Repack = repack;
             OptimizeDbrRef = oDbrRef || repack;
-            OptimizeStrTable = oStrTable || repack;
+            OptimizeTplRef = oTplRef || repack;
+            RebuildStrTable = oRStrTable || repack;
+            OptimizeStrTable = oOStrTable || repack;
             OptimizeRecompress = oRecompress || repack;
             CompressionLevel = compressionLevel;
             OutputDatabase = output;
@@ -63,7 +69,7 @@ namespace Glacie.Cli.Arz.Commands
 
             var inputLength = new IO.FileInfo(Database).Length;
 
-            var optimizeStringTable = OptimizeStrTable;
+            var rebuildStringTable = RebuildStrTable;
             if (OptimizeDbrRef)
             {
                 using var progress = StartProgress("Optimizing: DBR file references...");
@@ -83,7 +89,30 @@ namespace Glacie.Cli.Arz.Commands
 
                 if (result.NumberOfRemappedStrings > 0)
                 {
-                    optimizeStringTable |= true;
+                    rebuildStringTable |= true;
+                }
+            }
+
+            if (OptimizeTplRef)
+            {
+                using var progress = StartProgress("Optimizing: TPL file references...");
+                progress.SetValueUnit("records", scale: true);
+                progress.ShowRate = true;
+                progress.ShowElapsedTime = true;
+                progress.ShowRemainingTime = true;
+                progress.ShowValue = true;
+                progress.ShowMaximumValue = true;
+
+                var result = new ArzTplRefOptimizer(database).Run(progress);
+
+                Console.Out.WriteLine("Optimized: TPL file references");
+                Console.Out.WriteLine("  # of Remapped Strings: {0:N0}", result.NumberOfRemappedStrings);
+                Console.Out.WriteLine("  Estimated Size Reduction: {0:N0} bytes", result.EstimatedSizeReduction);
+                // Console.Out.WriteLine("  Completed In: {0:N0}ms", result.CompletedIn.TotalMilliseconds);
+
+                if (result.NumberOfRemappedStrings > 0)
+                {
+                    rebuildStringTable |= true;
                 }
             }
 
@@ -102,7 +131,8 @@ namespace Glacie.Cli.Arz.Commands
                 progress.ShowMaximumValue = true;
 
                 var writerOptions = CreateWriterOptions(
-                    optimizeStringTable: optimizeStringTable,
+                    rebuildStringTable: rebuildStringTable,
+                    optimizeStringTable: OptimizeStrTable,
                     forceCompression: OptimizeRecompress,
                     compressionLevel: CompressionLevel,
                     computeChecksum: ComputeChecksum);
@@ -117,6 +147,7 @@ namespace Glacie.Cli.Arz.Commands
                     Console.Out.WriteLine("  UseLibDeflate = {0}", writerOptions.UseLibDeflate);
                     Console.Out.WriteLine("  Format = {0}", writerOptions.Format);
                     Console.Out.WriteLine("  InferRecordClass = {0}", writerOptions.InferRecordClass);
+                    Console.Out.WriteLine("  RebuildStringTable = {0}", writerOptions.RebuildStringTable);
                     Console.Out.WriteLine("  OptimizeStringTable = {0}", writerOptions.OptimizeStringTable);
                     Console.Out.WriteLine("  ForceCompression = {0}", writerOptions.ForceCompression);
                     Console.Out.WriteLine("  CompressionLevel = {0}", writerOptions.CompressionLevel);

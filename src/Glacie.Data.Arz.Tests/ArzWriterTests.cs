@@ -507,7 +507,7 @@ namespace Glacie.Data.Arz.Tests
                 ComputeChecksum = true,
                 InferRecordClass = false,
                 Format = ArzFileFormat.Parse(targetFormat),
-                OptimizeStringTable = false,
+                RebuildStringTable = false,
                 ForceCompression = forceCompression,
             };
             ArzWriter.Write(outputStream, database, options);
@@ -546,7 +546,7 @@ namespace Glacie.Data.Arz.Tests
                 ComputeChecksum = true,
                 InferRecordClass = false,
                 Format = ArzFileFormat.Parse(targetFormat),
-                OptimizeStringTable = true,
+                RebuildStringTable = true,
                 ForceCompression = forceCompression,
             };
             ArzWriter.Write(outputStream, database, options);
@@ -567,7 +567,7 @@ namespace Glacie.Data.Arz.Tests
                 ComputeChecksum = true,
                 Format = ArzFileFormat.TitanQuestAnniversaryEdition,
                 ChangesOnly = true,
-                OptimizeStringTable = true,
+                RebuildStringTable = true,
             };
             ArzWriter.Write(outputStream, database, options);
             ArzVerifier.Verify(outputStream);
@@ -588,7 +588,7 @@ namespace Glacie.Data.Arz.Tests
                 ComputeChecksum = true,
                 Format = ArzFileFormat.TitanQuestAnniversaryEdition,
                 ChangesOnly = true,
-                OptimizeStringTable = true,
+                RebuildStringTable = true,
             };
             database[TestData.GtdTqae2RawRecordNames[0]]["--gx-test"] = true;
 

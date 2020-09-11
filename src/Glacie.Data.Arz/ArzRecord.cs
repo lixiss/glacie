@@ -1086,6 +1086,16 @@ namespace Glacie.Data.Arz
             else throw Error.InvalidOperation("Unsupported type.");
         }
 
+        internal int GetRawFieldValue(arz_field_ptr fieldPtr, int index)
+        {
+            if (index < 0) throw Error.ArgumentOutOfRange(nameof(index));
+
+            var fc = GetFieldCursor(fieldPtr);
+            if (index >= fc.ValueCount) throw Error.ArgumentOutOfRange(nameof(index));
+
+            return fc.GetRawValueAtNoCheck(index);
+        }
+
         internal T GetFieldValue<T>(arz_field_ptr fieldPtr, int index)
         {
             if (index < 0) throw Error.ArgumentOutOfRange(nameof(index));

@@ -1,4 +1,5 @@
-﻿using Glacie.Data.Compression;
+﻿using Glacie.Data.Arz.Infrastructure;
+using Glacie.Data.Compression;
 
 namespace Glacie.Data.Arz
 {
@@ -9,7 +10,7 @@ namespace Glacie.Data.Arz
 
         public ArzWriterOptions(bool optimize)
         {
-            OptimizeStringTable = optimize;
+            RebuildStringTable = optimize;
             ComputeChecksum = optimize;
         }
 
@@ -48,6 +49,12 @@ namespace Glacie.Data.Arz
         /// case).
         /// When <c>false</c>, writer will use database's string table.
         /// </summary>
+        public bool RebuildStringTable { get; set; } = false;
+
+        /// <summary>
+        /// When <c>true</c>, writer will try create new string table, which
+        /// will be specifically ordered for better compression results.
+        /// </summary>
         public bool OptimizeStringTable { get; set; } = false;
 
         /// <summary>
@@ -67,5 +74,7 @@ namespace Glacie.Data.Arz
         public CompressionLevel CompressionLevel { get; set; } = 0;
 
         public bool ComputeChecksum { get; set; } = false;
+
+        public IArzStringEncoderFactory? StringEncoderFactory { get; set; } = null;
     }
 }

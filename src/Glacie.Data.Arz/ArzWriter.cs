@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using Glacie.Data.Arz.FileFormat;
 using Glacie.Data.Arz.Infrastructure;
 using Glacie.Data.Arz.Utilities;
 using Glacie.Data.Compression;
+
 using IO = System.IO;
 
 namespace Glacie.Data.Arz
@@ -48,9 +50,11 @@ namespace Glacie.Data.Arz
         private readonly bool _inferRecordClass;
         private readonly bool _changesOnly;
         private bool _forceCompression;
+        private bool _rebuildStringTable;
         private bool _optimizeStringTable;
         private readonly bool _calculateChecksum;
         private readonly CompressionLevel _compressionLevel;
+        private readonly IArzStringEncoderFactory _stringEncoderFactory;
 
         // state
         private ArzFileStream _afStream;
@@ -73,10 +77,12 @@ namespace Glacie.Data.Arz
             _useLibDeflate = options.UseLibDeflate ?? ZlibLibDeflateEncoder.IsSupported;
             _format = options.Format;
             _inferRecordClass = options.InferRecordClass;
+            _rebuildStringTable = options.RebuildStringTable;
             _optimizeStringTable = options.OptimizeStringTable;
             _forceCompression = options.ForceCompression;
             _calculateChecksum = options.ComputeChecksum;
             _compressionLevel = options.CompressionLevel;
+            _stringEncoderFactory = options.StringEncoderFactory ?? ArzStringEncoderFactory.Default;
         }
 
         public void Dispose()
@@ -105,28 +111,6 @@ namespace Glacie.Data.Arz
             _context = _database.Context;
             _contextCanReadFieldData = _context.CanReadFieldData;
             var sourceStringTable = _context.StringTable;
-
-            ArzStringTable afStringTable;
-            if (_optimizeStringTable)
-            {
-                // TODO: (VeryLow) (ArzWriter) (Undecided) We can try detect if string table needs to be optimized.
-                // Just make array map similar to ArzStringEncoder and mark string usage
-                // by indexes. In this way we can determine if there is present strings
-                // which is not in use, and how many strings. If this check will be 
-                // very fast -> this probably can be more profitable. Also may be good 
-                // heuristic for hybrid mode.
-
-                afStringTable = new ArzStringTable(sourceStringTable.Count);
-                _afStringEncoder = new ArzStringEncoder(sourceStringTable, afStringTable);
-            }
-            else
-            {
-                afStringTable = sourceStringTable;
-                _afStringEncoder = null;
-            }
-
-            _afStringTableIsCompatibleWithRawFieldData =
-                afStringTable == sourceStringTable;
 
             // Validate Records
             var outputRecords = new List<ArzRecord>(_database.Count);
@@ -165,6 +149,48 @@ namespace Glacie.Data.Arz
                     outputRecords.Add(record);
                 }
             }
+
+            // Optimize & Rebuild String Table
+            ArzStringTable afStringTable;
+            if (_optimizeStringTable)
+            {
+                var stringEncoder = _stringEncoderFactory.Create(_database, outputRecords);
+                if (stringEncoder == null || stringEncoder.IsLinear())
+                {
+                    _afStringEncoder = null;
+                }
+                else
+                {
+                    _afStringEncoder = stringEncoder;
+                }
+            }
+
+            if (_afStringEncoder == null)
+            {
+                if (_rebuildStringTable)
+                {
+                    // TODO: (VeryLow) (ArzWriter) (Undecided) We can try detect if string table needs to be optimized.
+                    // Just make array map similar to ArzStringEncoder and mark string usage
+                    // by indexes. In this way we can determine if there is present strings
+                    // which is not in use, and how many strings. If this check will be 
+                    // very fast -> this probably can be more profitable. Also may be good 
+                    // heuristic for hybrid mode.
+
+                    _afStringEncoder = new ArzStringEncoder(
+                        sourceStringTable,
+                        new ArzStringTable(sourceStringTable.Count));
+                }
+                else
+                {
+                    _afStringEncoder = null;
+                }
+            }
+
+            afStringTable = _afStringEncoder?.TargetStringTable ?? sourceStringTable;
+
+            _afStringTableIsCompatibleWithRawFieldData =
+                afStringTable == sourceStringTable;
+
             progress?.AddMaximumValue(outputRecords.Count);
 
             // Header

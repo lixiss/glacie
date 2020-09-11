@@ -13,6 +13,8 @@ namespace Glacie.Cli.Arz.Processors
         public TimeSpan CompletedIn { get; set; }
     }
 
+    // TODO: create record processor pipeline
+
     internal sealed class ArzDbrRefOptimizer
     {
         private ArzDatabase _database;

@@ -31,6 +31,7 @@ namespace Glacie.Cli.Arz.Commands
             bool? changesOnly = null,
             ArzFileFormat? format = null,
             bool? inferRecordClass = null,
+            bool? rebuildStringTable = null,
             bool? optimizeStringTable = null,
             bool? forceCompression = null,
             CompressionLevel? compressionLevel = null,
@@ -48,6 +49,8 @@ namespace Glacie.Cli.Arz.Commands
                 Format = format ?? ArzFileFormat.Automatic,
 
                 InferRecordClass = inferRecordClass ?? true,
+
+                RebuildStringTable = rebuildStringTable ?? false,
 
                 OptimizeStringTable = optimizeStringTable ?? false,
 

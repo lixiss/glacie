@@ -8,9 +8,9 @@ namespace Glacie.Data.Arz
 
         ArzDatabase Database { get; }
 
-        // ArzStringTable StringTable { get; }
+        ArzStringTable StringTable { get; }
 
-        // ArzRecordClassTable RecordClassTable { get; }
+        ArzRecordClassTable RecordClassTable { get; }
 
         ArzFileFormat Format { get; }
 
