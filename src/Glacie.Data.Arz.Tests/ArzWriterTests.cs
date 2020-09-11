@@ -7,24 +7,27 @@ using Xunit;
 
 namespace Glacie.Data.Arz.Tests
 {
+    [Trait("Category", "ARZ")]
     public sealed class ArzWriterTests
     {
+        private static readonly ArzFileFormat SomeValidFormat = ArzFileFormat.TitanQuest;
+
         [Fact]
-        public void ThrowsIfLayoutIsNotInferred()
+        public void ThrowsIfFormatIsNotInferred()
         {
             using var database = ArzDatabase.Create();
             using var outputStream = new MemoryStream();
             var ex = Assert.Throws<ArzException>(() => ArzWriter.Write(outputStream, database));
-            Assert.Equal("LayoutRequired", ex.ErrorCode);
+            Assert.Equal("FileFormatRequired", ex.ErrorCode);
         }
 
         [Fact]
-        public void ThrowsIfLayoutIsNotInferredFromFile()
+        public void ThrowsIfFormatIsNotInferredFromFile()
         {
-            using var database = ArzDatabase.Open(TestData.GtdTqgd0NC); // TODO: GtdTqgd0); use file with valid checksum
+            using var database = ArzDatabase.Open(TestData.GtdTqgd0);
             using var outputStream = new MemoryStream();
             var ex = Assert.Throws<ArzException>(() => ArzWriter.Write(outputStream, database));
-            Assert.Equal("LayoutRequired", ex.ErrorCode);
+            Assert.Equal("FileFormatRequired", ex.ErrorCode);
         }
 
         [Fact]
@@ -34,43 +37,44 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.RecordHasDecompressedSize
+                Format = ArzFileFormat.Automatic
             };
             var ex = Assert.Throws<ArzException>(
                 () => ArzWriter.Write(outputStream, database, options)
                 );
-            Assert.Equal("LayoutRequired", ex.ErrorCode);
+            Assert.Equal("FileFormatRequired", ex.ErrorCode);
         }
 
-        [Fact]
-        public void ThrowsIfLayoutIsAmbigious()
-        {
-            using var database = ArzDatabase.Create();
-            using var outputStream = new MemoryStream();
-            var options = new ArzWriterOptions
-            {
-                Layout = ArzFileLayout.UseLz4Compression | ArzFileLayout.UseZlibCompression,
-            };
-            var ex = Assert.Throws<ArzException>(
-                () => ArzWriter.Write(outputStream, database, options)
-                );
-            Assert.Equal("InvalidLayout", ex.ErrorCode);
-        }
+        // This tests disabled, because there is no more way provide invalid formats.
+        //[Fact]
+        //public void ThrowsIfLayoutIsAmbigious()
+        //{
+        //    using var database = ArzDatabase.Create();
+        //    using var outputStream = new MemoryStream();
+        //    var options = new ArzWriterOptions
+        //    {
+        //        Format = ArzFileLayout.UseLz4Compression | ArzFileLayout.UseZlibCompression,
+        //    };
+        //    var ex = Assert.Throws<ArzException>(
+        //        () => ArzWriter.Write(outputStream, database, options)
+        //        );
+        //    Assert.Equal("InvalidLayout", ex.ErrorCode);
+        //}
 
-        [Fact]
-        public void ThrowsIfLayoutIsLz4WithoutDecompressedSize()
-        {
-            using var database = ArzDatabase.Create();
-            using var outputStream = new MemoryStream();
-            var options = new ArzWriterOptions
-            {
-                Layout = ArzFileLayout.UseLz4Compression
-            };
-            var ex = Assert.Throws<ArzException>(
-                () => ArzWriter.Write(outputStream, database, options)
-                );
-            Assert.Equal("InvalidLayout", ex.ErrorCode);
-        }
+        //[Fact]
+        //public void ThrowsIfLayoutIsLz4WithoutDecompressedSize()
+        //{
+        //    using var database = ArzDatabase.Create();
+        //    using var outputStream = new MemoryStream();
+        //    var options = new ArzWriterOptions
+        //    {
+        //        Format = ArzFileLayout.UseLz4Compression
+        //    };
+        //    var ex = Assert.Throws<ArzException>(
+        //        () => ArzWriter.Write(outputStream, database, options)
+        //        );
+        //    Assert.Equal("InvalidLayout", ex.ErrorCode);
+        //}
 
         [Fact]
         public void EmptyWithGdLayout()
@@ -79,7 +83,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.RecordHasDecompressedSize | ArzFileLayout.UseLz4Compression,
+                Format = ArzFileFormat.GrimDawn,
                 ComputeChecksum = true,
             };
             ArzWriter.Write(outputStream, database, options);
@@ -93,7 +97,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = ArzFileFormat.TitanQuestAnniversaryEdition,
                 ComputeChecksum = true,
             };
             ArzWriter.Write(outputStream, database, options);
@@ -107,7 +111,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.RecordHasDecompressedSize | ArzFileLayout.UseZlibCompression,
+                Format = ArzFileFormat.TitanQuest,
                 ComputeChecksum = true,
             };
             ArzWriter.Write(outputStream, database, options);
@@ -137,7 +141,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
             };
 
             // Presense of record without fields, should be considered as logical error,
@@ -159,7 +163,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
             };
 
             // Presense of record without fields, should be considered as logical error,
@@ -185,7 +189,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 InferRecordClass = false,
             };
 
@@ -209,7 +213,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 InferRecordClass = false,
             };
 
@@ -233,7 +237,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 ComputeChecksum = true,
             };
 
@@ -255,7 +259,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 ComputeChecksum = true,
                 InferRecordClass = true,
             };
@@ -281,7 +285,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 ComputeChecksum = true,
             };
 
@@ -308,7 +312,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 ComputeChecksum = true,
             };
 
@@ -360,7 +364,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 ComputeChecksum = true,
             };
 
@@ -404,7 +408,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = SomeValidFormat,
                 ComputeChecksum = true,
             };
 
@@ -462,7 +466,7 @@ namespace Glacie.Data.Arz.Tests
             using var outputStream = new MemoryStream();
             var options = new ArzWriterOptions
             {
-                Layout = ArzFileLayout.UseZlibCompression,
+                Format = ArzFileFormat.TitanQuestAnniversaryEdition,
                 ComputeChecksum = true,
                 InferRecordClass = false,
                 ForceCompression = forceCompression,
@@ -474,30 +478,26 @@ namespace Glacie.Data.Arz.Tests
             AssertDatabaseEqual(database, oDatabase);
         }
 
-        private const ArzFileLayout LayoutTqae = ArzFileLayout.UseZlibCompression;
-        private const ArzFileLayout LayoutTq = ArzFileLayout.UseZlibCompression | ArzFileLayout.RecordHasDecompressedSize;
-        private const ArzFileLayout LayoutGd = ArzFileLayout.UseLz4Compression | ArzFileLayout.RecordHasDecompressedSize;
-
         [Theory]
-        [InlineData(ArzReadingMode.Lazy, false, LayoutTqae)]
-        [InlineData(ArzReadingMode.Lazy, false, LayoutTq)]
-        [InlineData(ArzReadingMode.Lazy, false, LayoutGd)]
-        [InlineData(ArzReadingMode.Raw, false, LayoutTqae)]
-        [InlineData(ArzReadingMode.Raw, false, LayoutTq)]
-        [InlineData(ArzReadingMode.Raw, false, LayoutGd)]
-        [InlineData(ArzReadingMode.Full, false, LayoutTqae)]
-        [InlineData(ArzReadingMode.Full, false, LayoutTq)]
-        [InlineData(ArzReadingMode.Full, false, LayoutGd)]
-        [InlineData(ArzReadingMode.Lazy, true, LayoutTqae)]
-        [InlineData(ArzReadingMode.Lazy, true, LayoutTq)]
-        [InlineData(ArzReadingMode.Lazy, true, LayoutGd)]
-        [InlineData(ArzReadingMode.Raw, true, LayoutTqae)]
-        [InlineData(ArzReadingMode.Raw, true, LayoutTq)]
-        [InlineData(ArzReadingMode.Raw, true, LayoutGd)]
-        [InlineData(ArzReadingMode.Full, true, LayoutTqae)]
-        [InlineData(ArzReadingMode.Full, true, LayoutTq)]
-        [InlineData(ArzReadingMode.Full, true, LayoutGd)]
-        public void WriteFromExistingToAnyLayout(ArzReadingMode readingMode, bool forceCompression, ArzFileLayout targetLayout)
+        [InlineData(ArzReadingMode.Lazy, false, "tqae")]
+        [InlineData(ArzReadingMode.Lazy, false, "tq")]
+        [InlineData(ArzReadingMode.Lazy, false, "gd")]
+        [InlineData(ArzReadingMode.Raw, false, "tqae")]
+        [InlineData(ArzReadingMode.Raw, false, "tq")]
+        [InlineData(ArzReadingMode.Raw, false, "gd")]
+        [InlineData(ArzReadingMode.Full, false, "tqae")]
+        [InlineData(ArzReadingMode.Full, false, "tq")]
+        [InlineData(ArzReadingMode.Full, false, "gd")]
+        [InlineData(ArzReadingMode.Lazy, true, "tqae")]
+        [InlineData(ArzReadingMode.Lazy, true, "tq")]
+        [InlineData(ArzReadingMode.Lazy, true, "gd")]
+        [InlineData(ArzReadingMode.Raw, true, "tqae")]
+        [InlineData(ArzReadingMode.Raw, true, "tq")]
+        [InlineData(ArzReadingMode.Raw, true, "gd")]
+        [InlineData(ArzReadingMode.Full, true, "tqae")]
+        [InlineData(ArzReadingMode.Full, true, "tq")]
+        [InlineData(ArzReadingMode.Full, true, "gd")]
+        public void WriteFromExistingToAnyLayout(ArzReadingMode readingMode, bool forceCompression, string targetFormat)
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae2,
                 new ArzReaderOptions { Mode = readingMode });
@@ -506,7 +506,7 @@ namespace Glacie.Data.Arz.Tests
             {
                 ComputeChecksum = true,
                 InferRecordClass = false,
-                Layout = targetLayout,
+                Format = ArzFileFormat.Parse(targetFormat),
                 OptimizeStringTable = false,
                 ForceCompression = forceCompression,
             };
@@ -518,25 +518,25 @@ namespace Glacie.Data.Arz.Tests
         }
 
         [Theory]
-        [InlineData(ArzReadingMode.Lazy, false, LayoutTqae)]
-        [InlineData(ArzReadingMode.Lazy, false, LayoutTq)]
-        [InlineData(ArzReadingMode.Lazy, false, LayoutGd)]
-        [InlineData(ArzReadingMode.Raw, false, LayoutTqae)]
-        [InlineData(ArzReadingMode.Raw, false, LayoutTq)]
-        [InlineData(ArzReadingMode.Raw, false, LayoutGd)]
-        [InlineData(ArzReadingMode.Full, false, LayoutTqae)]
-        [InlineData(ArzReadingMode.Full, false, LayoutTq)]
-        [InlineData(ArzReadingMode.Full, false, LayoutGd)]
-        [InlineData(ArzReadingMode.Lazy, true, LayoutTqae)]
-        [InlineData(ArzReadingMode.Lazy, true, LayoutTq)]
-        [InlineData(ArzReadingMode.Lazy, true, LayoutGd)]
-        [InlineData(ArzReadingMode.Raw, true, LayoutTqae)]
-        [InlineData(ArzReadingMode.Raw, true, LayoutTq)]
-        [InlineData(ArzReadingMode.Raw, true, LayoutGd)]
-        [InlineData(ArzReadingMode.Full, true, LayoutTqae)]
-        [InlineData(ArzReadingMode.Full, true, LayoutTq)]
-        [InlineData(ArzReadingMode.Full, true, LayoutGd)]
-        public void WriteFromExistingToAnyLayoutOptimized(ArzReadingMode readingMode, bool forceCompression, ArzFileLayout targetLayout)
+        [InlineData(ArzReadingMode.Lazy, false, "tqae")]
+        [InlineData(ArzReadingMode.Lazy, false, "tq")]
+        [InlineData(ArzReadingMode.Lazy, false, "gd")]
+        [InlineData(ArzReadingMode.Raw, false, "tqae")]
+        [InlineData(ArzReadingMode.Raw, false, "tq")]
+        [InlineData(ArzReadingMode.Raw, false, "gd")]
+        [InlineData(ArzReadingMode.Full, false, "tqae")]
+        [InlineData(ArzReadingMode.Full, false, "tq")]
+        [InlineData(ArzReadingMode.Full, false, "gd")]
+        [InlineData(ArzReadingMode.Lazy, true, "tqae")]
+        [InlineData(ArzReadingMode.Lazy, true, "tq")]
+        [InlineData(ArzReadingMode.Lazy, true, "gd")]
+        [InlineData(ArzReadingMode.Raw, true, "tqae")]
+        [InlineData(ArzReadingMode.Raw, true, "tq")]
+        [InlineData(ArzReadingMode.Raw, true, "gd")]
+        [InlineData(ArzReadingMode.Full, true, "tqae")]
+        [InlineData(ArzReadingMode.Full, true, "tq")]
+        [InlineData(ArzReadingMode.Full, true, "gd")]
+        public void WriteFromExistingToAnyLayoutOptimized(ArzReadingMode readingMode, bool forceCompression, string targetFormat)
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae2,
                 new ArzReaderOptions { Mode = readingMode });
@@ -545,7 +545,7 @@ namespace Glacie.Data.Arz.Tests
             {
                 ComputeChecksum = true,
                 InferRecordClass = false,
-                Layout = targetLayout,
+                Format = ArzFileFormat.Parse(targetFormat),
                 OptimizeStringTable = true,
                 ForceCompression = forceCompression,
             };
@@ -565,7 +565,7 @@ namespace Glacie.Data.Arz.Tests
             var options = new ArzWriterOptions
             {
                 ComputeChecksum = true,
-                Layout = LayoutTqae,
+                Format = ArzFileFormat.TitanQuestAnniversaryEdition,
                 ChangesOnly = true,
                 OptimizeStringTable = true,
             };
@@ -586,7 +586,7 @@ namespace Glacie.Data.Arz.Tests
             var options = new ArzWriterOptions
             {
                 ComputeChecksum = true,
-                Layout = LayoutTqae,
+                Format = ArzFileFormat.TitanQuestAnniversaryEdition,
                 ChangesOnly = true,
                 OptimizeStringTable = true,
             };

@@ -12,7 +12,7 @@ namespace Glacie.Data.Arz
 {
     partial class ArzWriter
     {
-        private void WriteRecordsSinglethreaded(List<ArzRecord> records)
+        private void WriteRecordsSinglethreaded(List<ArzRecord> records, IIncrementalProgress<int>? progress)
         {
             foreach (var record in records)
             {
@@ -21,10 +21,12 @@ namespace Glacie.Data.Arz
                     EncodeRecord(ref encoderJob, ref _encoder, out var writerJob);
                     WriteRecord(ref writerJob);
                 }
+
+                progress?.AddValue(1);
             }
         }
 
-        private void WriteRecordsMultithreaded(List<ArzRecord> records, int effectiveDegreeOfParallelism)
+        private void WriteRecordsMultithreaded(List<ArzRecord> records, int effectiveDegreeOfParallelism, IIncrementalProgress<int>? progress)
         {
             Check.True(effectiveDegreeOfParallelism > 0);
 
@@ -38,6 +40,15 @@ namespace Glacie.Data.Arz
             Task writerTask;
             var cts = new CancellationTokenSource();
 
+            // TODO: (Medium) ArzWriter.Pipeline is wrong:
+            // EffectiveDegreeOfParallelism is 1*CPU, but:
+            // - 1 (main) thread waiting in producer, it is not async call, so it block
+            // - DOPx encoders which practically blocking
+            // - 1 (writer) task to write job, which practically blocking
+            // Se we need minimum of (DOP + 2 threads), and still need thread pool free for other tasks.
+            // All of them are blocking operations, and there is should be more
+            // fair to use long-running tasks instead.
+
             // Writer
             {
                 var ct = cts.Token;
@@ -48,6 +59,7 @@ namespace Glacie.Data.Arz
                         while (writerQueue.TryTake(out var x, Timeout.Infinite, ct))
                         {
                             WriteRecord(ref x);
+                            progress?.AddValue(1);
                         }
                     }
                 }, ct);
@@ -134,7 +146,7 @@ namespace Glacie.Data.Arz
                 // +5.  is modified -> encode
                 // 6.  is not modified -> read raw data from file and write
 
-                if (_forceCompression || record.IsDataModified)
+                if (_forceCompression || record.IsDataModified || record.IsNew)
                 {
                     var fieldData = record.GetFieldDataBuffer(loadFieldData: _forceCompression);
                     Check.True(fieldData.Length > 0);
@@ -154,26 +166,43 @@ namespace Glacie.Data.Arz
 
                     if (record.HasNoFieldData || record.HasFieldData)
                     {
-                        DebugCheck.True(!record.IsNew);
+                        Check.That(!record.IsNew);
 
-                        var buffer = _context.ReadRawFieldDataBuffer(
-                            record.DataOffset,
-                            record.DataSize,
-                            record.DataSizeDecompressed);
-
-                        job = new EncodeRecordJob
+                        if (_contextCanReadFieldData)
                         {
-                            Record = record,
-                            FieldData = buffer,
-                            DecompressedSize = record.DataSizeDecompressed,
-                            NameId = record.NameId,
-                            Compress = false,
-                        };
-                        return true;
+                            var buffer = _context.ReadRawFieldDataBuffer(
+                                record.DataOffset,
+                                record.DataSize,
+                                record.DataSizeDecompressed);
+
+                            job = new EncodeRecordJob
+                            {
+                                Record = record,
+                                FieldData = buffer,
+                                DecompressedSize = record.DataSizeDecompressed,
+                                NameId = record.NameId,
+                                Compress = false,
+                            };
+                            return true;
+                        }
+                        else
+                        {
+                            var fieldData = record.GetFieldDataBuffer(loadFieldData: false);
+                            Check.True(fieldData.Length > 0);
+                            job = new EncodeRecordJob
+                            {
+                                Record = record,
+                                FieldData = fieldData,
+                                DecompressedSize = 0,
+                                NameId = record.NameId,
+                                Compress = true,
+                            };
+                            return true;
+                        }
                     }
                     else if (record.HasRawFieldData)
                     {
-                        DebugCheck.True(!record.IsNew);
+                        Check.That(!record.IsNew);
 
                         var buffer = record.GetRawFieldDataBuffer();
 
@@ -213,7 +242,16 @@ namespace Glacie.Data.Arz
 
         private void EncodeRecord(ref EncodeRecordJob j, ref Encoder? encoder, out WriteRecordJob writerJob)
         {
-            var timestamp = j.Record.IsDataModified ? _modifiedTimestamp : j.Record.Timestamp;
+            long timestamp;
+            if (!j.Record.HasExplicitTimestamp &&
+                (j.Record.IsDataModified || j.Record.IsModified))
+            {
+                timestamp = _modifiedTimestamp;
+            }
+            else
+            {
+                timestamp = j.Record.Timestamp;
+            }
 
             if (j.Compress)
             {

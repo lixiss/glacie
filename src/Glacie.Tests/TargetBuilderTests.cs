@@ -5,6 +5,7 @@ using Xunit;
 
 namespace Glacie.Tests
 {
+    [Trait("Category", "GX")]
     public sealed class TargetBuilderTests : GlacieTests
     {
         [Fact]

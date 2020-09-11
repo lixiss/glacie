@@ -5,6 +5,7 @@ namespace Glacie.Data.Arz.Tests
 {
     // TODO: (Low) (FieldApi Tests) - rename, and review.
 
+    [Trait("Category", "ARZ")]
     public sealed class FieldApi : IDisposable
     {
         private readonly ArzDatabase _database;

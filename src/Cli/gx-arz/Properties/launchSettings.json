@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "gx-arz": {
+      "commandName": "Project",
+      "commandLineArgs": "optimize 2.arz --output=2a.arz"
+    }
+  }
+}

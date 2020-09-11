@@ -55,6 +55,8 @@ namespace Glacie.Data.Arz
             GC.SuppressFinalize(this);
         }
 
+        public IArzContext GetContext() => _context;
+
         #region API
 
         public int Count => _records.Count;

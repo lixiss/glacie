@@ -61,7 +61,7 @@ namespace Glacie.Data.Arz
                 {
                     if (value > 0)
                     {
-                        byte[] newData = Multitargeting.AllocateUninitializedByteArray(value);
+                        byte[] newData = ArrayUtilities.AllocateUninitializedArray<byte>(value);
                         if (_data != null)
                         {
                             Array.Copy(_data, newData, _length);

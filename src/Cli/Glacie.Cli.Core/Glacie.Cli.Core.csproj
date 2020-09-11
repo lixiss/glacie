@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Glacie.Cli.Core</AssemblyName>
+    <RootNamespace>Glacie.Cli</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Adapters\SysCmdLineConsoleAdapter.cs" />
+    <Compile Include="Adapters\SysCmdLineIOStandardStreamWriterAdapter.cs" />
+    <Compile Include="CliErrorException.cs" />
+    <Compile Include="CommandLineBuilderExtensions.cs" />
+    <Compile Include="FileUtilities.cs" />
+    <Compile Include="ArgumentUtilities.cs" />
+    <Compile Include="Logging\ConsoleLogger.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="TerminalFactory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20427.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" />
+    <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

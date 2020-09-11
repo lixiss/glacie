@@ -18,6 +18,7 @@
     <Compile Include="Core\StringExtensions.cs" />
     <Compile Include="System.IO\ReadOnlySegmentStream.cs" />
     <Compile Include="Utilities\ArrayUtilities.cs" />
+    <Compile Include="Utilities\TimestampUtilities.cs" />
   </ItemGroup>
 
   <ItemGroup>

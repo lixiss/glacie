@@ -73,16 +73,17 @@ namespace Glacie.Data.Arz
 
         #endregion
 
-        private readonly IO.Stream _stream;
+        private IO.Stream? _stream;
 
         private Decoder? _decoder;
 
         // Options
-        private readonly ArzReadingMode _fieldDataLoadingMode = ArzReadingMode.Lazy;
-        private readonly bool _multithreadedReading = true;
-        private readonly int _maxDegreeOfParallelism = -1;
-        private readonly bool _useLibDeflate = false;
-        private ArzFileLayout _afLayout;
+        private readonly ArzReadingMode _fieldDataLoadingMode;
+        private readonly bool _multithreadedReading;
+        private readonly int _maxDegreeOfParallelism;
+        private readonly bool _useLibDeflate;
+        private readonly bool _closeUnderlyingStream;
+        private ArzFileFormat _format;
 
         #region Construction & Destruction
 
@@ -91,11 +92,14 @@ namespace Glacie.Data.Arz
         {
             _stream = stream;
 
+            ValidateOptions(options);
+
             _fieldDataLoadingMode = options.Mode;
+            _format = options.Format;
             _multithreadedReading = options.Multithreaded;
             _maxDegreeOfParallelism = options.MaxDegreeOfParallelism;
             _useLibDeflate = options.UseLibDeflate ?? ZlibLibDeflateDecoder.IsSupported;
-            _afLayout = options.Layout;
+            _closeUnderlyingStream = options.CloseUnderlyingStream;
         }
 
         protected override void Dispose(bool disposing)
@@ -103,6 +107,8 @@ namespace Glacie.Data.Arz
             if (disposing)
             {
                 _stream?.Dispose();
+                _stream = null;
+
                 _decoder?.Dispose();
             }
 
@@ -111,9 +117,11 @@ namespace Glacie.Data.Arz
 
         #endregion
 
-        public override bool HasLayoutInference => true;
+        public override bool CanInferFormat => true;
 
-        public override ArzFileLayout Layout => _afLayout;
+        public override ArzFileFormat Format => _format;
+
+        public override bool CanReadFieldData => _stream != null;
 
         protected override InitializeResult InitializeCore()
         {
@@ -130,20 +138,36 @@ namespace Glacie.Data.Arz
             // - from header (offsets+size should be located inside file)
             // - known / unkown magic/versions (should be part of file layout)
 
-            if (_afLayout != ArzFileLayout.None)
+            if (_format != ArzFileFormat.Automatic)
             {
-                if (!_afLayout.IsValid()) throw ArzError.InvalidLayout();
-
-                // TODO: (Medium) (ArzFileContext) implement reading with enforced file layout.
-                throw Error.NotImplemented("Enforced file layout currently not implemented.");
+                if (!_format.Complete) throw ArzError.InvalidFileFormat();
+                if (!_format.Valid) throw ArzError.InvalidFileFormat();
             }
 
             // 2. Layout
             {
-                if (!TryGetFileLayout(in afHeader, out _afLayout))
+                if (!ArzFileFormat.TryGetFromHeader(afHeader.Magic, afHeader.Version, out var detectedFormat))
+                {
                     throw ArzError.UnknownLayout();
+                }
+
+                if (_format == ArzFileFormat.Automatic)
+                {
+                    _format = detectedFormat;
+                }
+                else
+                {
+                    if (_format.RecordHasDecompressedLength != detectedFormat.RecordHasDecompressedLength)
+                    {
+                        throw ArzError.InvalidFileFormat("Specified file format is not compatible with actual file format.");
+                    }
+                    if (detectedFormat.HasCompressionAlgorithm && _format.CompressionAlgorithmCompatibleWith(detectedFormat))
+                    {
+                        throw ArzError.InvalidFileFormat("Specified file format is not compatible with actual file format.");
+                    }
+                }
             }
-            if (!_afLayout.IsValid()) throw ArzError.InvalidLayout();
+            if (!_format.Valid) throw ArzError.InvalidFileFormat();
 
             // 3. Record Type Table
             ArzRecordClassTable afRecordClassTable = new ArzRecordClassTable();
@@ -168,7 +192,7 @@ namespace Glacie.Data.Arz
             var arzRecords = new List<ArzRecord>(afHeader.RecordTableCount);
             {
                 afStream.Seek(afHeader.RecordTableOffset);
-                var afRecordTableReaderWriter = afStream.GetRecordTableReaderWriter(_afLayout, afRecordClassTable);
+                var afRecordTableReaderWriter = afStream.GetRecordTableReaderWriter(_format, afRecordClassTable);
 
                 int totalBytesRead = 0;
                 ArzFileRecord afRecord = default;
@@ -242,9 +266,11 @@ namespace Glacie.Data.Arz
                 else throw Error.InvalidOperation("Invalid field data loading mode.");
             }
 
-            // TODO: (Low) (ArzFileContext) (Decision) We might close underlying stream in Raw and Full mode,
-            // as we already read all file contents. However, for writing, when we want to save data
-            // without re-encoding - then this file will be needed to restore raw data.
+            if (_closeUnderlyingStream)
+            {
+                _stream?.Dispose();
+                _stream = null;
+            }
 
             var arzDatabase = new ArzDatabase(this, arzRecords);
             return new InitializeResult(
@@ -285,7 +311,7 @@ namespace Glacie.Data.Arz
             var baseOffset = ArzFileHeader.Size;
             afStream.Seek(baseOffset + dataOffset);
 
-            var buffer = Multitargeting.AllocateUninitializedByteArray(dataSize);
+            var buffer = ArrayUtilities.AllocateUninitializedArray<byte>(dataSize);
             var bytesRead = afStream.Read(buffer);
             Check.True(bytesRead == buffer.Length);
             return buffer;
@@ -341,7 +367,7 @@ namespace Glacie.Data.Arz
 
         private Decoder CreateDecoder()
         {
-            if ((_afLayout & ArzFileLayout.UseZlibCompression) == ArzFileLayout.UseZlibCompression)
+            if (_format.UseZlibCompression)
             {
                 if (_useLibDeflate)
                 {
@@ -352,7 +378,7 @@ namespace Glacie.Data.Arz
                     return ZlibDecoder.Shared;
                 }
             }
-            else if ((_afLayout & ArzFileLayout.UseLz4Compression) == ArzFileLayout.UseLz4Compression)
+            else if (_format.UseLz4Compression)
             {
                 return Lz4Decoder.Shared;
             }
@@ -361,7 +387,7 @@ namespace Glacie.Data.Arz
 
         private void InferCompressionAlgorithm(int dataOffset, int dataSize, int decompressedSize)
         {
-            if (_afLayout.HasCompressionAlgorithm()) return;
+            if (_format.HasCompressionAlgorithm) return;
             InferCompressionAlgorithmSlow(dataOffset, dataSize, decompressedSize);
         }
 
@@ -381,7 +407,7 @@ namespace Glacie.Data.Arz
 
         private void InferCompressionAlgorithm(ReadOnlySpan<byte> data, int decompressedSize)
         {
-            if (_afLayout.HasCompressionAlgorithm()) return;
+            if (_format.HasCompressionAlgorithm) return;
             InferCompressionAlgorithmSlow(data, decompressedSize);
         }
 
@@ -390,7 +416,7 @@ namespace Glacie.Data.Arz
             var scoreZlib = 0;
             var scoreLz4 = 0;
 
-            if (!_afLayout.RecordHasDecompressedSize() && decompressedSize == 0)
+            if (!_format.RecordHasDecompressedLength && decompressedSize == 0)
             {
                 // If there is no decompressed size then compressed data
                 // can't be LZ4 (which requires to know decompressed
@@ -409,44 +435,17 @@ namespace Glacie.Data.Arz
 
             if (scoreZlib > scoreLz4)
             {
-                _afLayout |= ArzFileLayout.UseZlibCompression;
+                _format = _format.WithCompressionAlgorithm(CompressionAlgorithm.Zlib);
             }
             else if (scoreLz4 > scoreZlib)
             {
-                _afLayout |= ArzFileLayout.UseLz4Compression;
+                _format = _format.WithCompressionAlgorithm(CompressionAlgorithm.Lz4);
             }
             else
             {
                 throw Error.InvalidOperation("Unable to infer compression algorithm. You should specify it manually.");
             }
         }
-
-        #region File Format Helpers
-
-        // TODO: (ArzFileContext) TryGetFileLayout should be in some helper. Similar method exist in ArzWriter.
-        private static bool TryGetFileLayout(in ArzFileHeader header, out ArzFileLayout fileLayout)
-        {
-            if (header.Magic == 2 && header.Version == 3)
-            {
-                // Titan Quest, Titan Quest: Immortal Throne
-                // Grim Dawn 1.1.7.1
-                fileLayout = ArzFileLayout.RecordHasDecompressedSize;
-                return true;
-            }
-            else if (header.Magic == 4 && header.Version == 3)
-            {
-                // Titan Quest Anniversary Edition (2.9)
-                fileLayout = ArzFileLayout.UseZlibCompression;
-                return true;
-            }
-            else
-            {
-                fileLayout = default;
-                return false;
-            }
-        }
-
-        #endregion
 
         private void CheckStreamAccess(StreamAccess streamAccess)
         {
@@ -486,6 +485,18 @@ namespace Glacie.Data.Arz
                 currentDataOffset = dataOffset;
             }
             return true;
+        }
+
+        private static void ValidateOptions(ArzReaderOptions options)
+        {
+            if (options.CloseUnderlyingStream)
+            {
+                if (!(options.Mode == ArzReadingMode.Raw || options.Mode == ArzReadingMode.Full))
+                {
+                    throw Error.Argument(nameof(options),
+                        "CloseUnderlyingStream may be used only with Raw or Full reading mode.");
+                }
+            }
         }
 
         [Flags]

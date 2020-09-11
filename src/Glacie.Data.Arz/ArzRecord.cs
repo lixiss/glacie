@@ -7,6 +7,7 @@ using System.Runtime.InteropServices;
 using Glacie.Abstractions;
 using Glacie.Buffers;
 using Glacie.Data.Arz.Infrastructure;
+using Glacie.Utilities;
 
 namespace Glacie.Data.Arz
 {
@@ -127,8 +128,16 @@ namespace Glacie.Data.Arz
             if (HasCount) { return _fieldCount > 0; }
             else
             {
-                // Assume that when record loaded from file always has fields.
-                return !IsNew;
+                if (HasFieldData)
+                {
+                    return HasAnyFieldSlow();
+                }
+                else if (!IsNew)
+                {
+                    // Assume that when record loaded from file always has fields.
+                    return true;
+                }
+                else throw Error.Unreachable();
             }
         }
 
@@ -415,6 +424,35 @@ namespace Glacie.Data.Arz
             }
         }
 
+        public long Timestamp
+        {
+            get => _timestamp;
+            set
+            {
+                _timestamp = value;
+                _flags |= RecordFlags.ExplicitTimestamp | RecordFlags.Modified;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the last time the record in the database was changed.
+        /// </summary>
+        /// <remarks>
+        /// This property calculated from <see cref="Timestamp"/>.
+        /// This property may throw exception if timestamp value can't be
+        /// represented as DateTimeOffset.
+        /// </remarks>
+        public DateTimeOffset LastWriteTime
+        {
+            get => TimestampUtilities.ToDateTimeOffest(Timestamp);
+            set => Timestamp = TimestampUtilities.FromDateTimeOffset(value);
+        }
+
+        public bool TryGetLastWriteTime(out DateTimeOffset result)
+        {
+            return TimestampUtilities.TryConvert(Timestamp, out result);
+        }
+
         public int Count => HasCount ? _fieldCount : GetCountSlow();
 
         public IEnumerable<ArzField> GetAll()
@@ -436,9 +474,46 @@ namespace Glacie.Data.Arz
             }
         }
 
+        public bool TryGet(string name, out ArzField value)
+        {
+            // TODO: (Low) (ArzRecord) Unsure about TryGet / TryGetFieldCursor
+
+            if (TryGetFieldCursor(name, out var c))
+            {
+                value = new ArzField(this, MakeFieldPtr(c.Position));
+                return true;
+            }
+
+            value = default;
+            return false;
+        }
+
+        public bool TryGet(string name, ArzRecordOptions options, out ArzField value)
+        {
+            // TODO: (Low) (ArzRecord) Unsure about TryGet / TryGetFieldCursor
+
+            if (TryGetFieldCursor(name, options, out var c))
+            {
+                value = new ArzField(this, MakeFieldPtr(c.Position));
+                return true;
+            }
+
+            value = default;
+            return false;
+        }
+
         public ArzField Get(string name)
         {
             if (TryGet(name, out var value))
+            {
+                return value;
+            }
+            else throw ArzError.FieldNotFound(name);
+        }
+
+        public ArzField Get(string name, ArzRecordOptions options)
+        {
+            if (TryGet(name, options, out var value))
             {
                 return value;
             }
@@ -454,25 +529,57 @@ namespace Glacie.Data.Arz
             else return null;
         }
 
-        public bool TryGet(string name, out ArzField value)
+        public ArzField? GetOrNull(string name, ArzRecordOptions options)
         {
-            // TODO: (Low) (ArzRecord) Unsure about TryGet / TryGetFieldCursor
-
-            if (TryGetFieldCursor(name, out var c))
+            if (TryGet(name, options, out var value))
             {
-                value = new ArzField(this, MakeFieldPtr(c.Position));
-                return true;
+                return value;
             }
-
-            value = default;
-            return false;
+            else return null;
         }
 
+        // TODO: make both methods to use shared logic
         private bool TryGetFieldCursor(string name, out ArzFieldCursor cursor)
         {
             if (StringTable.TryGet(name, out var nameId))
             {
                 var fieldMap = GetOrCreateFieldMap();
+                if (fieldMap != null)
+                {
+                    if (fieldMap.TryGetValue(nameId, out var fieldPtr))
+                    {
+                        _fdb0.GetCursor(GetPositionFromFieldPtr(fieldPtr), out cursor);
+                        return !cursor.Removed;
+                    }
+                }
+                else
+                {
+                    _numberOfNonMappedFieldByNameCalls++;
+
+                    LoadFieldDataIfNeed();
+                    _fdb0.GetCursor(out var c);
+                    while (!c.AtEnd)
+                    {
+                        if (!c.Removed && c.NameId == nameId)
+                        {
+                            cursor = c;
+                            return true;
+                        }
+
+                        c.MoveNext();
+                    }
+                }
+            }
+
+            cursor = default;
+            return false;
+        }
+
+        private bool TryGetFieldCursor(string name, ArzRecordOptions options, out ArzFieldCursor cursor)
+        {
+            if (StringTable.TryGet(name, out var nameId))
+            {
+                var fieldMap = GetFieldMap(options);
                 if (fieldMap != null)
                 {
                     if (fieldMap.TryGetValue(nameId, out var fieldPtr))
@@ -747,7 +854,6 @@ namespace Glacie.Data.Arz
         internal int DataOffset => _dataOffset;
         internal int DataSize => _dataSize;
         internal int DataSizeDecompressed => _dataSizeDecompressed;
-        internal long Timestamp => _timestamp;
 
         // TODO: (Low) (ArzRecord) SetRawFieldDataCore & SetFieldDataCore methods do same work, only need to setup different flags.
         internal void SetRawFieldDataCore(byte[] data)
@@ -814,6 +920,30 @@ namespace Glacie.Data.Arz
             if (_fieldMapWeakRef != null)
             {
                 _fieldMapWeakRef.SetTarget(null!);
+            }
+        }
+
+        /// <summary>
+        /// Get field map according to record options.
+        /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        private FieldMap? GetFieldMap(ArzRecordOptions options)
+        {
+            if (_fieldMapWeakRef != null)
+            {
+                if (_fieldMapWeakRef.TryGetTarget(out var value))
+                {
+                    return value;
+                }
+            }
+
+            if ((options & ArzRecordOptions.NoFieldMap) != 0)
+            {
+                return null;
+            }
+            else
+            {
+                return MaybeCreateFieldMap();
             }
         }
 
@@ -1087,7 +1217,7 @@ namespace Glacie.Data.Arz
         #endregion
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        private void LoadFieldDataIfNeed()
+        internal void LoadFieldDataIfNeed()
         {
             if (HasFieldData) return;
             LoadFieldDataSlow();
@@ -1151,6 +1281,22 @@ namespace Glacie.Data.Arz
             _fieldCount = count;
             _numberOfRemovedFields = removedFieldsCount;
             return count;
+        }
+
+        private bool HasAnyFieldSlow()
+        {
+            Check.That(HasFieldData);
+
+            _fdb0.GetCursor(out var c);
+            while (!c.AtEnd)
+            {
+                if (!c.Removed)
+                {
+                    return true;
+                }
+                c.MoveNext();
+            }
+            return false;
         }
 
         // TODO: (VeryLow) (ArzRecord) SetRawValue_ForSingleValue_Obsoleting currently not in use.
@@ -1685,28 +1831,34 @@ namespace Glacie.Data.Arz
             get => (_flags & RecordFlags.FieldDataMask) == RecordFlags.FieldData;
         }
 
-        private bool HasCount
+        internal bool HasCount
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => (_flags & RecordFlags.HasCount) == RecordFlags.HasCount;
+            get => (_flags & RecordFlags.HasCount) != 0;
         }
 
         internal bool IsModified
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => (_flags & RecordFlags.Modified) == RecordFlags.Modified;
+            get => (_flags & RecordFlags.Modified) != 0;
         }
 
         internal bool IsDataModified
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => (_flags & RecordFlags.DataModified) == RecordFlags.DataModified;
+            get => (_flags & RecordFlags.DataModified) != 0;
         }
 
         internal bool IsNew
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => (_flags & RecordFlags.New) == RecordFlags.New;
+            get => (_flags & RecordFlags.New) != 0;
+        }
+
+        internal bool HasExplicitTimestamp
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => (_flags & RecordFlags.ExplicitTimestamp) != 0;
         }
 
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -1736,6 +1888,10 @@ namespace Glacie.Data.Arz
 
             // New record is not backed by file, so we should not ask context for data.
             New = 1 << 6,
+
+            // Has assigned (explicit) timestamp.
+            // New records has no timestamp set, which will be assigned on write.
+            ExplicitTimestamp = 1 << 7,
         }
 
         #endregion

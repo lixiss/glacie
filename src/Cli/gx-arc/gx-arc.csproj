@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>gx-arc</AssemblyName>
+    <RootNamespace>Glacie.Cli.Arc</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Commands\OptimizeCommand.cs" />
+    <Compile Include="Commands\RebuildCommand.cs" />
+    <Compile Include="Commands\RemoveCommand.cs" />
+    <Compile Include="Commands\ReplaceCommand.cs" />
+    <Compile Include="Commands\RemoveMissingCommand.cs" />
+    <Compile Include="Commands\UpdateCommand.cs" />
+    <Compile Include="Commands\Abstract\ProcessInputFilesCommand.cs" />
+    <Compile Include="Commands\Abstract\Command.cs" />
+    <Compile Include="EntryNameUtilities.cs" />
+    <Compile Include="Commands\InfoCommand.cs" />
+    <Compile Include="Commands\ExtractCommand.cs" />
+    <Compile Include="Commands\AddCommand.cs" />
+    <Compile Include="Commands\Abstract\ProcessArchiveCommand.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Commands\ListCommand.cs" />
+    <Compile Include="Commands\VerifyCommand.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20427.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Cli.Core\Glacie.Cli.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

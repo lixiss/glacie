@@ -15,7 +15,7 @@ namespace Glacie.Data.Compression
 
         private IntPtr _compressor;
 
-        public ZlibLibDeflateEncoder(int compressionLevel)
+        public ZlibLibDeflateEncoder(CompressionLevel compressionLevel)
         {
             var compressor = Interop.LibDeflate.libdeflate_alloc_compressor(MapCompressionLevel(compressionLevel));
             if (compressor == IntPtr.Zero) throw Error.InvalidOperation("Failed to allocated compressor.");
@@ -105,11 +105,11 @@ namespace Glacie.Data.Compression
             return (int)result;
         }
 
-        private static int MapCompressionLevel(int compressionLevel)
+        private static int MapCompressionLevel(CompressionLevel compressionLevel)
         {
-            if (compressionLevel < 1) return 1;
-            else if (compressionLevel > 12) return 12;
-            else return compressionLevel;
+            if ((int)compressionLevel < 1) return 1;
+            else if ((int)compressionLevel > 12) return 12;
+            else return (int)compressionLevel;
         }
     }
 }

@@ -5,6 +5,7 @@ namespace Glacie.Tests
 {
     // TODO: (Medium) Complete VariantTests together with API.
 
+    [Trait("Category", "Core")]
     public sealed class VariantTests
     {
         [Fact]

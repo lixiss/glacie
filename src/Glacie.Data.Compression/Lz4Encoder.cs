@@ -10,7 +10,7 @@ namespace Glacie.Data.Compression
     {
         private readonly LZ4I.LZ4Level _compressionLevel;
 
-        public Lz4Encoder(int compressionLevel)
+        public Lz4Encoder(CompressionLevel compressionLevel)
         {
             _compressionLevel = MapCompressionLevel(compressionLevel);
         }
@@ -57,10 +57,10 @@ namespace Glacie.Data.Compression
             }
         }
 
-        private static LZ4I.LZ4Level MapCompressionLevel(int compressionLevel)
+        private static LZ4I.LZ4Level MapCompressionLevel(CompressionLevel compressionLevel)
         {
             // TODO: (Low) Lz4Encoder: Levels 1 and 2 is not mapped. Verify actual LZ4 implementation.
-            switch (compressionLevel)
+            switch ((int)compressionLevel)
             {
                 case 0: return LZ4I.LZ4Level.L00_FAST;
                 case 1: return (LZ4I.LZ4Level)1;
@@ -76,7 +76,7 @@ namespace Glacie.Data.Compression
                 case 11: return LZ4I.LZ4Level.L11_OPT;
                 case 12: return LZ4I.LZ4Level.L12_MAX;
                 default:
-                    if (compressionLevel < 1) return LZ4I.LZ4Level.L00_FAST;
+                    if ((int)compressionLevel < 1) return LZ4I.LZ4Level.L00_FAST;
                     else return LZ4I.LZ4Level.L12_MAX;
             }
         }

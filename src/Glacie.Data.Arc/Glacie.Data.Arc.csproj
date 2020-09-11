@@ -30,7 +30,6 @@
     <Compile Include="ArcStream.cs" />
     <Compile Include="arc_entry_id.cs" />
     <Compile Include="FileFormat\ArcFileEntryType.cs" />
-    <Compile Include="Infrastructure\ArcFileFormat.cs" />
     <Compile Include="FileFormat\ArcFileEntry.cs" />
     <Compile Include="FileFormat\ArcFileHeader.cs" />
     <Compile Include="Infrastructure\ArcEntryChunk.cs" />

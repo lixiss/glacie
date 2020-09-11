@@ -13,7 +13,7 @@ namespace Glacie.Data.Compression
 
         private IO.Compression.CompressionLevel _compressionLevel;
 
-        public ZlibEncoder(int compressionLevel)
+        public ZlibEncoder(CompressionLevel compressionLevel)
         {
             _compressionLevel = MapCompressionLevel(compressionLevel);
         }
@@ -109,10 +109,10 @@ namespace Glacie.Data.Compression
             return 6 + inputLength + 1 + Math.Max((inputLength + 10000 - 1) / 10000, 1) * 5 + 8;
         }
 
-        private static IO.Compression.CompressionLevel MapCompressionLevel(int compressionLevel)
+        private static IO.Compression.CompressionLevel MapCompressionLevel(CompressionLevel compressionLevel)
         {
             // TODO: (Low) Provide information about supported compression levels by encoder.
-            if (compressionLevel < 6) return IO.Compression.CompressionLevel.Fastest;
+            if ((int)compressionLevel < 6) return IO.Compression.CompressionLevel.Fastest;
             else return IO.Compression.CompressionLevel.Optimal;
         }
     }

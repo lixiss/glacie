@@ -8,7 +8,7 @@ namespace Glacie.Data.Arz
     /// <summary>
     /// Acts as factory of ArzDatabase and holds some implementation details.
     /// </summary>
-    internal abstract class ArzContext : IDisposable
+    internal abstract class ArzContext : IArzContext, IDisposable
     {
         private ArzStringTable? _stringTable;
         private ArzRecordClassTable? _recordClassTable;
@@ -65,12 +65,44 @@ namespace Glacie.Data.Arz
             get => _recordClassTable!;
         }
 
-        public abstract ArzFileLayout Layout { get; }
+        public abstract ArzFileFormat Format { get; }
 
         /// <summary>
         /// When true, then file layout might be determined dynamically.
         /// </summary>
-        public abstract bool HasLayoutInference { get; }
+        public abstract bool CanInferFormat { get; }
+
+        public bool TryInferFormat(out ArzFileFormat result)
+        {
+            if (Format.Complete)
+            {
+                result = Format;
+                return true;
+            }
+
+            if (!CanInferFormat)
+            {
+                result = default;
+                return false;
+            }
+
+            var database = Database;
+            Check.That(database != null);
+
+            foreach (var record in database.GetAll())
+            {
+                if (!record.IsNew && !record.HasFieldData)
+                {
+                    record.LoadFieldDataIfNeed();
+                    break;
+                }
+            }
+
+            result = Format;
+            return true;
+        }
+
+        public abstract bool CanReadFieldData { get; }
 
         internal abstract DataBuffer ReadRawFieldDataBuffer(int offset, int compressedSize, int decompressedSize);
 

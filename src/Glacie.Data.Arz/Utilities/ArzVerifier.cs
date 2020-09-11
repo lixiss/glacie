@@ -10,6 +10,7 @@ namespace Glacie.Data.Arz.Utilities
     // For example, reading a strings should verify what their length is correct (fits in file)
     // and all characters in strings are ASCII chars.
     // TODO: (Low) (ArzVerifier) Need API which will provide diagnostic reports, over different levels.
+    // TODO: (Low) (ArzVerifier) Ensure what string table has no same string twice.
     public sealed class ArzVerifier
     {
         public static void Verify(string path)

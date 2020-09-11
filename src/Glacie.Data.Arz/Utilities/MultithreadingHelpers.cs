@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Glacie.Data.Arz.Utilities
+namespace Glacie.Data.Arz
 {
     // TODO: (Low) (Arz) (MultithreadingHelpers) another helper class with one method... Also check how it behave. TPL prefer throw on invalid values.
     internal static class MultithreadingHelpers

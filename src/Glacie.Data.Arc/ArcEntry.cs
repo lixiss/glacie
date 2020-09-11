@@ -2,6 +2,8 @@
 using System.Runtime.CompilerServices;
 using Glacie.Data.Arc.Infrastructure;
 using Glacie.Data.Compression;
+using Glacie.Utilities;
+
 using IO = System.IO;
 
 namespace Glacie.Data.Arc
@@ -44,11 +46,18 @@ namespace Glacie.Data.Arc
         /// </summary>
         /// <remarks>
         /// This property calculated from <see cref="Timestamp"/>.
+        /// This property may throw exception if timestamp value can't be
+        /// represented as DateTimeOffset.
         /// </remarks>
         public DateTimeOffset LastWriteTime
         {
-            get => DateTimeOffset.FromFileTime(Timestamp);
-            set => Timestamp = value.ToFileTime();
+            get => TimestampUtilities.ToDateTimeOffest(Timestamp);
+            set => Timestamp = TimestampUtilities.FromDateTimeOffset(value);
+        }
+
+        public bool TryGetLastWriteTime(out DateTimeOffset result)
+        {
+            return TimestampUtilities.TryConvert(Timestamp, out result);
         }
 
         public IO.Stream Open()

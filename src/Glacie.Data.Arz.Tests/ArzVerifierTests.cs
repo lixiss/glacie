@@ -3,6 +3,7 @@ using Xunit;
 
 namespace Glacie.Data.Arz.Tests
 {
+    [Trait("Category", "ARZ")]
     public sealed class ArzVerifierTests
     {
         [Fact]

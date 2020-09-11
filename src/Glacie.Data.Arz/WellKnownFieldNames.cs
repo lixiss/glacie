@@ -6,6 +6,7 @@ namespace Glacie.Data.Arz
 {
     internal static class WellKnownFieldNames
     {
+        public const string TemplateName = "templateName";
         public const string Class = "Class";
     }
 }

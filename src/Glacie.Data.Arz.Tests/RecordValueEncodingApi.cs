@@ -10,6 +10,7 @@ namespace Glacie.Data.Arz.Tests
     /// <summary>
     /// This tests verifies what values of different types are properly encoded.
     /// </summary>
+    [Trait("Category", "ARZ")]
     public class RecordValueEncodingApi : IDisposable
     {
         private const string FieldName = "--gx-field";

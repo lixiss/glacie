@@ -211,6 +211,8 @@ namespace Glacie.Data.Arc
         /// </summary>
         public ArcFileFormat GetFormat()
         {
+            // TODO: Create GetContext() method which will report Path and Format, similar to ARZ.
+
             ThrowIfDisposed();
             return _format;
         }
@@ -392,7 +394,7 @@ namespace Glacie.Data.Arc
             };
         }
 
-        public void Defragment(IProgress? progress = null)
+        public void Defragment(IIncrementalProgress<long>? progress = null)
         {
             ThrowIfDisposed();
             ThrowInReadMode();
@@ -405,7 +407,7 @@ namespace Glacie.Data.Arc
             DefragmentCore(progress);
         }
 
-        public void Compact(IProgress? progress = null)
+        public void Compact(IIncrementalProgress<long>? progress = null)
         {
             ThrowIfDisposed();
             ThrowInReadMode();
@@ -440,8 +442,7 @@ namespace Glacie.Data.Arc
         }
 
         // TODO: (Low) (ArcArchive) Repack statistics
-        // TODO: (Medium) (ArcArchive) Consider to use System.IProgress<T>. In library we generally want emit simply events, like current/maximum.
-        public void Repack(CompressionLevel? compressionLevel = null, IProgress? progress = null)
+        public void Repack(CompressionLevel? compressionLevel = null, IIncrementalProgress<long>? progress = null)
         {
             ThrowIfDisposed();
             ThrowInReadMode();
@@ -1225,13 +1226,13 @@ namespace Glacie.Data.Arc
             {
                 if ((_useLibDeflate ?? ZlibLibDeflateEncoder.IsSupported) == true)
                 {
-                    return new ZlibLibDeflateEncoder((int)compressionLevel);
+                    return new ZlibLibDeflateEncoder(compressionLevel);
                 }
-                else return new ZlibEncoder((int)compressionLevel);
+                else return new ZlibEncoder(compressionLevel);
             }
             else if (_format.Lz4Compression)
             {
-                return new Lz4Encoder((int)compressionLevel);
+                return new Lz4Encoder(compressionLevel);
             }
             else throw Error.InvalidOperation("Unknown compression algorithm.");
         }
@@ -1395,7 +1396,7 @@ namespace Glacie.Data.Arc
 
         #region Defragment
 
-        private void DefragmentCore(IProgress? progress)
+        private void DefragmentCore(IIncrementalProgress<long>? progress)
         {
             var fragmentedEntries = GetFragmentedEntries(out var fragmentedChunkCount);
             if (fragmentedEntries.Count > 0)
@@ -1403,8 +1404,7 @@ namespace Glacie.Data.Arc
                 DebugCheck.That(_hasEntryTable);
                 DebugCheck.That(_hasChunkTable);
 
-                progress?.SetValue(0);
-                progress?.SetMaxValue(fragmentedChunkCount);
+                progress?.AddMaximumValue(fragmentedEntries.Count);
 
                 foreach (var entryId in fragmentedEntries)
                 {
@@ -1423,9 +1423,9 @@ namespace Glacie.Data.Arc
                         chunk.Offset = checked((uint)outputOffset);
 
                         _wasModified = true;
-
-                        progress?.AddValue(1);
                     }
+
+                    progress?.AddValue(1);
                 }
             }
         }
@@ -1474,7 +1474,7 @@ namespace Glacie.Data.Arc
 
         #region Compact
 
-        private void CompactCore(bool repack, CompressionLevel compressionLevel, IProgress? progress)
+        private void CompactCore(bool repack, CompressionLevel compressionLevel, IIncrementalProgress<long>? progress)
         {
             DebugCheck.That(_numberOfReadLocks == 0);
             DebugCheck.That(_activeWritingStream == null);
@@ -1489,7 +1489,7 @@ namespace Glacie.Data.Arc
                 minAllocatedOffset = allocatedSegments[0].Offset;
             }
 
-            progress?.SetMaxValue(allocatedSegments.Count);
+            progress?.AddMaximumValue(allocatedSegments.Count);
 
             long destinationOffset = Math.Min(minAllocatedOffset, _headerAreaLength);
 
@@ -1497,8 +1497,6 @@ namespace Glacie.Data.Arc
             {
                 var segment = allocatedSegments[i];
                 ref var entry = ref _entryTable[(int)segment.EntryId];
-
-                progress?.SetValue(i);
 
                 if (repack && TryRepackSegment(ref segment, compressionLevel, out var buffer))
                 {
@@ -1542,9 +1540,9 @@ namespace Glacie.Data.Arc
 
                     destinationOffset += segment.Length;
                 }
-            }
 
-            if (progress != null) progress.SetValue(progress.MaxValue);
+                progress?.AddValue(1);
+            }
 
             _hasFreeSegments = false;
             _freeSegments.Clear();
@@ -1705,7 +1703,7 @@ namespace Glacie.Data.Arc
         {
             if (options.Mode == ArcArchiveMode.Create)
             {
-                if (!options.Format.IsComplete)
+                if (!options.Format.Complete)
                 {
                     throw Error.Argument(nameof(options),
                         "You must specify layout when creating new archive.");

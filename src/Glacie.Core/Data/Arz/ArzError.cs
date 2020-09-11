@@ -57,14 +57,14 @@
             return new ArzException("UnknownLayout", "Can't determine file layout.");
         }
 
-        public static ArzException LayoutRequired(string? message = null)
+        public static ArzException FileFormatRequired(string? message = null)
         {
-            return new ArzException("LayoutRequired", message ?? "Layout is required.");
+            return new ArzException("FileFormatRequired", message ?? "File format is required.");
         }
 
-        public static ArzException InvalidLayout(string? message = null)
+        public static ArzException InvalidFileFormat(string? message = null)
         {
-            return new ArzException("InvalidLayout", message ?? "Specified layout is invalid.");
+            return new ArzException("InvalidFileFormat", message ?? "Specified file format is invalid.");
         }
 
         public static ArzException RecordHasNoClass(string recordName)

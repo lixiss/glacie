@@ -142,8 +142,10 @@ namespace Glacie.Data.Arz.FileFormat
             }
         }
 
-        public void WriteString(string value)
+        public void WriteString(string? value)
         {
+            value ??= "";
+
             byte[]? rentedBuffer = null;
             try
             {
@@ -255,19 +257,19 @@ namespace Glacie.Data.Arz.FileFormat
 
         #region Record Table
 
-        public RecordTableReaderWriter GetRecordTableReaderWriter(ArzFileLayout fileLayout, ArzRecordClassTable recordClassTable)
-            => new RecordTableReaderWriter(this, fileLayout, recordClassTable);
+        public RecordTableReaderWriter GetRecordTableReaderWriter(ArzFileFormat format, ArzRecordClassTable recordClassTable)
+            => new RecordTableReaderWriter(this, format, recordClassTable);
 
         public readonly struct RecordTableReaderWriter
         {
             private readonly ArzFileStream _afStream;
-            private readonly ArzFileLayout _fileLayout;
+            private readonly ArzFileFormat _format;
             private readonly ArzRecordClassTable _recordClassTable;
 
-            public RecordTableReaderWriter(ArzFileStream afStream, ArzFileLayout fileLayout, ArzRecordClassTable recordClassTable)
+            public RecordTableReaderWriter(ArzFileStream afStream, ArzFileFormat format, ArzRecordClassTable recordClassTable)
             {
                 _afStream = afStream;
-                _fileLayout = fileLayout;
+                _format = format;
                 _recordClassTable = recordClassTable;
             }
 
@@ -311,7 +313,7 @@ namespace Glacie.Data.Arz.FileFormat
 
                 Span<byte> span = stackalloc byte[4 + 4 + 4 + 8];
 
-                if (!_fileLayout.RecordHasDecompressedSize())
+                if (!_format.RecordHasDecompressedLength)
                 {
                     span = span.Slice(0, 4 + 4 + 8);
                 }
@@ -325,7 +327,7 @@ namespace Glacie.Data.Arz.FileFormat
                 value.DataOffset = BP.ReadInt32LittleEndian(span);
                 value.DataSize = BP.ReadInt32LittleEndian(span.Slice(4));
 
-                if (_fileLayout.RecordHasDecompressedSize())
+                if (_format.RecordHasDecompressedLength)
                 {
                     value.DataSizeDecompressed = BP.ReadInt32LittleEndian(span.Slice(8));
                     value.Timestamp = BP.ReadInt64LittleEndian(span.Slice(12));
@@ -351,7 +353,7 @@ namespace Glacie.Data.Arz.FileFormat
 
                 Span<byte> span = stackalloc byte[20]; // 4 + 4 + 4 + 8
 
-                if (!_fileLayout.RecordHasDecompressedSize())
+                if (!_format.RecordHasDecompressedLength)
                 {
                     span = span.Slice(0, 16); // 4 + 4 + 8
                 }
@@ -359,9 +361,9 @@ namespace Glacie.Data.Arz.FileFormat
                 BP.WriteInt32LittleEndian(span, value.DataOffset);
                 BP.WriteInt32LittleEndian(span.Slice(4), value.DataSize);
 
-                if (_fileLayout.RecordHasDecompressedSize())
+                if (_format.RecordHasDecompressedLength)
                 {
-                    var decompressedSize = _fileLayout.ShouldEmitDecompressedSize() ? value.DataSizeDecompressed : 0;
+                    var decompressedSize = _format.MustSetDecompressedLength ? value.DataSizeDecompressed : 0;
                     BP.WriteInt32LittleEndian(span.Slice(8), decompressedSize);
                     BP.WriteInt64LittleEndian(span.Slice(12), value.Timestamp);
                 }

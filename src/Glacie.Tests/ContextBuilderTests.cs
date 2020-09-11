@@ -5,6 +5,7 @@ using Xunit;
 
 namespace Glacie.Tests
 {
+    [Trait("Category", "GX")]
     public sealed class ContextBuilderTests : GlacieTests
     {
         #region Record Linking And Shadowing

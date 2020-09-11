@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Glacie.CommandLine</AssemblyName>
+    <RootNamespace>Glacie.CommandLine</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="IConsole.cs" />
+    <Compile Include="IO\IStandardError.cs" />
+    <Compile Include="IO\IStandardIn.cs" />
+    <Compile Include="IO\IStandardOut.cs" />
+    <Compile Include="IO\IStandardStreamWriter.cs" />
+    <Compile Include="IO\StandardStreamWriter.cs" />
+    <Compile Include="IO\StandardStreamWriterExtensions.cs" />
+    <Compile Include="IO\SystemConsole.cs" />
+    <Compile Include="UI\ProgressValueScaleType.cs" />
+    <Compile Include="UI\ProgressValueUnit.cs" />
+    <Compile Include="UI\Rendering\BarFormatter.cs" />
+    <Compile Include="UI\Rendering\IndeterminateBarFormatter.cs" />
+    <Compile Include="UI\Rendering\ProgressViewBarRenderer.cs" />
+    <Compile Include="UI\ProgressView.cs" />
+    <Compile Include="UI\Rendering\UnitFormatter.cs" />
+    <Compile Include="UI\BufferedTerminalStreamWriter.cs" />
+    <Compile Include="UI\TerminalStreamWriter.cs" />
+    <Compile Include="UI\View.cs" />
+    <Compile Include="UI\Rendering\StringUtilities.cs" />
+    <Compile Include="Rendering\ITerminal.cs" />
+    <Compile Include="Rendering\Renderer.cs" />
+    <Compile Include="Rendering\Terminal.cs" />
+    <Compile Include="UI\Terminal.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Rendering\Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>

@@ -8,6 +8,8 @@
 
         public ArzStringEncoder(ArzStringTable source, ArzStringTable target)
         {
+            // TODO: allocate uninitialized array and then fill it with special value (-1)
+
             _map = new arz_string_id[source.Count];
             _source = source;
             _target = target;
@@ -29,6 +31,7 @@
                 // lock (_map)
                 {
                     // TODO: (Low) (ArzStringEncoder) Might use Add instead of GetOrAdd, but then will need track not mapped not by zero, but with special value (like -1).
+                    // This might be achieved by allocate uninitialized array and fill it with special value.
                     encodedValue = _target.GetOrAdd(_source[sourceStringIndex]);
                     return _map[(int)sourceStringIndex] = encodedValue;
                 }

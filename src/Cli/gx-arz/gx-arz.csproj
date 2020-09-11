@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>gx-arz</AssemblyName>
+    <RootNamespace>Glacie.Cli.Arz</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Commands\DatabaseCommand.cs" />
+    <Compile Include="Commands\BuildCommand.cs" />
+    <Compile Include="Commands\VerifyCommand.cs" />
+    <Compile Include="Commands\OptimizeCommand.cs" />
+    <Compile Include="Commands\InfoCommand.cs" />
+    <Compile Include="Commands\ExtractCommand.cs" />
+    <Compile Include="Commands\Abstract\ProcessInputFilesCommand.cs" />
+    <Compile Include="Dbr\DbrReader.cs" />
+    <Compile Include="Dbr\DbrRenderer.cs" />
+    <Compile Include="Dbr\DbrUtility.cs" />
+    <Compile Include="Templates\FieldDefinition.cs" />
+    <Compile Include="Templates\IRecordDefinitionProvider.cs" />
+    <Compile Include="Templates\RecordDefinitionBuilder.cs" />
+    <Compile Include="Templates\RecordDefinition.cs" />
+    <Compile Include="Templates\EphemeralRecordDefinitionProvider.cs" />
+    <Compile Include="Dbr\WellKnownFieldNames.cs" />
+    <Compile Include="Processors\ArzDbrRefOptimizer.cs" />
+    <Compile Include="RecordNameUtilities.cs" />
+    <Compile Include="Commands\Abstract\Command.cs" />
+    <Compile Include="Commands\ListCommand.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Templates\CachedStringTransform.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20427.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Cli.Core\Glacie.Cli.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Adapters\" />
+  </ItemGroup>
+
+</Project>

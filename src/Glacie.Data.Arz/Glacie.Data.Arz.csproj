@@ -28,10 +28,9 @@
     <Compile Include="ArzField.cs" />
     <Compile Include="arz_field_ptr.cs" />
     <Compile Include="Context\ArzMemoryContext.cs" />
+    <Compile Include="Context\IArzContext.cs" />
     <Compile Include="FileFormat\ArzFileFooter.cs" />
     <Compile Include="FileFormat\ArzFileHeader.cs" />
-    <Compile Include="Infrastructure\ArzFileLayout.cs" />
-    <Compile Include="Infrastructure\ArzFileLayoutExtensions.cs" />
     <Compile Include="FileFormat\ArzFileRecord.cs" />
     <Compile Include="FileFormat\ArzFileStream.cs" />
     <Compile Include="Infrastructure\ArzRecordClassTable.cs" />
@@ -39,9 +38,9 @@
     <Compile Include="Infrastructure\ArzStringTable.cs" />
     <Compile Include="Infrastructure\arz_string_id.cs" />
     <Compile Include="Infrastructure\IArzRecordMetrics.cs" />
+    <Compile Include="Utilities\ArrayUtilities.cs" />
     <Compile Include="Utilities\ArzChecksum.cs" />
     <Compile Include="Utilities\ArzVerifier.cs" />
-    <Compile Include="Utilities\Multitargeting.cs" />
     <Compile Include="Utilities\MultithreadingHelpers.cs" />
     <Compile Include="Utilities\_ArzInspector.cs" />
     <Compile Include="ArzRecord.cs" />

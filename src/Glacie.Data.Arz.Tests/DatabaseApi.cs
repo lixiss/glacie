@@ -6,6 +6,7 @@ namespace Glacie.Data.Arz.Tests
 {
     // TODO: (Low) (DatabaseApi Tests) - rename, and review.
 
+    [Trait("Category", "ARZ")]
     public sealed class DatabaseApi
     {
         #region Create

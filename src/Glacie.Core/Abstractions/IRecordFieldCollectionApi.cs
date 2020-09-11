@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 
+using Glacie.Data.Arz;
+
 namespace Glacie.Abstractions
 {
     // TODO: (Low) Rename to IFieldCollectionApiContract.
@@ -8,9 +10,17 @@ namespace Glacie.Abstractions
     internal interface IRecordFieldCollectionApi<TField, TFieldOrNull, TFieldOutOrNull>
     {
         IEnumerable<TField> GetAll();
-        TField Get(string name);
-        TFieldOrNull GetOrNull(string name);
+
         bool TryGet(string name, out TFieldOutOrNull value);
+        bool TryGet(string name, ArzRecordOptions options, out TFieldOutOrNull value);
+
+        bool Remove(string name);
         bool Remove(TField field);
+
+        TField Get(string name);
+        TField Get(string name, ArzRecordOptions options);
+
+        TFieldOrNull GetOrNull(string name);
+        TFieldOrNull GetOrNull(string name, ArzRecordOptions options);
     }
 }

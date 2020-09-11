@@ -22,16 +22,16 @@ namespace Glacie.Data.Arz
     {
         #region API
 
-        public static void Write(string path, ArzDatabase database, ArzWriterOptions? options = null)
+        public static void Write(string path, ArzDatabase database, ArzWriterOptions? options = null, IIncrementalProgress<int>? progress = null)
         {
             using var stream = IO.File.Open(path, IO.FileMode.OpenOrCreate, IO.FileAccess.ReadWrite, IO.FileShare.None);
-            Write(stream, database, options);
+            Write(stream, database, options, progress);
         }
 
-        public static void Write(IO.Stream stream, ArzDatabase database, ArzWriterOptions? options = null)
+        public static void Write(IO.Stream stream, ArzDatabase database, ArzWriterOptions? options = null, IIncrementalProgress<int>? progress = null)
         {
             using var writer = new ArzWriter(database, options ?? new ArzWriterOptions());
-            writer.Write(stream);
+            writer.Write(stream, progress);
         }
 
         #endregion
@@ -44,13 +44,13 @@ namespace Glacie.Data.Arz
         private readonly bool _multithreadedWriting;
         private readonly int _maxDegreeOfParallelism;
         private readonly bool _useLibDeflate;
-        private ArzFileLayout _afLayout;
+        private ArzFileFormat _format;
         private readonly bool _inferRecordClass;
         private readonly bool _changesOnly;
         private bool _forceCompression;
         private bool _optimizeStringTable;
         private readonly bool _calculateChecksum;
-        private readonly int _compressionLevel;
+        private readonly CompressionLevel _compressionLevel;
 
         // state
         private ArzFileStream _afStream;
@@ -61,6 +61,7 @@ namespace Glacie.Data.Arz
         private bool _afStringTableIsCompatibleWithRawFieldData;
         private long _modifiedTimestamp;
         private ArzContext _context;
+        private bool _contextCanReadFieldData;
 
         private ArzWriter(ArzDatabase database, ArzWriterOptions options)
         {
@@ -70,7 +71,7 @@ namespace Glacie.Data.Arz
             _multithreadedWriting = options.Multithreaded;
             _maxDegreeOfParallelism = options.MaxDegreeOfParallelism;
             _useLibDeflate = options.UseLibDeflate ?? ZlibLibDeflateEncoder.IsSupported;
-            _afLayout = options.Layout;
+            _format = options.Format;
             _inferRecordClass = options.InferRecordClass;
             _optimizeStringTable = options.OptimizeStringTable;
             _forceCompression = options.ForceCompression;
@@ -88,7 +89,7 @@ namespace Glacie.Data.Arz
             _context = null!;
         }
 
-        public void Write(IO.Stream stream)
+        public void Write(IO.Stream stream, IIncrementalProgress<int>? progress = null)
         {
             CheckStream(stream);
             InferAndCheckLayout();
@@ -96,12 +97,13 @@ namespace Glacie.Data.Arz
 
             // Header with magic and version
             ArzFileHeader afHeader;
-            if (!TryCreateHeaderForLayout(_afLayout, out afHeader))
+            if (!TryCreateHeaderForLayout(_format, out afHeader))
             {
                 throw Error.InvalidOperation("Can't create header for file layout.");
             }
 
             _context = _database.Context;
+            _contextCanReadFieldData = _context.CanReadFieldData;
             var sourceStringTable = _context.StringTable;
 
             ArzStringTable afStringTable;
@@ -136,10 +138,8 @@ namespace Glacie.Data.Arz
                     {
                         if (_inferRecordClass)
                         {
-                            // TODO: (Medium) (ArzWriter) At this stage we doesn't want trigger re-creating of field map.
-                            // Add this service into context and check in record.
-                            // Also try to finish this operation in single op / may be as internal call.
-                            if (record.TryGet(WellKnownFieldNames.Class, out var classField))
+                            // TODO: (Low) (ArzWriter) Getting templateName/Class as internal methods?
+                            if (record.TryGet(WellKnownFieldNames.Class, ArzRecordOptions.NoFieldMap, out var classField))
                             {
                                 if (classField.ValueType != ArzValueType.String && classField.Count != 1)
                                 {
@@ -165,6 +165,7 @@ namespace Glacie.Data.Arz
                     outputRecords.Add(record);
                 }
             }
+            progress?.AddMaximumValue(outputRecords.Count);
 
             // Header
             _afStream = new ArzFileStream(stream);
@@ -172,7 +173,7 @@ namespace Glacie.Data.Arz
             _afStream.WriteHeader(in afHeader);
 
             // Record Table
-            var recordWriter = _afStream.GetRecordTableReaderWriter(_afLayout, _context.RecordClassTable);
+            var recordWriter = _afStream.GetRecordTableReaderWriter(_format, _context.RecordClassTable);
 
             // Produce Records:
             // It should process record one by one and provide record data
@@ -191,11 +192,11 @@ namespace Glacie.Data.Arz
             if (_multithreadedWriting)
             {
                 var effectiveDegreeOfParallelism = MultithreadingHelpers.GetEffectiveDegreeOfParallelism(_maxDegreeOfParallelism);
-                WriteRecordsMultithreaded(outputRecords, effectiveDegreeOfParallelism);
+                WriteRecordsMultithreaded(outputRecords, effectiveDegreeOfParallelism, progress);
             }
             else
             {
-                WriteRecordsSinglethreaded(outputRecords);
+                WriteRecordsSinglethreaded(outputRecords, progress);
             }
 
             var afRecordsCount = _afRecordIndex;
@@ -245,11 +246,11 @@ namespace Glacie.Data.Arz
         }
 
         // TODO: (Low) (ArzWriter) This is reverse of ArzFileContext::TryGetFileLayout - move them into some helper.
-        private static bool TryCreateHeaderForLayout(ArzFileLayout layout, out ArzFileHeader header)
+        private static bool TryCreateHeaderForLayout(ArzFileFormat format, out ArzFileHeader header)
         {
-            if ((layout & ArzFileLayout.RecordHasDecompressedSize) != 0)
+            if (format.RecordHasDecompressedLength)
             {
-                if ((layout & ArzFileLayout.UseLz4Compression) != 0)
+                if (format.UseLz4Compression)
                 {
                     // Grim Dawn 1.1.7.1
                     header = new ArzFileHeader
@@ -259,7 +260,7 @@ namespace Glacie.Data.Arz
                     };
                     return true;
                 }
-                else if ((layout & ArzFileLayout.UseZlibCompression) != 0)
+                else if (format.UseZlibCompression)
                 {
                     // Titan Quest
                     // Titan Quest: Immortal Throne
@@ -273,7 +274,7 @@ namespace Glacie.Data.Arz
             }
             else
             {
-                if ((layout & ArzFileLayout.UseZlibCompression) != 0)
+                if (format.UseZlibCompression)
                 {
                     // Titan Quest Anniversary Edition (2.9)
                     header = new ArzFileHeader
@@ -299,41 +300,31 @@ namespace Glacie.Data.Arz
 
         private void InferAndCheckLayout()
         {
-            if (_afLayout == ArzFileLayout.None)
+            if (_format == ArzFileFormat.Automatic)
             {
-                // TODO: (Low) (ArzWriter) (Undecided) Force layout inference is work, but not sure what this should exist.
-                var layout = _database.Context.Layout;
-                if (!layout.IsComplete() && _database.Context.HasLayoutInference)
-                {
-                    foreach (var record in _database.GetAll())
-                    {
-                        if (!record.IsNew)
-                        {
-                            // Trigger field counting, so record will be loaded.
-                            var fieldCount = record.Count;
-                            layout = _database.Context.Layout;
-                            break;
-                        }
-                    }
-                }
-                _afLayout = layout;
+                _database.Context.TryInferFormat(out _format);
             }
 
-            if (_afLayout == ArzFileLayout.None)
-                throw ArzError.LayoutRequired("Layout has not been inferred from database. You should specify it manually.");
+            if (_format == ArzFileFormat.Automatic)
+                throw ArzError.FileFormatRequired("Layout has not been inferred from database. You should specify it manually.");
 
-            if (!_afLayout.IsValid())
-                throw ArzError.InvalidLayout();
+            if (!_format.Valid)
+                throw ArzError.InvalidFileFormat();
 
-            if (!_afLayout.IsComplete())
-                throw ArzError.LayoutRequired("Incomplete layout. You should specify layout in writer options.");
+            if (!_format.Complete)
+                throw ArzError.FileFormatRequired("Incomplete format. You should specify format in writer options.");
         }
 
         private void AdjustLayoutDependentOptions()
         {
             // When source and target files has different compression algorithms,
             // we should re-encode everything.
-            if (!_afLayout.CompressionAlgorithmCompatibleWith(_database.Context.Layout))
+            if (!_database.Context.Format.Complete)
+            {
+                _database.Context.TryInferFormat(out var _);
+            }
+
+            if (!_format.CompressionAlgorithmCompatibleWith(_database.Context.Format))
             {
                 _forceCompression = true;
             }
@@ -347,7 +338,7 @@ namespace Glacie.Data.Arz
 
         private Encoder CreateEncoder()
         {
-            if ((_afLayout & ArzFileLayout.UseZlibCompression) == ArzFileLayout.UseZlibCompression)
+            if (_format.UseZlibCompression)
             {
                 if (_useLibDeflate)
                 {
@@ -358,7 +349,7 @@ namespace Glacie.Data.Arz
                     return new ZlibEncoder(_compressionLevel);
                 }
             }
-            else if ((_afLayout & ArzFileLayout.UseLz4Compression) == ArzFileLayout.UseLz4Compression)
+            else if (_format.UseLz4Compression)
             {
                 return new Lz4Encoder(_compressionLevel);
             }

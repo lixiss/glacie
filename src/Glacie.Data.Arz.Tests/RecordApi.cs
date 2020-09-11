@@ -5,6 +5,7 @@ namespace Glacie.Data.Arz.Tests
 {
     // TODO: (Low) (RecordApi Tests) - rename, and review.
 
+    [Trait("Category", "ARZ")]
     public sealed class RecordApi : IDisposable
     {
         private readonly ArzDatabase _database;

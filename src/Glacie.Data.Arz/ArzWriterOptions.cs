@@ -1,4 +1,4 @@
-﻿using Glacie.Data.Arz.Infrastructure;
+﻿using Glacie.Data.Compression;
 
 namespace Glacie.Data.Arz
 {
@@ -35,7 +35,7 @@ namespace Glacie.Data.Arz
         /// </summary>
         public bool? UseLibDeflate { get; set; } = null;
 
-        public ArzFileLayout Layout { get; set; } = ArzFileLayout.None;
+        public ArzFileFormat Format { get; set; } = ArzFileFormat.Automatic;
 
         // TODO: (Medium) (ArzWriter) InferRecordClass - not sure about this feature. Generally correct code should not rely on this option.
         public bool InferRecordClass { get; set; } = true;
@@ -64,7 +64,7 @@ namespace Glacie.Data.Arz
         /// <summary>
         /// Specifies compression level (1..12).
         /// </summary>
-        public int CompressionLevel { get; set; } = 0;
+        public CompressionLevel CompressionLevel { get; set; } = 0;
 
         public bool ComputeChecksum { get; set; } = false;
     }

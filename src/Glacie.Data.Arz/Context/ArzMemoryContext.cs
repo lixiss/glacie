@@ -44,9 +44,11 @@ namespace Glacie.Data.Arz
                 database: new ArzDatabase(this, new List<ArzRecord>()));
         }
 
-        public override bool HasLayoutInference => false;
+        public override bool CanInferFormat => false;
 
-        public override ArzFileLayout Layout => ArzFileLayout.None;
+        public override bool CanReadFieldData => false;
+
+        public override ArzFileFormat Format => default;
 
         internal override DataBuffer ReadRawFieldDataBuffer(int offset, int compressedSize, int decompressedSize)
         {

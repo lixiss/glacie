@@ -9,6 +9,7 @@ namespace Glacie.Data.Arz.Tests
     // TODO: (Low) (MutatingRecordApi Tests) - check what version keep increasing and/or modified flag are applied.
     // TODO: (Low) (MutatingRecordApi Tests) - create fuzzy/random mutations and check results with simulated expected results. Also good for benchmarking.
 
+    [Trait("Category", "ARZ")]
     public sealed class MutatingRecordApi : IDisposable
     {
         private readonly ArzDatabase _database;
