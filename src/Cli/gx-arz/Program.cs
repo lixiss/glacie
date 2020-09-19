@@ -186,8 +186,8 @@ namespace Glacie.Cli.Arz
                 {
                     Arity = ArgumentArity.OneOrMore,
                 },
-                // TODO: I want to specify two definition sources: one database, and second templates. Then they should be merged somehow.
-                new Option<string>(new[]{ "--definitions", "--templates" }, "Path to record definitions (templates). This value might be: directory with .tpl files, path to .arc or .zip file with template files or path to .arz database which will be used to as source of ephemeral record definitions. When this option is not specified, then <database> argument is used as record definition source."),
+                new Option<string>(new[]{ "--metadata" }, "Path to metadata (templates). This value might be: directory with .tpl files, path to .arc or .zip file with template files or path to .arz database which will be used to as source of ephemeral metadata source. When this option is not specified, then <database> argument is used as ephemeral metadata source."),
+                new Option<string>(new[]{ "--metadata-fallback" }, "Specifies additional metadata source which will be used if field type is not found in metadata."),
                 new Option<string>("--output", "Path to output database file. If not specified, input database will be replaced"),
                 new Option<string>("--relative-to", () => ".", "Specifies base directory (record names will be generated relative to this path)."),
                 new Option<ArzFileFormat>("--format",

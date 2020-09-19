@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Data.Metadata</AssemblyName>
+    <RootNamespace>Glacie.Data.Metadata</RootNamespace>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Abstractions\IDatabaseType.cs" />
+    <Compile Include="Abstractions\IFieldType.cs" />
+    <Compile Include="Abstractions\IFieldGroup.cs" />
+    <Compile Include="Abstractions\IRecordType.cs" />
+    <Compile Include="Abstractions\IRecordTypeProvider`1.cs" />
+    <Compile Include="Abstractions\IRecordTypeProvider.cs" />
+    <Compile Include="Emit\DatabaseTypeBuilder.cs" />
+    <Compile Include="Emit\ExpressionVariableDeclarationBuilder.cs" />
+    <Compile Include="Emit\FieldTypeBuilder.cs" />
+    <Compile Include="Emit\FieldGroupBuilder.cs" />
+    <Compile Include="Emit\RecordTypeBuilder.cs" />
+    <Compile Include="DatabaseType.cs" />
+    <Compile Include="DescriptionUtilities.cs" />
+    <Compile Include="ExpressionVariableDeclaration.cs" />
+    <Compile Include="FieldType.cs" />
+    <Compile Include="FieldGroupDefinition.cs" />
+    <Compile Include="NameSymbols\NameSymbol.cs" />
+    <Compile Include="NameSymbols\RecordFieldNameSymbolExtensions.cs" />
+    <Compile Include="NameSymbols\NameSymbolExtensions.cs" />
+    <Compile Include="NameSymbols\RecordFieldNameSymbol.cs" />
+    <Compile Include="RecordType.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

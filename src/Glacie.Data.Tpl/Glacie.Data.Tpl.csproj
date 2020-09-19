@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Data.Tpl</AssemblyName>
+    <RootNamespace>Glacie.Data.Tpl</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Assembly.cs" />
+    <Compile Include="DiagnosticFactory.cs" />
+    <Compile Include="DiagnosticDefinitions.cs" />
+    <Compile Include="ITemplateProcessor.cs" />
+    <Compile Include="TemplateTree\TemplateVariable.cs" />
+    <Compile Include="TemplateTree\TemplateGroup.cs" />
+    <Compile Include="TemplateTree\TemplateNode.cs" />
+    <Compile Include="TemplateTree\Template.cs" />
+    <Compile Include="TemplateWriter.cs" />
+    <Compile Include="TokenExtensions.cs" />
+    <Compile Include="TemplateReader.cs" />
+    <Compile Include="TokenReader.cs" />
+    <Compile Include="TokenType.cs" />
+    <Compile Include="Token.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

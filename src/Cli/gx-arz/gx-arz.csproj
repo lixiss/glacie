@@ -24,14 +24,12 @@
     <Compile Include="Templates\IRecordDefinitionProvider.cs" />
     <Compile Include="Templates\RecordDefinitionBuilder.cs" />
     <Compile Include="Templates\RecordDefinition.cs" />
-    <Compile Include="Templates\EphemeralRecordDefinitionProvider.cs" />
     <Compile Include="Dbr\WellKnownFieldNames.cs" />
     <Compile Include="Processors\ArzDbrRefOptimizer.cs" />
     <Compile Include="RecordNameUtilities.cs" />
     <Compile Include="Commands\Abstract\Command.cs" />
     <Compile Include="Commands\ListCommand.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Templates\CachedStringTransform.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,7 +42,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\..\Glacie.Data.Tpl\Glacie.Data.Tpl.csproj" />
     <ProjectReference Include="..\..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\..\Glacie.Metadata\Glacie.Metadata.csproj" />
+    <ProjectReference Include="..\..\Glacie.Targeting\Glacie.Targeting.csproj" />
     <ProjectReference Include="..\Glacie.Cli.Core\Glacie.Cli.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
     <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
     <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />

@@ -6,6 +6,7 @@ using System.Linq;
 
 namespace Glacie.Cli.Arz.Templates
 {
+    [Obsolete("Remove me.", true)]
     public sealed class RecordDefinition
     {
         private readonly string _name;

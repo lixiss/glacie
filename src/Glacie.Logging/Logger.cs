@@ -5,6 +5,8 @@ namespace Glacie.Logging
 {
     public abstract class Logger
     {
+        public static Logger Null => NullLogger.Instance;
+
         private LogLevel _level;
 
         protected Logger(LogLevel level)

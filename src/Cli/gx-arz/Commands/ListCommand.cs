@@ -1,4 +1,7 @@
-﻿using Glacie.CommandLine.IO;
+﻿using System;
+using System.Linq;
+
+using Glacie.CommandLine.IO;
 using Glacie.Data.Arz;
 
 namespace Glacie.Cli.Arz.Commands
@@ -18,9 +21,13 @@ namespace Glacie.Cli.Arz.Commands
             using ArzDatabase database = ReadDatabase(Database,
                 CreateReaderOptions(ArzReadingMode.Lazy));
 
-            foreach (var record in database.GetAll())
+            var qRecordNames = database.GetAll()
+                .Select(x => x.Name)
+                .OrderBy(x => x, NaturalOrderStringComparer.Ordinal);
+
+            foreach (var recordName in qRecordNames)
             {
-                Console.Out.WriteLine(record.Name);
+                Console.Out.WriteLine(recordName);
             }
 
             return 0;

@@ -5,6 +5,11 @@ namespace Glacie.CommandLine.IO
 {
     public static class StandardStreamWriterExtensions
     {
+        public static void Write(this IStandardStreamWriter writer, string format, params object?[] args)
+        {
+            writer.Write(string.Format(CultureInfo.InvariantCulture, format, args));
+        }
+
         public static void WriteLine(this IStandardStreamWriter writer)
         {
             writer.Write(Environment.NewLine);

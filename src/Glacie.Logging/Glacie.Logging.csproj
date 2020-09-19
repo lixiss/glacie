@@ -13,6 +13,7 @@
   <ItemGroup>
     <Compile Include="LoggerExtensions.cs" />
     <Compile Include="Logger.cs" />
+    <Compile Include="NullLogger.cs" />
     <Compile Include="_ILogger.cs" />
     <Compile Include="ILogger.cs" />
     <Compile Include="LogLevel.cs" />

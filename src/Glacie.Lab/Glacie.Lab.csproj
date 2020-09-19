@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Lab</AssemblyName>
+    <RootNamespace>Glacie.Lab</RootNamespace>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Command.cs" />
+    <None Include="Metadata\_old-NC-CreateMetadataCommand2.cs" />
+    <Compile Include="Metadata\CreateMetadataCommand.cs" />
+    <Compile Include="Metadata\XmlDatabaseDefinitionWriter.cs" />
+    <Compile Include="Metadata\FileSystemTemplateResolver.cs" />
+    <Compile Include="Metadata\ITemplateProvider.cs" />
+    <Compile Include="Metadata\ITemplateResolver.cs" />
+    <Compile Include="Metadata\TemplateParser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.CommandLine\Glacie.CommandLine.csproj" />
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Data.Tpl\Glacie.Data.Tpl.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Metadata\Glacie.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Resources\Glacie.Resources.csproj" />
+    <ProjectReference Include="..\Glacie\Glacie.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Configuration\" />
+  </ItemGroup>
+
+</Project>

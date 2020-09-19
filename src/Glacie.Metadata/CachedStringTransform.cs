@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Glacie.Cli.Arz.Templates
+namespace Glacie.Metadata
 {
-    // TODO: This is dirty.
+    // TODO: (Low) CachingStringTransform is not in use and incomplete. Also move to Core/Utilities.
 
     internal sealed class CachedStringTransform
     {

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>gx</AssemblyName>
+    <RootNamespace>Glacie.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20427.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Cli.Core\Glacie.Cli.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

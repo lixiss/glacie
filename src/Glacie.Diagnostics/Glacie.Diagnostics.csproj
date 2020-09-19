@@ -11,6 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Diagnostic.cs" />
+    <Compile Include="DiagnosticBag.cs" />
+    <Compile Include="DiagnosticDefinition.cs" />
+    <Compile Include="DiagnosticException.cs" />
+    <Compile Include="DiagnosticFormatter.cs" />
+    <Compile Include="DiagnosticSeverity.cs" />
+    <Compile Include="Hash.cs" />
+    <Compile Include="Location\FileLocation.cs" />
+    <Compile Include="Location\Location.cs" />
+    <Compile Include="Location\LocationKind.cs" />
+    <Compile Include="Location\NoLocation.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +33,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="System.Collections.Immutable" Version="1.7.1" />
   </ItemGroup>
 
 </Project>

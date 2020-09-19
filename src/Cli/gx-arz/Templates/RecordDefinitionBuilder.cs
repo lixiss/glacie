@@ -4,6 +4,7 @@ using System.Linq;
 
 namespace Glacie.Cli.Arz.Templates
 {
+    [Obsolete("Remove me.", true)]
     public sealed class RecordDefinitionBuilder
     {
         private string? _name;

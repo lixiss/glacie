@@ -1,4 +1,6 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
+using System.Linq;
 
 using Glacie.CommandLine.IO;
 using Glacie.Data.Arc;
@@ -33,9 +35,13 @@ namespace Glacie.Cli.Arc.Commands
 
         private void ListArchive(ArcArchive archive)
         {
-            foreach (var entry in archive.GetEntries())
+            var qEntryNames = archive.GetEntries()
+                .Select(x => x.Name)
+                .OrderBy(x => x, NaturalOrderStringComparer.Ordinal);
+
+            foreach (var entryName in qEntryNames)
             {
-                Console.Out.WriteLine(entry.Name);
+                Console.Out.WriteLine(entryName);
             }
         }
     }

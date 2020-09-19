@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Text;
 
 using Glacie.Cli.Arz.Dbr;
-using Glacie.Cli.Arz.Templates;
 using Glacie.CommandLine.IO;
 using Glacie.Data.Arz;
 using Glacie.Data.Compression;
+using Glacie.Metadata;
+using Glacie.Targeting;
 
 using IO = System.IO;
 
@@ -23,7 +25,8 @@ namespace Glacie.Cli.Arz.Commands
             RemoveMissing,
         }
 
-        public string? DefinitionsPath { get; }
+        public string? MetadataPath { get; }
+        public string? MetadataFallbackPath { get; }
 
         private bool _detailed = false;
 
@@ -38,9 +41,11 @@ namespace Glacie.Cli.Arz.Commands
 
         private DbrReader? _dbrReader;
 
-        private ArzDatabase? _definitionsDatabase;
-        private bool _mustDisposeDefinitionsDatabase;
-        private EphemeralRecordDefinitionProvider? _arzRecordDefinitionProvider;
+        private MetadataProvider? _metadataProvider;
+        private MetadataProvider? _metadataFallbackProvider;
+
+        private ArzDatabase? _ephemeralMetadataDatabase;
+        private bool _mustDisposeEphemeralMetadataDatabase;
 
         public BuildCommand(
             string database,
@@ -51,7 +56,8 @@ namespace Glacie.Cli.Arz.Commands
             bool checksum,
             bool safeWrite,
             bool preserveCase,
-            string? definitions = null,
+            string? metadata = null,
+            string? metadataFallback = null,
             string? output = null)
             : base(database: database,
                  input: input,
@@ -63,7 +69,8 @@ namespace Glacie.Cli.Arz.Commands
                  preserveCase: preserveCase,
                  output: output)
         {
-            DefinitionsPath = definitions;
+            MetadataPath = metadata;
+            MetadataFallbackPath = metadataFallback;
         }
 
         protected override void Dispose(bool disposing)
@@ -73,12 +80,15 @@ namespace Glacie.Cli.Arz.Commands
                 _dbrReader?.Dispose();
                 _dbrReader = null;
 
-                _arzRecordDefinitionProvider?.Dispose();
-                _arzRecordDefinitionProvider = null;
+                _metadataProvider?.Dispose();
+                _metadataProvider = null;
 
-                if (_mustDisposeDefinitionsDatabase)
+                _metadataFallbackProvider?.Dispose();
+                _metadataFallbackProvider = null;
+
+                if (_mustDisposeEphemeralMetadataDatabase)
                 {
-                    _definitionsDatabase?.Dispose();
+                    _ephemeralMetadataDatabase?.Dispose();
                 }
             }
 
@@ -94,34 +104,39 @@ namespace Glacie.Cli.Arz.Commands
 
         protected override void OnInputDatabaseOpened(ArzDatabase database)
         {
-            if (DefinitionsPath == null)
+            // TODO: determine correct targeting pack, generally this can be
+            // done from --format option or input database format
+            // var target = new TitanQuestAnniversaryEditionTarget();
+            // var target = new GrimDawnTarget();
+            var target = new UnifiedTarget();
+
+            using var progress = StartProgress("Reading Metadata...");
+            var readerOptions = CreateReaderOptions(ArzReadingMode.Full);
+            readerOptions.CloseUnderlyingStream = true;
+            var metadataProviderFactoryOptions = new MetadataProviderFactoryOptions
             {
-                _definitionsDatabase = database;
-                _mustDisposeDefinitionsDatabase = false;
+                ArzReaderOptions = readerOptions,
+                TemplateNameMapper = target.GetTemplateNameMapper(),
+                TemplateProcessor = target.GetTemplateProcessor(),
+                Logger = Log,
+            };
+
+            if (MetadataPath == null)
+            {
+                _metadataProvider = new EphemeralMetadataProvider(database,
+                    Log,
+                    disposeDatabase: false);
             }
             else
             {
-                if (DefinitionsPath.EndsWith(".arz", StringComparison.OrdinalIgnoreCase))
-                {
-                    if (!IO.File.Exists(DefinitionsPath))
-                    {
-                        throw new CliErrorException("Definitions file not found: " + DefinitionsPath);
-                    }
+                _metadataProvider = MetadataProviderFactory.Create(MetadataPath,
+                    metadataProviderFactoryOptions);
+            }
 
-                    // TODO: (Medium) (Arz) Add option to close source file in Raw or Full mode. Note, that this might
-                    // affect on writer (e.g. it will unable get raw data for full-record and will recompress). But
-                    // for read-only this nice option. Practically now if we specify this option to same file, it will
-                    // be write error.
-                    using var progress = StartProgress("Reading Definitions...");
-                    var readerOptions = CreateReaderOptions(ArzReadingMode.Full);
-                    readerOptions.CloseUnderlyingStream = true;
-                    _definitionsDatabase = ArzDatabase.Open(DefinitionsPath, readerOptions);
-                    _mustDisposeDefinitionsDatabase = true;
-                }
-                else
-                {
-                    throw new CliErrorException("Definition file is unknown or in not supported format.");
-                }
+            if (MetadataFallbackPath != null)
+            {
+                _metadataFallbackProvider = MetadataProviderFactory.Create(MetadataFallbackPath,
+                    metadataProviderFactoryOptions);
             }
         }
 
@@ -307,13 +322,8 @@ namespace Glacie.Cli.Arz.Commands
         private DbrReader GetDbrReader()
         {
             if (_dbrReader != null) return _dbrReader;
-            return (_dbrReader = new DbrReader(GetRecordDefinitionProvider(), Log));
-        }
-
-        private IRecordDefinitionProvider GetRecordDefinitionProvider()
-        {
-            Check.That(_definitionsDatabase != null);
-            return new EphemeralRecordDefinitionProvider(_definitionsDatabase, Log);
+            Check.That(_metadataProvider != null);
+            return (_dbrReader = new DbrReader(_metadataProvider, _metadataFallbackProvider, Log));
         }
     }
 }

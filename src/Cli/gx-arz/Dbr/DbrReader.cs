@@ -3,7 +3,9 @@
 using Glacie.Cli.Arz.Templates;
 using Glacie.Data.Arz;
 using Glacie.Data.Dbr;
+using Glacie.Data.Metadata;
 using Glacie.Logging;
+using Glacie.Metadata;
 
 using IO = System.IO;
 
@@ -11,16 +13,20 @@ namespace Glacie.Cli.Arz
 {
     internal sealed class DbrReader : IDisposable
     {
-        private readonly IRecordDefinitionProvider _recordDefinitionProvider;
+        private readonly IRecordTypeProvider _recordTypeProvider;
+        private readonly IRecordTypeProvider? _fallbackRecordTypeProvider;
         private readonly Logger _log;
 
         // TODO: Create database which points to source database's string table to void reencoding when adopt/import record
         private readonly ArzDatabase _tempDatabase = ArzDatabase.Create();
 
-        public DbrReader(IRecordDefinitionProvider recordDefinitionProvider, Logger log)
+        public DbrReader(IRecordTypeProvider recordTypeProvider,
+            IRecordTypeProvider? fallbackRecordTypeProvider,
+            Logger? logger)
         {
-            _recordDefinitionProvider = recordDefinitionProvider;
-            _log = log;
+            _recordTypeProvider = recordTypeProvider;
+            _fallbackRecordTypeProvider = fallbackRecordTypeProvider;
+            _log = logger ?? Logger.Null;
         }
 
         public void Dispose()
@@ -49,7 +55,9 @@ namespace Glacie.Cli.Arz
                 throw DbrError("GX0103: DBR record without fields.");
             }
 
-            RecordDefinition recordDefinition;
+            VirtualPath templateName;
+            RecordType? recordType = null;
+            RecordType? fallbackRecordType = null;
             // First field is templateName - proceed.
             if (fieldReader.NameEqualsTo(WellKnownFieldNames.TemplateName))
             {
@@ -59,10 +67,21 @@ namespace Glacie.Cli.Arz
                     throw DbrError("GX0105: DBR field templateName has invalid value (multiple values, but single value expected).");
                 }
 
-                var templateNameValue = fieldReader.GetStringValue(0);
-                record.Set(WellKnownFieldNames.TemplateName, templateNameValue);
+                templateName = fieldReader.GetStringValue(0);
+                record.Set(WellKnownFieldNames.TemplateName, templateName);
 
-                recordDefinition = _recordDefinitionProvider.GetRecordDefinition(templateNameValue);
+                if (!_recordTypeProvider.TryGetByTemplateName(templateName, out recordType))
+                {
+                    if (_fallbackRecordTypeProvider != null)
+                    {
+                        _fallbackRecordTypeProvider.TryGetByTemplateName(templateName, out fallbackRecordType);
+                    }
+                }
+
+                if (recordType == null && fallbackRecordType == null)
+                {
+                    throw DbrError("GX0105: Unable to find record type: \"{0}\".", templateName);
+                }
             }
             else
             {
@@ -74,12 +93,30 @@ namespace Glacie.Cli.Arz
             {
                 var name = fieldReader.Name;
 
-                var fieldDefinition = recordDefinition.GetFieldDefinition(name);
+                FieldType? fieldType = null;
+                if (recordType != null)
+                {
+                    recordType.TryGetField(name, out fieldType);
+                }
+                if (fieldType == null)
+                {
+                    if (_fallbackRecordTypeProvider != null)
+                    {
+                        if (fallbackRecordType == null)
+                        {
+                            fallbackRecordType = _fallbackRecordTypeProvider
+                                .GetByTemplateName(templateName);
+                        }
+
+                        fieldType = fallbackRecordType.GetField(name);
+                    }
+                }
+                if (fieldType == null) throw DbrError("Can't resolve field type: \"{0}\" (\"{1}\").", name, recordType?.Name);
 
                 var valueCount = fieldReader.ValueCount;
                 if (valueCount == 1)
                 {
-                    switch (fieldDefinition.ValueType)
+                    switch (fieldType.ValueType)
                     {
                         case ArzValueType.Integer:
                             {
@@ -123,7 +160,7 @@ namespace Glacie.Cli.Arz
                     // some buffered segments, but this will need support in ArzRecord
                     // to set values from spans or array segments.
 
-                    switch (fieldDefinition.ValueType)
+                    switch (fieldType.ValueType)
                     {
                         case ArzValueType.Integer:
                             {
@@ -174,16 +211,15 @@ namespace Glacie.Cli.Arz
                 }
             }
 
+            // TODO: RecordType should provide Class directly.
             if (record.Class == null)
             {
-                if (recordDefinition.TryGetFieldDefinition(WellKnownFieldNames.Class, out var fieldDef))
-                {
-                    if (!fieldDef.HasDefaultValue)
-                    {
-                        // _log.Warning("GX0301: Definition for field \"{0}\" doesn't provide default value. Empty value will be used.", WellKnownFieldNames.Class);
-                    }
+                var actualRecordType = recordType ?? fallbackRecordType;
+                Check.That(actualRecordType != null);
 
-                    record.Class = fieldDef.DefaultValue ?? "";
+                if (actualRecordType.TryGetField(WellKnownFieldNames.Class, out var fieldDef))
+                {
+                    record.Class = fieldDef.VarDefaultValue ?? "";
                 }
                 else
                 {
@@ -196,7 +232,12 @@ namespace Glacie.Cli.Arz
 
         private static InvalidOperationException DbrError(string message)
         {
-            return new InvalidOperationException(message);
+            return Error.InvalidOperation(message);
+        }
+
+        private static InvalidOperationException DbrError(string format, params object?[] args)
+        {
+            return Error.InvalidOperation(format, args);
         }
     }
 }

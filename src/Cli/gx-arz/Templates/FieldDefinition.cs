@@ -1,7 +1,10 @@
-﻿using Glacie.Data.Arz;
+﻿using System;
+
+using Glacie.Data.Arz;
 
 namespace Glacie.Cli.Arz.Templates
 {
+    [Obsolete("Remove me.", true)]
     public sealed class FieldDefinition
     {
         private readonly string _name;

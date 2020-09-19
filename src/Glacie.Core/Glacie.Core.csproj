@@ -17,6 +17,10 @@
     <Compile Include="Abstractions\IRecordFieldCollectionApi.cs" />
     <Compile Include="Abstractions\IRecordApi.cs" />
     <Compile Include="Abstractions\IDatabaseApi.cs" />
+    <Compile Include="Collections\IStringInterner.cs" />
+    <Compile Include="Collections\StringHashSet.cs" />
+    <Compile Include="Collections\StringInterner.cs" />
+    <Compile Include="Collections\StringKeyedDictionary.cs" />
     <Compile Include="Data.Dbr\DbrParseErrorException.cs" />
     <Compile Include="Data\Arc\ArcFileFormat.cs" />
     <Compile Include="Data\Arz\ArzFileFormat.cs" />
@@ -28,6 +32,8 @@
     <Compile Include="ICumulativeProgress.cs" />
     <Compile Include="IIncrementalProgress.cs" />
     <Compile Include="Data.Dbr\DbrFieldReader.cs" />
+    <Compile Include="IVirtualPathMapper.cs" />
+    <Compile Include="NaturalOrderStringComparer.cs" />
     <Compile Include="Variant.cs" />
     <Compile Include="VariantType.cs" />
     <Compile Include="Data\Arz\ArzError.cs" />
@@ -35,6 +41,9 @@
     <Compile Include="Data\Arz\Infrastructure\ArzBitConverter.cs" />
     <Compile Include="Data\Arz\Features.cs" />
     <Compile Include="InternalsVisibleTo.cs" />
+    <Compile Include="VirtualPath.cs" />
+    <Compile Include="VirtualPathNormalization.cs" />
+    <Compile Include="VirtualPathComparison.cs" />
   </ItemGroup>
 
   <ItemGroup>

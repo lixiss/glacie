@@ -9,7 +9,9 @@
 
   <ItemGroup>
     <Compile Include="DbrFieldReaderTests.cs" />
+    <Compile Include="NaturalOrderStringComparerTests.cs" />
     <Compile Include="VariantTests.cs" />
+    <Compile Include="VirtualPathTests.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,8 @@
-﻿namespace Glacie.Cli.Arz.Templates
+﻿using System;
+
+namespace Glacie.Cli.Arz.Templates
 {
-    // TODO: template name is case-sensitive, also do path normalization...
+    [Obsolete("Remove me.", true)]
     public interface IRecordDefinitionProvider
     {
         RecordDefinition GetRecordDefinition(string name);

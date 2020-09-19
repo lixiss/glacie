@@ -15,6 +15,11 @@ namespace Glacie
             return new NotSupportedException();
         }
 
+        public static NotSupportedException NotSupported(string message)
+        {
+            return new NotSupportedException(message);
+        }
+
         public static InvalidOperationException InvalidOperation()
         {
             return new InvalidOperationException();
@@ -75,12 +80,12 @@ namespace Glacie
             return new IndexOutOfRangeException();
         }
 
-        public static ObjectDisposedException ObjectDisposed(string objectName)
+        public static ObjectDisposedException ObjectDisposed(string? objectName)
         {
             return new ObjectDisposedException(objectName);
         }
 
-        public static ObjectDisposedException ObjectDisposed(string objectName, string message)
+        public static ObjectDisposedException ObjectDisposed(string? objectName, string message)
         {
             return new ObjectDisposedException(objectName, message);
         }
