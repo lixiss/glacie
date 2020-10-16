@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="Engine.Light">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Light Variables">
+      <field name="color.b" />
+      <field name="color.g" />
+      <field name="color.r" />
+      <field name="radius" />
+      <field name="shadowPriority" />
+    </var-group>
+  </record-type>
+</partial>

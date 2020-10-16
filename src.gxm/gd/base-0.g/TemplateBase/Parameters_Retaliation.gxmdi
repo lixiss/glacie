@@ -1,0 +1,474 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Retaliation" path="TemplateBase/Parameters_Retaliation.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ParameterStoreOffensive" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Retaliation Parameters">
+        <var-group name="Retaliation Absolute">
+          <var-group name="Damage Multiplier">
+            <field name="retaliationDamageMultGlobal" var-class="variable" var-type="bool" />
+            <field name="retaliationDamageMultModifier" var-class="array" var-type="real" />
+            <field name="retaliationDamageMultModifierChance" var-class="array" var-type="real" />
+            <field name="retaliationDamageMultXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Retaliation Aether">
+            <field name="retaliationAetherChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationAetherGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationAetherMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationAetherMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationAetherModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationAetherModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationAetherXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Chaos">
+            <field name="retaliationChaosChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationChaosGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationChaosMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationChaosMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationChaosModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationChaosModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationChaosXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Cold">
+            <field name="retaliationColdChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationColdGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationColdMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationColdMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationColdModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationColdModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationColdXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Elemental">
+            <field name="retaliationElementalChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationElementalGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationElementalMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationElementalMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationElementalModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationElementalModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationElementalXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Fire">
+            <field name="retaliationFireChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationFireGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationFireMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationFireMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationFireModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationFireModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationFireXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Life">
+            <field name="retaliationLifeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLifeGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationLifeMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLifeMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLifeModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLifeModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLifeXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Lightning">
+            <field name="retaliationLightningChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLightningGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationLightningMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLightningMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLightningModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLightningModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationLightningXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Percent Current Life">
+            <field name="retaliationPercentCurrentLifeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPercentCurrentLifeMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPercentCurrentLifeMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPercentCurrentLifeXOR" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationPercentcurrentLifeGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Physical">
+            <field name="retaliationPhysicalChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPhysicalGlobal" var-class="variable" var-type="bool" var-default-value="0">
+              <description>0 = Individual; 1 = Global</description>
+            </field>
+            <field name="retaliationPhysicalMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPhysicalMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPhysicalModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPhysicalModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPhysicalXOR" var-class="variable" var-type="bool" var-default-value="0">
+              <description>0 = AND; 1 = XOR</description>
+            </field>
+          </var-group>
+          <var-group name="Retaliation Pierce">
+            <field name="retaliationPierceChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationPierceMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation PierceRatio">
+            <field name="retaliationPierceRatioChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceRatioGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationPierceRatioMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceRatioMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceRatioModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceRatioModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPierceRatioXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Poison">
+            <field name="retaliationPoisonChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPoisonGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationPoisonMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPoisonMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPoisonModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPoisonModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPoisonXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Total Damage Modifier">
+            <field name="retaliationTotalDamageGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationTotalDamageModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationTotalDamageModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationTotalDamageXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+        </var-group>
+        <var-group name="Retaliation Duration">
+          <var-group name="Retaliation Slow Attack Speed">
+            <field name="retaliationSlowAttackSpeedChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowAttackSpeedDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowAttackSpeedDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowAttackSpeedXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Bleeding">
+            <field name="retaliationSlowBleedingChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowBleedingDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowBleedingDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowBleedingDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowBleedingDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowBleedingGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowBleedingMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowBleedingMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowBleedingModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowBleedingModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowBleedingXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Cold">
+            <field name="retaliationSlowColdChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowColdDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowColdDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowColdDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowColdDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowColdGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowColdMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowColdMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowColdModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowColdModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowColdXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Defensive Ability">
+            <field name="retaliationSlowDefensiveAbilityChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowDefensiveAbilityDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowDefensiveAbilityDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowDefensiveAbilityXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Fire">
+            <field name="retaliationSlowFireChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowFireDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowFireDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowFireDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowFireDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowFireGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowFireMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowFireMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowFireModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowFireModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowFireXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Life">
+            <field name="retaliationSlowLifeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowLifeDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowLifeDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowLifeMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Life Leach">
+            <field name="retaliationSlowLifeLeachChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowLifeLeachDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowLifeLeachDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLifeLeachXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Lightning">
+            <field name="retaliationSlowLightningChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLightningDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowLightningDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowLightningDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLightningDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLightningGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowLightningMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLightningMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLightningModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLightningModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowLightningXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Mana Leach">
+            <field name="retaliationSlowManaLeachChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowManaLeachDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowManaLeachDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowManaLeachDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowManaLeachDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowManaLeachGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowManaLeachMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowManaLeachMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowManaLeachModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowManaLeachModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowManaLeachXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Offensive Ability">
+            <field name="retaliationSlowOffensiveAbilityChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowOffensiveAbilityDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowOffensiveAbilityDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveAbilityXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Offensive Reduction">
+            <field name="retaliationSlowOffensiveReductionChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowOffensiveReductionDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowOffensiveReductionDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowOffensiveReductionXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Physical">
+            <field name="retaliationSlowPhysicalChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPhysicalDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowPhysicalDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowPhysicalDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPhysicalDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPhysicalGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowPhysicalMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPhysicalMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPhysicalModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPhysicalModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPhysicalXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Poison">
+            <field name="retaliationSlowPoisonChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPoisonDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowPoisonDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowPoisonDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPoisonDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPoisonGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowPoisonMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPoisonMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPoisonModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPoisonModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowPoisonXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Slow Run Speed">
+            <field name="retaliationSlowRunSpeedChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowRunSpeedDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSlowRunSpeedDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSlowRunSpeedXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+        </var-group>
+        <var-group name="Retaliation Global">
+          <field name="retaliationGlobalChance" var-class="array" var-type="real" var-default-value="0" />
+        </var-group>
+        <var-group name="Retaliation Influence">
+          <var-group name="Retaliation Confusion">
+            <field name="retaliationConfusionChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationConfusionGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationConfusionMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationConfusionMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationConfusionXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Convert">
+            <field name="retaliationConvertChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationConvertGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationConvertMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationConvertMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationConvertXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Fear">
+            <field name="retaliationFearChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationFearGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationFearMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationFearMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationFearXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Freeze">
+            <field name="retaliationFreezeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationFreezeGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationFreezeMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationFreezeMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationFreezeXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Petrify">
+            <field name="retaliationPetrifyChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationPetrifyGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationPetrifyMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationPetrifyMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationPetrifyXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Sleep">
+            <field name="retaliationSleepChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSleepGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationSleepMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSleepMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationSleepModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSleepModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationSleepXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Stun">
+            <field name="retaliationStunChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationStunGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationStunMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationStunMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationStunModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationStunModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationStunXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Retaliation Trap">
+            <field name="retaliationTrapChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="retaliationTrapGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="retaliationTrapMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationTrapMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="retaliationTrapXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

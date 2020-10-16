@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="StrategicMovementRespawnShrine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Regeneration Config">
+      <field name="healthAbsolute" />
+      <field name="healthPercent" />
+    </var-group>
+  </record-type>
+</partial>

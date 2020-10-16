@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="InGameUI.ChallengeAreaHud">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Challenge Area">
+      <field name="challengeAreaName" />
+      <field name="challengeAreaRollover" />
+      <field name="challengeBackground" />
+    </var-group>
+  </record-type>
+</partial>

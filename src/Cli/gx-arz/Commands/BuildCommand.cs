@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
 using System.Text;
 
 using Glacie.Cli.Arz.Dbr;
 using Glacie.CommandLine.IO;
 using Glacie.Data.Arz;
 using Glacie.Data.Compression;
-using Glacie.Metadata;
+using Glacie.Metadata.V1;
 using Glacie.Targeting;
 
 using IO = System.IO;
@@ -108,7 +107,7 @@ namespace Glacie.Cli.Arz.Commands
             // done from --format option or input database format
             // var target = new TitanQuestAnniversaryEditionTarget();
             // var target = new GrimDawnTarget();
-            var target = new UnifiedTarget();
+            var target = new UnifiedEngineType();
 
             using var progress = StartProgress("Reading Metadata...");
             var readerOptions = CreateReaderOptions(ArzReadingMode.Full);
@@ -146,7 +145,7 @@ namespace Glacie.Cli.Arz.Commands
         {
             _totalCount++;
 
-            if (database.TryGet(fileInfo.RecordName, out var record))
+            if (database.TryGetRecord(fileInfo.RecordName, out var record))
             {
                 if (_mode == Mode.Build || _mode == Mode.RemoveMissing)
                 {
@@ -216,7 +215,7 @@ namespace Glacie.Cli.Arz.Commands
             {
                 var recordsToRemove = new List<ArzRecord>();
 
-                foreach (var record in database.GetAll())
+                foreach (var record in database.SelectAll())
                 {
                     if (!_recordNamesToKeep.Contains(record.Name))
                     {

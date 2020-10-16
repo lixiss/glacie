@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="Skill_AttackLine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="attackRadius" />
+      <field name="distance" />
+      <field name="effectEntity" />
+      <field name="hitPeriod" />
+      <field name="loopSound" />
+      <field name="startSound" />
+      <field name="time" />
+      <field name="trailEffect" />
+    </var-group>
+  </record-type>
+</partial>

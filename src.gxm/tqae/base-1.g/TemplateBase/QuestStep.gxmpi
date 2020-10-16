@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="TemplateBase.QuestStep">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Step Action">
+      <field name="questStepActionName" />
+      <field name="questStepActionSound" />
+    </var-group>
+    <var-group name="Step Parameters">
+      <field name="questStepBitmapName" />
+      <field name="questStepDialogSoundName" />
+      <field name="questStepDialogSpeed" />
+      <field name="questStepDialogText" />
+      <field name="questStepHidden" />
+      <field name="questStepQualifyingObjectName" />
+      <field name="questStepRequired" />
+      <field name="questStepSound" />
+      <field name="questStepText" />
+    </var-group>
+  </record-type>
+</partial>

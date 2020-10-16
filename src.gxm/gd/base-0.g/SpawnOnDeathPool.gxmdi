@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="SpawnOnDeathPool" path="SpawnOnDeathPool.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Pool">
+        <field name="alwaysSpawn1" var-class="variable" var-type="bool">
+          <description>force spawn of object</description>
+        </field>
+        <field name="alwaysSpawn2" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn3" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn4" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn5" var-class="variable" var-type="bool" />
+        <field name="limit1" var-class="variable" var-type="int">
+          <description>number available to spawn</description>
+        </field>
+        <field name="limit2" var-class="variable" var-type="int" />
+        <field name="limit3" var-class="variable" var-type="int" />
+        <field name="limit4" var-class="variable" var-type="int" />
+        <field name="limit5" var-class="variable" var-type="int" />
+        <field name="name1" var-class="variable" var-type="file_dbr">
+          <description>spawn record</description>
+        </field>
+        <field name="name2" var-class="variable" var-type="file_dbr" />
+        <field name="name3" var-class="variable" var-type="file_dbr" />
+        <field name="name4" var-class="variable" var-type="file_dbr" />
+        <field name="name5" var-class="variable" var-type="file_dbr" />
+        <field name="weight1" var-class="variable" var-type="int">
+          <description>pooled weight of selection</description>
+        </field>
+        <field name="weight2" var-class="variable" var-type="int" />
+        <field name="weight3" var-class="variable" var-type="int" />
+        <field name="weight4" var-class="variable" var-type="int" />
+        <field name="weight5" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Pool Config">
+        <field name="spawnMax" var-class="variable" var-type="int" var-default-value="1" />
+        <field name="spawnMin" var-class="variable" var-type="int" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

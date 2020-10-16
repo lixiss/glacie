@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="AreaTrigger">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="AreaTrigger">
+      <field name="detectableNames" />
+      <field name="detects" />
+      <field name="enabled" />
+      <field name="onEnter" />
+      <field name="onInside" />
+      <field name="onLeave" />
+      <field name="resetPeriod" />
+      <field name="shouldTrigger" />
+      <field name="singular" />
+      <field name="updatePeriod" />
+    </var-group>
+  </record-type>
+</partial>

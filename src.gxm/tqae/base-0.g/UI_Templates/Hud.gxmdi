@@ -1,0 +1,124 @@
+﻿<partial>
+  <record-type name="UI_Templates.Hud" path="UI Templates/Hud.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Health">
+        <field name="healthTestAreaX" var-class="variable" var-type="int" />
+        <field name="healthTestAreaXSize" var-class="variable" var-type="int" />
+        <field name="healthTestAreaY" var-class="variable" var-type="int" />
+        <field name="healthTestAreaYSize" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Main Buttons">
+        <field name="buttonBase" var-class="variable" var-type="file_tex" />
+        <field name="buttonBaseX" var-class="variable" var-type="int" />
+        <field name="buttonBaseY" var-class="variable" var-type="int" />
+        <field name="buttonTestAreaX" var-class="variable" var-type="int" />
+        <field name="buttonTestAreaXSize" var-class="variable" var-type="int" />
+        <field name="buttonTestAreaY" var-class="variable" var-type="int" />
+        <field name="buttonTestAreaYSize" var-class="variable" var-type="int" />
+        <field name="characterButtonDown" var-class="variable" var-type="file_tex" />
+        <field name="characterButtonOverlay" var-class="variable" var-type="file_tex" />
+        <field name="characterButtonUp" var-class="variable" var-type="file_tex" />
+        <field name="characterButtonX" var-class="variable" var-type="int" />
+        <field name="characterButtonXSize" var-class="variable" var-type="int" />
+        <field name="characterButtonY" var-class="variable" var-type="int" />
+        <field name="characterButtonYSize" var-class="variable" var-type="int" />
+        <field name="experienceBarX" var-class="variable" var-type="int" />
+        <field name="experienceBarXSize" var-class="variable" var-type="int" />
+        <field name="experienceBarY" var-class="variable" var-type="int" />
+        <field name="experienceBarYSize" var-class="variable" var-type="int" />
+        <field name="helpButtonDown" var-class="variable" var-type="file_tex" />
+        <field name="helpButtonUp" var-class="variable" var-type="file_tex" />
+        <field name="helpButtonX" var-class="variable" var-type="int" />
+        <field name="helpButtonXSize" var-class="variable" var-type="int" />
+        <field name="helpButtonY" var-class="variable" var-type="int" />
+        <field name="helpButtonYSize" var-class="variable" var-type="int" />
+        <field name="hotSlotSelectDownButton" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlotSelectUpButton" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryButtonDown" var-class="variable" var-type="file_tex" />
+        <field name="inventoryButtonUp" var-class="variable" var-type="file_tex" />
+        <field name="inventoryButtonX" var-class="variable" var-type="int" />
+        <field name="inventoryButtonXSize" var-class="variable" var-type="int" />
+        <field name="inventoryButtonY" var-class="variable" var-type="int" />
+        <field name="inventoryButtonYSize" var-class="variable" var-type="int" />
+        <field name="questButtonDown" var-class="variable" var-type="file_tex" />
+        <field name="questButtonOverlay" var-class="variable" var-type="file_tex" />
+        <field name="questButtonUp" var-class="variable" var-type="file_tex" />
+        <field name="questButtonX" var-class="variable" var-type="int" />
+        <field name="questButtonXSize" var-class="variable" var-type="int" />
+        <field name="questButtonY" var-class="variable" var-type="int" />
+        <field name="questButtonYSize" var-class="variable" var-type="int" />
+        <field name="skillButtonDown" var-class="variable" var-type="file_tex" />
+        <field name="skillButtonOverlay" var-class="variable" var-type="file_tex" />
+        <field name="skillButtonUp" var-class="variable" var-type="file_tex" />
+        <field name="skillButtonX" var-class="variable" var-type="int" />
+        <field name="skillButtonXSize" var-class="variable" var-type="int" />
+        <field name="skillButtonY" var-class="variable" var-type="int" />
+        <field name="skillButtonYSize" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Mana">
+        <field name="manaTestAreaX" var-class="variable" var-type="int" />
+        <field name="manaTestAreaXSize" var-class="variable" var-type="int" />
+        <field name="manaTestAreaY" var-class="variable" var-type="int" />
+        <field name="manaTestAreaYSize" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Skill Selection">
+        <field name="skillSelect1Down" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect1Up" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect1X" var-class="variable" var-type="int" />
+        <field name="skillSelect1XSize" var-class="variable" var-type="int" />
+        <field name="skillSelect1Y" var-class="variable" var-type="int" />
+        <field name="skillSelect1YSize" var-class="variable" var-type="int" />
+        <field name="skillSelect2Down" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect2Up" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect2X" var-class="variable" var-type="int" />
+        <field name="skillSelect2XSize" var-class="variable" var-type="int" />
+        <field name="skillSelect2Y" var-class="variable" var-type="int" />
+        <field name="skillSelect2YSize" var-class="variable" var-type="int" />
+        <field name="skillSelect3Down" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect3Up" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect3X" var-class="variable" var-type="int" />
+        <field name="skillSelect3XSize" var-class="variable" var-type="int" />
+        <field name="skillSelect3Y" var-class="variable" var-type="int" />
+        <field name="skillSelect3YSize" var-class="variable" var-type="int" />
+        <field name="skillSelect4Down" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect4Up" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect4X" var-class="variable" var-type="int" />
+        <field name="skillSelect4XSize" var-class="variable" var-type="int" />
+        <field name="skillSelect4Y" var-class="variable" var-type="int" />
+        <field name="skillSelect4YSize" var-class="variable" var-type="int" />
+        <field name="skillSelect5Down" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect5Up" var-class="variable" var-type="file_tex" />
+        <field name="skillSelect5X" var-class="variable" var-type="int" />
+        <field name="skillSelect5XSize" var-class="variable" var-type="int" />
+        <field name="skillSelect5Y" var-class="variable" var-type="int" />
+        <field name="skillSelect5YSize" var-class="variable" var-type="int" />
+        <field name="skillSelectBase" var-class="variable" var-type="file_tex" />
+        <field name="skillSelectBaseX" var-class="variable" var-type="int" />
+        <field name="skillSelectBaseY" var-class="variable" var-type="int" />
+        <field name="skillSelectPrimaryX" var-class="variable" var-type="int" />
+        <field name="skillSelectPrimaryXSize" var-class="variable" var-type="int" />
+        <field name="skillSelectPrimaryY" var-class="variable" var-type="int" />
+        <field name="skillSelectPrimaryYSize" var-class="variable" var-type="int" />
+        <field name="skillSelectSecondaryX" var-class="variable" var-type="int" />
+        <field name="skillSelectSecondaryXSize" var-class="variable" var-type="int" />
+        <field name="skillSelectSecondaryY" var-class="variable" var-type="int" />
+        <field name="skillSelectSecondaryYSize" var-class="variable" var-type="int" />
+        <field name="skillSelectTestAreaX" var-class="variable" var-type="int" />
+        <field name="skillSelectTestAreaXSize" var-class="variable" var-type="int" />
+        <field name="skillSelectTestAreaY" var-class="variable" var-type="int" />
+        <field name="skillSelectTestAreaYSize" var-class="variable" var-type="int" />
+        <field name="weaponSelectDown" var-class="variable" var-type="file_tex" />
+        <field name="weaponSelectUp" var-class="variable" var-type="file_tex" />
+        <field name="weaponSelectX" var-class="variable" var-type="int" />
+        <field name="weaponSelectXSize" var-class="variable" var-type="int" />
+        <field name="weaponSelectY" var-class="variable" var-type="int" />
+        <field name="weaponSelectYSize" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

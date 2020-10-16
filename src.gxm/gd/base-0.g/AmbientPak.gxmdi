@@ -1,0 +1,216 @@
+﻿<partial>
+  <record-type name="AmbientPak" path="AmbientPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="AmbientSession" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Sound Properties">
+        <field name="ambientLoop" var-class="variable" var-type="file_snd" />
+        <field name="ambientLoopVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="enableNightSounds" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="frequentMaxTime" var-class="variable" var-type="int" var-default-value="15" />
+        <field name="frequentMinTime" var-class="variable" var-type="int" var-default-value="5" />
+        <field name="frequentSound1" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound2" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound3" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound4" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound5" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound6" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound7" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound8" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound9" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound10" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound11" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound12" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound13" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound14" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound15" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound16" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound17" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound18" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound19" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound20" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound21" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound22" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound23" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound24" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound25" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound26" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound27" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound28" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound29" var-class="variable" var-type="file_snd" />
+        <field name="frequentSound30" var-class="variable" var-type="file_snd" />
+        <field name="frequentVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="moderateMaxTime" var-class="variable" var-type="int" var-default-value="30" />
+        <field name="moderateMinTime" var-class="variable" var-type="int" var-default-value="10" />
+        <field name="moderateSound1" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound2" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound3" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound4" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound5" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound6" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound7" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound8" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound9" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound10" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound11" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound12" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound13" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound14" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound15" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound16" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound17" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound18" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound19" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound20" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound21" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound22" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound23" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound24" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound25" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound26" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound27" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound28" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound29" var-class="variable" var-type="file_snd" />
+        <field name="moderateSound30" var-class="variable" var-type="file_snd" />
+        <field name="moderateVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightAmbientLoop" var-class="variable" var-type="file_snd" />
+        <field name="nightAmbientLoopVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightFrequentMaxTime" var-class="variable" var-type="int" var-default-value="15" />
+        <field name="nightFrequentMinTime" var-class="variable" var-type="int" var-default-value="5" />
+        <field name="nightFrequentSound1" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound2" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound3" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound4" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound5" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound6" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound7" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound8" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound9" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound10" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound11" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound12" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound13" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound14" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound15" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound16" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound17" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound18" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound19" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound20" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound21" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound22" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound23" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound24" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound25" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound26" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound27" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound28" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound29" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentSound30" var-class="variable" var-type="file_snd" />
+        <field name="nightFrequentVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightModerateMaxTime" var-class="variable" var-type="int" var-default-value="30" />
+        <field name="nightModerateMinTime" var-class="variable" var-type="int" var-default-value="10" />
+        <field name="nightModerateSound1" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound2" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound3" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound4" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound5" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound6" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound7" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound8" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound9" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound10" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound11" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound12" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound13" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound14" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound15" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound16" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound17" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound18" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound19" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound20" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound21" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound22" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound23" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound24" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound25" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound26" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound27" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound28" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound29" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateSound30" var-class="variable" var-type="file_snd" />
+        <field name="nightModerateVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightUniqueMaxTime" var-class="variable" var-type="int" var-default-value="300" />
+        <field name="nightUniqueMinTime" var-class="variable" var-type="int" var-default-value="180" />
+        <field name="nightUniqueSound1" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound2" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound3" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound4" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound5" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound6" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound7" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound8" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound9" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound10" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound11" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound12" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound13" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound14" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound15" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound16" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound17" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound18" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound19" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound20" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound21" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound22" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound23" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound24" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound25" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound26" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound27" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound28" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound29" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueSound30" var-class="variable" var-type="file_snd" />
+        <field name="nightUniqueVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="uniqueMaxTime" var-class="variable" var-type="int" var-default-value="300" />
+        <field name="uniqueMinTime" var-class="variable" var-type="int" var-default-value="180" />
+        <field name="uniqueSound1" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound2" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound3" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound4" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound5" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound6" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound7" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound8" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound9" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound10" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound11" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound12" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound13" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound14" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound15" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound16" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound17" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound18" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound19" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound20" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound21" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound22" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound23" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound24" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound25" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound26" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound27" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound28" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound29" var-class="variable" var-type="file_snd" />
+        <field name="uniqueSound30" var-class="variable" var-type="file_snd" />
+        <field name="uniqueVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

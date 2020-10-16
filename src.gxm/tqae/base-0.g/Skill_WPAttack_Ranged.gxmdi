@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="Skill_WPAttack_Ranged" path="Skill_WPAttack_Ranged.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Activated" />
+      <inherit record="TemplateBase.Skill_Attack" />
+      <inherit record="TemplateBase.Skill_WPAttack" />
+      <inherit record="TemplateBase.Skill_ProjectileBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_WPAttack_BasicRanged" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="skillProjectileNumber" var-class="variable" var-type="int" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,68 @@
+﻿<partial>
+  <record-type name="InGameUI.CharacterWindow" path="InGameUI/CharacterWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="AutoSortRollover" var-class="variable" var-type="file_dbr" />
+        <field name="characterBaseBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="characterCloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="characterDisplayBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="characterGoldNumber" var-class="variable" var-type="file_dbr" />
+        <field name="characterTab1" var-class="variable" var-type="file_dbr" />
+        <field name="characterTab1Button" var-class="variable" var-type="file_dbr" />
+        <field name="characterTab2" var-class="variable" var-type="file_dbr" />
+        <field name="characterTab2Button" var-class="variable" var-type="file_dbr" />
+        <field name="characterTab3" var-class="variable" var-type="file_dbr" />
+        <field name="characterTab3Button" var-class="variable" var-type="file_dbr" />
+        <field name="characterView" var-class="variable" var-type="file_dbr" />
+        <field name="characterWindowTitle" var-class="variable" var-type="file_dbr" />
+        <field name="equipArtifact" var-class="variable" var-type="file_dbr" />
+        <field name="equipFinger1" var-class="variable" var-type="file_dbr" />
+        <field name="equipFinger2" var-class="variable" var-type="file_dbr" />
+        <field name="equipForearm" var-class="variable" var-type="file_dbr" />
+        <field name="equipHandLeft" var-class="variable" var-type="file_dbr" />
+        <field name="equipHandRight" var-class="variable" var-type="file_dbr" />
+        <field name="equipHead" var-class="variable" var-type="file_dbr" />
+        <field name="equipLowerBody" var-class="variable" var-type="file_dbr" />
+        <field name="equipNeck" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap1LeftButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap1RightButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap2LeftButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap2RightButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwapButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="equipUpperBody" var-class="variable" var-type="file_dbr" />
+        <field name="invSortButton1" var-class="variable" var-type="file_dbr" />
+        <field name="invSortButton2" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryGoldNumber" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryGrid0" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryGrid1" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryGrid2" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryGrid3" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryTab1Bitmap" var-class="variable" var-type="file_tex" />
+        <field name="inventoryTab1Button" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryTab2Bitmap" var-class="variable" var-type="file_tex" />
+        <field name="inventoryTab2Button" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryTab3Bitmap" var-class="variable" var-type="file_tex" />
+        <field name="inventoryTab3Button" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryTabActive" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryTabInactive" var-class="variable" var-type="file_dbr" />
+        <field name="inventoryTabNewOverlay" var-class="variable" var-type="file_dbr" />
+        <field name="lowerLeftCornerOverlayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="lowerRightCornerOverlayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="pixelSeparationBetweenCenteredWindowPair" var-class="variable" var-type="int" />
+        <field name="rotateLeftButton" var-class="variable" var-type="file_dbr" />
+        <field name="rotateRightButton" var-class="variable" var-type="file_dbr" />
+        <field name="slideTime" var-class="variable" var-type="int" />
+        <field name="windowCenteredX" var-class="variable" var-type="int" />
+        <field name="windowCenteredY" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

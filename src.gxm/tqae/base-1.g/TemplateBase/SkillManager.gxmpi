@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="TemplateBase.SkillManager">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Configuration">
+      <field name="primarySkillName" />
+      <field name="secondarySkillName" />
+    </var-group>
+    <var-group name="Skill Manager">
+      <field name="masteryIncrementLevel" />
+      <field name="reclamationPointCosts" />
+      <field name="reclamationPointTiers" />
+    </var-group>
+    <var-group name="Skill Tree">
+      <field name="potionTree" />
+      <field name="potionTree2" />
+      <field name="potionTree3" />
+      <field name="questTree" />
+      <field name="questTree2" />
+      <field name="skillTree1" />
+      <field name="skillTree2" />
+      <field name="skillTree3" />
+      <field name="skillTree4" />
+      <field name="skillTree5" />
+      <field name="skillTree6" />
+      <field name="skillTree7" />
+      <field name="skillTree8" />
+      <field name="skillTree9" />
+      <field name="skillTree10" />
+      <field name="skillTree11" />
+    </var-group>
+  </record-type>
+</partial>

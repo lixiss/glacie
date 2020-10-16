@@ -13,7 +13,7 @@
 [Oo]bj/
 
 # Launch Settings
-[Pp]roperties/launchSettings.json
+**/[Pp]roperties/launchSettings.json
 
 # Python
 *.pyc

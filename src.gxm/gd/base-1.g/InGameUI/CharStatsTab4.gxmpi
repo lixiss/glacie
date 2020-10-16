@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab4">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="tab4Bitmap" />
+      <field name="tab4CharacterLevel" />
+      <field name="tab4CharacterName" />
+      <field name="tab4FactionNameText" />
+      <field name="tab4FactionNegativeBar" />
+      <field name="tab4FactionNeutralBar" />
+      <field name="tab4FactionPositiveBar" />
+      <field name="tab4FactionTitleText" />
+      <field name="tab4LowerBarBitmap" />
+      <field name="tab4Name" />
+      <field name="tab4ScrollWindow" />
+      <field name="tab4UpperBarBitmap" />
+    </var-group>
+  </record-type>
+</partial>

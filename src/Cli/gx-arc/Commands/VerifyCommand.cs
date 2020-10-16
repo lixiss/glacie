@@ -107,7 +107,7 @@ namespace Glacie.Cli.Arc.Commands
             if (progress != null)
             {
                 long totalLength = 0;
-                foreach (var entry in archive.GetEntries())
+                foreach (var entry in archive.SelectAll())
                 {
                     totalLength += entry.Length;
                 }
@@ -115,7 +115,7 @@ namespace Glacie.Cli.Arc.Commands
             }
 
             var numberOfErrors = 0;
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 progress?.SetMessage(entry.Name);
 
@@ -134,7 +134,7 @@ namespace Glacie.Cli.Arc.Commands
             return numberOfErrors == 0;
         }
 
-        private static bool VerifyEntry(ArcEntry entry, IIncrementalProgress<long>? progress)
+        private static bool VerifyEntry(ArcArchiveEntry entry, IIncrementalProgress<long>? progress)
         {
             var buffer = ArrayPool<byte>.Shared.Rent(BufferSize);
             try

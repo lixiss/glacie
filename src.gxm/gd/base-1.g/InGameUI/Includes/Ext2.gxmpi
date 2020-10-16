@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="InGameUI.Includes.Ext2">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="extX" />
+      <field name="extY" />
+    </var-group>
+  </record-type>
+</partial>

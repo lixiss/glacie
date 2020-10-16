@@ -1,0 +1,120 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Base" path="TemplateBase/Skill_Base.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Devotion Config">
+        <field name="skillBlackList" var-class="array" var-type="file_dbr">
+          <description>Blacklisted skills that cannot be attached to this skill</description>
+        </field>
+        <field name="skillExperienceLevels" var-class="array" var-type="int">
+          <description>Devotion skill xp levels</description>
+        </field>
+        <field name="skillTemplates" var-class="array" var-type="file_dbr">
+          <description>Accepted skill types for this devotion skill</description>
+        </field>
+        <field name="templateAutoCast" var-class="variable" var-type="file_dbr">
+          <description>Autocast controller for this devotion skill</description>
+        </field>
+      </var-group>
+      <var-group name="Qualifying Weapons">
+        <field name="Axe" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Axe2h" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Dagger" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Mace" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Mace2h" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Magical" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Offhand" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Ranged1h" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Ranged2h" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Scepter" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Shield" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Spear" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Staff" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="Sword" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Set to -1- to require type</description>
+        </field>
+        <field name="Sword2h" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="dualRangedOnly" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="dualRangedOrAllRangedOnly" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="dualRangedOrRanged2hOnly" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="dualWieldOnly" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="shieldNoRanged" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="unarmedOnly" var-class="variable" var-type="bool" var-default-value="0" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="achievementTracking" var-class="variable" var-type="bool">
+          <description>Used for achievement tracking</description>
+        </field>
+        <field name="autoCastController" var-class="variable" var-type="file_dbr" />
+        <field name="autoCastSkill" var-class="variable" var-type="file_dbr" />
+        <field name="excludeRacialDamage" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Set true to never use racial damage</description>
+        </field>
+        <field name="exclusiveSkill" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Set true for unique skills</description>
+        </field>
+        <field name="forceMovement" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Force character movement into cast range</description>
+        </field>
+        <field name="retaliationDamagePct" var-class="array" var-type="real">
+          <description>Percentage retaliation damage to use for each skill level</description>
+        </field>
+        <field name="skillMasteryLevelRequired" var-class="variable" var-type="int" var-default-value="0">
+          <description>Mastery level to add first point</description>
+        </field>
+        <field name="skillMaxLevel" var-class="variable" var-type="int" var-default-value="0">
+          <description>Max level of skill</description>
+        </field>
+        <field name="skillSpecialAnimationName" var-class="variable" var-type="string" />
+        <field name="skillTier" var-class="picklist" var-type="int" var-default-value="0;1;2;3;4;5;6;7;8;9" />
+        <field name="skillUltimateLevel" var-class="variable" var-type="int">
+          <description>Max level allowed when augmented</description>
+        </field>
+        <field name="targetingMode" var-class="picklist" var-type="string" var-default-value="Default;Point;Object;Target" />
+        <field name="weaponDamagePct" var-class="array" var-type="real">
+          <description>Percentage weapon damage to use for each skill level</description>
+        </field>
+      </var-group>
+      <var-group name="Skill Dependancy">
+        <field name="skillDependancy" var-class="array" var-type="file_dbr" />
+        <field name="skillDependancyAll" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Skill requires all skills in the dependancy list (true), or just one (false)</description>
+        </field>
+      </var-group>
+      <var-group name="Skill Effects">
+        <field name="targetFxPakName" var-class="array" var-type="file_dbr">
+          <description>FxPak</description>
+        </field>
+        <field name="warmupFxPakName" var-class="array" var-type="file_dbr">
+          <description>FxPak used only by skills that have a warmup</description>
+        </field>
+      </var-group>
+      <var-group name="UI Infomation">
+        <field name="isPetBonusScaling" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Skill stats scale with pet bonus</description>
+        </field>
+        <field name="isPetDisplayable" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="skillBaseDescription" var-class="variable" var-type="string">
+          <description>Tag for desciption</description>
+        </field>
+        <field name="skillConnectionOff" var-class="array" var-type="file_tex" />
+        <field name="skillConnectionOn" var-class="array" var-type="file_tex" />
+        <field name="skillDisplayName" var-class="variable" var-type="string">
+          <description>Tag for display name</description>
+        </field>
+        <field name="skillDownBitmapName" var-class="variable" var-type="file_tex" />
+        <field name="skillUpBitmapName" var-class="variable" var-type="file_tex" />
+        <field name="trackerOverride" var-class="variable" var-type="string">
+          <description>Tag to display on the buff tracker</description>
+        </field>
+        <field name="trackerShowDetail" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Shows skill attributes on buff tracker</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

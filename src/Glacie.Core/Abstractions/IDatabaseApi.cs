@@ -15,13 +15,13 @@ namespace Glacie.Abstractions
     {
         int Count { get; }
 
-        IEnumerable<TRecord> GetAll();
+        IEnumerable<TRecord> SelectAll();
 
-        TRecord Get(string name);
+        TRecord GetRecord(string name);
 
-        bool TryGet(string name, [NotNullWhen(returnValue: true)] out TRecordOutOrNull record);
+        bool TryGetRecord(string name, [NotNullWhen(returnValue: true)] out TRecordOutOrNull record);
 
-        TRecordOrNull GetOrNull(string name);
+        TRecordOrNull GetRecordOrNull(string name);
 
         TRecord this[string name] { get; }
 

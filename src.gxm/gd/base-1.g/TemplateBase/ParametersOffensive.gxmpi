@@ -1,0 +1,42 @@
+﻿<partial>
+  <record-type name="TemplateBase.ParametersOffensive">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Offensive Absolute">
+      <field name="offensive1Chance" />
+      <field name="offensive1Deviation" />
+      <field name="offensive1Max" />
+      <field name="offensive1Min" />
+      <field name="offensive1Modifier" />
+      <field name="offensive1ModifierChance" />
+      <field name="offensive1ModifierDeviation" />
+      <field name="offensive1Type" />
+      <field name="offensive1UseGlobalChance" />
+      <field name="offensive1XOR" />
+    </var-group>
+    <var-group name="Offensive Duration">
+      <field name="offensiveSlow1Chance" />
+      <field name="offensiveSlow1Deviation" />
+      <field name="offensiveSlow1DurationDeviation" />
+      <field name="offensiveSlow1DurationMax" />
+      <field name="offensiveSlow1DurationMin" />
+      <field name="offensiveSlow1DurationModifier" />
+      <field name="offensiveSlow1DurationModifierChance" />
+      <field name="offensiveSlow1DurationModifierDeviation" />
+      <field name="offensiveSlow1Max" />
+      <field name="offensiveSlow1Min" />
+      <field name="offensiveSlow1Modifier" />
+      <field name="offensiveSlow1ModifierChance" />
+      <field name="offensiveSlow1ModifierDeviation" />
+      <field name="offensiveSlow1Type" />
+      <field name="offensiveSlow1UseGlobalChance" />
+      <field name="offensiveSlow1XOR" />
+    </var-group>
+    <var-group name="Offensive Global">
+      <field name="offensiveGlobalChance" />
+    </var-group>
+  </record-type>
+</partial>

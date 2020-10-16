@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="InGameUI.AchievementWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="AchievementWindow">
+      <field name="achievementList" />
+      <field name="closeButton" />
+      <field name="groupUnlockedText" />
+      <field name="groupsList" />
+      <field name="lockedBackground" />
+      <field name="lockedDescription" />
+      <field name="lockedIcon" />
+      <field name="lockedTitle" />
+      <field name="titleText" />
+      <field name="totalUnlockedText" />
+      <field name="unlockSound" />
+      <field name="unlockedBackground" />
+      <field name="unlockedDescription" />
+      <field name="unlockedIcon" />
+      <field name="unlockedTitle" />
+      <field name="windowBackground" />
+    </var-group>
+  </record-type>
+</partial>

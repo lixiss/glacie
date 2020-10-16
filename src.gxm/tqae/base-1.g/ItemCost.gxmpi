@@ -1,0 +1,102 @@
+﻿<partial>
+  <record-type name="ItemCost">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Cost Equations">
+      <field name="armorCostEquation" />
+      <field name="jewelryCostEquation" />
+      <field name="shieldCostEquation" />
+      <field name="weaponCostEquation" />
+      <field name="weaponRangedCostEquation" />
+    </var-group>
+    <var-group name="Requirement Equations">
+      <var-group name="Armor Forearm">
+        <field name="forearmDexterityEquation" />
+        <field name="forearmIntelligenceEquation" />
+        <field name="forearmLevelEquation" />
+        <field name="forearmStrengthEquation" />
+      </var-group>
+      <var-group name="Armor Head">
+        <field name="headDexterityEquation" />
+        <field name="headIntelligenceEquation" />
+        <field name="headLevelEquation" />
+        <field name="headStrengthEquation" />
+      </var-group>
+      <var-group name="Armor LowerBody">
+        <field name="lowerBodyDexterityEquation" />
+        <field name="lowerBodyIntelligenceEquation" />
+        <field name="lowerBodyLevelEquation" />
+        <field name="lowerBodyStrengthEquation" />
+      </var-group>
+      <var-group name="Armor UpperBody">
+        <field name="upperBodyDexterityEquation" />
+        <field name="upperBodyIntelligenceEquation" />
+        <field name="upperBodyLevelEquation" />
+        <field name="upperBodyStrengthEquation" />
+      </var-group>
+      <var-group name="Jewelry Amulet">
+        <field name="amuletDexterityEquation" />
+        <field name="amuletIntelligenceEquation" />
+        <field name="amuletLevelEquation" />
+        <field name="amuletStrengthEquation" />
+      </var-group>
+      <var-group name="Jewelry Bracelet">
+        <field name="braceletDexterityEquation" />
+        <field name="braceletIntelligenceEquation" />
+        <field name="braceletLevelEquation" />
+        <field name="braceletStrengthEquation" />
+      </var-group>
+      <var-group name="Jewelry Ring">
+        <field name="ringDexterityEquation" />
+        <field name="ringIntelligenceEquation" />
+        <field name="ringLevelEquation" />
+        <field name="ringStrengthEquation" />
+      </var-group>
+      <var-group name="Weapon Armor Shield">
+        <field name="shieldDexterityEquation" />
+        <field name="shieldIntelligenceEquation" />
+        <field name="shieldLevelEquation" />
+        <field name="shieldStrengthEquation" />
+      </var-group>
+      <var-group name="Weapon Axe">
+        <field name="axeDexterityEquation" />
+        <field name="axeIntelligenceEquation" />
+        <field name="axeLevelEquation" />
+        <field name="axeStrengthEquation" />
+      </var-group>
+      <var-group name="Weapon Bow">
+        <field name="bowDexterityEquation" />
+        <field name="bowIntelligenceEquation" />
+        <field name="bowLevelEquation" />
+        <field name="bowStrengthEquation" />
+      </var-group>
+      <var-group name="Weapon Mace">
+        <field name="maceDexterityEquation" />
+        <field name="maceIntelligenceEquation" />
+        <field name="maceLevelEquation" />
+        <field name="maceStrengthEquation" />
+      </var-group>
+      <var-group name="Weapon Spear">
+        <field name="spearDexterityEquation" />
+        <field name="spearIntelligenceEquation" />
+        <field name="spearLevelEquation" />
+        <field name="spearStrengthEquation" />
+      </var-group>
+      <var-group name="Weapon Staff">
+        <field name="staffDexterityEquation" />
+        <field name="staffIntelligenceEquation" />
+        <field name="staffLevelEquation" />
+        <field name="staffStrengthEquation" />
+      </var-group>
+      <var-group name="Weapon Sword">
+        <field name="swordDexterityEquation" />
+        <field name="swordIntelligenceEquation" />
+        <field name="swordLevelEquation" />
+        <field name="swordStrengthEquation" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

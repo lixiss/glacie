@@ -1,0 +1,35 @@
+﻿<partial>
+  <record-type name="TemplateBase.StrategicMovementBase">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="AnimationSounds">
+      <field name="sound1" />
+      <field name="sound2" />
+      <field name="sound3" />
+      <field name="sound4" />
+      <field name="sound5" />
+    </var-group>
+    <var-group name="Animations">
+      <field name="activeAnimation" />
+      <field name="activeAnimationSpeed" />
+      <field name="dormantAnimation" />
+      <field name="dormantAnimationSpeed" />
+    </var-group>
+    <var-group name="Config">
+      <field name="bindDistance" />
+    </var-group>
+    <var-group name="Fx">
+      <field name="lightAttachPointName" />
+      <field name="lightFadeInTime" />
+      <field name="lightName" />
+    </var-group>
+    <var-group name="Sounds" system="true">
+      <field name="activeSound" />
+      <field name="dormantSound" />
+      <field name="dormantToActiveSound" />
+    </var-group>
+  </record-type>
+</partial>

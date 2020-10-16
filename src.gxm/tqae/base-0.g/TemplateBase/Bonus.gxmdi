@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="TemplateBase.Bonus" path="TemplateBase/Bonus.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Bonus" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Bonus">
+        <field name="bonusAttributePoints" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="bonusEffectName" var-class="variable" var-type="file_dbr" />
+        <field name="bonusExperiencePoints" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="bonusGoldPoints" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="bonusLifePercent" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="bonusLifePoints" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="bonusManaPercent" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="bonusManaPoints" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="bonusSkillPoints" var-class="variable" var-type="int" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

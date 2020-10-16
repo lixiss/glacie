@@ -1,0 +1,172 @@
+﻿<partial>
+  <record-type name="TemplateBase.CharacterLoot">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Initial Equipment">
+      <var-group name="Finger1">
+        <field name="chanceToEquipFinger1" />
+        <field name="chanceToEquipFinger1Item1" />
+        <field name="chanceToEquipFinger1Item2" />
+        <field name="chanceToEquipFinger1Item3" />
+        <field name="chanceToEquipFinger1Item4" />
+        <field name="chanceToEquipFinger1Item5" />
+        <field name="chanceToEquipFinger1Item6" />
+        <field name="lootFinger1Item1" />
+        <field name="lootFinger1Item2" />
+        <field name="lootFinger1Item3" />
+        <field name="lootFinger1Item4" />
+        <field name="lootFinger1Item5" />
+        <field name="lootFinger1Item6" />
+      </var-group>
+      <var-group name="Finger2">
+        <field name="chanceToEquipFinger2" />
+        <field name="chanceToEquipFinger2Item1" />
+        <field name="chanceToEquipFinger2Item2" />
+        <field name="chanceToEquipFinger2Item3" />
+        <field name="chanceToEquipFinger2Item4" />
+        <field name="chanceToEquipFinger2Item5" />
+        <field name="chanceToEquipFinger2Item6" />
+        <field name="lootFinger2Item1" />
+        <field name="lootFinger2Item2" />
+        <field name="lootFinger2Item3" />
+        <field name="lootFinger2Item4" />
+        <field name="lootFinger2Item5" />
+        <field name="lootFinger2Item6" />
+      </var-group>
+      <var-group name="Forearm">
+        <field name="chanceToEquipForearm" />
+        <field name="chanceToEquipForearmItem1" />
+        <field name="chanceToEquipForearmItem2" />
+        <field name="chanceToEquipForearmItem3" />
+        <field name="chanceToEquipForearmItem4" />
+        <field name="chanceToEquipForearmItem5" />
+        <field name="chanceToEquipForearmItem6" />
+        <field name="lootForearmItem1" />
+        <field name="lootForearmItem2" />
+        <field name="lootForearmItem3" />
+        <field name="lootForearmItem4" />
+        <field name="lootForearmItem5" />
+        <field name="lootForearmItem6" />
+      </var-group>
+      <var-group name="Head">
+        <field name="chanceToEquipHead" />
+        <field name="chanceToEquipHeadItem1" />
+        <field name="chanceToEquipHeadItem2" />
+        <field name="chanceToEquipHeadItem3" />
+        <field name="chanceToEquipHeadItem4" />
+        <field name="chanceToEquipHeadItem5" />
+        <field name="chanceToEquipHeadItem6" />
+        <field name="lootHeadItem1" />
+        <field name="lootHeadItem2" />
+        <field name="lootHeadItem3" />
+        <field name="lootHeadItem4" />
+        <field name="lootHeadItem5" />
+        <field name="lootHeadItem6" />
+      </var-group>
+      <var-group name="Left Hand" system="true">
+        <field name="chanceToEquipLeftHand" />
+        <field name="chanceToEquipLeftHandItem1" />
+        <field name="chanceToEquipLeftHandItem2" />
+        <field name="chanceToEquipLeftHandItem3" />
+        <field name="chanceToEquipLeftHandItem4" />
+        <field name="chanceToEquipLeftHandItem5" />
+        <field name="chanceToEquipLeftHandItem6" />
+        <field name="lootLeftHandItem1" />
+        <field name="lootLeftHandItem2" />
+        <field name="lootLeftHandItem3" />
+        <field name="lootLeftHandItem4" />
+        <field name="lootLeftHandItem5" />
+        <field name="lootLeftHandItem6" />
+      </var-group>
+      <var-group name="Lower Body">
+        <field name="chanceToEquipLowerBody" />
+        <field name="chanceToEquipLowerBodyItem1" />
+        <field name="chanceToEquipLowerBodyItem2" />
+        <field name="chanceToEquipLowerBodyItem3" />
+        <field name="chanceToEquipLowerBodyItem4" />
+        <field name="chanceToEquipLowerBodyItem5" />
+        <field name="chanceToEquipLowerBodyItem6" />
+        <field name="lootLowerBodyItem1" />
+        <field name="lootLowerBodyItem2" />
+        <field name="lootLowerBodyItem3" />
+        <field name="lootLowerBodyItem4" />
+        <field name="lootLowerBodyItem5" />
+        <field name="lootLowerBodyItem6" />
+      </var-group>
+      <var-group name="Misc">
+        <field name="chanceToEquipMisc1" />
+        <field name="chanceToEquipMisc1Item1" />
+        <field name="chanceToEquipMisc1Item2" />
+        <field name="chanceToEquipMisc1Item3" />
+        <field name="chanceToEquipMisc1Item4" />
+        <field name="chanceToEquipMisc1Item5" />
+        <field name="chanceToEquipMisc1Item6" />
+        <field name="chanceToEquipMisc2" />
+        <field name="chanceToEquipMisc2Item1" />
+        <field name="chanceToEquipMisc2Item2" />
+        <field name="chanceToEquipMisc2Item3" />
+        <field name="chanceToEquipMisc2Item4" />
+        <field name="chanceToEquipMisc2Item5" />
+        <field name="chanceToEquipMisc2Item6" />
+        <field name="chanceToEquipMisc3" />
+        <field name="chanceToEquipMisc3Item1" />
+        <field name="chanceToEquipMisc3Item2" />
+        <field name="chanceToEquipMisc3Item3" />
+        <field name="chanceToEquipMisc3Item4" />
+        <field name="chanceToEquipMisc3Item5" />
+        <field name="chanceToEquipMisc3Item6" />
+        <field name="lootMisc1Item1" />
+        <field name="lootMisc1Item2" />
+        <field name="lootMisc1Item3" />
+        <field name="lootMisc1Item4" />
+        <field name="lootMisc1Item5" />
+        <field name="lootMisc1Item6" />
+        <field name="lootMisc2Item1" />
+        <field name="lootMisc2Item2" />
+        <field name="lootMisc2Item3" />
+        <field name="lootMisc2Item4" />
+        <field name="lootMisc2Item5" />
+        <field name="lootMisc2Item6" />
+        <field name="lootMisc3Item1" />
+        <field name="lootMisc3Item2" />
+        <field name="lootMisc3Item3" />
+        <field name="lootMisc3Item4" />
+        <field name="lootMisc3Item5" />
+        <field name="lootMisc3Item6" />
+      </var-group>
+      <var-group name="Right Hand">
+        <field name="chanceToEquipRightHand" />
+        <field name="chanceToEquipRightHandItem1" />
+        <field name="chanceToEquipRightHandItem2" />
+        <field name="chanceToEquipRightHandItem3" />
+        <field name="chanceToEquipRightHandItem4" />
+        <field name="chanceToEquipRightHandItem5" />
+        <field name="chanceToEquipRightHandItem6" />
+        <field name="lootRightHandItem1" />
+        <field name="lootRightHandItem2" />
+        <field name="lootRightHandItem3" />
+        <field name="lootRightHandItem4" />
+        <field name="lootRightHandItem5" />
+        <field name="lootRightHandItem6" />
+      </var-group>
+      <var-group name="Torso">
+        <field name="chanceToEquipTorso" />
+        <field name="chanceToEquipTorsoItem1" />
+        <field name="chanceToEquipTorsoItem2" />
+        <field name="chanceToEquipTorsoItem3" />
+        <field name="chanceToEquipTorsoItem4" />
+        <field name="chanceToEquipTorsoItem5" />
+        <field name="chanceToEquipTorsoItem6" />
+        <field name="lootTorsoItem1" />
+        <field name="lootTorsoItem2" />
+        <field name="lootTorsoItem3" />
+        <field name="lootTorsoItem4" />
+        <field name="lootTorsoItem5" />
+        <field name="lootTorsoItem6" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

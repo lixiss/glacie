@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="InGameUI.BarGraphAnimated" path="InGameUI/BarGraphAnimated.tpl">
+    <inherits>
+      <inherit record="InGameUI.BarGraph" />
+      <inherit record="InGameUI.TutorialTrigger" />
+    </inherits>
+    <var-group>
+      <var-group name="Config">
+        <field name="framesPerSecond" var-class="variable" var-type="int" var-default-value="30">
+          <description>Animation FPS</description>
+        </field>
+        <field name="renderBackground" var-class="variable" var-type="bool" var-default-value="1">
+          <description>Render the empty bitmap?</description>
+        </field>
+        <field name="textOffsetY" var-class="variable" var-type="int" var-default-value="0">
+          <description>Y adjustment to text location</description>
+        </field>
+        <field name="totalFrames" var-class="variable" var-type="int" var-default-value="1">
+          <description>Total number of frames</description>
+        </field>
+        <field name="xFrames" var-class="variable" var-type="int" var-default-value="1">
+          <description>Number of frame columns</description>
+        </field>
+        <field name="xSpacing" var-class="variable" var-type="int" var-default-value="0">
+          <description>Spacing to the right of each frame</description>
+        </field>
+        <field name="yFrames" var-class="variable" var-type="int" var-default-value="1">
+          <description>Num of frame rows</description>
+        </field>
+        <field name="ySpacing" var-class="variable" var-type="int" var-default-value="0">
+          <description>Spacing to the bottom of each frame</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

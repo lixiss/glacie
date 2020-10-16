@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="FixedItemQuestObject">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="closedAnimation" />
+      <field name="closedAnimationSpeed" />
+      <field name="closedFxPakName" />
+      <field name="closedSound" />
+      <field name="locked" />
+      <field name="openAnimation" />
+      <field name="openAnimationSpeed" />
+      <field name="openFxPakName" />
+      <field name="openSound" />
+      <field name="pathableWhenOpen" />
+      <field name="useAction" />
+      <field name="useActionDelay" />
+      <field name="useActionTime" />
+    </var-group>
+  </record-type>
+</partial>

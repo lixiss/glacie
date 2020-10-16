@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="Skill_BuffEffect" path="Skill_BuffEffect.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Cast" />
+      <inherit record="TemplateBase.Parameters_Offensive" />
+      <inherit record="TemplateBase.Parameters_Defensive" />
+      <inherit record="TemplateBase.Parameters_Character" />
+      <inherit record="TemplateBase.Parameters_Retaliation" />
+      <inherit record="TemplateBase.RacialBonus" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_Buff" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="UI Infomation">
+        <field name="skillDisplayName" var-class="variable" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

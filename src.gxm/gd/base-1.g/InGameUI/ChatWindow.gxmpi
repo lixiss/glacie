@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="InGameUI.ChatWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="CloseButton" />
+      <field name="CloseButtonLocationX" />
+      <field name="CloseButtonLocationY" />
+      <field name="DragButton" />
+      <field name="DragButtonLocationX" />
+      <field name="DragButtonLocationY" />
+      <field name="EditBox" />
+      <field name="EditBoxBackground" />
+      <field name="PopupLocationX" />
+      <field name="PopupLocationY" />
+      <field name="PopupSeparation" />
+      <field name="ScrollWindow" />
+      <field name="ScrollWindowLocationX" />
+      <field name="ScrollWindowLocationY" />
+      <field name="TextStyle" />
+      <field name="ToggleSpeakButton" />
+      <field name="ToggleSpeakButtonLocationX" />
+      <field name="ToggleSpeakButtonLocationY" />
+      <field name="TopBar" />
+      <field name="TopBarLocationX" />
+      <field name="TopBarLocationY" />
+    </var-group>
+  </record-type>
+</partial>

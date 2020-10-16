@@ -1,66 +1,40 @@
 ﻿using System;
+
 using Glacie.Abstractions;
+using Glacie.Configuration;
 using Glacie.Data.Arz;
+using Glacie.Targeting;
+
 using Xunit;
 
 namespace Glacie.Tests
 {
+    // TODO: This tests requires to be rebuild to go over project context.
+
+    /*
     [Trait("Category", "GX")]
     public sealed class SourceBuilderTests : GlacieTests
     {
-        [Fact]
-        public void ThrowsIfConfigureActionIsNull()
-        {
-            Assert.Throws<ArgumentNullException>(() =>
-            {
-                using var context = Context.Create(c =>
-                {
-                    c.Source((Action<ISourceBuilder>)null!);
-                });
-            });
-        }
-
         [Fact]
         public void ThrowsIfSourceNotConfigured()
         {
             AssertGxError("SourceConfigurationInvalid", () =>
             {
-                using var context = Context.Create(c =>
-                {
-                    c.Source(s => { });
-                });
+                var cc = new ContextConfiguration();
+                cc.Sources.Add(new ContextSourceConfiguration());
+                using var context = Context.Create(new UnifiedEngineType(), cc);
             });
         }
 
         [Fact]
         public void ThrowsIfSourcePathNullOrEmpty()
         {
-            Assert.Throws<ArgumentNullException>(() =>
+            AssertGxError("SourceConfigurationInvalid", () =>
             {
-                using var context = Context.Create(c =>
-                {
-                    c.Source(s => s.Path(null!));
-                });
-            });
+                var cc = new ContextConfiguration();
+                cc.Sources.Add(new ContextSourceConfiguration() { Path = "" });
 
-            Assert.Throws<ArgumentException>(() =>
-            {
-                using var context = Context.Create(c =>
-                {
-                    c.Source(s => s.Path(""));
-                });
-            });
-        }
-
-        [Fact]
-        public void ThrowsIfSourceDatabaseNull()
-        {
-            Assert.Throws<ArgumentNullException>(() =>
-            {
-                using var context = Context.Create(c =>
-                {
-                    c.Source(s => s.Database(null!));
-                });
+                using var context = Context.Create(new UnifiedEngineType(), cc);
             });
         }
 
@@ -70,14 +44,17 @@ namespace Glacie.Tests
             AssertGxError("SourceConfigurationInvalid", () =>
             {
                 using var sourceDatabase = ArzDatabase.Create();
-                using var context = Context.Create(c =>
+
+                var cc = new ContextConfiguration();
+                cc.Sources.Add(new ContextSourceConfiguration()
                 {
-                    c.Source(s => {
-                        s.Path("some-path");
-                        s.Database(sourceDatabase);
-                    });
+                    Path = "some-path",
+                    Database = sourceDatabase
                 });
+
+                using var context = Context.Create(new UnifiedEngineType(), cc);
             });
         }
     }
+    */
 }

@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="Engine.GridSystem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Pieces">
+      <field name="cellSpacingX" />
+      <field name="cellSpacingY" />
+      <field name="cellSpacingZ" />
+      <field name="feature" />
+      <field name="wallPieceBaseA" />
+      <field name="wallPieceBaseB" />
+      <field name="wallPieceBaseC" />
+      <field name="wallPieceBaseD" />
+      <field name="wallPieceBaseE" />
+      <field name="wallPieceBaseF" />
+      <field name="wallPieceBaseG" />
+      <field name="wallPieceBaseH" />
+      <field name="wallPieceBaseI" />
+      <field name="wallPieceBaseJ" />
+      <field name="wallPieceBaseK" />
+      <field name="wallPieceBaseL" />
+      <field name="wallPieceBaseM" />
+      <field name="wallPieceBaseN" />
+      <field name="wallPieceBaseO" />
+      <field name="wallPieceMidA" />
+      <field name="wallPieceMidB" />
+      <field name="wallPieceMidC" />
+      <field name="wallPieceMidD" />
+      <field name="wallPieceMidE" />
+      <field name="wallPieceMidF" />
+      <field name="wallPieceMidG" />
+      <field name="wallPieceMidH" />
+      <field name="wallPieceMidI" />
+      <field name="wallPieceMidJ" />
+      <field name="wallPieceMidK" />
+      <field name="wallPieceMidL" />
+      <field name="wallPieceMidM" />
+      <field name="wallPieceMidN" />
+      <field name="wallPieceMidO" />
+    </var-group>
+    <var-group name="Transparency">
+      <field name="minWallOpacity" />
+    </var-group>
+  </record-type>
+</partial>

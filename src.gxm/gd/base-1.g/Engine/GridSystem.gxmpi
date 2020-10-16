@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="Engine.GridSystem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Pieces">
+      <field name="bumpTextureOverride" />
+      <field name="cellSpacingX" />
+      <field name="cellSpacingY" />
+      <field name="cellSpacingZ" />
+      <field name="diffuseTextureOverride" />
+      <field name="feature" />
+      <field name="featureTextureOverride" />
+      <field name="wallPieceBaseA" />
+      <field name="wallPieceBaseB" />
+      <field name="wallPieceBaseC" />
+      <field name="wallPieceBaseD" />
+      <field name="wallPieceBaseE" />
+      <field name="wallPieceBaseF" />
+      <field name="wallPieceBaseG" />
+      <field name="wallPieceBaseH" />
+      <field name="wallPieceBaseI" />
+      <field name="wallPieceBaseJ" />
+      <field name="wallPieceBaseK" />
+      <field name="wallPieceBaseL" />
+      <field name="wallPieceBaseM" />
+      <field name="wallPieceBaseN" />
+      <field name="wallPieceBaseO" />
+    </var-group>
+    <var-group name="Transparency">
+      <field name="minWallOpacity" />
+    </var-group>
+  </record-type>
+</partial>

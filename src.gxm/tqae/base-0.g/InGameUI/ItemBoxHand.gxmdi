@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="InGameUI.ItemBoxHand" path="InGameUI/ItemBoxHand.tpl">
+    <inherits>
+      <inherit record="InGameUI.ItemBox" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="fancyBottomX" var-class="variable" var-type="int" />
+        <field name="fancyBottomXSize" var-class="variable" var-type="int" />
+        <field name="fancyBottomY" var-class="variable" var-type="int" />
+        <field name="fancyBottomYSize" var-class="variable" var-type="int" />
+        <field name="fancyTopX" var-class="variable" var-type="int" />
+        <field name="fancyTopXSize" var-class="variable" var-type="int" />
+        <field name="fancyTopY" var-class="variable" var-type="int" />
+        <field name="fancyTopYSize" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="TemplateBase.ItemEquipment">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Item Parameters">
+      <field name="attributeScalePercent" />
+      <field name="bitmap" />
+      <field name="bitmapFemale" />
+      <field name="hidePrefixName" />
+      <field name="hideSuffixName" />
+      <field name="itemCostName" />
+      <field name="itemNameTag" />
+      <field name="itemQualityTag" />
+      <field name="itemSetName" />
+      <field name="itemStyleTag" />
+    </var-group>
+  </record-type>
+</partial>

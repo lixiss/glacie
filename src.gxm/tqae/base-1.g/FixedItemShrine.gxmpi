@@ -1,0 +1,54 @@
+﻿<partial>
+  <record-type name="FixedItemShrine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Shrine Animations">
+      <field name="activeAnimation" />
+      <field name="activeAnimationSpeed" />
+      <field name="activeToDormantAnimation" />
+      <field name="activeToDormantAnimationSpeed" />
+      <field name="dormantAnimation" />
+      <field name="dormantAnimationSpeed" />
+      <field name="dormantToIdleAnimation" />
+      <field name="dormantToIdleAnimationSpeed" />
+      <field name="idleAnimation" />
+      <field name="idleAnimationSpeed" />
+      <field name="idleToActiveAnimation" />
+      <field name="idleToActiveAnimationSpeed" />
+    </var-group>
+    <var-group name="Shrine Config">
+      <field name="oneTimeUse" />
+      <field name="shrineActiveTime" />
+      <field name="shrineDormantTime" />
+      <field name="shrineRadius" />
+      <field name="shrineSampleTime" />
+    </var-group>
+    <var-group name="Shrine Effects">
+      <field name="ActiveMeshFX" />
+      <field name="ActiveOneShotAttachment" />
+      <field name="ActiveOneShotEffect" />
+      <field name="DormantToIdleAttachment" />
+      <field name="DormantToIdleEffect" />
+      <field name="IdleLoopingAttachment" />
+      <field name="IdleLoopingEffect" />
+      <field name="activeEffectName" />
+      <field name="activeFxPakName" />
+      <field name="activeToDormantFxPakName" />
+      <field name="dormantFxPakName" />
+      <field name="dormantToIdleFxPakName" />
+      <field name="idleFxPakName" />
+      <field name="idleToActiveFxPakName" />
+    </var-group>
+    <var-group name="Shrine Sounds">
+      <field name="activeSound" />
+      <field name="activeToDormantSound" />
+      <field name="dormantSound" />
+      <field name="dormantToIdleSound" />
+      <field name="idleSound" />
+      <field name="idleToActiveSound" />
+    </var-group>
+  </record-type>
+</partial>

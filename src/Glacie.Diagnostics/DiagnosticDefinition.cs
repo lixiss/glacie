@@ -65,12 +65,12 @@ namespace Glacie.Diagnostics
         public Diagnostic Create(Location? location = null,
             // IEnumerable<Location>? additionalLocations = null,
             // ImmutableDictionary<string, string>? properties = null,
-            params object?[]? messageArgs)
+            params object?[]? messageArguments)
         {
             return Diagnostic.Create(this, location: location,
                 // additionalLocations: additionalLocations,
                 // properties: properties,
-                messageArgs: messageArgs);
+                messageArgs: messageArguments);
         }
 
         #endregion

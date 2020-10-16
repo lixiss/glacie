@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="Armor_Shoulders">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Armor Config">
+      <field name="armorClassification" />
+    </var-group>
+  </record-type>
+</partial>

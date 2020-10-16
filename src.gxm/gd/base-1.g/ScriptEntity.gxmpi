@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="ScriptEntity">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="ScriptEntity">
+      <field name="cacheObjects" />
+      <field name="editorMesh" />
+      <field name="editorScale" />
+      <field name="pathing" />
+    </var-group>
+  </record-type>
+</partial>

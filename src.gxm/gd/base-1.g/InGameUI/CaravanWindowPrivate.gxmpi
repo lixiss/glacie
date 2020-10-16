@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="InGameUI.CaravanWindowPrivate">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="CanAffordFontStyle" />
+      <field name="CannotAffordFontStyle" />
+      <field name="CostTextBox" />
+      <field name="CostTextLabel" />
+      <field name="CoverPlateImage" />
+      <field name="IncreaseButton" />
+      <field name="IncreaseCostText" />
+      <field name="InventoryCostArray" />
+      <field name="InventoryDBR" />
+      <field name="InventoryHeight" />
+      <field name="InventoryWidth" />
+      <field name="LargeCoverPlate" />
+      <field name="SmallCoverPlate" />
+      <field name="WindowLocationX" />
+      <field name="WindowLocationY" />
+    </var-group>
+  </record-type>
+</partial>

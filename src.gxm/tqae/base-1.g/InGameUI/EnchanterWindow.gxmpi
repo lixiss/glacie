@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="enchanterArtifactTab" />
+      <field name="enchanterArtifactTabBitmap" />
+      <field name="enchanterArtifactTabButton" />
+      <field name="enchanterArtifactTabButtonRollover" />
+      <field name="enchanterBaseBitmap" />
+      <field name="enchanterCloseButton" />
+      <field name="enchanterHeadingBar" />
+      <field name="enchanterHeadingRollover" />
+      <field name="enchanterHeadingText" />
+      <field name="enchanterNameText" />
+      <field name="enchanterRecoverTab" />
+      <field name="enchanterRecoverTabBitmap" />
+      <field name="enchanterRecoverTabButton" />
+      <field name="enchanterRecoverTabButtonRollover" />
+      <field name="enchanterWindowTitle" />
+    </var-group>
+  </record-type>
+</partial>

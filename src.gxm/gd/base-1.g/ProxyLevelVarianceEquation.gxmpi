@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="ProxyLevelVarianceEquation">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="maxVarianceEquationEpic" />
+      <field name="maxVarianceEquationLegendary" />
+      <field name="maxVarianceEquationNormal" />
+      <field name="minVarianceEquationEpic" />
+      <field name="minVarianceEquationLegendary" />
+      <field name="minVarianceEquationNormal" />
+    </var-group>
+  </record-type>
+</partial>

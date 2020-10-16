@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="Cerberus">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="CerberusParameters">
+      <field name="roarChance" />
+    </var-group>
+    <var-group name="CerberusSkills">
+      <field name="roarSkill1" />
+      <field name="roarSkill2" />
+    </var-group>
+  </record-type>
+</partial>

@@ -8,7 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Analysis\ResourceCountByTypeCommand.cs" />
+    <Compile Include="Analysis\ScanForDbrReferencesCommand.cs" />
     <Compile Include="Command.cs" />
+    <Compile Include="Core\PathHashingCommand.cs" />
+    <Compile Include="Resources\ResourceProviderCombiner.cs" />
     <None Include="Metadata\_old-NC-CreateMetadataCommand2.cs" />
     <Compile Include="Metadata\CreateMetadataCommand.cs" />
     <Compile Include="Metadata\XmlDatabaseDefinitionWriter.cs" />
@@ -19,25 +23,29 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cli\Glacie.Cli.Core\Glacie.Cli.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Analysis\Glacie.Analysis.csproj" />
     <ProjectReference Include="..\Glacie.CommandLine\Glacie.CommandLine.csproj" />
     <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
     <ProjectReference Include="..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
     <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
     <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
-    <ProjectReference Include="..\Glacie.Data.Tpl\Glacie.Data.Tpl.csproj" />
-    <ProjectReference Include="..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Templates\Glacie.Data.Templates.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Metadata.V1\Glacie.Data.Metadata.V1.csproj" />
     <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
     <ProjectReference Include="..\Glacie.Logging\Glacie.Logging.csproj" />
-    <ProjectReference Include="..\Glacie.Metadata\Glacie.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Metadata.V1\Glacie.Metadata.V1.csproj" />
     <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
-    <ProjectReference Include="..\Glacie.Resources\Glacie.Resources.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Resources.V1\Glacie.Data.Resources.V1.csproj" />
+    <ProjectReference Include="..\Glacie.Resources.GX1\Glacie.Resources.GX1.csproj" />
+    <ProjectReference Include="..\Glacie.Targeting.GX1\Glacie.Targeting.GX1.csproj" />
     <ProjectReference Include="..\Glacie\Glacie.csproj" />
   </ItemGroup>
 

@@ -1,0 +1,265 @@
+﻿<partial>
+  <record-type name="GameEngine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Absolute Damage Effects">
+      <field name="absColdFx" />
+      <field name="absColdFxSound" />
+      <field name="absDisruptionFx" />
+      <field name="absDisruptionFxSound" />
+      <field name="absFireFx" />
+      <field name="absFireFxSound" />
+      <field name="absLifeFx" />
+      <field name="absLifeFxSound" />
+      <field name="absLightningFx" />
+      <field name="absLightningFxSound" />
+      <field name="absManaBurnFx" />
+      <field name="absManaBurnFxSound" />
+      <field name="absPercentCurrentLifeFx" />
+      <field name="absPercentCurrentLifeFxSound" />
+      <field name="absPoisonFx" />
+      <field name="absPoisonFxSound" />
+    </var-group>
+    <var-group name="Common Monster Effects">
+      <field name="confusionDamageFxPak" />
+    </var-group>
+    <var-group name="Defaults">
+      <field name="CriticalHitOnMonsterStyle" />
+      <field name="CriticalHitOnPlayerStyle" />
+      <field name="DamageElementalStyle" />
+      <field name="DamageNormalStyle" />
+      <field name="DamageOnPlayerStyle" />
+      <field name="DamageOverTimeStyle" />
+      <field name="HealingOnPlayerStyle" />
+      <field name="HealingStyle" />
+      <field name="PlayerImpairmentStyle" />
+      <field name="absoluteRunSpeedCapMax" />
+      <field name="absoluteRunSpeedCapMin" />
+      <field name="defaultCombatManagerRecord" />
+    </var-group>
+    <var-group name="Duration Damage Effects">
+      <field name="attackSpeedDamageFxPak" />
+      <field name="bleedingDamageFxPak" />
+      <field name="coldDamageFxPak" />
+      <field name="defensiveAbilityDamageFxPak" />
+      <field name="defensiveReductionDamageFxPak" />
+      <field name="fireDamageFxPak" />
+      <field name="fumbleDamageFxPak" />
+      <field name="lifeDamageFxPak" />
+      <field name="lifeLeachDamageFxPak" />
+      <field name="lightningDamageFxPak" />
+      <field name="manaLeachDamageFxPak" />
+      <field name="offensiveAbilityDamageFxPak" />
+      <field name="offensiveReductionDamageFxPak" />
+      <field name="poisonDamageFxPak" />
+      <field name="runSpeedDamageFxPak" />
+      <field name="sleepDamageFxPak" />
+      <field name="spellCastSpeedDamageFxPak" />
+    </var-group>
+    <var-group name="Enchanter Info">
+      <field name="enchanterRecoveryFactor" />
+    </var-group>
+    <var-group name="GameCamera">
+      <field name="CameraDistanceDefault" />
+      <field name="CameraDistanceMax" />
+      <field name="CameraDistanceMin" />
+      <field name="CameraPitchDefault" />
+      <field name="CameraPitchMax" />
+      <field name="CameraPitchMin" />
+    </var-group>
+    <var-group name="Item Info">
+      <var-group name="Item Animations">
+        <field name="itemForearmAnimationName" />
+      </var-group>
+      <var-group name="Item Colors">
+        <field name="artifactColor" />
+        <field name="artifactFormulaColor" />
+        <field name="brokenItemColor" />
+        <field name="commonItemColor" />
+        <field name="epicItemColor" />
+        <field name="legendaryItemColor" />
+        <field name="magicalItemColor" />
+        <field name="potionItemColor" />
+        <field name="questItemColor" />
+        <field name="rareItemColor" />
+        <field name="relicItemColor" />
+        <field name="scrollColor" />
+      </var-group>
+      <var-group name="Item Sparkles">
+        <field name="artifactFormulaSparkle" />
+        <field name="artifactSparkle" />
+        <field name="brokenItemSparkle" />
+        <field name="epicItemSparkle" />
+        <field name="legendaryItemSparkle" />
+        <field name="magicalItemSparkle" />
+        <field name="potionItemSparkle" />
+        <field name="questItemSparkle" />
+        <field name="rareItemSparkle" />
+        <field name="relicItemSparkle" />
+        <field name="scrollSparkle" />
+      </var-group>
+      <field name="artifactFormulaStackLimit" />
+      <field name="itemBackgroundOpacity" />
+      <field name="itemBackgroundOpacityHighlighted" />
+      <field name="itemBorderOpacity" />
+      <field name="itemBorderOpacityHighlighted" />
+      <field name="itemCostName" />
+    </var-group>
+    <var-group name="Market Info">
+      <field name="marketBulkPurchaseAmount" />
+      <field name="marketPurchaseSound" />
+      <field name="marketSaleSound" />
+    </var-group>
+    <var-group name="Misc">
+      <field name="alertDistance" />
+      <field name="armorDefensiveAbsorption" />
+      <field name="longRange" />
+      <field name="maximumRange" />
+      <field name="meleeAutoTargetDistance" />
+      <field name="meleeRange" />
+      <field name="meleeTargetDistance" />
+      <field name="moderateRange" />
+      <field name="shortRange" />
+    </var-group>
+    <var-group name="Monster Info">
+      <var-group name="Pet Stuff">
+        <field name="monsterPetBannerName" />
+        <field name="petBannerName" />
+        <field name="playerPetBannerName" />
+      </var-group>
+      <field name="bossAttackSpeedCapMax" />
+      <field name="bossAttackSpeedCapMin" />
+      <field name="bossMonsterColor" />
+      <field name="bossRunSpeedCapMax" />
+      <field name="bossRunSpeedCapMin" />
+      <field name="bossSpellCastSpeedCapMax" />
+      <field name="bossSpellCastSpeedCapMin" />
+      <field name="championMonsterColor" />
+      <field name="commonMonsterColor" />
+      <field name="heroMonsterColor" />
+      <field name="monsterAttackSpeedCapMax" />
+      <field name="monsterAttackSpeedCapMin" />
+      <field name="monsterAttributePak" />
+      <field name="monsterBossAttributePak" />
+      <field name="monsterDefenseCap" />
+      <field name="monsterLevelGapFixer" />
+      <field name="monsterRunSpeedCapMax" />
+      <field name="monsterRunSpeedCapMin" />
+      <field name="monsterSleepAggressionFalloffRate" />
+      <field name="monsterSpellCastSpeedCapMax" />
+      <field name="monsterSpellCastSpeedCapMin" />
+      <field name="questMonsterColor" />
+    </var-group>
+    <var-group name="Movement">
+      <field name="maxPlayerRotationSpeed" />
+      <field name="maxRotationSpeed" />
+      <field name="minPlayerRotationSpeed" />
+      <field name="minRotationSpeed" />
+      <field name="pathSlowdownLength" />
+      <field name="playerPathSlowdownLength" />
+    </var-group>
+    <var-group name="OneShot Info">
+      <field name="potionStackLimit" />
+      <field name="scrollStackLimit" />
+    </var-group>
+    <var-group name="Pet Info">
+      <field name="petAttributePak" />
+    </var-group>
+    <var-group name="Player Info">
+      <field name="characterDefensiveBlockRecoveryReductionCap" />
+      <field name="playerAttackSpeedCapMax" />
+      <field name="playerAttackSpeedCapMin" />
+      <field name="playerAttributePak" />
+      <field name="playerCooldownReductionCap" />
+      <field name="playerDefenseCap" />
+      <field name="playerDodgePercentCap" />
+      <field name="playerDodgeProjectilePercentCap" />
+      <field name="playerManaCostReductionCap" />
+      <field name="playerRacialBonusPercentDefenseCap" />
+      <field name="playerRunSpeedCapMax" />
+      <field name="playerRunSpeedCapMin" />
+      <field name="playerSpellCastSpeedCapMax" />
+      <field name="playerSpellCastSpeedCapMin" />
+    </var-group>
+    <var-group name="Proxy Info">
+      <field name="championDifficultyModifier" />
+      <field name="championMax" />
+      <field name="championMaxModifier" />
+      <field name="championMin" />
+      <field name="championMinModifier" />
+      <field name="difficultyModifier" />
+      <field name="spawnMax" />
+      <field name="spawnMaxModifier" />
+      <field name="spawnMin" />
+      <field name="spawnMinModifier" />
+    </var-group>
+    <var-group name="Randomizer Weights">
+      <field name="bothPrefixSuffixModifierBoss" />
+      <field name="bothPrefixSuffixModifierChampion" />
+      <field name="bothPrefixSuffixModifierChampionChest" />
+      <field name="bothPrefixSuffixModifierCommon" />
+      <field name="bothPrefixSuffixModifierCommonChest" />
+      <field name="bothPrefixSuffixModifierHero" />
+      <field name="bothPrefixSuffixModifierHeroChest" />
+      <field name="brokenOnlyModifierBoss" />
+      <field name="brokenOnlyModifierChampion" />
+      <field name="brokenOnlyModifierChampionChest" />
+      <field name="brokenOnlyModifierCommon" />
+      <field name="brokenOnlyModifierCommonChest" />
+      <field name="brokenOnlyModifierHero" />
+      <field name="brokenOnlyModifierHeroChest" />
+      <field name="noPrefixNoSuffixModifierBoss" />
+      <field name="noPrefixNoSuffixModifierChampion" />
+      <field name="noPrefixNoSuffixModifierChampionChest" />
+      <field name="noPrefixNoSuffixModifierCommon" />
+      <field name="noPrefixNoSuffixModifierCommonChest" />
+      <field name="noPrefixNoSuffixModifierHero" />
+      <field name="noPrefixNoSuffixModifierHeroChest" />
+      <field name="prefixOnlyModifierBoss" />
+      <field name="prefixOnlyModifierChampion" />
+      <field name="prefixOnlyModifierChampionChest" />
+      <field name="prefixOnlyModifierCommon" />
+      <field name="prefixOnlyModifierCommonChest" />
+      <field name="prefixOnlyModifierHero" />
+      <field name="prefixOnlyModifierHeroChest" />
+      <field name="suffixOnlyModifierBoss" />
+      <field name="suffixOnlyModifierChampion" />
+      <field name="suffixOnlyModifierChampionChest" />
+      <field name="suffixOnlyModifierCommon" />
+      <field name="suffixOnlyModifierCommonChest" />
+      <field name="suffixOnlyModifierHero" />
+      <field name="suffixOnlyModifierHeroChest" />
+    </var-group>
+    <var-group name="Rewards and Penalties">
+      <field name="RedemptionMultiplier" />
+      <field name="deathPenaltyEquation" />
+      <field name="deathPenaltyMax" />
+      <field name="deathPenaltyMin" />
+      <field name="experienceEquation" />
+    </var-group>
+    <var-group name="Skill Info">
+      <field name="augmentedColor" />
+      <field name="skillMasteryTierLevel" />
+    </var-group>
+    <var-group name="Special Character Handlers">
+      <field name="freezeDamageHandler" />
+    </var-group>
+    <var-group name="UI">
+      <var-group name="Cursor">
+        <field name="relicCursorActivationSound" />
+      </var-group>
+      <var-group name="Item Relic">
+        <field name="itemOverlayFontColor" />
+        <field name="itemOverlayFontName" />
+        <field name="itemOverlayFontSize" />
+      </var-group>
+      <field name="UICharWindowInventorySack0DimsX" />
+      <field name="UICharWindowInventorySack0DimsY" />
+      <field name="UICharWindowInventorySack1DimsX" />
+      <field name="UICharWindowInventorySack1DimsY" />
+    </var-group>
+  </record-type>
+</partial>

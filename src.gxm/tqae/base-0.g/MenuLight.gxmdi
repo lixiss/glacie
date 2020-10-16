@@ -1,0 +1,104 @@
+﻿<partial>
+  <record-type name="MenuLight" path="MenuLight.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="MenuLight" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Camera">
+        <field name="cameraFOV" var-class="variable" var-type="real" var-default-value="28.842" />
+        <field name="cameraFarPlane" var-class="variable" var-type="real" var-default-value="50.0" />
+        <field name="cameraNearPlane" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="cameraPosition.x" var-class="variable" var-type="real" var-default-value="3.054" />
+        <field name="cameraPosition.y" var-class="variable" var-type="real" var-default-value="0.474" />
+        <field name="cameraPosition.z" var-class="variable" var-type="real" var-default-value="12.088" />
+        <field name="cameraTarget.x" var-class="variable" var-type="real" var-default-value="1.641" />
+        <field name="cameraTarget.y" var-class="variable" var-type="real" var-default-value="1.259" />
+        <field name="cameraTarget.z" var-class="variable" var-type="real" var-default-value="-0.052" />
+      </var-group>
+      <var-group name="DayLights">
+        <field name="lightDay1.b" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>sunlight</description>
+        </field>
+        <field name="lightDay1.g" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>sunlight</description>
+        </field>
+        <field name="lightDay1.r" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>sunlight</description>
+        </field>
+        <field name="lightDay2.b" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>ceiling light</description>
+        </field>
+        <field name="lightDay2.g" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>ceiling light</description>
+        </field>
+        <field name="lightDay2.r" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>ceiling light</description>
+        </field>
+        <field name="lightDay3.b" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>floor light</description>
+        </field>
+        <field name="lightDay3.g" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>floor light</description>
+        </field>
+        <field name="lightDay3.r" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>floor light</description>
+        </field>
+        <field name="lightDay4.b" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>player light</description>
+        </field>
+        <field name="lightDay4.g" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>player light</description>
+        </field>
+        <field name="lightDay4.r" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>player light</description>
+        </field>
+        <field name="lightDay5.b" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>unused</description>
+        </field>
+        <field name="lightDay5.g" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>unused</description>
+        </field>
+        <field name="lightDay5.r" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>unused</description>
+        </field>
+      </var-group>
+      <var-group name="General">
+        <field name="backgroundColor.b" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="backgroundColor.g" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="backgroundColor.r" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="bloomParams.a" var-class="variable" var-type="real" var-default-value="0.60">
+          <description>brightness</description>
+        </field>
+        <field name="bloomParams.b" var-class="variable" var-type="real" var-default-value="1.05">
+          <description>contrast</description>
+        </field>
+        <field name="bloomParams.c" var-class="variable" var-type="real" var-default-value="0.35">
+          <description>saturation</description>
+        </field>
+        <field name="lightDirection.x" var-class="variable" var-type="real" var-default-value="3.675" />
+        <field name="lightDirection.y" var-class="variable" var-type="real" var-default-value="7.223" />
+        <field name="lightDirection.z" var-class="variable" var-type="real" var-default-value="4.852" />
+        <field name="shadowSoftness" var-class="variable" var-type="real" var-default-value="1.3" />
+      </var-group>
+      <var-group name="NightLights">
+        <field name="lightNight1.b" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight1.g" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight1.r" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight2.b" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight2.g" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight2.r" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight3.b" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight3.g" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight3.r" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight4.b" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight4.g" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight4.r" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight5.b" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight5.g" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lightNight5.r" var-class="variable" var-type="real" var-default-value="0.2" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

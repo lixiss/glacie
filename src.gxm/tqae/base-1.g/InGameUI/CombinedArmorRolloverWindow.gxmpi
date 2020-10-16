@@ -1,0 +1,35 @@
+﻿<partial>
+  <record-type name="InGameUI.CombinedArmorRolloverWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="armNumber" />
+      <field name="armText" />
+      <field name="bonusColorBlue" />
+      <field name="bonusColorGreen" />
+      <field name="bonusColorRed" />
+      <field name="bonusNumber" />
+      <field name="bonusText" />
+      <field name="edgeClearance" />
+      <field name="headNumber" />
+      <field name="headText" />
+      <field name="jewelryNumber" />
+      <field name="jewelryText" />
+      <field name="legNumber" />
+      <field name="legText" />
+      <field name="minSpacingBetweenColumns" />
+      <field name="rolloverStyle" />
+      <field name="titleText" />
+      <field name="torsoNumber" />
+      <field name="torsoText" />
+      <field name="unprotectedColorBlue" />
+      <field name="unprotectedColorGreen" />
+      <field name="unprotectedColorRed" />
+      <field name="unprotectedTag" />
+      <field name="verticalTextLineSpacing" />
+    </var-group>
+  </record-type>
+</partial>

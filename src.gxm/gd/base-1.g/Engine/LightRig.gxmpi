@@ -1,0 +1,34 @@
+﻿<partial>
+  <record-type name="Engine.LightRig">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Light Rig">
+      <field name="cameraRelative" />
+      <field name="color1.b" />
+      <field name="color1.g" />
+      <field name="color1.r" />
+      <field name="color2.b" />
+      <field name="color2.g" />
+      <field name="color2.r" />
+      <field name="color3.b" />
+      <field name="color3.g" />
+      <field name="color3.r" />
+      <field name="position1.x" />
+      <field name="position1.y" />
+      <field name="position1.z" />
+      <field name="position2.x" />
+      <field name="position2.y" />
+      <field name="position2.z" />
+      <field name="position3.x" />
+      <field name="position3.y" />
+      <field name="position3.z" />
+      <field name="radius1" />
+      <field name="radius2" />
+      <field name="radius3" />
+      <field name="useSpecular" />
+    </var-group>
+  </record-type>
+</partial>

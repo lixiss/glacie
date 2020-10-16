@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="InGameUI.StackWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Stack">
+      <field name="cancelButton" />
+      <field name="decreaseButton" />
+      <field name="increaseButton" />
+      <field name="inputBox" />
+      <field name="okButton" />
+      <field name="stackBackground" />
+    </var-group>
+  </record-type>
+</partial>

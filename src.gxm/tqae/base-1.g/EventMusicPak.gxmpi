@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="EventMusicPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Sound Properties">
+      <field name="AmbientFadeTime" />
+      <field name="delayTime" />
+      <field name="eventMusicName" />
+      <field name="randomMusicPak" />
+      <field name="volume" />
+    </var-group>
+  </record-type>
+</partial>

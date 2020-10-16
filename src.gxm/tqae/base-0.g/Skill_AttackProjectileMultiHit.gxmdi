@@ -1,0 +1,31 @@
+﻿<partial>
+  <record-type name="Skill_AttackProjectileMultiHit" path="Skill_AttackProjectileMultiHit.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Attack" />
+      <inherit record="TemplateBase.Skill_Activated" />
+      <inherit record="TemplateBase.Skill_ProjectileBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_AttackProjectileMultiHit" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Multi Hit Config">
+        <field name="numHits" var-class="variable" var-type="int" var-default-value="8">
+          <description>number of hit calls to expect. this is the number of pieces the circle is split into</description>
+        </field>
+        <field name="offset" var-class="variable" var-type="real" var-default-value="3.0">
+          <description>offset from target</description>
+        </field>
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="projectileLaunchNumber" var-class="array" var-type="int" var-default-value="1" />
+        <field name="projectileLaunchRotation" var-class="array" var-type="real" />
+        <field name="projectileUsesAllDamage" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="skillProjectileName" var-class="array" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

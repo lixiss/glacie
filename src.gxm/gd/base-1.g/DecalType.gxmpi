@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="DecalType">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="properties">
+      <field name="bumpTexture" />
+      <field name="height" />
+      <field name="shader" />
+      <field name="texture" />
+      <field name="width" />
+    </var-group>
+  </record-type>
+</partial>

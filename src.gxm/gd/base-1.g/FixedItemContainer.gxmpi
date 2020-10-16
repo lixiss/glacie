@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="FixedItemContainer">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Container Config">
+      <field name="IdleEffect" />
+      <field name="LockedClassification" />
+      <field name="LockedEffect" />
+      <field name="LockedRadius" />
+      <field name="countsAsOneShot" />
+      <field name="disableCollisions" />
+      <field name="idleAnimation" />
+      <field name="idleAnimationSpeed" />
+      <field name="loopIdleAnimation" />
+      <field name="openAnimation" />
+      <field name="openAnimationSpeed" />
+      <field name="openFxPakName" />
+      <field name="openSound" />
+      <field name="pathableWhenOpen" />
+    </var-group>
+  </record-type>
+</partial>

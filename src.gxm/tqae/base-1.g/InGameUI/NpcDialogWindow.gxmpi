@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="InGameUI.NpcDialogWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="bgColorA" />
+      <field name="bgColorB" />
+      <field name="bgColorG" />
+      <field name="bgColorR" />
+      <field name="closeButton" />
+      <field name="flexibleBorders" />
+      <field name="scrollSpeedScale" />
+      <field name="scrollableWindow" />
+      <field name="talkDistanceThreshold" />
+      <field name="textBox" />
+    </var-group>
+  </record-type>
+</partial>

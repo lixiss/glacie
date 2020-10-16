@@ -12,7 +12,8 @@
         /// </summary>
         File = 1,
 
-        // Database's Record
-        // etc...
+        Record = 2,
+
+        RecordField = 3,
     }
 }

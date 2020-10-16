@@ -1,0 +1,56 @@
+﻿<partial>
+  <record-type name="Skill_AttackWave" path="Skill_AttackWave.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Activated" />
+      <inherit record="TemplateBase.Skill_Attack" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_AttackWave" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Wave Config">
+        <field name="fxPakAlternate" var-class="variable" var-type="bool">
+          <description>Alternate direction</description>
+        </field>
+        <field name="fxPakExtents" var-class="variable" var-type="real">
+          <description>Size of FxPak</description>
+        </field>
+        <field name="fxPakName" var-class="variable" var-type="file_dbr">
+          <description>FxPak</description>
+        </field>
+        <field name="fxPakRandAngle" var-class="variable" var-type="real">
+          <description>FxPak random angle offset</description>
+        </field>
+        <field name="fxPakRandOffsetX" var-class="variable" var-type="real">
+          <description>FxPak random offset in X/Z</description>
+        </field>
+        <field name="fxPakRandOffsetY" var-class="variable" var-type="real">
+          <description>FxPak random offset in -Y</description>
+        </field>
+        <field name="fxPakSpawnDistance" var-class="variable" var-type="real">
+          <description>Distance before new fxPaks are created</description>
+        </field>
+        <field name="lineEffectName" var-class="variable" var-type="file_dbr">
+          <description>EffectEntity</description>
+        </field>
+        <field name="useTargetDir" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Fire in direction of target (true) or forward facing dir (false)</description>
+        </field>
+        <field name="waveDepth" var-class="variable" var-type="real" />
+        <field name="waveDistance" var-class="array" var-type="real" />
+        <field name="waveEffectName" var-class="variable" var-type="file_dbr">
+          <description>TrailEffect</description>
+        </field>
+        <field name="waveEndWidth" var-class="array" var-type="real" />
+        <field name="waveLoopSound" var-class="variable" var-type="file_dbr" />
+        <field name="waveSource" var-class="picklist" var-type="string" var-default-value="Source;Target" />
+        <field name="waveStartSound" var-class="variable" var-type="file_dbr" />
+        <field name="waveStartWidth" var-class="array" var-type="real" />
+        <field name="waveTime" var-class="variable" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

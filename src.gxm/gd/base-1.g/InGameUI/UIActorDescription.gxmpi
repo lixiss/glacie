@@ -1,0 +1,39 @@
+﻿<partial>
+  <record-type name="InGameUI.UIActorDescription">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="UIActorDescription">
+      <field name="healthBar" />
+      <field name="healthBarBoss" />
+      <field name="healthBarTier1Bitmap" />
+      <field name="healthBarTier2Bitmap" />
+      <field name="healthBarTier3Bitmap" />
+      <field name="healthBarTier4Bitmap" />
+      <field name="healthBarTier5Bitmap" />
+      <field name="levelDiffTier1.B" />
+      <field name="levelDiffTier1.G" />
+      <field name="levelDiffTier1.R" />
+      <field name="levelDiffTier2.B" />
+      <field name="levelDiffTier2.G" />
+      <field name="levelDiffTier2.R" />
+      <field name="levelDiffTier3.B" />
+      <field name="levelDiffTier3.G" />
+      <field name="levelDiffTier3.R" />
+      <field name="levelDiffTier4.B" />
+      <field name="levelDiffTier4.G" />
+      <field name="levelDiffTier4.R" />
+      <field name="levelDiffTier5.B" />
+      <field name="levelDiffTier5.G" />
+      <field name="levelDiffTier5.R" />
+      <field name="levelDiffTier6.B" />
+      <field name="levelDiffTier6.G" />
+      <field name="levelDiffTier6.R" />
+      <field name="levelTextBox" />
+      <field name="nameTextBox" />
+      <field name="raceTextBox" />
+    </var-group>
+  </record-type>
+</partial>

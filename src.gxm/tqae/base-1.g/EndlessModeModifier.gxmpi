@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="EndlessModeModifier">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Endless Mode Specials">
+      <var-group name="Enemy Modifiers">
+        <field name="actorToSpawnOnDeath" />
+        <field name="aggroRangeIncrease" />
+        <field name="dyingSkillName" />
+        <field name="enemyScaleModifier" />
+      </var-group>
+      <var-group name="Player Modifiers">
+        <field name="disallowPets" />
+        <field name="potionCooldownIncrease" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

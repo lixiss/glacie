@@ -1,0 +1,30 @@
+﻿<partial>
+  <record-type name="ProxyAmbush" path="ProxyAmbush.tpl">
+    <inherits>
+      <inherit record="Proxy" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ProxyAmbush" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Proxy Ambush">
+        <field name="alertArea" var-class="variable" var-type="real" />
+        <field name="maxDelayTime" var-class="variable" var-type="real" />
+        <field name="maxGroupSize" var-class="variable" var-type="int">
+          <description>Maximum to spawn at once</description>
+        </field>
+        <field name="maxSpawnTime" var-class="variable" var-type="real" />
+        <field name="minDelayTime" var-class="variable" var-type="real" />
+        <field name="minGroupSize" var-class="variable" var-type="int">
+          <description>Minimum to spawn at once</description>
+        </field>
+        <field name="minSpawnTime" var-class="variable" var-type="real" />
+        <field name="spawnThreshold" var-class="variable" var-type="int">
+          <description>Wait until this many left to spawn more</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

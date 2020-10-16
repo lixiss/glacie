@@ -18,6 +18,8 @@
         RealArray = 6,
         BooleanArray = 7,
         StringArray = 8,
+
+        // TODO: Make Float64 support optional.
         Float64Array = 9,
     }
 }

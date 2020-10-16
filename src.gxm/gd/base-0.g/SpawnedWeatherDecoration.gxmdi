@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="SpawnedWeatherDecoration" path="SpawnedWeatherDecoration.tpl">
+    <inherits>
+      <inherit record="Decoration" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SpawnedWeatherDecoration" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Weather Interaction">
+        <field name="animateAtWindSpeed" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="captureRadius" var-class="variable" var-type="real" var-default-value="8" />
+        <field name="funnelRadius" var-class="variable" var-type="real" var-default-value="3" />
+        <field name="maxAnimateWindMultiplier" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="minAnimateWindMultiplier" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="windDirectionBone" var-class="variable" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

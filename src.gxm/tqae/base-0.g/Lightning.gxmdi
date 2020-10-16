@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="Lightning" path="Lightning.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Lightning" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="Alpha256" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="Blue256" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="Green256" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="Red256" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="Shader" var-class="variable" var-type="file_ssh" var-default-value="Shaders/Effects/TrailAdditive.ssh" />
+        <field name="Texture" var-class="variable" var-type="file_tex" var-default-value="Sandbox/Eric/LightningTESTA.tex" />
+        <field name="TextureStretch" var-class="variable" var-type="real" var-default-value="6" />
+        <field name="Width" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="fromSky" var-class="variable" var-type="bool" />
+        <field name="generateTendrils" var-class="variable" var-type="bool" />
+        <field name="numberOfBolts" var-class="variable" var-type="int" />
+        <field name="timeMax" var-class="variable" var-type="real" />
+        <field name="timeMin" var-class="variable" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

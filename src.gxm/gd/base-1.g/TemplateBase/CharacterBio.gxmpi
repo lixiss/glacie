@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="TemplateBase.CharacterBio">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Character Bio">
+      <var-group name="Natural Resistance">
+        <field name="defensiveAether" />
+        <field name="defensiveChaos" />
+        <field name="defensiveCold" />
+        <field name="defensiveFire" />
+        <field name="defensiveFreeze" />
+        <field name="defensiveKnockdown" />
+        <field name="defensiveLife" />
+        <field name="defensiveLightning" />
+        <field name="defensivePetrify" />
+        <field name="defensivePhysical" />
+        <field name="defensivePierce" />
+        <field name="defensivePoison" />
+        <field name="defensiveSleep" />
+        <field name="defensiveStun" />
+        <field name="defensiveTrap" />
+      </var-group>
+      <field name="characterAttributeEquations" />
+    </var-group>
+  </record-type>
+</partial>

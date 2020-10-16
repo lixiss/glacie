@@ -1,0 +1,44 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestOverview">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="QuestOverview">
+      <field name="acceptButton" />
+      <field name="bgColor.A" />
+      <field name="bgColor.B" />
+      <field name="bgColor.G" />
+      <field name="bgColor.R" />
+      <field name="contentWidth" />
+      <field name="declineButton" />
+      <field name="incentiveSectionSpacing" />
+      <field name="incentiveStyle" />
+      <field name="incentiveTitleStyle" />
+      <field name="itemBorderAdjust" />
+      <field name="itemBorderB" />
+      <field name="itemBorderL" />
+      <field name="itemBorderLL" />
+      <field name="itemBorderLR" />
+      <field name="itemBorderR" />
+      <field name="itemBorderT" />
+      <field name="itemBorderUL" />
+      <field name="itemBorderUR" />
+      <field name="itemSectionSpacing" />
+      <field name="majorRowHeight" />
+      <field name="minorRowHeight" />
+      <field name="objectiveBitmap" />
+      <field name="objectiveSectionSpacing" />
+      <field name="objectiveStyle" />
+      <field name="objectiveTitleStyle" />
+      <field name="questTitle" />
+      <field name="rewardSectionSpacing" />
+      <field name="rewardStyle" />
+      <field name="rewardTitleStyle" />
+      <field name="showQuestTitle" />
+      <field name="taskText" />
+      <field name="taskTitle" />
+    </var-group>
+  </record-type>
+</partial>

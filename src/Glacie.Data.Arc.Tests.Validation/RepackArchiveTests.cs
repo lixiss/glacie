@@ -86,7 +86,7 @@ namespace Glacie.Data.Arc.Tests.Validation
 
         private static void CheckCompressedLength(ArcArchive archive)
         {
-            foreach (var e in archive.GetEntries())
+            foreach (var e in archive.SelectAll())
             {
                 if (e.EntryType == 3)
                 {
@@ -110,9 +110,9 @@ namespace Glacie.Data.Arc.Tests.Validation
             if (expectedArchive.Count != actualArchive.Count)
                 throw Error.InvalidOperation("Different number of entries.");
 
-            foreach (var expectedEntry in expectedArchive.GetEntries())
+            foreach (var expectedEntry in expectedArchive.SelectAll())
             {
-                var actualEntry = actualArchive.GetEntry(expectedEntry.Name);
+                var actualEntry = actualArchive.Get(expectedEntry.Name);
 
                 using var expectedStream = expectedEntry.Open();
                 using var actualStream = actualEntry.Open();

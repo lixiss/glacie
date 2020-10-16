@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ItemSet">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="setDescription" />
+      <field name="setMembers" />
+      <field name="setName" />
+    </var-group>
+  </record-type>
+</partial>

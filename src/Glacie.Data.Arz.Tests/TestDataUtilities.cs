@@ -11,9 +11,9 @@ namespace Glacie.Data.Arz.Tests
         {
             if (s_testDataPath == null)
             {
-                s_testDataPath = Path.Combine(Environment.CurrentDirectory, "./test-data");
+                s_testDataPath = System.IO.Path.Combine(Environment.CurrentDirectory, "./test-data");
             }
-            return Path.Combine(s_testDataPath, path);
+            return System.IO.Path.Combine(s_testDataPath, path);
         }
     }
 }

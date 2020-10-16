@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="CharacterHookPack" path="CharacterHookPack.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Scripts">
+        <field name="characterHooks" var-class="variable" var-type="file_dbr" />
+        <field name="onAddItem" var-class="variable" var-type="string" />
+        <field name="onCallbackDie" var-class="variable" var-type="string" />
+        <field name="onDie" var-class="variable" var-type="string" />
+        <field name="onHear" var-class="variable" var-type="string" />
+        <field name="onHit" var-class="variable" var-type="string" />
+        <field name="onKillFoe" var-class="variable" var-type="string" />
+        <field name="onReachedMovementGoal" var-class="variable" var-type="string" />
+        <field name="onRemoveItem" var-class="variable" var-type="string" />
+        <field name="onSpawn" var-class="variable" var-type="string" />
+        <field name="onUpdateFast" var-class="variable" var-type="string" />
+        <field name="onUpdateRealtime" var-class="variable" var-type="string" />
+        <field name="onUpdateSlow" var-class="variable" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

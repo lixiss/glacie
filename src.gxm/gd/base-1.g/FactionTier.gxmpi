@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="FactionTier">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Tier Config">
+      <field name="marketArmorTable" />
+      <field name="marketNumArmorMax" />
+      <field name="marketNumArmorMin" />
+      <field name="marketNumPotionMax" />
+      <field name="marketNumPotionMin" />
+      <field name="marketNumWeaponMax" />
+      <field name="marketNumWeaponMin" />
+      <field name="marketPotionTable" />
+      <field name="marketStaticItems" />
+      <field name="marketWeaponTable" />
+    </var-group>
+  </record-type>
+</partial>

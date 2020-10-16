@@ -41,7 +41,7 @@ namespace Glacie.Cli.Arc.Commands
 
             progress?.AddMaximumValue(archive.Count);
 
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 if (!_entryNamesToKeep.Contains(entry.Name))
                 {

@@ -1,0 +1,42 @@
+﻿<partial>
+  <record-type name="TemplateBase.Armor">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Armor Body Mask">
+      <field name="bodyMaskA_Head" />
+      <field name="bodyMaskB_Legs" />
+      <field name="bodyMaskG_Body" />
+      <field name="bodyMaskR_Arm" />
+    </var-group>
+    <var-group name="Armor Parameters">
+      <field name="armorBanditBaseTexture" />
+      <field name="armorBanditBumpTexture" />
+      <field name="armorBanditMesh" />
+      <field name="armorFemaleBaseTexture" />
+      <field name="armorFemaleBumpTexture" />
+      <field name="armorFemaleMesh" />
+      <field name="armorJackalManBaseTextureName" />
+      <field name="armorJackalManBumpTextureName" />
+      <field name="armorJackalManMeshName" />
+      <field name="armorMaleBaseTexture" />
+      <field name="armorMaleBumpTexture" />
+      <field name="armorMaleMesh" />
+      <field name="armorNativeBaseTexture" />
+      <field name="armorNativeBumpTexture" />
+      <field name="armorNativeMesh" />
+      <field name="armorSatyrBaseTextureName" />
+      <field name="armorSatyrBumpTextureName" />
+      <field name="armorSatyrMeshName" />
+      <field name="armorTigermanBaseTextureName" />
+      <field name="armorTigermanBumpTextureName" />
+      <field name="armorTigermanMeshName" />
+    </var-group>
+    <var-group name="Armor Sound">
+      <field name="blockSound" />
+      <field name="impactSound" />
+    </var-group>
+  </record-type>
+</partial>

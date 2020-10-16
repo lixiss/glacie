@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="InGameUI.ButtonSkillTemplate">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="isCircular" />
+      <field name="soundNameDown" />
+      <field name="soundNameUp" />
+    </var-group>
+  </record-type>
+</partial>

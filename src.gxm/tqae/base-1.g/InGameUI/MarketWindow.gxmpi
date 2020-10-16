@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="InGameUI.MarketWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="marketBaseBitmap" />
+      <field name="marketCloseButton" />
+      <field name="marketGrid" />
+      <field name="marketHeading1Text" />
+      <field name="marketHeading2Text" />
+      <field name="marketHeadingGeneric" />
+      <field name="marketHeadingMage" />
+      <field name="marketHeadingMelee" />
+      <field name="marketHeadingRollover" />
+      <field name="marketTab1Bitmap" />
+      <field name="marketTab1Button" />
+      <field name="marketTab1ButtonRollover" />
+      <field name="marketTab2Bitmap" />
+      <field name="marketTab2Button" />
+      <field name="marketTab2ButtonRollover" />
+      <field name="marketTab3Bitmap" />
+      <field name="marketTab3Button" />
+      <field name="marketTab3ButtonRollover" />
+      <field name="marketTab4Bitmap" />
+      <field name="marketTab4Button" />
+      <field name="marketTab4ButtonRollover" />
+      <field name="marketTab5Bitmap" />
+      <field name="marketTab5Button" />
+      <field name="marketTab5ButtonRollover" />
+      <field name="marketWindowTitle" />
+    </var-group>
+  </record-type>
+</partial>

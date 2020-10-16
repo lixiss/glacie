@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="Armor_Vestment" path="Armor_Vestment.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Armor" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ArmorMisc_Vestment" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Vestment">
+        <field name="vestmentFemaleBaseTexture" var-class="variable" var-type="file_tex" />
+        <field name="vestmentFemaleBumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="vestmentFemaleMesh" var-class="variable" var-type="file_msh" />
+        <field name="vestmentMaleBaseTexture" var-class="variable" var-type="file_tex" />
+        <field name="vestmentMaleBumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="vestmentMaleMesh" var-class="variable" var-type="file_msh" />
+        <field name="vestmentNativeBaseTexture" var-class="variable" var-type="file_tex" />
+        <field name="vestmentNativeBumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="vestmentNativeMesh" var-class="variable" var-type="file_msh" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

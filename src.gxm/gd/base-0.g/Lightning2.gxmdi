@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="Lightning2" path="Lightning2.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Lightning2" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Lightning2">
+        <field name="color.a" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="color.b" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="color.g" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="color.r" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="fromSky" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="life" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="lineWidth" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="shader" var-class="variable" var-type="file_ssh" />
+        <field name="strikeDecal" var-class="variable" var-type="file_dbr" />
+        <field name="strikeEffect" var-class="variable" var-type="file_dbr" />
+        <field name="texture" var-class="variable" var-type="file_tex" />
+        <field name="textureLength" var-class="variable" var-type="real" var-default-value="5.0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

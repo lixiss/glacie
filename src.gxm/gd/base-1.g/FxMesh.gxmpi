@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="FxMesh">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="animationName" />
+      <field name="attachPoint" />
+      <field name="disturbanceRadius" />
+      <field name="fadeInTime" />
+      <field name="fadeOutTime" />
+      <field name="loop" />
+      <field name="meshName" />
+      <field name="sound1" />
+      <field name="sound2" />
+      <field name="sound3" />
+      <field name="sound4" />
+      <field name="speed" />
+      <field name="stationaryAttachment" />
+      <field name="sustainTime" />
+    </var-group>
+  </record-type>
+</partial>

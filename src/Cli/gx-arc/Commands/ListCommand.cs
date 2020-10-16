@@ -35,7 +35,7 @@ namespace Glacie.Cli.Arc.Commands
 
         private void ListArchive(ArcArchive archive)
         {
-            var qEntryNames = archive.GetEntries()
+            var qEntryNames = archive.SelectAll()
                 .Select(x => x.Name)
                 .OrderBy(x => x, NaturalOrderStringComparer.Ordinal);
 

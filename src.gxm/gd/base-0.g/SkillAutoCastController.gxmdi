@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="SkillAutoCastController" path="SkillAutoCastController.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="autoTargetRadius" var-class="variable" var-type="real" var-default-value="10.0">
+          <description>Set to pick ally or enemy</description>
+        </field>
+        <field name="chanceToRun" var-class="variable" var-type="int" />
+        <field name="targetType" var-class="picklist" var-type="string" var-default-value="Enemy;Self;Ally;EnemyLocation;" />
+        <field name="triggerParam" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="triggerType" var-class="picklist" var-type="string" var-default-value="OnEquip;OnKill;LowHealth;LowMana;AttackEnemy;CastBuff;CastDebuf;HitByEnemy;HitByMelee;HitByProjectile;HitByCrit;AttackEnemyCrit;Block" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_WeaponBonusOffensive" path="TemplateBase/Parameters_WeaponBonusOffensive.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ParameterStoreOffensive" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Offensive Parameters">
+        <var-group name="Offensive Bonus">
+          <var-group name="Offensive Bonus Physical">
+            <field name="offensiveBonusPhysicalChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveBonusPhysicalGlobal" var-class="variable" var-type="bool" var-default-value="0">
+              <description>0 = Individual; 1 = Global</description>
+            </field>
+            <field name="offensiveBonusPhysicalMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveBonusPhysicalMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveBonusPhysicalXOR" var-class="variable" var-type="bool" var-default-value="0">
+              <description>0 = AND; 1 = XOR</description>
+            </field>
+          </var-group>
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

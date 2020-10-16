@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="BossMusicPak" path="BossMusicPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="BossMusicSession" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Sound Properties">
+        <field name="BossDeathMusic" var-class="variable" var-type="file_snd" />
+        <field name="BossDeathVolume" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="EndXFadeMS" var-class="variable" var-type="int" />
+        <field name="IntroMusic" var-class="variable" var-type="file_snd" />
+        <field name="IntroVolume" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="LeaveFadeMS" var-class="variable" var-type="int" />
+        <field name="LoopMusic" var-class="variable" var-type="file_snd" />
+        <field name="LoopingVolume" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="PlayerDeathMusic" var-class="variable" var-type="file_snd" />
+        <field name="PlayerDeathVolume" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="TrackDeathSpawners" var-class="variable" var-type="bool" var-default-value="0">
+          <description>By default, death spawners are ignored when determining boss death</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="Skill_AttackSpellReflectLink">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="damageAbsorptionPercent" />
+      <field name="damageAbsorptionReflectPercent" />
+      <field name="endEffect" />
+      <field name="endSound" />
+      <field name="linkDelay" />
+      <field name="linkLimit" />
+      <field name="linkName" />
+      <field name="loopSound" />
+      <field name="maxRange" />
+      <field name="skillActiveDuration" />
+      <field name="startEffect" />
+      <field name="startSound" />
+    </var-group>
+  </record-type>
+</partial>

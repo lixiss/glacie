@@ -1,0 +1,28 @@
+﻿<partial>
+  <record-type name="GameRules" path="GameRules.tpl">
+    <expression-variables>
+      <expression-variable name="amountOfExperience" />
+      <expression-variable name="amountOfGold" />
+      <expression-variable name="numberOfPartyMembers" />
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Map Game Rules Bindings" system="true">
+        <field name="mapBindings" var-class="array" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Network Parties" system="true">
+        <field name="experienceSharingActiveMember" var-class="variable" var-type="equation" />
+        <field name="experienceSharingPassiveMembers" var-class="variable" var-type="equation" />
+        <field name="goldSharingActiveMember" var-class="variable" var-type="equation" />
+        <field name="goldSharingPassiveMembers" var-class="variable" var-type="equation" />
+      </var-group>
+      <var-group name="Sounds" system="true">
+        <field name="questEventSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

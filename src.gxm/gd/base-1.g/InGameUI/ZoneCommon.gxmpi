@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="InGameUI.ZoneCommon">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="ButtonTypePartyPortal" />
+      <field name="ButtonTypeShrinePortal" />
+      <field name="IconHorizontalDistance" />
+      <field name="IconInitialX" />
+      <field name="IconInitialY" />
+      <field name="ImageBackground" />
+      <field name="ImageBackgroundBright" />
+      <field name="ImageGrayShrine" />
+      <field name="MinimumPanelWidth" />
+      <field name="textAlign" />
+      <field name="textStyle" />
+      <field name="textX" />
+      <field name="textY" />
+    </var-group>
+  </record-type>
+</partial>

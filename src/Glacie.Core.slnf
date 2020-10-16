@@ -1,0 +1,11 @@
+{
+  "solution": {
+    "path": "Glacie.sln",
+    "projects": [
+      "Glacie.Core.Benchmarks\\Glacie.Core.Benchmarks.csproj",
+      "Glacie.Core.Tests\\Glacie.Core.Tests.csproj",
+      "Glacie.Core\\Glacie.Core.csproj",
+      "Glacie.Private.Core\\Glacie.Private.Core.csproj",
+    ]
+  }
+}

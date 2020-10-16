@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="ScriptPoint">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Scripting" system="true">
+      <field name="scriptCharacter" />
+      <field name="sequenceNum" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,59 @@
+﻿<partial>
+  <record-type name="Trigger" path="Trigger.tpl">
+    <inherits>
+      <inherit record="Actor" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Trigger" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Actors Dependent on this Trigger">
+        <field name="dependent1" var-class="variable" var-type="string" />
+        <field name="dependent2" var-class="variable" var-type="string" />
+        <field name="dependent3" var-class="variable" var-type="string" />
+        <field name="dependent4" var-class="variable" var-type="string" />
+        <field name="dependent5" var-class="variable" var-type="string" />
+        <field name="dependent6" var-class="variable" var-type="string" />
+        <field name="dependent7" var-class="variable" var-type="string" />
+        <field name="dependent8" var-class="variable" var-type="string" />
+        <field name="dependent9" var-class="variable" var-type="string" />
+        <field name="dependent10" var-class="variable" var-type="string" />
+        <field name="dependent11" var-class="variable" var-type="string" />
+        <field name="dependent12" var-class="variable" var-type="string" />
+        <field name="dependent13" var-class="variable" var-type="string" />
+        <field name="dependent14" var-class="variable" var-type="string" />
+        <field name="dependent15" var-class="variable" var-type="string" />
+        <field name="dependent16" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Camera Control Parameters">
+        <field name="cameraDistance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="cameraFOV" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="cameraFarPlane" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="cameraPitch" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="cameraYaw" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+      <var-group name="Light Control Parameters">
+        <field name="ambientLightBlue" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="ambientLightGreen" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="ambientLightRed" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="lightBlue" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="lightGreen" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="lightRed" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+      <var-group name="Trigger Parameters" system="true">
+        <field name="directional" var-class="picklist" var-type="bool" var-default-value="0,1">
+          <description>0 = No, 1 = Yes</description>
+        </field>
+        <field name="retriggerable" var-class="picklist" var-type="bool" var-default-value="0,1">
+          <description>0 = No, 1 = Yes</description>
+        </field>
+        <field name="transitionTime" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="triggerRadius" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="triggerSound" var-class="variable" var-type="file_dbr" />
+        <field name="triggerType" var-class="picklist" var-type="string" var-default-value="CityFlee,CameraControl,CameraFarPlane,EnableActors,DisableActors,TempleEntrance,LightControl" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

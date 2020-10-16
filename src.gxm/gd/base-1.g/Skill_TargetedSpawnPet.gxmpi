@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="Skill_TargetedSpawnPet">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Spawn Config">
+      <field name="ignorePetLimit" />
+      <field name="petBurstSpawn" />
+      <field name="petLimit" />
+      <field name="petPadding" />
+      <field name="spawnObjectsTimeToLive" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,37 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterArtifactTab">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Artifact Tab">
+      <field name="artifactBox" />
+      <field name="artifactFormulaBox" />
+      <field name="artifactNameText" />
+      <field name="autoSenseX" />
+      <field name="autoSenseXSize" />
+      <field name="autoSenseY" />
+      <field name="autoSenseYSize" />
+      <field name="costNumber" />
+      <field name="costText" />
+      <field name="createArtifactButton" />
+      <field name="createdArtifactSound" />
+      <field name="displayHelpText" />
+      <field name="reagent1Box" />
+      <field name="reagent1Display" />
+      <field name="reagent1DisplayX" />
+      <field name="reagent1DisplayY" />
+      <field name="reagent2Box" />
+      <field name="reagent2Display" />
+      <field name="reagent2DisplayX" />
+      <field name="reagent2DisplayY" />
+      <field name="reagent3Box" />
+      <field name="reagent3Display" />
+      <field name="reagent3DisplayX" />
+      <field name="reagent3DisplayY" />
+      <field name="reguirementsText" />
+      <field name="tooExpensiveCostNumber" />
+    </var-group>
+  </record-type>
+</partial>

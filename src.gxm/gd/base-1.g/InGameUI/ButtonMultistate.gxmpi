@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="InGameUI.ButtonMultistate">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="bitmapNameDisabled" />
+      <field name="bitmapNameDown" />
+      <field name="bitmapNameInFocus" />
+      <field name="bitmapNameUp" />
+      <field name="bitmapPositionX" />
+      <field name="bitmapPositionY" />
+      <field name="bitmapStates" />
+      <field name="soundNameDown" />
+      <field name="soundNameUp" />
+      <field name="tagStates" />
+    </var-group>
+  </record-type>
+</partial>

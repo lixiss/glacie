@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ControllerBaseCharacter">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Movement Control">
+      <field name="controllerFollowAngle" />
+      <field name="controllerFollowDistance" />
+      <field name="controllerObstructionDistance" />
+    </var-group>
+  </record-type>
+</partial>

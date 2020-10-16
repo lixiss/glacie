@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="InGameUI.ButtonHidden" path="InGameUI/ButtonHidden.tpl">
+    <inherits>
+      <inherit record="InGameUI.TutorialTrigger" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="ButtonHidden" />
+      </var-group>
+      <var-group name="Config">
+        <field name="bitmapPositionX" var-class="variable" var-type="int">
+          <description>Upper Left Corner</description>
+        </field>
+        <field name="bitmapPositionY" var-class="variable" var-type="int">
+          <description>Upper Left Corner</description>
+        </field>
+        <field name="buttonXSize" var-class="variable" var-type="int" />
+        <field name="buttonYSize" var-class="variable" var-type="int" />
+        <field name="isCircular" var-class="variable" var-type="bool" />
+        <field name="soundNameDown" var-class="variable" var-type="file_dbr" />
+        <field name="soundNameUp" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

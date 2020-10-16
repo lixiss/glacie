@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="InGameUI.CaravanWindowPublic">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="InfoBox" />
+      <field name="InventoryDBR" />
+      <field name="TransferBuyTab2" />
+      <field name="TransferBuyTab3" />
+      <field name="TransferBuyTab4" />
+      <field name="TransferCostEquation" />
+      <field name="TransferPageCostArray" />
+      <field name="TransferPlate" />
+      <field name="TransferTab1" />
+      <field name="TransferTab2" />
+      <field name="TransferTab3" />
+      <field name="TransferTab4" />
+      <field name="WindowLocationX" />
+      <field name="WindowLocationY" />
+    </var-group>
+  </record-type>
+</partial>

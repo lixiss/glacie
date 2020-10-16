@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="InGameUI.GamepadHudWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="buttonA" />
+      <field name="buttonB" />
+      <field name="buttonDpadUp" />
+      <field name="buttonRightStick" />
+      <field name="buttonRightStickClick" />
+      <field name="buttonX" />
+      <field name="buttonY" />
+      <field name="labelA" />
+      <field name="labelB" />
+      <field name="labelDpadUp" />
+      <field name="labelRightStick" />
+      <field name="labelRightStickClick" />
+      <field name="labelX" />
+      <field name="labelY" />
+    </var-group>
+  </record-type>
+</partial>

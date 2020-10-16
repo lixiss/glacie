@@ -21,7 +21,7 @@ namespace Glacie.Cli.Arz.Commands
             using ArzDatabase database = ReadDatabase(Database,
                 CreateReaderOptions(ArzReadingMode.Lazy));
 
-            var qRecordNames = database.GetAll()
+            var qRecordNames = database.SelectAll()
                 .Select(x => x.Name)
                 .OrderBy(x => x, NaturalOrderStringComparer.Ordinal);
 

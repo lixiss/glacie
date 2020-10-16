@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="Skill_AttackTelekinesis">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="headVelocity" />
+      <field name="liftSpeed" />
+      <field name="moveOverHeadVelocity" />
+      <field name="moveSpeed" />
+      <field name="skillProjectileHitTimeToLive" />
+      <field name="skillProjectileMissTimeToLive" />
+      <field name="skillProjectileName" />
+      <field name="skillProjectileTargetGroundOnly" />
+      <field name="specialEndingAnimationName" />
+      <field name="specialLoopingAnimationName" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="beamOriginCharFxPak" />
+      <field name="chaosBeamName" />
+      <field name="puppetName" />
+    </var-group>
+    <var-group name="Skill Sound">
+      <field name="chaosBeamSound" />
+    </var-group>
+  </record-type>
+</partial>

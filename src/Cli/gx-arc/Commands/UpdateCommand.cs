@@ -31,7 +31,7 @@ namespace Glacie.Cli.Arc.Commands
 
         protected override void ProcessInputFile(ArcArchive archive, InputFileInfo fileInfo, IIncrementalProgress<long>? progress)
         {
-            if (archive.TryGetEntry(fileInfo.EntryName, out var entry))
+            if (archive.TryGet(fileInfo.EntryName, out var entry))
             {
                 if (entry.LastWriteTime < fileInfo.LastWriteTime)
                 {
@@ -51,7 +51,7 @@ namespace Glacie.Cli.Arc.Commands
             }
             else
             {
-                entry = archive.CreateEntry(fileInfo.EntryName);
+                entry = archive.Add(fileInfo.EntryName);
                 {
                     using var entryStream = entry.OpenWrite();
                     CopyFileToStream(fileInfo.FileName, entryStream, progress);

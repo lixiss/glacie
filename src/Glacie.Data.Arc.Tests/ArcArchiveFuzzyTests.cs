@@ -133,7 +133,7 @@ namespace Glacie.Data.Arc
 
                 if (!archive.Exists(entryName))
                 {
-                    var entry = archive.CreateEntry(entryName);
+                    var entry = archive.Add(entryName);
                     var compressionLevel = CompressionLevel.NoCompression; // (CompressionLevel)_rng.Next(0, 13);
                     using var entryStream = entry.OpenWrite(compressionLevel);
                     entryStream.Write(entryData);
@@ -152,16 +152,16 @@ namespace Glacie.Data.Arc
                     _entries[entryName] = CreateFuzzEntryData();
                 }
 
-                ArcEntry entry;
+                ArcArchiveEntry entry;
                 bool wasCreated;
                 if (archive.Exists(entryName))
                 {
-                    entry = archive.GetEntry(entryName);
+                    entry = archive.Get(entryName);
                     wasCreated = false;
                 }
                 else
                 {
-                    entry = archive.CreateEntry(entryName);
+                    entry = archive.Add(entryName);
                     wasCreated = true;
                 }
 
@@ -198,7 +198,7 @@ namespace Glacie.Data.Arc
 
         private void ValidateFuzzArchive(ArcArchive archive)
         {
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 using var entryStream = entry.Open();
 

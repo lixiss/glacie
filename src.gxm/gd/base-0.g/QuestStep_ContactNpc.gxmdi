@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="QuestStep_ContactNpc" path="QuestStep_ContactNpc.tpl">
+    <inherits>
+      <inherit record="TemplateBase.QuestStep" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="QuestStep_ContactNpc" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Npc Dialog">
+        <field name="questStepNpcDialogSoundName" var-class="variable" var-type="file_dbr" />
+        <field name="questStepNpcDialogSpeed" var-class="variable" var-type="real" />
+        <field name="questStepNpcDialogText" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Trigger">
+        <field name="questStepInvItemRequired" var-class="variable" var-type="file_dbr" />
+        <field name="questStepNpcName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

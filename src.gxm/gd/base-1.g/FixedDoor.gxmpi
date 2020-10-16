@@ -1,0 +1,28 @@
+﻿<partial>
+  <record-type name="FixedDoor">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="FixedDoor">
+      <field name="autoClose" />
+      <field name="autoClosePeriod" />
+      <field name="closeAnimation" />
+      <field name="closeAnimationSpeed" />
+      <field name="closeSound" />
+      <field name="closedEffect" />
+      <field name="closedEffectAttachPoint" />
+      <field name="direction" />
+      <field name="interaction" />
+      <field name="locked" />
+      <field name="lockedSound" />
+      <field name="lockedTag" />
+      <field name="open" />
+      <field name="openAnimation" />
+      <field name="openAnimationSpeed" />
+      <field name="openLoopSound" />
+      <field name="openSound" />
+    </var-group>
+  </record-type>
+</partial>

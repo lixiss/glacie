@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="InGameUI.WorldMapInstance">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="MapData">
+      <field name="containedZones" />
+      <field name="mapImage" />
+      <field name="mapPaneX" />
+      <field name="mapPaneY" />
+      <field name="overlayImage" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="ItemFactionBooster">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Faction Booster">
+      <field name="bitmap" />
+      <field name="boostedFaction" />
+      <field name="boostedMultiplier" />
+      <field name="useSound" />
+    </var-group>
+  </record-type>
+</partial>

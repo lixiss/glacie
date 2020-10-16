@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="InGameUI.UIItemUpgradeWidget" path="InGameUI/UIItemUpgradeWidget.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="UpgradeItem Conf">
+        <field name="artifactBox" var-class="variable" var-type="file_dbr" />
+        <field name="artifactNameText" var-class="variable" var-type="file_dbr" />
+        <field name="autoSenseX" var-class="variable" var-type="real" />
+        <field name="autoSenseXSize" var-class="variable" var-type="real" />
+        <field name="autoSenseY" var-class="variable" var-type="real" />
+        <field name="autoSenseYSize" var-class="variable" var-type="real" />
+        <field name="dbgText" var-class="variable" var-type="file_dbr" />
+        <field name="okBtn" var-class="variable" var-type="file_dbr" />
+        <field name="upgradedArtifactSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="BossMusicPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Sound Properties">
+      <field name="BossDeathMusic" />
+      <field name="BossDeathVolume" />
+      <field name="EndXFadeMS" />
+      <field name="IntroMusic" />
+      <field name="IntroVolume" />
+      <field name="LeaveFadeMS" />
+      <field name="LoopMusic" />
+      <field name="LoopingVolume" />
+      <field name="PlayerDeathMusic" />
+      <field name="PlayerDeathVolume" />
+      <field name="TrackDeathSpawners" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="ItemAttributeReset">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Attribute Reset">
+      <field name="bitmap" />
+      <field name="useSound" />
+    </var-group>
+  </record-type>
+</partial>

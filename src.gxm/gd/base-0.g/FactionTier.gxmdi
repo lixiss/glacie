@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="FactionTier" path="FactionTier.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Tier Config">
+        <field name="marketArmorTable" var-class="variable" var-type="file_dbr" />
+        <field name="marketNumArmorMax" var-class="variable" var-type="int" />
+        <field name="marketNumArmorMin" var-class="variable" var-type="int" />
+        <field name="marketNumPotionMax" var-class="variable" var-type="int" />
+        <field name="marketNumPotionMin" var-class="variable" var-type="int" />
+        <field name="marketNumWeaponMax" var-class="variable" var-type="int" />
+        <field name="marketNumWeaponMin" var-class="variable" var-type="int" />
+        <field name="marketPotionTable" var-class="variable" var-type="file_dbr" />
+        <field name="marketStaticItems" var-class="array" var-type="file_dbr">
+          <description>Static items</description>
+        </field>
+        <field name="marketWeaponTable" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

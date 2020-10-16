@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="SpawnedWeatherDecoration">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Weather Interaction">
+      <field name="animateAtWindSpeed" />
+      <field name="captureRadius" />
+      <field name="funnelRadius" />
+      <field name="maxAnimateWindMultiplier" />
+      <field name="minAnimateWindMultiplier" />
+      <field name="windDirectionBone" />
+    </var-group>
+  </record-type>
+</partial>

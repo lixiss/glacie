@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="InGameUI.CaravanWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="BackgroundImage" />
+      <field name="CaravanDriverName" />
+      <field name="CloseButton" />
+      <field name="RelicVaultButton" />
+      <field name="RelicVaultRollover" />
+      <field name="RelicVaultWindow" />
+      <field name="StashButton" />
+      <field name="StashRollover" />
+      <field name="StashWindow" />
+      <field name="TitleBitmap" />
+      <field name="TransferButton" />
+      <field name="TransferRollover" />
+      <field name="TransferWindow" />
+      <field name="caravanDriverText" />
+      <field name="windowTitle" />
+    </var-group>
+  </record-type>
+</partial>

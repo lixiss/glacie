@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="MonsterIconSet">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Icons">
+      <field name="BossIcon" />
+      <field name="ChampionIcon" />
+      <field name="CommonIcon" />
+      <field name="HeroIcon" />
+      <field name="QuestIcon" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="InGameUI.UICasinoMerchantWidget">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="CasinoMerchant Conf">
+      <field name="dbgText" />
+      <field name="epicOrbBtn" />
+      <field name="epicOrbGoldText" />
+      <field name="legendaryOrbBtn" />
+      <field name="legendaryOrbGoldText" />
+      <field name="normalOrbBtn" />
+      <field name="normalOrbGoldText" />
+      <field name="playerGoldText" />
+      <field name="priceEpicOrb" />
+      <field name="priceLegendaryOrb" />
+      <field name="priceNormalOrb" />
+      <field name="tagEpicOrbBuy" />
+      <field name="tagLegendaryOrbBuy" />
+      <field name="tagNormalOrbBuy" />
+    </var-group>
+  </record-type>
+</partial>

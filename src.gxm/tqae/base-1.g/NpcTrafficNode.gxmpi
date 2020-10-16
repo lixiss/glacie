@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="NpcTrafficNode">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Traffic" system="true">
+      <field name="canBeFinalDestination" />
+      <field name="nextTrafficNode" />
+    </var-group>
+  </record-type>
+</partial>

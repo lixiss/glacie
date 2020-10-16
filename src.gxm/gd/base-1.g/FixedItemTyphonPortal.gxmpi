@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="FixedItemTyphonPortal">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="TyphonPortal">
+      <field name="closedAnimation" />
+      <field name="closedFXPakName" />
+      <field name="closedSound" />
+      <field name="openAnimation" />
+      <field name="openFXPakName" />
+      <field name="openSound" />
+    </var-group>
+  </record-type>
+</partial>

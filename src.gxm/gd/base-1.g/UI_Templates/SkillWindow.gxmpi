@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="UI_Templates.SkillWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Window">
+      <field name="coldMasteryBitmap" />
+      <field name="defensiveMasteryBitmap" />
+      <field name="fireMasteryBitmap" />
+      <field name="highlightBlueBitmap" />
+      <field name="highlightGoldBitmap" />
+      <field name="highlightGreenBitmap" />
+      <field name="highlightRedBitmap" />
+      <field name="huntingMasteryBitmap" />
+      <field name="lightningMasteryBitmap" />
+      <field name="masterysX" />
+      <field name="masterysY" />
+      <field name="medicineMasteryBitmap" />
+      <field name="natureMasteryBitmap" />
+      <field name="offensiveMasteryBitmap" />
+      <field name="rogueMasteryBitmap" />
+      <field name="skillPointsX" />
+      <field name="skillPointsY" />
+      <field name="spiritMasteryBitmap" />
+    </var-group>
+  </record-type>
+</partial>

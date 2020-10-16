@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterRecoveryTab">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Recovery Tab">
+      <field name="recoverCostNumber" />
+      <field name="recoverCostText" />
+      <field name="recoverItemButton" />
+      <field name="recoverRelicButton" />
+      <field name="recoveredItemSound" />
+      <field name="recoveryBox" />
+      <field name="tooExpensiveCostNumber" />
+    </var-group>
+  </record-type>
+</partial>

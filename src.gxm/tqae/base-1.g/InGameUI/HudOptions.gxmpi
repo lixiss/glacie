@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="InGameUI.HudOptions">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Choices">
+      <field name="hudDescriptions" />
+      <field name="hudOptions" />
+      <field name="hudOptionsX3" />
+    </var-group>
+  </record-type>
+</partial>

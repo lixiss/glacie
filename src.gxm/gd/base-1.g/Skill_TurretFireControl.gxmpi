@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="Skill_TurretFireControl">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="skillActiveDuration" />
+      <field name="skillProjectileName" />
+    </var-group>
+    <var-group name="Turret Config">
+      <field name="findClosest" />
+      <field name="numToFire" />
+      <field name="searchRadius" />
+      <field name="specialSkillNum" />
+      <field name="targetCharacter" />
+      <field name="turretName" />
+    </var-group>
+  </record-type>
+</partial>

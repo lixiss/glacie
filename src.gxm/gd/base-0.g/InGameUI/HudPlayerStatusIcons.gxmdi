@@ -1,0 +1,63 @@
+﻿<partial>
+  <record-type name="InGameUI.HudPlayerStatusIcons" path="InGameUI/HudPlayerStatusIcons.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="activeHudArea2X" var-class="variable" var-type="int" />
+        <field name="activeHudArea2Y" var-class="variable" var-type="int" />
+        <field name="activeHudAreaSize2X" var-class="variable" var-type="int" />
+        <field name="activeHudAreaSize2Y" var-class="variable" var-type="int" />
+        <field name="activeHudAreaSizeX" var-class="variable" var-type="int" />
+        <field name="activeHudAreaSizeY" var-class="variable" var-type="int" />
+        <field name="activeHudAreaX" var-class="variable" var-type="int" />
+        <field name="activeHudAreaY" var-class="variable" var-type="int" />
+        <field name="buffDurationText.a" var-class="variable" var-type="real" />
+        <field name="buffDurationText.b" var-class="variable" var-type="real" />
+        <field name="buffDurationText.g" var-class="variable" var-type="real" />
+        <field name="buffDurationText.r" var-class="variable" var-type="real" />
+        <field name="chargeText.a" var-class="variable" var-type="real" />
+        <field name="chargeText.b" var-class="variable" var-type="real" />
+        <field name="chargeText.g" var-class="variable" var-type="real" />
+        <field name="chargeText.r" var-class="variable" var-type="real" />
+        <field name="cooldownColor.a" var-class="variable" var-type="real">
+          <description>160</description>
+        </field>
+        <field name="cooldownColor.b" var-class="variable" var-type="real">
+          <description>0</description>
+        </field>
+        <field name="cooldownColor.g" var-class="variable" var-type="real">
+          <description>0</description>
+        </field>
+        <field name="cooldownColor.r" var-class="variable" var-type="real">
+          <description>100</description>
+        </field>
+        <field name="cooldownFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="cooldownTextLocationX" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="cooldownTextLocationY" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="debuffDurationText.a" var-class="variable" var-type="real" />
+        <field name="debuffDurationText.b" var-class="variable" var-type="real" />
+        <field name="debuffDurationText.g" var-class="variable" var-type="real" />
+        <field name="debuffDurationText.r" var-class="variable" var-type="real" />
+        <field name="durationColor.a" var-class="variable" var-type="real">
+          <description>160</description>
+        </field>
+        <field name="durationColor.b" var-class="variable" var-type="real">
+          <description>0</description>
+        </field>
+        <field name="durationColor.g" var-class="variable" var-type="real">
+          <description>0</description>
+        </field>
+        <field name="durationColor.r" var-class="variable" var-type="real">
+          <description>0</description>
+        </field>
+        <field name="iconHorizSpace" var-class="variable" var-type="int" />
+        <field name="iconScale" var-class="variable" var-type="real" var-default-value="0.85" />
+        <field name="iconVertSpace" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

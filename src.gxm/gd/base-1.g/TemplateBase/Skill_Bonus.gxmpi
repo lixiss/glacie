@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Bonus">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Bonus">
+      <field name="skillBonusEffectName" />
+      <field name="skillLifeBonus" />
+      <field name="skillLifePercent" />
+      <field name="skillManaBonus" />
+      <field name="skillManaPercent" />
+    </var-group>
+  </record-type>
+</partial>

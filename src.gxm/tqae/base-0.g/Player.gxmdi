@@ -1,0 +1,70 @@
+﻿<partial>
+  <record-type name="Player" path="Player.tpl">
+    <inherits>
+      <inherit record="Character" />
+      <inherit record="TemplateBase.SkillManager" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Player" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Character Bio">
+        <field name="acceleratedLifeRegenPercent" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="defaultGold" var-class="variable" var-type="int" var-default-value="0" />
+      </var-group>
+      <var-group name="Level Up Parameters">
+        <field name="levelFileName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Player Sounds">
+        <field name="invalidEquipmentSound" var-class="variable" var-type="file_dbr">
+          <description>vox</description>
+        </field>
+        <field name="inventoryFullSound" var-class="variable" var-type="file_dbr" />
+        <field name="lockedChestSound" var-class="variable" var-type="file_dbr">
+          <description>vox</description>
+        </field>
+        <field name="lockedDoorSound" var-class="variable" var-type="file_dbr">
+          <description>vox</description>
+        </field>
+        <field name="lockedQuestObjectSound" var-class="variable" var-type="file_dbr">
+          <description>vox</description>
+        </field>
+        <field name="lockedShrineSound" var-class="variable" var-type="file_dbr">
+          <description>vox</description>
+        </field>
+        <field name="notEnoughManaSound" var-class="variable" var-type="file_dbr">
+          <description>vox</description>
+        </field>
+        <field name="pickUpSoundName" var-class="variable" var-type="file_dbr" />
+        <field name="skillCooldownSound" var-class="variable" var-type="file_dbr">
+          <description>vox</description>
+        </field>
+      </var-group>
+      <var-group name="Player Variables">
+        <field name="maxMoveToRatio" var-class="variable" var-type="real" var-default-value="2.0" />
+        <field name="playerLight" var-class="variable" var-type="file_dbr" />
+        <field name="playerTextures" var-class="array" var-type="file_tex" />
+      </var-group>
+      <var-group name="Special Player Animations">
+        <var-group name="Player Animation Speeds">
+          <field name="fallAnimSpeed" var-class="variable" var-type="real" var-default-value="1" />
+          <field name="idleTransitionAnimSpeed" var-class="variable" var-type="real" var-default-value="1" />
+          <field name="longIdleTransitionTime" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="riseAnimSpeed" var-class="variable" var-type="real" var-default-value="1" />
+        </var-group>
+        <var-group name="Player Animations">
+          <field name="axe2IdleTransitionAnim" var-class="variable" var-type="string" />
+          <field name="axeIdleTransitionAnim" var-class="variable" var-type="string" />
+          <field name="fallAnim" var-class="variable" var-type="string" />
+          <field name="nwIdleTransitionAnim" var-class="variable" var-type="string" />
+          <field name="rangedSpellIdleTransitionAnim" var-class="variable" var-type="string" />
+          <field name="rangedWeaponIdleTransitionAnim" var-class="variable" var-type="string" />
+          <field name="riseAnim" var-class="variable" var-type="string" />
+          <field name="swordIdleTransitionAnim" var-class="variable" var-type="string" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

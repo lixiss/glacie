@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="InGameUI.Includes.Rect" path="InGameUI/Includes/Rect.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="rectX" var-class="variable" var-type="int" />
+        <field name="rectXSize" var-class="variable" var-type="int" />
+        <field name="rectY" var-class="variable" var-type="int" />
+        <field name="rectYSize" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

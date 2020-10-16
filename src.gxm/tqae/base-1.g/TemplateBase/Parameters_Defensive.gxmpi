@@ -1,0 +1,195 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Defensive">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Defensive Parameters">
+      <var-group name="Defense Misc">
+        <var-group name="Block">
+          <field name="defensiveBlockModifier" />
+          <field name="defensiveBlockModifierChance" />
+        </var-group>
+        <var-group name="Reflect">
+          <field name="defensiveReflect" />
+          <field name="defensiveReflectChance" />
+        </var-group>
+      </var-group>
+      <var-group name="Defensive Absolute">
+        <var-group name="Defensive Absorption">
+          <field name="defensiveAbsorption" />
+          <field name="defensiveAbsorptionChance" />
+          <field name="defensiveAbsorptionModifier" />
+          <field name="defensiveAbsorptionModifierChance" />
+        </var-group>
+        <var-group name="Defensive Cold">
+          <field name="defensiveCold" />
+          <field name="defensiveColdChance" />
+          <field name="defensiveColdDuration" />
+          <field name="defensiveColdDurationChance" />
+          <field name="defensiveColdDurationModifier" />
+          <field name="defensiveColdDurationModifierChance" />
+          <field name="defensiveColdModifier" />
+          <field name="defensiveColdModifierChance" />
+        </var-group>
+        <var-group name="Defensive Disruption">
+          <field name="defensiveDisruption" />
+          <field name="defensiveDisruptionChance" />
+        </var-group>
+        <var-group name="Defensive Elemental">
+          <field name="defensiveElementalResistance" />
+          <field name="defensiveElementalResistanceChance" />
+        </var-group>
+        <var-group name="Defensive Fire">
+          <field name="defensiveFire" />
+          <field name="defensiveFireChance" />
+          <field name="defensiveFireDuration" />
+          <field name="defensiveFireDurationChance" />
+          <field name="defensiveFireDurationModifier" />
+          <field name="defensiveFireDurationModifierChance" />
+          <field name="defensiveFireModifier" />
+          <field name="defensiveFireModifierChance" />
+        </var-group>
+        <var-group name="Defensive Life">
+          <field name="defensiveLife" />
+          <field name="defensiveLifeChance" />
+          <field name="defensiveLifeDuration" />
+          <field name="defensiveLifeDurationChance" />
+          <field name="defensiveLifeDurationModifier" />
+          <field name="defensiveLifeDurationModifierChance" />
+          <field name="defensiveLifeModifier" />
+          <field name="defensiveLifeModifierChance" />
+        </var-group>
+        <var-group name="Defensive Lightning">
+          <field name="defensiveLightning" />
+          <field name="defensiveLightningChance" />
+          <field name="defensiveLightningDuration" />
+          <field name="defensiveLightningDurationChance" />
+          <field name="defensiveLightningDurationModifier" />
+          <field name="defensiveLightningDurationModifierChance" />
+          <field name="defensiveLightningModifier" />
+          <field name="defensiveLightningModifierChance" />
+        </var-group>
+        <var-group name="Defensive Physical">
+          <field name="defensivePhysical" />
+          <field name="defensivePhysicalChance" />
+          <field name="defensivePhysicalDuration" />
+          <field name="defensivePhysicalDurationChance" />
+          <field name="defensivePhysicalDurationChanceModifier" />
+          <field name="defensivePhysicalDurationModifier" />
+          <field name="defensivePhysicalModifier" />
+          <field name="defensivePhysicalModifierChance" />
+        </var-group>
+        <var-group name="Defensive Pierce">
+          <field name="defensivePierce" />
+          <field name="defensivePierceChance" />
+          <field name="defensivePierceDuration" />
+          <field name="defensivePierceDurationChance" />
+          <field name="defensivePierceDurationModifier" />
+          <field name="defensivePierceDurationModifierChance" />
+          <field name="defensivePierceModifier" />
+          <field name="defensivePierceModifierChance" />
+        </var-group>
+        <var-group name="Defensive Poison">
+          <field name="defensivePoison" />
+          <field name="defensivePoisonChance" />
+          <field name="defensivePoisonDuration" />
+          <field name="defensivePoisonDurationChance" />
+          <field name="defensivePoisonDurationModifier" />
+          <field name="defensivePoisonDurationModifierChance" />
+          <field name="defensivePoisonModifier" />
+          <field name="defensivePoisonModifierChance" />
+        </var-group>
+        <var-group name="Defensive Protection">
+          <field name="defensiveProtection" />
+          <field name="defensiveProtectionChance" />
+          <field name="defensiveProtectionModifier" />
+          <field name="defensiveProtectionModifierChance" />
+        </var-group>
+      </var-group>
+      <var-group name="Defensive Influence">
+        <var-group name="Defensive Confusion">
+          <field name="defensiveConfusion" />
+          <field name="defensiveConfusionChance" />
+        </var-group>
+        <var-group name="Defensive Convert">
+          <field name="defensiveConvert" />
+          <field name="defensiveConvertChance" />
+        </var-group>
+        <var-group name="Defensive Fear">
+          <field name="defensiveFear" />
+          <field name="defensiveFearChance" />
+        </var-group>
+        <var-group name="Defensive Freeze">
+          <field name="defensiveFreeze" />
+          <field name="defensiveFreezeChance" />
+        </var-group>
+        <var-group name="Defensive Petrify">
+          <field name="defensivePetrify" />
+          <field name="defensivePetrifyChance" />
+        </var-group>
+        <var-group name="Defensive Sleep">
+          <field name="defensiveSleep" />
+          <field name="defensiveSleepChance" />
+          <field name="defensiveSleepModifier" />
+          <field name="defensiveSleepModifierChance" />
+        </var-group>
+        <var-group name="Defensive Stun">
+          <field name="defensiveStun" />
+          <field name="defensiveStunChance" />
+          <field name="defensiveStunModifier" />
+          <field name="defensiveStunModifierChance" />
+        </var-group>
+        <var-group name="Defensive Taunt">
+          <field name="defensiveTaunt" />
+          <field name="defensiveTauntChance" />
+        </var-group>
+        <var-group name="Defensive Trap">
+          <field name="defensiveTrap" />
+          <field name="defensiveTrapChance" />
+        </var-group>
+      </var-group>
+      <var-group name="Defensive Special">
+        <var-group name="Defensive Slow Bleeding">
+          <field name="defensiveBleeding" />
+          <field name="defensiveBleedingChance" />
+          <field name="defensiveBleedingDuration" />
+          <field name="defensiveBleedingDurationChance" />
+          <field name="defensiveBleedingDurationModifier" />
+          <field name="defensiveBleedingDurationModifierChance" />
+          <field name="defensiveBleedingModifier" />
+          <field name="defensiveBleedingModifierChance" />
+        </var-group>
+        <var-group name="Defensive Slow Life Leach">
+          <field name="defensiveSlowLifeLeach" />
+          <field name="defensiveSlowLifeLeachChance" />
+          <field name="defensiveSlowLifeLeachDuration" />
+          <field name="defensiveSlowLifeLeachDurationChance" />
+          <field name="defensiveSlowLifeLeachDurationModifier" />
+          <field name="defensiveSlowLifeLeachDurationModifierChance" />
+          <field name="defensiveSlowLifeLeachModifier" />
+          <field name="defensiveSlowLifeLeachModifierChance" />
+        </var-group>
+        <var-group name="Defensive Slow Mana Leach">
+          <field name="defensiveSlowManaLeach" />
+          <field name="defensiveSlowManaLeachChance" />
+          <field name="defensiveSlowManaLeachDuration" />
+          <field name="defensiveSlowManaLeachDurationChance" />
+          <field name="defensiveSlowManaLeachDurationModifier" />
+          <field name="defensiveSlowManaLeachDurationModifierChance" />
+          <field name="defensiveSlowManaLeachModifier" />
+          <field name="defensiveSlowManaLeachModifierChance" />
+        </var-group>
+      </var-group>
+      <var-group name="Monster Defense">
+        <field name="defensiveManaBurnRatio" />
+        <field name="defensiveManaBurnRatioChance" />
+        <field name="defensivePercentCurrentLife" />
+        <field name="defensivePercentCurrentLifeChance" />
+        <field name="defensiveTotalSpeedChance" />
+        <field name="defensiveTotalSpeedResistance" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

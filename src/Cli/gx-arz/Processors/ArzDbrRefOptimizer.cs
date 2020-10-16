@@ -33,7 +33,7 @@ namespace Glacie.Cli.Arz.Processors
             progress?.AddMaximumValue(_database.Count);
 
             var sw = Stopwatch.StartNew();
-            foreach (var record in _database.GetAll())
+            foreach (var record in _database.SelectAll())
             {
                 ProcessRecord(record);
 
@@ -62,7 +62,7 @@ namespace Glacie.Cli.Arz.Processors
         private void ProcessRecord(ArzRecord record)
         {
             // TODO: We can filter out this even faster by proper API support.
-            var fieldNames = record.GetAll()
+            var fieldNames = record.SelectAll()
                 .Where(x => x.ValueType == ArzValueType.String)
                 .Select(x => x.Name)
                 .ToList();
@@ -113,7 +113,7 @@ namespace Glacie.Cli.Arz.Processors
                 return false;
             }
 
-            var isExist = _database.TryGet(value, out var _);
+            var isExist = _database.TryGetRecord(value, out var _);
             if (isExist)
             {
                 newValue = null!;
@@ -121,7 +121,7 @@ namespace Glacie.Cli.Arz.Processors
             }
 
             var v = LowerInvariantString(value);
-            isExist = _database.TryGet(v, out var _);
+            isExist = _database.TryGetRecord(v, out var _);
             if (isExist)
             {
                 _remappedStrings[value] = v;

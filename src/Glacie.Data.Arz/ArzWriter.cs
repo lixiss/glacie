@@ -115,7 +115,7 @@ namespace Glacie.Data.Arz
             // Validate Records
             var outputRecords = new List<ArzRecord>(_database.Count);
             {
-                foreach (var record in _database.GetAll())
+                foreach (var record in _database.SelectAll())
                 {
                     var recordClassId = record.ClassId;
                     if (recordClassId == 0)

@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="SkillChanneled">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="canUseWhileMoving" />
+      <field name="duration" />
+      <field name="useResetsDuration" />
+    </var-group>
+  </record-type>
+</partial>

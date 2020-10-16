@@ -1,0 +1,47 @@
+﻿<partial>
+  <record-type name="InGameUI.SceneView">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Camera">
+      <field name="cameraFarPlane" />
+      <field name="cameraFov" />
+      <field name="cameraNearPlane" />
+      <field name="targetOffset.x" />
+      <field name="targetOffset.y" />
+      <field name="targetOffset.z" />
+      <field name="targetPoint.x" />
+      <field name="targetPoint.y" />
+      <field name="targetPoint.z" />
+      <field name="targetPointName" />
+    </var-group>
+    <var-group name="Config">
+      <field name="backgroundColor.b" />
+      <field name="backgroundColor.g" />
+      <field name="backgroundColor.r" />
+      <field name="backgroundTexture" />
+      <field name="maskTexture" />
+      <field name="rollover" />
+      <field name="x" />
+      <field name="xSize" />
+      <field name="y" />
+      <field name="ySize" />
+    </var-group>
+    <var-group name="Lighting">
+      <field name="groundAmbientColor.b" />
+      <field name="groundAmbientColor.g" />
+      <field name="groundAmbientColor.r" />
+      <field name="lightColor.b" />
+      <field name="lightColor.g" />
+      <field name="lightColor.r" />
+      <field name="lightDirection.x" />
+      <field name="lightDirection.y" />
+      <field name="lightDirection.z" />
+      <field name="skyAmbientColor.b" />
+      <field name="skyAmbientColor.g" />
+      <field name="skyAmbientColor.r" />
+    </var-group>
+  </record-type>
+</partial>

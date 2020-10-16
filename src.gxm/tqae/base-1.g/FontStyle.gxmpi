@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="FontStyle">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="fontAttribBold" />
+      <field name="fontAttribItalic" />
+      <field name="fontColorBlue" />
+      <field name="fontColorGreen" />
+      <field name="fontColorRed" />
+      <field name="fontDropShadow" />
+      <field name="fontName" />
+      <field name="fontNameKorean" />
+      <field name="fontOutline" />
+      <field name="fontShadowDistance" />
+      <field name="fontSize" />
+      <field name="lowResFontName" />
+      <field name="lowResFontNameForeign" />
+      <field name="lowResMinimumFontSize" />
+    </var-group>
+  </record-type>
+</partial>

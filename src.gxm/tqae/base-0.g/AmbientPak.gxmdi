@@ -1,0 +1,76 @@
+﻿<partial>
+  <record-type name="AmbientPak" path="AmbientPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="AmbientSession" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Sound Properties">
+        <field name="ambientLoop" var-class="variable" var-type="file_mp3,wav" />
+        <field name="ambientLoopVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="enableNightSounds" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="frequentMaxTime" var-class="variable" var-type="int" var-default-value="15" />
+        <field name="frequentMinTime" var-class="variable" var-type="int" var-default-value="5" />
+        <field name="frequentSound1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound6" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound7" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound8" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound9" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentSound10" var-class="variable" var-type="file_mp3,wav" />
+        <field name="frequentVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="moderateMaxTime" var-class="variable" var-type="int" var-default-value="30" />
+        <field name="moderateMinTime" var-class="variable" var-type="int" var-default-value="10" />
+        <field name="moderateSound1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="moderateSound2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="moderateSound3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="moderateSound4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="moderateSound5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="moderateVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightAmbientLoop" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightAmbientLoopVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightFrequentMaxTime" var-class="variable" var-type="int" var-default-value="15" />
+        <field name="nightFrequentMinTime" var-class="variable" var-type="int" var-default-value="5" />
+        <field name="nightFrequentSound1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound6" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound7" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound8" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound9" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentSound10" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightFrequentVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightModerateMaxTime" var-class="variable" var-type="int" var-default-value="30" />
+        <field name="nightModerateMinTime" var-class="variable" var-type="int" var-default-value="10" />
+        <field name="nightModerateSound1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightModerateSound2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightModerateSound3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightModerateSound4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightModerateSound5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightModerateVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="nightUniqueMaxTime" var-class="variable" var-type="int" var-default-value="300" />
+        <field name="nightUniqueMinTime" var-class="variable" var-type="int" var-default-value="180" />
+        <field name="nightUniqueSound1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightUniqueSound2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightUniqueSound3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightUniqueSound4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightUniqueSound5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="nightUniqueVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="uniqueMaxTime" var-class="variable" var-type="int" var-default-value="300" />
+        <field name="uniqueMinTime" var-class="variable" var-type="int" var-default-value="180" />
+        <field name="uniqueSound1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="uniqueSound2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="uniqueSound3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="uniqueSound4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="uniqueSound5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="uniqueVolume" var-class="variable" var-type="real" var-default-value="0.50" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

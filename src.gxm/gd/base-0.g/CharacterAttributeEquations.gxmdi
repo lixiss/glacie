@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="CharacterAttributeEquations" path="CharacterAttributeEquations.tpl">
+    <expression-variables>
+      <expression-variable name="charLevel">
+        <description>Proxy</description>
+      </expression-variable>
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="characterDefensiveAbility" var-class="variable" var-type="equation" var-default-value="ownLevel*1.5" />
+        <field name="characterDexterity" var-class="variable" var-type="equation" var-default-value="(ownLevel*5)+25" />
+        <field name="characterIntelligence" var-class="variable" var-type="equation" var-default-value="(ownLevel*5)+25" />
+        <field name="characterLife" var-class="variable" var-type="equation" var-default-value="(ownLevel^2)+10" />
+        <field name="characterLifeRegen" var-class="variable" var-type="equation" var-default-value="(ownLevel/2)+(ownLevel/20)" />
+        <field name="characterMana" var-class="variable" var-type="equation" var-default-value="(ownLevel^2)+10" />
+        <field name="characterManaRegen" var-class="variable" var-type="equation" var-default-value="(ownLevel)+(ownLevel/20)" />
+        <field name="characterOffensiveAbility" var-class="variable" var-type="equation" var-default-value="ownLevel*2" />
+        <field name="characterStrength" var-class="variable" var-type="equation" var-default-value="(ownLevel*5)+25" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

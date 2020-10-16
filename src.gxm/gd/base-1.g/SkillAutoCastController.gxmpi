@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="SkillAutoCastController">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="autoTargetRadius" />
+      <field name="chanceToRun" />
+      <field name="targetType" />
+      <field name="triggerParam" />
+      <field name="triggerType" />
+    </var-group>
+  </record-type>
+</partial>

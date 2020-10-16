@@ -1,0 +1,58 @@
+﻿<partial>
+  <record-type name="ItemRelic" path="ItemRelic.tpl">
+    <inherits>
+      <inherit record="TemplateBase.ItemBase" />
+      <inherit record="AttributePak" />
+      <inherit record="TemplateBase.ItemSkillAugment" />
+      <inherit record="TemplateBase.RacialBonus" />
+      <inherit record="TemplateBase.PetBonusInc" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ItemRelic" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Relic Config">
+        <field name="bonusTableName" var-class="variable" var-type="file_dbr">
+          <description>LootRandomizerTable loaded with AttributePak</description>
+        </field>
+        <field name="completedRelicLevel" var-class="variable" var-type="int" />
+        <field name="itemOverlayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="itemOverlayBitmapPartial" var-class="variable" var-type="file_tex" var-default-value="XPack\UI\Inventory\PartialRelicOverlay.tex" />
+        <field name="relicBitmap" var-class="variable" var-type="file_tex">
+          <description>Completed Bitmap</description>
+        </field>
+        <field name="relicCompleteSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak - played when relic is complete</description>
+        </field>
+        <field name="relicToItemSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak - played when relic adds to item</description>
+        </field>
+        <field name="relicToRelicSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak - played when relic is incomplete</description>
+        </field>
+        <field name="shardBitmap" var-class="variable" var-type="file_tex">
+          <description>Incomplete Bitmap</description>
+        </field>
+      </var-group>
+      <var-group name="Relic Qualifiers">
+        <field name="amulet" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="armband" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="axe" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="bodyArmor" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="bow" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="bracelet" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="greaves" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="helmet" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="mace" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="rangedOneHand" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="ring" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="shield" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="spear" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="staff" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="sword" var-class="variable" var-type="bool" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

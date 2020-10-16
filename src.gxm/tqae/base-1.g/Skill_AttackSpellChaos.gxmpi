@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="Skill_AttackSpellChaos">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="chaosBeamName" />
+      <field name="headVelocity" />
+      <field name="maxDistance" />
+      <field name="tailVelocity" />
+    </var-group>
+    <var-group name="Skill Sound">
+      <field name="chaosBeamSound" />
+    </var-group>
+  </record-type>
+</partial>

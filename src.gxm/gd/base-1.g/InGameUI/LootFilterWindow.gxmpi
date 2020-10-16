@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="InGameUI.LootFilterWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="lootFilterBitmap" />
+      <field name="lootFilterCheckbox" />
+      <field name="lootFilterCloseButton" />
+      <field name="lootFilterColumnIndent2" />
+      <field name="lootFilterColumnIndent3" />
+      <field name="lootFilterColumnIndent4" />
+      <field name="lootFilterResetButton" />
+      <field name="lootFilterRowSpacing" />
+      <field name="lootFilterRowSpacing2" />
+      <field name="lootFilterSpacer" />
+      <field name="lootFilterTitle01" />
+      <field name="lootFilterTitle02" />
+      <field name="lootFilterTitle03" />
+      <field name="lootFilterTitle04" />
+      <field name="lootFilterWindowTitle" />
+    </var-group>
+  </record-type>
+</partial>

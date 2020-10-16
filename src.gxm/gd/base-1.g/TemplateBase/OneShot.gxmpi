@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="TemplateBase.OneShot">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="OneShot Parameters">
+      <field name="bitmap" />
+      <field name="bitmapButtonDown" />
+      <field name="bitmapButtonUp" />
+      <field name="loopingEffect" />
+      <field name="pickupEffect" />
+      <field name="trailEffect" />
+      <field name="useDelayTime" />
+      <field name="useSound" />
+    </var-group>
+  </record-type>
+</partial>

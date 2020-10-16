@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="BoundingVolumeWind">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Wind" system="true">
+      <field name="windDirectionX" />
+      <field name="windDirectionY" />
+      <field name="windDirectionZ" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="ControllerAI" path="ControllerAI.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ControllerAI" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="AngerManagement">
+        <field name="AllyAttackedAnger" var-class="variable" var-type="real" var-default-value="40.0" />
+        <field name="AngerTolerance" var-class="variable" var-type="real" var-default-value="10.0" />
+        <field name="AttackedAnger" var-class="variable" var-type="real" var-default-value="100.0" />
+        <field name="ForgiveRate" var-class="variable" var-type="real" var-default-value="50.0" />
+        <field name="InnerSightAngerRate" var-class="variable" var-type="real" var-default-value="50.0" />
+        <field name="ProjectileAnger" var-class="variable" var-type="real" var-default-value="20.0" />
+        <field name="SightAngerRate" var-class="variable" var-type="real" var-default-value="20.0" />
+      </var-group>
+      <var-group name="Senses">
+        <field name="InnerViewDistance" var-class="variable" var-type="real" var-default-value="5.0" />
+        <field name="MaxYViewDistance" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="ViewDistance" var-class="variable" var-type="real" var-default-value="15.0" />
+        <field name="enemyTooClose" var-class="variable" var-type="real" var-default-value="5.0" />
+        <field name="pathingViewDistance" var-class="variable" var-type="real" var-default-value="0.0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

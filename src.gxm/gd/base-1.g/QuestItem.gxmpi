@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="QuestItem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Quest Item Config">
+      <field name="bitmap" />
+      <field name="requiredQuestFile" />
+      <field name="requiredTaskUID" />
+      <field name="showQuestItemTag" />
+      <field name="trailEffect" />
+    </var-group>
+  </record-type>
+</partial>

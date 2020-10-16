@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="OneShot_Dye">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Dye Config">
+      <field name="femaleTexture" />
+      <field name="maleTexture" />
+    </var-group>
+  </record-type>
+</partial>

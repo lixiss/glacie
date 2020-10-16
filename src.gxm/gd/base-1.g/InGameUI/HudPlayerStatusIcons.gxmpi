@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="InGameUI.HudPlayerStatusIcons">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="activeHudArea2X" />
+      <field name="activeHudArea2Y" />
+      <field name="activeHudAreaSize2X" />
+      <field name="activeHudAreaSize2Y" />
+      <field name="activeHudAreaSizeX" />
+      <field name="activeHudAreaSizeY" />
+      <field name="activeHudAreaX" />
+      <field name="activeHudAreaY" />
+      <field name="buffDurationText.a" />
+      <field name="buffDurationText.b" />
+      <field name="buffDurationText.g" />
+      <field name="buffDurationText.r" />
+      <field name="chargeText.a" />
+      <field name="chargeText.b" />
+      <field name="chargeText.g" />
+      <field name="chargeText.r" />
+      <field name="cooldownColor.a" />
+      <field name="cooldownColor.b" />
+      <field name="cooldownColor.g" />
+      <field name="cooldownColor.r" />
+      <field name="cooldownFontStyle" />
+      <field name="cooldownTextLocationX" />
+      <field name="cooldownTextLocationY" />
+      <field name="debuffDurationText.a" />
+      <field name="debuffDurationText.b" />
+      <field name="debuffDurationText.g" />
+      <field name="debuffDurationText.r" />
+      <field name="durationColor.a" />
+      <field name="durationColor.b" />
+      <field name="durationColor.g" />
+      <field name="durationColor.r" />
+      <field name="iconHorizSpace" />
+      <field name="iconScale" />
+      <field name="iconVertSpace" />
+    </var-group>
+  </record-type>
+</partial>

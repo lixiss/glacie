@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillTabCtrl">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="blueBitmap" />
+      <field name="goldBitmap" />
+      <field name="grayBitmap" />
+      <field name="greenBitmap" />
+      <field name="redBitmap" />
+      <field name="skillBorderBitmap" />
+      <field name="skillLevel" />
+      <field name="skillLevelBitmap" />
+      <field name="tabSkillButtons" />
+    </var-group>
+  </record-type>
+</partial>

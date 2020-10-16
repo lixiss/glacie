@@ -1,0 +1,41 @@
+﻿<partial>
+  <record-type name="InGameUI.ShrineWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Shrine">
+      <field name="autoSenseX" />
+      <field name="autoSenseXSize" />
+      <field name="autoSenseY" />
+      <field name="autoSenseYSize" />
+      <field name="cancelButton" />
+      <field name="closeButton" />
+      <field name="endlessBlueBitmap" />
+      <field name="endlessCover1" />
+      <field name="endlessCover2" />
+      <field name="endlessCover3" />
+      <field name="endlessDeathBitmap" />
+      <field name="endlessGreenBitmap" />
+      <field name="endlessInfo" />
+      <field name="endlessRedBitmap" />
+      <field name="endlessTitle" />
+      <field name="endlessYellowBitmap" />
+      <field name="shrineBox1" />
+      <field name="shrineBox2" />
+      <field name="shrineBox3" />
+      <field name="shrineButton" />
+      <field name="shrineButtonRollover" />
+      <field name="shrineCorruptedBitmap" />
+      <field name="shrineCorruptedTitle" />
+      <field name="shrineCover1" />
+      <field name="shrineCover2" />
+      <field name="shrineCover3" />
+      <field name="shrineInfo" />
+      <field name="shrineRuinedBitmap" />
+      <field name="shrineSound" />
+      <field name="shrineTitle" />
+    </var-group>
+  </record-type>
+</partial>

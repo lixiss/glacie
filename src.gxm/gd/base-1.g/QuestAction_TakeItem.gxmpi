@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="QuestAction_TakeItem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Action">
+      <field name="questActionTakeItemName" />
+    </var-group>
+  </record-type>
+</partial>

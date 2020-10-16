@@ -1,10 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <AssemblyName>Glacie.Private.Core</AssemblyName>
     <RootNamespace>Glacie</RootNamespace>
     <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,12 +21,19 @@
     <Compile Include="Core\Error.cs" />
     <Compile Include="Core\StringExtensions.cs" />
     <Compile Include="System.IO\ReadOnlySegmentStream.cs" />
+    <Compile Include="Text\ValueStringBuilder2.cs" />
+    <Compile Include="Text\ValueStringBuilder.cs" />
     <Compile Include="Utilities\ArrayUtilities.cs" />
     <Compile Include="Utilities\TimestampUtilities.cs" />
+    <None Include="Text\_ValueStringBuilder\ISpanFormattable.cs" />
+    <None Include="Text\_ValueStringBuilder\ParamsArray.cs" />
+    <None Include="Text\_ValueStringBuilder\ValueStringBuilder.AppendFormat.cs" />
+    <None Include="Text\_ValueStringBuilder\ValueStringBuilder.cs" />
+    <None Include="Text\_ValueStringBuilder\ValueStringBuilderTests.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

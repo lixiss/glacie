@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="DungeonEntrance">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="DungeonEntrance">
+      <field name="doorHooks" />
+      <field name="factionRequired" />
+      <field name="factionStanding" />
+      <field name="openEffect" />
+      <field name="openEffect2" />
+      <field name="openEffect2AttachPoint" />
+      <field name="openEffect2Delay" />
+      <field name="openEffectAttachPoint" />
+      <field name="openEffectDelay" />
+    </var-group>
+  </record-type>
+</partial>

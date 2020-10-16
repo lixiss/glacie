@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="ItemDevotionReset">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Devotion Reset">
+      <field name="bitmap" />
+      <field name="useSound" />
+    </var-group>
+  </record-type>
+</partial>

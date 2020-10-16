@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Targeting.GX1</AssemblyName>
+    <RootNamespace>Glacie.Targeting</RootNamespace>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Infrastructure\DatabaseConventions.cs" />
+    <Compile Include="GD\GDTemplateProcessor.cs" />
+    <Compile Include="GD\GDTemplateNameExcludeList.cs" />
+    <Compile Include="IEngineType.cs" />
+    <Compile Include="TQAE\TqaeMetadataResolver.cs" />
+    <Compile Include="TQAE\TqaeTemplateNameExcludeList.cs" />
+    <Compile Include="Generic\UnifiedRecordPathCaseFixer.cs" />
+    <Compile Include="Generic\GenericTemplateProcessor.cs" />
+    <Compile Include="EngineType.cs" />
+    <Compile Include="GD\GDEngineType.cs" />
+    <Compile Include="TQAE\TqaeTemplateProcessor.cs" />
+    <Compile Include="TQIT\TQITEngineType.cs" />
+    <Compile Include="TQ\TQEngineType.cs" />
+    <Compile Include="Unified\UnifiedEngineType.cs" />
+    <Compile Include="TQAE\TqaeEngineType.cs" />
+    <Compile Include="Unified\UnifiedTemplateProcessor.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Templates\Glacie.Data.Templates.csproj" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

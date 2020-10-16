@@ -1,0 +1,30 @@
+﻿<partial>
+  <record-type name="FixedItemTyphonPortal" path="FixedItemTyphonPortal.tpl">
+    <inherits>
+      <inherit record="TemplateBase.FixedItem" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="FixedItemTyphonPortal" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="RequireDLC" var-class="variable" var-type="string">
+          <description>Only unlock if player owns this dlc</description>
+        </field>
+        <field name="RequireNoDLC" var-class="variable" var-type="string">
+          <description>Dont unlock if player owns this dlc</description>
+        </field>
+      </var-group>
+      <var-group name="TyphonPortal">
+        <field name="closedAnimation" var-class="variable" var-type="file_anm" />
+        <field name="closedFXPakName" var-class="variable" var-type="file_dbr" />
+        <field name="closedSound" var-class="variable" var-type="file_dbr" />
+        <field name="openAnimation" var-class="variable" var-type="file_anm" />
+        <field name="openFXPakName" var-class="variable" var-type="file_dbr" />
+        <field name="openSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

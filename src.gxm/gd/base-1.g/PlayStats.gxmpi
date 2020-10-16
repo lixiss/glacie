@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="PlayStats">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Player Score" system="true">
+      <field name="bossBonus" />
+      <field name="championBonus" />
+      <field name="commonBonus" />
+      <field name="heroBonus" />
+      <field name="questBonus" />
+      <field name="scoreEquation" />
+      <field name="survivalScoreEquation" />
+    </var-group>
+  </record-type>
+</partial>

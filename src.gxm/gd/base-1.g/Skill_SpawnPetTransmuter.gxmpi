@@ -1,0 +1,41 @@
+﻿<partial>
+  <record-type name="Skill_SpawnPetTransmuter">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Modifiers">
+      <field name="skillActiveDuration" />
+      <field name="skillActiveLifeCost" />
+      <field name="skillActiveManaCost" />
+      <field name="skillCooldownTime" />
+      <field name="skillManaCost" />
+      <field name="skillTargetAngle" />
+      <field name="skillTargetNumber" />
+      <field name="skillTargetRadius" />
+      <field name="waveDistance" />
+      <field name="waveEndWidth" />
+      <field name="waveStartWidth" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="explosionRadius" />
+      <field name="projectileLaunchNumber" />
+      <field name="projectileLaunchRotation" />
+      <field name="projectilePiercing" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="charFxPakOtherNames" />
+      <field name="charFxPakSelfNames" />
+      <field name="fxChanges" />
+    </var-group>
+    <var-group name="Spawn Config">
+      <field name="modSpawnObjects" />
+      <field name="modSpawnObjects2" />
+      <field name="modSpawnObjects3" />
+      <field name="modSpawnObjects4" />
+      <field name="modSpawnObjectsTimeToLive" />
+      <field name="petLimit" />
+    </var-group>
+  </record-type>
+</partial>

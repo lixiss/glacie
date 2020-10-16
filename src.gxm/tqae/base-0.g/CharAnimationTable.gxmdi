@@ -1,0 +1,1466 @@
+﻿<partial>
+  <record-type name="CharAnimationTable" path="CharAnimationTable.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Animation Sets">
+        <var-group name="Bow">
+          <field name="bowAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowAttTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="bowAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="bowSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="bowSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="bowTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="bowWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="bowWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="bowWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="bowWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="bowWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="bowWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="bowWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+        <var-group name="Dual Ranged">
+          <field name="dualRangedAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dualRangedAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dualRangedAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttTurnRight90AnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dualRangedAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="dualRangedSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dualRangedTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dualRangedTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dualRangedTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dualRangedWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dualRangedWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dualRangedWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="dualRangedWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+        <var-group name="Dual Wielded">
+          <field name="dHandedAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="dHandedAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim11" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim12" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim13" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim14" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnim15" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef11" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef12" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef13" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef14" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimRef15" var-class="variable" var-type="string" />
+          <field name="dHandedSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed11" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed12" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed13" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed14" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpecialAnimSpeed15" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="dHandedWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="dHandedWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="dHandedWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="dHandedWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="dHandedWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="dHandedWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="dHandedWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+        <var-group name="Ranged One Hand">
+          <field name="rangedOneHandAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="rangedOneHandAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="rangedOneHandAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttTurnRight90AnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="rangedOneHandAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="rangedOneHandSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="rangedOneHandTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="rangedOneHandTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="rangedOneHandTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="rangedOneHandWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="rangedOneHandWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="rangedOneHandWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="rangedOneHandWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+        <var-group name="Single Handed">
+          <field name="sHandedAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="sHandedAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim11" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim12" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim13" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim14" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnim15" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef11" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef12" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef13" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef14" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimRef15" var-class="variable" var-type="string" />
+          <field name="sHandedSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed11" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed12" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed13" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed14" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpecialAnimSpeed15" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="sHandedWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="sHandedWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="sHandedWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="sHandedWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="sHandedWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="sHandedWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="sHandedWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+        <var-group name="Spear">
+          <field name="spearAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearAttTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="spearAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim11" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim12" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim13" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim14" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnim15" var-class="variable" var-type="file_anm" />
+          <field name="spearSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef11" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef12" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef13" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef14" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimRef15" var-class="variable" var-type="string" />
+          <field name="spearSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed11" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed12" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed13" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed14" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpecialAnimSpeed15" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="spearTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="spearWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="spearWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="spearWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="spearWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="spearWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="spearWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="spearWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+        <var-group name="Staff">
+          <field name="staffAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffAttTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="staffAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="staffSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="staffSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="staffTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="staffWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="staffWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="staffWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="staffWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="staffWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="staffWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="staffWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+        <var-group name="Unarmed">
+          <field name="unarmedAlertAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAlertAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAlertAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAlertAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAlertAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAlertAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAlertAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAlertAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAlertAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAttTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="unarmedAttTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="unarmedAttTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttTurnRight90AnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="unarmedAttackAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAttackAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAttackAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAttackIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackIdleAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackIdleAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackIdleAnim4" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackIdleAnim5" var-class="variable" var-type="file_anm" />
+          <field name="unarmedAttackIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackIdleAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackIdleAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackIdleAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackIdleAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedAttackIdleAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAttackIdleAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAttackIdleAnimWeight4" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedAttackIdleAnimWeight5" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedBuffOtherAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedBuffOtherAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedBuffOtherAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedBuffOtherAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedBuffOtherAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedBuffOtherAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedBuffOtherAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedBuffOtherAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedBuffOtherAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedBuffSelfAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedBuffSelfAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedBuffSelfAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedBuffSelfAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedBuffSelfAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedBuffSelfAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedBuffSelfAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedBuffSelfAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedBuffSelfAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedChatAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedChatAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedCriticalHitAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedCriticalHitAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedDieAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedDieAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedDieAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedDieAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedDieAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedDieAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedDieAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedDieAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedDieAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedEmoteAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedEmoteAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedEmoteAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedEmoteAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedEmoteAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedEmoteAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedEmoteAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedEmoteAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedEmoteAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedFidgetAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedFidgetAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedFidgetAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedFidgetAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedFidgetAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedFidgetAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedFidgetAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedFidgetAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedFidgetAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedFleeAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedFleeAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedFleeAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedFleeAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedFleeAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedFleeAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedFleeAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedFleeAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedFleeAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedIdleTranAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedIdleTransAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedLongIdleAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedLongIdleAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedPassItemAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedPassItemAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedPickupAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedPickupAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedRallyAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedRallyAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedRallyAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedRallyAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedRallyAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedRallyAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedRallyAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedRallyAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedRallyAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedRespawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedRespawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedRunAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedRunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpawnAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpawnAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim4" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim5" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim6" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim7" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim8" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim9" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnim10" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpecialAnimRef1" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef2" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef3" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef4" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef5" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef6" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef7" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef8" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef9" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimRef10" var-class="variable" var-type="string" />
+          <field name="unarmedSpecialAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed4" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed5" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed6" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed7" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed8" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed9" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpecialAnimSpeed10" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedSpellAttackAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedSpellAttackAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedStunAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedStunAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedTurnLeft90Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedTurnLeft90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="unarmedTurnLeft180Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedTurnLeft180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="unarmedTurnRight90Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedTurnRight90AnimSpeed" var-class="variable" var-type="real" />
+          <field name="unarmedTurnRight180Anim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedTurnRight180AnimSpeed" var-class="variable" var-type="real" />
+          <field name="unarmedWaitingAnim1" var-class="variable" var-type="file_anm" />
+          <field name="unarmedWaitingAnim2" var-class="variable" var-type="file_anm" />
+          <field name="unarmedWaitingAnim3" var-class="variable" var-type="file_anm" />
+          <field name="unarmedWaitingAnimSpeed1" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedWaitingAnimSpeed2" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedWaitingAnimSpeed3" var-class="variable" var-type="real" var-default-value="1.0" />
+          <field name="unarmedWaitingAnimWeight1" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedWaitingAnimWeight2" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedWaitingAnimWeight3" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="unarmedWalkAnim" var-class="variable" var-type="file_anm" />
+          <field name="unarmedWalkAnimSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

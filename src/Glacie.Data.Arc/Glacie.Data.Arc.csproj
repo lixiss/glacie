@@ -16,7 +16,7 @@
     <Compile Include="ArcArchive.cs" />
     <Compile Include="ArcArchiveMode.cs" />
     <Compile Include="ArcArchiveOptions.cs" />
-    <Compile Include="ArcEntry.cs" />
+    <Compile Include="ArcArchiveEntry.cs" />
     <Compile Include="Infrastructure\AllocatedSegment.cs" />
     <Compile Include="Infrastructure\ArcLayoutInfo.cs" />
     <Compile Include="Infrastructure\FileSegment.cs" />
@@ -37,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

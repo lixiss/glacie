@@ -1,0 +1,1723 @@
+﻿<partial>
+  <record-type name="DevotionSkillTree" path="DevotionSkillTree.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill List">
+        <field name="skillLevel1" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel2" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel3" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel4" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel5" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel6" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel7" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel8" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel9" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel10" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel11" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel12" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel13" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel14" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel15" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel16" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel17" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel18" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel19" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel20" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel21" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel22" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel23" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel24" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel25" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel26" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel27" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel28" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel29" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel30" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel31" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel32" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel33" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel34" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel35" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel36" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel37" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel38" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel39" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel40" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel41" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel42" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel43" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel44" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel45" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel46" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel47" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel48" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel49" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel50" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel51" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel52" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel53" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel54" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel55" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel56" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel57" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel58" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel59" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel60" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel61" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel62" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel63" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel64" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel65" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel66" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel67" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel68" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel69" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel70" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel71" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel72" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel73" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel74" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel75" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel76" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel77" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel78" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel79" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel80" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel81" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel82" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel83" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel84" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel85" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel86" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel87" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel88" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel89" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel90" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel91" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel92" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel93" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel94" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel95" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel96" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel97" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel98" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel99" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel100" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel101" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel102" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel103" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel104" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel105" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel106" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel107" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel108" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel109" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel110" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel111" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel112" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel113" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel114" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel115" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel116" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel117" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel118" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel119" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel120" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel121" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel122" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel123" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel124" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel125" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel126" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel127" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel128" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel129" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel130" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel131" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel132" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel133" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel134" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel135" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel136" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel137" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel138" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel139" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel140" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel141" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel142" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel143" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel144" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel145" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel146" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel147" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel148" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel149" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel150" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel151" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel152" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel153" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel154" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel155" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel156" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel157" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel158" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel159" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel160" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel161" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel162" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel163" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel164" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel165" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel166" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel167" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel168" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel169" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel170" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel171" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel172" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel173" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel174" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel175" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel176" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel177" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel178" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel179" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel180" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel181" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel182" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel183" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel184" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel185" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel186" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel187" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel188" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel189" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel190" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel191" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel192" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel193" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel194" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel195" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel196" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel197" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel198" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel199" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel200" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel201" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel202" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel203" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel204" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel205" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel206" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel207" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel208" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel209" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel210" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel211" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel212" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel213" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel214" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel215" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel216" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel217" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel218" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel219" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel220" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel221" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel222" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel223" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel224" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel225" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel226" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel227" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel228" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel229" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel230" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel231" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel232" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel233" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel234" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel235" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel236" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel237" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel238" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel239" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel240" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel241" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel242" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel243" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel244" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel245" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel246" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel247" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel248" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel249" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel250" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel251" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel252" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel253" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel254" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel255" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel256" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel257" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel258" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel259" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel260" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel261" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel262" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel263" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel264" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel265" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel266" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel267" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel268" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel269" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel270" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel271" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel272" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel273" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel274" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel275" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel276" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel277" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel278" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel279" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel280" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel281" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel282" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel283" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel284" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel285" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel286" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel287" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel288" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel289" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel290" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel291" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel292" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel293" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel294" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel295" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel296" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel297" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel298" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel299" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel300" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel301" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel302" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel303" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel304" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel305" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel306" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel307" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel308" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel309" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel310" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel311" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel312" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel313" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel314" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel315" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel316" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel317" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel318" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel319" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel320" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel321" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel322" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel323" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel324" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel325" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel326" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel327" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel328" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel329" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel330" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel331" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel332" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel333" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel334" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel335" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel336" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel337" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel338" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel339" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel340" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel341" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel342" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel343" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel344" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel345" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel346" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel347" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel348" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel349" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel350" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel351" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel352" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel353" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel354" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel355" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel356" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel357" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel358" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel359" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel360" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel361" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel362" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel363" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel364" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel365" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel366" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel367" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel368" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel369" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel370" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel371" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel372" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel373" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel374" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel375" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel376" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel377" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel378" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel379" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel380" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel381" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel382" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel383" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel384" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel385" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel386" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel387" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel388" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel389" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel390" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel391" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel392" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel393" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel394" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel395" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel396" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel397" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel398" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel399" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel400" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel401" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel402" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel403" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel404" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel405" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel406" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel407" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel408" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel409" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel410" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel411" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel412" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel413" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel414" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel415" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel416" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel417" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel418" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel419" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel420" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel421" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel422" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel423" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel424" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel425" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel426" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel427" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel428" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel429" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel430" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel431" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel432" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel433" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel434" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel435" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel436" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel437" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel438" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel439" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel440" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel441" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel442" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel443" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel444" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel445" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel446" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel447" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel448" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel449" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel450" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel451" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel452" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel453" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel454" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel455" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel456" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel457" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel458" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel459" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel460" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel461" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel462" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel463" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel464" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel465" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel466" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel467" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel468" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel469" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel470" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel471" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel472" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel473" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel474" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel475" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel476" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel477" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel478" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel479" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel480" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel481" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel482" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel483" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel484" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel485" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel486" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel487" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel488" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel489" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel490" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel491" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel492" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel493" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel494" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel495" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel496" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel497" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel498" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel499" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel500" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel501" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel502" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel503" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel504" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel505" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel506" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel507" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel508" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel509" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel510" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel511" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel512" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel513" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel514" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel515" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel516" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel517" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel518" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel519" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel520" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel521" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel522" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel523" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel524" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel525" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel526" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel527" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel528" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel529" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel530" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel531" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel532" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel533" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel534" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel535" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel536" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel537" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel538" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel539" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel540" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel541" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel542" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel543" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel544" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel545" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel546" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel547" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel548" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel549" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel550" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel551" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel552" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel553" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel554" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel555" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel556" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel557" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel558" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel559" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel560" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel561" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel562" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel563" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel564" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel565" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel566" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel567" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel568" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel569" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillLevel570" var-class="variable" var-type="equation" var-default-value="0" />
+        <field name="skillName1" var-class="variable" var-type="file_dbr" />
+        <field name="skillName2" var-class="variable" var-type="file_dbr" />
+        <field name="skillName3" var-class="variable" var-type="file_dbr" />
+        <field name="skillName4" var-class="variable" var-type="file_dbr" />
+        <field name="skillName5" var-class="variable" var-type="file_dbr" />
+        <field name="skillName6" var-class="variable" var-type="file_dbr" />
+        <field name="skillName7" var-class="variable" var-type="file_dbr" />
+        <field name="skillName8" var-class="variable" var-type="file_dbr" />
+        <field name="skillName9" var-class="variable" var-type="file_dbr" />
+        <field name="skillName10" var-class="variable" var-type="file_dbr" />
+        <field name="skillName11" var-class="variable" var-type="file_dbr" />
+        <field name="skillName12" var-class="variable" var-type="file_dbr" />
+        <field name="skillName13" var-class="variable" var-type="file_dbr" />
+        <field name="skillName14" var-class="variable" var-type="file_dbr" />
+        <field name="skillName15" var-class="variable" var-type="file_dbr" />
+        <field name="skillName16" var-class="variable" var-type="file_dbr" />
+        <field name="skillName17" var-class="variable" var-type="file_dbr" />
+        <field name="skillName18" var-class="variable" var-type="file_dbr" />
+        <field name="skillName19" var-class="variable" var-type="file_dbr" />
+        <field name="skillName20" var-class="variable" var-type="file_dbr" />
+        <field name="skillName21" var-class="variable" var-type="file_dbr" />
+        <field name="skillName22" var-class="variable" var-type="file_dbr" />
+        <field name="skillName23" var-class="variable" var-type="file_dbr" />
+        <field name="skillName24" var-class="variable" var-type="file_dbr" />
+        <field name="skillName25" var-class="variable" var-type="file_dbr" />
+        <field name="skillName26" var-class="variable" var-type="file_dbr" />
+        <field name="skillName27" var-class="variable" var-type="file_dbr" />
+        <field name="skillName28" var-class="variable" var-type="file_dbr" />
+        <field name="skillName29" var-class="variable" var-type="file_dbr" />
+        <field name="skillName30" var-class="variable" var-type="file_dbr" />
+        <field name="skillName31" var-class="variable" var-type="file_dbr" />
+        <field name="skillName32" var-class="variable" var-type="file_dbr" />
+        <field name="skillName33" var-class="variable" var-type="file_dbr" />
+        <field name="skillName34" var-class="variable" var-type="file_dbr" />
+        <field name="skillName35" var-class="variable" var-type="file_dbr" />
+        <field name="skillName36" var-class="variable" var-type="file_dbr" />
+        <field name="skillName37" var-class="variable" var-type="file_dbr" />
+        <field name="skillName38" var-class="variable" var-type="file_dbr" />
+        <field name="skillName39" var-class="variable" var-type="file_dbr" />
+        <field name="skillName40" var-class="variable" var-type="file_dbr" />
+        <field name="skillName41" var-class="variable" var-type="file_dbr" />
+        <field name="skillName42" var-class="variable" var-type="file_dbr" />
+        <field name="skillName43" var-class="variable" var-type="file_dbr" />
+        <field name="skillName44" var-class="variable" var-type="file_dbr" />
+        <field name="skillName45" var-class="variable" var-type="file_dbr" />
+        <field name="skillName46" var-class="variable" var-type="file_dbr" />
+        <field name="skillName47" var-class="variable" var-type="file_dbr" />
+        <field name="skillName48" var-class="variable" var-type="file_dbr" />
+        <field name="skillName49" var-class="variable" var-type="file_dbr" />
+        <field name="skillName50" var-class="variable" var-type="file_dbr" />
+        <field name="skillName51" var-class="variable" var-type="file_dbr" />
+        <field name="skillName52" var-class="variable" var-type="file_dbr" />
+        <field name="skillName53" var-class="variable" var-type="file_dbr" />
+        <field name="skillName54" var-class="variable" var-type="file_dbr" />
+        <field name="skillName55" var-class="variable" var-type="file_dbr" />
+        <field name="skillName56" var-class="variable" var-type="file_dbr" />
+        <field name="skillName57" var-class="variable" var-type="file_dbr" />
+        <field name="skillName58" var-class="variable" var-type="file_dbr" />
+        <field name="skillName59" var-class="variable" var-type="file_dbr" />
+        <field name="skillName60" var-class="variable" var-type="file_dbr" />
+        <field name="skillName61" var-class="variable" var-type="file_dbr" />
+        <field name="skillName62" var-class="variable" var-type="file_dbr" />
+        <field name="skillName63" var-class="variable" var-type="file_dbr" />
+        <field name="skillName64" var-class="variable" var-type="file_dbr" />
+        <field name="skillName65" var-class="variable" var-type="file_dbr" />
+        <field name="skillName66" var-class="variable" var-type="file_dbr" />
+        <field name="skillName67" var-class="variable" var-type="file_dbr" />
+        <field name="skillName68" var-class="variable" var-type="file_dbr" />
+        <field name="skillName69" var-class="variable" var-type="file_dbr" />
+        <field name="skillName70" var-class="variable" var-type="file_dbr" />
+        <field name="skillName71" var-class="variable" var-type="file_dbr" />
+        <field name="skillName72" var-class="variable" var-type="file_dbr" />
+        <field name="skillName73" var-class="variable" var-type="file_dbr" />
+        <field name="skillName74" var-class="variable" var-type="file_dbr" />
+        <field name="skillName75" var-class="variable" var-type="file_dbr" />
+        <field name="skillName76" var-class="variable" var-type="file_dbr" />
+        <field name="skillName77" var-class="variable" var-type="file_dbr" />
+        <field name="skillName78" var-class="variable" var-type="file_dbr" />
+        <field name="skillName79" var-class="variable" var-type="file_dbr" />
+        <field name="skillName80" var-class="variable" var-type="file_dbr" />
+        <field name="skillName81" var-class="variable" var-type="file_dbr" />
+        <field name="skillName82" var-class="variable" var-type="file_dbr" />
+        <field name="skillName83" var-class="variable" var-type="file_dbr" />
+        <field name="skillName84" var-class="variable" var-type="file_dbr" />
+        <field name="skillName85" var-class="variable" var-type="file_dbr" />
+        <field name="skillName86" var-class="variable" var-type="file_dbr" />
+        <field name="skillName87" var-class="variable" var-type="file_dbr" />
+        <field name="skillName88" var-class="variable" var-type="file_dbr" />
+        <field name="skillName89" var-class="variable" var-type="file_dbr" />
+        <field name="skillName90" var-class="variable" var-type="file_dbr" />
+        <field name="skillName91" var-class="variable" var-type="file_dbr" />
+        <field name="skillName92" var-class="variable" var-type="file_dbr" />
+        <field name="skillName93" var-class="variable" var-type="file_dbr" />
+        <field name="skillName94" var-class="variable" var-type="file_dbr" />
+        <field name="skillName95" var-class="variable" var-type="file_dbr" />
+        <field name="skillName96" var-class="variable" var-type="file_dbr" />
+        <field name="skillName97" var-class="variable" var-type="file_dbr" />
+        <field name="skillName98" var-class="variable" var-type="file_dbr" />
+        <field name="skillName99" var-class="variable" var-type="file_dbr" />
+        <field name="skillName100" var-class="variable" var-type="file_dbr" />
+        <field name="skillName101" var-class="variable" var-type="file_dbr" />
+        <field name="skillName102" var-class="variable" var-type="file_dbr" />
+        <field name="skillName103" var-class="variable" var-type="file_dbr" />
+        <field name="skillName104" var-class="variable" var-type="file_dbr" />
+        <field name="skillName105" var-class="variable" var-type="file_dbr" />
+        <field name="skillName106" var-class="variable" var-type="file_dbr" />
+        <field name="skillName107" var-class="variable" var-type="file_dbr" />
+        <field name="skillName108" var-class="variable" var-type="file_dbr" />
+        <field name="skillName109" var-class="variable" var-type="file_dbr" />
+        <field name="skillName110" var-class="variable" var-type="file_dbr" />
+        <field name="skillName111" var-class="variable" var-type="file_dbr" />
+        <field name="skillName112" var-class="variable" var-type="file_dbr" />
+        <field name="skillName113" var-class="variable" var-type="file_dbr" />
+        <field name="skillName114" var-class="variable" var-type="file_dbr" />
+        <field name="skillName115" var-class="variable" var-type="file_dbr" />
+        <field name="skillName116" var-class="variable" var-type="file_dbr" />
+        <field name="skillName117" var-class="variable" var-type="file_dbr" />
+        <field name="skillName118" var-class="variable" var-type="file_dbr" />
+        <field name="skillName119" var-class="variable" var-type="file_dbr" />
+        <field name="skillName120" var-class="variable" var-type="file_dbr" />
+        <field name="skillName121" var-class="variable" var-type="file_dbr" />
+        <field name="skillName122" var-class="variable" var-type="file_dbr" />
+        <field name="skillName123" var-class="variable" var-type="file_dbr" />
+        <field name="skillName124" var-class="variable" var-type="file_dbr" />
+        <field name="skillName125" var-class="variable" var-type="file_dbr" />
+        <field name="skillName126" var-class="variable" var-type="file_dbr" />
+        <field name="skillName127" var-class="variable" var-type="file_dbr" />
+        <field name="skillName128" var-class="variable" var-type="file_dbr" />
+        <field name="skillName129" var-class="variable" var-type="file_dbr" />
+        <field name="skillName130" var-class="variable" var-type="file_dbr" />
+        <field name="skillName131" var-class="variable" var-type="file_dbr" />
+        <field name="skillName132" var-class="variable" var-type="file_dbr" />
+        <field name="skillName133" var-class="variable" var-type="file_dbr" />
+        <field name="skillName134" var-class="variable" var-type="file_dbr" />
+        <field name="skillName135" var-class="variable" var-type="file_dbr" />
+        <field name="skillName136" var-class="variable" var-type="file_dbr" />
+        <field name="skillName137" var-class="variable" var-type="file_dbr" />
+        <field name="skillName138" var-class="variable" var-type="file_dbr" />
+        <field name="skillName139" var-class="variable" var-type="file_dbr" />
+        <field name="skillName140" var-class="variable" var-type="file_dbr" />
+        <field name="skillName141" var-class="variable" var-type="file_dbr" />
+        <field name="skillName142" var-class="variable" var-type="file_dbr" />
+        <field name="skillName143" var-class="variable" var-type="file_dbr" />
+        <field name="skillName144" var-class="variable" var-type="file_dbr" />
+        <field name="skillName145" var-class="variable" var-type="file_dbr" />
+        <field name="skillName146" var-class="variable" var-type="file_dbr" />
+        <field name="skillName147" var-class="variable" var-type="file_dbr" />
+        <field name="skillName148" var-class="variable" var-type="file_dbr" />
+        <field name="skillName149" var-class="variable" var-type="file_dbr" />
+        <field name="skillName150" var-class="variable" var-type="file_dbr" />
+        <field name="skillName151" var-class="variable" var-type="file_dbr" />
+        <field name="skillName152" var-class="variable" var-type="file_dbr" />
+        <field name="skillName153" var-class="variable" var-type="file_dbr" />
+        <field name="skillName154" var-class="variable" var-type="file_dbr" />
+        <field name="skillName155" var-class="variable" var-type="file_dbr" />
+        <field name="skillName156" var-class="variable" var-type="file_dbr" />
+        <field name="skillName157" var-class="variable" var-type="file_dbr" />
+        <field name="skillName158" var-class="variable" var-type="file_dbr" />
+        <field name="skillName159" var-class="variable" var-type="file_dbr" />
+        <field name="skillName160" var-class="variable" var-type="file_dbr" />
+        <field name="skillName161" var-class="variable" var-type="file_dbr" />
+        <field name="skillName162" var-class="variable" var-type="file_dbr" />
+        <field name="skillName163" var-class="variable" var-type="file_dbr" />
+        <field name="skillName164" var-class="variable" var-type="file_dbr" />
+        <field name="skillName165" var-class="variable" var-type="file_dbr" />
+        <field name="skillName166" var-class="variable" var-type="file_dbr" />
+        <field name="skillName167" var-class="variable" var-type="file_dbr" />
+        <field name="skillName168" var-class="variable" var-type="file_dbr" />
+        <field name="skillName169" var-class="variable" var-type="file_dbr" />
+        <field name="skillName170" var-class="variable" var-type="file_dbr" />
+        <field name="skillName171" var-class="variable" var-type="file_dbr" />
+        <field name="skillName172" var-class="variable" var-type="file_dbr" />
+        <field name="skillName173" var-class="variable" var-type="file_dbr" />
+        <field name="skillName174" var-class="variable" var-type="file_dbr" />
+        <field name="skillName175" var-class="variable" var-type="file_dbr" />
+        <field name="skillName176" var-class="variable" var-type="file_dbr" />
+        <field name="skillName177" var-class="variable" var-type="file_dbr" />
+        <field name="skillName178" var-class="variable" var-type="file_dbr" />
+        <field name="skillName179" var-class="variable" var-type="file_dbr" />
+        <field name="skillName180" var-class="variable" var-type="file_dbr" />
+        <field name="skillName181" var-class="variable" var-type="file_dbr" />
+        <field name="skillName182" var-class="variable" var-type="file_dbr" />
+        <field name="skillName183" var-class="variable" var-type="file_dbr" />
+        <field name="skillName184" var-class="variable" var-type="file_dbr" />
+        <field name="skillName185" var-class="variable" var-type="file_dbr" />
+        <field name="skillName186" var-class="variable" var-type="file_dbr" />
+        <field name="skillName187" var-class="variable" var-type="file_dbr" />
+        <field name="skillName188" var-class="variable" var-type="file_dbr" />
+        <field name="skillName189" var-class="variable" var-type="file_dbr" />
+        <field name="skillName190" var-class="variable" var-type="file_dbr" />
+        <field name="skillName191" var-class="variable" var-type="file_dbr" />
+        <field name="skillName192" var-class="variable" var-type="file_dbr" />
+        <field name="skillName193" var-class="variable" var-type="file_dbr" />
+        <field name="skillName194" var-class="variable" var-type="file_dbr" />
+        <field name="skillName195" var-class="variable" var-type="file_dbr" />
+        <field name="skillName196" var-class="variable" var-type="file_dbr" />
+        <field name="skillName197" var-class="variable" var-type="file_dbr" />
+        <field name="skillName198" var-class="variable" var-type="file_dbr" />
+        <field name="skillName199" var-class="variable" var-type="file_dbr" />
+        <field name="skillName200" var-class="variable" var-type="file_dbr" />
+        <field name="skillName201" var-class="variable" var-type="file_dbr" />
+        <field name="skillName202" var-class="variable" var-type="file_dbr" />
+        <field name="skillName203" var-class="variable" var-type="file_dbr" />
+        <field name="skillName204" var-class="variable" var-type="file_dbr" />
+        <field name="skillName205" var-class="variable" var-type="file_dbr" />
+        <field name="skillName206" var-class="variable" var-type="file_dbr" />
+        <field name="skillName207" var-class="variable" var-type="file_dbr" />
+        <field name="skillName208" var-class="variable" var-type="file_dbr" />
+        <field name="skillName209" var-class="variable" var-type="file_dbr" />
+        <field name="skillName210" var-class="variable" var-type="file_dbr" />
+        <field name="skillName211" var-class="variable" var-type="file_dbr" />
+        <field name="skillName212" var-class="variable" var-type="file_dbr" />
+        <field name="skillName213" var-class="variable" var-type="file_dbr" />
+        <field name="skillName214" var-class="variable" var-type="file_dbr" />
+        <field name="skillName215" var-class="variable" var-type="file_dbr" />
+        <field name="skillName216" var-class="variable" var-type="file_dbr" />
+        <field name="skillName217" var-class="variable" var-type="file_dbr" />
+        <field name="skillName218" var-class="variable" var-type="file_dbr" />
+        <field name="skillName219" var-class="variable" var-type="file_dbr" />
+        <field name="skillName220" var-class="variable" var-type="file_dbr" />
+        <field name="skillName221" var-class="variable" var-type="file_dbr" />
+        <field name="skillName222" var-class="variable" var-type="file_dbr" />
+        <field name="skillName223" var-class="variable" var-type="file_dbr" />
+        <field name="skillName224" var-class="variable" var-type="file_dbr" />
+        <field name="skillName225" var-class="variable" var-type="file_dbr" />
+        <field name="skillName226" var-class="variable" var-type="file_dbr" />
+        <field name="skillName227" var-class="variable" var-type="file_dbr" />
+        <field name="skillName228" var-class="variable" var-type="file_dbr" />
+        <field name="skillName229" var-class="variable" var-type="file_dbr" />
+        <field name="skillName230" var-class="variable" var-type="file_dbr" />
+        <field name="skillName231" var-class="variable" var-type="file_dbr" />
+        <field name="skillName232" var-class="variable" var-type="file_dbr" />
+        <field name="skillName233" var-class="variable" var-type="file_dbr" />
+        <field name="skillName234" var-class="variable" var-type="file_dbr" />
+        <field name="skillName235" var-class="variable" var-type="file_dbr" />
+        <field name="skillName236" var-class="variable" var-type="file_dbr" />
+        <field name="skillName237" var-class="variable" var-type="file_dbr" />
+        <field name="skillName238" var-class="variable" var-type="file_dbr" />
+        <field name="skillName239" var-class="variable" var-type="file_dbr" />
+        <field name="skillName240" var-class="variable" var-type="file_dbr" />
+        <field name="skillName241" var-class="variable" var-type="file_dbr" />
+        <field name="skillName242" var-class="variable" var-type="file_dbr" />
+        <field name="skillName243" var-class="variable" var-type="file_dbr" />
+        <field name="skillName244" var-class="variable" var-type="file_dbr" />
+        <field name="skillName245" var-class="variable" var-type="file_dbr" />
+        <field name="skillName246" var-class="variable" var-type="file_dbr" />
+        <field name="skillName247" var-class="variable" var-type="file_dbr" />
+        <field name="skillName248" var-class="variable" var-type="file_dbr" />
+        <field name="skillName249" var-class="variable" var-type="file_dbr" />
+        <field name="skillName250" var-class="variable" var-type="file_dbr" />
+        <field name="skillName251" var-class="variable" var-type="file_dbr" />
+        <field name="skillName252" var-class="variable" var-type="file_dbr" />
+        <field name="skillName253" var-class="variable" var-type="file_dbr" />
+        <field name="skillName254" var-class="variable" var-type="file_dbr" />
+        <field name="skillName255" var-class="variable" var-type="file_dbr" />
+        <field name="skillName256" var-class="variable" var-type="file_dbr" />
+        <field name="skillName257" var-class="variable" var-type="file_dbr" />
+        <field name="skillName258" var-class="variable" var-type="file_dbr" />
+        <field name="skillName259" var-class="variable" var-type="file_dbr" />
+        <field name="skillName260" var-class="variable" var-type="file_dbr" />
+        <field name="skillName261" var-class="variable" var-type="file_dbr" />
+        <field name="skillName262" var-class="variable" var-type="file_dbr" />
+        <field name="skillName263" var-class="variable" var-type="file_dbr" />
+        <field name="skillName264" var-class="variable" var-type="file_dbr" />
+        <field name="skillName265" var-class="variable" var-type="file_dbr" />
+        <field name="skillName266" var-class="variable" var-type="file_dbr" />
+        <field name="skillName267" var-class="variable" var-type="file_dbr" />
+        <field name="skillName268" var-class="variable" var-type="file_dbr" />
+        <field name="skillName269" var-class="variable" var-type="file_dbr" />
+        <field name="skillName270" var-class="variable" var-type="file_dbr" />
+        <field name="skillName271" var-class="variable" var-type="file_dbr" />
+        <field name="skillName272" var-class="variable" var-type="file_dbr" />
+        <field name="skillName273" var-class="variable" var-type="file_dbr" />
+        <field name="skillName274" var-class="variable" var-type="file_dbr" />
+        <field name="skillName275" var-class="variable" var-type="file_dbr" />
+        <field name="skillName276" var-class="variable" var-type="file_dbr" />
+        <field name="skillName277" var-class="variable" var-type="file_dbr" />
+        <field name="skillName278" var-class="variable" var-type="file_dbr" />
+        <field name="skillName279" var-class="variable" var-type="file_dbr" />
+        <field name="skillName280" var-class="variable" var-type="file_dbr" />
+        <field name="skillName281" var-class="variable" var-type="file_dbr" />
+        <field name="skillName282" var-class="variable" var-type="file_dbr" />
+        <field name="skillName283" var-class="variable" var-type="file_dbr" />
+        <field name="skillName284" var-class="variable" var-type="file_dbr" />
+        <field name="skillName285" var-class="variable" var-type="file_dbr" />
+        <field name="skillName286" var-class="variable" var-type="file_dbr" />
+        <field name="skillName287" var-class="variable" var-type="file_dbr" />
+        <field name="skillName288" var-class="variable" var-type="file_dbr" />
+        <field name="skillName289" var-class="variable" var-type="file_dbr" />
+        <field name="skillName290" var-class="variable" var-type="file_dbr" />
+        <field name="skillName291" var-class="variable" var-type="file_dbr" />
+        <field name="skillName292" var-class="variable" var-type="file_dbr" />
+        <field name="skillName293" var-class="variable" var-type="file_dbr" />
+        <field name="skillName294" var-class="variable" var-type="file_dbr" />
+        <field name="skillName295" var-class="variable" var-type="file_dbr" />
+        <field name="skillName296" var-class="variable" var-type="file_dbr" />
+        <field name="skillName297" var-class="variable" var-type="file_dbr" />
+        <field name="skillName298" var-class="variable" var-type="file_dbr" />
+        <field name="skillName299" var-class="variable" var-type="file_dbr" />
+        <field name="skillName300" var-class="variable" var-type="file_dbr" />
+        <field name="skillName301" var-class="variable" var-type="file_dbr" />
+        <field name="skillName302" var-class="variable" var-type="file_dbr" />
+        <field name="skillName303" var-class="variable" var-type="file_dbr" />
+        <field name="skillName304" var-class="variable" var-type="file_dbr" />
+        <field name="skillName305" var-class="variable" var-type="file_dbr" />
+        <field name="skillName306" var-class="variable" var-type="file_dbr" />
+        <field name="skillName307" var-class="variable" var-type="file_dbr" />
+        <field name="skillName308" var-class="variable" var-type="file_dbr" />
+        <field name="skillName309" var-class="variable" var-type="file_dbr" />
+        <field name="skillName310" var-class="variable" var-type="file_dbr" />
+        <field name="skillName311" var-class="variable" var-type="file_dbr" />
+        <field name="skillName312" var-class="variable" var-type="file_dbr" />
+        <field name="skillName313" var-class="variable" var-type="file_dbr" />
+        <field name="skillName314" var-class="variable" var-type="file_dbr" />
+        <field name="skillName315" var-class="variable" var-type="file_dbr" />
+        <field name="skillName316" var-class="variable" var-type="file_dbr" />
+        <field name="skillName317" var-class="variable" var-type="file_dbr" />
+        <field name="skillName318" var-class="variable" var-type="file_dbr" />
+        <field name="skillName319" var-class="variable" var-type="file_dbr" />
+        <field name="skillName320" var-class="variable" var-type="file_dbr" />
+        <field name="skillName321" var-class="variable" var-type="file_dbr" />
+        <field name="skillName322" var-class="variable" var-type="file_dbr" />
+        <field name="skillName323" var-class="variable" var-type="file_dbr" />
+        <field name="skillName324" var-class="variable" var-type="file_dbr" />
+        <field name="skillName325" var-class="variable" var-type="file_dbr" />
+        <field name="skillName326" var-class="variable" var-type="file_dbr" />
+        <field name="skillName327" var-class="variable" var-type="file_dbr" />
+        <field name="skillName328" var-class="variable" var-type="file_dbr" />
+        <field name="skillName329" var-class="variable" var-type="file_dbr" />
+        <field name="skillName330" var-class="variable" var-type="file_dbr" />
+        <field name="skillName331" var-class="variable" var-type="file_dbr" />
+        <field name="skillName332" var-class="variable" var-type="file_dbr" />
+        <field name="skillName333" var-class="variable" var-type="file_dbr" />
+        <field name="skillName334" var-class="variable" var-type="file_dbr" />
+        <field name="skillName335" var-class="variable" var-type="file_dbr" />
+        <field name="skillName336" var-class="variable" var-type="file_dbr" />
+        <field name="skillName337" var-class="variable" var-type="file_dbr" />
+        <field name="skillName338" var-class="variable" var-type="file_dbr" />
+        <field name="skillName339" var-class="variable" var-type="file_dbr" />
+        <field name="skillName340" var-class="variable" var-type="file_dbr" />
+        <field name="skillName341" var-class="variable" var-type="file_dbr" />
+        <field name="skillName342" var-class="variable" var-type="file_dbr" />
+        <field name="skillName343" var-class="variable" var-type="file_dbr" />
+        <field name="skillName344" var-class="variable" var-type="file_dbr" />
+        <field name="skillName345" var-class="variable" var-type="file_dbr" />
+        <field name="skillName346" var-class="variable" var-type="file_dbr" />
+        <field name="skillName347" var-class="variable" var-type="file_dbr" />
+        <field name="skillName348" var-class="variable" var-type="file_dbr" />
+        <field name="skillName349" var-class="variable" var-type="file_dbr" />
+        <field name="skillName350" var-class="variable" var-type="file_dbr" />
+        <field name="skillName351" var-class="variable" var-type="file_dbr" />
+        <field name="skillName352" var-class="variable" var-type="file_dbr" />
+        <field name="skillName353" var-class="variable" var-type="file_dbr" />
+        <field name="skillName354" var-class="variable" var-type="file_dbr" />
+        <field name="skillName355" var-class="variable" var-type="file_dbr" />
+        <field name="skillName356" var-class="variable" var-type="file_dbr" />
+        <field name="skillName357" var-class="variable" var-type="file_dbr" />
+        <field name="skillName358" var-class="variable" var-type="file_dbr" />
+        <field name="skillName359" var-class="variable" var-type="file_dbr" />
+        <field name="skillName360" var-class="variable" var-type="file_dbr" />
+        <field name="skillName361" var-class="variable" var-type="file_dbr" />
+        <field name="skillName362" var-class="variable" var-type="file_dbr" />
+        <field name="skillName363" var-class="variable" var-type="file_dbr" />
+        <field name="skillName364" var-class="variable" var-type="file_dbr" />
+        <field name="skillName365" var-class="variable" var-type="file_dbr" />
+        <field name="skillName366" var-class="variable" var-type="file_dbr" />
+        <field name="skillName367" var-class="variable" var-type="file_dbr" />
+        <field name="skillName368" var-class="variable" var-type="file_dbr" />
+        <field name="skillName369" var-class="variable" var-type="file_dbr" />
+        <field name="skillName370" var-class="variable" var-type="file_dbr" />
+        <field name="skillName371" var-class="variable" var-type="file_dbr" />
+        <field name="skillName372" var-class="variable" var-type="file_dbr" />
+        <field name="skillName373" var-class="variable" var-type="file_dbr" />
+        <field name="skillName374" var-class="variable" var-type="file_dbr" />
+        <field name="skillName375" var-class="variable" var-type="file_dbr" />
+        <field name="skillName376" var-class="variable" var-type="file_dbr" />
+        <field name="skillName377" var-class="variable" var-type="file_dbr" />
+        <field name="skillName378" var-class="variable" var-type="file_dbr" />
+        <field name="skillName379" var-class="variable" var-type="file_dbr" />
+        <field name="skillName380" var-class="variable" var-type="file_dbr" />
+        <field name="skillName381" var-class="variable" var-type="file_dbr" />
+        <field name="skillName382" var-class="variable" var-type="file_dbr" />
+        <field name="skillName383" var-class="variable" var-type="file_dbr" />
+        <field name="skillName384" var-class="variable" var-type="file_dbr" />
+        <field name="skillName385" var-class="variable" var-type="file_dbr" />
+        <field name="skillName386" var-class="variable" var-type="file_dbr" />
+        <field name="skillName387" var-class="variable" var-type="file_dbr" />
+        <field name="skillName388" var-class="variable" var-type="file_dbr" />
+        <field name="skillName389" var-class="variable" var-type="file_dbr" />
+        <field name="skillName390" var-class="variable" var-type="file_dbr" />
+        <field name="skillName391" var-class="variable" var-type="file_dbr" />
+        <field name="skillName392" var-class="variable" var-type="file_dbr" />
+        <field name="skillName393" var-class="variable" var-type="file_dbr" />
+        <field name="skillName394" var-class="variable" var-type="file_dbr" />
+        <field name="skillName395" var-class="variable" var-type="file_dbr" />
+        <field name="skillName396" var-class="variable" var-type="file_dbr" />
+        <field name="skillName397" var-class="variable" var-type="file_dbr" />
+        <field name="skillName398" var-class="variable" var-type="file_dbr" />
+        <field name="skillName399" var-class="variable" var-type="file_dbr" />
+        <field name="skillName400" var-class="variable" var-type="file_dbr" />
+        <field name="skillName401" var-class="variable" var-type="file_dbr" />
+        <field name="skillName402" var-class="variable" var-type="file_dbr" />
+        <field name="skillName403" var-class="variable" var-type="file_dbr" />
+        <field name="skillName404" var-class="variable" var-type="file_dbr" />
+        <field name="skillName405" var-class="variable" var-type="file_dbr" />
+        <field name="skillName406" var-class="variable" var-type="file_dbr" />
+        <field name="skillName407" var-class="variable" var-type="file_dbr" />
+        <field name="skillName408" var-class="variable" var-type="file_dbr" />
+        <field name="skillName409" var-class="variable" var-type="file_dbr" />
+        <field name="skillName410" var-class="variable" var-type="file_dbr" />
+        <field name="skillName411" var-class="variable" var-type="file_dbr" />
+        <field name="skillName412" var-class="variable" var-type="file_dbr" />
+        <field name="skillName413" var-class="variable" var-type="file_dbr" />
+        <field name="skillName414" var-class="variable" var-type="file_dbr" />
+        <field name="skillName415" var-class="variable" var-type="file_dbr" />
+        <field name="skillName416" var-class="variable" var-type="file_dbr" />
+        <field name="skillName417" var-class="variable" var-type="file_dbr" />
+        <field name="skillName418" var-class="variable" var-type="file_dbr" />
+        <field name="skillName419" var-class="variable" var-type="file_dbr" />
+        <field name="skillName420" var-class="variable" var-type="file_dbr" />
+        <field name="skillName421" var-class="variable" var-type="file_dbr" />
+        <field name="skillName422" var-class="variable" var-type="file_dbr" />
+        <field name="skillName423" var-class="variable" var-type="file_dbr" />
+        <field name="skillName424" var-class="variable" var-type="file_dbr" />
+        <field name="skillName425" var-class="variable" var-type="file_dbr" />
+        <field name="skillName426" var-class="variable" var-type="file_dbr" />
+        <field name="skillName427" var-class="variable" var-type="file_dbr" />
+        <field name="skillName428" var-class="variable" var-type="file_dbr" />
+        <field name="skillName429" var-class="variable" var-type="file_dbr" />
+        <field name="skillName430" var-class="variable" var-type="file_dbr" />
+        <field name="skillName431" var-class="variable" var-type="file_dbr" />
+        <field name="skillName432" var-class="variable" var-type="file_dbr" />
+        <field name="skillName433" var-class="variable" var-type="file_dbr" />
+        <field name="skillName434" var-class="variable" var-type="file_dbr" />
+        <field name="skillName435" var-class="variable" var-type="file_dbr" />
+        <field name="skillName436" var-class="variable" var-type="file_dbr" />
+        <field name="skillName437" var-class="variable" var-type="file_dbr" />
+        <field name="skillName438" var-class="variable" var-type="file_dbr" />
+        <field name="skillName439" var-class="variable" var-type="file_dbr" />
+        <field name="skillName440" var-class="variable" var-type="file_dbr" />
+        <field name="skillName441" var-class="variable" var-type="file_dbr" />
+        <field name="skillName442" var-class="variable" var-type="file_dbr" />
+        <field name="skillName443" var-class="variable" var-type="file_dbr" />
+        <field name="skillName444" var-class="variable" var-type="file_dbr" />
+        <field name="skillName445" var-class="variable" var-type="file_dbr" />
+        <field name="skillName446" var-class="variable" var-type="file_dbr" />
+        <field name="skillName447" var-class="variable" var-type="file_dbr" />
+        <field name="skillName448" var-class="variable" var-type="file_dbr" />
+        <field name="skillName449" var-class="variable" var-type="file_dbr" />
+        <field name="skillName450" var-class="variable" var-type="file_dbr" />
+        <field name="skillName451" var-class="variable" var-type="file_dbr" />
+        <field name="skillName452" var-class="variable" var-type="file_dbr" />
+        <field name="skillName453" var-class="variable" var-type="file_dbr" />
+        <field name="skillName454" var-class="variable" var-type="file_dbr" />
+        <field name="skillName455" var-class="variable" var-type="file_dbr" />
+        <field name="skillName456" var-class="variable" var-type="file_dbr" />
+        <field name="skillName457" var-class="variable" var-type="file_dbr" />
+        <field name="skillName458" var-class="variable" var-type="file_dbr" />
+        <field name="skillName459" var-class="variable" var-type="file_dbr" />
+        <field name="skillName460" var-class="variable" var-type="file_dbr" />
+        <field name="skillName461" var-class="variable" var-type="file_dbr" />
+        <field name="skillName462" var-class="variable" var-type="file_dbr" />
+        <field name="skillName463" var-class="variable" var-type="file_dbr" />
+        <field name="skillName464" var-class="variable" var-type="file_dbr" />
+        <field name="skillName465" var-class="variable" var-type="file_dbr" />
+        <field name="skillName466" var-class="variable" var-type="file_dbr" />
+        <field name="skillName467" var-class="variable" var-type="file_dbr" />
+        <field name="skillName468" var-class="variable" var-type="file_dbr" />
+        <field name="skillName469" var-class="variable" var-type="file_dbr" />
+        <field name="skillName470" var-class="variable" var-type="file_dbr" />
+        <field name="skillName471" var-class="variable" var-type="file_dbr" />
+        <field name="skillName472" var-class="variable" var-type="file_dbr" />
+        <field name="skillName473" var-class="variable" var-type="file_dbr" />
+        <field name="skillName474" var-class="variable" var-type="file_dbr" />
+        <field name="skillName475" var-class="variable" var-type="file_dbr" />
+        <field name="skillName476" var-class="variable" var-type="file_dbr" />
+        <field name="skillName477" var-class="variable" var-type="file_dbr" />
+        <field name="skillName478" var-class="variable" var-type="file_dbr" />
+        <field name="skillName479" var-class="variable" var-type="file_dbr" />
+        <field name="skillName480" var-class="variable" var-type="file_dbr" />
+        <field name="skillName481" var-class="variable" var-type="file_dbr" />
+        <field name="skillName482" var-class="variable" var-type="file_dbr" />
+        <field name="skillName483" var-class="variable" var-type="file_dbr" />
+        <field name="skillName484" var-class="variable" var-type="file_dbr" />
+        <field name="skillName485" var-class="variable" var-type="file_dbr" />
+        <field name="skillName486" var-class="variable" var-type="file_dbr" />
+        <field name="skillName487" var-class="variable" var-type="file_dbr" />
+        <field name="skillName488" var-class="variable" var-type="file_dbr" />
+        <field name="skillName489" var-class="variable" var-type="file_dbr" />
+        <field name="skillName490" var-class="variable" var-type="file_dbr" />
+        <field name="skillName491" var-class="variable" var-type="file_dbr" />
+        <field name="skillName492" var-class="variable" var-type="file_dbr" />
+        <field name="skillName493" var-class="variable" var-type="file_dbr" />
+        <field name="skillName494" var-class="variable" var-type="file_dbr" />
+        <field name="skillName495" var-class="variable" var-type="file_dbr" />
+        <field name="skillName496" var-class="variable" var-type="file_dbr" />
+        <field name="skillName497" var-class="variable" var-type="file_dbr" />
+        <field name="skillName498" var-class="variable" var-type="file_dbr" />
+        <field name="skillName499" var-class="variable" var-type="file_dbr" />
+        <field name="skillName500" var-class="variable" var-type="file_dbr" />
+        <field name="skillName501" var-class="variable" var-type="file_dbr" />
+        <field name="skillName502" var-class="variable" var-type="file_dbr" />
+        <field name="skillName503" var-class="variable" var-type="file_dbr" />
+        <field name="skillName504" var-class="variable" var-type="file_dbr" />
+        <field name="skillName505" var-class="variable" var-type="file_dbr" />
+        <field name="skillName506" var-class="variable" var-type="file_dbr" />
+        <field name="skillName507" var-class="variable" var-type="file_dbr" />
+        <field name="skillName508" var-class="variable" var-type="file_dbr" />
+        <field name="skillName509" var-class="variable" var-type="file_dbr" />
+        <field name="skillName510" var-class="variable" var-type="file_dbr" />
+        <field name="skillName511" var-class="variable" var-type="file_dbr" />
+        <field name="skillName512" var-class="variable" var-type="file_dbr" />
+        <field name="skillName513" var-class="variable" var-type="file_dbr" />
+        <field name="skillName514" var-class="variable" var-type="file_dbr" />
+        <field name="skillName515" var-class="variable" var-type="file_dbr" />
+        <field name="skillName516" var-class="variable" var-type="file_dbr" />
+        <field name="skillName517" var-class="variable" var-type="file_dbr" />
+        <field name="skillName518" var-class="variable" var-type="file_dbr" />
+        <field name="skillName519" var-class="variable" var-type="file_dbr" />
+        <field name="skillName520" var-class="variable" var-type="file_dbr" />
+        <field name="skillName521" var-class="variable" var-type="file_dbr" />
+        <field name="skillName522" var-class="variable" var-type="file_dbr" />
+        <field name="skillName523" var-class="variable" var-type="file_dbr" />
+        <field name="skillName524" var-class="variable" var-type="file_dbr" />
+        <field name="skillName525" var-class="variable" var-type="file_dbr" />
+        <field name="skillName526" var-class="variable" var-type="file_dbr" />
+        <field name="skillName527" var-class="variable" var-type="file_dbr" />
+        <field name="skillName528" var-class="variable" var-type="file_dbr" />
+        <field name="skillName529" var-class="variable" var-type="file_dbr" />
+        <field name="skillName530" var-class="variable" var-type="file_dbr" />
+        <field name="skillName531" var-class="variable" var-type="file_dbr" />
+        <field name="skillName532" var-class="variable" var-type="file_dbr" />
+        <field name="skillName533" var-class="variable" var-type="file_dbr" />
+        <field name="skillName534" var-class="variable" var-type="file_dbr" />
+        <field name="skillName535" var-class="variable" var-type="file_dbr" />
+        <field name="skillName536" var-class="variable" var-type="file_dbr" />
+        <field name="skillName537" var-class="variable" var-type="file_dbr" />
+        <field name="skillName538" var-class="variable" var-type="file_dbr" />
+        <field name="skillName539" var-class="variable" var-type="file_dbr" />
+        <field name="skillName540" var-class="variable" var-type="file_dbr" />
+        <field name="skillName541" var-class="variable" var-type="file_dbr" />
+        <field name="skillName542" var-class="variable" var-type="file_dbr" />
+        <field name="skillName543" var-class="variable" var-type="file_dbr" />
+        <field name="skillName544" var-class="variable" var-type="file_dbr" />
+        <field name="skillName545" var-class="variable" var-type="file_dbr" />
+        <field name="skillName546" var-class="variable" var-type="file_dbr" />
+        <field name="skillName547" var-class="variable" var-type="file_dbr" />
+        <field name="skillName548" var-class="variable" var-type="file_dbr" />
+        <field name="skillName549" var-class="variable" var-type="file_dbr" />
+        <field name="skillName550" var-class="variable" var-type="file_dbr" />
+        <field name="skillName551" var-class="variable" var-type="file_dbr" />
+        <field name="skillName552" var-class="variable" var-type="file_dbr" />
+        <field name="skillName553" var-class="variable" var-type="file_dbr" />
+        <field name="skillName554" var-class="variable" var-type="file_dbr" />
+        <field name="skillName555" var-class="variable" var-type="file_dbr" />
+        <field name="skillName556" var-class="variable" var-type="file_dbr" />
+        <field name="skillName557" var-class="variable" var-type="file_dbr" />
+        <field name="skillName558" var-class="variable" var-type="file_dbr" />
+        <field name="skillName559" var-class="variable" var-type="file_dbr" />
+        <field name="skillName560" var-class="variable" var-type="file_dbr" />
+        <field name="skillName561" var-class="variable" var-type="file_dbr" />
+        <field name="skillName562" var-class="variable" var-type="file_dbr" />
+        <field name="skillName563" var-class="variable" var-type="file_dbr" />
+        <field name="skillName564" var-class="variable" var-type="file_dbr" />
+        <field name="skillName565" var-class="variable" var-type="file_dbr" />
+        <field name="skillName566" var-class="variable" var-type="file_dbr" />
+        <field name="skillName567" var-class="variable" var-type="file_dbr" />
+        <field name="skillName568" var-class="variable" var-type="file_dbr" />
+        <field name="skillName569" var-class="variable" var-type="file_dbr" />
+        <field name="skillName570" var-class="variable" var-type="file_dbr" />
+        <field name="skillType1" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType2" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType3" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType4" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType5" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType6" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType7" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType8" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType9" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType10" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType11" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType12" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType13" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType14" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType15" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType16" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType17" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType18" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType19" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType20" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType21" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType22" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType23" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType24" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType25" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType26" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType27" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType28" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType29" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType30" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType31" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType32" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType33" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType34" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType35" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType36" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType37" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType38" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType39" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType40" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType41" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType42" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType43" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType44" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType45" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType46" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType47" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType48" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType49" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType50" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType51" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType52" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType53" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType54" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType55" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType56" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType57" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType58" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType59" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType60" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType61" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType62" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType63" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType64" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType65" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType66" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType67" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType68" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType69" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType70" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType71" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType72" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType73" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType74" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType75" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType76" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType77" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType78" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType79" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType80" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType81" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType82" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType83" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType84" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType85" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType86" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType87" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType88" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType89" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType90" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType91" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType92" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType93" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType94" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType95" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType96" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType97" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType98" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType99" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType100" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType101" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType102" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType103" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType104" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType105" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType106" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType107" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType108" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType109" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType110" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType111" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType112" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType113" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType114" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType115" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType116" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType117" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType118" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType119" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType120" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType121" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType122" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType123" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType124" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType125" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType126" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType127" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType128" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType129" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType130" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType131" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType132" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType133" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType134" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType135" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType136" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType137" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType138" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType139" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType140" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType141" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType142" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType143" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType144" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType145" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType146" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType147" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType148" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType149" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType150" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType151" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType152" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType153" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType154" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType155" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType156" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType157" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType158" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType159" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType160" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType161" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType162" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType163" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType164" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType165" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType166" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType167" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType168" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType169" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType170" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType171" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType172" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType173" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType174" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType175" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType176" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType177" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType178" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType179" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType180" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType181" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType182" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType183" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType184" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType185" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType186" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType187" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType188" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType189" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType190" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType191" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType192" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType193" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType194" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType195" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType196" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType197" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType198" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType199" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType200" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType201" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType202" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType203" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType204" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType205" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType206" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType207" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType208" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType209" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType210" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType211" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType212" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType213" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType214" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType215" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType216" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType217" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType218" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType219" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType220" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType221" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType222" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType223" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType224" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType225" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType226" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType227" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType228" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType229" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType230" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType231" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType232" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType233" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType234" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType235" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType236" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType237" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType238" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType239" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType240" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType241" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType242" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType243" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType244" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType245" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType246" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType247" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType248" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType249" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType250" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType251" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType252" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType253" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType254" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType255" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType256" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType257" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType258" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType259" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType260" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType261" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType262" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType263" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType264" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType265" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType266" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType267" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType268" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType269" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType270" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType271" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType272" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType273" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType274" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType275" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType276" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType277" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType278" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType279" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType280" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType281" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType282" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType283" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType284" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType285" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType286" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType287" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType288" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType289" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType290" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType291" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType292" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType293" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType294" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType295" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType296" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType297" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType298" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType299" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType300" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType301" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType302" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType303" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType304" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType305" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType306" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType307" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType308" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType309" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType310" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType311" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType312" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType313" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType314" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType315" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType316" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType317" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType318" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType319" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType320" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType321" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType322" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType323" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType324" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType325" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType326" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType327" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType328" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType329" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType330" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType331" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType332" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType333" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType334" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType335" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType336" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType337" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType338" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType339" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType340" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType341" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType342" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType343" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType344" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType345" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType346" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType347" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType348" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType349" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType350" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType351" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType352" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType353" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType354" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType355" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType356" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType357" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType358" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType359" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType360" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType361" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType362" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType363" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType364" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType365" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType366" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType367" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType368" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType369" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType370" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType371" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType372" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType373" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType374" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType375" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType376" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType377" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType378" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType379" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType380" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType381" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType382" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType383" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType384" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType385" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType386" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType387" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType388" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType389" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType390" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType391" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType392" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType393" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType394" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType395" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType396" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType397" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType398" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType399" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType400" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType401" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType402" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType403" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType404" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType405" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType406" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType407" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType408" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType409" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType410" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType411" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType412" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType413" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType414" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType415" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType416" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType417" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType418" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType419" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType420" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType421" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType422" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType423" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType424" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType425" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType426" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType427" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType428" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType429" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType430" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType431" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType432" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType433" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType434" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType435" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType436" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType437" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType438" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType439" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType440" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType441" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType442" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType443" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType444" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType445" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType446" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType447" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType448" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType449" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType450" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType451" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType452" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType453" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType454" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType455" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType456" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType457" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType458" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType459" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType460" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType461" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType462" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType463" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType464" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType465" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType466" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType467" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType468" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType469" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType470" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType471" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType472" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType473" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType474" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType475" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType476" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType477" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType478" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType479" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType480" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType481" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType482" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType483" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType484" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType485" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType486" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType487" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType488" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType489" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType490" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType491" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType492" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType493" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType494" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType495" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType496" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType497" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType498" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType499" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType500" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType501" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType502" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType503" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType504" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType505" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType506" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType507" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType508" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType509" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType510" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType511" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType512" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType513" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType514" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType515" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType516" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType517" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType518" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType519" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType520" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType521" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType522" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType523" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType524" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType525" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType526" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType527" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType528" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType529" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType530" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType531" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType532" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType533" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType534" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType535" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType536" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType537" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType538" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType539" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType540" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType541" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType542" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType543" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType544" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType545" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType546" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType547" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType548" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType549" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType550" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType551" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType552" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType553" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType554" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType555" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType556" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType557" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType558" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType559" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType560" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType561" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType562" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType563" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType564" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType565" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType566" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType567" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType568" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType569" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+        <field name="skillType570" var-class="picklist" var-type="string" var-default-value="Skill;Passive;Effect" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

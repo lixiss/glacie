@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="EndlessDungeonExit">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="DungeonEntrance">
+      <field name="doorHooks" />
+      <field name="openEffect" />
+    </var-group>
+  </record-type>
+</partial>

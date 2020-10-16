@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-using Glacie.Data.Tpl;
+using Glacie.Data.Templates;
 
 namespace Glacie.Lab.Metadata
 {

@@ -1,0 +1,50 @@
+﻿<partial>
+  <record-type name="Engine.GridSystem" path="Engine/GridSystem.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="GridSystem" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Pieces">
+        <field name="cellSpacingX" var-class="variable" var-type="real" var-default-value="8" />
+        <field name="cellSpacingY" var-class="variable" var-type="real" var-default-value="8" />
+        <field name="cellSpacingZ" var-class="variable" var-type="real" var-default-value="8" />
+        <field name="feature" var-class="array" var-type="file_msh" />
+        <field name="wallPieceBaseA" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseB" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseC" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseD" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseE" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseF" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseG" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseH" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseI" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseJ" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseK" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseL" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseM" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseN" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceBaseO" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidA" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidB" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidC" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidD" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidE" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidF" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidG" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidH" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidI" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidJ" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidK" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidL" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidM" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidN" var-class="variable" var-type="file_msh" />
+        <field name="wallPieceMidO" var-class="variable" var-type="file_msh" />
+      </var-group>
+      <var-group name="Transparency">
+        <field name="minWallOpacity" var-class="variable" var-type="real" var-default-value="0.0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="NpcMerchant">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Market Config">
+      <field name="marketFileName" />
+      <field name="merchantType" />
+      <field name="merchantTypeTag" />
+    </var-group>
+  </record-type>
+</partial>

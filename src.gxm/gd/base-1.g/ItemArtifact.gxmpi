@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ItemArtifact">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Artifact Config">
+      <field name="artifactBitmap" />
+      <field name="artifactClassification" />
+      <field name="bonusTableName" />
+    </var-group>
+  </record-type>
+</partial>

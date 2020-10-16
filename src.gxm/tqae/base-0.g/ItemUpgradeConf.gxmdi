@@ -1,0 +1,131 @@
+﻿<partial>
+  <record-type name="ItemUpgradeConf" path="ItemUpgradeConf.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="Has one list of ItemUpgrade.tpl per difficulty" />
+      </var-group>
+      <var-group name="UPGRADE CONF">
+        <var-group name="Allowed Qualities">
+          <field name="AllowCommon" var-class="variable" var-type="bool" var-default-value="0" />
+          <field name="AllowEpic" var-class="variable" var-type="bool" var-default-value="1" />
+          <field name="AllowLegendary" var-class="variable" var-type="bool" var-default-value="1" />
+          <field name="AllowMagical" var-class="variable" var-type="bool" var-default-value="0" />
+          <field name="AllowRare" var-class="variable" var-type="bool" var-default-value="0" />
+        </var-group>
+        <var-group name="Allowed Types">
+          <field name="AllowArmband" var-class="variable" var-type="bool" var-default-value="1">
+            <description>Item_Type_Forearm</description>
+          </field>
+          <field name="AllowBodyArmor" var-class="variable" var-type="bool" var-default-value="1">
+            <description>Item_Type_UpperBody</description>
+          </field>
+          <field name="AllowBracelet" var-class="variable" var-type="bool" var-default-value="1">
+            <description>NOT USED YET !</description>
+          </field>
+          <field name="AllowGreaves" var-class="variable" var-type="bool" var-default-value="1">
+            <description>Item_Type_LowerBody</description>
+          </field>
+          <field name="AllowHelmet" var-class="variable" var-type="bool" var-default-value="1">
+            <description>Item_Type_Head</description>
+          </field>
+          <field name="AllowNeck" var-class="variable" var-type="bool" var-default-value="1">
+            <description>Item_Type_Neck</description>
+          </field>
+          <field name="AllowRing" var-class="variable" var-type="bool" var-default-value="1">
+            <description>Item_Type_Finger</description>
+          </field>
+          <field name="AllowShield" var-class="variable" var-type="bool" var-default-value="1" />
+          <field name="AllowWeapons" var-class="variable" var-type="bool" var-default-value="1" />
+        </var-group>
+        <var-group name="Intelligence Defensive">
+          <field name="ItemTable_IntDefensivePrefixEpic" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Epic difficulty</description>
+          </field>
+          <field name="ItemTable_IntDefensivePrefixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_IntDefensivePrefixNormal" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Normal difficulty</description>
+          </field>
+          <field name="ItemTable_IntDefensiveSufixEpic" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Epic difficulty</description>
+          </field>
+          <field name="ItemTable_IntDefensiveSufixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_IntDefensiveSufixNormal" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Normal difficulty</description>
+          </field>
+        </var-group>
+        <var-group name="Intelligence Offensive">
+          <field name="ItemTable_IntOffensivePrefixEpic" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Epic difficulty</description>
+          </field>
+          <field name="ItemTable_IntOffensivePrefixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_IntOffensivePrefixNormal" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Normal difficulty</description>
+          </field>
+          <field name="ItemTable_IntOffensiveSufixEpic" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Epic difficulty</description>
+          </field>
+          <field name="ItemTable_IntOffensiveSufixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_IntOffensiveSufixNormal" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Normal difficulty</description>
+          </field>
+        </var-group>
+        <var-group name="Strength Defensive">
+          <field name="ItemTable_StrDefensivePrefixEpic" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Epic difficulty</description>
+          </field>
+          <field name="ItemTable_StrDefensivePrefixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_StrDefensivePrefixNormal" var-class="variable" var-type="file_dbr">
+            <description>Prefix table for Defensive Strength Normal items</description>
+          </field>
+          <field name="ItemTable_StrDefensiveSufixEpic" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Epic difficulty</description>
+          </field>
+          <field name="ItemTable_StrDefensiveSufixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_StrDefensiveSufixNormal" var-class="variable" var-type="file_dbr">
+            <description>Sufix table for Defensive Strength Normal items</description>
+          </field>
+        </var-group>
+        <var-group name="Strength Offensive">
+          <field name="ItemTable_StrOffensivePrefixEpic" var-class="variable" var-type="file_dbr">
+            <description>Prefix table for Offensive Strength Epic items</description>
+          </field>
+          <field name="ItemTable_StrOffensivePrefixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_StrOffensivePrefixNormal" var-class="variable" var-type="file_dbr">
+            <description>Prefix table for Offensive Strength Normal items</description>
+          </field>
+          <field name="ItemTable_StrOffensiveSufixEpic" var-class="variable" var-type="file_dbr">
+            <description>Sufix table for Offensive Strength Epic items</description>
+          </field>
+          <field name="ItemTable_StrOffensiveSufixLegendary" var-class="variable" var-type="file_dbr">
+            <description>Random item table for swords Legendary difficulty</description>
+          </field>
+          <field name="ItemTable_StrOffensiveSufixNormal" var-class="variable" var-type="file_dbr">
+            <description>Sufix table for Offensive Strength Normal items</description>
+          </field>
+        </var-group>
+        <field name="UnlockToken" var-class="variable" var-type="string">
+          <description>Required for upgrader to be available for use</description>
+        </field>
+        <field name="UpgradedToken" var-class="variable" var-type="string">
+          <description>Token added to player once an upgrade has been made, upgrader cant be used if the player has this</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

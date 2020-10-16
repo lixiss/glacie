@@ -1,0 +1,91 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Character" path="TemplateBase/Parameters_Character.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ParameterStoreCharacter" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Character Parameters">
+        <var-group name="Character Ability">
+          <field name="characterDefensiveAbility" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterDefensiveAbilityModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterDefensiveBlockRecoveryReduction" var-class="array" var-type="real" />
+          <field name="characterDeflectProjectile" var-class="array" var-type="real" />
+          <field name="characterDodgePercent" var-class="array" var-type="real" />
+          <field name="characterEnergyAbsorptionPercent" var-class="array" var-type="real" />
+          <field name="characterOffensiveAbility" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterOffensiveAbilityModifier" var-class="array" var-type="real" var-default-value="0" />
+        </var-group>
+        <var-group name="Character Base Attributes">
+          <field name="characterBaseAttackSpeed" var-class="variable" var-type="real" />
+          <field name="characterBaseAttackSpeedTag" var-class="variable" var-type="string" var-default-value="CharacterAttackSpeedAverage" />
+        </var-group>
+        <var-group name="Character Bonus Attributes">
+          <field name="characterDexterity" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterDexterityModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterIncreasedExperience" var-class="array" var-type="real">
+            <description>Percent change to experience reward</description>
+          </field>
+          <field name="characterIntelligence" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterIntelligenceModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterLife" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterLifeModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterMana" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterManaModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterPhysToElementalRatio" var-class="array" var-type="real">
+            <description>Percent of physcial damage converted to Elemental</description>
+          </field>
+          <field name="characterStrength" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterStrengthModifier" var-class="array" var-type="real" var-default-value="0" />
+        </var-group>
+        <var-group name="Character Regeneration">
+          <field name="characterLifeRegen" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterLifeRegenModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterManaRegen" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterManaRegenModifier" var-class="array" var-type="real" var-default-value="0" />
+        </var-group>
+        <var-group name="Character Reserve">
+          <field name="characterManaLimitReserve" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterManaLimitReserveModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterManaLimitReserveReduction" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterManaLimitReserveReductionModifier" var-class="array" var-type="real" var-default-value="0" />
+        </var-group>
+        <var-group name="Character Speed">
+          <field name="characterAttackSpeed" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterAttackSpeedModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterRunSpeed" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterRunSpeedModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterSpellCastSpeed" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterSpellCastSpeedModifier" var-class="array" var-type="real" var-default-value="0" />
+          <field name="characterTotalSpeedModifier" var-class="array" var-type="real" />
+        </var-group>
+        <var-group name="Requirement Reduction">
+          <field name="characterArmorDexterityReqReduction" var-class="array" var-type="real" />
+          <field name="characterArmorIntelligenceReqReduction" var-class="array" var-type="real" />
+          <field name="characterArmorStrengthReqReduction" var-class="array" var-type="real" />
+          <field name="characterGlobalReqReduction" var-class="array" var-type="real" />
+          <field name="characterHuntingDexterityReqReduction" var-class="array" var-type="real" />
+          <field name="characterHuntingIntelligenceReqReduction" var-class="array" var-type="real" />
+          <field name="characterHuntingStrengthReqReduction" var-class="array" var-type="real" />
+          <field name="characterJewelryDexterityReqReduction" var-class="array" var-type="real" />
+          <field name="characterJewelryIntelligenceReqReduction" var-class="array" var-type="real" />
+          <field name="characterJewelryStrengthReqReduction" var-class="array" var-type="real" />
+          <field name="characterLevelReqReduction" var-class="array" var-type="real" />
+          <field name="characterMeleeDexterityReqReduction" var-class="array" var-type="real" />
+          <field name="characterMeleeIntelligenceReqReduction" var-class="array" var-type="real" />
+          <field name="characterMeleeStrengthReqReduction" var-class="array" var-type="real" />
+          <field name="characterShieldDexterityReqReduction" var-class="array" var-type="real" />
+          <field name="characterShieldIntelligenceReqReduction" var-class="array" var-type="real" />
+          <field name="characterShieldStrengthReqReduction" var-class="array" var-type="real" />
+          <field name="characterStaffDexterityReqReduction" var-class="array" var-type="real" />
+          <field name="characterStaffIntelligenceReqReduction" var-class="array" var-type="real" />
+          <field name="characterStaffStrengthReqReduction" var-class="array" var-type="real" />
+          <field name="characterWeaponDexterityReqReduction" var-class="array" var-type="real" />
+          <field name="characterWeaponIntelligenceReqReduction" var-class="array" var-type="real" />
+          <field name="characterWeaponStrengthReqReduction" var-class="array" var-type="real" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

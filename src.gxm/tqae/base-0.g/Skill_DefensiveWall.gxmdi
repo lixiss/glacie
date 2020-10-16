@@ -1,0 +1,33 @@
+﻿<partial>
+  <record-type name="Skill_DefensiveWall" path="Skill_DefensiveWall.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Activated" />
+      <inherit record="TemplateBase.Skill_Spawning" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_DefensiveWall" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Sound">
+        <field name="skillDeactivatedSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Spawn Config">
+        <field name="spawnObjectsAngleToCaster" var-class="variable" var-type="real">
+          <description>90 for perpendicular</description>
+        </field>
+        <field name="spawnObjectsDistanceIncrement" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="spawnObjectsDistanceInnerCircle" var-class="variable" var-type="real" var-default-value="3" />
+        <field name="spawnObjectsNumberOfRings" var-class="array" var-type="int" var-default-value="1" />
+        <field name="spawnObjectsRandomRotation" var-class="variable" var-type="bool" var-default-value="1">
+          <description>Specifies if the spawned objects should have random y-axis rotation</description>
+        </field>
+        <field name="spawnObjectsSpacingAngle" var-class="variable" var-type="real" var-default-value="30" />
+        <field name="spawnObjectsTimeToLive" var-class="array" var-type="real" var-default-value="0" />
+        <field name="spawnObjectsUseAngleToCaster" var-class="variable" var-type="bool" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

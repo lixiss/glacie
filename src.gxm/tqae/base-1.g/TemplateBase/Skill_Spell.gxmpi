@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Spell">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="skillSpellAura" />
+      <field name="skillSpellAuraDuration" />
+    </var-group>
+  </record-type>
+</partial>

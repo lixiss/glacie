@@ -1,0 +1,31 @@
+﻿<partial>
+  <record-type name="SkillBuff_Contageous" path="SkillBuff_Contageous.tpl">
+    <inherits>
+      <inherit record="TemplateBase.SkillBuff" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SkillBuff_Contageous" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Contageous Config">
+        <field name="contagionInterval" var-class="array" var-type="real">
+          <description>Second</description>
+        </field>
+        <field name="contagionLimit" var-class="array" var-type="int">
+          <description>max targets per interval</description>
+        </field>
+        <field name="contagionMaxSpread" var-class="array" var-type="int">
+          <description>total infection transfer</description>
+        </field>
+        <field name="contagionRadius" var-class="array" var-type="real">
+          <description>radius for targeting</description>
+        </field>
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="debufSkill" var-class="static" var-type="bool" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

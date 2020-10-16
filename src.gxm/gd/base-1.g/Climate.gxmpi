@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="Climate">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Climates">
+      <field name="climate1chance" />
+      <field name="climate1dbr" />
+      <field name="climate1time" />
+      <field name="climate2chance" />
+      <field name="climate2dbr" />
+      <field name="climate2time" />
+      <field name="climate3chance" />
+      <field name="climate3dbr" />
+      <field name="climate3time" />
+      <field name="climate4chance" />
+      <field name="climate4dbr" />
+      <field name="climate4time" />
+      <field name="climate5chance" />
+      <field name="climate5dbr" />
+      <field name="climate5time" />
+    </var-group>
+  </record-type>
+</partial>

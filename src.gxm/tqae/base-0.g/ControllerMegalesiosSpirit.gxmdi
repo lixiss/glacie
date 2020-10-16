@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ControllerMegalesiosSpirit" path="ControllerMegalesiosSpirit.tpl">
+    <inherits>
+      <inherit record="ControllerSpirit" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ControllerMegalesiosSpirit" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

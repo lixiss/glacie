@@ -1,0 +1,97 @@
+﻿<partial>
+  <record-type name="EndlessModeController" path="EndlessModeController.tpl">
+    <inherits>
+      <inherit record="BoundingVolumeBox" />
+    </inherits>
+    <expression-variables>
+      <expression-variable name="curDifficultyLevel">
+        <description>Current difficulty level (minus cycles)</description>
+      </expression-variable>
+      <expression-variable name="minDiffLevelEpic">
+        <description>Min difficulty level for Epic game diff</description>
+      </expression-variable>
+      <expression-variable name="minDiffLevelLegendary">
+        <description>Min difficulty level for Legendary game diff</description>
+      </expression-variable>
+      <expression-variable name="minDiffLevelNormal">
+        <description>Min difficulty level for Normal game diff</description>
+      </expression-variable>
+      <expression-variable name="numberOfPlayers">
+        <description>Number of players in the game</description>
+      </expression-variable>
+      <expression-variable name="scalingLevelDiff">
+        <description>Monster scaling level diff</description>
+      </expression-variable>
+      <expression-variable name="tartarosCycle">
+        <description>Endless mode cycle count</description>
+      </expression-variable>
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="EndlessModeController" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Endless mode variables">
+        <field name="ArenaTimer" var-class="variable" var-type="int">
+          <description>The number of seconds an arena need to be cleared in</description>
+        </field>
+        <field name="Arenas" var-class="array" var-type="string" var-default-value="0">
+          <description>Pool of random arenas</description>
+        </field>
+        <field name="BossLevel" var-class="variable" var-type="string" var-default-value="0">
+          <description>Boss level</description>
+        </field>
+        <field name="BossPortals" var-class="variable" var-type="string" var-default-value="0">
+          <description>Entry:Exit Portal ids in boss region</description>
+        </field>
+        <field name="ChampionChanceIncrement" var-class="array" var-type="int" var-default-value="1">
+          <description>The percent increment of a champion spawning for each cycle</description>
+        </field>
+        <field name="CycleDifficultyIncrement" var-class="array" var-type="int" var-default-value="1">
+          <description>number of levels the difficulty increases with each cycle</description>
+        </field>
+        <field name="EnemyBuffs" var-class="array" var-type="file_dbr" var-default-value="0">
+          <description>List of buffs for the enemies</description>
+        </field>
+        <field name="HubLevel" var-class="variable" var-type="string" var-default-value="0">
+          <description>Start level</description>
+        </field>
+        <field name="HubPortals" var-class="variable" var-type="string" var-default-value="0">
+          <description>Entry:Exit Portal ids in hub region</description>
+        </field>
+        <field name="LoopLength" var-class="variable" var-type="int" var-default-value="0">
+          <description>Number of arenas before boss</description>
+        </field>
+        <field name="MinDifficultyLevel" var-class="array" var-type="int" var-default-value="0">
+          <description>Min level for each game diff</description>
+        </field>
+        <field name="PlayerBuffs" var-class="array" var-type="file_dbr" var-default-value="0">
+          <description>List of buffs for the player</description>
+        </field>
+        <field name="PortalList" var-class="array" var-type="string" var-default-value="0">
+          <description>List of portal ids for arenas (entry:exit)</description>
+        </field>
+        <field name="monsterGeneralScaleEquation" var-class="variable" var-type="equation">
+          <description>Scaling factor for general monster attributes</description>
+        </field>
+        <field name="monsterHealthScaleEquation" var-class="variable" var-type="equation">
+          <description>Scaling factor for health and mana monster attributes</description>
+        </field>
+        <field name="uniqueLootChanceEquation" var-class="array" var-type="equation">
+          <description>chance that boss drops unique item(s) (0-1)</description>
+        </field>
+      </var-group>
+      <var-group name="Sound Variables">
+        <field name="ArenaClearFanfare" var-class="variable" var-type="file_dbr" />
+        <field name="BattleMusic" var-class="variable" var-type="file_dbr" />
+        <field name="BattleStartFanfare" var-class="variable" var-type="file_dbr" />
+        <field name="GameOverFanfare" var-class="variable" var-type="file_dbr" />
+        <field name="TartarusBabble" var-class="variable" var-type="file_dbr" />
+        <field name="TartarusVictoryFanfare" var-class="variable" var-type="file_dbr" />
+        <field name="WaitingPling" var-class="variable" var-type="file_dbr" />
+        <field name="WaitingPlingInterval" var-class="variable" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

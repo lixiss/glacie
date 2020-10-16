@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="InGameUI.CodexJournal">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="CodexJournal">
+      <field name="background" />
+      <field name="noteText" />
+      <field name="noteTitle" />
+    </var-group>
+  </record-type>
+</partial>

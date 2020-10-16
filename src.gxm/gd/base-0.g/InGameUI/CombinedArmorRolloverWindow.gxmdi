@@ -1,0 +1,52 @@
+﻿<partial>
+  <record-type name="InGameUI.CombinedArmorRolloverWindow" path="InGameUI/CombinedArmorRolloverWindow.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="CombinedArmorRolloverWindow" />
+      </var-group>
+      <var-group name="Config">
+        <field name="absorptionTitle" var-class="variable" var-type="file_dbr" />
+        <field name="bonusColorBlue" var-class="variable" var-type="real" />
+        <field name="bonusColorGreen" var-class="variable" var-type="real" />
+        <field name="bonusColorRed" var-class="variable" var-type="real" />
+        <field name="chestAbsorptionNumber" var-class="variable" var-type="file_dbr" />
+        <field name="chestHitNumber" var-class="variable" var-type="file_dbr" />
+        <field name="chestNumber" var-class="variable" var-type="file_dbr" />
+        <field name="chestText" var-class="variable" var-type="file_dbr" />
+        <field name="edgeClearance" var-class="variable" var-type="int" />
+        <field name="feetAbsorptionNumber" var-class="variable" var-type="file_dbr" />
+        <field name="feetHitNumber" var-class="variable" var-type="file_dbr" />
+        <field name="feetNumber" var-class="variable" var-type="file_dbr" />
+        <field name="feetText" var-class="variable" var-type="file_dbr" />
+        <field name="handsAbsorptionNumber" var-class="variable" var-type="file_dbr" />
+        <field name="handsHitNumber" var-class="variable" var-type="file_dbr" />
+        <field name="handsNumber" var-class="variable" var-type="file_dbr" />
+        <field name="handsText" var-class="variable" var-type="file_dbr" />
+        <field name="headAbsorptionNumber" var-class="variable" var-type="file_dbr" />
+        <field name="headHitNumber" var-class="variable" var-type="file_dbr" />
+        <field name="headNumber" var-class="variable" var-type="file_dbr" />
+        <field name="headText" var-class="variable" var-type="file_dbr" />
+        <field name="hitTitleText" var-class="variable" var-type="file_dbr" />
+        <field name="infoText" var-class="variable" var-type="file_dbr" />
+        <field name="legsAbsorptionNumber" var-class="variable" var-type="file_dbr" />
+        <field name="legsHitNumber" var-class="variable" var-type="file_dbr" />
+        <field name="legsNumber" var-class="variable" var-type="file_dbr" />
+        <field name="legsText" var-class="variable" var-type="file_dbr" />
+        <field name="minSpacingBetweenColumns" var-class="variable" var-type="int" />
+        <field name="rolloverStyle" var-class="variable" var-type="file_dbr" />
+        <field name="shouldersAbsorptionNumber" var-class="variable" var-type="file_dbr" />
+        <field name="shouldersHitNumber" var-class="variable" var-type="file_dbr" />
+        <field name="shouldersNumber" var-class="variable" var-type="file_dbr" />
+        <field name="shouldersText" var-class="variable" var-type="file_dbr" />
+        <field name="titleText" var-class="variable" var-type="file_dbr" />
+        <field name="unprotectedColorBlue" var-class="variable" var-type="real" />
+        <field name="unprotectedColorGreen" var-class="variable" var-type="real" />
+        <field name="unprotectedColorRed" var-class="variable" var-type="real" />
+        <field name="unprotectedTag" var-class="variable" var-type="string" />
+        <field name="verticalTextLineSpacing" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

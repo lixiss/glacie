@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="PatrolPoint">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Actor Variables">
+      <field name="actorHeight" />
+      <field name="actorRadius" />
+      <field name="baseTexture" />
+      <field name="bumpTexture" />
+      <field name="description" />
+      <field name="mesh" />
+      <field name="miniMapEntity" />
+      <field name="scale" />
+    </var-group>
+  </record-type>
+</partial>

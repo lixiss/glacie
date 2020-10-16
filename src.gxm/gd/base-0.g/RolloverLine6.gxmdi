@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="RolloverLine6" path="RolloverLine6.tpl">
+    <inherits>
+      <inherit record="RolloverLine5" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="RolloverLine6" />
+      </var-group>
+      <var-group name="Config">
+        <field name="Line6FormatTag" var-class="variable" var-type="string" />
+        <field name="Line6FormatTag2" var-class="variable" var-type="string" />
+        <field name="Line6Style" var-class="variable" var-type="file_dbr" />
+        <field name="Line6Tag" var-class="array" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="Skill_SpawnMegalesiosSpirit">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Bursts">
+      <field name="burstName" />
+      <field name="burstVelocity" />
+    </var-group>
+  </record-type>
+</partial>

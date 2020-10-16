@@ -1,0 +1,66 @@
+﻿<partial>
+  <record-type name="Skill_Modifier">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Bonus">
+      <field name="skillLifeBonus" />
+      <field name="skillLifePercent" />
+      <field name="skillManaBonus" />
+      <field name="skillManaPercent" />
+    </var-group>
+    <var-group name="Modifiers">
+      <field name="damageAbsorptionPercent" />
+      <field name="skillActiveDuration" />
+      <field name="skillActiveLifeCost" />
+      <field name="skillActiveManaCost" />
+      <field name="skillCooldownTime" />
+      <field name="skillManaCost" />
+      <field name="skillTargetAngle" />
+      <field name="skillTargetNumber" />
+      <field name="skillTargetRadius" />
+      <field name="waveDistance" />
+      <field name="waveEndWidth" />
+      <field name="waveStartWidth" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="explosionRadius" />
+      <field name="projectileAngle" />
+      <field name="projectileFragmentsOverride" />
+      <field name="projectileLaunchNumber" />
+      <field name="projectileLaunchRotation" />
+      <field name="projectileOverride" />
+      <field name="projectilePiercing" />
+    </var-group>
+    <var-group name="Qualifying Weapons">
+      <field name="overwriteBaseSkill" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="charFxPakOtherNames" />
+      <field name="charFxPakSelfNames" />
+      <field name="fxChanges" />
+      <field name="lightningOverride" />
+      <field name="lineEffectOverride" />
+      <field name="particleEffect1Override" />
+      <field name="particleEffect2Override" />
+      <field name="particleEffect3Override" />
+      <field name="targetFxPakOverride" />
+      <field name="warmUpEffectAttachPoint" />
+      <field name="warmUpEffectName" />
+      <field name="waveEffectOverride" />
+      <field name="waveFxPakOverride" />
+    </var-group>
+    <var-group name="Spark Config">
+      <field name="sparkChance" />
+      <field name="sparkGap" />
+      <field name="sparkMaxNumber" />
+    </var-group>
+    <var-group name="Spawn Config">
+      <field name="petBurstSpawn" />
+      <field name="petLimit" />
+      <field name="spawnObjectsTimeToLive" />
+    </var-group>
+  </record-type>
+</partial>

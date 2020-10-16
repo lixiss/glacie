@@ -1,0 +1,75 @@
+﻿<partial>
+  <record-type name="ChatterPack">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="detectMonsters" />
+      <field name="detectOthers" />
+      <field name="detectPlayers" />
+      <field name="detectionRadius" />
+      <field name="maxChatterPeriod" />
+      <field name="minChatterPeriod" />
+      <field name="regreetOnFactionChange" />
+      <field name="simpleExclamations" />
+      <field name="simpleGreetings" />
+      <field name="updatePeriod" />
+    </var-group>
+    <var-group name="Faction Speech">
+      <field name="exChances1" />
+      <field name="exChances2" />
+      <field name="exChances3" />
+      <field name="exChances4" />
+      <field name="exChances5" />
+      <field name="exChances6" />
+      <field name="exChances7" />
+      <field name="exChances8" />
+      <field name="exChances9" />
+      <field name="exChances10" />
+      <field name="exChances11" />
+      <field name="exclamations1" />
+      <field name="exclamations2" />
+      <field name="exclamations3" />
+      <field name="exclamations4" />
+      <field name="exclamations5" />
+      <field name="exclamations6" />
+      <field name="exclamations7" />
+      <field name="exclamations8" />
+      <field name="exclamations9" />
+      <field name="exclamations10" />
+      <field name="exclamations11" />
+      <field name="grChances1" />
+      <field name="grChances2" />
+      <field name="grChances3" />
+      <field name="grChances4" />
+      <field name="grChances5" />
+      <field name="grChances6" />
+      <field name="grChances7" />
+      <field name="grChances8" />
+      <field name="grChances9" />
+      <field name="grChances10" />
+      <field name="grChances11" />
+      <field name="greetings1" />
+      <field name="greetings2" />
+      <field name="greetings3" />
+      <field name="greetings4" />
+      <field name="greetings5" />
+      <field name="greetings6" />
+      <field name="greetings7" />
+      <field name="greetings8" />
+      <field name="greetings9" />
+      <field name="greetings10" />
+      <field name="greetings11" />
+    </var-group>
+    <var-group name="Speech">
+      <field name="defeatExclamationChances" />
+      <field name="defeatExclamations" />
+      <field name="randomExclamationChances" />
+      <field name="randomExclamations" />
+      <field name="victoryExclamationChances" />
+      <field name="victoryExclamations" />
+    </var-group>
+  </record-type>
+</partial>

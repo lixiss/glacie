@@ -1,0 +1,42 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Buff">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Qualifying Damage">
+      <field name="aetherDamageQualifier" />
+      <field name="bleedingDamageQualifier" />
+      <field name="chaosDamageQualifier" />
+      <field name="coldDamageQualifier" />
+      <field name="elementalDamageQualifier" />
+      <field name="fireDamageQualifier" />
+      <field name="lifeDamageQualifier" />
+      <field name="lightningDamageQualifier" />
+      <field name="physicalDamageQualifier" />
+      <field name="pierceDamageQualifier" />
+      <field name="poisonDamageQualifier" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="allSkillEnhancement" />
+      <field name="damageAbsorption" />
+      <field name="damageAbsorptionPercent" />
+      <field name="notDispelable" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="charBuffFxType" />
+      <field name="charFxPakSelfNames" />
+      <field name="endBuffSelfNames" />
+      <field name="skillActivatedAuraName" />
+      <field name="skillWeaponTintBlue" />
+      <field name="skillWeaponTintGreen" />
+      <field name="skillWeaponTintRed" />
+      <field name="weaponEnchantment" />
+    </var-group>
+    <var-group name="Skill Sound">
+      <field name="skillActivatedSound" />
+      <field name="skillDeactivatedSound" />
+    </var-group>
+  </record-type>
+</partial>

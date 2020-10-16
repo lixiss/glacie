@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="Armor_Vestment">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Vestment">
+      <field name="vestmentFemaleBaseTexture" />
+      <field name="vestmentFemaleBumpTexture" />
+      <field name="vestmentFemaleMesh" />
+      <field name="vestmentMaleBaseTexture" />
+      <field name="vestmentMaleBumpTexture" />
+      <field name="vestmentMaleMesh" />
+      <field name="vestmentNativeBaseTexture" />
+      <field name="vestmentNativeBumpTexture" />
+      <field name="vestmentNativeMesh" />
+    </var-group>
+  </record-type>
+</partial>

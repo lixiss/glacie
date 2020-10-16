@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="TemplateBase.ItemSkillModifiers">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Modifiers">
+      <field name="modifiedSkillName1" />
+      <field name="modifiedSkillName2" />
+      <field name="modifiedSkillName3" />
+      <field name="modifierSkillName1" />
+      <field name="modifierSkillName2" />
+      <field name="modifierSkillName3" />
+    </var-group>
+  </record-type>
+</partial>

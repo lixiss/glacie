@@ -1,0 +1,53 @@
+﻿<partial>
+  <record-type name="InGameUI.UIActorDescription" path="InGameUI/UIActorDescription.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="UIActorDescription" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="UIActorDescription">
+        <field name="healthBar" var-class="variable" var-type="file_dbr" />
+        <field name="healthBarBoss" var-class="variable" var-type="file_dbr" />
+        <field name="healthBarTier1Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="healthBarTier2Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="healthBarTier3Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="healthBarTier4Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="healthBarTier5Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="levelDiffTier1.B" var-class="variable" var-type="real">
+          <description>Higher than Player level</description>
+        </field>
+        <field name="levelDiffTier1.G" var-class="variable" var-type="real">
+          <description>Higher than Player level</description>
+        </field>
+        <field name="levelDiffTier1.R" var-class="variable" var-type="real">
+          <description>Higher than Player level</description>
+        </field>
+        <field name="levelDiffTier2.B" var-class="variable" var-type="real" />
+        <field name="levelDiffTier2.G" var-class="variable" var-type="real" />
+        <field name="levelDiffTier2.R" var-class="variable" var-type="real" />
+        <field name="levelDiffTier3.B" var-class="variable" var-type="real" />
+        <field name="levelDiffTier3.G" var-class="variable" var-type="real" />
+        <field name="levelDiffTier3.R" var-class="variable" var-type="real" />
+        <field name="levelDiffTier4.B" var-class="variable" var-type="real" />
+        <field name="levelDiffTier4.G" var-class="variable" var-type="real" />
+        <field name="levelDiffTier4.R" var-class="variable" var-type="real" />
+        <field name="levelDiffTier5.B" var-class="variable" var-type="real" />
+        <field name="levelDiffTier5.G" var-class="variable" var-type="real" />
+        <field name="levelDiffTier5.R" var-class="variable" var-type="real" />
+        <field name="levelDiffTier6.B" var-class="variable" var-type="real">
+          <description>Below Player level</description>
+        </field>
+        <field name="levelDiffTier6.G" var-class="variable" var-type="real">
+          <description>Below Player level</description>
+        </field>
+        <field name="levelDiffTier6.R" var-class="variable" var-type="real">
+          <description>Below Player level</description>
+        </field>
+        <field name="levelTextBox" var-class="variable" var-type="file_dbr" />
+        <field name="nameTextBox" var-class="variable" var-type="file_dbr" />
+        <field name="raceTextBox" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

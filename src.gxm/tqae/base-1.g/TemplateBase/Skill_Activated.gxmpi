@@ -1,0 +1,33 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Activated">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="distanceProfile" />
+      <field name="propName" />
+      <field name="propName1" />
+      <field name="propName2" />
+      <field name="skillCooldownTime" />
+      <field name="skillManaCost" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="cameraShakeAmplitude" />
+      <field name="cameraShakeDurationSecs" />
+      <field name="particleEffectAttachPoint1" />
+      <field name="particleEffectAttachPoint2" />
+      <field name="particleEffectAttachPoint3" />
+      <field name="particleEffectName1" />
+      <field name="particleEffectName2" />
+      <field name="particleEffectName3" />
+    </var-group>
+    <var-group name="Skill Sound">
+      <field name="skillHitSound" />
+      <field name="skillSound1" />
+      <field name="skillSound2" />
+      <field name="skillSwipeSound" />
+    </var-group>
+  </record-type>
+</partial>

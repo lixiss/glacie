@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="Skill_AttackProjectileOrbiting" path="Skill_AttackProjectileOrbiting.tpl">
+    <inherits>
+      <inherit record="Skill_AttackProjectile" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_AttackProjectileOrbiting" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="projectileDirection" var-class="picklist" var-type="string" var-default-value="Clockwise;Counterclockwise;Alternate;Random" />
+        <field name="projectilePeriod" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>Delay between projectile launches (seconds).</description>
+        </field>
+        <field name="projectileStart" var-class="picklist" var-type="string" var-default-value="Front;Randomize" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

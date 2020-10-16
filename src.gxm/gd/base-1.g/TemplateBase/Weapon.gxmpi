@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="TemplateBase.Weapon">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Weapon Parameters">
+      <field name="attackEffect" />
+      <field name="hitSound" />
+      <field name="swipeSound" />
+      <field name="weaponTrail" />
+    </var-group>
+  </record-type>
+</partial>

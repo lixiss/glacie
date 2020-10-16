@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="Menu.MenuGDX2Logo">
+    <var-group name="GDX2Logo">
+      <field name="baseTexture" />
+      <field name="bumpTexture" />
+      <field name="height" />
+      <field name="particles" />
+      <field name="shader" />
+      <field name="style" />
+      <field name="width" />
+      <field name="x" />
+      <field name="xAlign" />
+      <field name="xAnchor" />
+      <field name="y" />
+      <field name="yAlign" />
+      <field name="yAnchor" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="TemplateBase.ItemBase" path="TemplateBase/ItemBase.tpl">
+    <inherits>
+      <inherit record="Actor" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Item Parameters">
+        <field name="cannotPickUp" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Disallow pickup</description>
+        </field>
+        <field name="cannotPickUpMultiple" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Disallow multiple pickups</description>
+        </field>
+        <field name="dropMeshDontOverrideTextures" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Wether or not to remove the old textures if using this mesh.</description>
+        </field>
+        <field name="dropMeshOverride" var-class="variable" var-type="file_msh">
+          <description>drop mesh</description>
+        </field>
+        <field name="dropSound" var-class="variable" var-type="file_dbr">
+          <description>inventory drop</description>
+        </field>
+        <field name="dropSound3D" var-class="variable" var-type="file_dbr">
+          <description>world drop</description>
+        </field>
+        <field name="dropSoundWater" var-class="variable" var-type="file_dbr" />
+        <field name="itemClassification" var-class="picklist" var-type="string" var-default-value="Common;Magical;Rare;Epic;Legendary;Quest" />
+        <field name="itemCost" var-class="array" var-type="int" />
+        <field name="itemCostScalePercent" var-class="variable" var-type="real" />
+        <field name="itemLevel" var-class="variable" var-type="int" />
+        <field name="itemText" var-class="variable" var-type="string">
+          <description>^n=Carriage Return, ^g=green text, ^w=white text, ^b=blue text, ^r=red text</description>
+        </field>
+      </var-group>
+      <var-group name="Item Requirements">
+        <field name="dexterityRequirement" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="intelligenceRequirement" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="levelRequirement" var-class="variable" var-type="int" />
+        <field name="strengthRequirement" var-class="variable" var-type="int" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

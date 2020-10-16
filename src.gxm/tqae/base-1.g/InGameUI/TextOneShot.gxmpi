@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="InGameUI.TextOneShot">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Options">
+      <field name="CenterX" />
+      <field name="CenterY" />
+      <field name="Style" />
+    </var-group>
+  </record-type>
+</partial>

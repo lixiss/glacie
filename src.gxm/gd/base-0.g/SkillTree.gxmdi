@@ -1,0 +1,87 @@
+﻿<partial>
+  <record-type name="SkillTree" path="SkillTree.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SkillTree" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill List">
+        <field name="skillLevel1" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel2" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel3" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel4" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel5" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel6" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel7" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel8" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel9" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel10" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel11" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel12" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel13" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel14" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel15" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel16" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel17" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel18" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel19" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel20" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel21" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel22" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel23" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel24" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel25" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel26" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel27" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel28" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel29" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel30" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel31" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel32" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel33" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel34" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel35" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillLevel36" var-class="array" var-type="equation" var-default-value="0" />
+        <field name="skillName1" var-class="variable" var-type="file_dbr">
+          <description>Mastery</description>
+        </field>
+        <field name="skillName2" var-class="variable" var-type="file_dbr" />
+        <field name="skillName3" var-class="variable" var-type="file_dbr" />
+        <field name="skillName4" var-class="variable" var-type="file_dbr" />
+        <field name="skillName5" var-class="variable" var-type="file_dbr" />
+        <field name="skillName6" var-class="variable" var-type="file_dbr" />
+        <field name="skillName7" var-class="variable" var-type="file_dbr" />
+        <field name="skillName8" var-class="variable" var-type="file_dbr" />
+        <field name="skillName9" var-class="variable" var-type="file_dbr" />
+        <field name="skillName10" var-class="variable" var-type="file_dbr" />
+        <field name="skillName11" var-class="variable" var-type="file_dbr" />
+        <field name="skillName12" var-class="variable" var-type="file_dbr" />
+        <field name="skillName13" var-class="variable" var-type="file_dbr" />
+        <field name="skillName14" var-class="variable" var-type="file_dbr" />
+        <field name="skillName15" var-class="variable" var-type="file_dbr" />
+        <field name="skillName16" var-class="variable" var-type="file_dbr" />
+        <field name="skillName17" var-class="variable" var-type="file_dbr" />
+        <field name="skillName18" var-class="variable" var-type="file_dbr" />
+        <field name="skillName19" var-class="variable" var-type="file_dbr" />
+        <field name="skillName20" var-class="variable" var-type="file_dbr" />
+        <field name="skillName21" var-class="variable" var-type="file_dbr" />
+        <field name="skillName22" var-class="variable" var-type="file_dbr" />
+        <field name="skillName23" var-class="variable" var-type="file_dbr" />
+        <field name="skillName24" var-class="variable" var-type="file_dbr" />
+        <field name="skillName25" var-class="variable" var-type="file_dbr" />
+        <field name="skillName26" var-class="variable" var-type="file_dbr" />
+        <field name="skillName27" var-class="variable" var-type="file_dbr" />
+        <field name="skillName28" var-class="variable" var-type="file_dbr" />
+        <field name="skillName29" var-class="variable" var-type="file_dbr" />
+        <field name="skillName30" var-class="variable" var-type="file_dbr" />
+        <field name="skillName31" var-class="variable" var-type="file_dbr" />
+        <field name="skillName32" var-class="variable" var-type="file_dbr" />
+        <field name="skillName33" var-class="variable" var-type="file_dbr" />
+        <field name="skillName34" var-class="variable" var-type="file_dbr" />
+        <field name="skillName35" var-class="variable" var-type="file_dbr" />
+        <field name="skillName36" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

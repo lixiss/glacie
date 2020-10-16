@@ -2,13 +2,13 @@
 
 namespace Glacie.Diagnostics
 {
-    internal sealed class FileLocation : Location
+    public sealed class FileLocation : Location
     {
         private readonly string? _path;
         private readonly int _lineNumber;
         private readonly int _linePosition;
 
-        public FileLocation(string? path, int lineNumber, int linePosition)
+        internal FileLocation(string? path, int lineNumber, int linePosition)
         {
             _path = path;
             _lineNumber = lineNumber;

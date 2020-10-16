@@ -1,0 +1,86 @@
+﻿<partial>
+  <record-type name="ControllerMonster">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Attacking">
+      <field name="LeadChance" />
+      <field name="RepositionChance" />
+      <field name="maxSwingPause" />
+      <field name="minSwingPause" />
+      <field name="randomRepositionChance" />
+    </var-group>
+    <var-group name="DistressCalls">
+      <field name="ChanceToRespondToDistressCall" />
+      <field name="DistressResponseBehavior" />
+      <field name="DistressResponseGroup" />
+    </var-group>
+    <var-group name="Dodging">
+      <field name="DodgeChance" />
+      <field name="DodgeDelay" />
+      <field name="DodgeDistance" />
+      <field name="MinDodgeDistance" />
+    </var-group>
+    <var-group name="Emote">
+      <field name="randomEmoteChance" />
+      <field name="randomEmoteMaxTime" />
+      <field name="randomEmoteMinTime" />
+    </var-group>
+    <var-group name="Fleeing">
+      <field name="ClearAngerWhenFleeing" />
+      <field name="FleeBehavior" />
+      <field name="FleeChance" />
+      <field name="FleeDelay" />
+      <field name="FleeTarget" />
+      <field name="FleeTime" />
+      <field name="ResetOriginAfterFleeing" />
+      <field name="fleeDistance" />
+      <field name="maxFleeCount" />
+    </var-group>
+    <var-group name="Patrolling">
+      <field name="ChanceToIdleOnPatrol" />
+      <field name="MaxPatrolIdleTime" />
+      <field name="MinPatrolIdleTime" />
+    </var-group>
+    <var-group name="PetBehaviour">
+      <field name="ignorePetsChance" />
+      <field name="ignorePetsInterval" />
+      <field name="petAngerTransference" />
+      <field name="petTargetGreatestHealth" />
+      <field name="petTargetLeastAttacked" />
+      <field name="petTargetLevelRange" />
+    </var-group>
+    <var-group name="Pursuit">
+      <field name="EmoteBeforePursuingChance" />
+      <field name="MaxPursuitDistance" />
+      <field name="PursuitTime" />
+    </var-group>
+    <var-group name="RandomAnger">
+      <field name="RandomAngerChance" />
+      <field name="RandomAngerEvaluationTime" />
+    </var-group>
+    <var-group name="Roaming">
+      <field name="MaxTimeBeforeRoam" />
+      <field name="MinRoamDistance" />
+      <field name="MinTimeBeforeRoam" />
+      <field name="MinWanderDistance" />
+      <field name="RoamBehavior" />
+      <field name="RoamDistance" />
+      <field name="TeleportToLeaderDistance" />
+      <field name="WanderDistance" />
+    </var-group>
+    <var-group name="SkillUsage">
+      <field name="BuffAllyBehavior" />
+      <field name="BuffAllyTargeting" />
+      <field name="BuffSelfBehavior" />
+      <field name="DebuffEnemyBehavior" />
+      <field name="healAllyHealthPercentage" />
+      <field name="healLeaderHealthPercentage" />
+    </var-group>
+    <var-group name="Sleep">
+      <field name="ignoreSleepingEnemies" />
+    </var-group>
+  </record-type>
+</partial>

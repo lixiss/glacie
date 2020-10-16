@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Validation</AssemblyName>
+    <RootNamespace>Glacie.Validation</RootNamespace>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="DiagnosticFactory.cs" />
+    <Compile Include="IArzRecordProvider.cs" />
+    <Compile Include="ArzRecordProvider.cs" />
+    <Compile Include="ValidationConfiguration.cs" />
+    <Compile Include="ValidationContext.cs" />
+    <Compile Include="ValidationResult.cs" />
+    <Compile Include="ValidationRule.cs" />
+    <Compile Include="WellKnownFieldNames.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Context\Glacie.Context.csproj" />
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Metadata\Glacie.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Data.Resources\Glacie.Data.Resources.csproj" />
+    <ProjectReference Include="..\Glacie.Resources.GX1\Glacie.Resources.GX1.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+  </ItemGroup>
+
+</Project>

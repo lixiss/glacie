@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="WaterType" path="WaterType.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="WaterType" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Depth">
+        <field name="maxDepth" var-class="variable" var-type="real" var-default-value="5" />
+        <field name="maxDepthOpacity" var-class="variable" var-type="real" var-default-value="0.8" />
+        <field name="minDepth" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="minDepthOpacity" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+      <var-group name="Surface Parameters">
+        <field name="Direction" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="ScaleX" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="ScaleY" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="Smoothness" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="Speed" var-class="variable" var-type="real" var-default-value="1" />
+      </var-group>
+      <var-group name="Textures">
+        <field name="NoiseTexture" var-class="variable" var-type="string" var-default-value="Records/WaterType/NoiseTextures/defaultWaves.dbr" />
+        <field name="ShaderName" var-class="variable" var-type="string" var-default-value="Shaders/Water/WaterBasic.ssh" />
+        <field name="Skymap" var-class="variable" var-type="string" var-default-value="System/Normalizer.tex" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

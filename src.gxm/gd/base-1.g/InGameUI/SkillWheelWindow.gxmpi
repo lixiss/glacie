@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillWheelWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="configButton01" />
+      <field name="configButton02" />
+      <field name="hotSlot01" />
+      <field name="hotSlot02" />
+      <field name="hotSlot03" />
+      <field name="hotSlot04" />
+      <field name="hotSlot05" />
+      <field name="hotSlot06" />
+      <field name="hotSlot07" />
+      <field name="hotSlot08" />
+      <field name="hotSlot09" />
+      <field name="hotSlot10" />
+      <field name="skillSelect" />
+      <field name="skillSelectSound" />
+      <field name="slotHighlight01" />
+      <field name="slotHighlight02" />
+      <field name="slotHighlight03" />
+      <field name="slotHighlight04" />
+      <field name="slotHighlight05" />
+      <field name="slotHighlight06" />
+      <field name="slotHighlight07" />
+      <field name="slotHighlight08" />
+      <field name="slotHighlight09" />
+      <field name="slotHighlight10" />
+      <field name="wheelBackground" />
+    </var-group>
+  </record-type>
+</partial>

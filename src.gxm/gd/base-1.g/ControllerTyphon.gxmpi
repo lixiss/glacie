@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="ControllerTyphon">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Treasure">
+      <field name="TreasureProxyName" />
+    </var-group>
+  </record-type>
+</partial>

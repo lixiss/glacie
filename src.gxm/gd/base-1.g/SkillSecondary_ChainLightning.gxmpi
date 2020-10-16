@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="SkillSecondary_ChainLightning">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="targetPrimary" />
+    </var-group>
+  </record-type>
+</partial>

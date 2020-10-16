@@ -30,7 +30,7 @@ namespace Glacie
             return new InvalidOperationException(message);
         }
 
-        public static InvalidOperationException InvalidOperation(string format, params object[] args)
+        public static InvalidOperationException InvalidOperation(string format, params object?[] args)
         {
             return new InvalidOperationException(Format(format, args));
         }
@@ -43,6 +43,11 @@ namespace Glacie
         public static ArgumentException Argument(string parameterName, string message)
         {
             return new ArgumentException(message, parameterName);
+        }
+
+        public static ArgumentException Argument(string parameterName, string format, params object?[] args)
+        {
+            return new ArgumentException(Format(format, args), parameterName);
         }
 
         public static ArgumentNullException ArgumentNull(string parameterName)
@@ -58,6 +63,11 @@ namespace Glacie
         public static NotImplementedException NotImplemented(string message)
         {
             return new NotImplementedException(message);
+        }
+
+        public static NotImplementedException NotImplemented(string format, params object?[] args)
+        {
+            return new NotImplementedException(Format(format, args));
         }
 
         public static ArgumentOutOfRangeException ArgumentOutOfRange(string parameterName)
@@ -91,7 +101,7 @@ namespace Glacie
         }
 
         // TODO: (VeryLow) Add Format helper, and use more overloads / generic parameters.
-        private static string Format(string format, params object[] args)
+        private static string Format(string format, params object?[] args)
         {
             return string.Format(CultureInfo.InvariantCulture, format, args);
         }

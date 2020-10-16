@@ -1,0 +1,442 @@
+﻿<partial>
+  <record-type name="GameEngine" path="GameEngine.tpl">
+    <inherits>
+      <inherit record="TemplateBase.GameText" />
+    </inherits>
+    <expression-variables>
+      <expression-variable name="averagePlayerLevel">
+        <description>Exp and DP</description>
+      </expression-variable>
+      <expression-variable name="currentPlayerLevel">
+        <description>Death Penalty</description>
+      </expression-variable>
+      <expression-variable name="gameDifficultyDV">
+        <description>Exp and DP</description>
+      </expression-variable>
+      <expression-variable name="maxPlayerLevel">
+        <description>Exp and DP</description>
+      </expression-variable>
+      <expression-variable name="minPlayerLevel">
+        <description>Exp and DP</description>
+      </expression-variable>
+      <expression-variable name="monsterExperience">
+        <description>Exp and DP</description>
+      </expression-variable>
+      <expression-variable name="monsterLevel">
+        <description>Exp and DP</description>
+      </expression-variable>
+      <expression-variable name="numberOfPlayers">
+        <description>Exp and DP</description>
+      </expression-variable>
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Absolute Damage Effects">
+        <field name="absColdFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absColdFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="absDisruptionFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absDisruptionFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="absFireFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absFireFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="absLifeFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absLifeFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="absLightningFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absLightningFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="absManaBurnFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absManaBurnFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="absPercentCurrentLifeFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absPercentCurrentLifeFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="absPoisonFx" var-class="array" var-type="file_dbr">
+          <description>EffectEntity indexed by char size</description>
+        </field>
+        <field name="absPoisonFxSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+      </var-group>
+      <var-group name="Common Monster Effects">
+        <field name="confusionDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak</description>
+        </field>
+      </var-group>
+      <var-group name="Defaults">
+        <field name="CriticalHitOnMonsterStyle" var-class="variable" var-type="file_dbr" />
+        <field name="CriticalHitOnPlayerStyle" var-class="variable" var-type="file_dbr" />
+        <field name="DamageElementalStyle" var-class="variable" var-type="file_dbr" />
+        <field name="DamageNormalStyle" var-class="variable" var-type="file_dbr" />
+        <field name="DamageOnPlayerStyle" var-class="variable" var-type="file_dbr" />
+        <field name="DamageOverTimeStyle" var-class="variable" var-type="file_dbr" />
+        <field name="HealingOnPlayerStyle" var-class="variable" var-type="file_dbr" />
+        <field name="HealingStyle" var-class="variable" var-type="file_dbr" />
+        <field name="PlayerImpairmentStyle" var-class="variable" var-type="file_dbr" />
+        <field name="absoluteRunSpeedCapMax" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="absoluteRunSpeedCapMin" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="defaultCombatManagerRecord" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Duration Damage Effects">
+        <field name="attackSpeedDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="bleedingDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="coldDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="defensiveAbilityDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="defensiveReductionDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="fireDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="fumbleDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="lifeDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="lifeLeachDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="lightningDamageFxPak" var-class="array" var-type="file_dbr" />
+        <field name="manaLeachDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="offensiveAbilityDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="offensiveReductionDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="poisonDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="runSpeedDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+        <field name="sleepDamageFxPak" var-class="array" var-type="file_dbr" />
+        <field name="spellCastSpeedDamageFxPak" var-class="array" var-type="file_dbr">
+          <description>CharFxPak indexed by char size</description>
+        </field>
+      </var-group>
+      <var-group name="Enchanter Info">
+        <field name="enchanterRecoveryFactor" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="GameCamera">
+        <field name="CameraDistanceDefault" var-class="variable" var-type="real" var-default-value="34.0" />
+        <field name="CameraDistanceMax" var-class="variable" var-type="real" var-default-value="50.0" />
+        <field name="CameraDistanceMin" var-class="variable" var-type="real" var-default-value="5.0" />
+        <field name="CameraPitchDefault" var-class="variable" var-type="real" var-default-value="41.0" />
+        <field name="CameraPitchMax" var-class="variable" var-type="real" var-default-value="51.0" />
+        <field name="CameraPitchMin" var-class="variable" var-type="real" var-default-value="25.0" />
+      </var-group>
+      <var-group name="Item Info">
+        <var-group name="Item Animations">
+          <field name="itemForearmAnimationName" var-class="variable" var-type="file_anm" />
+        </var-group>
+        <var-group name="Item Colors">
+          <field name="artifactColor" var-class="variable" var-type="string" />
+          <field name="artifactFormulaColor" var-class="variable" var-type="string" />
+          <field name="brokenItemColor" var-class="variable" var-type="string" />
+          <field name="commonItemColor" var-class="variable" var-type="string" />
+          <field name="epicItemColor" var-class="variable" var-type="string" />
+          <field name="legendaryItemColor" var-class="variable" var-type="string" />
+          <field name="magicalItemColor" var-class="variable" var-type="string" />
+          <field name="potionItemColor" var-class="variable" var-type="string" />
+          <field name="questItemColor" var-class="variable" var-type="string" />
+          <field name="rareItemColor" var-class="variable" var-type="string" />
+          <field name="relicItemColor" var-class="variable" var-type="string" />
+          <field name="scrollColor" var-class="variable" var-type="string" />
+        </var-group>
+        <var-group name="Item Sparkles">
+          <field name="artifactFormulaSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="artifactSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="brokenItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="epicItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="legendaryItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="magicalItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="potionItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="questItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="rareItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="relicItemSparkle" var-class="variable" var-type="file_dbr" />
+          <field name="scrollSparkle" var-class="variable" var-type="file_dbr" />
+        </var-group>
+        <field name="artifactFormulaStackLimit" var-class="variable" var-type="int" />
+        <field name="itemBackgroundOpacity" var-class="variable" var-type="real" />
+        <field name="itemBackgroundOpacityHighlighted" var-class="variable" var-type="real" />
+        <field name="itemBorderOpacity" var-class="variable" var-type="real" />
+        <field name="itemBorderOpacityHighlighted" var-class="variable" var-type="real" />
+        <field name="itemCostName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Market Info">
+        <field name="marketBulkPurchaseAmount" var-class="variable" var-type="int" var-default-value="10" />
+        <field name="marketPurchaseSound" var-class="variable" var-type="file_dbr" />
+        <field name="marketSaleSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Misc">
+        <field name="alertDistance" var-class="variable" var-type="real" var-default-value="2.0">
+          <description>min distance for alert+rally</description>
+        </field>
+        <field name="armorDefensiveAbsorption" var-class="variable" var-type="real" />
+        <field name="longRange" var-class="variable" var-type="real" var-default-value="8.0">
+          <description>movement</description>
+        </field>
+        <field name="maximumRange" var-class="variable" var-type="real" var-default-value="12.0">
+          <description>movement</description>
+        </field>
+        <field name="meleeAutoTargetDistance" var-class="variable" var-type="real" var-default-value="3.0">
+          <description>TQ was 3.0</description>
+        </field>
+        <field name="meleeRange" var-class="variable" var-type="real" var-default-value="0.4">
+          <description>movement</description>
+        </field>
+        <field name="meleeTargetDistance" var-class="variable" var-type="real" var-default-value="2.5">
+          <description>TQ was 2.5</description>
+        </field>
+        <field name="moderateRange" var-class="variable" var-type="real" var-default-value="4.0">
+          <description>movement</description>
+        </field>
+        <field name="shortRange" var-class="variable" var-type="real" var-default-value="2.0">
+          <description>movement</description>
+        </field>
+      </var-group>
+      <var-group name="Monster Info">
+        <var-group name="Pet Stuff">
+          <field name="monsterPetBannerName" var-class="variable" var-type="file_dbr">
+            <description>converted to monster team</description>
+          </field>
+          <field name="petBannerName" var-class="variable" var-type="file_dbr" />
+          <field name="playerPetBannerName" var-class="variable" var-type="file_dbr">
+            <description>converted to player team</description>
+          </field>
+        </var-group>
+        <field name="bossAttackSpeedCapMax" var-class="array" var-type="real" />
+        <field name="bossAttackSpeedCapMin" var-class="array" var-type="real" />
+        <field name="bossMonsterColor" var-class="variable" var-type="string" />
+        <field name="bossRunSpeedCapMax" var-class="array" var-type="real" />
+        <field name="bossRunSpeedCapMin" var-class="array" var-type="real" />
+        <field name="bossSpellCastSpeedCapMax" var-class="array" var-type="real" />
+        <field name="bossSpellCastSpeedCapMin" var-class="array" var-type="real" />
+        <field name="championMonsterColor" var-class="variable" var-type="string" />
+        <field name="commonMonsterColor" var-class="variable" var-type="string" />
+        <field name="heroMonsterColor" var-class="variable" var-type="string" />
+        <field name="monsterAttackSpeedCapMax" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="monsterAttackSpeedCapMin" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="monsterAttributePak" var-class="variable" var-type="file_dbr">
+          <description>Game Balance Monster Attribute Pak</description>
+        </field>
+        <field name="monsterBossAttributePak" var-class="variable" var-type="file_dbr">
+          <description>Game Balance Boss Attribute Pak</description>
+        </field>
+        <field name="monsterDefenseCap" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="monsterLevelGapFixer" var-class="array" var-type="int">
+          <description>Index by difficulty 0 to 2 - adds to monster level</description>
+        </field>
+        <field name="monsterRunSpeedCapMax" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="monsterRunSpeedCapMin" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="monsterSleepAggressionFalloffRate" var-class="array" var-type="real">
+          <description>percent decrease per second</description>
+        </field>
+        <field name="monsterSpellCastSpeedCapMax" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="monsterSpellCastSpeedCapMin" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="questMonsterColor" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Movement">
+        <field name="maxPlayerRotationSpeed" var-class="variable" var-type="real" var-default-value="10.0" />
+        <field name="maxRotationSpeed" var-class="variable" var-type="real" var-default-value="8.0" />
+        <field name="minPlayerRotationSpeed" var-class="variable" var-type="real" var-default-value="5.0" />
+        <field name="minRotationSpeed" var-class="variable" var-type="real" var-default-value="3.0" />
+        <field name="pathSlowdownLength" var-class="variable" var-type="real" var-default-value="0.5" />
+        <field name="playerPathSlowdownLength" var-class="variable" var-type="real" var-default-value="0.3" />
+      </var-group>
+      <var-group name="OneShot Info">
+        <field name="potionStackLimit" var-class="variable" var-type="int" var-default-value="8" />
+        <field name="scrollStackLimit" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Pet Info">
+        <field name="petAttributePak" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Player Info">
+        <field name="characterDefensiveBlockRecoveryReductionCap" var-class="array" var-type="real" var-default-value="90.000000" />
+        <field name="playerAttackSpeedCapMax" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="playerAttackSpeedCapMin" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="playerAttributePak" var-class="variable" var-type="file_dbr">
+          <description>Game Balance Attribute Pak</description>
+        </field>
+        <field name="playerCooldownReductionCap" var-class="array" var-type="real" var-default-value="80.000000" />
+        <field name="playerDefenseCap" var-class="array" var-type="real" var-default-value="80.000000" />
+        <field name="playerDodgePercentCap" var-class="array" var-type="real" var-default-value="80.000000" />
+        <field name="playerDodgeProjectilePercentCap" var-class="array" var-type="real" var-default-value="80.000000" />
+        <field name="playerManaCostReductionCap" var-class="array" var-type="real" var-default-value="90.000000" />
+        <field name="playerRacialBonusPercentDefenseCap" var-class="array" var-type="real" var-default-value="80.000000" />
+        <field name="playerRunSpeedCapMax" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="playerRunSpeedCapMin" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="playerSpellCastSpeedCapMax" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+        <field name="playerSpellCastSpeedCapMin" var-class="array" var-type="real">
+          <description>Index by difficulty 0 to 2</description>
+        </field>
+      </var-group>
+      <var-group name="Proxy Info">
+        <field name="championDifficultyModifier" var-class="array" var-type="real">
+          <description>Percent (0 or 100) no change</description>
+        </field>
+        <field name="championMax" var-class="array" var-type="real">
+          <description>Additive</description>
+        </field>
+        <field name="championMaxModifier" var-class="array" var-type="real">
+          <description>Percent (0 or 100) no change</description>
+        </field>
+        <field name="championMin" var-class="array" var-type="real">
+          <description>Additive</description>
+        </field>
+        <field name="championMinModifier" var-class="array" var-type="real">
+          <description>Percent (0 or 100) no change</description>
+        </field>
+        <field name="difficultyModifier" var-class="array" var-type="real">
+          <description>Percent (0 or 100) no change</description>
+        </field>
+        <field name="spawnMax" var-class="array" var-type="real">
+          <description>Additive</description>
+        </field>
+        <field name="spawnMaxModifier" var-class="array" var-type="real">
+          <description>Percent (0 or 100) no change</description>
+        </field>
+        <field name="spawnMin" var-class="array" var-type="real">
+          <description>Additive</description>
+        </field>
+        <field name="spawnMinModifier" var-class="array" var-type="real">
+          <description>Percent (0 or 100) no change</description>
+        </field>
+      </var-group>
+      <var-group name="Randomizer Weights">
+        <field name="bothPrefixSuffixModifierBoss" var-class="variable" var-type="real" />
+        <field name="bothPrefixSuffixModifierChampion" var-class="variable" var-type="real" />
+        <field name="bothPrefixSuffixModifierChampionChest" var-class="variable" var-type="real" />
+        <field name="bothPrefixSuffixModifierCommon" var-class="variable" var-type="real" />
+        <field name="bothPrefixSuffixModifierCommonChest" var-class="variable" var-type="real" />
+        <field name="bothPrefixSuffixModifierHero" var-class="variable" var-type="real" />
+        <field name="bothPrefixSuffixModifierHeroChest" var-class="variable" var-type="real" />
+        <field name="brokenOnlyModifierBoss" var-class="variable" var-type="real" />
+        <field name="brokenOnlyModifierChampion" var-class="variable" var-type="real" />
+        <field name="brokenOnlyModifierChampionChest" var-class="variable" var-type="real" />
+        <field name="brokenOnlyModifierCommon" var-class="variable" var-type="real" />
+        <field name="brokenOnlyModifierCommonChest" var-class="variable" var-type="real" />
+        <field name="brokenOnlyModifierHero" var-class="variable" var-type="real" />
+        <field name="brokenOnlyModifierHeroChest" var-class="variable" var-type="real" />
+        <field name="noPrefixNoSuffixModifierBoss" var-class="variable" var-type="real" />
+        <field name="noPrefixNoSuffixModifierChampion" var-class="variable" var-type="real" />
+        <field name="noPrefixNoSuffixModifierChampionChest" var-class="variable" var-type="real" />
+        <field name="noPrefixNoSuffixModifierCommon" var-class="variable" var-type="real" />
+        <field name="noPrefixNoSuffixModifierCommonChest" var-class="variable" var-type="real" />
+        <field name="noPrefixNoSuffixModifierHero" var-class="variable" var-type="real" />
+        <field name="noPrefixNoSuffixModifierHeroChest" var-class="variable" var-type="real" />
+        <field name="prefixOnlyModifierBoss" var-class="variable" var-type="real" />
+        <field name="prefixOnlyModifierChampion" var-class="variable" var-type="real" />
+        <field name="prefixOnlyModifierChampionChest" var-class="variable" var-type="real" />
+        <field name="prefixOnlyModifierCommon" var-class="variable" var-type="real" />
+        <field name="prefixOnlyModifierCommonChest" var-class="variable" var-type="real" />
+        <field name="prefixOnlyModifierHero" var-class="variable" var-type="real" />
+        <field name="prefixOnlyModifierHeroChest" var-class="variable" var-type="real" />
+        <field name="suffixOnlyModifierBoss" var-class="variable" var-type="real" />
+        <field name="suffixOnlyModifierChampion" var-class="variable" var-type="real" />
+        <field name="suffixOnlyModifierChampionChest" var-class="variable" var-type="real" />
+        <field name="suffixOnlyModifierCommon" var-class="variable" var-type="real" />
+        <field name="suffixOnlyModifierCommonChest" var-class="variable" var-type="real" />
+        <field name="suffixOnlyModifierHero" var-class="variable" var-type="real" />
+        <field name="suffixOnlyModifierHeroChest" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="Rewards and Penalties">
+        <field name="RedemptionMultiplier" var-class="variable" var-type="real" var-default-value="0.5" />
+        <field name="deathPenaltyEquation" var-class="variable" var-type="equation" />
+        <field name="deathPenaltyMax" var-class="variable" var-type="int" />
+        <field name="deathPenaltyMin" var-class="variable" var-type="int" />
+        <field name="experienceEquation" var-class="variable" var-type="equation" />
+      </var-group>
+      <var-group name="Skill Info">
+        <field name="augmentedColor" var-class="variable" var-type="string" />
+        <field name="skillMasteryTierLevel" var-class="array" var-type="int" />
+      </var-group>
+      <var-group name="Special Character Handlers">
+        <field name="freezeDamageHandler" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="UI">
+        <var-group name="Cursor">
+          <field name="relicCursorActivationSound" var-class="variable" var-type="file_dbr">
+            <description>SoundPak</description>
+          </field>
+        </var-group>
+        <var-group name="Item Relic">
+          <field name="itemOverlayFontColor" var-class="variable" var-type="string" />
+          <field name="itemOverlayFontName" var-class="variable" var-type="file_dbr" />
+          <field name="itemOverlayFontSize" var-class="variable" var-type="int" />
+        </var-group>
+        <field name="UICharWindowInventorySack0DimsX" var-class="variable" var-type="int" />
+        <field name="UICharWindowInventorySack0DimsY" var-class="variable" var-type="int" />
+        <field name="UICharWindowInventorySack1DimsX" var-class="variable" var-type="int" />
+        <field name="UICharWindowInventorySack1DimsY" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

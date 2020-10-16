@@ -89,7 +89,7 @@ namespace Glacie.Data.Arz
             var database = Database;
             Check.That(database != null);
 
-            foreach (var record in database.GetAll())
+            foreach (var record in database.SelectAll())
             {
                 if (!record.IsNew && !record.HasFieldData)
                 {

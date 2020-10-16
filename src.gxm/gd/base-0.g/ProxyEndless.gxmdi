@@ -1,0 +1,367 @@
+﻿<partial>
+  <record-type name="ProxyEndless" path="ProxyEndless.tpl">
+    <inherits>
+      <inherit record="Actor" />
+      <inherit record="ProxyHookPack" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ProxyEndless" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Accessory">
+        <var-group name="Epic Acc">
+          <field name="accessoryEpic1" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryEpic2" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryEpic3" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryEpic4" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryEpic5" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryWeightEpic1" var-class="variable" var-type="int" />
+          <field name="accessoryWeightEpic2" var-class="variable" var-type="int" />
+          <field name="accessoryWeightEpic3" var-class="variable" var-type="int" />
+          <field name="accessoryWeightEpic4" var-class="variable" var-type="int" />
+          <field name="accessoryWeightEpic5" var-class="variable" var-type="int" />
+        </var-group>
+        <var-group name="Legendary Acc">
+          <field name="accessoryLegendary1" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryLegendary2" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryLegendary3" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryLegendary4" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryLegendary5" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryWeightLegendary1" var-class="variable" var-type="int" />
+          <field name="accessoryWeightLegendary2" var-class="variable" var-type="int" />
+          <field name="accessoryWeightLegendary3" var-class="variable" var-type="int" />
+          <field name="accessoryWeightLegendary4" var-class="variable" var-type="int" />
+          <field name="accessoryWeightLegendary5" var-class="variable" var-type="int" />
+        </var-group>
+        <var-group name="Normal Acc">
+          <field name="accessory1" var-class="variable" var-type="file_dbr" />
+          <field name="accessory2" var-class="variable" var-type="file_dbr" />
+          <field name="accessory3" var-class="variable" var-type="file_dbr" />
+          <field name="accessory4" var-class="variable" var-type="file_dbr" />
+          <field name="accessory5" var-class="variable" var-type="file_dbr" />
+          <field name="accessoryWeight1" var-class="variable" var-type="int" />
+          <field name="accessoryWeight2" var-class="variable" var-type="int" />
+          <field name="accessoryWeight3" var-class="variable" var-type="int" />
+          <field name="accessoryWeight4" var-class="variable" var-type="int" />
+          <field name="accessoryWeight5" var-class="variable" var-type="int" />
+        </var-group>
+      </var-group>
+      <var-group name="Proxy Config">
+        <field name="difficultyLimitsFile" var-class="variable" var-type="file_dbr">
+          <description>ProxyLimits.tpl</description>
+        </field>
+        <field name="placementExtents" var-class="variable" var-type="real" var-default-value="3.5" />
+      </var-group>
+      <var-group name="Proxy Tables">
+        <var-group name="Epic">
+          <field name="poolEpic1" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic2" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic3" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic4" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic5" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic6" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic7" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic8" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic9" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic10" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic11" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic12" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic13" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic14" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic15" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic16" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic17" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic18" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic19" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic20" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic21" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic22" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic23" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic24" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic25" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic26" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic27" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic28" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic29" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic30" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic31" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic32" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic33" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic34" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic35" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic36" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic37" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic38" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic39" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic40" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic41" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic42" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic43" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic44" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic45" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic46" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic47" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic48" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic49" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic50" var-class="variable" var-type="file_dbr" />
+          <field name="weightEpic1" var-class="variable" var-type="int" />
+          <field name="weightEpic2" var-class="variable" var-type="int" />
+          <field name="weightEpic3" var-class="variable" var-type="int" />
+          <field name="weightEpic4" var-class="variable" var-type="int" />
+          <field name="weightEpic5" var-class="variable" var-type="int" />
+          <field name="weightEpic6" var-class="variable" var-type="int" />
+          <field name="weightEpic7" var-class="variable" var-type="int" />
+          <field name="weightEpic8" var-class="variable" var-type="int" />
+          <field name="weightEpic9" var-class="variable" var-type="int" />
+          <field name="weightEpic10" var-class="variable" var-type="int" />
+          <field name="weightEpic11" var-class="variable" var-type="int" />
+          <field name="weightEpic12" var-class="variable" var-type="int" />
+          <field name="weightEpic13" var-class="variable" var-type="int" />
+          <field name="weightEpic14" var-class="variable" var-type="int" />
+          <field name="weightEpic15" var-class="variable" var-type="int" />
+          <field name="weightEpic16" var-class="variable" var-type="int" />
+          <field name="weightEpic17" var-class="variable" var-type="int" />
+          <field name="weightEpic18" var-class="variable" var-type="int" />
+          <field name="weightEpic19" var-class="variable" var-type="int" />
+          <field name="weightEpic20" var-class="variable" var-type="int" />
+          <field name="weightEpic21" var-class="variable" var-type="int" />
+          <field name="weightEpic22" var-class="variable" var-type="int" />
+          <field name="weightEpic23" var-class="variable" var-type="int" />
+          <field name="weightEpic24" var-class="variable" var-type="int" />
+          <field name="weightEpic25" var-class="variable" var-type="int" />
+          <field name="weightEpic26" var-class="variable" var-type="int" />
+          <field name="weightEpic27" var-class="variable" var-type="int" />
+          <field name="weightEpic28" var-class="variable" var-type="int" />
+          <field name="weightEpic29" var-class="variable" var-type="int" />
+          <field name="weightEpic30" var-class="variable" var-type="int" />
+          <field name="weightEpic31" var-class="variable" var-type="int" />
+          <field name="weightEpic32" var-class="variable" var-type="int" />
+          <field name="weightEpic33" var-class="variable" var-type="int" />
+          <field name="weightEpic34" var-class="variable" var-type="int" />
+          <field name="weightEpic35" var-class="variable" var-type="int" />
+          <field name="weightEpic36" var-class="variable" var-type="int" />
+          <field name="weightEpic37" var-class="variable" var-type="int" />
+          <field name="weightEpic38" var-class="variable" var-type="int" />
+          <field name="weightEpic39" var-class="variable" var-type="int" />
+          <field name="weightEpic40" var-class="variable" var-type="int" />
+          <field name="weightEpic41" var-class="variable" var-type="int" />
+          <field name="weightEpic42" var-class="variable" var-type="int" />
+          <field name="weightEpic43" var-class="variable" var-type="int" />
+          <field name="weightEpic44" var-class="variable" var-type="int" />
+          <field name="weightEpic45" var-class="variable" var-type="int" />
+          <field name="weightEpic46" var-class="variable" var-type="int" />
+          <field name="weightEpic47" var-class="variable" var-type="int" />
+          <field name="weightEpic48" var-class="variable" var-type="int" />
+          <field name="weightEpic49" var-class="variable" var-type="int" />
+          <field name="weightEpic50" var-class="variable" var-type="int" />
+        </var-group>
+        <var-group name="Legendary">
+          <field name="poolLegendary1" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary2" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary3" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary4" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary5" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary6" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary7" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary8" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary9" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary10" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary11" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary12" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary13" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary14" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary15" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary16" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary17" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary18" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary19" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary20" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary21" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary22" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary23" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary24" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary25" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary26" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary27" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary28" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary29" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary30" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary31" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary32" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary33" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary34" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary35" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary36" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary37" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary38" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary39" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary40" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary41" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary42" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary43" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary44" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary45" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary46" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary47" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary48" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary49" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary50" var-class="variable" var-type="file_dbr" />
+          <field name="weightLegendary1" var-class="variable" var-type="int" />
+          <field name="weightLegendary2" var-class="variable" var-type="int" />
+          <field name="weightLegendary3" var-class="variable" var-type="int" />
+          <field name="weightLegendary4" var-class="variable" var-type="int" />
+          <field name="weightLegendary5" var-class="variable" var-type="int" />
+          <field name="weightLegendary6" var-class="variable" var-type="int" />
+          <field name="weightLegendary7" var-class="variable" var-type="int" />
+          <field name="weightLegendary8" var-class="variable" var-type="int" />
+          <field name="weightLegendary9" var-class="variable" var-type="int" />
+          <field name="weightLegendary10" var-class="variable" var-type="int" />
+          <field name="weightLegendary11" var-class="variable" var-type="int" />
+          <field name="weightLegendary12" var-class="variable" var-type="int" />
+          <field name="weightLegendary13" var-class="variable" var-type="int" />
+          <field name="weightLegendary14" var-class="variable" var-type="int" />
+          <field name="weightLegendary15" var-class="variable" var-type="int" />
+          <field name="weightLegendary16" var-class="variable" var-type="int" />
+          <field name="weightLegendary17" var-class="variable" var-type="int" />
+          <field name="weightLegendary18" var-class="variable" var-type="int" />
+          <field name="weightLegendary19" var-class="variable" var-type="int" />
+          <field name="weightLegendary20" var-class="variable" var-type="int" />
+          <field name="weightLegendary21" var-class="variable" var-type="int" />
+          <field name="weightLegendary22" var-class="variable" var-type="int" />
+          <field name="weightLegendary23" var-class="variable" var-type="int" />
+          <field name="weightLegendary24" var-class="variable" var-type="int" />
+          <field name="weightLegendary25" var-class="variable" var-type="int" />
+          <field name="weightLegendary26" var-class="variable" var-type="int" />
+          <field name="weightLegendary27" var-class="variable" var-type="int" />
+          <field name="weightLegendary28" var-class="variable" var-type="int" />
+          <field name="weightLegendary29" var-class="variable" var-type="int" />
+          <field name="weightLegendary30" var-class="variable" var-type="int" />
+          <field name="weightLegendary31" var-class="variable" var-type="int" />
+          <field name="weightLegendary32" var-class="variable" var-type="int" />
+          <field name="weightLegendary33" var-class="variable" var-type="int" />
+          <field name="weightLegendary34" var-class="variable" var-type="int" />
+          <field name="weightLegendary35" var-class="variable" var-type="int" />
+          <field name="weightLegendary36" var-class="variable" var-type="int" />
+          <field name="weightLegendary37" var-class="variable" var-type="int" />
+          <field name="weightLegendary38" var-class="variable" var-type="int" />
+          <field name="weightLegendary39" var-class="variable" var-type="int" />
+          <field name="weightLegendary40" var-class="variable" var-type="int" />
+          <field name="weightLegendary41" var-class="variable" var-type="int" />
+          <field name="weightLegendary42" var-class="variable" var-type="int" />
+          <field name="weightLegendary43" var-class="variable" var-type="int" />
+          <field name="weightLegendary44" var-class="variable" var-type="int" />
+          <field name="weightLegendary45" var-class="variable" var-type="int" />
+          <field name="weightLegendary46" var-class="variable" var-type="int" />
+          <field name="weightLegendary47" var-class="variable" var-type="int" />
+          <field name="weightLegendary48" var-class="variable" var-type="int" />
+          <field name="weightLegendary49" var-class="variable" var-type="int" />
+          <field name="weightLegendary50" var-class="variable" var-type="int" />
+        </var-group>
+        <var-group name="Normal">
+          <field name="pool1" var-class="variable" var-type="file_dbr" />
+          <field name="pool2" var-class="variable" var-type="file_dbr" />
+          <field name="pool3" var-class="variable" var-type="file_dbr" />
+          <field name="pool4" var-class="variable" var-type="file_dbr" />
+          <field name="pool5" var-class="variable" var-type="file_dbr" />
+          <field name="pool6" var-class="variable" var-type="file_dbr" />
+          <field name="pool7" var-class="variable" var-type="file_dbr" />
+          <field name="pool8" var-class="variable" var-type="file_dbr" />
+          <field name="pool9" var-class="variable" var-type="file_dbr" />
+          <field name="pool10" var-class="variable" var-type="file_dbr" />
+          <field name="pool11" var-class="variable" var-type="file_dbr" />
+          <field name="pool12" var-class="variable" var-type="file_dbr" />
+          <field name="pool13" var-class="variable" var-type="file_dbr" />
+          <field name="pool14" var-class="variable" var-type="file_dbr" />
+          <field name="pool15" var-class="variable" var-type="file_dbr" />
+          <field name="pool16" var-class="variable" var-type="file_dbr" />
+          <field name="pool17" var-class="variable" var-type="file_dbr" />
+          <field name="pool18" var-class="variable" var-type="file_dbr" />
+          <field name="pool19" var-class="variable" var-type="file_dbr" />
+          <field name="pool20" var-class="variable" var-type="file_dbr" />
+          <field name="pool21" var-class="variable" var-type="file_dbr" />
+          <field name="pool22" var-class="variable" var-type="file_dbr" />
+          <field name="pool23" var-class="variable" var-type="file_dbr" />
+          <field name="pool24" var-class="variable" var-type="file_dbr" />
+          <field name="pool25" var-class="variable" var-type="file_dbr" />
+          <field name="pool26" var-class="variable" var-type="file_dbr" />
+          <field name="pool27" var-class="variable" var-type="file_dbr" />
+          <field name="pool28" var-class="variable" var-type="file_dbr" />
+          <field name="pool29" var-class="variable" var-type="file_dbr" />
+          <field name="pool30" var-class="variable" var-type="file_dbr" />
+          <field name="pool31" var-class="variable" var-type="file_dbr" />
+          <field name="pool32" var-class="variable" var-type="file_dbr" />
+          <field name="pool33" var-class="variable" var-type="file_dbr" />
+          <field name="pool34" var-class="variable" var-type="file_dbr" />
+          <field name="pool35" var-class="variable" var-type="file_dbr" />
+          <field name="pool36" var-class="variable" var-type="file_dbr" />
+          <field name="pool37" var-class="variable" var-type="file_dbr" />
+          <field name="pool38" var-class="variable" var-type="file_dbr" />
+          <field name="pool39" var-class="variable" var-type="file_dbr" />
+          <field name="pool40" var-class="variable" var-type="file_dbr" />
+          <field name="pool41" var-class="variable" var-type="file_dbr" />
+          <field name="pool42" var-class="variable" var-type="file_dbr" />
+          <field name="pool43" var-class="variable" var-type="file_dbr" />
+          <field name="pool44" var-class="variable" var-type="file_dbr" />
+          <field name="pool45" var-class="variable" var-type="file_dbr" />
+          <field name="pool46" var-class="variable" var-type="file_dbr" />
+          <field name="pool47" var-class="variable" var-type="file_dbr" />
+          <field name="pool48" var-class="variable" var-type="file_dbr" />
+          <field name="pool49" var-class="variable" var-type="file_dbr" />
+          <field name="pool50" var-class="variable" var-type="file_dbr" />
+          <field name="weight1" var-class="variable" var-type="int" />
+          <field name="weight2" var-class="variable" var-type="int" />
+          <field name="weight3" var-class="variable" var-type="int" />
+          <field name="weight4" var-class="variable" var-type="int" />
+          <field name="weight5" var-class="variable" var-type="int" />
+          <field name="weight6" var-class="variable" var-type="int" />
+          <field name="weight7" var-class="variable" var-type="int" />
+          <field name="weight8" var-class="variable" var-type="int" />
+          <field name="weight9" var-class="variable" var-type="int" />
+          <field name="weight10" var-class="variable" var-type="int" />
+          <field name="weight11" var-class="variable" var-type="int" />
+          <field name="weight12" var-class="variable" var-type="int" />
+          <field name="weight13" var-class="variable" var-type="int" />
+          <field name="weight14" var-class="variable" var-type="int" />
+          <field name="weight15" var-class="variable" var-type="int" />
+          <field name="weight16" var-class="variable" var-type="int" />
+          <field name="weight17" var-class="variable" var-type="int" />
+          <field name="weight18" var-class="variable" var-type="int" />
+          <field name="weight19" var-class="variable" var-type="int" />
+          <field name="weight20" var-class="variable" var-type="int" />
+          <field name="weight21" var-class="variable" var-type="int" />
+          <field name="weight22" var-class="variable" var-type="int" />
+          <field name="weight23" var-class="variable" var-type="int" />
+          <field name="weight24" var-class="variable" var-type="int" />
+          <field name="weight25" var-class="variable" var-type="int" />
+          <field name="weight26" var-class="variable" var-type="int" />
+          <field name="weight27" var-class="variable" var-type="int" />
+          <field name="weight28" var-class="variable" var-type="int" />
+          <field name="weight29" var-class="variable" var-type="int" />
+          <field name="weight30" var-class="variable" var-type="int" />
+          <field name="weight31" var-class="variable" var-type="int" />
+          <field name="weight32" var-class="variable" var-type="int" />
+          <field name="weight33" var-class="variable" var-type="int" />
+          <field name="weight34" var-class="variable" var-type="int" />
+          <field name="weight35" var-class="variable" var-type="int" />
+          <field name="weight36" var-class="variable" var-type="int" />
+          <field name="weight37" var-class="variable" var-type="int" />
+          <field name="weight38" var-class="variable" var-type="int" />
+          <field name="weight39" var-class="variable" var-type="int" />
+          <field name="weight40" var-class="variable" var-type="int" />
+          <field name="weight41" var-class="variable" var-type="int" />
+          <field name="weight42" var-class="variable" var-type="int" />
+          <field name="weight43" var-class="variable" var-type="int" />
+          <field name="weight44" var-class="variable" var-type="int" />
+          <field name="weight45" var-class="variable" var-type="int" />
+          <field name="weight46" var-class="variable" var-type="int" />
+          <field name="weight47" var-class="variable" var-type="int" />
+          <field name="weight48" var-class="variable" var-type="int" />
+          <field name="weight49" var-class="variable" var-type="int" />
+          <field name="weight50" var-class="variable" var-type="int" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

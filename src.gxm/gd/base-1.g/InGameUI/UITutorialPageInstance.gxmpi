@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="InGameUI.UITutorialPageInstance">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="FadeSeconds" />
+      <field name="NuggetArray" />
+      <field name="altPage" />
+      <field name="quickTag" />
+      <field name="quickTagKey" />
+    </var-group>
+  </record-type>
+</partial>

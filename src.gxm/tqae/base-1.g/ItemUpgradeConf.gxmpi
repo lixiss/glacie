@@ -1,0 +1,63 @@
+﻿<partial>
+  <record-type name="ItemUpgradeConf">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="UPGRADE CONF">
+      <var-group name="Allowed Qualities">
+        <field name="AllowCommon" />
+        <field name="AllowEpic" />
+        <field name="AllowLegendary" />
+        <field name="AllowMagical" />
+        <field name="AllowRare" />
+      </var-group>
+      <var-group name="Allowed Types">
+        <field name="AllowArmband" />
+        <field name="AllowBodyArmor" />
+        <field name="AllowBracelet" />
+        <field name="AllowGreaves" />
+        <field name="AllowHelmet" />
+        <field name="AllowNeck" />
+        <field name="AllowRing" />
+        <field name="AllowShield" />
+        <field name="AllowWeapons" />
+      </var-group>
+      <var-group name="Intelligence Defensive">
+        <field name="ItemTable_IntDefensivePrefixEpic" />
+        <field name="ItemTable_IntDefensivePrefixLegendary" />
+        <field name="ItemTable_IntDefensivePrefixNormal" />
+        <field name="ItemTable_IntDefensiveSufixEpic" />
+        <field name="ItemTable_IntDefensiveSufixLegendary" />
+        <field name="ItemTable_IntDefensiveSufixNormal" />
+      </var-group>
+      <var-group name="Intelligence Offensive">
+        <field name="ItemTable_IntOffensivePrefixEpic" />
+        <field name="ItemTable_IntOffensivePrefixLegendary" />
+        <field name="ItemTable_IntOffensivePrefixNormal" />
+        <field name="ItemTable_IntOffensiveSufixEpic" />
+        <field name="ItemTable_IntOffensiveSufixLegendary" />
+        <field name="ItemTable_IntOffensiveSufixNormal" />
+      </var-group>
+      <var-group name="Strength Defensive">
+        <field name="ItemTable_StrDefensivePrefixEpic" />
+        <field name="ItemTable_StrDefensivePrefixLegendary" />
+        <field name="ItemTable_StrDefensivePrefixNormal" />
+        <field name="ItemTable_StrDefensiveSufixEpic" />
+        <field name="ItemTable_StrDefensiveSufixLegendary" />
+        <field name="ItemTable_StrDefensiveSufixNormal" />
+      </var-group>
+      <var-group name="Strength Offensive">
+        <field name="ItemTable_StrOffensivePrefixEpic" />
+        <field name="ItemTable_StrOffensivePrefixLegendary" />
+        <field name="ItemTable_StrOffensivePrefixNormal" />
+        <field name="ItemTable_StrOffensiveSufixEpic" />
+        <field name="ItemTable_StrOffensiveSufixLegendary" />
+        <field name="ItemTable_StrOffensiveSufixNormal" />
+      </var-group>
+      <field name="UnlockToken" />
+      <field name="UpgradedToken" />
+    </var-group>
+  </record-type>
+</partial>

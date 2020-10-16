@@ -1,0 +1,47 @@
+﻿<partial>
+  <record-type name="GoldGenerator" path="GoldGenerator.tpl">
+    <expression-variables>
+      <expression-variable name="averagePlayerLevel" />
+      <expression-variable name="currentPlayerLevel" />
+      <expression-variable name="gameDifficulty">
+        <description>0 to n</description>
+      </expression-variable>
+      <expression-variable name="generatorLevel">
+        <description>Monster or Chest level</description>
+      </expression-variable>
+      <expression-variable name="maxPlayerLevel" />
+      <expression-variable name="minPlayerLevel" />
+      <expression-variable name="monsterExperience" />
+      <expression-variable name="numberOfPlayers" />
+      <expression-variable name="tartarosCycle">
+        <description>Tartarus cycle</description>
+      </expression-variable>
+      <expression-variable name="tartarosDiffLevel">
+        <description>Tartarus diff level (excluding cycles)</description>
+      </expression-variable>
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" var-default-value="Gold Generator" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="goldActors" var-class="array" var-type="file_dbr">
+          <description>Game actors to take gold value</description>
+        </field>
+        <field name="goldAmountEquation" var-class="variable" var-type="equation" />
+        <field name="goldAmountEquation2" var-class="variable" var-type="equation" />
+        <field name="goldSplitMax" var-class="variable" var-type="int" />
+        <field name="goldSplitMin" var-class="variable" var-type="int" />
+        <field name="goldSplitSizeMin" var-class="variable" var-type="int" />
+        <field name="goldValueMax" var-class="variable" var-type="int">
+          <description>Equation result clamp max</description>
+        </field>
+        <field name="goldValueMin" var-class="variable" var-type="int">
+          <description>Equation result clamp min</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

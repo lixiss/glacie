@@ -1,0 +1,96 @@
+﻿<partial>
+  <record-type name="MonsterSpawner" path="MonsterSpawner.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="MonsterSpawner">
+        <field name="maxPopulation" var-class="variable" var-type="int" var-default-value="5">
+          <description>Maximum monsters that can be active from this portal simultaneously</description>
+        </field>
+        <field name="maxSpawnDelay" var-class="variable" var-type="real" var-default-value="15.0">
+          <description>Maximum delay between spawning monsters (seconds)</description>
+        </field>
+        <field name="maxSpawnLevel" var-class="variable" var-type="int" var-default-value="100">
+          <description>Maximum level of the spawn</description>
+        </field>
+        <field name="minSpawnDelay" var-class="variable" var-type="real" var-default-value="5.0">
+          <description>Minimum delay between spawning monsters (seconds)</description>
+        </field>
+        <field name="minSpawnLevel" var-class="variable" var-type="int" var-default-value="1">
+          <description>Minimum level of the spawner</description>
+        </field>
+        <field name="numSpawnCharges" var-class="variable" var-type="int" var-default-value="0">
+          <description>Total number of monsters to spawn (zero = infinite)</description>
+        </field>
+        <field name="spawnMode" var-class="picklist" var-type="string" var-default-value="Radial;Directional">
+          <description>Spawn mode</description>
+        </field>
+      </var-group>
+      <var-group name="Proxy Tables">
+        <var-group name="Epic">
+          <field name="poolEpic1" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic2" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic3" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic4" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic5" var-class="variable" var-type="file_dbr" />
+          <field name="poolEpic6" var-class="variable" var-type="file_dbr" />
+          <field name="timeEpic1" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeEpic2" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeEpic3" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeEpic4" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeEpic5" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeEpic6" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="weightEpic1" var-class="variable" var-type="int" />
+          <field name="weightEpic2" var-class="variable" var-type="int" />
+          <field name="weightEpic3" var-class="variable" var-type="int" />
+          <field name="weightEpic4" var-class="variable" var-type="int" />
+          <field name="weightEpic5" var-class="variable" var-type="int" />
+          <field name="weightEpic6" var-class="variable" var-type="int" />
+        </var-group>
+        <var-group name="Legendary">
+          <field name="poolLegendary1" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary2" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary3" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary4" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary5" var-class="variable" var-type="file_dbr" />
+          <field name="poolLegendary6" var-class="variable" var-type="file_dbr" />
+          <field name="timeLegendary1" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeLegendary2" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeLegendary3" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeLegendary4" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeLegendary5" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="timeLegendary6" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="weightLegendary1" var-class="variable" var-type="int" />
+          <field name="weightLegendary2" var-class="variable" var-type="int" />
+          <field name="weightLegendary3" var-class="variable" var-type="int" />
+          <field name="weightLegendary4" var-class="variable" var-type="int" />
+          <field name="weightLegendary5" var-class="variable" var-type="int" />
+          <field name="weightLegendary6" var-class="variable" var-type="int" />
+        </var-group>
+        <var-group name="Normal">
+          <field name="pool1" var-class="variable" var-type="file_dbr" />
+          <field name="pool2" var-class="variable" var-type="file_dbr" />
+          <field name="pool3" var-class="variable" var-type="file_dbr" />
+          <field name="pool4" var-class="variable" var-type="file_dbr" />
+          <field name="pool5" var-class="variable" var-type="file_dbr" />
+          <field name="pool6" var-class="variable" var-type="file_dbr" />
+          <field name="time1" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="time2" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="time3" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="time4" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="time5" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="time6" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+          <field name="weight1" var-class="variable" var-type="int" />
+          <field name="weight2" var-class="variable" var-type="int" />
+          <field name="weight3" var-class="variable" var-type="int" />
+          <field name="weight4" var-class="variable" var-type="int" />
+          <field name="weight5" var-class="variable" var-type="int" />
+          <field name="weight6" var-class="variable" var-type="int" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

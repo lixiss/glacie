@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="SpecialCharHandler_Freeze">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="freezeSound" />
+      <field name="handlerType" />
+      <field name="iceCubeName" />
+      <field name="icyEffectName" />
+      <field name="shatterSound" />
+      <field name="thawSound" />
+    </var-group>
+  </record-type>
+</partial>

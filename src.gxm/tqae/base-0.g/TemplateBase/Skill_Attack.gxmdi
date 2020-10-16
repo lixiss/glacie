@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Attack" path="TemplateBase/Skill_Attack.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Parameters_Offensive" />
+      <inherit record="TemplateBase.RacialBonus" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="alternateSourceLocation" var-class="variable" var-type="file_dbr" />
+        <field name="ragDollAmplification" var-class="array" var-type="real" />
+        <field name="ragDollDirection" var-class="picklist" var-type="string" var-default-value="None;Push;Pull;" />
+        <field name="ragDollEffect" var-class="picklist" var-type="string" var-default-value="None;Crumple;TakeHit;Random;" />
+        <field name="ragDollElevation" var-class="picklist" var-type="string" var-default-value="None;Upward;Downward;" />
+        <field name="ragDollPush" var-class="picklist" var-type="string" var-default-value="None;Left;Right;" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

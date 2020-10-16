@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="StrategicMovementTeleportShrine" path="StrategicMovementTeleportShrine.tpl">
+    <inherits>
+      <inherit record="TemplateBase.StrategicMovementBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="StrategicMovementTeleportShrine" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

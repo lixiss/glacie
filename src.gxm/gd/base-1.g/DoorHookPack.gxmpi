@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="DoorHookPack">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Scripts">
+      <field name="doorHooks" />
+      <field name="onInteract" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,31 @@
+﻿<partial>
+  <record-type name="TemplateBase.CharacterBioEnemy" path="TemplateBase/CharacterBioEnemy.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Parameters_Character" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="CharacterBio" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Character Bio">
+        <var-group name="Natural Resistance">
+          <field name="defensiveCold" var-class="array" var-type="real" />
+          <field name="defensiveFire" var-class="array" var-type="real" />
+          <field name="defensiveFreeze" var-class="array" var-type="real" />
+          <field name="defensiveLife" var-class="array" var-type="real" />
+          <field name="defensiveLightning" var-class="array" var-type="real" />
+          <field name="defensivePetrify" var-class="array" var-type="real" />
+          <field name="defensivePhysical" var-class="array" var-type="real" />
+          <field name="defensivePierce" var-class="array" var-type="real" />
+          <field name="defensivePoison" var-class="array" var-type="real" />
+          <field name="defensiveSleep" var-class="array" var-type="real" />
+          <field name="defensiveStun" var-class="array" var-type="real" />
+          <field name="defensiveTrap" var-class="array" var-type="real" />
+        </var-group>
+        <field name="characterAttributeEquations" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

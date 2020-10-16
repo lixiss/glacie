@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.GX4.Lab</AssemblyName>
+    <RootNamespace>Glacie</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Usage1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Context\Glacie.Context.csproj" />
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Localization.GX4\Glacie.Localization.GX4.csproj" />
+    <ProjectReference Include="..\Glacie.Modules.GX4\Glacie.Modules.GX4.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Project.GX4\Glacie.Project.GX4.csproj" />
+    <ProjectReference Include="..\Glacie.Resources.GX4\Glacie.Resources.GX4.csproj" />
+    <ProjectReference Include="..\Glacie.Services.GX4\Glacie.Services.GX4.csproj" />
+    <ProjectReference Include="..\Glacie.Targeting.GX4\Glacie.Targeting.GX4.csproj" />
+  </ItemGroup>
+
+</Project>

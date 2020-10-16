@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="Effect" path="Effect.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="EffectEntity" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <field name="Anchored" var-class="variable" var-type="bool" var-default-value="0" />
+      <field name="boneList" var-class="array" var-type="string" var-default-value="Bone_R_Weapon;Bone_L_Weapon" />
+      <field name="effectFile" var-class="variable" var-type="file_pfx" var-default-value="Sandbox/Marcus/default.pfx" />
+      <field name="emitterType" var-class="picklist" var-type="string" var-default-value="Standard;AllBones;BoneList" />
+      <field name="localOrientFix" var-class="variable" var-type="bool" var-default-value="0" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Skill">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Parameters">
+      <var-group name="Projectile Bonus">
+        <field name="skillProjectileSpeedModifier" />
+        <field name="skillProjectileSpeedModifierChance" />
+      </var-group>
+      <var-group name="Skill Reduction">
+        <field name="skillCooldownReduction" />
+        <field name="skillCooldownReductionChance" />
+        <field name="skillCooldownReductionModifier" />
+        <field name="skillCooldownReductionModifierChance" />
+        <field name="skillManaCostReduction" />
+        <field name="skillManaCostReductionChance" />
+        <field name="skillManaCostReductionModifier" />
+        <field name="skillManaCostReductionModifierChance" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

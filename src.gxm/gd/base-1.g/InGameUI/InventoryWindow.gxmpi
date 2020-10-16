@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="InGameUI.InventoryWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="inventoryCloseButton" />
+      <field name="inventoryGoldNumber" />
+      <field name="inventoryGrid0" />
+      <field name="inventoryGrid1" />
+      <field name="inventoryGrid2" />
+      <field name="inventoryGrid3" />
+      <field name="inventoryTab1Bitmap" />
+      <field name="inventoryTab1Button" />
+      <field name="inventoryTab2Bitmap" />
+      <field name="inventoryTab2Button" />
+      <field name="inventoryTab3Bitmap" />
+      <field name="inventoryTab3Button" />
+      <field name="inventoryWindowTitle" />
+    </var-group>
+  </record-type>
+</partial>

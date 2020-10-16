@@ -1,0 +1,53 @@
+﻿<partial>
+  <record-type name="MusicPak" path="MusicPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="MusicSession" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Sound Properties">
+        <field name="Drone" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody6" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody7" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody8" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody9" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Melody10" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion1" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion2" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion3" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion4" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion5" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion6" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion7" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion8" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion9" var-class="variable" var-type="file_mp3,wav" />
+        <field name="Percussion10" var-class="variable" var-type="file_mp3,wav" />
+        <field name="droneMaxTime" var-class="variable" var-type="int" var-default-value="120" />
+        <field name="droneMinTime" var-class="variable" var-type="int" var-default-value="25" />
+        <field name="droneVolume" var-class="variable" var-type="real" var-default-value="0.40" />
+        <field name="melodyMaxTime" var-class="variable" var-type="int" var-default-value="15" />
+        <field name="melodyMinTime" var-class="variable" var-type="int" var-default-value="3" />
+        <field name="melodyVolume1" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume2" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume3" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume4" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume5" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume6" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume7" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume8" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume9" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="melodyVolume10" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="percussionMaxTime" var-class="variable" var-type="int" var-default-value="20" />
+        <field name="percussionMinTime" var-class="variable" var-type="int" var-default-value="12" />
+        <field name="percussionVolume" var-class="variable" var-type="real" var-default-value="0.60" />
+        <field name="randomizeMelodies" var-class="variable" var-type="bool" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,41 @@
+﻿<partial>
+  <record-type name="InGameUI.GamepadButtonsDescriptionBox" path="InGameUI/GamepadButtonsDescriptionBox.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.Border" />
+      <inherit record="InGameUI.Includes.TextBoxBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Box config">
+        <field name="background" var-class="variable" var-type="file_tex" />
+        <field name="height" var-class="variable" var-type="int" />
+        <field name="paddingLeft" var-class="variable" var-type="int" />
+        <field name="percentageOfParentWidth" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>percentage of parent width</description>
+        </field>
+        <field name="x" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="y" var-class="variable" var-type="int" var-default-value="0" />
+      </var-group>
+      <var-group name="Button bitmaps">
+        <field name="XboxButtonA" var-class="variable" var-type="file_tex" />
+        <field name="XboxButtonB" var-class="variable" var-type="file_tex" />
+        <field name="XboxButtonLB" var-class="variable" var-type="file_tex" />
+        <field name="XboxButtonRB" var-class="variable" var-type="file_tex" />
+        <field name="XboxButtonX" var-class="variable" var-type="file_tex" />
+        <field name="XboxButtonY" var-class="variable" var-type="file_tex" />
+        <field name="buttonsYPosition" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Text">
+        <var-group name="Config">
+          <field name="marginRight" var-class="variable" var-type="int">
+            <description>Right margin</description>
+          </field>
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

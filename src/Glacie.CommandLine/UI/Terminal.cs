@@ -87,16 +87,19 @@ namespace Glacie.CommandLine.UI
 
         private void Dispose(bool disposing)
         {
-            if (!_disposed && disposing)
+            if (!_disposed)
             {
-                _timer?.Dispose();
-
-                _out.Dispose();
-                _error.Dispose();
-
-                if (!_disableViews)
+                if (disposing)
                 {
-                    SC.CursorVisible = _initalCursorVisible;
+                    _timer?.Dispose();
+
+                    _out.Dispose();
+                    _error.Dispose();
+
+                    if (!_disableViews)
+                    {
+                        SC.CursorVisible = _initalCursorVisible;
+                    }
                 }
 
                 _disposed = true;

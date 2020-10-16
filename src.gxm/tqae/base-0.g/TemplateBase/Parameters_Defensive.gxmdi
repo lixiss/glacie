@@ -1,0 +1,201 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Defensive" path="TemplateBase/Parameters_Defensive.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ParameterStoreDefensive" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Defensive Parameters">
+        <var-group name="Defense Misc">
+          <var-group name="Block">
+            <field name="defensiveBlockModifier" var-class="array" var-type="real" />
+            <field name="defensiveBlockModifierChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Reflect">
+            <field name="defensiveReflect" var-class="array" var-type="real" />
+            <field name="defensiveReflectChance" var-class="array" var-type="real" />
+          </var-group>
+        </var-group>
+        <var-group name="Defensive Absolute">
+          <var-group name="Defensive Absorption">
+            <field name="defensiveAbsorption" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveAbsorptionChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveAbsorptionModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveAbsorptionModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Cold">
+            <field name="defensiveCold" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveColdChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveColdDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveColdDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveColdDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveColdDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveColdModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveColdModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Disruption">
+            <field name="defensiveDisruption" var-class="array" var-type="real" />
+            <field name="defensiveDisruptionChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Elemental">
+            <field name="defensiveElementalResistance" var-class="array" var-type="real" />
+            <field name="defensiveElementalResistanceChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Fire">
+            <field name="defensiveFire" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveFireChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveFireDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveFireDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveFireDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveFireDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveFireModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveFireModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Life">
+            <field name="defensiveLife" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLifeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLifeDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLifeDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLifeDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLifeDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLifeModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLifeModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Lightning">
+            <field name="defensiveLightning" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLightningChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLightningDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLightningDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLightningDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLightningDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLightningModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveLightningModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Physical">
+            <field name="defensivePhysical" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePhysicalChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePhysicalDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePhysicalDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePhysicalDurationChanceModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePhysicalDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePhysicalModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePhysicalModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Pierce">
+            <field name="defensivePierce" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePierceChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePierceDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePierceDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePierceDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePierceDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePierceModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePierceModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Poison">
+            <field name="defensivePoison" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePoisonChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePoisonDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePoisonDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePoisonDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePoisonDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePoisonModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensivePoisonModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Protection">
+            <field name="defensiveProtection" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveProtectionChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveProtectionModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveProtectionModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+        </var-group>
+        <var-group name="Defensive Influence">
+          <var-group name="Defensive Confusion">
+            <field name="defensiveConfusion" var-class="array" var-type="real" />
+            <field name="defensiveConfusionChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Convert">
+            <field name="defensiveConvert" var-class="array" var-type="real" />
+            <field name="defensiveConvertChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Fear">
+            <field name="defensiveFear" var-class="array" var-type="real" />
+            <field name="defensiveFearChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Freeze">
+            <field name="defensiveFreeze" var-class="array" var-type="real" />
+            <field name="defensiveFreezeChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Petrify">
+            <field name="defensivePetrify" var-class="array" var-type="real" />
+            <field name="defensivePetrifyChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Sleep">
+            <field name="defensiveSleep" var-class="array" var-type="real" />
+            <field name="defensiveSleepChance" var-class="array" var-type="real" />
+            <field name="defensiveSleepModifier" var-class="array" var-type="real" />
+            <field name="defensiveSleepModifierChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Stun">
+            <field name="defensiveStun" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveStunChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveStunModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveStunModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Taunt">
+            <field name="defensiveTaunt" var-class="array" var-type="real" />
+            <field name="defensiveTauntChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Trap">
+            <field name="defensiveTrap" var-class="array" var-type="real" />
+            <field name="defensiveTrapChance" var-class="array" var-type="real" />
+          </var-group>
+        </var-group>
+        <var-group name="Defensive Special">
+          <var-group name="Defensive Slow Bleeding">
+            <field name="defensiveBleeding" var-class="array" var-type="real" />
+            <field name="defensiveBleedingChance" var-class="array" var-type="real" />
+            <field name="defensiveBleedingDuration" var-class="array" var-type="real" />
+            <field name="defensiveBleedingDurationChance" var-class="array" var-type="real" />
+            <field name="defensiveBleedingDurationModifier" var-class="array" var-type="real" />
+            <field name="defensiveBleedingDurationModifierChance" var-class="array" var-type="real" />
+            <field name="defensiveBleedingModifier" var-class="array" var-type="real" />
+            <field name="defensiveBleedingModifierChance" var-class="array" var-type="real" />
+          </var-group>
+          <var-group name="Defensive Slow Life Leach">
+            <field name="defensiveSlowLifeLeach" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowLifeLeachChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowLifeLeachDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowLifeLeachDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowLifeLeachDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowLifeLeachDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowLifeLeachModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowLifeLeachModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+          <var-group name="Defensive Slow Mana Leach">
+            <field name="defensiveSlowManaLeach" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowManaLeachChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowManaLeachDuration" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowManaLeachDurationChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowManaLeachDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowManaLeachDurationModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowManaLeachModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="defensiveSlowManaLeachModifierChance" var-class="array" var-type="real" var-default-value="0" />
+          </var-group>
+        </var-group>
+        <var-group name="Monster Defense">
+          <field name="defensiveManaBurnRatio" var-class="array" var-type="real">
+            <description>Monster Only</description>
+          </field>
+          <field name="defensiveManaBurnRatioChance" var-class="array" var-type="real">
+            <description>Monster Only</description>
+          </field>
+          <field name="defensivePercentCurrentLife" var-class="array" var-type="real" />
+          <field name="defensivePercentCurrentLifeChance" var-class="array" var-type="real" />
+          <field name="defensiveTotalSpeedChance" var-class="array" var-type="real" />
+          <field name="defensiveTotalSpeedResistance" var-class="array" var-type="real" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="InGameUI.HudStatus">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="BackgroundImagePet" />
+      <field name="BackgroundImagePetHighlight" />
+      <field name="BackgroundImagePetHighlightXOffset" />
+      <field name="BackgroundImagePetHighlightYOffset" />
+      <field name="BackgroundImagePlayer" />
+      <field name="BuffIconLocationX" />
+      <field name="BuffIconLocationY" />
+      <field name="BuffIconSeparation" />
+      <field name="PetBuffIconLocationX" />
+      <field name="PetBuffIconLocationY" />
+      <field name="PetBuffIconSeparation" />
+      <field name="PetHealthBarHeight" />
+      <field name="PetHealthBarWidth" />
+      <field name="PetHealthBarX" />
+      <field name="PetHealthBarY" />
+      <field name="PetManaBarHeight" />
+      <field name="PetManaBarWidth" />
+      <field name="PetManaBarX" />
+      <field name="PetManaBarY" />
+      <field name="PlayerHealthBarHeight" />
+      <field name="PlayerHealthBarWidth" />
+      <field name="PlayerHealthBarX" />
+      <field name="PlayerHealthBarY" />
+      <field name="PlayerIconLocationX" />
+      <field name="PlayerIconLocationY" />
+      <field name="PlayerLevelText" />
+      <field name="PlayerManaBarHeight" />
+      <field name="PlayerManaBarWidth" />
+      <field name="PlayerManaBarX" />
+      <field name="PlayerManaBarY" />
+      <field name="PlayerNameText" />
+      <field name="initialPanelPositionX" />
+      <field name="initialPanelPositionY" />
+      <field name="panelDistance" />
+    </var-group>
+  </record-type>
+</partial>

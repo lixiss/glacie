@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterReagentBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Rollover Config">
+      <field name="rolloverTagNoFormula" />
+      <field name="rolloverTagNotAvailable" />
+      <field name="textStyleNameDisplay" />
+      <field name="textStyleNameNoAvailable" />
+      <field name="textStyleNoFormula" />
+    </var-group>
+  </record-type>
+</partial>

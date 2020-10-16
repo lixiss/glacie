@@ -30,7 +30,7 @@ namespace Glacie.Data.Arc.Tests.Validation
                 Mode = ArcArchiveMode.Read,
             });
 
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 var entryNameInLowerCase = entry.Name.ToLowerInvariant();
                 Assert.Equal(entryNameInLowerCase, entry.Name);

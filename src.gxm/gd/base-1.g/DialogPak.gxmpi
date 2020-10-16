@@ -1,0 +1,28 @@
+﻿<partial>
+  <record-type name="DialogPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="DialogPak">
+      <field name="animation" />
+      <field name="goodbye1" />
+      <field name="goodbye2" />
+      <field name="goodbye3" />
+      <field name="goodbye4" />
+      <field name="goodbye5" />
+      <field name="longGreeting1" />
+      <field name="longGreeting2" />
+      <field name="longGreeting3" />
+      <field name="longGreeting4" />
+      <field name="longGreeting5" />
+      <field name="longGreetingPeriod" />
+      <field name="shortGreeting1" />
+      <field name="shortGreeting2" />
+      <field name="shortGreeting3" />
+      <field name="shortGreeting4" />
+      <field name="shortGreeting5" />
+    </var-group>
+  </record-type>
+</partial>

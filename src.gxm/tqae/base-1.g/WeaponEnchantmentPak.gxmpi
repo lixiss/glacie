@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="WeaponEnchantmentPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Bow">
+      <field name="bowHitSound" />
+      <field name="bowSwipeSound" />
+      <field name="projectileName" />
+    </var-group>
+    <var-group name="Config">
+      <field name="useWeaponTint" />
+      <field name="weaponActiveEffect" />
+      <field name="weaponEffect" />
+      <field name="weaponTintAlpha" />
+      <field name="weaponTintBlue" />
+      <field name="weaponTintGreen" />
+      <field name="weaponTintRed" />
+      <field name="weaponTrail" />
+    </var-group>
+    <var-group name="Melee">
+      <field name="meleeHitSound" />
+      <field name="meleeSwipeSound" />
+    </var-group>
+    <var-group name="Staff">
+      <field name="staffHitSound" />
+      <field name="staffSwipeSound" />
+    </var-group>
+  </record-type>
+</partial>

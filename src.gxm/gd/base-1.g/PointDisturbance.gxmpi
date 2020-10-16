@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="PointDisturbance">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="PointDisturbance">
+      <field name="fallOff" />
+      <field name="maxPeriod" />
+      <field name="maxRadius" />
+      <field name="maxStrength" />
+      <field name="minPeriod" />
+      <field name="minRadius" />
+      <field name="minStrength" />
+      <field name="mode" />
+      <field name="randomizePosition" />
+      <field name="randomizeRadius" />
+      <field name="step" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,57 @@
+﻿<partial>
+  <record-type name="ItemEnchantment" path="ItemEnchantment.tpl">
+    <inherits>
+      <inherit record="TemplateBase.ItemBase" />
+      <inherit record="AttributePak" />
+      <inherit record="TemplateBase.ItemSkillAugment" />
+      <inherit record="TemplateBase.RacialBonus" />
+      <inherit record="TemplateBase.PetBonusInc" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ItemEnchantment" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Enchantment">
+        <field name="amulet" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="axe" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="axe2h" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="bitmap" var-class="variable" var-type="file_tex" />
+        <field name="bracelet" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="chest" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="dagger" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="factionSource" var-class="picklist" var-type="string" var-default-value="Alone;Invisible;GenericMonster;Player;Survivors;Aetherials;Cthonians;Outlaws;Beasts;Drifters;NeutralNPC;User0;User1;User2;User3;User4;User5;User6;User7;User8;User9;User10;User11;User12;User13;User14;User15;User16;User17;User18;User19;User20" />
+        <field name="feet" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="hands" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="head" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="legs" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="mace" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="mace2h" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="medal" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="offhand" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="ranged1h" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="ranged2h" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="ring" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="scepter" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="shield" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="shoulders" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="spear" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="staff" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="sword" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="sword2h" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="useSound" var-class="variable" var-type="file_dbr" />
+        <field name="waist" var-class="variable" var-type="bool" var-default-value="1" />
+      </var-group>
+      <var-group name="WeaponFX">
+        <field name="attachPointName" var-class="variable" var-type="string" />
+        <field name="longFX" var-class="variable" var-type="file_dbr">
+          <description>sword1h, sword2h, gun2h, daggers, axes2h, hammer2h</description>
+        </field>
+        <field name="roundFX" var-class="variable" var-type="file_dbr">
+          <description>gun1h, hammers1h, axes1h, scepters</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

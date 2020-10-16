@@ -32,7 +32,7 @@ namespace Glacie.Cli.Arc.Commands
         {
             if (!archive.Exists(fileInfo.EntryName))
             {
-                var entry = archive.CreateEntry(fileInfo.EntryName);
+                var entry = archive.Add(fileInfo.EntryName);
                 {
                     using var entryStream = entry.OpenWrite();
                     CopyFileToStream(fileInfo.FileName, entryStream, progress);

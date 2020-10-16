@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="Actor">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Actor Variables">
+      <field name="DisplayAsQuestItem" />
+      <field name="actorHeight" />
+      <field name="actorRadius" />
+      <field name="allowTransparency" />
+      <field name="baseTexture" />
+      <field name="bumpTexture" />
+      <field name="castsShadows" />
+      <field name="description" />
+      <field name="maxTransparency" />
+      <field name="mesh" />
+      <field name="miniMapEntity" />
+      <field name="quest" />
+      <field name="scale" />
+      <field name="shadowBias" />
+      <field name="unloadedBoundingBoxExtents" />
+    </var-group>
+  </record-type>
+</partial>

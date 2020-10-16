@@ -1,0 +1,99 @@
+﻿<partial>
+  <record-type name="FixedItemLootTartarus">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Loot1">
+      <field name="loot1Chance" />
+      <field name="loot1Name1" />
+      <field name="loot1Name2" />
+      <field name="loot1Name3" />
+      <field name="loot1Name4" />
+      <field name="loot1Name5" />
+      <field name="loot1Name6" />
+      <field name="loot1Weight1" />
+      <field name="loot1Weight2" />
+      <field name="loot1Weight3" />
+      <field name="loot1Weight4" />
+      <field name="loot1Weight5" />
+      <field name="loot1Weight6" />
+    </var-group>
+    <var-group name="Loot2">
+      <field name="loot2Chance" />
+      <field name="loot2Name1" />
+      <field name="loot2Name2" />
+      <field name="loot2Name3" />
+      <field name="loot2Name4" />
+      <field name="loot2Name5" />
+      <field name="loot2Name6" />
+      <field name="loot2Weight1" />
+      <field name="loot2Weight2" />
+      <field name="loot2Weight3" />
+      <field name="loot2Weight4" />
+      <field name="loot2Weight5" />
+      <field name="loot2Weight6" />
+    </var-group>
+    <var-group name="Loot3">
+      <field name="loot3Chance" />
+      <field name="loot3Name1" />
+      <field name="loot3Name2" />
+      <field name="loot3Name3" />
+      <field name="loot3Name4" />
+      <field name="loot3Name5" />
+      <field name="loot3Name6" />
+      <field name="loot3Weight1" />
+      <field name="loot3Weight2" />
+      <field name="loot3Weight3" />
+      <field name="loot3Weight4" />
+      <field name="loot3Weight5" />
+      <field name="loot3Weight6" />
+    </var-group>
+    <var-group name="Loot4">
+      <field name="loot4Chance" />
+      <field name="loot4Name1" />
+      <field name="loot4Name2" />
+      <field name="loot4Name3" />
+      <field name="loot4Name4" />
+      <field name="loot4Name5" />
+      <field name="loot4Name6" />
+      <field name="loot4Weight1" />
+      <field name="loot4Weight2" />
+      <field name="loot4Weight3" />
+      <field name="loot4Weight4" />
+      <field name="loot4Weight5" />
+      <field name="loot4Weight6" />
+    </var-group>
+    <var-group name="Loot5">
+      <field name="loot5Chance" />
+      <field name="loot5Name1" />
+      <field name="loot5Name2" />
+      <field name="loot5Name3" />
+      <field name="loot5Name4" />
+      <field name="loot5Name5" />
+      <field name="loot5Name6" />
+      <field name="loot5Weight1" />
+      <field name="loot5Weight2" />
+      <field name="loot5Weight3" />
+      <field name="loot5Weight4" />
+      <field name="loot5Weight5" />
+      <field name="loot5Weight6" />
+    </var-group>
+    <var-group name="Loot6">
+      <field name="loot6Chance" />
+      <field name="loot6Name1" />
+      <field name="loot6Name2" />
+      <field name="loot6Name3" />
+      <field name="loot6Name4" />
+      <field name="loot6Name5" />
+      <field name="loot6Name6" />
+      <field name="loot6Weight1" />
+      <field name="loot6Weight2" />
+      <field name="loot6Weight3" />
+      <field name="loot6Weight4" />
+      <field name="loot6Weight5" />
+      <field name="loot6Weight6" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="InGameUI.ExitWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="exitAndSaveButton" />
+      <field name="exitBaseBitmap" />
+      <field name="exitCloseButton" />
+      <field name="exitOnlyButton" />
+      <field name="exitWindowTitle" />
+      <field name="importButton" />
+      <field name="optionsButton" />
+      <field name="resumeButton" />
+      <field name="saveOnlyButton" />
+    </var-group>
+  </record-type>
+</partial>

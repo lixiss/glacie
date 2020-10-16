@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="InGameUI.Includes.Border">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Border">
+      <field name="bottomTexture" />
+      <field name="leftTexture" />
+      <field name="lowerLeftTexture" />
+      <field name="lowerRightTexture" />
+      <field name="rightTexture" />
+      <field name="topTexture" />
+      <field name="upperLeftTexture" />
+      <field name="upperRightTexture" />
+    </var-group>
+  </record-type>
+</partial>

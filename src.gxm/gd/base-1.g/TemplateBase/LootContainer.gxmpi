@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="TemplateBase.LootContainer">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Loot">
+      <field name="levelOffset" />
+      <field name="lootClassification" />
+      <field name="lootTable" />
+      <field name="maxLevel" />
+      <field name="minLevel" />
+    </var-group>
+  </record-type>
+</partial>

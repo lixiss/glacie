@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="LootItemTable_DynWeight">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="bellSlope" />
+      <field name="defaultWeight" />
+      <field name="maxItemLevelEquation" />
+      <field name="minItemLevelEquation" />
+      <field name="targetLevelEquation" />
+    </var-group>
+    <var-group name="Loot">
+      <field name="itemNames" />
+    </var-group>
+  </record-type>
+</partial>

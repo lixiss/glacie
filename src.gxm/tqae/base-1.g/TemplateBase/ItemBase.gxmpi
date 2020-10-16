@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="TemplateBase.ItemBase">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Item Parameters">
+      <field name="cannotPickUp" />
+      <field name="cannotPickUpMultiple" />
+      <field name="dropMeshDontOverrideTextures" />
+      <field name="dropMeshOverride" />
+      <field name="dropSound" />
+      <field name="dropSound3D" />
+      <field name="dropSoundWater" />
+      <field name="itemClassification" />
+      <field name="itemCost" />
+      <field name="itemCostScalePercent" />
+      <field name="itemLevel" />
+      <field name="itemText" />
+    </var-group>
+    <var-group name="Item Requirements">
+      <field name="dexterityRequirement" />
+      <field name="intelligenceRequirement" />
+      <field name="levelRequirement" />
+      <field name="strengthRequirement" />
+    </var-group>
+  </record-type>
+</partial>

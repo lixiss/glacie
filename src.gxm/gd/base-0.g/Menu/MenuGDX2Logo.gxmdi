@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="Menu.MenuGDX2Logo" path="Menu/MenuGDX2Logo.tpl">
+    <var-group>
+      <var-group name="GDX2Logo">
+        <field name="baseTexture" var-class="variable" var-type="file_tex" />
+        <field name="bumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="height" var-class="variable" var-type="real" />
+        <field name="particles" var-class="variable" var-type="file_dbr" />
+        <field name="shader" var-class="variable" var-type="file_ssh" />
+        <field name="style" var-class="variable" var-type="string" />
+        <field name="width" var-class="variable" var-type="real" />
+        <field name="x" var-class="variable" var-type="real" />
+        <field name="xAlign" var-class="picklist" var-type="string" var-default-value="Left;Center;Right" />
+        <field name="xAnchor" var-class="picklist" var-type="string" var-default-value="Left;Center;Right" />
+        <field name="y" var-class="variable" var-type="real" />
+        <field name="yAlign" var-class="picklist" var-type="string" var-default-value="Top;Center;Bottom" />
+        <field name="yAnchor" var-class="picklist" var-type="string" var-default-value="Top;Center;Bottom" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

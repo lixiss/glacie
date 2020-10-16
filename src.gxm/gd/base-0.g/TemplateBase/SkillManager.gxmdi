@@ -1,0 +1,111 @@
+﻿<partial>
+  <record-type name="TemplateBase.SkillManager" path="TemplateBase/SkillManager.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string">
+          <description>SkillManager</description>
+        </field>
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Configuration">
+        <field name="primarySkillName" var-class="variable" var-type="file_dbr" />
+        <field name="secondarySkillName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Skill Manager">
+        <field name="devotionReclamationAetherCost" var-class="variable" var-type="int" />
+        <field name="devotionReclamationPointCosts" var-class="array" var-type="int" />
+        <field name="devotionReclamationPointTiers" var-class="array" var-type="int" />
+        <field name="masteryIncrementLevel" var-class="array" var-type="int" />
+        <field name="reclamationPointCosts" var-class="array" var-type="int" />
+        <field name="reclamationPointTiers" var-class="array" var-type="int" />
+      </var-group>
+      <var-group name="Skill Tree">
+        <field name="devotionTree" var-class="variable" var-type="file_dbr" />
+        <field name="potionTree" var-class="variable" var-type="file_dbr" />
+        <field name="potionTree2" var-class="variable" var-type="file_dbr" />
+        <field name="questTree" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree1" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree2" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree3" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree4" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree5" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree6" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree7" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree8" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree9" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree10" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree11" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree12" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree13" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree14" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree15" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree16" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree17" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree18" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree19" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree20" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree21" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree22" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree23" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree24" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree25" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree26" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree27" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree28" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree29" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree30" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree31" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree32" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree33" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree34" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree35" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree36" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree37" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree38" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree39" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree40" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree41" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree42" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree43" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree44" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree45" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree46" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree47" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree48" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree49" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree50" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree51" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree52" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree53" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree54" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree55" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree56" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree57" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree58" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree59" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree60" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree61" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree62" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree63" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree64" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree65" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree66" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree67" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree68" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree69" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree70" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree71" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree72" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree73" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree74" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree75" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree76" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree77" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree78" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree79" var-class="variable" var-type="file_dbr" />
+        <field name="skillTree80" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

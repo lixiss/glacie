@@ -1,0 +1,44 @@
+﻿<partial>
+  <record-type name="ItemEnchantment">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Enchantment">
+      <field name="amulet" />
+      <field name="axe" />
+      <field name="axe2h" />
+      <field name="bitmap" />
+      <field name="bracelet" />
+      <field name="chest" />
+      <field name="dagger" />
+      <field name="factionSource" />
+      <field name="feet" />
+      <field name="hands" />
+      <field name="head" />
+      <field name="legs" />
+      <field name="mace" />
+      <field name="mace2h" />
+      <field name="medal" />
+      <field name="offhand" />
+      <field name="ranged1h" />
+      <field name="ranged2h" />
+      <field name="ring" />
+      <field name="scepter" />
+      <field name="shield" />
+      <field name="shoulders" />
+      <field name="spear" />
+      <field name="staff" />
+      <field name="sword" />
+      <field name="sword2h" />
+      <field name="useSound" />
+      <field name="waist" />
+    </var-group>
+    <var-group name="WeaponFX">
+      <field name="attachPointName" />
+      <field name="longFX" />
+      <field name="roundFX" />
+    </var-group>
+  </record-type>
+</partial>

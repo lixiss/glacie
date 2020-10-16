@@ -1,0 +1,55 @@
+﻿<partial>
+  <record-type name="Decoration">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Decoration Animations">
+      <field name="animation" />
+      <field name="animation1" />
+      <field name="animation1Chance" />
+      <field name="animation2" />
+      <field name="animation2Chance" />
+      <field name="animation3" />
+      <field name="animation3Chance" />
+      <field name="animation4" />
+      <field name="animation4Chance" />
+      <field name="animation5" />
+      <field name="animation5Chance" />
+    </var-group>
+    <var-group name="Decoration Attachments">
+      <field name="attachObjectName1" />
+      <field name="attachObjectName2" />
+      <field name="attachObjectName3" />
+      <field name="attachObjectName4" />
+      <field name="attachPoint1" />
+      <field name="attachPoint2" />
+      <field name="attachPoint3" />
+      <field name="attachPoint4" />
+      <field name="boundingVolume" />
+    </var-group>
+    <var-group name="Decoration Config">
+      <field name="allowPathing" />
+    </var-group>
+    <var-group name="Decoration Sounds">
+      <field name="ambientSound" />
+      <field name="decorationSound1" />
+      <field name="decorationSound1Chance" />
+      <field name="decorationSound2" />
+      <field name="decorationSound2Chance" />
+      <field name="decorationSound3" />
+      <field name="decorationSound3Chance" />
+      <field name="decorationSound4" />
+      <field name="decorationSound4Chance" />
+      <field name="periodicSound" />
+      <field name="randomPeriod" />
+      <field name="randomPeriodMax" />
+      <field name="randomPeriodMin" />
+      <field name="soundPeriod" />
+    </var-group>
+    <var-group name="Lua Hooks">
+      <field name="entityHooks" />
+    </var-group>
+  </record-type>
+</partial>

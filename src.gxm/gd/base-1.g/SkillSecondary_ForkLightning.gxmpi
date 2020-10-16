@@ -1,0 +1,9 @@
+﻿<partial>
+  <record-type name="SkillSecondary_ForkLightning">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+  </record-type>
+</partial>

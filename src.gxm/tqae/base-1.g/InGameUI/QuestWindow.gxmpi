@@ -1,0 +1,49 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="beginQuestSoundPak" />
+      <field name="completeQuestSoundPak" />
+      <field name="journalUpdateText" />
+      <field name="questAddedText" />
+      <field name="questCloseButton" />
+      <field name="questCompleteText" />
+      <field name="questJournalEntryTab" />
+      <field name="questJournalParchmentBitmap" />
+      <field name="questJournalTreeWindow" />
+      <field name="questJournalWindowBitmap" />
+      <field name="questLocationButton1" />
+      <field name="questLocationButton2" />
+      <field name="questLocationButton3" />
+      <field name="questLocationButton4" />
+      <field name="questLocationButton5" />
+      <field name="questLocationButton6" />
+      <field name="questLocationButton7" />
+      <field name="questLocationButton8" />
+      <field name="questLogDialogButton" />
+      <field name="questLogDialogTab" />
+      <field name="questLogSummaryButton" />
+      <field name="questLogSummaryTab" />
+      <field name="questLogWindowBitmap" />
+      <field name="questMapBitmap1" />
+      <field name="questMapBitmap2" />
+      <field name="questMapBitmap3" />
+      <field name="questMapBitmap4" />
+      <field name="questMapBitmap5" />
+      <field name="questMapBitmap6" />
+      <field name="questTabJournalButton" />
+      <field name="questTabJournalButtonRollover" />
+      <field name="questTabLogButton" />
+      <field name="questTabLogButtonRollover" />
+      <field name="questUnsolvableLogText" />
+      <field name="questUnsolvableText" />
+      <field name="questUpdateText" />
+      <field name="unsolvableQuestSoundPak" />
+      <field name="updateQuestSoundPak" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,30 @@
+﻿<partial>
+  <record-type name="Actor" path="Actor.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Actor" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Actor Variables">
+        <field name="DisplayAsQuestItem" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="actorHeight" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="actorRadius" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="allowTransparency" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="baseTexture" var-class="variable" var-type="file_tex" />
+        <field name="bumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="castsShadows" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="description" var-class="variable" var-type="string" />
+        <field name="maxTransparency" var-class="variable" var-type="real" var-default-value="0.5" />
+        <field name="mesh" var-class="variable" var-type="file_msh" />
+        <field name="miniMapEntity" var-class="variable" var-type="file_dbr" />
+        <field name="quest" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Is this a quest-related object?</description>
+        </field>
+        <field name="scale" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="shadowBias" var-class="variable" var-type="real" var-default-value="0.01" />
+        <field name="unloadedBoundingBoxExtents" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

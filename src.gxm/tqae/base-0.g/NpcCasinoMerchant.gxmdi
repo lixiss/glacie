@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="NpcCasinoMerchant" path="NpcCasinoMerchant.tpl">
+    <inherits>
+      <inherit record="Npc" />
+      <inherit record="CasinoMerchantConf" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="NpcCasinoMerchant" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="SpawnSound1" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="SpawnSound2" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="orbSpawnOffsetX" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="orbSpawnOffsetY" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="orbSpawnOffsetZ" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,144 @@
+﻿<partial>
+  <record-type name="Menu.MenuParticleSystem" path="Menu/MenuParticleSystem.tpl">
+    <var-group>
+      <var-group name="MenuParticleSystem">
+        <var-group name="System 1">
+          <field name="effect1" var-class="picklist" var-type="string" var-default-value="Standard;LongFade;Sparkle" />
+          <field name="height1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="particleColorEndA1" var-class="variable" var-type="real" />
+          <field name="particleColorEndB1" var-class="variable" var-type="real" />
+          <field name="particleColorEndG1" var-class="variable" var-type="real" />
+          <field name="particleColorEndR1" var-class="variable" var-type="real" />
+          <field name="particleColorStartA1" var-class="variable" var-type="real" />
+          <field name="particleColorStartB1" var-class="variable" var-type="real" />
+          <field name="particleColorStartG1" var-class="variable" var-type="real" />
+          <field name="particleColorStartR1" var-class="variable" var-type="real" />
+          <field name="particleDirectionX1" var-class="variable" var-type="real" />
+          <field name="particleDirectionY1" var-class="variable" var-type="real" />
+          <field name="particleGravity1" var-class="variable" var-type="real" />
+          <field name="particleGrowthRate1" var-class="variable" var-type="real" />
+          <field name="particleLife1" var-class="variable" var-type="real" />
+          <field name="particleRotationMax1" var-class="variable" var-type="real" />
+          <field name="particleRotationMin1" var-class="variable" var-type="real" />
+          <field name="particleRotationSpeed1" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxX1" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxY1" var-class="variable" var-type="real" />
+          <field name="particleSizeMinX1" var-class="variable" var-type="real" />
+          <field name="particleSizeMinY1" var-class="variable" var-type="real" />
+          <field name="particleSpawnRate1" var-class="variable" var-type="real" var-default-value="50" />
+          <field name="particleSpeed1" var-class="variable" var-type="real" />
+          <field name="positionX1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="positionY1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="shader1" var-class="variable" var-type="file_ssh" var-default-value="shaders/basictexture.ssh" />
+          <field name="style1" var-class="variable" var-type="string" var-default-value="normal" />
+          <field name="texture1" var-class="variable" var-type="file_tex" />
+          <field name="width1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="xAlign1" var-class="picklist" var-type="string" var-default-value="Left;Center;Right" />
+          <field name="yAlign1" var-class="picklist" var-type="string" var-default-value="Top;Center;Bottom" />
+        </var-group>
+        <var-group name="System 2">
+          <field name="effect2" var-class="picklist" var-type="string" var-default-value="Standard;LongFade;Sparkle" />
+          <field name="height2" var-class="variable" var-type="int" var-default-value="200" />
+          <field name="particleColorEndA2" var-class="variable" var-type="real" />
+          <field name="particleColorEndB2" var-class="variable" var-type="real" />
+          <field name="particleColorEndG2" var-class="variable" var-type="real" />
+          <field name="particleColorEndR2" var-class="variable" var-type="real" />
+          <field name="particleColorStartA2" var-class="variable" var-type="real" />
+          <field name="particleColorStartB2" var-class="variable" var-type="real" />
+          <field name="particleColorStartG2" var-class="variable" var-type="real" />
+          <field name="particleColorStartR2" var-class="variable" var-type="real" />
+          <field name="particleDirectionX2" var-class="variable" var-type="real" />
+          <field name="particleDirectionY2" var-class="variable" var-type="real" />
+          <field name="particleGravity2" var-class="variable" var-type="real" />
+          <field name="particleGrowthRate2" var-class="variable" var-type="real" />
+          <field name="particleLife2" var-class="variable" var-type="real" />
+          <field name="particleRotationMax2" var-class="variable" var-type="real" />
+          <field name="particleRotationMin2" var-class="variable" var-type="real" />
+          <field name="particleRotationSpeed2" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxX2" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxY2" var-class="variable" var-type="real" />
+          <field name="particleSizeMinX2" var-class="variable" var-type="real" />
+          <field name="particleSizeMinY2" var-class="variable" var-type="real" />
+          <field name="particleSpawnRate2" var-class="variable" var-type="real" var-default-value="50" />
+          <field name="particleSpeed2" var-class="variable" var-type="real" />
+          <field name="positionX2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="positionY2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="shader2" var-class="variable" var-type="file_ssh" var-default-value="shaders/basictexture.ssh" />
+          <field name="style2" var-class="variable" var-type="string" var-default-value="normal" />
+          <field name="texture2" var-class="variable" var-type="file_tex" />
+          <field name="width2" var-class="variable" var-type="int" var-default-value="200" />
+          <field name="xAlign2" var-class="picklist" var-type="string" var-default-value="Left;Center;Right" />
+          <field name="yAlign2" var-class="picklist" var-type="string" var-default-value="Top;Center;Bottom" />
+        </var-group>
+        <var-group name="System 3">
+          <field name="effect3" var-class="picklist" var-type="string" var-default-value="Standard;LongFade;Sparkle" />
+          <field name="height3" var-class="variable" var-type="int" var-default-value="300" />
+          <field name="particleColorEndA3" var-class="variable" var-type="real" />
+          <field name="particleColorEndB3" var-class="variable" var-type="real" />
+          <field name="particleColorEndG3" var-class="variable" var-type="real" />
+          <field name="particleColorEndR3" var-class="variable" var-type="real" />
+          <field name="particleColorStartA3" var-class="variable" var-type="real" />
+          <field name="particleColorStartB3" var-class="variable" var-type="real" />
+          <field name="particleColorStartG3" var-class="variable" var-type="real" />
+          <field name="particleColorStartR3" var-class="variable" var-type="real" />
+          <field name="particleDirectionX3" var-class="variable" var-type="real" />
+          <field name="particleDirectionY3" var-class="variable" var-type="real" />
+          <field name="particleGravity3" var-class="variable" var-type="real" />
+          <field name="particleGrowthRate3" var-class="variable" var-type="real" />
+          <field name="particleLife3" var-class="variable" var-type="real" />
+          <field name="particleRotationMax3" var-class="variable" var-type="real" />
+          <field name="particleRotationMin3" var-class="variable" var-type="real" />
+          <field name="particleRotationSpeed3" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxX3" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxY3" var-class="variable" var-type="real" />
+          <field name="particleSizeMinX3" var-class="variable" var-type="real" />
+          <field name="particleSizeMinY3" var-class="variable" var-type="real" />
+          <field name="particleSpawnRate3" var-class="variable" var-type="real" var-default-value="50" />
+          <field name="particleSpeed3" var-class="variable" var-type="real" />
+          <field name="positionX3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="positionY3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="shader3" var-class="variable" var-type="file_ssh" var-default-value="shaders/basictexture.ssh" />
+          <field name="style3" var-class="variable" var-type="string" var-default-value="normal" />
+          <field name="texture3" var-class="variable" var-type="file_tex" />
+          <field name="width3" var-class="variable" var-type="int" var-default-value="300" />
+          <field name="xAlign3" var-class="picklist" var-type="string" var-default-value="Left;Center;Right" />
+          <field name="yAlign3" var-class="picklist" var-type="string" var-default-value="Top;Center;Bottom" />
+        </var-group>
+        <var-group name="System 4">
+          <field name="effect4" var-class="picklist" var-type="string" var-default-value="Standard;LongFade;Sparkle" />
+          <field name="height4" var-class="variable" var-type="int" var-default-value="400" />
+          <field name="particleColorEndA4" var-class="variable" var-type="real" />
+          <field name="particleColorEndB4" var-class="variable" var-type="real" />
+          <field name="particleColorEndG4" var-class="variable" var-type="real" />
+          <field name="particleColorEndR4" var-class="variable" var-type="real" />
+          <field name="particleColorStartA4" var-class="variable" var-type="real" />
+          <field name="particleColorStartB4" var-class="variable" var-type="real" />
+          <field name="particleColorStartG4" var-class="variable" var-type="real" />
+          <field name="particleColorStartR4" var-class="variable" var-type="real" />
+          <field name="particleDirectionX4" var-class="variable" var-type="real" />
+          <field name="particleDirectionY4" var-class="variable" var-type="real" />
+          <field name="particleGravity4" var-class="variable" var-type="real" />
+          <field name="particleGrowthRate4" var-class="variable" var-type="real" />
+          <field name="particleLife4" var-class="variable" var-type="real" />
+          <field name="particleRotationMax4" var-class="variable" var-type="real" />
+          <field name="particleRotationMin4" var-class="variable" var-type="real" />
+          <field name="particleRotationSpeed4" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxX4" var-class="variable" var-type="real" />
+          <field name="particleSizeMaxY4" var-class="variable" var-type="real" />
+          <field name="particleSizeMinX4" var-class="variable" var-type="real" />
+          <field name="particleSizeMinY4" var-class="variable" var-type="real" />
+          <field name="particleSpawnRate4" var-class="variable" var-type="real" var-default-value="50" />
+          <field name="particleSpeed4" var-class="variable" var-type="real" />
+          <field name="positionX4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="positionY4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="shader4" var-class="variable" var-type="file_ssh" var-default-value="shaders/basictexture.ssh" />
+          <field name="style4" var-class="variable" var-type="string" var-default-value="normal" />
+          <field name="texture4" var-class="variable" var-type="file_tex" />
+          <field name="width4" var-class="variable" var-type="int" var-default-value="400" />
+          <field name="xAlign4" var-class="picklist" var-type="string" var-default-value="Left;Center;Right" />
+          <field name="yAlign4" var-class="picklist" var-type="string" var-default-value="Top;Center;Bottom" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

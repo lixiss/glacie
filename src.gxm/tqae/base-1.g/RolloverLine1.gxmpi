@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="RolloverLine1">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="Line1FormatTag" />
+      <field name="Line1FormatTag2" />
+      <field name="Line1Style" />
+      <field name="Line1Tag" />
+      <field name="rolloverStyle" />
+    </var-group>
+  </record-type>
+</partial>

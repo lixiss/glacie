@@ -1,0 +1,34 @@
+﻿<partial>
+  <record-type name="InGameUI.Quest2Journal">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Quest2Journal">
+      <field name="background" />
+      <field name="completeBitmap" />
+      <field name="contentWidth" />
+      <field name="contentX" />
+      <field name="contentY" />
+      <field name="incentiveSectionSpacing" />
+      <field name="incentiveStyle" />
+      <field name="incentiveTitleStyle" />
+      <field name="itemBorderAdjust" />
+      <field name="itemSectionSpacing" />
+      <field name="itemSpacing" />
+      <field name="majorRowHeight" />
+      <field name="minorRowHeight" />
+      <field name="objectiveSectionSpacing" />
+      <field name="objectiveStyle" />
+      <field name="objectiveTitleStyle" />
+      <field name="questTitle" />
+      <field name="rewardSectionSpacing" />
+      <field name="rewardStyle" />
+      <field name="rewardTitleStyle" />
+      <field name="showQuestTitle" />
+      <field name="taskText" />
+      <field name="taskTitle" />
+    </var-group>
+  </record-type>
+</partial>

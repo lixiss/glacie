@@ -1,0 +1,54 @@
+﻿<partial>
+  <record-type name="FixedLever" path="FixedLever.tpl">
+    <inherits>
+      <inherit record="InteractableHookPack" />
+      <inherit record="TemplateBase.FixedActor" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="FixedLever" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="FixedLever">
+        <field name="autoClose" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Automatically close after opening</description>
+        </field>
+        <field name="autoClosePeriod" var-class="variable" var-type="real">
+          <description>Time in seconds after which automatically closed</description>
+        </field>
+        <field name="closeAnimation" var-class="variable" var-type="file_anm">
+          <description>Animation to play when closing</description>
+        </field>
+        <field name="closeAnimationSpeed" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>Speed at which to play close animation</description>
+        </field>
+        <field name="closeSound" var-class="variable" var-type="file_dbr">
+          <description>Sound to play when closing</description>
+        </field>
+        <field name="interaction" var-class="picklist" var-type="string" var-default-value="OpenClose;Open;Close">
+          <description>Possible interactions</description>
+        </field>
+        <field name="locked" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Starts locked?</description>
+        </field>
+        <field name="lockedSound" var-class="variable" var-type="file_dbr">
+          <description>Sound to play when used if locked</description>
+        </field>
+        <field name="lockedTag" var-class="variable" var-type="string" />
+        <field name="open" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Starts open?</description>
+        </field>
+        <field name="openAnimation" var-class="variable" var-type="file_anm">
+          <description>Animation to play when opening</description>
+        </field>
+        <field name="openAnimationSpeed" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>Speed at which to play open animation</description>
+        </field>
+        <field name="openSound" var-class="variable" var-type="file_dbr">
+          <description>Sound to play when opening</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

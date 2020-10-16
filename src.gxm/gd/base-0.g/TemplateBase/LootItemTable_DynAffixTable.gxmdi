@@ -1,0 +1,336 @@
+﻿<partial>
+  <record-type name="TemplateBase.LootItemTable_DynAffixTable" path="TemplateBase/LootItemTable_DynAffixTable.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="bothPrefixSuffix" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+        <field name="brokenOnly" var-class="variable" var-type="int" />
+        <field name="noPrefixNoSuffix" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+        <field name="normalPrefixRareSuffix" var-class="variable" var-type="int" />
+        <field name="prefixOnly" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+        <field name="rareBothPrefixSuffix" var-class="variable" var-type="int" />
+        <field name="rarePrefixNormalSuffix" var-class="variable" var-type="int" />
+        <field name="rarePrefixOnly" var-class="variable" var-type="int" />
+        <field name="rareSuffixOnly" var-class="variable" var-type="int" />
+        <field name="suffixOnly" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+      </var-group>
+      <var-group name="Randomizer Broken">
+        <field name="brokenTableName1" var-class="variable" var-type="file_dbr">
+          <description>LootRandomizerTable or LootRandomizer</description>
+        </field>
+      </var-group>
+      <var-group name="Randomizer Prefix">
+        <field name="prefixTableLevelMax1" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax2" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax3" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax4" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax5" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax6" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax7" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax8" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax9" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax10" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax11" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax12" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax13" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax14" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax15" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax16" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax17" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMax18" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin1" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin2" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin3" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin4" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin5" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin6" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin7" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin8" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin9" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin10" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin11" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin12" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin13" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin14" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin15" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin16" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin17" var-class="variable" var-type="int" />
+        <field name="prefixTableLevelMin18" var-class="variable" var-type="int" />
+        <field name="prefixTableName1" var-class="variable" var-type="file_dbr">
+          <description>LootRandomizerTable or LootRandomizer</description>
+        </field>
+        <field name="prefixTableName2" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName3" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName4" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName5" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName6" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName7" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName8" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName9" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName10" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName11" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName12" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName13" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName14" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName15" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName16" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName17" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableName18" var-class="variable" var-type="file_dbr" />
+        <field name="prefixTableWeight1" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight2" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight3" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight4" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight5" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight6" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight7" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight8" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight9" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight10" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight11" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight12" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight13" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight14" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight15" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight16" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight17" var-class="variable" var-type="int" />
+        <field name="prefixTableWeight18" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Randomizer Rare Prefix">
+        <field name="rarePrefixTableLevelMax1" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax2" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax3" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax4" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax5" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax6" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax7" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax8" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax9" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax10" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax11" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax12" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax13" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax14" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax15" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax16" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax17" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMax18" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin1" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin2" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin3" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin4" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin5" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin6" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin7" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin8" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin9" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin10" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin11" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin12" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin13" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin14" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin15" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin16" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin17" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableLevelMin18" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableName1" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName2" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName3" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName4" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName5" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName6" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName7" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName8" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName9" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName10" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName11" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName12" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName13" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName14" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName15" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName16" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName17" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableName18" var-class="variable" var-type="file_dbr" />
+        <field name="rarePrefixTableWeight1" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight2" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight3" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight4" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight5" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight6" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight7" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight8" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight9" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight10" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight11" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight12" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight13" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight14" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight15" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight16" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight17" var-class="variable" var-type="int" />
+        <field name="rarePrefixTableWeight18" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Randomizer Rare Suffix">
+        <field name="rareSuffixTableLevelMax1" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax2" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax3" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax4" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax5" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax6" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax7" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax8" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax9" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax10" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax11" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax12" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax13" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax14" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax15" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax16" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax17" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMax18" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin1" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin2" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin3" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin4" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin5" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin6" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin7" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin8" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin9" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin10" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin11" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin12" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin13" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin14" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin15" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin16" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin17" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableLevelMin18" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableName1" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName2" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName3" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName4" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName5" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName6" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName7" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName8" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName9" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName10" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName11" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName12" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName13" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName14" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName15" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName16" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName17" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableName18" var-class="variable" var-type="file_dbr" />
+        <field name="rareSuffixTableWeight1" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight2" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight3" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight4" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight5" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight6" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight7" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight8" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight9" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight10" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight11" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight12" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight13" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight14" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight15" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight16" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight17" var-class="variable" var-type="int" />
+        <field name="rareSuffixTableWeight18" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Randomizer Suffix">
+        <field name="suffixTableLevelMax1" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax2" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax3" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax4" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax5" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax6" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax7" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax8" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax9" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax10" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax11" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax12" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax13" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax14" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax15" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax16" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax17" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMax18" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin1" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin2" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin3" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin4" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin5" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin6" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin7" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin8" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin9" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin10" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin11" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin12" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin13" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin14" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin15" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin16" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin17" var-class="variable" var-type="int" />
+        <field name="suffixTableLevelMin18" var-class="variable" var-type="int" />
+        <field name="suffixTableName1" var-class="variable" var-type="file_dbr">
+          <description>LootRandomizerTable or LootRandomizer</description>
+        </field>
+        <field name="suffixTableName2" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName3" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName4" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName5" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName6" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName7" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName8" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName9" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName10" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName11" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName12" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName13" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName14" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName15" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName16" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName17" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableName18" var-class="variable" var-type="file_dbr" />
+        <field name="suffixTableWeight1" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight2" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight3" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight4" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight5" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight6" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight7" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight8" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight9" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight10" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight11" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight12" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight13" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight14" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight15" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight16" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight17" var-class="variable" var-type="int" />
+        <field name="suffixTableWeight18" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

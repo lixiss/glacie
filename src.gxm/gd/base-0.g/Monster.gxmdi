@@ -1,0 +1,114 @@
+﻿<partial>
+  <record-type name="Monster" path="Monster.tpl">
+    <inherits>
+      <inherit record="Character" />
+      <inherit record="TemplateBase.MonsterSkillManager" />
+      <inherit record="TemplateBase.CharacterLoot" />
+      <inherit record="QuestMarker" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Monster" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Ambush Parameters">
+        <field name="ambushDissolveTexture" var-class="variable" var-type="file_tex" var-default-value="System\Textures\cloud.tex">
+          <description>texture for the dissolve effect</description>
+        </field>
+        <field name="ambushDissolveTime" var-class="variable" var-type="int" var-default-value="0">
+          <description>length of dissolve. 0=off</description>
+        </field>
+      </var-group>
+      <var-group name="Monster Parameters">
+        <var-group name="Music">
+          <field name="MonsterMusic" var-class="variable" var-type="file_dbr" />
+          <field name="MonsterMusicRadius" var-class="variable" var-type="real" var-default-value="0.0" />
+        </var-group>
+        <field name="StatusIcon" var-class="variable" var-type="file_tex" />
+        <field name="StatusIconRed" var-class="variable" var-type="file_tex" />
+        <field name="alertAnimChance" var-class="variable" var-type="int" var-default-value="100">
+          <description>chance to play alert animation</description>
+        </field>
+        <field name="alertSound" var-class="variable" var-type="file_dbr" />
+        <field name="alertSoundChance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="aliveSound" var-class="variable" var-type="file_dbr" />
+        <field name="ambientPeriodMax" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="ambientPeriodMin" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="ambientSound" var-class="variable" var-type="file_dbr" />
+        <field name="controller" var-class="variable" var-type="file_dbr" var-default-value="Records\Controllers\Monster\DefaultMonsterController.dbr" />
+        <field name="controllerAggressive" var-class="variable" var-type="file_dbr" />
+        <field name="controllerDefensive" var-class="variable" var-type="file_dbr" />
+        <field name="deathFromEnemyDelay" var-class="variable" var-type="real" var-default-value="0.0">
+          <description>delay in seconds</description>
+        </field>
+        <field name="deathFromEnemyRange" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="dropItems" var-class="variable" var-type="bool" var-default-value="1">
+          <description>drop items on death?</description>
+        </field>
+        <field name="emoteSound" var-class="variable" var-type="file_dbr">
+          <description>soundpak to play with emote animation</description>
+        </field>
+        <field name="fleeAnimChance" var-class="variable" var-type="int" var-default-value="100">
+          <description>percent chance to play flee animation</description>
+        </field>
+        <field name="fleeSound" var-class="variable" var-type="file_dbr" />
+        <field name="fleeSoundChance" var-class="variable" var-type="int" var-default-value="100">
+          <description>percent chance to play flee sound</description>
+        </field>
+        <field name="forceCollision" var-class="variable" var-type="bool" var-default-value="0">
+          <description>force collision (ignores hostility)</description>
+        </field>
+        <field name="forceNoCollision" var-class="variable" var-type="bool" var-default-value="0">
+          <description>force no collision (ignores hostility)</description>
+        </field>
+        <field name="giveXP" var-class="variable" var-type="bool" var-default-value="1">
+          <description>give XP on death?</description>
+        </field>
+        <field name="healthGainOnKillDifficulty" var-class="variable" var-type="int" var-default-value="0">
+          <description>difficulty level where health gain is enabled</description>
+        </field>
+        <field name="healthGainOnKillPct" var-class="variable" var-type="int" var-default-value="0">
+          <description>percent of max health to gain when killing players</description>
+        </field>
+        <field name="lifeTime" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="monsterBaseTexture" var-class="array" var-type="file_tex" />
+        <field name="monsterBumpTexture" var-class="array" var-type="file_tex" />
+        <field name="monsterClassification" var-class="picklist" var-type="string" var-default-value="Common;Champion;Hero;Boss;Quest;" />
+        <field name="monsterIconHeight" var-class="variable" var-type="real" var-default-value="3" />
+        <field name="monsterMesh" var-class="array" var-type="file_msh" />
+        <field name="perPartyMemberDropChance" var-class="array" var-type="int" var-default-value="100">
+          <description>Chance of dropping each item dbr per player in multiplayer game</description>
+        </field>
+        <field name="perPartyMemberDropItemName" var-class="array" var-type="file_dbr">
+          <description>Item dbrs to drop for each player in a multiplayer game</description>
+        </field>
+        <field name="petAcknowledgeSound" var-class="variable" var-type="file_dbr" />
+        <field name="petAttackSound" var-class="variable" var-type="file_dbr" />
+        <field name="rallyAnimChance" var-class="variable" var-type="int" var-default-value="100">
+          <description>chance to play rally animation</description>
+        </field>
+        <field name="rallySound" var-class="variable" var-type="file_dbr" />
+        <field name="rallySoundChance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="rampageSound" var-class="variable" var-type="file_dbr" />
+        <field name="rampageSoundChance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="rampageSoundDelay" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="removeOnUnload" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Force a monster to be destroyed on unload</description>
+        </field>
+        <field name="showStatusWidgetWhenPet" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="stunResistanceInc" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="treasureProxyName" var-class="variable" var-type="file_dbr" />
+        <field name="waitingAnimChance" var-class="variable" var-type="int">
+          <description>chance to play animation while waiting to attack</description>
+        </field>
+        <field name="waitingAnimDelay" var-class="variable" var-type="int" var-default-value="5000">
+          <description>only try to play anim once every this many millisec</description>
+        </field>
+        <field name="waitingAnimSound" var-class="variable" var-type="file_dbr">
+          <description>sound pak to play with animation</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

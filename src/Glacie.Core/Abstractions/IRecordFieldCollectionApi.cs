@@ -9,7 +9,7 @@ namespace Glacie.Abstractions
 
     internal interface IRecordFieldCollectionApi<TField, TFieldOrNull, TFieldOutOrNull>
     {
-        IEnumerable<TField> GetAll();
+        IEnumerable<TField> SelectAll();
 
         bool TryGet(string name, out TFieldOutOrNull value);
         bool TryGet(string name, ArzRecordOptions options, out TFieldOutOrNull value);

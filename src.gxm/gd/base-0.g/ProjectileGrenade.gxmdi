@@ -1,0 +1,31 @@
+﻿<partial>
+  <record-type name="ProjectileGrenade" path="ProjectileGrenade.tpl">
+    <inherits>
+      <inherit record="TemplateBase.ProjectileBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ProjectileGrenade" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Projectile Config">
+        <field name="aeProjectileName" var-class="variable" var-type="file_dbr" />
+        <field name="disableRotation" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="harmlessInFlight" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Set true to ignore targets while in flight</description>
+        </field>
+        <field name="launchAngle" var-class="variable" var-type="real" var-default-value="45" />
+        <field name="minimumDistance" var-class="variable" var-type="real">
+          <description>Minimum travel distance before impact registers with a target</description>
+        </field>
+        <field name="projectileVelocity" var-class="variable" var-type="real">
+          <description>Min V to use Angle</description>
+        </field>
+      </var-group>
+      <var-group name="Projectile Sounds">
+        <field name="projectileBounceSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

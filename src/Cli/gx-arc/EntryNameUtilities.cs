@@ -34,11 +34,11 @@ namespace Glacie.Cli.Arc
             {
                 throw Error.InvalidOperation("Entry name ends with special name.");
             }
-            else if (Path.IsPathFullyQualified(value))
+            else if (System.IO.Path.IsPathFullyQualified(value))
             {
                 throw Error.InvalidOperation("Entry name must not be fully qualified. You should specify relative-to option.");
             }
-            else if (Path.IsPathRooted(value))
+            else if (System.IO.Path.IsPathRooted(value))
             {
                 throw Error.InvalidOperation("Entry name must not be rooted. You should specify relative-to option.");
             }

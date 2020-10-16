@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestJournalEntryTab">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="DescriptionTitleStyle" />
+      <field name="FontStyle" />
+      <field name="RewardFontStyle" />
+      <field name="RewardTitleFontStyle" />
+      <field name="ScrollWindow" />
+    </var-group>
+  </record-type>
+</partial>

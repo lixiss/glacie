@@ -1,0 +1,46 @@
+﻿<partial>
+  <record-type name="InGameUI.FactionsWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="factionBarRollover" />
+      <field name="factionBitmap" />
+      <field name="factionBountyBox" />
+      <field name="factionBountyBoxBitmap" />
+      <field name="factionBountyBoxTitle" />
+      <field name="factionCloseButton" />
+      <field name="factionInfoBox" />
+      <field name="factionInfoBoxStyle" />
+      <field name="factionInfoBoxWidth" />
+      <field name="factionLargeNegativeBar" />
+      <field name="factionLargePositiveBar" />
+      <field name="factionListItem" />
+      <field name="factionLowerBarBitmap" />
+      <field name="factionNameText" />
+      <field name="factionNegativeBar" />
+      <field name="factionNegativeBarOverlay" />
+      <field name="factionNegativeBooster" />
+      <field name="factionNeutralBar" />
+      <field name="factionPositiveBar" />
+      <field name="factionPositiveBarOverlay" />
+      <field name="factionPositiveBooster" />
+      <field name="factionScrollWindow" />
+      <field name="factionSmallSymbol" />
+      <field name="factionSoundNameDown" />
+      <field name="factionSymbol" />
+      <field name="factionText" />
+      <field name="factionTitleText" />
+      <field name="factionUpperBarBitmap" />
+      <field name="negativeTier1" />
+      <field name="negativeTier2" />
+      <field name="negativeTier3" />
+      <field name="positiveTier1" />
+      <field name="positiveTier2" />
+      <field name="positiveTier3" />
+      <field name="positiveTier4" />
+    </var-group>
+  </record-type>
+</partial>

@@ -8,26 +8,31 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Abstractions\IDatabaseTypeProvider.cs" />
-    <Compile Include="Abstractions\IMetadataProvider.cs" />
-    <Compile Include="Abstractions\IRecordTypeProvider.cs" />
-    <Compile Include="Abstractions\ITemplateProvider.cs" />
-    <Compile Include="Abstractions\MetadataProvider.cs" />
-    <Compile Include="Abstractions\TemplateProvider.cs" />
-    <Compile Include="CachedStringTransform.cs" />
-    <Compile Include="EphemeralMetadataProvider.cs" />
-    <Compile Include="Factories\MetadataProviderFactory.cs" />
-    <Compile Include="Factories\MetadataProviderFactoryOptions.cs" />
-    <Compile Include="TemplateMetadataProvider.cs" />
-    <Compile Include="PathUtilities.cs" />
-    <Compile Include="Implementation\TemplateProviderImpl.cs" />
-    <Compile Include="Factories\TemplateProviderFactory.cs" />
-    <Compile Include="Factories\TemplateResourceProviderFactory.cs" />
-    <Compile Include="WellKnownFieldNames.cs" />
+    <Compile Include="Providers\Templates\TemplateMetadataProvider.cs" />
+    <Compile Include="Providers\Templates\TemplateMetadataReader.cs" />
+    <None Include="__MBFactory.cs" />
+    <None Include="__MetadataProviderFactory.cs" />
+    <None Include="Providers\Templates\__ResourceBundleDiscoveryResult.cs" />
+    <Compile Include="Diagnostics\DiagnosticFactory.cs" />
+    <Compile Include="Providers\Ephemeral\__EphemeralMetadataProvider.cs" />
+    <Compile Include="__OLD_MetadataBuilder.cs" />
+    <None Include="Providers\Templates\__TemplateMetadataProvider.cs" />
+    <None Include="Providers\Templates\__TemplateParser.cs" />
+    <None Include="Providers\Templates\__TemplatesResourceBundleDiscoverer.cs" />
+    <None Include="Providers\Templates\__TemplatesLoader.cs" />
+    <None Include="_TemplateProvider_WorkButNotSureInProvider\__obs__ITemplateResolver.cs" />
+    <None Include="_TemplateProvider_WorkButNotSureInProvider\__obs__ITemplateProvider.cs" />
+    <Compile Include="Abstractions\__IMetadataResolver.cs" />
+    <Compile Include="Abstractions\__MetadataProvider.cs" />
+    <Compile Include="Abstractions\__IMetadataProvider.cs" />
+    <None Include="_TemplateProvider_WorkButNotSureInProvider\__obs__TemplateProvider.cs" />
+    <None Include="_TemplateProvider_WorkButNotSureInProvider\__obs__TemplateResolver.cs" />
+    <Compile Include="Utilities\Constants.cs" />
+    <Compile Include="Utilities\WellKnownFieldNames.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -35,15 +40,21 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
-    <ProjectReference Include="..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
-    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
-    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
-    <ProjectReference Include="..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
-    <ProjectReference Include="..\Glacie.Data.Tpl\Glacie.Data.Tpl.csproj" />
-    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Resources\Glacie.Data.Resources.csproj" />
     <ProjectReference Include="..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Templates\Glacie.Data.Templates.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
     <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
-    <ProjectReference Include="..\Glacie.Resources\Glacie.Resources.csproj" />
+    <ProjectReference Include="..\Glacie.Resources.GX1\Glacie.Resources.GX1.csproj" />
+    <ProjectReference Include="..\Glacie.Targeting.GX1\Glacie.Targeting.GX1.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Providers\Glacie\" />
+    <Folder Include="Resolvers\" />
   </ItemGroup>
 
 </Project>

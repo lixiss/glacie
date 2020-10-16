@@ -1,0 +1,35 @@
+﻿<partial>
+  <record-type name="InGameUI.Quest2LogTree">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="eliteStyle" />
+      <field name="expandButton" />
+      <field name="groupNameText" />
+      <field name="hoverColor.A" />
+      <field name="hoverColor.G" />
+      <field name="hoverColor.R" />
+      <field name="hoverCover.B" />
+      <field name="indentWidth" />
+      <field name="mainQuestIcon" />
+      <field name="majorRowHeight" />
+      <field name="minorRowHeight" />
+      <field name="position.X" />
+      <field name="position.Y" />
+      <field name="primaryStyle" />
+      <field name="questNameText" />
+      <field name="secondaryStyle" />
+      <field name="selectedColor.A" />
+      <field name="selectedColor.B" />
+      <field name="selectedColor.G" />
+      <field name="selectedColor.R" />
+      <field name="selectedStyle" />
+      <field name="trackBitmap" />
+      <field name="treeWidth" />
+      <field name="verticalPadding" />
+    </var-group>
+  </record-type>
+</partial>

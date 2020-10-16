@@ -1,0 +1,42 @@
+﻿<partial>
+  <record-type name="InGameUI.UITutorialPage" path="InGameUI/UITutorialPage.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="slideTime" var-class="variable" var-type="int" />
+        <field name="windowOffScreenX" var-class="variable" var-type="int" />
+        <field name="windowOffScreenY" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="AutoPopButton" var-class="variable" var-type="file_dbr" />
+        <field name="AutoPopCheck" var-class="variable" var-type="file_dbr" />
+        <field name="AutoPopText" var-class="variable" var-type="file_dbr" />
+        <field name="BottomImage" var-class="variable" var-type="file_tex" />
+        <field name="CenterImage" var-class="variable" var-type="file_tex" />
+        <field name="CloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="DisableButton" var-class="variable" var-type="file_dbr" />
+        <field name="MaxCenterHeight" var-class="variable" var-type="int" />
+        <field name="MinCenterHeight" var-class="variable" var-type="int" />
+        <field name="NextButton" var-class="variable" var-type="file_dbr" />
+        <field name="PageIndexTextTag" var-class="variable" var-type="string" />
+        <field name="PageInstanceArray" var-class="array" var-type="file_dbr" />
+        <field name="PageWidth" var-class="variable" var-type="int" />
+        <field name="PopupSound" var-class="variable" var-type="file_dbr" />
+        <field name="PreviousButton" var-class="variable" var-type="file_dbr" />
+        <field name="ScrollWindow" var-class="variable" var-type="file_dbr" />
+        <field name="TitleText" var-class="variable" var-type="file_dbr" />
+        <field name="TopImage" var-class="variable" var-type="file_tex" />
+        <field name="WindowLocationX" var-class="variable" var-type="int" />
+        <field name="WindowLocationY" var-class="variable" var-type="int" />
+        <field name="WindowTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

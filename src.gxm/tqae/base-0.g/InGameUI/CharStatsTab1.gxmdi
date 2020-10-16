@@ -1,0 +1,99 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab1" path="InGameUI/CharStatsTab1.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.Vec2" />
+      <inherit record="InGameUI.Includes.Ext2" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="tab1AttackSpeedNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1AttackSpeedRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1AttackSpeedText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1AttributeChangeUndoButton" var-class="variable" var-type="file_dbr" />
+        <field name="tab1AttributesText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1BlockPercentNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1BlockPercentRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1BlockPercentText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1CharacterLevel" var-class="variable" var-type="file_dbr" />
+        <field name="tab1CharacterName" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ClassText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1CombinedArmorNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1CombinedArmorRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1CombinedArmorText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DPSNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DPSRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DPSText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DamageBlockedNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DamageBlockedRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DamageBlockedText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DefenseText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DexterityButton" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DexterityNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DexterityRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1DexterityText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1Difficulty" var-class="variable" var-type="file_dbr" />
+        <field name="tab1FireResistanceBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1FireResistanceNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1FireResistanceRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1IceResistanceBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1IceResistanceNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1IceResistanceRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1IntelligenceButton" var-class="variable" var-type="file_dbr" />
+        <field name="tab1IntelligenceNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1IntelligenceRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1IntelligenceText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LifeButton" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LifeNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LifeRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LifeText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LightningResistanceBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LightningResistanceNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LightningResistanceRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1LowerBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ManaButton" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ManaNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ManaRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ManaText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab1OffenseText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PiercingResistanceBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PiercingResistanceNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PiercingResistanceRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PoisonResistanceBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PoisonResistanceNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PoisonResistanceRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PtoENumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1PtoERollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistanceBleedingBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistanceBleedingNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistanceBleedingRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistanceLifeBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistanceLifeNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistanceLifeRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistancePhysicalBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistancePhysicalNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistancePhysicalRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1ResistancesText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1StrengthButton" var-class="variable" var-type="file_dbr" />
+        <field name="tab1StrengthNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1StrengthRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1StrengthText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1TotalDamageNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab1TotalDamageRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab1TotalDamageText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1UnusedPointsText" var-class="variable" var-type="file_dbr" />
+        <field name="tab1UnusedPointsTextColorPulse" var-class="variable" var-type="file_dbr" />
+        <field name="tab1UpperBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab1XPText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab3Name" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

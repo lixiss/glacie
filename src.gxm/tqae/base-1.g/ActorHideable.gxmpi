@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="ActorHideable">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Actor Variables">
+      <field name="hiddenInGame" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Attack">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="alternateSourceLocation" />
+      <field name="ragDollAmplification" />
+      <field name="ragDollDirection" />
+      <field name="ragDollEffect" />
+      <field name="ragDollElevation" />
+      <field name="ragDollPush" />
+    </var-group>
+  </record-type>
+</partial>

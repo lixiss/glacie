@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="WaterInteraction">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Effects">
+      <field name="BodySplashEffect" />
+      <field name="ObjectSplashEffect" />
+      <field name="WakeSplashEffect" />
+    </var-group>
+  </record-type>
+</partial>

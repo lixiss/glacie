@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="InGameUI.WorldLMapWindow" path="InGameUI/WorldLMapWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="WorldWindow">
+        <field name="AtlantisButton" var-class="variable" var-type="file_dbr" />
+        <field name="AtlantisMapImage" var-class="variable" var-type="file_tex" />
+        <field name="AtlantisZoneList" var-class="array" var-type="file_dbr" />
+        <field name="BackgroundImage" var-class="variable" var-type="file_tex" />
+        <field name="CloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="EgyptButton" var-class="variable" var-type="file_dbr" />
+        <field name="EgyptMapImage" var-class="variable" var-type="file_tex" />
+        <field name="EgyptZoneList" var-class="array" var-type="file_dbr" />
+        <field name="GreeceButton" var-class="variable" var-type="file_dbr" />
+        <field name="GreeceMapImage" var-class="variable" var-type="file_tex" />
+        <field name="GreeceZoneList" var-class="array" var-type="file_dbr" />
+        <field name="HadesButton" var-class="variable" var-type="file_dbr" />
+        <field name="HadesImage" var-class="variable" var-type="file_tex" />
+        <field name="HadesZoneList" var-class="array" var-type="file_dbr" />
+        <field name="MapImageLocationX" var-class="variable" var-type="int" />
+        <field name="MapImageLocationY" var-class="variable" var-type="int" />
+        <field name="OlympusButton" var-class="variable" var-type="file_dbr" />
+        <field name="OlympusMapImage" var-class="variable" var-type="file_tex" />
+        <field name="OlympusZoneList" var-class="array" var-type="file_dbr" />
+        <field name="OrientButton" var-class="variable" var-type="file_dbr" />
+        <field name="OrientMapImage" var-class="variable" var-type="file_tex" />
+        <field name="OrientZoneList" var-class="array" var-type="file_dbr" />
+        <field name="ScandiaButton" var-class="variable" var-type="file_dbr" />
+        <field name="ScandiaMapImage" var-class="variable" var-type="file_tex" />
+        <field name="ScandiaZoneList" var-class="array" var-type="file_dbr" />
+        <field name="WindowLocationX" var-class="variable" var-type="int" />
+        <field name="WindowLocationY" var-class="variable" var-type="int" />
+        <field name="WindowTitle" var-class="variable" var-type="file_dbr" />
+        <field name="destinationCenterX" var-class="variable" var-type="int" />
+        <field name="destinationCenterY" var-class="variable" var-type="int" />
+        <field name="destinationStyle" var-class="variable" var-type="file_dbr" />
+        <field name="destinationTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

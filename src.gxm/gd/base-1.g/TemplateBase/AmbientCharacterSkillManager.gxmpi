@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="TemplateBase.AmbientCharacterSkillManager">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Configuration">
+      <field name="skill1" />
+    </var-group>
+    <var-group name="Skill Tree">
+      <field name="numberOfSkills" />
+      <field name="skillLevel1" />
+      <field name="skillLevel2" />
+      <field name="skillLevel3" />
+      <field name="skillLevel4" />
+      <field name="skillLevel5" />
+      <field name="skillLevel6" />
+      <field name="skillLevel7" />
+      <field name="skillLevel8" />
+      <field name="skillLevel9" />
+      <field name="skillLevel10" />
+      <field name="skillLevel11" />
+      <field name="skillLevel12" />
+      <field name="skillLevel13" />
+      <field name="skillLevel14" />
+      <field name="skillLevel15" />
+      <field name="skillName1" />
+      <field name="skillName2" />
+      <field name="skillName3" />
+      <field name="skillName4" />
+      <field name="skillName5" />
+      <field name="skillName6" />
+      <field name="skillName7" />
+      <field name="skillName8" />
+      <field name="skillName9" />
+      <field name="skillName10" />
+      <field name="skillName11" />
+      <field name="skillName12" />
+      <field name="skillName13" />
+      <field name="skillName14" />
+      <field name="skillName15" />
+    </var-group>
+  </record-type>
+</partial>

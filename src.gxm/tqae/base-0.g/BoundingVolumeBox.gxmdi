@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="BoundingVolumeBox" path="BoundingVolumeBox.tpl">
+    <inherits>
+      <inherit record="Actor" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="BoundingVolumeBox" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Volume Variables">
+        <field name="sizeX" var-class="variable" var-type="real" var-default-value="5" />
+        <field name="sizeY" var-class="variable" var-type="real" var-default-value="5" />
+        <field name="sizeZ" var-class="variable" var-type="real" var-default-value="5" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

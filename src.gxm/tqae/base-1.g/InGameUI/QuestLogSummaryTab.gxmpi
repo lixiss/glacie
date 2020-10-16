@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestLogSummaryTab">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="defaultTextTag" />
+      <field name="fontStyleDescription" />
+      <field name="fontStyleMapMarker" />
+      <field name="fontStyleMapMarkerComplete" />
+      <field name="fontStyleSecondary" />
+      <field name="fontStyleTitle" />
+      <field name="textBoxWidth" />
+    </var-group>
+  </record-type>
+</partial>

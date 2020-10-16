@@ -1,0 +1,52 @@
+﻿<partial>
+  <record-type name="ChaosBeam" path="ChaosBeam.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ChaosBeam" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="Alpha255" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="BeamCount" var-class="variable" var-type="int" var-default-value="3" />
+        <field name="Blue255" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="DynamicScale" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Dynamically scales based on start/end scales</description>
+        </field>
+        <field name="EndAlpha" var-class="variable" var-type="real" var-default-value="0">
+          <description>Alpha at each end of beam</description>
+        </field>
+        <field name="EndScale" var-class="variable" var-type="real" var-default-value="1.5">
+          <description>Used with dynamicScale</description>
+        </field>
+        <field name="Green255" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="Red255" var-class="variable" var-type="int" var-default-value="255" />
+        <field name="ScaleLengthPercent1" var-class="variable" var-type="int" var-default-value="30">
+          <description>Scale to start scale by this percent of total length</description>
+        </field>
+        <field name="ScaleLengthPercent2" var-class="variable" var-type="int" var-default-value="70">
+          <description>Scale to end scale by this percent of total length</description>
+        </field>
+        <field name="Shader" var-class="variable" var-type="file_ssh" var-default-value="Shaders/Effects/TrailAdditive.ssh" />
+        <field name="StartScale" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>Used with dynamicScale</description>
+        </field>
+        <field name="Texture" var-class="variable" var-type="file_tex" var-default-value="SandBox/Max/Models/AdditiveScrollTest.tex" />
+        <field name="TextureStretch" var-class="variable" var-type="real" var-default-value="6" />
+        <field name="TotalAmplitude" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>Scales the overall bend</description>
+        </field>
+        <field name="TotalSegments" var-class="variable" var-type="real" var-default-value="5">
+          <description>More segments, more waves</description>
+        </field>
+        <field name="WaveAmplitude" var-class="variable" var-type="real" var-default-value="0.3">
+          <description>Scales individual wave amplitude</description>
+        </field>
+        <field name="WaveSpeed" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>Controls the individual wave speed</description>
+        </field>
+        <field name="Width" var-class="variable" var-type="real" var-default-value="0.5" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

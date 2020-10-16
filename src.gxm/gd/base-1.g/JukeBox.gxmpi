@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="JukeBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="LongOverrideMax" />
+      <field name="LongOverrideMin" />
+      <field name="ShortOverrideMax" />
+      <field name="ShortOverrideMin" />
+      <field name="Sunrise" />
+      <field name="Sunset" />
+    </var-group>
+  </record-type>
+</partial>

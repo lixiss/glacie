@@ -1,0 +1,81 @@
+﻿<partial>
+  <record-type name="SoundPak" path="SoundPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SoundPak" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Sound Properties">
+        <field name="fallOff" var-class="variable" var-type="real" var-default-value="4" />
+        <field name="force2d" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="pitchDown" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="pitchStep" var-class="variable" var-type="int" var-default-value="1650" />
+        <field name="pitchUp" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="soundName1" var-class="variable" var-type="file_snd" />
+        <field name="soundName2" var-class="variable" var-type="file_snd" />
+        <field name="soundName3" var-class="variable" var-type="file_snd" />
+        <field name="soundName4" var-class="variable" var-type="file_snd" />
+        <field name="soundName5" var-class="variable" var-type="file_snd" />
+        <field name="soundName6" var-class="variable" var-type="file_snd" />
+        <field name="soundName7" var-class="variable" var-type="file_snd" />
+        <field name="soundName8" var-class="variable" var-type="file_snd" />
+        <field name="soundName9" var-class="variable" var-type="file_snd" />
+        <field name="soundName10" var-class="variable" var-type="file_snd" />
+        <field name="soundName11" var-class="variable" var-type="file_snd" />
+        <field name="soundName12" var-class="variable" var-type="file_snd" />
+        <field name="soundName13" var-class="variable" var-type="file_snd" />
+        <field name="soundName14" var-class="variable" var-type="file_snd" />
+        <field name="soundName15" var-class="variable" var-type="file_snd" />
+        <field name="soundName16" var-class="variable" var-type="file_snd" />
+        <field name="soundName17" var-class="variable" var-type="file_snd" />
+        <field name="soundName18" var-class="variable" var-type="file_snd" />
+        <field name="soundName19" var-class="variable" var-type="file_snd" />
+        <field name="soundName20" var-class="variable" var-type="file_snd" />
+        <field name="soundName21" var-class="variable" var-type="file_snd" />
+        <field name="soundName22" var-class="variable" var-type="file_snd" />
+        <field name="soundName23" var-class="variable" var-type="file_snd" />
+        <field name="soundName24" var-class="variable" var-type="file_snd" />
+        <field name="soundName25" var-class="variable" var-type="file_snd" />
+        <field name="soundName26" var-class="variable" var-type="file_snd" />
+        <field name="soundName27" var-class="variable" var-type="file_snd" />
+        <field name="soundName28" var-class="variable" var-type="file_snd" />
+        <field name="soundName29" var-class="variable" var-type="file_snd" />
+        <field name="soundName30" var-class="variable" var-type="file_snd" />
+        <field name="spawnAtCameraY" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="volume" var-class="variable" var-type="real" var-default-value="0.75" />
+        <field name="volumeSet" var-class="picklist" var-type="string" var-default-value="Effects;Ambient;Music;Dialog" />
+        <field name="weight1" var-class="variable" var-type="int" var-default-value="25" />
+        <field name="weight2" var-class="variable" var-type="int" var-default-value="25" />
+        <field name="weight3" var-class="variable" var-type="int" var-default-value="25" />
+        <field name="weight4" var-class="variable" var-type="int" var-default-value="25" />
+        <field name="weight5" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight6" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight7" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight8" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight9" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight10" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight11" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight12" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight13" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight14" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight15" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight16" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight17" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight18" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight19" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight20" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight21" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight22" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight23" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight24" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight25" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight26" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight27" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight28" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight29" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="weight30" var-class="variable" var-type="int" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

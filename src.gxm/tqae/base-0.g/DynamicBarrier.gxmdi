@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="DynamicBarrier" path="DynamicBarrier.tpl">
+    <inherits>
+      <inherit record="Character" />
+      <inherit record="TemplateBase.AmbientCharacterSkillManager" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="DynamicBarrier" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="controllerType" var-class="picklist" var-type="string" var-default-value="None;Stooge;" />
+        <field name="invincible" var-class="variable" var-type="bool" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="EntityHookPack">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Scripts">
+      <field name="entityHooks" />
+      <field name="onAddToWorld" />
+      <field name="onDestroy" />
+      <field name="onInitialUpdate" />
+      <field name="onRemoveFromWorld" />
+    </var-group>
+  </record-type>
+</partial>

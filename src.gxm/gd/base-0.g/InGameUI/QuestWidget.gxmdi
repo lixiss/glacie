@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestWidget" path="InGameUI/QuestWidget.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+      <inherit record="InGameUI.Includes.Border" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="UIQuestWidget" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="QuestWidget">
+        <field name="mainQuestIcon" var-class="variable" var-type="file_dbr" />
+        <field name="objectiveBitmap" var-class="variable" var-type="file_dbr">
+          <description>UIMultiBitmap</description>
+        </field>
+        <field name="objectiveFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="questFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="taskFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="titleFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="titleTag" var-class="variable" var-type="string" var-default-value="tagQuests" />
+        <field name="toggleButton" var-class="variable" var-type="file_dbr">
+          <description>UIButton</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

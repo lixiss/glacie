@@ -1,0 +1,54 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillPaneBase" path="InGameUI/SkillPaneBase.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetPane" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="SkillPaneBase" />
+      </var-group>
+      <var-group name="Config">
+        <field name="blueBitmap" var-class="variable" var-type="file_tex" />
+        <field name="blueRoundBitmap" var-class="variable" var-type="file_tex" />
+        <field name="confirmButton" var-class="variable" var-type="file_dbr" />
+        <field name="costPerPoint" var-class="variable" var-type="file_dbr" />
+        <field name="costPerPointNumber" var-class="variable" var-type="file_dbr" />
+        <field name="costPerPointNumberBitmap" var-class="variable" var-type="file_tex" />
+        <field name="descriptionScrollWindow" var-class="variable" var-type="file_dbr" />
+        <field name="descriptionTextBox" var-class="variable" var-type="file_dbr" />
+        <field name="goldBitmap" var-class="variable" var-type="file_tex" />
+        <field name="goldRoundBitmap" var-class="variable" var-type="file_tex" />
+        <field name="grayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="grayRoundBitmap" var-class="variable" var-type="file_tex" />
+        <field name="greenBitmap" var-class="variable" var-type="file_tex" />
+        <field name="greenRoundBitmap" var-class="variable" var-type="file_tex" />
+        <field name="masteryMilestoneNumber1" var-class="variable" var-type="file_dbr" />
+        <field name="masteryMilestoneNumber2" var-class="variable" var-type="file_dbr" />
+        <field name="masteryMilestoneNumber3" var-class="variable" var-type="file_dbr" />
+        <field name="masteryMilestoneNumber4" var-class="variable" var-type="file_dbr" />
+        <field name="masteryMilestoneNumber5" var-class="variable" var-type="file_dbr" />
+        <field name="masteryMilestoneNumber6" var-class="variable" var-type="file_dbr" />
+        <field name="masteryMilestoneNumber7" var-class="variable" var-type="file_dbr" />
+        <field name="masteryMilestoneValueMax" var-class="variable" var-type="int" />
+        <field name="masterySkillButtonColorPulse" var-class="variable" var-type="file_dbr" />
+        <field name="masterySkillLevel" var-class="variable" var-type="file_dbr" />
+        <field name="playerGoldNumber" var-class="variable" var-type="file_dbr" />
+        <field name="playerGoldNumberBitmap" var-class="variable" var-type="file_tex" />
+        <field name="pointsRemaining" var-class="variable" var-type="file_dbr" />
+        <field name="pointsRemainingColorPulse" var-class="variable" var-type="file_dbr" />
+        <field name="reallocationBitmap" var-class="variable" var-type="file_tex" />
+        <field name="redBitmap" var-class="variable" var-type="file_tex" />
+        <field name="redRoundBitmap" var-class="variable" var-type="file_tex" />
+        <field name="skillBorderBitmap" var-class="variable" var-type="file_tex" />
+        <field name="skillDecrementButton" var-class="variable" var-type="file_dbr" />
+        <field name="skillIncrementButton" var-class="variable" var-type="file_dbr" />
+        <field name="skillLevel" var-class="variable" var-type="file_dbr" />
+        <field name="skillLevelBitmap" var-class="variable" var-type="file_tex" />
+        <field name="undoButton" var-class="variable" var-type="file_dbr" />
+        <field name="undoMasterySelectionButton" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

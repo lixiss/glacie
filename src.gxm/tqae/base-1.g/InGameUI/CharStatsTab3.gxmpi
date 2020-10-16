@@ -1,0 +1,42 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab3">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="tab1Name" />
+      <field name="tab2Name" />
+      <field name="tab3#DamageModNumber" />
+      <field name="tab3#DamageModRollover" />
+      <field name="tab3#DamageModText" />
+      <field name="tab3Bitmap" />
+      <field name="tab3GreatestDamageDealtNumber" />
+      <field name="tab3GreatestDamageDealtRollover" />
+      <field name="tab3GreatestDamageDealtText" />
+      <field name="tab3GreatestMonsterKilledLevel" />
+      <field name="tab3GreatestMonsterKilledName" />
+      <field name="tab3GreatestMonsterKilledRollover" />
+      <field name="tab3GreatestMonsterKilledText" />
+      <field name="tab3LowerBarBitmap" />
+      <field name="tab3MonstersKilledNumber" />
+      <field name="tab3MonstersKilledRollover" />
+      <field name="tab3MonstersKilledText" />
+      <field name="tab3Name" />
+      <field name="tab3RaceDamage#Bitmap" />
+      <field name="tab3RaceDamage#Number" />
+      <field name="tab3RaceDamage#Rollover" />
+      <field name="tab3RaceResistance#Bitmap" />
+      <field name="tab3RaceResistance#Number" />
+      <field name="tab3RaceResistance#Rollover" />
+      <field name="tab3TotalDeathsNumber" />
+      <field name="tab3TotalDeathsRollover" />
+      <field name="tab3TotalDeathsText" />
+      <field name="tab3TotalPlaytimeNumber" />
+      <field name="tab3TotalPlaytimeRollover" />
+      <field name="tab3TotalPlaytimeText" />
+      <field name="tab3UpperBarBitmap" />
+    </var-group>
+  </record-type>
+</partial>

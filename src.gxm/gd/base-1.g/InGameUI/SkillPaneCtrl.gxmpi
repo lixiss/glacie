@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillPaneCtrl">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="BasePane" />
+      <field name="masteryBar" />
+      <field name="peekThroughColorBlue" />
+      <field name="peekThroughColorGreen" />
+      <field name="peekThroughColorRed" />
+      <field name="peekThroughNextTierSound" />
+      <field name="skillPaneBaseBitmap" />
+      <field name="skillPaneBaseReallocationBitmap" />
+      <field name="skillPaneDescriptionTag" />
+      <field name="skillPaneMasteryBitmap" />
+      <field name="skillTabTitle" />
+      <field name="tabSkillButtons" />
+    </var-group>
+  </record-type>
+</partial>

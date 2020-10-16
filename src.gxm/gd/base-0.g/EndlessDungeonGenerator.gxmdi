@@ -1,0 +1,146 @@
+﻿<partial>
+  <record-type name="EndlessDungeonGenerator" path="EndlessDungeonGenerator.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="EndlessDungeonGenerator" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="EndlessDungeon Ruleset" />
+      </var-group>
+      <var-group name="Config">
+        <field name="bonusTimeBoss" var-class="variable" var-type="real">
+          <description>time to add when a boss monster is killed</description>
+        </field>
+        <field name="bonusTimeHero" var-class="variable" var-type="real">
+          <description>time to add when a hero monster is killed</description>
+        </field>
+        <field name="bonusTimeNemesis" var-class="variable" var-type="real">
+          <description>time to add when a nemesis monster is killed</description>
+        </field>
+        <field name="bossFloorList" var-class="array" var-type="file_dbr">
+          <description>pool of possible boss floors</description>
+        </field>
+        <field name="bossProxies" var-class="variable" var-type="int">
+          <description>number of boss monster ProxyEndless to activate</description>
+        </field>
+        <field name="difficultyAdjustmentElite" var-class="variable" var-type="file_dbr" />
+        <field name="difficultyAdjustmentNormal" var-class="variable" var-type="file_dbr" />
+        <field name="difficultyAdjustmentUltimate" var-class="variable" var-type="file_dbr" />
+        <field name="dyingPenalty" var-class="variable" var-type="real">
+          <description>seconds</description>
+        </field>
+        <field name="floorList" var-class="array" var-type="file_dbr">
+          <description>pool of possible floors</description>
+        </field>
+        <field name="floorTotalElite" var-class="variable" var-type="equation">
+          <description>total value to be reached to progress on each floor (tierDifficulty) (numberOfProxies)</description>
+        </field>
+        <field name="floorTotalNormal" var-class="variable" var-type="equation">
+          <description>total value to be reached to progress on each floor (tierDifficulty) (numberOfProxies)</description>
+        </field>
+        <field name="floorTotalUltimate" var-class="variable" var-type="equation">
+          <description>total value to be reached to progress on each floor (tierDifficulty) (numberOfProxies)</description>
+        </field>
+        <field name="floors" var-class="variable" var-type="int">
+          <description>number of connected non-boss floors to generate</description>
+        </field>
+        <field name="heroProxies" var-class="variable" var-type="int">
+          <description>number of hero monster ProxyEndless to activate</description>
+        </field>
+        <field name="killCountBonusTime" var-class="variable" var-type="equation">
+          <description>rewards bonus time (seconds) based on kills (killCounter)</description>
+        </field>
+        <field name="killCountMinimum" var-class="variable" var-type="int">
+          <description>Minimum before bonus time is rewarded</description>
+        </field>
+        <field name="killCountResetTime" var-class="variable" var-type="real">
+          <description>Time to reset kill counter</description>
+        </field>
+        <field name="maxShrines" var-class="variable" var-type="int">
+          <description>maximum number of shrine ProxyEndless to activate for each dungeon</description>
+        </field>
+        <field name="nemesisProxyWeights" var-class="array" var-type="int">
+          <description>weighted number of nemesis proxies</description>
+        </field>
+        <field name="proxies" var-class="variable" var-type="int">
+          <description>number of regular monster ProxyEndless to activate</description>
+        </field>
+        <field name="shrineProxyWeights" var-class="array" var-type="int">
+          <description>weighted number of shrine proxies</description>
+        </field>
+        <field name="specialFloors" var-class="array" var-type="file_dbr">
+          <description>one time use floors</description>
+        </field>
+        <field name="timerElite" var-class="variable" var-type="equation">
+          <description>bonus timer (tierDifficulty)</description>
+        </field>
+        <field name="timerNormal" var-class="variable" var-type="equation">
+          <description>bonus timer (tierDifficulty)</description>
+        </field>
+        <field name="timerUltimate" var-class="variable" var-type="equation">
+          <description>bonus timer (tierDifficulty)</description>
+        </field>
+        <field name="trapProxies" var-class="variable" var-type="int">
+          <description>number of trap/booster ProxyEndless to activate</description>
+        </field>
+      </var-group>
+      <var-group name="Drops">
+        <field name="allowedItems" var-class="array" var-type="file_dbr">
+          <description>Allowed item drops</description>
+        </field>
+        <field name="blacklistedHeroes" var-class="array" var-type="file_dbr">
+          <description>Prevent these heroes from dropping dungeon drops</description>
+        </field>
+        <field name="championChance" var-class="variable" var-type="int">
+          <description>Chance to drop</description>
+        </field>
+        <field name="commonChance" var-class="variable" var-type="int">
+          <description>Chance to drop</description>
+        </field>
+        <field name="disableMonsterDrops" var-class="variable" var-type="bool">
+          <description>Disable all monster loot drops</description>
+        </field>
+        <field name="heroChance" var-class="variable" var-type="int">
+          <description>Chance to drop</description>
+        </field>
+        <field name="itemNameChampion" var-class="variable" var-type="file_dbr">
+          <description>Floor progression item from champion monsters</description>
+        </field>
+        <field name="itemNameCommon" var-class="variable" var-type="file_dbr">
+          <description>Floor progression item from common monsters</description>
+        </field>
+        <field name="itemNameHero" var-class="variable" var-type="file_dbr">
+          <description>Floor progression item from hero monsters</description>
+        </field>
+        <field name="itemNameQuestBoss" var-class="variable" var-type="file_dbr">
+          <description>Floor progression item from quest/boss monsters</description>
+        </field>
+        <field name="questBossChance" var-class="variable" var-type="int">
+          <description>Chance to drop</description>
+        </field>
+      </var-group>
+      <var-group name="Monster Overrides">
+        <field name="distressCallGroupOverride" var-class="variable" var-type="string">
+          <description>Only boss floor</description>
+        </field>
+        <field name="distressCallRangeOverride" var-class="variable" var-type="real">
+          <description>Only boss floor</description>
+        </field>
+        <field name="distressResponseGroupOverride" var-class="variable" var-type="string">
+          <description>Only boss floor</description>
+        </field>
+        <field name="factionOverride" var-class="variable" var-type="file_dbr">
+          <description>Applies faction override to all monsters</description>
+        </field>
+        <field name="healthGainOnKillDifficulty" var-class="variable" var-type="int">
+          <description>Applies to all monsters</description>
+        </field>
+        <field name="healthGainOnKillPct" var-class="variable" var-type="int">
+          <description>Applies to all monsters</description>
+        </field>
+        <field name="viewDistanceOverride" var-class="variable" var-type="real">
+          <description>Only boss floor</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

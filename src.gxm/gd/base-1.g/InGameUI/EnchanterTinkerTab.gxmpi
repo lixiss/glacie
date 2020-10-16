@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterTinkerTab">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Tinker Config">
+      <field name="bonusWeight" />
+      <field name="componentBonusTable" />
+      <field name="componentTinkerCost" />
+      <field name="failureWeight" />
+      <field name="relicBonusTable" />
+      <field name="relicTinkerCost" />
+      <field name="successWeight" />
+    </var-group>
+    <var-group name="Tinker Tab">
+      <field name="aetherBitmap" />
+      <field name="aetherNotEnoughNumber" />
+      <field name="aetherTotalNumber" />
+      <field name="aetherTotalText" />
+      <field name="itemBox" />
+      <field name="tinkerAetherNumberBitmap" />
+      <field name="tinkerCostNumber" />
+      <field name="tinkerCostText" />
+      <field name="tinkerFailureSound" />
+      <field name="tinkerItemButton" />
+      <field name="tinkerSuccessSound" />
+      <field name="tooExpensiveCostNumber" />
+    </var-group>
+  </record-type>
+</partial>

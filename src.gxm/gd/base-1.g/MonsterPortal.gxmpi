@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="MonsterPortal">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="MonsterPortal">
+      <field name="activeEffect" />
+      <field name="activeSound" />
+      <field name="closeSound" />
+      <field name="dormantEffect" />
+      <field name="dormantSound" />
+      <field name="openSound" />
+      <field name="portalEnabled" />
+      <field name="resetOnChange" />
+      <field name="showInMinimap" />
+      <field name="spawnTime" />
+    </var-group>
+  </record-type>
+</partial>

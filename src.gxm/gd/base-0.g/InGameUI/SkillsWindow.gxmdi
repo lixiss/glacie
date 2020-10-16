@@ -1,0 +1,121 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillsWindow" path="InGameUI/SkillsWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="masterySelectWindow" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane1" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane2" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane3" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane4" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane5" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane6" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane7" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane8" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane9" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane10" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane11" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane12" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane13" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane14" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane15" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane16" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane17" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane18" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane19" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane20" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane21" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane22" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane23" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane24" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane25" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane26" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane27" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane28" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane29" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane30" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane31" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane32" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane33" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane34" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane35" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane36" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane37" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane38" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane39" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane40" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane41" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane42" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane43" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane44" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane45" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane46" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane47" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane48" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane49" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane50" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane51" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane52" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane53" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane54" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane55" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane56" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane57" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane58" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane59" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane60" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane61" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane62" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane63" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane64" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane65" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane66" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane67" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane68" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane69" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane70" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane71" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane72" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane73" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane74" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane75" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane76" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane77" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane78" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane79" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlPane80" var-class="variable" var-type="file_dbr" />
+        <field name="skillCtrlTabHidden" var-class="variable" var-type="file_dbr" />
+        <field name="skillDevotionPane" var-class="variable" var-type="file_dbr" />
+        <field name="skillWheel" var-class="variable" var-type="file_dbr" />
+        <field name="skillsBaseBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="skillsCloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="skillsSelectedMasteryDescriptionPulseInfo" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab1Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab1Button" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab1ButtonTextActive" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab1ButtonTextDisabled" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab1HideBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab2Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab2Button" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab2ButtonTextActive" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab2ButtonTextDisabled" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab2HideBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab3Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab3Button" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab3ButtonTextActive" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab3ButtonTextDisabled" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTab3HideBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="skillsTabHiddenBitmap" var-class="variable" var-type="file_tex" />
+        <field name="skillsWindowReallocationTitle" var-class="variable" var-type="file_dbr" />
+        <field name="skillsWindowTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,117 @@
+﻿<partial>
+  <record-type name="CombatEquations" path="CombatEquations.tpl">
+    <expression-variables>
+      <expression-variable name="bleedingDamageDV" />
+      <expression-variable name="blockChanceDV">
+        <description>Shield</description>
+      </expression-variable>
+      <expression-variable name="blockChanceModifierDV">
+        <description>Shield</description>
+      </expression-variable>
+      <expression-variable name="bonusDV" />
+      <expression-variable name="characterLevelDV" />
+      <expression-variable name="damageDV">
+        <description>Shield</description>
+      </expression-variable>
+      <expression-variable name="defensiveAbilityDV" />
+      <expression-variable name="defensiveAbilityModifierDV" />
+      <expression-variable name="dexterityDV" />
+      <expression-variable name="elementalDamageDV" />
+      <expression-variable name="intelligenceDV" />
+      <expression-variable name="offensiveAbilityDV" />
+      <expression-variable name="offensiveAbilityModifierDV" />
+      <expression-variable name="physicalDamageDV" />
+      <expression-variable name="pierceDamageDV" />
+      <expression-variable name="poisonDamageDV" />
+      <expression-variable name="probabilityToHitDV">
+        <description>Shield</description>
+      </expression-variable>
+      <expression-variable name="retaliationDamageDV" />
+      <expression-variable name="shieldAbsorptionDV">
+        <description>Shield</description>
+      </expression-variable>
+      <expression-variable name="shieldDefenseDV">
+        <description>Shield</description>
+      </expression-variable>
+      <expression-variable name="strengthDV" />
+      <expression-variable name="sumAbsorptionDV" />
+      <expression-variable name="sumProtectionDV" />
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Combat Regions">
+        <field name="combatRegionArmsChance" var-class="variable" var-type="int" />
+        <field name="combatRegionFullyProtectedChance" var-class="variable" var-type="int" />
+        <field name="combatRegionHeadChance" var-class="variable" var-type="int" />
+        <field name="combatRegionLegsChance" var-class="variable" var-type="int" />
+        <field name="combatRegionTorsoChance" var-class="variable" var-type="int" />
+        <field name="combatRegionUnprotectedChance" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Equations">
+        <field name="bleedingDurationDamageEquation" var-class="variable" var-type="equation" />
+        <field name="defensiveAbilityEquation" var-class="variable" var-type="equation" />
+        <field name="elementalDamageEquation" var-class="variable" var-type="equation" />
+        <field name="elementalDurationDamageEquation" var-class="variable" var-type="equation" />
+        <field name="lifeLeachDurationDamageEquation" var-class="variable" var-type="equation" />
+        <field name="manaLeachDurationDamageEquation" var-class="variable" var-type="equation" />
+        <field name="meleeBlockEquation" var-class="variable" var-type="equation" />
+        <field name="offensiveAbilityEquation" var-class="variable" var-type="equation" />
+        <field name="physcialDamageDefenseEquationDLEP" var-class="variable" var-type="equation">
+          <description>Physical damage reduction when Damage is less than or equal to protection</description>
+        </field>
+        <field name="physicalDamageDefenseEquationDGP" var-class="variable" var-type="equation">
+          <description>Physical damage reduction when Damage is greater than protection</description>
+        </field>
+        <field name="physicalDamageEquation" var-class="variable" var-type="equation">
+          <description>Physical damage adjustment</description>
+        </field>
+        <field name="physicalDurationDamageEquation" var-class="variable" var-type="equation" />
+        <field name="physicalNonWeaponDamageEquation" var-class="variable" var-type="equation">
+          <description>Physical damage adjustment</description>
+        </field>
+        <field name="pierceDamageEquation" var-class="variable" var-type="equation" />
+        <field name="pierceNonWeaponDamageEquation" var-class="variable" var-type="equation" />
+        <field name="poisonDamageEquation" var-class="variable" var-type="equation" />
+        <field name="poisonDurationDamageEquation" var-class="variable" var-type="equation" />
+        <field name="probabilityToHitEquation" var-class="variable" var-type="equation" />
+        <field name="projectileBlockEquation" var-class="variable" var-type="equation" />
+        <field name="retaliationDamageEquation" var-class="variable" var-type="equation" />
+        <field name="shieldDamageReductionEquationDGB" var-class="variable" var-type="equation" />
+        <field name="shieldDamageReductionEquationDLEB" var-class="variable" var-type="equation" />
+      </var-group>
+      <var-group name="Probability To Hit">
+        <field name="normalPTHEquation" var-class="variable" var-type="equation">
+          <description>if pthChance &lt;= threshold6</description>
+        </field>
+        <field name="pthDamageModifier1" var-class="variable" var-type="real">
+          <description>ifpthChance &gt; threshold1</description>
+        </field>
+        <field name="pthDamageModifier2" var-class="variable" var-type="real">
+          <description>if pthChance &gt; threshold2</description>
+        </field>
+        <field name="pthDamageModifier3" var-class="variable" var-type="real">
+          <description>if pthChance &gt; threshold3</description>
+        </field>
+        <field name="pthDamageModifier4" var-class="variable" var-type="real">
+          <description>if pthChance &gt; threshold4</description>
+        </field>
+        <field name="pthDamageModifier5" var-class="variable" var-type="real">
+          <description>if pthChance &gt; threshold5</description>
+        </field>
+        <field name="pthDamageModifier6" var-class="variable" var-type="real">
+          <description>ifpthChance &gt; threshold6</description>
+        </field>
+        <field name="pthThreshold1" var-class="variable" var-type="real" />
+        <field name="pthThreshold2" var-class="variable" var-type="real" />
+        <field name="pthThreshold3" var-class="variable" var-type="real" />
+        <field name="pthThreshold4" var-class="variable" var-type="real" />
+        <field name="pthThreshold5" var-class="variable" var-type="real" />
+        <field name="pthThreshold6" var-class="variable" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

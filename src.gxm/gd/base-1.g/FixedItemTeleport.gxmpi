@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="FixedItemTeleport">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Teleport Config">
+      <field name="closedAnimation" />
+      <field name="closedAnimationSpeed" />
+      <field name="closedFxPakName" />
+      <field name="closedSound" />
+      <field name="noObstaclesWhenLocked" />
+      <field name="openAnimation" />
+      <field name="openAnimationSpeed" />
+      <field name="openFxPakName" />
+      <field name="openSound" />
+      <field name="staticPortal" />
+      <field name="textTag" />
+    </var-group>
+  </record-type>
+</partial>

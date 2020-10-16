@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
@@ -34,6 +34,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" />
     <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
     <ProjectReference Include="..\..\Glacie.Logging\Glacie.Logging.csproj" />
     <ProjectReference Include="..\..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
   </ItemGroup>

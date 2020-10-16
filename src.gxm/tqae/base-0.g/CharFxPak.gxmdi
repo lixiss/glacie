@@ -1,0 +1,41 @@
+﻿<partial>
+  <record-type name="CharFxPak" path="CharFxPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="activeSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak - ooping while active</description>
+        </field>
+        <field name="colorBlue" var-class="variable" var-type="real">
+          <description>0 to 1 nominal</description>
+        </field>
+        <field name="colorGreen" var-class="variable" var-type="real">
+          <description>0 to 1 nominal</description>
+        </field>
+        <field name="colorRed" var-class="variable" var-type="real">
+          <description>0 to 1 nominal</description>
+        </field>
+        <field name="meshEffectNames" var-class="array" var-type="file_dbr">
+          <description>Uses FxMesh.tpl</description>
+        </field>
+        <field name="particleEffectAttachPoints" var-class="array" var-type="string" />
+        <field name="particleEffectNames" var-class="array" var-type="file_dbr">
+          <description>Uses Effects.tpl</description>
+        </field>
+        <field name="startSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak - Played on start</description>
+        </field>
+        <field name="stopSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak - Played on stop</description>
+        </field>
+        <field name="useTintColor" var-class="variable" var-type="bool">
+          <description>Enable tint</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

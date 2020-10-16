@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="InGameUI.GamepadHud" path="InGameUI/GamepadHud.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="achievementsWindow" var-class="variable" var-type="file_dbr" />
+        <field name="characterWindow" var-class="variable" var-type="file_dbr" />
+        <field name="devotionWindow" var-class="variable" var-type="file_dbr" />
+        <field name="factionsWindow" var-class="variable" var-type="file_dbr" />
+        <field name="lootFilterWindow" var-class="variable" var-type="file_dbr" />
+        <field name="lowerBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="mapWindow" var-class="variable" var-type="file_dbr" />
+        <field name="nextTabButton" var-class="variable" var-type="file_dbr" />
+        <field name="previousTabButton" var-class="variable" var-type="file_dbr" />
+        <field name="skillWheelWindow" var-class="variable" var-type="file_dbr" />
+        <field name="skillsWindow" var-class="variable" var-type="file_dbr" />
+        <field name="tab1Button" var-class="variable" var-type="file_dbr" />
+        <field name="tab2Button" var-class="variable" var-type="file_dbr" />
+        <field name="tab3Button" var-class="variable" var-type="file_dbr" />
+        <field name="tab4Button" var-class="variable" var-type="file_dbr" />
+        <field name="tab5Button" var-class="variable" var-type="file_dbr" />
+        <field name="tab6Button" var-class="variable" var-type="file_dbr" />
+        <field name="transmuterWindow" var-class="variable" var-type="file_dbr" />
+        <field name="upperBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="worldMapWindow" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

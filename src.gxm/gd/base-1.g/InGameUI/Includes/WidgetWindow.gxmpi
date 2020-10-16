@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="InGameUI.Includes.WidgetWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="windowDefaultExtentX" />
+      <field name="windowDefaultExtentY" />
+      <field name="windowDefaultX" />
+      <field name="windowDefaultY" />
+      <field name="windowScreenAlignmentX" />
+      <field name="windowScreenAlignmentY" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,39 @@
+﻿<partial>
+  <record-type name="InGameUI.SurvivalPane">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Survival Pane">
+      <field name="survivalBackground" />
+      <field name="survivalMultiplier1" />
+      <field name="survivalMultiplier2" />
+      <field name="survivalMultiplier3" />
+      <field name="survivalMultiplier4" />
+      <field name="survivalMultiplier5" />
+      <field name="survivalMultiplier6" />
+      <field name="survivalMultiplier7" />
+      <field name="survivalMultiplier8" />
+      <field name="survivalMultiplier9" />
+      <field name="survivalMultiplier10" />
+      <field name="survivalMultiplierGlow" />
+      <field name="survivalMultiplierPulse" />
+      <field name="survivalMultiplierRollover" />
+      <field name="survivalScore" />
+      <field name="survivalScoreRollover" />
+      <field name="survivalSubtractorGlow" />
+      <field name="survivalTimer" />
+      <field name="survivalTimerGlow" />
+      <field name="survivalTimerRollover" />
+      <field name="survivalTributeGlow" />
+      <field name="survivalTributeRollover" />
+      <field name="survivalTributes" />
+      <field name="survivalWaveTier" />
+      <field name="survivalWaveTierRollover" />
+      <field name="timerFailedSound" />
+      <field name="timerTenSecondsSound" />
+      <field name="tributeEarnedSound" />
+    </var-group>
+  </record-type>
+</partial>

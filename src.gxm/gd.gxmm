@@ -1,0 +1,4 @@
+<gx-metadata-module>
+  <include path="./gd/base-0.g.gxmd" />
+  <include path="./gd/base-1.g.gxmp" />
+</gx-metadata-module>

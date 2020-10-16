@@ -5,6 +5,7 @@ using System.CommandLine.Invocation;
 using System.Text;
 
 using Glacie.Cli.Adapters;
+using Glacie.Diagnostics;
 
 namespace Glacie.Cli
 {
@@ -74,6 +75,10 @@ namespace Glacie.Cli
                 {
                     errorString = $"error: {cliErrorEx}\n";
                 }
+            }
+            else if (exception is DiagnosticException diagnosticException)
+            {
+                errorString = diagnosticException.Diagnostic.ToString();
             }
             else
             {

@@ -1,0 +1,28 @@
+﻿<partial>
+  <record-type name="ProjectileBoomerang" path="ProjectileBoomerang.tpl">
+    <inherits>
+      <inherit record="ProjectileFireballLike" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ProjectileBoomerang" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="GDX1" />
+      </var-group>
+      <var-group name="Projectile Config">
+        <field name="projectileFollow" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Projectile follows the owner on return</description>
+        </field>
+        <field name="projectileFollowDuration" var-class="variable" var-type="real">
+          <description>If follows owner on return, max duration to follow (in seconds)</description>
+        </field>
+        <field name="projectileHoverDuration" var-class="variable" var-type="real">
+          <description>Time to pause at max distance (in seconds)</description>
+        </field>
+        <field name="projectileTravelDistance" var-class="variable" var-type="real">
+          <description>Distance to travel before return</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

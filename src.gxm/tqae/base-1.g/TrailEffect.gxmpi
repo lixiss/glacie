@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="TrailEffect">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="Alpha256" />
+      <field name="Blue256" />
+      <field name="DragUVs" />
+      <field name="FadeAlpha" />
+      <field name="Green256" />
+      <field name="MSFadeTime" />
+      <field name="Red256" />
+      <field name="Shader" />
+      <field name="Texture" />
+      <field name="TextureDistance" />
+      <field name="TextureRepeat" />
+      <field name="TrailShrinkSpeed" />
+    </var-group>
+  </record-type>
+</partial>

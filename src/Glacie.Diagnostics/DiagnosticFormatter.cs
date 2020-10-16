@@ -20,12 +20,11 @@ namespace Glacie.Diagnostics
 
             var severityString = diagnostic.Severity switch
             {
-                DiagnosticSeverity.Trace => "trace",
-                DiagnosticSeverity.Debug => "debug",
+                DiagnosticSeverity.Hidden => "hidden",
+                //DiagnosticSeverity.Conformance => "conformance",
                 DiagnosticSeverity.Information => "information",
                 DiagnosticSeverity.Warning => "warning",
                 DiagnosticSeverity.Error => "error",
-                DiagnosticSeverity.Critical => "critical",
                 _ => throw Error.Argument(nameof(diagnostic.Severity)),
             };
 

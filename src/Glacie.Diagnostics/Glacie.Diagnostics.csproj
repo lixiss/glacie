@@ -16,8 +16,14 @@
     <Compile Include="DiagnosticDefinition.cs" />
     <Compile Include="DiagnosticException.cs" />
     <Compile Include="DiagnosticFormatter.cs" />
+    <Compile Include="IDiagnosticReporter.cs" />
+    <Compile Include="IDiagnosticListener.cs" />
+    <Compile Include="DiagnosticListener.cs" />
     <Compile Include="DiagnosticSeverity.cs" />
+    <Compile Include="DiagnosticSummary.cs" />
     <Compile Include="Hash.cs" />
+    <Compile Include="Location\RecordLocation.cs" />
+    <Compile Include="Location\RecordFieldLocation.cs" />
     <Compile Include="Location\FileLocation.cs" />
     <Compile Include="Location\Location.cs" />
     <Compile Include="Location\LocationKind.cs" />
@@ -29,7 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

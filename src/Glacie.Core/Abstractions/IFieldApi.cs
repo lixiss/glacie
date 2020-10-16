@@ -5,8 +5,10 @@ namespace Glacie.Abstractions
     // TODO: (Low) Rename to IFieldApiContract.
     // TODO: (Low) Include this interface only as conditional compile-time feature.
 
-    internal interface IFieldApi
+    internal interface IFieldApi<TRecordType>
     {
+        TRecordType Record { get; }
+
         string Name { get; }
 
         ArzValueType ValueType { get; }

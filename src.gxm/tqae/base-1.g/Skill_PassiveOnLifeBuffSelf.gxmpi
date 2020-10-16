@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="Skill_PassiveOnLifeBuffSelf">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="lifeMonitorPercent" />
+      <field name="skillActiveDuration" />
+      <field name="skillCooldownTime" />
+    </var-group>
+  </record-type>
+</partial>

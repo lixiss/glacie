@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="NotificationManager" path="NotificationManager.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="CharacterPointX" var-class="variable" var-type="int" />
+        <field name="CharacterPointY" var-class="variable" var-type="int" />
+        <field name="InventoryPointX" var-class="variable" var-type="int" />
+        <field name="InventoryPointY" var-class="variable" var-type="int" />
+        <field name="MapPointX" var-class="variable" var-type="int" />
+        <field name="MapPointY" var-class="variable" var-type="int" />
+        <field name="PartyPointX" var-class="variable" var-type="int" />
+        <field name="PartyPointY" var-class="variable" var-type="int" />
+        <field name="QuestPointX" var-class="variable" var-type="int" />
+        <field name="QuestPointY" var-class="variable" var-type="int" />
+        <field name="SkillPointX" var-class="variable" var-type="int" />
+        <field name="SkillPointY" var-class="variable" var-type="int" />
+        <field name="paneHeight" var-class="variable" var-type="int" />
+        <field name="paneLocationX" var-class="variable" var-type="int" />
+        <field name="paneLocationY" var-class="variable" var-type="int" />
+        <field name="paneWidth" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

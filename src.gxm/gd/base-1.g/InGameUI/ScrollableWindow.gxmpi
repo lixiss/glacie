@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="InGameUI.ScrollableWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="alwaysShowScroll" />
+      <field name="bottomGuardBand" />
+      <field name="height" />
+      <field name="positionX" />
+      <field name="positionY" />
+      <field name="scrollbarPositionAdjust" />
+      <field name="scrollbarSizeAdjust" />
+      <field name="showBackground" />
+      <field name="topGuardBand" />
+      <field name="verticalScrollbar" />
+      <field name="width" />
+    </var-group>
+  </record-type>
+</partial>

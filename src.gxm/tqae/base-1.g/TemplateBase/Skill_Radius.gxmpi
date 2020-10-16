@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Radius">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="expansionTime" />
+      <field name="skillTargetRadius" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="radiusEffectName" />
+      <field name="radiusMagicName" />
+    </var-group>
+  </record-type>
+</partial>

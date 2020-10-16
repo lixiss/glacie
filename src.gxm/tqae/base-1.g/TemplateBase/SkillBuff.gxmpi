@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="TemplateBase.SkillBuff">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Cast Config">
+      <field name="skillActiveDuration" />
+      <field name="skillActiveLifeCost" />
+      <field name="skillActiveManaCost" />
+      <field name="skillTargetRadius" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="charFxPakOtherNames" />
+      <field name="endBuffOtherNames" />
+    </var-group>
+    <var-group name="UI Infomation">
+      <field name="hideFromUI" />
+    </var-group>
+  </record-type>
+</partial>

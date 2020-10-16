@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="Skybox" path="Skybox.tpl">
+    <var-group>
+      <var-group name="Skybox">
+        <field name="mesh" var-class="variable" var-type="file_msh" />
+        <field name="scale" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="shader" var-class="variable" var-type="file_ssh" />
+        <field name="texture" var-class="variable" var-type="file_tex" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

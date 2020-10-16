@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="InGameUI.PartyListBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="DividerXPosition" />
+      <field name="DividerYPosition" />
+      <field name="FontStyle" />
+      <field name="IconXPosition" />
+      <field name="IconYPosition" />
+      <field name="LevelXPosition" />
+      <field name="LineHeight" />
+      <field name="NameXPosition" />
+      <field name="NameYPosition" />
+      <field name="SecondTextPositionX" />
+      <field name="SecondTextPositionY" />
+    </var-group>
+  </record-type>
+</partial>

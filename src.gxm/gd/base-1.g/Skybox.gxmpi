@@ -1,0 +1,10 @@
+﻿<partial>
+  <record-type name="Skybox">
+    <var-group name="Skybox">
+      <field name="mesh" />
+      <field name="scale" />
+      <field name="shader" />
+      <field name="texture" />
+    </var-group>
+  </record-type>
+</partial>

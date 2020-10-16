@@ -1,0 +1,66 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab2_AE">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="tab1Name" />
+      <field name="tab2Bitmap" />
+      <field name="tab2CastSpeedNumber" />
+      <field name="tab2CastSpeedRollover" />
+      <field name="tab2CastSpeedText" />
+      <field name="tab2DefensiveAbilityNumber" />
+      <field name="tab2DefensiveAbilityRollover" />
+      <field name="tab2DefensiveAbilityText" />
+      <field name="tab2GreatestDamageDealtNumber" />
+      <field name="tab2GreatestDamageDealtRollover" />
+      <field name="tab2GreatestDamageDealtText" />
+      <field name="tab2GreatestMonsterKilledLevel" />
+      <field name="tab2GreatestMonsterKilledName" />
+      <field name="tab2GreatestMonsterKilledRollover" />
+      <field name="tab2GreatestMonsterKilledText" />
+      <field name="tab2LifeRegenNumber" />
+      <field name="tab2LifeRegenRollover" />
+      <field name="tab2LifeRegenText" />
+      <field name="tab2LowerBarBitmap" />
+      <field name="tab2ManaRegenNumber" />
+      <field name="tab2ManaRegenRollover" />
+      <field name="tab2ManaRegenText" />
+      <field name="tab2MonstersKilledNumber" />
+      <field name="tab2MonstersKilledRollover" />
+      <field name="tab2MonstersKilledText" />
+      <field name="tab2Name" />
+      <field name="tab2OffensiveAbilityNumber" />
+      <field name="tab2OffensiveAbilityRollover" />
+      <field name="tab2OffensiveAbilityText" />
+      <field name="tab2ResistanceBleedingBitmap" />
+      <field name="tab2ResistanceBleedingNumber" />
+      <field name="tab2ResistanceBleedingRollover" />
+      <field name="tab2ResistanceDisruptionBitmap" />
+      <field name="tab2ResistanceDisruptionNumber" />
+      <field name="tab2ResistanceDisruptionRollover" />
+      <field name="tab2ResistanceLifeBitmap" />
+      <field name="tab2ResistanceLifeNumber" />
+      <field name="tab2ResistanceLifeRollover" />
+      <field name="tab2ResistanceSecondaryText" />
+      <field name="tab2ResistanceSpiritBitmap" />
+      <field name="tab2ResistanceSpiritNumber" />
+      <field name="tab2ResistanceSpiritRollover" />
+      <field name="tab2ResistanceStunBitmap" />
+      <field name="tab2ResistanceStunNumber" />
+      <field name="tab2ResistanceStunRollover" />
+      <field name="tab2RunSpeedNumber" />
+      <field name="tab2RunSpeedRollover" />
+      <field name="tab2RunSpeedText" />
+      <field name="tab2TotalDeathsNumber" />
+      <field name="tab2TotalDeathsRollover" />
+      <field name="tab2TotalDeathsText" />
+      <field name="tab2TotalPlaytimeNumber" />
+      <field name="tab2TotalPlaytimeRollover" />
+      <field name="tab2TotalPlaytimeText" />
+      <field name="tab2UpperBarBitmap" />
+    </var-group>
+  </record-type>
+</partial>

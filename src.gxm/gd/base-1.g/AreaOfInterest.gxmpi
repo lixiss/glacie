@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="AreaOfInterest">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="AreaDescription" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="QuestMarker">
+      <field name="questOnly" />
+    </var-group>
+  </record-type>
+</partial>

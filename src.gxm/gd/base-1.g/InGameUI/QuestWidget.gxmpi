@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestWidget">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="QuestWidget">
+      <field name="mainQuestIcon" />
+      <field name="objectiveBitmap" />
+      <field name="objectiveFontStyle" />
+      <field name="questFontStyle" />
+      <field name="taskFontStyle" />
+      <field name="titleFontStyle" />
+      <field name="titleTag" />
+      <field name="toggleButton" />
+    </var-group>
+  </record-type>
+</partial>

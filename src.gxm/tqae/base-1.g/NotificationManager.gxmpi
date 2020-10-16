@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="NotificationManager">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="CharacterPointX" />
+      <field name="CharacterPointY" />
+      <field name="InventoryPointX" />
+      <field name="InventoryPointY" />
+      <field name="MapPointX" />
+      <field name="MapPointY" />
+      <field name="PartyPointX" />
+      <field name="PartyPointY" />
+      <field name="QuestPointX" />
+      <field name="QuestPointY" />
+      <field name="SkillPointX" />
+      <field name="SkillPointY" />
+      <field name="paneHeight" />
+      <field name="paneLocationX" />
+      <field name="paneLocationY" />
+      <field name="paneWidth" />
+    </var-group>
+  </record-type>
+</partial>

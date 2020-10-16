@@ -59,14 +59,14 @@ namespace Glacie.Cli.Arc.Commands
             progress.ShowMaximumValue = true;
 
             long totalLength = 0;
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 totalLength += entry.Length;
             }
             progress?.SetMaximumValue(totalLength);
 
             int filesWritten = 0;
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 progress?.SetMessage(entry.Name);
 
@@ -74,9 +74,9 @@ namespace Glacie.Cli.Arc.Commands
                 // (with combining).
                 EntryNameUtilities.Validate(entry.Name);
 
-                var outputPath = Path.Combine(OutputPath, entry.Name);
+                var outputPath = System.IO.Path.Combine(OutputPath, entry.Name);
 
-                var directoryPath = Path.GetDirectoryName(outputPath);
+                var directoryPath = System.IO.Path.GetDirectoryName(outputPath);
                 Directory.CreateDirectory(directoryPath);
 
                 using var inputStream = entry.Open();
@@ -123,7 +123,7 @@ namespace Glacie.Cli.Arc.Commands
             }
         }
 
-        private static DateTimeOffset? GetEntryLastWriteTime(ArcEntry entry)
+        private static DateTimeOffset? GetEntryLastWriteTime(ArcArchiveEntry entry)
         {
             if (entry.TryGetLastWriteTime(out var result))
             {

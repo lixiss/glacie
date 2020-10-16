@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="InGameUI.ColorPulse">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="defaultPulseColorAlpha" />
+      <field name="defaultPulseColorBlue" />
+      <field name="defaultPulseColorGreen" />
+      <field name="defaultPulseColorRed" />
+      <field name="numberOfCycles" />
+      <field name="pulseColorAAlpha" />
+      <field name="pulseColorABlue" />
+      <field name="pulseColorAGreen" />
+      <field name="pulseColorARed" />
+      <field name="pulseColorBAlpha" />
+      <field name="pulseColorBBlue" />
+      <field name="pulseColorBGreen" />
+      <field name="pulseColorBRed" />
+      <field name="pulseTime" />
+    </var-group>
+  </record-type>
+</partial>

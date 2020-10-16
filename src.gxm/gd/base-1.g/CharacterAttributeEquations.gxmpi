@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="CharacterAttributeEquations">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="characterDefensiveAbility" />
+      <field name="characterDexterity" />
+      <field name="characterIntelligence" />
+      <field name="characterLife" />
+      <field name="characterLifeRegen" />
+      <field name="characterMana" />
+      <field name="characterManaRegen" />
+      <field name="characterOffensiveAbility" />
+      <field name="characterStrength" />
+    </var-group>
+  </record-type>
+</partial>

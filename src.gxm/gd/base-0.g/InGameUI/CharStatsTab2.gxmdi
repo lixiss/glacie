@@ -1,0 +1,218 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab2" path="InGameUI/CharStatsTab2.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.Vec2" />
+      <inherit record="InGameUI.Includes.Ext2" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <var-group name="Character">
+          <field name="tab2AttacksPerSecondRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2AttacksPerSecondText" var-class="variable" var-type="string" />
+          <field name="tab2BonusAllSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusAllSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusArcanistSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusArcanistSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusDemoSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusDemoSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusExpGainedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusExpGainedText" var-class="variable" var-type="string" />
+          <field name="tab2BonusInquisitorSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusInquisitorSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusLightRadiusRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusLightRadiusText" var-class="variable" var-type="string" />
+          <field name="tab2BonusNecroSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusNecroSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusNightbladeSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusNightbladeSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusOathkeeperSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusOathkeeperSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusOccuSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusOccuSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusShamanSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusShamanSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2BonusSoldierSkillsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BonusSoldierSkillsText" var-class="variable" var-type="string" />
+          <field name="tab2ConstitutionRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ConstitutionText" var-class="variable" var-type="string" />
+          <field name="tab2CritDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2CritDmgText" var-class="variable" var-type="string" />
+          <field name="tab2EnergyAbsorpRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2EnergyAbsorpText" var-class="variable" var-type="string" />
+          <field name="tab2HealIncreaseRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2HealIncreaseText" var-class="variable" var-type="string" />
+          <field name="tab2LMBRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2LifeRegenRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2LifeRegenText" var-class="variable" var-type="string" />
+          <field name="tab2ManaRegenRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ManaRegenText" var-class="variable" var-type="string" />
+          <field name="tab2RMBRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2RunSpeedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2RunSpeedText" var-class="variable" var-type="string" />
+        </var-group>
+        <var-group name="Magical">
+          <field name="tab2AcidAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2AcidAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2AcidPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2AcidPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2AetherAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2AetherAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2AetherPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2AetherPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2BurnAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BurnAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2BurnDurationRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BurnDurationText" var-class="variable" var-type="string" />
+          <field name="tab2BurnPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BurnPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2CastSpeedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2CastSpeedText" var-class="variable" var-type="string" />
+          <field name="tab2ChaosAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ChaosAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2ChaosPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ChaosPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2ColdAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ColdAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2ColdPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ColdPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2ColdburnAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ColdburnAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2ColdburnDurationRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ColdburnDurationText" var-class="variable" var-type="string" />
+          <field name="tab2ColdburnPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ColdburnPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2CooldownReductionRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2CooldownReductionText" var-class="variable" var-type="string" />
+          <field name="tab2ElectrocuteAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ElectrocuteAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2ElectrocuteDurationRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ElectrocuteDurationText" var-class="variable" var-type="string" />
+          <field name="tab2ElectrocutePercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ElectrocutePercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2FireAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2FireAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2FirePercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2FirePercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2LightningAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2LightningAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2LightningPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2LightningPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2ManaCostReductionRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2ManaCostReductionText" var-class="variable" var-type="string" />
+          <field name="tab2PercentHealthDamageRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PercentHealthDamageText" var-class="variable" var-type="string" />
+          <field name="tab2PoisonAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PoisonAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2PoisonDurationRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PoisonDurationText" var-class="variable" var-type="string" />
+          <field name="tab2PoisonPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PoisonPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2VitalityAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2VitalityAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2VitalityDecayAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2VitalityDecayAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2VitalityDecayDurationRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2VitalityDecayDurationText" var-class="variable" var-type="string" />
+          <field name="tab2VitalityDecayPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2VitalityDecayPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2VitalityPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2VitalityPercentDmgText" var-class="variable" var-type="string" />
+        </var-group>
+        <var-group name="Pets">
+          <field name="tab2PetAetherResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetAetherResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetAttackSpeedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetAttackSpeedText" var-class="variable" var-type="string" />
+          <field name="tab2PetBleedResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetBleedResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetCastSpeedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetCastSpeedText" var-class="variable" var-type="string" />
+          <field name="tab2PetChaosResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetChaosResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetColdResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetColdResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetDARollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetDAText" var-class="variable" var-type="string" />
+          <field name="tab2PetDamageRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetDamageText" var-class="variable" var-type="string" />
+          <field name="tab2PetFireResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetFireResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetHealthRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetHealthText" var-class="variable" var-type="string" />
+          <field name="tab2PetLightningResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetLightningResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetOARollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetOAText" var-class="variable" var-type="string" />
+          <field name="tab2PetPhysicalResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetPhysicalResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetPierceResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetPierceResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetPoisonResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetPoisonResistText" var-class="variable" var-type="string" />
+          <field name="tab2PetRunSpeedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetRunSpeedText" var-class="variable" var-type="string" />
+          <field name="tab2PetVitalityResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PetVitalityResistText" var-class="variable" var-type="string" />
+        </var-group>
+        <var-group name="Physical">
+          <field name="tab2AttackSpeedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2AttackSpeedText" var-class="variable" var-type="string" />
+          <field name="tab2AvgDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2AvgDmgText" var-class="variable" var-type="string" />
+          <field name="tab2BleedAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BleedAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2BleedDurationRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BleedDurationText" var-class="variable" var-type="string" />
+          <field name="tab2BleedPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2BleedPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2DamageToHealthRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2DamageToHealthText" var-class="variable" var-type="string" />
+          <field name="tab2InternalTraumaAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2InternalTraumaAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2InternalTraumaDurationRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2InternalTraumaDurationText" var-class="variable" var-type="string" />
+          <field name="tab2InternalTraumaPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2InternalTraumaPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2PhysicalAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PhysicalAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2PhysicalPercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PhysicalPercentDmgText" var-class="variable" var-type="string" />
+          <field name="tab2PierceAbsDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PierceAbsDmgText" var-class="variable" var-type="string" />
+          <field name="tab2PiercePercentDmgRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab2PiercePercentDmgText" var-class="variable" var-type="string" />
+        </var-group>
+        <field name="mastery1Name" var-class="variable" var-type="string" />
+        <field name="mastery2Name" var-class="variable" var-type="string" />
+        <field name="mastery3Name" var-class="variable" var-type="string" />
+        <field name="mastery4Name" var-class="variable" var-type="string" />
+        <field name="mastery5Name" var-class="variable" var-type="string" />
+        <field name="mastery6Name" var-class="variable" var-type="string" />
+        <field name="mastery7Name" var-class="variable" var-type="string" />
+        <field name="mastery8Name" var-class="variable" var-type="string" />
+        <field name="mastery9Name" var-class="variable" var-type="string" />
+        <field name="tab2Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2CharacterLevel" var-class="variable" var-type="file_dbr" />
+        <field name="tab2CharacterName" var-class="variable" var-type="file_dbr" />
+        <field name="tab2HeaderCharacterText" var-class="variable" var-type="string" />
+        <field name="tab2HeaderDPSText" var-class="variable" var-type="string" />
+        <field name="tab2HeaderDivider" var-class="variable" var-type="file_tex" />
+        <field name="tab2HeaderFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="tab2HeaderMagicalText" var-class="variable" var-type="string" />
+        <field name="tab2HeaderPetsText" var-class="variable" var-type="string" />
+        <field name="tab2HeaderPhysicalText" var-class="variable" var-type="string" />
+        <field name="tab2ListBox" var-class="variable" var-type="file_dbr" />
+        <field name="tab2LowerBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab2NumberFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ScrollWindow" var-class="variable" var-type="file_dbr" />
+        <field name="tab2UpperBarBitmap" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

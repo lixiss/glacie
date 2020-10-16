@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="FixedItemDoor">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Door Config">
+      <field name="RemoveObstaclesWhileOpen" />
+      <field name="autoClose" />
+      <field name="autoCloseOnQuestClose" />
+      <field name="closeAnimation" />
+      <field name="closeAnimationSpeed" />
+      <field name="closeFxPakName" />
+      <field name="closeSound" />
+      <field name="closedSoundFadeTime" />
+      <field name="closedSoundLoop" />
+      <field name="oneWayDoor" />
+      <field name="openAnimation" />
+      <field name="openAnimationSpeed" />
+      <field name="openFxPakName" />
+      <field name="openOnly" />
+      <field name="openSound" />
+      <field name="openSoundFadeTime" />
+      <field name="openSoundLoop" />
+      <field name="reverseOneWayDirection" />
+    </var-group>
+  </record-type>
+</partial>

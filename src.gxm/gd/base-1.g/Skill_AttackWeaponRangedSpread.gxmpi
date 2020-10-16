@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="Skill_AttackWeaponRangedSpread">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="driftMax" />
+      <field name="driftMin" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,38 @@
+﻿<partial>
+  <record-type name="QuestMarker">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="AreaDescription" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Quest Marker">
+      <field name="areaBitmap" />
+      <field name="areaOffsetX" />
+      <field name="areaOffsetY" />
+      <field name="areaRotate" />
+      <field name="areaRotation" />
+      <field name="markerRange" />
+      <field name="questFile1" />
+      <field name="questFile2" />
+      <field name="questFile3" />
+      <field name="questFile4" />
+      <field name="questFile5" />
+      <field name="questFile6" />
+      <field name="questFile7" />
+      <field name="questFile8" />
+      <field name="questFile9" />
+      <field name="questFile10" />
+      <field name="taskUID1" />
+      <field name="taskUID2" />
+      <field name="taskUID3" />
+      <field name="taskUID4" />
+      <field name="taskUID5" />
+      <field name="taskUID6" />
+      <field name="taskUID7" />
+      <field name="taskUID8" />
+      <field name="taskUID9" />
+      <field name="taskUID10" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="Skill_AttackWave">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Wave Config">
+      <field name="fxPakAlternate" />
+      <field name="fxPakExtents" />
+      <field name="fxPakName" />
+      <field name="fxPakRandAngle" />
+      <field name="fxPakRandOffsetX" />
+      <field name="fxPakRandOffsetY" />
+      <field name="fxPakSpawnDistance" />
+      <field name="lineEffectName" />
+      <field name="useTargetDir" />
+      <field name="waveDepth" />
+      <field name="waveDistance" />
+      <field name="waveEffectName" />
+      <field name="waveEndWidth" />
+      <field name="waveLoopSound" />
+      <field name="waveSource" />
+      <field name="waveStartSound" />
+      <field name="waveStartWidth" />
+      <field name="waveTime" />
+    </var-group>
+  </record-type>
+</partial>

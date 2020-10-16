@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="Skill_BuffAttackRadiusDrop">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="dropHeight" />
+      <field name="dropRadius" />
+      <field name="dropVariation" />
+      <field name="projectileLaunchNumber" />
+      <field name="projectileUsesAllDamage" />
+      <field name="skillActiveDuration" />
+      <field name="skillProjectileHitTimeToLive" />
+      <field name="skillProjectileMissTimeToLive" />
+      <field name="skillProjectileName" />
+      <field name="skillProjectileTargetGroundOnly" />
+      <field name="skillTargetInterval" />
+      <field name="skillTargetNumber" />
+      <field name="skillTargetRadius" />
+    </var-group>
+  </record-type>
+</partial>

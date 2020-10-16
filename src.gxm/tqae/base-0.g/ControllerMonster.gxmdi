@@ -1,0 +1,119 @@
+﻿<partial>
+  <record-type name="ControllerMonster" path="ControllerMonster.tpl">
+    <inherits>
+      <inherit record="ControllerAI" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ControllerMonster" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Attacking">
+        <field name="LeadChance" var-class="array" var-type="int">
+          <description>percent chance to lead target</description>
+        </field>
+        <field name="RepositionChance" var-class="variable" var-type="int" var-default-value="0">
+          <description>chance to reposition after blocked projectile attack</description>
+        </field>
+        <field name="randomRepositionChance" var-class="variable" var-type="int" var-default-value="0">
+          <description>chance to reposition anytime during normal attack</description>
+        </field>
+      </var-group>
+      <var-group name="DistressCalls">
+        <field name="ChanceToRespondToDistressCall" var-class="variable" var-type="int" var-default-value="100" />
+        <field name="DistressResponseBehavior" var-class="picklist" var-type="string" var-default-value="RespondToAll;RespondToSameGroup;RespondToSameRace" />
+        <field name="DistressResponseGroup" var-class="picklist" var-type="string" var-default-value="Arachnos;CryptWorm;DuneRaider;Euronymus;Harpy;Ichthian;Jackalman;Maenad;Mantid;Minotaur;Neanderthal;Peng;Raptor;Ratman;Reptillian;Satyr;Skeleton;Sprite;Tigerman;Yerren" />
+      </var-group>
+      <var-group name="Dodging">
+        <field name="DodgeChance" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="DodgeDelay" var-class="variable" var-type="int" var-default-value="5" />
+        <field name="DodgeDistance" var-class="variable" var-type="real" var-default-value="4.0" />
+        <field name="MinDodgeDistance" var-class="variable" var-type="real" var-default-value="2.0" />
+      </var-group>
+      <var-group name="Emote">
+        <field name="randomEmoteChance" var-class="variable" var-type="int" var-default-value="100" />
+        <field name="randomEmoteMaxTime" var-class="variable" var-type="int" var-default-value="10000" />
+        <field name="randomEmoteMinTime" var-class="variable" var-type="int" var-default-value="5000" />
+      </var-group>
+      <var-group name="Fleeing">
+        <field name="ClearAngerWhenFleeing" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="FleeBehavior" var-class="picklist" var-type="string" var-default-value="NeverFlee;FleeOnLowHealth;FleeOnDamage;FleeWhenEnemyClose" />
+        <field name="FleeChance" var-class="variable" var-type="int" var-default-value="100">
+          <description>[0..100]</description>
+        </field>
+        <field name="FleeDelay" var-class="variable" var-type="int" var-default-value="2000" />
+        <field name="FleeTarget" var-class="picklist" var-type="string" var-default-value="AwayFromEnemy;TowardsAllies;TowardsHome" />
+        <field name="FleeTime" var-class="variable" var-type="int" var-default-value="3000" />
+        <field name="ResetOriginAfterFleeing" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="fleeDistance" var-class="variable" var-type="real" var-default-value="5.0" />
+        <field name="maxFleeCount" var-class="variable" var-type="int" var-default-value="3" />
+      </var-group>
+      <var-group name="Patrolling">
+        <field name="ChanceToIdleOnPatrol" var-class="variable" var-type="int" var-default-value="20" />
+        <field name="MaxPatrolIdleTime" var-class="variable" var-type="int" var-default-value="5000" />
+        <field name="MinPatrolIdleTime" var-class="variable" var-type="int" var-default-value="2000" />
+      </var-group>
+      <var-group name="PetBehaviour">
+        <field name="ignorePetsChance" var-class="variable" var-type="int" var-default-value="0">
+          <description>chance to ignore pets when targeting</description>
+        </field>
+        <field name="ignorePetsInterval" var-class="variable" var-type="int" var-default-value="5000">
+          <description>time until I can change my mind about attack pets</description>
+        </field>
+        <field name="petAngerTransference" var-class="variable" var-type="int" var-default-value="30">
+          <description>percent of pet anger to transfer to player ALL THE TIME</description>
+        </field>
+        <field name="petTargetGreatestHealth" var-class="variable" var-type="bool" var-default-value="0">
+          <description>try to target monsters with greatest health</description>
+        </field>
+        <field name="petTargetLeastAttacked" var-class="variable" var-type="bool" var-default-value="0">
+          <description>try to target the least-recently attacked enemy</description>
+        </field>
+        <field name="petTargetLevelRange" var-class="variable" var-type="int" var-default-value="1000">
+          <description>only target enemies within n levels of player</description>
+        </field>
+      </var-group>
+      <var-group name="Pursuit">
+        <field name="EmoteBeforePursuingChance" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="MaxPursuitDistance" var-class="variable" var-type="real" var-default-value="20.0" />
+        <field name="PursuitTime" var-class="variable" var-type="int" var-default-value="10000" />
+      </var-group>
+      <var-group name="RandomAnger">
+        <field name="RandomAngerChance" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="RandomAngerEvaluationTime" var-class="variable" var-type="int" var-default-value="3000" />
+      </var-group>
+      <var-group name="Roaming">
+        <field name="MaxTimeBeforeRoam" var-class="variable" var-type="int" var-default-value="10000" />
+        <field name="MinRoamDistance" var-class="variable" var-type="real" var-default-value="5.0" />
+        <field name="MinTimeBeforeRoam" var-class="variable" var-type="int" var-default-value="3000" />
+        <field name="MinWanderDistance" var-class="variable" var-type="real" var-default-value="2.0" />
+        <field name="RoamBehavior" var-class="picklist" var-type="string" var-default-value="NeverRoam;Roam" />
+        <field name="RoamDistance" var-class="variable" var-type="real" var-default-value="10.0">
+          <description>How far monsters will roam around</description>
+        </field>
+        <field name="TeleportToLeaderDistance" var-class="variable" var-type="real" var-default-value="20.0" />
+        <field name="WanderDistance" var-class="variable" var-type="real" var-default-value="7.0">
+          <description>How far pets will wander around their leader</description>
+        </field>
+      </var-group>
+      <var-group name="SkillUsage">
+        <field name="BuffAllyBehavior" var-class="picklist" var-type="string" var-default-value="NeverUseSkill;WhenIdle;WhenEnemyIsSeen;WheneverPossible" />
+        <field name="BuffAllyTargeting" var-class="picklist" var-type="string" var-default-value="BuffClosest;BuffStrongest;BuffWeakest" />
+        <field name="BuffSelfBehavior" var-class="picklist" var-type="string" var-default-value="NeverUseSkill;WhenIdle;WhenEnemyIsSeen;WheneverPossible" />
+        <field name="DebuffEnemyBehavior" var-class="picklist" var-type="string" var-default-value="NeverUseSkill;WhenIdle;WhenEnemyIsSeen" />
+        <field name="healAllyHealthPercentage" var-class="variable" var-type="int" var-default-value="20">
+          <description>[0..100], will heal ally when health goes below percentage</description>
+        </field>
+        <field name="healLeaderHealthPercentage" var-class="variable" var-type="int" var-default-value="20">
+          <description>[0..100], will heal leader when health goes below percentage</description>
+        </field>
+      </var-group>
+      <var-group name="Sleep">
+        <field name="ignoreSleepingEnemies" var-class="variable" var-type="bool">
+          <description>do we ignore sleeping enemies?</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="Skill_AttackSpellBeam">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="beamDelay" />
+      <field name="beamName" />
+      <field name="beamThickness" />
+      <field name="endEffect" />
+      <field name="groundEffect" />
+      <field name="groundSound" />
+      <field name="loopSound" />
+      <field name="maxRange" />
+      <field name="passThrough" />
+      <field name="rotationSpeedMultiplier" />
+      <field name="startEffect" />
+      <field name="startSound" />
+      <field name="timeBetweenAttacks" />
+      <field name="travelSpeed" />
+    </var-group>
+  </record-type>
+</partial>

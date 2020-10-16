@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="CasinoMerchantConf">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Casino Conf">
+      <var-group name="Orbs">
+        <field name="EpicOrb" />
+        <field name="LegendaryOrb" />
+        <field name="NormalOrb" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="InGameUI.CaravanWindowRelicVault">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="CoverPlateImage" />
+      <field name="InventoryDBR" />
+      <field name="InventoryHeightArray" />
+      <field name="InventoryWidth" />
+      <field name="LargeCoverPlate" />
+      <field name="RelicVaultSortButton" />
+      <field name="SmallCoverPlate" />
+      <field name="WindowLocationX" />
+      <field name="WindowLocationY" />
+    </var-group>
+  </record-type>
+</partial>

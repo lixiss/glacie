@@ -1,0 +1,50 @@
+﻿<partial>
+  <record-type name="InGameUI.CombinedArmorRolloverWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="absorptionTitle" />
+      <field name="bonusColorBlue" />
+      <field name="bonusColorGreen" />
+      <field name="bonusColorRed" />
+      <field name="chestAbsorptionNumber" />
+      <field name="chestHitNumber" />
+      <field name="chestNumber" />
+      <field name="chestText" />
+      <field name="edgeClearance" />
+      <field name="feetAbsorptionNumber" />
+      <field name="feetHitNumber" />
+      <field name="feetNumber" />
+      <field name="feetText" />
+      <field name="handsAbsorptionNumber" />
+      <field name="handsHitNumber" />
+      <field name="handsNumber" />
+      <field name="handsText" />
+      <field name="headAbsorptionNumber" />
+      <field name="headHitNumber" />
+      <field name="headNumber" />
+      <field name="headText" />
+      <field name="hitTitleText" />
+      <field name="infoText" />
+      <field name="legsAbsorptionNumber" />
+      <field name="legsHitNumber" />
+      <field name="legsNumber" />
+      <field name="legsText" />
+      <field name="minSpacingBetweenColumns" />
+      <field name="rolloverStyle" />
+      <field name="shouldersAbsorptionNumber" />
+      <field name="shouldersHitNumber" />
+      <field name="shouldersNumber" />
+      <field name="shouldersText" />
+      <field name="titleText" />
+      <field name="unprotectedColorBlue" />
+      <field name="unprotectedColorGreen" />
+      <field name="unprotectedColorRed" />
+      <field name="unprotectedTag" />
+      <field name="verticalTextLineSpacing" />
+    </var-group>
+  </record-type>
+</partial>

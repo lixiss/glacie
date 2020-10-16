@@ -1,0 +1,71 @@
+﻿<partial>
+  <record-type name="LootMasterTable">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Loot">
+      <field name="lootName1" />
+      <field name="lootName2" />
+      <field name="lootName3" />
+      <field name="lootName4" />
+      <field name="lootName5" />
+      <field name="lootName6" />
+      <field name="lootName7" />
+      <field name="lootName8" />
+      <field name="lootName9" />
+      <field name="lootName10" />
+      <field name="lootName11" />
+      <field name="lootName12" />
+      <field name="lootName13" />
+      <field name="lootName14" />
+      <field name="lootName15" />
+      <field name="lootName16" />
+      <field name="lootName17" />
+      <field name="lootName18" />
+      <field name="lootName19" />
+      <field name="lootName20" />
+      <field name="lootName21" />
+      <field name="lootName22" />
+      <field name="lootName23" />
+      <field name="lootName24" />
+      <field name="lootName25" />
+      <field name="lootName26" />
+      <field name="lootName27" />
+      <field name="lootName28" />
+      <field name="lootName29" />
+      <field name="lootName30" />
+      <field name="lootWeight1" />
+      <field name="lootWeight2" />
+      <field name="lootWeight3" />
+      <field name="lootWeight4" />
+      <field name="lootWeight5" />
+      <field name="lootWeight6" />
+      <field name="lootWeight7" />
+      <field name="lootWeight8" />
+      <field name="lootWeight9" />
+      <field name="lootWeight10" />
+      <field name="lootWeight11" />
+      <field name="lootWeight12" />
+      <field name="lootWeight13" />
+      <field name="lootWeight14" />
+      <field name="lootWeight15" />
+      <field name="lootWeight16" />
+      <field name="lootWeight17" />
+      <field name="lootWeight18" />
+      <field name="lootWeight19" />
+      <field name="lootWeight20" />
+      <field name="lootWeight21" />
+      <field name="lootWeight22" />
+      <field name="lootWeight23" />
+      <field name="lootWeight24" />
+      <field name="lootWeight25" />
+      <field name="lootWeight26" />
+      <field name="lootWeight27" />
+      <field name="lootWeight28" />
+      <field name="lootWeight29" />
+      <field name="lootWeight30" />
+    </var-group>
+  </record-type>
+</partial>

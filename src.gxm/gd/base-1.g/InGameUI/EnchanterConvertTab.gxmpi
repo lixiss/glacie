@@ -1,0 +1,39 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterConvertTab">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Convert Tab">
+      <field name="blacklistedSets" />
+      <field name="costNumber" />
+      <field name="costText" />
+      <field name="createItemButton" />
+      <field name="createdItemSound" />
+      <field name="insufficientMaterialColor.b" />
+      <field name="insufficientMaterialColor.g" />
+      <field name="insufficientMaterialColor.r" />
+      <field name="productBox" />
+      <field name="randomSetButton" />
+      <field name="randomSetRecipe" />
+      <field name="randomSetRecipeLegendary" />
+      <field name="reagent1Box" />
+      <field name="reagent1Quantity" />
+      <field name="reagent2Box" />
+      <field name="reagent2Quantity" />
+      <field name="reagent3Box" />
+      <field name="reagent3Quantity" />
+      <field name="reagent4Box" />
+      <field name="reagent4Quantity" />
+      <field name="reagent5Box" />
+      <field name="reagent5Quantity" />
+      <field name="reagent6Box" />
+      <field name="reagent6Quantity" />
+      <field name="reagentBaseBox" />
+      <field name="sameSetButton" />
+      <field name="sameSetRecipe" />
+      <field name="tooExpensiveCostNumber" />
+    </var-group>
+  </record-type>
+</partial>

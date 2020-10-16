@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="ItemDifficultyUnlock">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Difficulty Unlock">
+      <field name="bitmap" />
+      <field name="difficultyUnlocked" />
+      <field name="gameMode" />
+      <field name="statQuests" />
+      <field name="useSound" />
+    </var-group>
+  </record-type>
+</partial>

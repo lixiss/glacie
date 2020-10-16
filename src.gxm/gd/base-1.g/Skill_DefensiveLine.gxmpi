@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="Skill_DefensiveLine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Sound">
+      <field name="skillDeactivatedSound" />
+    </var-group>
+    <var-group name="Spawn Config">
+      <field name="pointBlank" />
+      <field name="spawnDirection" />
+      <field name="spawnObjectsCount" />
+      <field name="spawnObjectsDistance" />
+      <field name="spawnObjectsSpacing" />
+      <field name="spawnObjectsTimeToLive" />
+    </var-group>
+  </record-type>
+</partial>

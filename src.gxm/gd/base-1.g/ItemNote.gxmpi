@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="ItemNote">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="ItemNote">
+      <field name="codexTitle" />
+      <field name="experienceBonus" />
+      <field name="noteBitmap" />
+      <field name="noteWidth" />
+      <field name="subHeading" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,30 @@
+﻿<partial>
+  <record-type name="Skill_PassiveShield" path="Skill_PassiveShield.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_PassiveModifier" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_PassiveShield" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Qualifying Damage">
+        <field name="bleedingDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="coldDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="elementalDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="fireDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="lifeDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="lightningDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="physicalDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="pierceDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="poisonDamageQualifier" var-class="variable" var-type="bool" var-default-value="0" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="damageAbsorption" var-class="array" var-type="real" />
+        <field name="damageAbsorptionPercent" var-class="array" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

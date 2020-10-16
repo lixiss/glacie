@@ -1,0 +1,74 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Base">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Devotion Config">
+      <field name="skillBlackList" />
+      <field name="skillExperienceLevels" />
+      <field name="skillTemplates" />
+      <field name="templateAutoCast" />
+    </var-group>
+    <var-group name="Qualifying Weapons">
+      <field name="Axe" />
+      <field name="Axe2h" />
+      <field name="Dagger" />
+      <field name="Mace" />
+      <field name="Mace2h" />
+      <field name="Magical" />
+      <field name="Offhand" />
+      <field name="Ranged1h" />
+      <field name="Ranged2h" />
+      <field name="Scepter" />
+      <field name="Shield" />
+      <field name="Spear" />
+      <field name="Staff" />
+      <field name="Sword" />
+      <field name="Sword2h" />
+      <field name="dualRangedOnly" />
+      <field name="dualRangedOrAllRangedOnly" />
+      <field name="dualRangedOrRanged2hOnly" />
+      <field name="dualWieldOnly" />
+      <field name="shieldNoRanged" />
+      <field name="unarmedOnly" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="achievementTracking" />
+      <field name="autoCastController" />
+      <field name="autoCastSkill" />
+      <field name="excludeRacialDamage" />
+      <field name="exclusiveSkill" />
+      <field name="forceMovement" />
+      <field name="retaliationDamagePct" />
+      <field name="skillMasteryLevelRequired" />
+      <field name="skillMaxLevel" />
+      <field name="skillSpecialAnimationName" />
+      <field name="skillTier" />
+      <field name="skillUltimateLevel" />
+      <field name="targetingMode" />
+      <field name="weaponDamagePct" />
+    </var-group>
+    <var-group name="Skill Dependancy">
+      <field name="skillDependancy" />
+      <field name="skillDependancyAll" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="targetFxPakName" />
+      <field name="warmupFxPakName" />
+    </var-group>
+    <var-group name="UI Infomation">
+      <field name="isPetBonusScaling" />
+      <field name="isPetDisplayable" />
+      <field name="skillBaseDescription" />
+      <field name="skillConnectionOff" />
+      <field name="skillConnectionOn" />
+      <field name="skillDisplayName" />
+      <field name="skillDownBitmapName" />
+      <field name="skillUpBitmapName" />
+      <field name="trackerOverride" />
+      <field name="trackerShowDetail" />
+    </var-group>
+  </record-type>
+</partial>

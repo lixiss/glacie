@@ -1,0 +1,56 @@
+﻿<partial>
+  <record-type name="InGameUI.CaravanWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="AutoCompleteButton" />
+      <field name="BackgroundImage" />
+      <field name="BuyTab2" />
+      <field name="BuyTab3" />
+      <field name="BuyTab4" />
+      <field name="BuyTab5" />
+      <field name="BuyTab6" />
+      <field name="CaravanDriverName" />
+      <field name="CloseButton" />
+      <field name="CompleteButtonRollover" />
+      <field name="MoveRelicsButton" />
+      <field name="MoveRelicsButtonRollover" />
+      <field name="PersonalAutoCompleteBitmaps" />
+      <field name="PersonalBuyBitmaps" />
+      <field name="PersonalMoveBitmaps" />
+      <field name="PersonalNamePlate" />
+      <field name="PersonalSortBitmaps" />
+      <field name="PersonalTabBitmaps" />
+      <field name="SortButtonRollover" />
+      <field name="StashButton" />
+      <field name="StashRollover" />
+      <field name="StashSortButton" />
+      <field name="StashWindow" />
+      <field name="Tab1" />
+      <field name="Tab2" />
+      <field name="Tab3" />
+      <field name="Tab4" />
+      <field name="Tab5" />
+      <field name="Tab6" />
+      <field name="TitleBitmap" />
+      <field name="ToggleStashButton" />
+      <field name="TransferAutoCompleteBitmaps" />
+      <field name="TransferButton" />
+      <field name="TransferBuyBitmaps" />
+      <field name="TransferMoveBitmaps" />
+      <field name="TransferNamePlate" />
+      <field name="TransferRollover" />
+      <field name="TransferSortBitmaps" />
+      <field name="TransferTabBitmaps" />
+      <field name="TransferWindow" />
+      <field name="caravanDriverText" />
+      <field name="clearSearchButton" />
+      <field name="searchBox" />
+      <field name="searchBoxRollover" />
+      <field name="windowTitle" />
+    </var-group>
+  </record-type>
+</partial>

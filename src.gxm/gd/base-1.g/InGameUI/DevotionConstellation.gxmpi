@@ -1,0 +1,60 @@
+﻿<partial>
+  <record-type name="InGameUI.DevotionConstellation">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Buttons">
+      <field name="devotionButton1" />
+      <field name="devotionButton2" />
+      <field name="devotionButton3" />
+      <field name="devotionButton4" />
+      <field name="devotionButton5" />
+      <field name="devotionButton6" />
+      <field name="devotionButton7" />
+      <field name="devotionButton8" />
+      <field name="devotionButton9" />
+      <field name="devotionButton10" />
+      <field name="devotionLinks1" />
+      <field name="devotionLinks2" />
+      <field name="devotionLinks3" />
+      <field name="devotionLinks4" />
+      <field name="devotionLinks5" />
+      <field name="devotionLinks6" />
+      <field name="devotionLinks7" />
+      <field name="devotionLinks8" />
+      <field name="devotionLinks9" />
+      <field name="devotionLinks10" />
+    </var-group>
+    <var-group name="Config">
+      <field name="affinityGiven1" />
+      <field name="affinityGiven2" />
+      <field name="affinityGiven3" />
+      <field name="affinityGivenName1" />
+      <field name="affinityGivenName2" />
+      <field name="affinityGivenName3" />
+      <field name="affinityRequired1" />
+      <field name="affinityRequired2" />
+      <field name="affinityRequired3" />
+      <field name="affinityRequiredName1" />
+      <field name="affinityRequiredName2" />
+      <field name="affinityRequiredName3" />
+      <field name="constellationActiveAlpha" />
+      <field name="constellationActiveBlue" />
+      <field name="constellationActiveGreen" />
+      <field name="constellationActiveRed" />
+      <field name="constellationAvailableAlpha" />
+      <field name="constellationAvailableBlue" />
+      <field name="constellationAvailableGreen" />
+      <field name="constellationAvailableRed" />
+      <field name="constellationBackground" />
+      <field name="constellationDisplayTag" />
+      <field name="constellationInfoTag" />
+      <field name="constellationUnavailableAlpha" />
+      <field name="constellationUnavailableBlue" />
+      <field name="constellationUnavailableGreen" />
+      <field name="constellationUnavailableRed" />
+    </var-group>
+  </record-type>
+</partial>

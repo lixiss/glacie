@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="Skill_DefensiveWall">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Sound">
+      <field name="skillDeactivatedSound" />
+    </var-group>
+    <var-group name="Spawn Config">
+      <field name="spawnObjectsAngleToCaster" />
+      <field name="spawnObjectsDistanceIncrement" />
+      <field name="spawnObjectsDistanceInnerCircle" />
+      <field name="spawnObjectsNumberOfRings" />
+      <field name="spawnObjectsRandomRotation" />
+      <field name="spawnObjectsSpacingAngle" />
+      <field name="spawnObjectsTimeToLive" />
+      <field name="spawnObjectsUseAngleToCaster" />
+    </var-group>
+  </record-type>
+</partial>

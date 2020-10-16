@@ -1,0 +1,38 @@
+﻿<partial>
+  <record-type name="InGameUI.TransmuterItemBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="backgroundShadeColorAlpha" />
+      <field name="backgroundShadeColorBlue" />
+      <field name="backgroundShadeColorGreen" />
+      <field name="backgroundShadeColorRed" />
+      <field name="failsRequirementsColorAlpha" />
+      <field name="failsRequirementsColorBlue" />
+      <field name="failsRequirementsColorGreen" />
+      <field name="failsRequirementsColorRed" />
+      <field name="itemX" />
+      <field name="itemXSize" />
+      <field name="itemY" />
+      <field name="itemYSize" />
+      <field name="originalColor.A" />
+      <field name="originalColor.B" />
+      <field name="originalColor.G" />
+      <field name="originalColor.R" />
+      <field name="pickUpSoundName" />
+      <field name="selectedColor.A" />
+      <field name="selectedColor.B" />
+      <field name="selectedColor.G" />
+      <field name="selectedColor.R" />
+      <field name="selectionBorder" />
+      <field name="silhouette" />
+      <field name="transmuteColor.A" />
+      <field name="transmuteColor.B" />
+      <field name="transmuteColor.G" />
+      <field name="transmuteColor.R" />
+    </var-group>
+  </record-type>
+</partial>

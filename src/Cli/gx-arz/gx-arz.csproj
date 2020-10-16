@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -42,11 +42,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
-    <ProjectReference Include="..\..\Glacie.Data.Tpl\Glacie.Data.Tpl.csproj" />
+    <ProjectReference Include="..\..\Glacie.Data.Metadata.V1\Glacie.Data.Metadata.V1.csproj" />
+    <ProjectReference Include="..\..\Glacie.Data.Templates\Glacie.Data.Templates.csproj" />
     <ProjectReference Include="..\..\Glacie.Logging\Glacie.Logging.csproj" />
-    <ProjectReference Include="..\..\Glacie.Metadata\Glacie.Metadata.csproj" />
-    <ProjectReference Include="..\..\Glacie.Targeting\Glacie.Targeting.csproj" />
+    <ProjectReference Include="..\..\Glacie.Metadata.V1\Glacie.Metadata.V1.csproj" />
+    <ProjectReference Include="..\..\Glacie.Targeting.GX1\Glacie.Targeting.GX1.csproj" />
     <ProjectReference Include="..\Glacie.Cli.Core\Glacie.Cli.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
     <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
     <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />

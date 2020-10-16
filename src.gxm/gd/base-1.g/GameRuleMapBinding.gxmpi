@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="GameRuleMapBinding">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Map Binding" system="true">
+      <field name="gameRule001" />
+      <field name="gameRule002" />
+      <field name="gameRule003" />
+      <field name="gameRule004" />
+      <field name="gameRule005" />
+      <field name="map" />
+    </var-group>
+  </record-type>
+</partial>

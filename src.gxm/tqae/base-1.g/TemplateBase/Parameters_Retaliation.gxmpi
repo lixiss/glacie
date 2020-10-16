@@ -1,0 +1,295 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Retaliation">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Retaliation Parameters">
+      <var-group name="Retaliation Absolute">
+        <var-group name="Retaliation Cold">
+          <field name="retaliationColdChance" />
+          <field name="retaliationColdGlobal" />
+          <field name="retaliationColdMax" />
+          <field name="retaliationColdMin" />
+          <field name="retaliationColdModifier" />
+          <field name="retaliationColdModifierChance" />
+          <field name="retaliationColdXOR" />
+        </var-group>
+        <var-group name="Retaliation Elemental">
+          <field name="retaliationElementalChance" />
+          <field name="retaliationElementalGlobal" />
+          <field name="retaliationElementalMax" />
+          <field name="retaliationElementalMin" />
+          <field name="retaliationElementalXOR" />
+        </var-group>
+        <var-group name="Retaliation Fire">
+          <field name="retaliationFireChance" />
+          <field name="retaliationFireGlobal" />
+          <field name="retaliationFireMax" />
+          <field name="retaliationFireMin" />
+          <field name="retaliationFireModifier" />
+          <field name="retaliationFireModifierChance" />
+          <field name="retaliationFireXOR" />
+        </var-group>
+        <var-group name="Retaliation Life">
+          <field name="retaliationLifeChance" />
+          <field name="retaliationLifeGlobal" />
+          <field name="retaliationLifeMax" />
+          <field name="retaliationLifeMin" />
+          <field name="retaliationLifeModifier" />
+          <field name="retaliationLifeModifierChance" />
+          <field name="retaliationLifeXOR" />
+        </var-group>
+        <var-group name="Retaliation Lightning">
+          <field name="retaliationLightningChance" />
+          <field name="retaliationLightningGlobal" />
+          <field name="retaliationLightningMax" />
+          <field name="retaliationLightningMin" />
+          <field name="retaliationLightningModifier" />
+          <field name="retaliationLightningModifierChance" />
+          <field name="retaliationLightningXOR" />
+        </var-group>
+        <var-group name="Retaliation Percent Current Life">
+          <field name="retaliationPercentCurrentLifeChance" />
+          <field name="retaliationPercentCurrentLifeMax" />
+          <field name="retaliationPercentCurrentLifeMin" />
+          <field name="retaliationPercentCurrentLifeXOR" />
+          <field name="retaliationPercentcurrentLifeGlobal" />
+        </var-group>
+        <var-group name="Retaliation Physical">
+          <field name="retaliationPhysicalChance" />
+          <field name="retaliationPhysicalGlobal" />
+          <field name="retaliationPhysicalMax" />
+          <field name="retaliationPhysicalMin" />
+          <field name="retaliationPhysicalModifier" />
+          <field name="retaliationPhysicalModifierChance" />
+          <field name="retaliationPhysicalXOR" />
+        </var-group>
+        <var-group name="Retaliation Pierce">
+          <field name="retaliationPierceChance" />
+          <field name="retaliationPierceGlobal" />
+          <field name="retaliationPierceMax" />
+          <field name="retaliationPierceMin" />
+          <field name="retaliationPierceModifier" />
+          <field name="retaliationPierceModifierChance" />
+          <field name="retaliationPierceXOR" />
+        </var-group>
+        <var-group name="Retaliation PierceRatio">
+          <field name="retaliationPierceRatioChance" />
+          <field name="retaliationPierceRatioGlobal" />
+          <field name="retaliationPierceRatioMax" />
+          <field name="retaliationPierceRatioMin" />
+          <field name="retaliationPierceRatioModifier" />
+          <field name="retaliationPierceRatioModifierChance" />
+          <field name="retaliationPierceRatioXOR" />
+        </var-group>
+        <var-group name="Retaliation Poison">
+          <field name="retaliationPoisonChance" />
+          <field name="retaliationPoisonGlobal" />
+          <field name="retaliationPoisonMax" />
+          <field name="retaliationPoisonMin" />
+          <field name="retaliationPoisonModifier" />
+          <field name="retaliationPoisonModifierChance" />
+          <field name="retaliationPoisonXOR" />
+        </var-group>
+        <var-group name="Retaliation Stun">
+          <field name="retaliationStunChance" />
+          <field name="retaliationStunGlobal" />
+          <field name="retaliationStunMax" />
+          <field name="retaliationStunMin" />
+          <field name="retaliationStunModifier" />
+          <field name="retaliationStunModifierChance" />
+          <field name="retaliationStunXOR" />
+        </var-group>
+      </var-group>
+      <var-group name="Retaliation Duration">
+        <var-group name="Retaliation Slow Attack Speed">
+          <field name="retaliationSlowAttackSpeedChance" />
+          <field name="retaliationSlowAttackSpeedDurationMax" />
+          <field name="retaliationSlowAttackSpeedDurationMin" />
+          <field name="retaliationSlowAttackSpeedDurationModifier" />
+          <field name="retaliationSlowAttackSpeedDurationModifierChance" />
+          <field name="retaliationSlowAttackSpeedGlobal" />
+          <field name="retaliationSlowAttackSpeedMax" />
+          <field name="retaliationSlowAttackSpeedMin" />
+          <field name="retaliationSlowAttackSpeedModifier" />
+          <field name="retaliationSlowAttackSpeedModifierChance" />
+          <field name="retaliationSlowAttackSpeedXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Bleeding">
+          <field name="retaliationSlowBleedingChance" />
+          <field name="retaliationSlowBleedingDurationMax" />
+          <field name="retaliationSlowBleedingDurationMin" />
+          <field name="retaliationSlowBleedingDurationModifier" />
+          <field name="retaliationSlowBleedingDurationModifierChance" />
+          <field name="retaliationSlowBleedingGlobal" />
+          <field name="retaliationSlowBleedingMax" />
+          <field name="retaliationSlowBleedingMin" />
+          <field name="retaliationSlowBleedingModifier" />
+          <field name="retaliationSlowBleedingModifierChance" />
+          <field name="retaliationSlowBleedingXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Cold">
+          <field name="retaliationSlowColdChance" />
+          <field name="retaliationSlowColdDurationMax" />
+          <field name="retaliationSlowColdDurationMin" />
+          <field name="retaliationSlowColdDurationModifier" />
+          <field name="retaliationSlowColdDurationModifierChance" />
+          <field name="retaliationSlowColdGlobal" />
+          <field name="retaliationSlowColdMax" />
+          <field name="retaliationSlowColdMin" />
+          <field name="retaliationSlowColdModifier" />
+          <field name="retaliationSlowColdModifierChance" />
+          <field name="retaliationSlowColdXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Defensive Ability">
+          <field name="retaliationSlowDefensiveAbilityChance" />
+          <field name="retaliationSlowDefensiveAbilityDurationMax" />
+          <field name="retaliationSlowDefensiveAbilityDurationMin" />
+          <field name="retaliationSlowDefensiveAbilityDurationModifier" />
+          <field name="retaliationSlowDefensiveAbilityDurationModifierChance" />
+          <field name="retaliationSlowDefensiveAbilityGlobal" />
+          <field name="retaliationSlowDefensiveAbilityMax" />
+          <field name="retaliationSlowDefensiveAbilityMin" />
+          <field name="retaliationSlowDefensiveAbilityModifier" />
+          <field name="retaliationSlowDefensiveAbilityModifierChance" />
+          <field name="retaliationSlowDefensiveAbilityXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Fire">
+          <field name="retaliationSlowFireChance" />
+          <field name="retaliationSlowFireDurationMax" />
+          <field name="retaliationSlowFireDurationMin" />
+          <field name="retaliationSlowFireDurationModifier" />
+          <field name="retaliationSlowFireDurationModifierChance" />
+          <field name="retaliationSlowFireGlobal" />
+          <field name="retaliationSlowFireMax" />
+          <field name="retaliationSlowFireMin" />
+          <field name="retaliationSlowFireModifier" />
+          <field name="retaliationSlowFireModifierChance" />
+          <field name="retaliationSlowFireXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Life">
+          <field name="retaliationSlowLifeChance" />
+          <field name="retaliationSlowLifeDurationMax" />
+          <field name="retaliationSlowLifeDurationMin" />
+          <field name="retaliationSlowLifeDurationModifier" />
+          <field name="retaliationSlowLifeDurationModifierChance" />
+          <field name="retaliationSlowLifeGlobal" />
+          <field name="retaliationSlowLifeMax" />
+          <field name="retaliationSlowLifeMin" />
+          <field name="retaliationSlowLifeModifier" />
+          <field name="retaliationSlowLifeModifierChance" />
+          <field name="retaliationSlowLifeXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Life Leach">
+          <field name="retaliationSlowLifeLeachChance" />
+          <field name="retaliationSlowLifeLeachDurationMax" />
+          <field name="retaliationSlowLifeLeachDurationMin" />
+          <field name="retaliationSlowLifeLeachDurationModifier" />
+          <field name="retaliationSlowLifeLeachDurationModifierChance" />
+          <field name="retaliationSlowLifeLeachGlobal" />
+          <field name="retaliationSlowLifeLeachMax" />
+          <field name="retaliationSlowLifeLeachMin" />
+          <field name="retaliationSlowLifeLeachModifier" />
+          <field name="retaliationSlowLifeLeachModifierChance" />
+          <field name="retaliationSlowLifeLeachXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Lightning">
+          <field name="retaliationSlowLightningChance" />
+          <field name="retaliationSlowLightningDurationMax" />
+          <field name="retaliationSlowLightningDurationMin" />
+          <field name="retaliationSlowLightningDurationModifier" />
+          <field name="retaliationSlowLightningDurationModifierChance" />
+          <field name="retaliationSlowLightningGlobal" />
+          <field name="retaliationSlowLightningMax" />
+          <field name="retaliationSlowLightningMin" />
+          <field name="retaliationSlowLightningModifier" />
+          <field name="retaliationSlowLightningModifierChance" />
+          <field name="retaliationSlowLightningXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Mana Leach">
+          <field name="retaliationSlowManaLeachChance" />
+          <field name="retaliationSlowManaLeachDurationMax" />
+          <field name="retaliationSlowManaLeachDurationMin" />
+          <field name="retaliationSlowManaLeachDurationModifier" />
+          <field name="retaliationSlowManaLeachDurationModifierChance" />
+          <field name="retaliationSlowManaLeachGlobal" />
+          <field name="retaliationSlowManaLeachMax" />
+          <field name="retaliationSlowManaLeachMin" />
+          <field name="retaliationSlowManaLeachModifier" />
+          <field name="retaliationSlowManaLeachModifierChance" />
+          <field name="retaliationSlowManaLeachXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Offensive Ability">
+          <field name="retaliationSlowOffensiveAbilityChance" />
+          <field name="retaliationSlowOffensiveAbilityDurationMax" />
+          <field name="retaliationSlowOffensiveAbilityDurationMin" />
+          <field name="retaliationSlowOffensiveAbilityDurationModifier" />
+          <field name="retaliationSlowOffensiveAbilityDurationModifierChance" />
+          <field name="retaliationSlowOffensiveAbilityGlobal" />
+          <field name="retaliationSlowOffensiveAbilityMax" />
+          <field name="retaliationSlowOffensiveAbilityMin" />
+          <field name="retaliationSlowOffensiveAbilityModifier" />
+          <field name="retaliationSlowOffensiveAbilityModifierChance" />
+          <field name="retaliationSlowOffensiveAbilityXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Offensive Reduction">
+          <field name="retaliationSlowOffensiveReductionChance" />
+          <field name="retaliationSlowOffensiveReductionDurationMax" />
+          <field name="retaliationSlowOffensiveReductionDurationMin" />
+          <field name="retaliationSlowOffensiveReductionDurationModifier" />
+          <field name="retaliationSlowOffensiveReductionDurationModifierChance" />
+          <field name="retaliationSlowOffensiveReductionGlobal" />
+          <field name="retaliationSlowOffensiveReductionMax" />
+          <field name="retaliationSlowOffensiveReductionMin" />
+          <field name="retaliationSlowOffensiveReductionModifier" />
+          <field name="retaliationSlowOffensiveReductionModifierChance" />
+          <field name="retaliationSlowOffensiveReductionXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Physical">
+          <field name="retaliationSlowPhysicalChance" />
+          <field name="retaliationSlowPhysicalDurationMax" />
+          <field name="retaliationSlowPhysicalDurationMin" />
+          <field name="retaliationSlowPhysicalDurationModifier" />
+          <field name="retaliationSlowPhysicalDurationModifierChance" />
+          <field name="retaliationSlowPhysicalGlobal" />
+          <field name="retaliationSlowPhysicalMax" />
+          <field name="retaliationSlowPhysicalMin" />
+          <field name="retaliationSlowPhysicalModifier" />
+          <field name="retaliationSlowPhysicalModifierChance" />
+          <field name="retaliationSlowPhysicalXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Poison">
+          <field name="retaliationSlowPoisonChance" />
+          <field name="retaliationSlowPoisonDurationMax" />
+          <field name="retaliationSlowPoisonDurationMin" />
+          <field name="retaliationSlowPoisonDurationModifier" />
+          <field name="retaliationSlowPoisonDurationModifierChance" />
+          <field name="retaliationSlowPoisonGlobal" />
+          <field name="retaliationSlowPoisonMax" />
+          <field name="retaliationSlowPoisonMin" />
+          <field name="retaliationSlowPoisonModifier" />
+          <field name="retaliationSlowPoisonModifierChance" />
+          <field name="retaliationSlowPoisonXOR" />
+        </var-group>
+        <var-group name="Retaliation Slow Run Speed">
+          <field name="retaliationSlowRunSpeedChance" />
+          <field name="retaliationSlowRunSpeedDurationMax" />
+          <field name="retaliationSlowRunSpeedDurationMin" />
+          <field name="retaliationSlowRunSpeedDurationModifier" />
+          <field name="retaliationSlowRunSpeedDurationModifierChance" />
+          <field name="retaliationSlowRunSpeedGlobal" />
+          <field name="retaliationSlowRunSpeedMax" />
+          <field name="retaliationSlowRunSpeedMin" />
+          <field name="retaliationSlowRunSpeedModifier" />
+          <field name="retaliationSlowRunSpeedModifierChance" />
+          <field name="retaliationSlowRunSpeedXOR" />
+        </var-group>
+      </var-group>
+      <var-group name="Retaliation Global">
+        <field name="retaliationGlobalChance" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

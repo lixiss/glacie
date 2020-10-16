@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="WeaponEnchantmentPak" path="WeaponEnchantmentPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="WeaponEnchantmentPak" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Bow">
+        <field name="bowHitSound" var-class="variable" var-type="file_dbr" />
+        <field name="bowSwipeSound" var-class="variable" var-type="file_dbr" />
+        <field name="projectileName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Config">
+        <field name="useWeaponTint" var-class="variable" var-type="bool">
+          <description>Set to apply weapon tint</description>
+        </field>
+        <field name="weaponActiveEffect" var-class="variable" var-type="file_dbr">
+          <description>EffectEntity plays at swipe</description>
+        </field>
+        <field name="weaponEffect" var-class="variable" var-type="file_dbr">
+          <description>EffectEntity always on</description>
+        </field>
+        <field name="weaponTintAlpha" var-class="variable" var-type="real">
+          <description>0 to 255 normal range</description>
+        </field>
+        <field name="weaponTintBlue" var-class="variable" var-type="real">
+          <description>0 to 255 normal range</description>
+        </field>
+        <field name="weaponTintGreen" var-class="variable" var-type="real">
+          <description>0 to 255 normal range</description>
+        </field>
+        <field name="weaponTintRed" var-class="variable" var-type="real">
+          <description>0 to 255 normal range</description>
+        </field>
+        <field name="weaponTrail" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Melee">
+        <field name="meleeHitSound" var-class="variable" var-type="file_dbr" />
+        <field name="meleeSwipeSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Staff">
+        <field name="staffHitSound" var-class="variable" var-type="file_dbr" />
+        <field name="staffSwipeSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

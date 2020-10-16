@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="Skill_AttackRadiusSpin">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="delayMovement" />
+      <field name="loopSound" />
+      <field name="rotationSpeedMultiplier" />
+      <field name="startSound" />
+      <field name="timeBetweenAttacks" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,40 @@
+﻿<partial>
+  <record-type name="Skill_Modifier">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Modifiers">
+      <field name="skillActiveDuration" />
+      <field name="skillActiveLifeCost" />
+      <field name="skillActiveManaCost" />
+      <field name="skillChargeLevel" />
+      <field name="skillCooldownTime" />
+      <field name="skillManaCost" />
+      <field name="skillTargetAngle" />
+      <field name="skillTargetNumber" />
+      <field name="skillTargetRadius" />
+      <field name="waveDistance" />
+      <field name="waveEndWidth" />
+      <field name="waveStartWidth" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="explosionRadius" />
+      <field name="projectileLaunchNumber" />
+      <field name="projectileLaunchRotation" />
+      <field name="projectilePiercing" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="charFxPakOtherNames" />
+      <field name="charFxPakSelfNames" />
+    </var-group>
+    <var-group name="Spawn Modifiers">
+      <field name="angleToCaster" />
+      <field name="distanceIncrement" />
+      <field name="numRings" />
+      <field name="spacingAngle" />
+      <field name="spawnObjectsTimeToLive" />
+    </var-group>
+  </record-type>
+</partial>

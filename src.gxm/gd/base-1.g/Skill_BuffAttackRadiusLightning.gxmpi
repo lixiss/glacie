@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="Skill_BuffAttackRadiusLightning">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="lightningName" />
+      <field name="skillActiveDuration" />
+      <field name="skillTargetInterval" />
+      <field name="skillTargetNumber" />
+      <field name="skillTargetRadius" />
+    </var-group>
+  </record-type>
+</partial>

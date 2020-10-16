@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ControllerTelkine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="TelkineParameters">
+      <field name="directAttack" />
+      <field name="skeletonSpell" />
+      <field name="telekinesisSpell" />
+    </var-group>
+  </record-type>
+</partial>

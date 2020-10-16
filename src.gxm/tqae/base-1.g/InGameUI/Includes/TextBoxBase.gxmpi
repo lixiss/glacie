@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="InGameUI.Includes.TextBoxBase">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="style" />
+      <field name="textAlignmentX" />
+      <field name="textAlignmentY" />
+      <field name="textBoxX" />
+      <field name="textBoxXSize" />
+      <field name="textBoxY" />
+      <field name="textBoxYSize" />
+    </var-group>
+  </record-type>
+</partial>

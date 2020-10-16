@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="ItemRandomSetFormula">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Formula Config">
+      <field name="randomItemSets" />
+    </var-group>
+  </record-type>
+</partial>

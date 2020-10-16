@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="InGameUI.ItemBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="backgroundShadeColorAlpha" />
+      <field name="backgroundShadeColorBlue" />
+      <field name="backgroundShadeColorGreen" />
+      <field name="backgroundShadeColorRed" />
+      <field name="failsRequirementsColorAlpha" />
+      <field name="failsRequirementsColorBlue" />
+      <field name="failsRequirementsColorGreen" />
+      <field name="failsRequirementsColorRed" />
+      <field name="itemX" />
+      <field name="itemXSize" />
+      <field name="itemY" />
+      <field name="itemYSize" />
+      <field name="pickUpSoundName" />
+      <field name="silhouette" />
+    </var-group>
+  </record-type>
+</partial>

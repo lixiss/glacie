@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="ProxyHookPack">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Scripts">
+      <field name="onSpawn" />
+      <field name="proxyHooks" />
+    </var-group>
+  </record-type>
+</partial>

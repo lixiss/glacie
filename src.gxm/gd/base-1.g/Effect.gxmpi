@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="Effect">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Effect">
+      <field name="Anchored" />
+      <field name="boneList" />
+      <field name="cameraShakeAmplitude" />
+      <field name="cameraShakeDuration" />
+      <field name="canBeSoft" />
+      <field name="decal" />
+      <field name="effectFile" />
+      <field name="emitterType" />
+      <field name="localOrientFix" />
+    </var-group>
+  </record-type>
+</partial>

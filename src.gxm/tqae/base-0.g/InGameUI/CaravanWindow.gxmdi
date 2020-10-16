@@ -1,0 +1,31 @@
+﻿<partial>
+  <record-type name="InGameUI.CaravanWindow" path="InGameUI/CaravanWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="BackgroundImage" var-class="variable" var-type="file_dbr" />
+        <field name="CaravanDriverName" var-class="variable" var-type="file_dbr" />
+        <field name="CloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="RelicVaultButton" var-class="variable" var-type="file_dbr" />
+        <field name="RelicVaultRollover" var-class="variable" var-type="file_dbr" />
+        <field name="RelicVaultWindow" var-class="variable" var-type="file_dbr" />
+        <field name="StashButton" var-class="variable" var-type="file_dbr" />
+        <field name="StashRollover" var-class="variable" var-type="file_dbr" />
+        <field name="StashWindow" var-class="variable" var-type="file_dbr" />
+        <field name="TitleBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="TransferButton" var-class="variable" var-type="file_dbr" />
+        <field name="TransferRollover" var-class="variable" var-type="file_dbr" />
+        <field name="TransferWindow" var-class="variable" var-type="file_dbr" />
+        <field name="caravanDriverText" var-class="variable" var-type="file_dbr" />
+        <field name="windowTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

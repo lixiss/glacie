@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="InGameUI.HotSlotButton">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="buttonDefaultRollover" />
+      <field name="highlightBlue" />
+      <field name="highlightRed" />
+      <field name="overlayBitmap" />
+      <field name="overlayBitmapPosX" />
+      <field name="overlayBitmapPosY" />
+      <field name="slotDropSound" />
+      <field name="slotSelectSound" />
+    </var-group>
+    <var-group name="KeyText">
+      <field name="keyTextTable" />
+    </var-group>
+    <var-group name="Quantity">
+      <field name="rollover" />
+      <field name="style" />
+      <field name="textAlignmentX" />
+      <field name="textAlignmentY" />
+      <field name="textBoxX" />
+      <field name="textBoxXSize" />
+      <field name="textBoxY" />
+      <field name="textBoxYSize" />
+    </var-group>
+  </record-type>
+</partial>

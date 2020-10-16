@@ -1,0 +1,39 @@
+﻿<partial>
+  <record-type name="AreaTrigger" path="AreaTrigger.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="AreaTrigger" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="AreaTrigger">
+        <field name="detectableNames" var-class="array" var-type="file_dbr">
+          <description>Array of dbrs which the trigger detects</description>
+        </field>
+        <field name="detects" var-class="picklist" var-type="string" var-default-value="LocalPlayer;Players;AnyEntity;Monsters" />
+        <field name="enabled" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="onEnter" var-class="variable" var-type="string">
+          <description>Lua function to execute when an object enters the bounds [void onEnter(objectId)] -optional</description>
+        </field>
+        <field name="onInside" var-class="variable" var-type="string">
+          <description>Lua function to execute when an object is inside the bounds [void onInside(objectId)] -optional</description>
+        </field>
+        <field name="onLeave" var-class="variable" var-type="string">
+          <description>Lua function to execute when an object leaves the bounds [void onLeave(objectId)] -optional</description>
+        </field>
+        <field name="resetPeriod" var-class="variable" var-type="real" var-default-value="0.0">
+          <description>Time after triggering before the trigger can be retriggered (seconds, 0 = once only, negative = always trigger)</description>
+        </field>
+        <field name="shouldTrigger" var-class="variable" var-type="string">
+          <description>Lua function to evaluate to determine if an object should activate the trigger [bool shouldTrigger(objectId)] -optional</description>
+        </field>
+        <field name="singular" var-class="variable" var-type="bool" var-default-value="1">
+          <description>If true then only one entity entering the bounds during an update can fire the trigger</description>
+        </field>
+        <field name="updatePeriod" var-class="variable" var-type="real" var-default-value="0.0">
+          <description>Time between detection updates (seconds)</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="ItemUpgrade">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="UPGRADE CONF">
+      <field name="additionalAttributeScalePercentage" />
+    </var-group>
+  </record-type>
+</partial>

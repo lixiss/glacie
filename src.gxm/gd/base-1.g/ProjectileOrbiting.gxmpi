@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="ProjectileOrbiting">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="disableCollision" />
+      <field name="inverse" />
+      <field name="projectileDuration" />
+      <field name="projectileFollow" />
+      <field name="projectileOrbitRate" />
+      <field name="projectileStartDistance" />
+    </var-group>
+  </record-type>
+</partial>

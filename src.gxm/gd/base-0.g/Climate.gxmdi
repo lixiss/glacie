@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="Climate" path="Climate.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string">
+          <description>Climate</description>
+        </field>
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Climates">
+        <field name="climate1chance" var-class="variable" var-type="int" var-default-value="0">
+          <description>Chance/Total Chances</description>
+        </field>
+        <field name="climate1dbr" var-class="variable" var-type="file_dbr">
+          <description>ClimateSystem Type</description>
+        </field>
+        <field name="climate1time" var-class="picklist" var-type="string" var-default-value="Always;Day;Night">
+          <description>Active Time</description>
+        </field>
+        <field name="climate2chance" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="climate2dbr" var-class="variable" var-type="file_dbr" />
+        <field name="climate2time" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+        <field name="climate3chance" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="climate3dbr" var-class="variable" var-type="file_dbr" />
+        <field name="climate3time" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+        <field name="climate4chance" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="climate4dbr" var-class="variable" var-type="file_dbr" />
+        <field name="climate4time" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+        <field name="climate5chance" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="climate5dbr" var-class="variable" var-type="file_dbr" />
+        <field name="climate5time" var-class="picklist" var-type="string" var-default-value="Always;Day;Night" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

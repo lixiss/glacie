@@ -1,0 +1,306 @@
+﻿<partial>
+  <record-type name="TemplateBase.CharacterLoot" path="TemplateBase/CharacterLoot.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Initial Equipment">
+        <var-group name="Finger1">
+          <field name="chanceToEquipFinger1" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipFinger1Item1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger1Item2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger1Item3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger1Item4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger1Item5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger1Item6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootFinger1Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger1Item2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger1Item3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger1Item4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger1Item5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger1Item6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Finger2">
+          <field name="chanceToEquipFinger2" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipFinger2Item1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger2Item2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger2Item3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger2Item4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger2Item5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipFinger2Item6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootFinger2Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger2Item2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger2Item3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger2Item4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger2Item5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootFinger2Item6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Forearm">
+          <field name="chanceToEquipForearm" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipForearmItem1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipForearmItem2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipForearmItem3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipForearmItem4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipForearmItem5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipForearmItem6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootForearmItem1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootForearmItem2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootForearmItem3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootForearmItem4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootForearmItem5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootForearmItem6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Head">
+          <field name="chanceToEquipHead" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipHeadItem1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipHeadItem2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipHeadItem3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipHeadItem4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipHeadItem5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipHeadItem6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootHeadItem1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootHeadItem2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootHeadItem3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootHeadItem4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootHeadItem5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootHeadItem6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Left Hand" system="true">
+          <field name="chanceToEquipLeftHand" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipLeftHandItem1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLeftHandItem2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLeftHandItem3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLeftHandItem4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLeftHandItem5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLeftHandItem6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootLeftHandItem1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLeftHandItem2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLeftHandItem3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLeftHandItem4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLeftHandItem5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLeftHandItem6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Lower Body">
+          <field name="chanceToEquipLowerBody" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipLowerBodyItem1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLowerBodyItem2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLowerBodyItem3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLowerBodyItem4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLowerBodyItem5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipLowerBodyItem6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootLowerBodyItem1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLowerBodyItem2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLowerBodyItem3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLowerBodyItem4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLowerBodyItem5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootLowerBodyItem6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Misc">
+          <field name="chanceToEquipMisc1" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc3" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipMisc3Item1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc3Item2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc3Item3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc3Item4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc3Item5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc3Item6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootMisc1Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc1Item2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc1Item3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc1Item4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc1Item5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc1Item6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc3Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc3Item2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc3Item3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc3Item4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc3Item5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc3Item6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Right Hand">
+          <field name="chanceToEquipRightHand" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipRightHandItem1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipRightHandItem2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipRightHandItem3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipRightHandItem4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipRightHandItem5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipRightHandItem6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootRightHandItem1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootRightHandItem2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootRightHandItem3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootRightHandItem4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootRightHandItem5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootRightHandItem6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Torso">
+          <field name="chanceToEquipTorso" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipTorsoItem1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipTorsoItem2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipTorsoItem3" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipTorsoItem4" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipTorsoItem5" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipTorsoItem6" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="lootTorsoItem1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootTorsoItem2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootTorsoItem3" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootTorsoItem4" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootTorsoItem5" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootTorsoItem6" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

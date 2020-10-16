@@ -54,15 +54,15 @@ namespace Glacie.Data.Arz.Tests
         public void FieldEnumeration()
         {
             var count = 0;
-            foreach (var _ in Record0.GetAll()) count++;
+            foreach (var _ in Record0.SelectAll()) count++;
             Assert.Equal(235, count);
 
             count = 0;
-            foreach (var _ in Record1.GetAll()) count++;
+            foreach (var _ in Record1.SelectAll()) count++;
             Assert.Equal(1174, count);
 
             count = 0;
-            foreach (var _ in Record2.GetAll()) count++;
+            foreach (var _ in Record2.SelectAll()) count++;
             Assert.Equal(13, count);
         }
 
@@ -111,7 +111,7 @@ namespace Glacie.Data.Arz.Tests
         private void VerifyInitialInvariants(ArzRecord record)
         {
             var count = 0;
-            foreach (var _ in record.GetAll()) count++;
+            foreach (var _ in record.SelectAll()) count++;
             Assert.True(record.Count == count);
         }
     }

@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="Hades">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="HadesSkills">
+      <field name="rageBuffSkill1" />
+      <field name="rageBuffSkill2" />
+    </var-group>
+  </record-type>
+</partial>

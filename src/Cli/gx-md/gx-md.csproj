@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>gx-md</AssemblyName>
+    <RootNamespace>Glacie.Cli</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Commands\Abstract\Command.cs" />
+    <Compile Include="Commands\CreateCommand.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+
+    <PackageReference Include="System.CommandLine" Version="2.0.0-beta1.20427.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Glacie.Analysis\Glacie.Analysis.csproj" />
+    <ProjectReference Include="..\..\Glacie.Context\Glacie.Context.csproj" />
+    <ProjectReference Include="..\..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
+    <ProjectReference Include="..\..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\..\Glacie.Data.Templates\Glacie.Data.Templates.csproj" />
+    <ProjectReference Include="..\..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\..\Glacie.Data.Resources\Glacie.Data.Resources.csproj" />
+    <ProjectReference Include="..\..\Glacie.Metadata\Glacie.Metadata.csproj" />
+    <ProjectReference Include="..\..\Glacie.Resources.GX1\Glacie.Resources.GX1.csproj" />
+    <ProjectReference Include="..\..\Glacie.Targeting.GX1\Glacie.Targeting.GX1.csproj" />
+    <ProjectReference Include="..\..\Glacie.Validation\Glacie.Validation.csproj" />
+    <ProjectReference Include="..\..\Glacie\Glacie.csproj" />
+    <ProjectReference Include="..\Glacie.Cli.Core\Glacie.Cli.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.CommandLine\Glacie.CommandLine.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Core\Glacie.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+</Project>

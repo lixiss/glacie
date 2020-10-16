@@ -1,0 +1,151 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab3" path="InGameUI/CharStatsTab3.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.Vec2" />
+      <inherit record="InGameUI.Includes.Ext2" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <var-group name="Defense">
+          <field name="tab3BlockRecoveryRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3BlockRecoveryText" var-class="variable" var-type="string" />
+          <field name="tab3ChanceToBlockRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ChanceToBlockText" var-class="variable" var-type="string" />
+          <field name="tab3DamageBlockedRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3DamageBlockedText" var-class="variable" var-type="string" />
+          <field name="tab3DisruptionResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3DisruptionResistText" var-class="variable" var-type="string" />
+          <field name="tab3DodgeChanceRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3DodgeChanceText" var-class="variable" var-type="string" />
+          <field name="tab3EnergyLeechResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3EnergyLeechResistText" var-class="variable" var-type="string" />
+          <field name="tab3FreezeResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3FreezeResistText" var-class="variable" var-type="string" />
+          <field name="tab3LifeLeechResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3LifeLeechResistText" var-class="variable" var-type="string" />
+          <field name="tab3PetrifyResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PetrifyResistText" var-class="variable" var-type="string" />
+          <field name="tab3PhysicalResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PhysicalResistText" var-class="variable" var-type="string" />
+          <field name="tab3ProjDeflectChanceRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ProjDeflectChanceText" var-class="variable" var-type="string" />
+          <field name="tab3SleepResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3SleepResistText" var-class="variable" var-type="string" />
+          <field name="tab3SlowResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3SlowResistText" var-class="variable" var-type="string" />
+          <field name="tab3TrapResistRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3TrapResistText" var-class="variable" var-type="string" />
+        </var-group>
+        <var-group name="Retaliation">
+          <field name="tab3AcidPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3AcidPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3AcidRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3AcidRetText" var-class="variable" var-type="string" />
+          <field name="tab3AetherPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3AetherPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3AetherRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3AetherRetText" var-class="variable" var-type="string" />
+          <field name="tab3BleedPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3BleedPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3BleedRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3BleedRetText" var-class="variable" var-type="string" />
+          <field name="tab3BurnPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3BurnPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3BurnRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3BurnRetText" var-class="variable" var-type="string" />
+          <field name="tab3ChaosPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ChaosPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3ChaosRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ChaosRetText" var-class="variable" var-type="string" />
+          <field name="tab3ColdPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ColdPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3ColdRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ColdRetText" var-class="variable" var-type="string" />
+          <field name="tab3ColdburnPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ColdburnPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3ColdburnRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ColdburnRetText" var-class="variable" var-type="string" />
+          <field name="tab3CurrentLifeRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3CurrentLifeRetText" var-class="variable" var-type="string" />
+          <field name="tab3DamageReflectRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3DamageReflectText" var-class="variable" var-type="string" />
+          <field name="tab3ElectrocutePercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ElectrocutePercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3ElectrocuteRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ElectrocuteRetText" var-class="variable" var-type="string" />
+          <field name="tab3FirePercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3FirePercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3FireRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3FireRetText" var-class="variable" var-type="string" />
+          <field name="tab3InternalTraumaPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3InternalTraumaPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3InternalTraumaRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3InternalTraumaRetText" var-class="variable" var-type="string" />
+          <field name="tab3LightningPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3LightningPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3LightningRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3LightningRetText" var-class="variable" var-type="string" />
+          <field name="tab3PhysicalPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PhysicalPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3PhysicalRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PhysicalRetText" var-class="variable" var-type="string" />
+          <field name="tab3PiercePercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PiercePercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3PierceRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PierceRetText" var-class="variable" var-type="string" />
+          <field name="tab3PoisonPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PoisonPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3PoisonRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3PoisonRetText" var-class="variable" var-type="string" />
+          <field name="tab3VitalityDecayPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3VitalityDecayPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3VitalityDecayRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3VitalityDecayRetText" var-class="variable" var-type="string" />
+          <field name="tab3VitalityPercentRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3VitalityPercentRetText" var-class="variable" var-type="string" />
+          <field name="tab3VitalityRetRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3VitalityRetText" var-class="variable" var-type="string" />
+        </var-group>
+        <var-group name="Stats">
+          <field name="tab3ChampionsKilledRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ChampionsKilledText" var-class="variable" var-type="string" />
+          <field name="tab3GreatestDamageDealtRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3GreatestDamageDealtText" var-class="variable" var-type="string" />
+          <field name="tab3GreatestDamageTakenRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3GreatestDamageTakenText" var-class="variable" var-type="string" />
+          <field name="tab3GreatestMonsterKilledLevel" var-class="variable" var-type="string" />
+          <field name="tab3GreatestMonsterKilledName" var-class="variable" var-type="string" />
+          <field name="tab3GreatestMonsterKilledRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3GreatestMonsterKilledText" var-class="variable" var-type="string" />
+          <field name="tab3ItemLevelRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3ItemLevelText" var-class="variable" var-type="string" />
+          <field name="tab3MonstersKilledRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3MonstersKilledText" var-class="variable" var-type="string" />
+          <field name="tab3TotalDeathsRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3TotalDeathsText" var-class="variable" var-type="string" />
+          <field name="tab3TotalPlaytimeRollover" var-class="variable" var-type="file_dbr" />
+          <field name="tab3TotalPlaytimeText" var-class="variable" var-type="string" />
+        </var-group>
+        <field name="tab3Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab3CharacterLevel" var-class="variable" var-type="file_dbr" />
+        <field name="tab3CharacterName" var-class="variable" var-type="file_dbr" />
+        <field name="tab3HeaderDefenseText" var-class="variable" var-type="string" />
+        <field name="tab3HeaderDivider" var-class="variable" var-type="file_tex" />
+        <field name="tab3HeaderFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="tab3HeaderRetaliationText" var-class="variable" var-type="string" />
+        <field name="tab3HeaderStatsText" var-class="variable" var-type="string" />
+        <field name="tab3ListBox" var-class="variable" var-type="file_dbr" />
+        <field name="tab3LowerBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab3Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab3NumberFontStyle" var-class="variable" var-type="file_dbr" />
+        <field name="tab3ScrollWindow" var-class="variable" var-type="file_dbr" />
+        <field name="tab3UpperBarBitmap" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

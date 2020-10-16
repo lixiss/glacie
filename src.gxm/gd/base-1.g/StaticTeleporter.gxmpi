@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="StaticTeleporter">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="StaticTeleporter">
+      <field name="activeEffect" />
+      <field name="activeSound" />
+      <field name="dormantEffect" />
+      <field name="dormantSound" />
+      <field name="locked" />
+      <field name="lockedEffect" />
+      <field name="lockedSound" />
+      <field name="radius" />
+    </var-group>
+  </record-type>
+</partial>

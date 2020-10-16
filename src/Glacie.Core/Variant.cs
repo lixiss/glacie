@@ -62,6 +62,7 @@ namespace Glacie
 
         public VariantType Type => _type;
 
+        // TOOD: Rename to Arity. Also rename ArzField.Arity and Field (when exist) .Arity.
         public int Count => _refValue == null ? 1 : GetCountInternal();
 
         // TODO: Get<T> - get by underlying type?

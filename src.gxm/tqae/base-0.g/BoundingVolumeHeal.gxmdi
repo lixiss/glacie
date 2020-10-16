@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="BoundingVolumeHeal" path="BoundingVolumeHeal.tpl">
+    <inherits>
+      <inherit record="BoundingVolumeTimedEvent" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="BoundingVolumeHeal" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Heal Properties">
+        <field name="healthIncrement" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="manaIncrement" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="particleEffect" var-class="variable" var-type="file_dbr" />
+        <field name="teamMajor" var-class="picklist" var-type="string" var-default-value="First;Second;" />
+        <field name="teamMinor" var-class="picklist" var-type="string" var-default-value="Red;Blue;Green;Yellow;" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

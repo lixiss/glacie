@@ -1,0 +1,40 @@
+﻿<partial>
+  <record-type name="ProjectileMine" path="ProjectileMine.tpl">
+    <inherits>
+      <inherit record="TemplateBase.ProjectileBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ProjectileMine" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Projectile Config">
+        <field name="explosionTriggerDistance" var-class="variable" var-type="real" var-default-value="1">
+          <description>Trigger radius for mines</description>
+        </field>
+        <field name="harmlessInFlight" var-class="variable" var-type="bool" var-default-value="1">
+          <description>Set true to ignore targets while in flight</description>
+        </field>
+        <field name="launchAngle" var-class="variable" var-type="real" var-default-value="30" />
+        <field name="notMoving" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Set true when summoned at target location</description>
+        </field>
+        <field name="projectileVelocity" var-class="variable" var-type="real">
+          <description>Min V to use Angle</description>
+        </field>
+      </var-group>
+      <var-group name="Projectile Effects">
+        <field name="inflightGroundFxDropTime" var-class="variable" var-type="real">
+          <description>Seconds</description>
+        </field>
+        <field name="inflightGroundFxPakName" var-class="variable" var-type="file_dbr">
+          <description>Placed on ground during flight</description>
+        </field>
+      </var-group>
+      <var-group name="Projectile Sounds">
+        <field name="projectileBounceSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

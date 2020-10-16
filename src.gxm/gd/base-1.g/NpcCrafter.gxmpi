@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="NpcCrafter">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Crafter">
+      <field name="crafterBitmap" />
+      <field name="defaultRecipes" />
+      <field name="enhancementTable" />
+      <field name="enhancementTag" />
+      <field name="restrictRecipes" />
+    </var-group>
+  </record-type>
+</partial>

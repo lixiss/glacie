@@ -1,0 +1,68 @@
+﻿<partial>
+  <record-type name="MerchantDialogPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Global Dialog">
+      <field name="globalDialogSoundFile1" />
+      <field name="globalDialogSoundVolume1" />
+      <field name="globalDialogTextTag1" />
+    </var-group>
+    <var-group name="Goodbye Dialog">
+      <field name="goodbyeDialogSoundFile1" />
+      <field name="goodbyeDialogSoundFile2" />
+      <field name="goodbyeDialogSoundFile3" />
+      <field name="goodbyeDialogSoundFile4" />
+      <field name="goodbyeDialogSoundFile5" />
+      <field name="goodbyeDialogSoundVolume1" />
+      <field name="goodbyeDialogSoundVolume2" />
+      <field name="goodbyeDialogSoundVolume3" />
+      <field name="goodbyeDialogSoundVolume4" />
+      <field name="goodbyeDialogSoundVolume5" />
+      <field name="goodbyeDialogTextTag1" />
+      <field name="goodbyeDialogTextTag2" />
+      <field name="goodbyeDialogTextTag3" />
+      <field name="goodbyeDialogTextTag4" />
+      <field name="goodbyeDialogTextTag5" />
+    </var-group>
+    <var-group name="Long Dialog">
+      <field name="longDialogSoundFile1" />
+      <field name="longDialogSoundFile2" />
+      <field name="longDialogSoundFile3" />
+      <field name="longDialogSoundFile4" />
+      <field name="longDialogSoundFile5" />
+      <field name="longDialogSoundVolume1" />
+      <field name="longDialogSoundVolume2" />
+      <field name="longDialogSoundVolume3" />
+      <field name="longDialogSoundVolume4" />
+      <field name="longDialogSoundVolume5" />
+      <field name="longDialogTextTag1" />
+      <field name="longDialogTextTag2" />
+      <field name="longDialogTextTag3" />
+      <field name="longDialogTextTag4" />
+      <field name="longDialogTextTag5" />
+    </var-group>
+    <var-group name="Settings">
+      <field name="shortGreetingTimerTime" />
+    </var-group>
+    <var-group name="Short Dialog">
+      <field name="shortDialogSoundFile1" />
+      <field name="shortDialogSoundFile2" />
+      <field name="shortDialogSoundFile3" />
+      <field name="shortDialogSoundFile4" />
+      <field name="shortDialogSoundFile5" />
+      <field name="shortDialogSoundVolume1" />
+      <field name="shortDialogSoundVolume2" />
+      <field name="shortDialogSoundVolume3" />
+      <field name="shortDialogSoundVolume4" />
+      <field name="shortDialogSoundVolume5" />
+      <field name="shortDialogTextTag1" />
+      <field name="shortDialogTextTag2" />
+      <field name="shortDialogTextTag3" />
+      <field name="shortDialogTextTag4" />
+      <field name="shortDialogTextTag5" />
+    </var-group>
+  </record-type>
+</partial>

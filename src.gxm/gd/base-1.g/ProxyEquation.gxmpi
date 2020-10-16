@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ProxyEquation">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="championDifficultyEquation" />
+      <field name="characterDifficultyEquation" />
+      <field name="difficultyEquation" />
+    </var-group>
+  </record-type>
+</partial>

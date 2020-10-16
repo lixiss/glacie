@@ -1,0 +1,29 @@
+﻿<partial>
+  <record-type name="Skill_TargetedSpawnPet" path="Skill_TargetedSpawnPet.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Attack" />
+      <inherit record="TemplateBase.Skill_Activated" />
+      <inherit record="TemplateBase.Skill_ProjectileBase" />
+      <inherit record="TemplateBase.Skill_Spawning" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_TargetedSpawnPet" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Spawn Config">
+        <field name="ignorePetLimit" var-class="variable" var-type="bool" var-default-value="0">
+          <description>If FALSE, restricts monster casting</description>
+        </field>
+        <field name="petBurstSpawn" var-class="array" var-type="int" />
+        <field name="petLimit" var-class="array" var-type="int" />
+        <field name="petPadding" var-class="variable" var-type="real">
+          <description>Overrides the default padding in between pet spawn locations</description>
+        </field>
+        <field name="spawnObjectsTimeToLive" var-class="array" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,110 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestRewardWindow" path="InGameUI/QuestRewardWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="QuestRewardWindow">
+        <var-group name="Control Positioning">
+          <field name="acceptButtonTopEdge" var-class="variable" var-type="real">
+            <description>Relative to bottom of window, not top</description>
+          </field>
+          <field name="iconBoxHeight" var-class="variable" var-type="real" />
+          <field name="iconBoxVerticalCenterHigh" var-class="variable" var-type="real" />
+          <field name="iconBoxVerticalCenterLow" var-class="variable" var-type="real" />
+          <field name="iconBoxWidth" var-class="variable" var-type="real" />
+          <field name="iconHorizontalMargin" var-class="variable" var-type="real" />
+          <field name="iconHorizontalSpace" var-class="variable" var-type="real">
+            <description>The default horizontal distance between reward icons</description>
+          </field>
+          <field name="iconMinHorizontalSpace" var-class="variable" var-type="real">
+            <description>The minimum horizontal distance between reward icons</description>
+          </field>
+          <field name="iconVerticalSpace" var-class="variable" var-type="real">
+            <description>The default vertical distance between reward icons</description>
+          </field>
+        </var-group>
+        <field name="XPControlBackground" var-class="variable" var-type="file_dbr">
+          <description>UIBitmapSingle</description>
+        </field>
+        <field name="XPValue" var-class="variable" var-type="file_dbr">
+          <description>UITextNumber</description>
+        </field>
+        <field name="acceptButton" var-class="variable" var-type="file_dbr">
+          <description>UIButtonStaticText</description>
+        </field>
+        <field name="armorIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="artifactFormulaIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="attributePointIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="backgroundBottom" var-class="variable" var-type="file_dbr">
+          <description>UIBitmapSingle</description>
+        </field>
+        <field name="backgroundMiddle" var-class="variable" var-type="file_dbr">
+          <description>UIBitmapSingle</description>
+        </field>
+        <field name="backgroundTop" var-class="variable" var-type="file_dbr">
+          <description>UIBitmapSingle</description>
+        </field>
+        <field name="bagIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="closeSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="consumableIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="devotionIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="factionIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="jewelryIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="levelIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="miscItemIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="moneyIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="openSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="questNameString" var-class="variable" var-type="file_dbr">
+          <description>UITextString</description>
+        </field>
+        <field name="questTitleString" var-class="variable" var-type="file_dbr">
+          <description>UITextString - the window title</description>
+        </field>
+        <field name="skillPointIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="unlockFactionIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="weaponMeleeIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+        <field name="weaponRangedIcon" var-class="variable" var-type="file_dbr">
+          <description>UIQuestRewardIcon</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

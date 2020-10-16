@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="TemplateBase.ProjectileTrapLauncherBase" path="TemplateBase/ProjectileTrapLauncherBase.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Projectile Config">
+        <field name="activeMesh" var-class="variable" var-type="file_msh" />
+        <field name="launchAngle" var-class="variable" var-type="real" var-default-value="45">
+          <description>Angle of trap</description>
+        </field>
+        <field name="launchProjectileName" var-class="variable" var-type="file_dbr" />
+        <field name="launchTimeMax" var-class="variable" var-type="real" var-default-value="2.0" />
+        <field name="launchTimeMin" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>Time to launch projectile</description>
+        </field>
+        <field name="projectileVelocity" var-class="variable" var-type="real" />
+        <field name="targetRadius" var-class="variable" var-type="real" var-default-value="2.0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

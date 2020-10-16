@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="InGameUI.MiniMapWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="detailMapDBR" />
+      <field name="detailTabBitmap" />
+      <field name="mapAreaX" />
+      <field name="mapAreaXSize" />
+      <field name="mapAreaY" />
+      <field name="mapAreaYSize" />
+      <field name="miniMapBaseBitmap" />
+      <field name="miniMapCloseButton" />
+      <field name="miniMapDetailButton" />
+      <field name="miniMapWorldButton" />
+      <field name="worldMapDBR" />
+      <field name="worldTabBitmap" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="InGameUI.MasteryPane">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="masteryBaseBitmap" />
+      <field name="masteryConfirmSelectionButton" />
+      <field name="masteryDefaultTextTag" />
+      <field name="masteryMasteryButtons" />
+      <field name="masteryMasterySelectedBitmapNames" />
+      <field name="masteryMasterySelectedDescriptionTags" />
+      <field name="masteryMasteryText" />
+      <field name="masterySelectedMasteryBitmap" />
+      <field name="masterySelectedMasteryDescription" />
+      <field name="masterySelectedMasteryDescriptionScrollWindow" />
+      <field name="masteryTabTitle" />
+    </var-group>
+  </record-type>
+</partial>

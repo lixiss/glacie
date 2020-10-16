@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="InGameUI.InventoryGrid">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="backgroundShadeColorAlpha" />
+      <field name="backgroundShadeColorBlue" />
+      <field name="backgroundShadeColorGreen" />
+      <field name="backgroundShadeColorRed" />
+      <field name="backgroundShadeReduction" />
+      <field name="failsRequirementsColorAlpha" />
+      <field name="failsRequirementsColorBlue" />
+      <field name="failsRequirementsColorGreen" />
+      <field name="failsRequirementsColorRed" />
+      <field name="inventoryX" />
+      <field name="inventoryXSize" />
+      <field name="inventoryY" />
+      <field name="inventoryYSize" />
+      <field name="pickUpSoundName" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,223 @@
+﻿<partial>
+  <record-type name="LootTable" path="LootTable.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="LootTable" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="bothPrefixSuffix" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+        <field name="noPrefixNoSuffix" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+        <field name="prefixOnly" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+        <field name="suffixOnly" var-class="variable" var-type="int">
+          <description>weight</description>
+        </field>
+      </var-group>
+      <var-group name="Loot">
+        <field name="lootName1" var-class="variable" var-type="file_dbr">
+          <description>Item or LootTable</description>
+        </field>
+        <field name="lootName2" var-class="variable" var-type="file_dbr" />
+        <field name="lootName3" var-class="variable" var-type="file_dbr" />
+        <field name="lootName4" var-class="variable" var-type="file_dbr" />
+        <field name="lootName5" var-class="variable" var-type="file_dbr" />
+        <field name="lootName6" var-class="variable" var-type="file_dbr" />
+        <field name="lootName7" var-class="variable" var-type="file_dbr" />
+        <field name="lootName8" var-class="variable" var-type="file_dbr" />
+        <field name="lootName9" var-class="variable" var-type="file_dbr" />
+        <field name="lootName10" var-class="variable" var-type="file_dbr" />
+        <field name="lootName11" var-class="variable" var-type="file_dbr" />
+        <field name="lootName12" var-class="variable" var-type="file_dbr" />
+        <field name="lootName13" var-class="variable" var-type="file_dbr" />
+        <field name="lootName14" var-class="variable" var-type="file_dbr" />
+        <field name="lootName15" var-class="variable" var-type="file_dbr" />
+        <field name="lootName16" var-class="variable" var-type="file_dbr" />
+        <field name="lootName17" var-class="variable" var-type="file_dbr" />
+        <field name="lootName18" var-class="variable" var-type="file_dbr" />
+        <field name="lootName19" var-class="variable" var-type="file_dbr" />
+        <field name="lootName20" var-class="variable" var-type="file_dbr" />
+        <field name="lootName21" var-class="variable" var-type="file_dbr" />
+        <field name="lootName22" var-class="variable" var-type="file_dbr" />
+        <field name="lootName23" var-class="variable" var-type="file_dbr" />
+        <field name="lootName24" var-class="variable" var-type="file_dbr" />
+        <field name="lootName25" var-class="variable" var-type="file_dbr" />
+        <field name="lootName26" var-class="variable" var-type="file_dbr" />
+        <field name="lootName27" var-class="variable" var-type="file_dbr" />
+        <field name="lootName28" var-class="variable" var-type="file_dbr" />
+        <field name="lootName29" var-class="variable" var-type="file_dbr" />
+        <field name="lootName30" var-class="variable" var-type="file_dbr" />
+        <field name="lootWeight1" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight2" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight3" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight4" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight5" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight6" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight7" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight8" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight9" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight10" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight11" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight12" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight13" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight14" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight15" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight16" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight17" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight18" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight19" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight20" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight21" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight22" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight23" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight24" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight25" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight26" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight27" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight28" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight29" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight30" var-class="variable" var-type="int" var-default-value="0" />
+      </var-group>
+      <var-group name="Randomizer Prefix">
+        <field name="prefixRandomizerChance" var-class="variable" var-type="real" var-default-value="0">
+          <description>0 to 100</description>
+        </field>
+        <field name="prefixRandomizerName1" var-class="variable" var-type="file_dbr">
+          <description>LootRandomizerTable or LootRandomizer</description>
+        </field>
+        <field name="prefixRandomizerName2" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName3" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName4" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName5" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName6" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName7" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName8" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName9" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName10" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName11" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName12" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName13" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName14" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName15" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName16" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName17" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName18" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName19" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName20" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName21" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName22" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName23" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName24" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName25" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName26" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName27" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName28" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName29" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerName30" var-class="variable" var-type="file_dbr" />
+        <field name="prefixRandomizerWeight1" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight2" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight3" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight4" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight5" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight6" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight7" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight8" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight9" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight10" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight11" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight12" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight13" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight14" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight15" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight16" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight17" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight18" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight19" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight20" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight21" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight22" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight23" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight24" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight25" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight26" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight27" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight28" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight29" var-class="variable" var-type="int" />
+        <field name="prefixRandomizerWeight30" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Randomizer Suffix">
+        <field name="suffixRandomizerChance" var-class="variable" var-type="real" var-default-value="0">
+          <description>0 to 100</description>
+        </field>
+        <field name="suffixRandomizerName1" var-class="variable" var-type="file_dbr">
+          <description>LootRandomizerTable or LootRandomizer</description>
+        </field>
+        <field name="suffixRandomizerName2" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName3" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName4" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName5" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName6" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName7" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName8" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName9" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName10" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName11" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName12" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName13" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName14" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName15" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName16" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName17" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName18" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName19" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName20" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName21" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName22" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName23" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName24" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName25" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName26" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName27" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName28" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName29" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerName30" var-class="variable" var-type="file_dbr" />
+        <field name="suffixRandomizerWeight1" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight2" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight3" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight4" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight5" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight6" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight7" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight8" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight9" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight10" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight11" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight12" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight13" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight14" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight15" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight16" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight17" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight18" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight19" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight20" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight21" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight22" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight23" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight24" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight25" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight26" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight27" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight28" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight29" var-class="variable" var-type="int" />
+        <field name="suffixRandomizerWeight30" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

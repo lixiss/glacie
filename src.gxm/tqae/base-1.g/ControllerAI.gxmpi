@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="ControllerAI">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="AngerManagement">
+      <field name="AllyAttackedAnger" />
+      <field name="AngerTolerance" />
+      <field name="AttackedAnger" />
+      <field name="ForgiveRate" />
+      <field name="InnerSightAngerRate" />
+      <field name="ProjectileAnger" />
+      <field name="SightAngerRate" />
+    </var-group>
+    <var-group name="Senses">
+      <field name="InnerViewDistance" />
+      <field name="MaxYViewDistance" />
+      <field name="ViewDistance" />
+      <field name="enemyTooClose" />
+    </var-group>
+  </record-type>
+</partial>

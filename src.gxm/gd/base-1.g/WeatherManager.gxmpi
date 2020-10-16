@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="WeatherManager">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="WeatherManager">
+      <field name="systems" />
+      <field name="windSound" />
+    </var-group>
+  </record-type>
+</partial>

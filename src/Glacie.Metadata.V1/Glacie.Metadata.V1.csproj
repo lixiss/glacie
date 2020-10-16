@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.Metadata.V1</AssemblyName>
+    <RootNamespace>Glacie.Metadata.V1</RootNamespace>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Abstractions\IDatabaseTypeProvider.cs" />
+    <Compile Include="Abstractions\IMetadataProvider.cs" />
+    <Compile Include="Abstractions\IRecordTypeProvider.cs" />
+    <Compile Include="Abstractions\ITemplateProvider.cs" />
+    <Compile Include="Abstractions\MetadataProvider.cs" />
+    <Compile Include="Abstractions\TemplateProvider.cs" />
+    <Compile Include="CachedStringTransform.cs" />
+    <Compile Include="EphemeralMetadataProvider.cs" />
+    <Compile Include="Factories\MetadataProviderFactory.cs" />
+    <Compile Include="Factories\MetadataProviderFactoryOptions.cs" />
+    <Compile Include="TemplateMetadataProvider.cs" />
+    <Compile Include="Implementation\TemplateProviderImpl.cs" />
+    <Compile Include="Factories\TemplateProviderFactory.cs" />
+    <Compile Include="Factories\TemplateResourceProviderFactory.cs" />
+    <Compile Include="WellKnownFieldNames.cs" />
+    <Compile Include="Constants.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.1">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Compression\Glacie.Data.Compression.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Data.Metadata.V1\Glacie.Data.Metadata.V1.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Templates\Glacie.Data.Templates.csproj" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Data.Resources.V1\Glacie.Data.Resources.V1.csproj" />
+  </ItemGroup>
+
+</Project>

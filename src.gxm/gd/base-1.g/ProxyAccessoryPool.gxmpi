@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="ProxyAccessoryPool">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Fixed Item">
+      <field name="fixedItemChance" />
+      <field name="fixedItemName1" />
+      <field name="fixedItemName2" />
+      <field name="fixedItemName3" />
+      <field name="fixedItemName4" />
+      <field name="fixedItemName5" />
+      <field name="fixedItemName6" />
+      <field name="fixedItemName7" />
+      <field name="fixedItemName8" />
+      <field name="fixedItemName9" />
+      <field name="fixedItemName10" />
+      <field name="fixedItemWeight1" />
+      <field name="fixedItemWeight2" />
+      <field name="fixedItemWeight3" />
+      <field name="fixedItemWeight4" />
+      <field name="fixedItemWeight5" />
+      <field name="fixedItemWeight6" />
+      <field name="fixedItemWeight7" />
+      <field name="fixedItemWeight8" />
+      <field name="fixedItemWeight9" />
+      <field name="fixedItemWeight10" />
+    </var-group>
+  </record-type>
+</partial>

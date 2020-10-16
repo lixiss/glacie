@@ -2,11 +2,10 @@
 {
     public enum DiagnosticSeverity
     {
-        Trace = 0,
-        Debug,
+        // TODO: Determine severities. Hidden(?), Information, Warning and Error.
+        Hidden = 0,
         Information,
         Warning,
         Error,
-        Critical,
     }
 }

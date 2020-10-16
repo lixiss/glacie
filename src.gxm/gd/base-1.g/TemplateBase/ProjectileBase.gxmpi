@@ -1,0 +1,33 @@
+﻿<partial>
+  <record-type name="TemplateBase.ProjectileBase">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="collidesWithProjectiles" />
+      <field name="notificationRadius" />
+      <field name="projectileDistance" />
+      <field name="projectileHitTTLMax" />
+      <field name="projectileHitTTLMin" />
+      <field name="projectileMissTTLMax" />
+      <field name="projectileMissTTLMin" />
+      <field name="projectileScaleFactor" />
+    </var-group>
+    <var-group name="Projectile Effects">
+      <field name="projectileFlightAnimation" />
+      <field name="projectileFlightAnimationSpeed" />
+      <field name="projectileFlightFX" />
+      <field name="projectileImpactFX" />
+      <field name="projectileLaunchAnimation" />
+      <field name="projectileLaunchAnimationSpeed" />
+      <field name="projectileWeaponTrail" />
+    </var-group>
+    <var-group name="Projectile Sounds">
+      <field name="projectileExplodingHitSound" />
+      <field name="projectileHitSound" />
+      <field name="projectileSwipeSound" />
+    </var-group>
+  </record-type>
+</partial>

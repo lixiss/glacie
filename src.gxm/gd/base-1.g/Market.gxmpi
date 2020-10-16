@@ -1,0 +1,91 @@
+﻿<partial>
+  <record-type name="Market">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Market Config">
+      <field name="marketCostAdjustment" />
+      <field name="marketDepreciation" />
+      <field name="marketRefreshTimeMax" />
+      <field name="marketRefreshTimeMin" />
+      <field name="maxPlayerPurchase" />
+    </var-group>
+    <var-group name="Market Tables">
+      <var-group name="Armor">
+        <field name="marketChestTable" />
+        <field name="marketFeetTable" />
+        <field name="marketHandsTable" />
+        <field name="marketHeadTable" />
+        <field name="marketLegsTable" />
+        <field name="marketNumChestMax" />
+        <field name="marketNumChestMin" />
+        <field name="marketNumFeetMax" />
+        <field name="marketNumFeetMin" />
+        <field name="marketNumHandsMax" />
+        <field name="marketNumHandsMin" />
+        <field name="marketNumHeadMax" />
+        <field name="marketNumHeadMin" />
+        <field name="marketNumLegsMax" />
+        <field name="marketNumLegsMin" />
+        <field name="marketNumShieldMax" />
+        <field name="marketNumShieldMin" />
+        <field name="marketNumShouldersMax" />
+        <field name="marketNumShouldersMin" />
+        <field name="marketNumWaistMax" />
+        <field name="marketNumWaistMin" />
+        <field name="marketShieldTable" />
+        <field name="marketShouldersTable" />
+        <field name="marketWaistTable" />
+      </var-group>
+      <var-group name="Misc">
+        <field name="marketAmuletTable" />
+        <field name="marketMedalTable" />
+        <field name="marketNumAmuletMax" />
+        <field name="marketNumAmuletMin" />
+        <field name="marketNumMedalMax" />
+        <field name="marketNumMedalMin" />
+        <field name="marketNumPotionMax" />
+        <field name="marketNumPotionMin" />
+        <field name="marketNumRingMax" />
+        <field name="marketNumRingMin" />
+        <field name="marketNumScrollDuplicates" />
+        <field name="marketNumScrollMax" />
+        <field name="marketNumScrollMin" />
+        <field name="marketPotionTable" />
+        <field name="marketRingTable" />
+        <field name="marketScrollTable" />
+      </var-group>
+      <var-group name="Weapons">
+        <field name="marketAxeTable" />
+        <field name="marketDaggerTable" />
+        <field name="marketMaceTable" />
+        <field name="marketNumAxeMax" />
+        <field name="marketNumAxeMin" />
+        <field name="marketNumDaggerMax" />
+        <field name="marketNumDaggerMin" />
+        <field name="marketNumMaceMax" />
+        <field name="marketNumMaceMin" />
+        <field name="marketNumRanged1hMax" />
+        <field name="marketNumRanged1hMin" />
+        <field name="marketNumRanged2hMax" />
+        <field name="marketNumRanged2hMin" />
+        <field name="marketNumScepterMax" />
+        <field name="marketNumScepterMin" />
+        <field name="marketNumSpearMax" />
+        <field name="marketNumSpearMin" />
+        <field name="marketNumStaffMax" />
+        <field name="marketNumStaffMin" />
+        <field name="marketNumSwordMax" />
+        <field name="marketNumSwordMin" />
+        <field name="marketRanged1hTable" />
+        <field name="marketRanged2hTable" />
+        <field name="marketScepterTable" />
+        <field name="marketSpearTable" />
+        <field name="marketStaffTable" />
+        <field name="marketSwordTable" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

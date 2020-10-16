@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="ItemSetFormula">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Formula Config">
+      <field name="creationCost" />
+      <field name="displayItemName" />
+      <field name="reagent1BaseName" />
+      <field name="reagent1Quantity" />
+      <field name="reagent2BaseName" />
+      <field name="reagent2Quantity" />
+      <field name="reagent3BaseName" />
+      <field name="reagent3Quantity" />
+      <field name="reagent4BaseName" />
+      <field name="reagent4Quantity" />
+      <field name="reagent5BaseName" />
+      <field name="reagent5Quantity" />
+      <field name="reagent6BaseName" />
+      <field name="reagent6Quantity" />
+    </var-group>
+  </record-type>
+</partial>

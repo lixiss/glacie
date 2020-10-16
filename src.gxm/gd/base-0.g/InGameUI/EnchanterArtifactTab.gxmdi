@@ -1,0 +1,79 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterArtifactTab" path="InGameUI/EnchanterArtifactTab.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Artifact Tab">
+        <field name="artifactBox" var-class="variable" var-type="file_dbr" />
+        <field name="artifactFormulaBox" var-class="variable" var-type="file_dbr" />
+        <field name="artifactNameText" var-class="variable" var-type="file_dbr" />
+        <field name="autoSenseX" var-class="variable" var-type="real" />
+        <field name="autoSenseXSize" var-class="variable" var-type="real" />
+        <field name="autoSenseY" var-class="variable" var-type="real" />
+        <field name="autoSenseYSize" var-class="variable" var-type="real" />
+        <field name="clearSearchButton" var-class="variable" var-type="file_dbr" />
+        <field name="costNumber" var-class="variable" var-type="file_dbr" />
+        <field name="costText" var-class="variable" var-type="file_dbr" />
+        <field name="crafterIcon" var-class="variable" var-type="file_dbr" />
+        <field name="crafterRollover" var-class="variable" var-type="file_dbr" />
+        <field name="craftingDefaultRecipes" var-class="array" var-type="file_dbr" />
+        <field name="craftingListBox" var-class="variable" var-type="file_dbr" />
+        <field name="craftingListBoxHeaderFont" var-class="variable" var-type="file_dbr" />
+        <field name="craftingListBoxItem" var-class="variable" var-type="file_dbr" />
+        <field name="createArtifactButton" var-class="variable" var-type="file_dbr" />
+        <field name="createdArtifactSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="displayHelpText" var-class="variable" var-type="file_dbr" />
+        <field name="formulaUnreadIcon" var-class="variable" var-type="file_tex" />
+        <field name="insufficientMaterialColor.b" var-class="variable" var-type="real" />
+        <field name="insufficientMaterialColor.g" var-class="variable" var-type="real" />
+        <field name="insufficientMaterialColor.r" var-class="variable" var-type="real" />
+        <field name="reagent1Box" var-class="variable" var-type="file_dbr" />
+        <field name="reagent1Display" var-class="variable" var-type="file_dbr" />
+        <field name="reagent1DisplayX" var-class="variable" var-type="real" />
+        <field name="reagent1DisplayY" var-class="variable" var-type="real" />
+        <field name="reagent1Quantity" var-class="variable" var-type="file_dbr" />
+        <field name="reagent2Box" var-class="variable" var-type="file_dbr" />
+        <field name="reagent2Display" var-class="variable" var-type="file_dbr" />
+        <field name="reagent2DisplayX" var-class="variable" var-type="real" />
+        <field name="reagent2DisplayY" var-class="variable" var-type="real" />
+        <field name="reagent2Quantity" var-class="variable" var-type="file_dbr" />
+        <field name="reagent3Box" var-class="variable" var-type="file_dbr" />
+        <field name="reagent3Display" var-class="variable" var-type="file_dbr" />
+        <field name="reagent3DisplayX" var-class="variable" var-type="real" />
+        <field name="reagent3DisplayY" var-class="variable" var-type="real" />
+        <field name="reagent3Quantity" var-class="variable" var-type="file_dbr" />
+        <field name="reagent4Box" var-class="variable" var-type="file_dbr" />
+        <field name="reagent4Display" var-class="variable" var-type="file_dbr" />
+        <field name="reagent4DisplayX" var-class="variable" var-type="real" />
+        <field name="reagent4DisplayY" var-class="variable" var-type="real" />
+        <field name="reagent4Quantity" var-class="variable" var-type="file_dbr" />
+        <field name="reagent5Box" var-class="variable" var-type="file_dbr" />
+        <field name="reagent5Display" var-class="variable" var-type="file_dbr" />
+        <field name="reagent5DisplayX" var-class="variable" var-type="real" />
+        <field name="reagent5DisplayY" var-class="variable" var-type="real" />
+        <field name="reagent5Quantity" var-class="variable" var-type="file_dbr" />
+        <field name="reagent6Box" var-class="variable" var-type="file_dbr" />
+        <field name="reagent6Display" var-class="variable" var-type="file_dbr" />
+        <field name="reagent6DisplayX" var-class="variable" var-type="real" />
+        <field name="reagent6DisplayY" var-class="variable" var-type="real" />
+        <field name="reagent6Quantity" var-class="variable" var-type="file_dbr" />
+        <field name="reagentBaseBox" var-class="variable" var-type="file_dbr" />
+        <field name="reagentBaseDisplay" var-class="variable" var-type="file_dbr" />
+        <field name="reagentBaseDisplayX" var-class="variable" var-type="real" />
+        <field name="reagentBaseDisplayY" var-class="variable" var-type="real" />
+        <field name="reagentBaseQuantity" var-class="variable" var-type="file_dbr" />
+        <field name="reguirementsText" var-class="variable" var-type="file_dbr" />
+        <field name="searchBox" var-class="variable" var-type="file_dbr" />
+        <field name="tooExpensiveCostNumber" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,36 @@
+﻿<partial>
+  <record-type name="TemplateBase.ItemSkillAugment" path="TemplateBase/ItemSkillAugment.tpl">
+    <expression-variables>
+      <expression-variable name="itemLevel" />
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Augment">
+        <field name="augmentAllLevel" var-class="array" var-type="int" />
+        <field name="augmentMasteryLevel1" var-class="array" var-type="int" />
+        <field name="augmentMasteryLevel2" var-class="array" var-type="int" />
+        <field name="augmentMasteryLevel3" var-class="array" var-type="int" />
+        <field name="augmentMasteryName1" var-class="variable" var-type="file_dbr" />
+        <field name="augmentMasteryName2" var-class="variable" var-type="file_dbr" />
+        <field name="augmentMasteryName3" var-class="variable" var-type="file_dbr" />
+        <field name="augmentSkillLevel1" var-class="array" var-type="int" />
+        <field name="augmentSkillLevel2" var-class="array" var-type="int" />
+        <field name="augmentSkillLevel3" var-class="array" var-type="int" />
+        <field name="augmentSkillLevel4" var-class="array" var-type="int" />
+        <field name="augmentSkillName1" var-class="variable" var-type="file_dbr" />
+        <field name="augmentSkillName2" var-class="variable" var-type="file_dbr" />
+        <field name="augmentSkillName3" var-class="variable" var-type="file_dbr" />
+        <field name="augmentSkillName4" var-class="variable" var-type="file_dbr" />
+        <field name="itemSkillAutoController" var-class="variable" var-type="file_dbr" />
+        <field name="itemSkillLevelEq" var-class="variable" var-type="equation">
+          <description>Equation which determines the level of the skill which the item confers.</description>
+        </field>
+        <field name="itemSkillName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

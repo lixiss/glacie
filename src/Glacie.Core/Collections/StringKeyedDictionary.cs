@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Glacie.Data.Tpl
+namespace Glacie.Collections
 {
     // See https://github.com/dotnet/runtime/issues/27229
 

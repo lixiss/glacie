@@ -1,0 +1,44 @@
+﻿<partial>
+  <record-type name="TemplateBase.ParametersOffensive" path="TemplateBase/ParametersOffensive.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Offensive Absolute">
+        <field name="offensive1Chance" var-class="array" var-type="real" var-default-value="100" />
+        <field name="offensive1Deviation" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensive1Max" var-class="array" var-type="real" var-default-value="0" />
+        <field name="offensive1Min" var-class="array" var-type="real" var-default-value="0" />
+        <field name="offensive1Modifier" var-class="array" var-type="real" var-default-value="0" />
+        <field name="offensive1ModifierChance" var-class="array" var-type="real" var-default-value="100" />
+        <field name="offensive1ModifierDeviation" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensive1Type" var-class="picklist" var-type="string" var-default-value="None;Physical;PierceRatio;Pierce;Fire;Cold;Lightning;Poison;Life;Stun;" />
+        <field name="offensive1UseGlobalChance" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="offensive1XOR" var-class="variable" var-type="bool" var-default-value="0" />
+      </var-group>
+      <var-group name="Offensive Duration">
+        <field name="offensiveSlow1Chance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1Deviation" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1DurationDeviation" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1DurationMax" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1DurationMin" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1DurationModifier" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1DurationModifierChance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1DurationModifierDeviation" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1Max" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1Min" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1Modifier" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1ModifierChance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1ModifierDeviation" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="offensiveSlow1Type" var-class="picklist" var-type="string" var-default-value="None;Physical;Pierce;Fire;Cold;Lightning;Poison;Life;AttackSpeed;RunSpeed;LifeLeach;ManaLeach;OffensiveAbility;DefensiveAbility;OffensiveReduction;" />
+        <field name="offensiveSlow1UseGlobalChance" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="offensiveSlow1XOR" var-class="variable" var-type="bool" var-default-value="0" />
+      </var-group>
+      <var-group name="Offensive Global">
+        <field name="offensiveGlobalChance" var-class="array" var-type="real" var-default-value="100" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

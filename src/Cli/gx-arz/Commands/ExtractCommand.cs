@@ -41,7 +41,7 @@ namespace Glacie.Cli.Arz.Commands
             progress.ShowMaximumValue = true;
 
             var written = 0;
-            foreach (var record in database.GetAll())
+            foreach (var record in database.SelectAll())
             {
                 progress.Message = record.Name;
 

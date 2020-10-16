@@ -1,0 +1,76 @@
+﻿<partial>
+  <record-type name="Actor" path="Actor.tpl">
+    <inherits>
+      <inherit record="Entity" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Actor" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Actor Variables">
+        <field name="actorHeight" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="actorRadius" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="allowTransparency" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="alternateMesh" var-class="variable" var-type="file_msh" />
+        <field name="baseTexture" var-class="variable" var-type="file_tex">
+          <description>Overrides all material ids</description>
+        </field>
+        <field name="baseTextures" var-class="array" var-type="file_tex">
+          <description>Array position overrides material id</description>
+        </field>
+        <field name="bumpTexture" var-class="variable" var-type="file_tex">
+          <description>Overrides all material ids</description>
+        </field>
+        <field name="bumpTextures" var-class="array" var-type="file_tex">
+          <description>Array position overrides material id</description>
+        </field>
+        <field name="castsShadows" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="description" var-class="variable" var-type="string" />
+        <field name="glowTexture" var-class="variable" var-type="file_tex">
+          <description>Overrides all material ids</description>
+        </field>
+        <field name="glowTextures" var-class="array" var-type="file_tex">
+          <description>Array position overrides material id</description>
+        </field>
+        <field name="interactIconPosition" var-class="variable" var-type="int">
+          <description>Additional position adjustment</description>
+        </field>
+        <field name="mapNuggetCustom" var-class="variable" var-type="file_tex">
+          <description>Nugget bitmap to show when map nugget type is custom or regular</description>
+        </field>
+        <field name="mapNuggetType" var-class="picklist" var-type="string" var-default-value="None;Quest;Boss;Custom;Regular">
+          <description>Map nugget display type</description>
+        </field>
+        <field name="maxTransparency" var-class="variable" var-type="real" var-default-value="0.5" />
+        <field name="mesh" var-class="variable" var-type="file_msh" />
+        <field name="miniMapEntity" var-class="variable" var-type="file_dbr" />
+        <field name="outlineThickness" var-class="variable" var-type="real" var-default-value="0.035">
+          <description>Thickness of the outline around the actor when selected (in meters)</description>
+        </field>
+        <field name="quest" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Is this a quest-related object?</description>
+        </field>
+        <field name="ragdollDecal" var-class="variable" var-type="file_dbr" />
+        <field name="scale" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="shader" var-class="variable" var-type="file_ssh" />
+        <field name="shadowBias" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="specTexture" var-class="variable" var-type="file_tex">
+          <description>Overrides all material ids</description>
+        </field>
+        <field name="specTextures" var-class="array" var-type="file_tex">
+          <description>Array position overrides material id</description>
+        </field>
+        <field name="transparentShader" var-class="variable" var-type="file_ssh" />
+        <field name="unloadedBoundingBoxExtents" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+      <var-group name="Physics">
+        <field name="collisionShape" var-class="picklist" var-type="string" var-default-value="Box;Sphere;Cylinder;Capsule" />
+        <field name="physicsFriction" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="physicsMass" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="physicsRestitution" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

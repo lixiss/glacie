@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="ItemNote" path="ItemNote.tpl">
+    <inherits>
+      <inherit record="TemplateBase.ItemBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ItemNote" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="ItemNote">
+        <field name="codexTitle" var-class="variable" var-type="string" />
+        <field name="experienceBonus" var-class="array" var-type="int" />
+        <field name="noteBitmap" var-class="variable" var-type="file_tex">
+          <description>Bitmap to show in the UI</description>
+        </field>
+        <field name="noteWidth" var-class="variable" var-type="int" var-default-value="350">
+          <description>Width of the note when displayed (pixels)</description>
+        </field>
+        <field name="subHeading" var-class="variable" var-type="string" var-default-value="tagCodexJournalSubHeadingDefault" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

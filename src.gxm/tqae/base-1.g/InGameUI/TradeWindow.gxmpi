@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="InGameUI.TradeWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="BackgroundImage" />
+      <field name="CancelButton" />
+      <field name="CloseButton" />
+      <field name="GoldImageLeft" />
+      <field name="GoldImageRight" />
+      <field name="HisGoldText" />
+      <field name="HisNameText" />
+      <field name="MyGoldEditBox" />
+      <field name="MyNameText" />
+      <field name="TradeButton" />
+      <field name="WindowLocationX" />
+      <field name="WindowLocationY" />
+    </var-group>
+  </record-type>
+</partial>

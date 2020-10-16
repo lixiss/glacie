@@ -15,7 +15,7 @@ namespace Glacie.Tests
         protected static void AssertInvariants(Database database)
         {
             var count = database.Count;
-            var countByIteration = database.GetAll().Count();
+            var countByIteration = database.SelectAll().Count();
             Assert.Equal(count, countByIteration);
         }
     }

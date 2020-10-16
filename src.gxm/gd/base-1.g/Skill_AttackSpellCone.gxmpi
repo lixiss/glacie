@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="Skill_AttackSpellCone">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="coneDelay" />
+      <field name="coneName" />
+      <field name="endSound" />
+      <field name="endWidth" />
+      <field name="loopSound" />
+      <field name="maxRange" />
+      <field name="rotationSpeedMultiplier" />
+      <field name="startSound" />
+      <field name="startWidth" />
+      <field name="timeBetweenAttacks" />
+      <field name="travelSpeed" />
+    </var-group>
+  </record-type>
+</partial>

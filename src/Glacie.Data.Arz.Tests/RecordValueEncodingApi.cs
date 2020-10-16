@@ -458,7 +458,7 @@ namespace Glacie.Data.Arz.Tests
             // Ensures what tail properly maintained.
             Assert.Equal(
                 new[] { FieldName },
-                Record.GetAll().Select(x => x.Name)
+                Record.SelectAll().Select(x => x.Name)
                 );
 
             // TODO: should not break rest invariants
@@ -487,7 +487,7 @@ namespace Glacie.Data.Arz.Tests
 
             Assert.Equal(
                 new[] { FieldName2, FieldName },
-                Record.GetAll().Select(x => x.Name)
+                Record.SelectAll().Select(x => x.Name)
                 );
 
             // TODO: should not break invariants
@@ -514,7 +514,7 @@ namespace Glacie.Data.Arz.Tests
             // Ensures what tail properly maintained.
             Assert.Equal(
                 new[] { FieldName },
-                Record.GetAll().Select(x => x.Name)
+                Record.SelectAll().Select(x => x.Name)
                 );
 
             // TODO: should not break rest invariants
@@ -541,7 +541,7 @@ namespace Glacie.Data.Arz.Tests
             // Without splitting field will be appended to the end.
             Assert.Equal(
                 new[] { FieldName2, FieldName },
-                Record.GetAll().Select(x => x.Name)
+                Record.SelectAll().Select(x => x.Name)
                 );
 
             // TODO: should not break rest invariants
@@ -568,7 +568,7 @@ namespace Glacie.Data.Arz.Tests
             // Splitting doesn't changes field order.
             Assert.Equal(
                 new[] { FieldName, FieldName2 },
-                Record.GetAll().Select(x => x.Name)
+                Record.SelectAll().Select(x => x.Name)
                 );
 
             // TODO: should not break rest invariants

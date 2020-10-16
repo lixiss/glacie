@@ -1,13 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-using Glacie.Data.Tpl;
-using Glacie.Data.Metadata.Emit;
-using Glacie.Metadata;
+using Glacie.Data.Templates;
+using Glacie.Data.Metadata.V1.Emit;
+using Glacie.Metadata.V1;
 
 namespace Glacie.Lab.Metadata
 {
     // TODO: This is not a parser actually. This might be RecordDefinitionProvider / something.
 
+    [Obsolete]
     internal sealed class TemplateParser
     {
         private TemplateProvider _templateProvider;
@@ -30,7 +32,7 @@ namespace Glacie.Lab.Metadata
             }
 
             //Console.Out.WriteLine("Resolving Template: {0}", templateName);
-            var template = _templateProvider.GetTemplate(templateName);
+            var template = _templateProvider.GetTemplate(Path1.From(templateName));
             //Console.Out.WriteLine("  -> {0}", template.Name);
 
             // If templateName is different after template get resolved, then

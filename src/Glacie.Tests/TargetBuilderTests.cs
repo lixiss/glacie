@@ -1,66 +1,45 @@
 ﻿using System;
 using Glacie.Abstractions;
+using Glacie.Configuration;
 using Glacie.Data.Arz;
+using Glacie.Targeting;
+
 using Xunit;
 
 namespace Glacie.Tests
 {
+    // TODO: This tests requires to be rebuild to go over project context.
+
+    /*
     [Trait("Category", "GX")]
     public sealed class TargetBuilderTests : GlacieTests
     {
-        [Fact]
-        public void ThrowsIfConfigureActionIsNull()
-        {
-            Assert.Throws<ArgumentNullException>(() =>
-            {
-                using var context = Context.Create(c =>
-                {
-                    c.Target((Action<ITargetBuilder>)null!);
-                });
-            });
-        }
-
         [Fact]
         public void ThrowsIfTargetNotConfigured()
         {
             AssertGxError("TargetConfigurationInvalid", () =>
             {
-                using var context = Context.Create(c =>
+                var cc = new ContextConfiguration();
+                cc.Target = new ContextTargetConfiguration()
                 {
-                    c.Target(t => { });
-                });
+                };
+
+                using var context = Context.Create(new UnifiedEngineType(), cc);
             });
         }
 
         [Fact]
         public void ThrowsIfTargetPathNullOrEmpty()
         {
-            Assert.Throws<ArgumentNullException>(() =>
+            AssertGxError("TargetConfigurationInvalid", () =>
             {
-                using var context = Context.Create(c =>
+                var cc = new ContextConfiguration();
+                cc.Target = new ContextTargetConfiguration()
                 {
-                    c.Target(t => t.Path(null!));
-                });
-            });
+                    Path = "",
+                };
 
-            Assert.Throws<ArgumentException>(() =>
-            {
-                using var context = Context.Create(c =>
-                {
-                    c.Target(t => t.Path(""));
-                });
-            });
-        }
-
-        [Fact]
-        public void ThrowsIfTargetDatabaseNull()
-        {
-            Assert.Throws<ArgumentNullException>(() =>
-            {
-                using var context = Context.Create(c =>
-                {
-                    c.Target(t => t.Database(null!));
-                });
+                using var context = Context.Create(new UnifiedEngineType(), cc);
             });
         }
 
@@ -70,15 +49,17 @@ namespace Glacie.Tests
             AssertGxError("TargetConfigurationInvalid", () =>
             {
                 using var targetDatabase = ArzDatabase.Create();
-                using var context = Context.Create(c =>
+
+                var cc = new ContextConfiguration();
+                cc.Target = new ContextTargetConfiguration()
                 {
-                    c.Target(t => {
-                        t.Path("some-path");
-                        t.Database(targetDatabase);
-                    });
-                });
+                    Path = "some-path",
+                    Database = targetDatabase,
+                };
+
+                using var context = Context.Create(new UnifiedEngineType(), cc);
             });
         }
-
     }
+    */
 }

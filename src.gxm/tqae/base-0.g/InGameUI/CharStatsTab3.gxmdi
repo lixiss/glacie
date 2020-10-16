@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab3" path="InGameUI/CharStatsTab3.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.Vec2" />
+      <inherit record="InGameUI.Includes.Ext2" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="tab1Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab2Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab3#DamageModNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab3#DamageModRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3#DamageModText" var-class="variable" var-type="file_dbr" />
+        <field name="tab3Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab3GreatestDamageDealtNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab3GreatestDamageDealtRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3GreatestDamageDealtText" var-class="variable" var-type="file_dbr" />
+        <field name="tab3GreatestMonsterKilledLevel" var-class="variable" var-type="file_dbr" />
+        <field name="tab3GreatestMonsterKilledName" var-class="variable" var-type="file_dbr" />
+        <field name="tab3GreatestMonsterKilledRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3GreatestMonsterKilledText" var-class="variable" var-type="file_dbr" />
+        <field name="tab3LowerBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab3MonstersKilledNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab3MonstersKilledRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3MonstersKilledText" var-class="variable" var-type="file_dbr" />
+        <field name="tab3Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab3RaceDamage#Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab3RaceDamage#Number" var-class="variable" var-type="file_dbr" />
+        <field name="tab3RaceDamage#Rollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3RaceResistance#Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab3RaceResistance#Number" var-class="variable" var-type="file_dbr" />
+        <field name="tab3RaceResistance#Rollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3TotalDeathsNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab3TotalDeathsRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3TotalDeathsText" var-class="variable" var-type="file_dbr" />
+        <field name="tab3TotalPlaytimeNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab3TotalPlaytimeRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab3TotalPlaytimeText" var-class="variable" var-type="file_dbr" />
+        <field name="tab3UpperBarBitmap" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

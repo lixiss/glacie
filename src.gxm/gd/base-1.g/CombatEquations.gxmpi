@@ -1,0 +1,60 @@
+﻿<partial>
+  <record-type name="CombatEquations">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Combat Effects">
+      <field name="criticalhitFxPak" />
+      <field name="projectileCritFxPak" />
+    </var-group>
+    <var-group name="Combat Regions">
+      <field name="combatRegionArmsChance" />
+      <field name="combatRegionFeetChance" />
+      <field name="combatRegionFullyProtectedChance" />
+      <field name="combatRegionHeadChance" />
+      <field name="combatRegionLegsChance" />
+      <field name="combatRegionShouldersChance" />
+      <field name="combatRegionTorsoChance" />
+      <field name="combatRegionUnprotectedChance" />
+    </var-group>
+    <var-group name="Equations">
+      <field name="defensiveAbilityEquation" />
+      <field name="magicalDamageEquation" />
+      <field name="magicalDurationDamageEquation" />
+      <field name="meleeBlockEquation" />
+      <field name="offensiveAbilityEquation" />
+      <field name="physcialDamageDefenseEquationDLEP" />
+      <field name="physicalDamageBonus" />
+      <field name="physicalDamageDefenseEquationDGP" />
+      <field name="physicalDamageEquation" />
+      <field name="physicalDamagePercentage" />
+      <field name="physicalDurationDamageEquation" />
+      <field name="physicsStrengthEquation" />
+      <field name="physicsStrengthMax" />
+      <field name="physicsStrengthMin" />
+      <field name="pierceDamageEquation" />
+      <field name="probabilityToHitEquation" />
+      <field name="projectileBlockEquation" />
+      <field name="shieldDamageReductionEquationDGB" />
+      <field name="shieldDamageReductionEquationDLEB" />
+    </var-group>
+    <var-group name="Probability To Hit">
+      <field name="normalPTHEquation" />
+      <field name="pthDamageModifier1" />
+      <field name="pthDamageModifier2" />
+      <field name="pthDamageModifier3" />
+      <field name="pthDamageModifier4" />
+      <field name="pthDamageModifier5" />
+      <field name="pthDamageModifier6" />
+      <field name="pthMinimum" />
+      <field name="pthThreshold1" />
+      <field name="pthThreshold2" />
+      <field name="pthThreshold3" />
+      <field name="pthThreshold4" />
+      <field name="pthThreshold5" />
+      <field name="pthThreshold6" />
+    </var-group>
+  </record-type>
+</partial>

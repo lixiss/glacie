@@ -7,7 +7,7 @@ namespace Glacie.Data.Arz
 {
     // TODO: (High) (ArzField) Try to implement version checks feature. Make it optional and compare performance.
 
-    public readonly struct ArzField : IFieldApi
+    public readonly struct ArzField : IFieldApi<ArzRecord>
     {
         private readonly ArzRecord _record;
         private readonly arz_field_ptr _fieldPtr;
@@ -17,6 +17,12 @@ namespace Glacie.Data.Arz
         {
             _record = record;
             _fieldPtr = fieldPtr;
+        }
+
+        public ArzRecord Record
+        {
+            [MethodImpl(MethodImplOptions.AggressiveInlining)]
+            get => _record;
         }
 
         public string Name

@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="Skill_RefreshCooldown" path="Skill_RefreshCooldown.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Activated" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_RefreshCooldown" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="refreshTime" var-class="array" var-type="real">
+          <description>Seconds</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

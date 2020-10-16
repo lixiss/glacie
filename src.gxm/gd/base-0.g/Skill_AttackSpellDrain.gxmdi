@@ -1,0 +1,52 @@
+﻿<partial>
+  <record-type name="Skill_AttackSpellDrain" path="Skill_AttackSpellDrain.tpl">
+    <inherits>
+      <inherit record="SkillChanneled" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_AttackSpellDrain" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="GDX1" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="chaosBeamName" var-class="variable" var-type="file_dbr" />
+        <field name="endEffect" var-class="variable" var-type="file_dbr" />
+        <field name="endSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak to play when a beam ends</description>
+        </field>
+        <field name="loopSound" var-class="variable" var-type="file_dbr">
+          <description>Looping SoundPak to play while a beam is active</description>
+        </field>
+        <field name="maxRange" var-class="variable" var-type="real" />
+        <field name="newBeamDelay" var-class="variable" var-type="int" var-default-value="50">
+          <description>Time new beam will be delayed (in milliseconds)</description>
+        </field>
+        <field name="rotationSpeedMultiplier" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>Multiplier applied to player rotation speed while skill is active</description>
+        </field>
+        <field name="secondaryBeamName" var-class="variable" var-type="file_dbr" />
+        <field name="skillTargetRadius" var-class="array" var-type="real" />
+        <field name="sparkChance" var-class="array" var-type="real">
+          <description>Chance of splitting</description>
+        </field>
+        <field name="sparkMaxNumber" var-class="array" var-type="int" var-default-value="1">
+          <description>Max number of targets</description>
+        </field>
+        <field name="startEffect" var-class="variable" var-type="file_dbr" />
+        <field name="startSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak to play when a beam starts</description>
+        </field>
+        <field name="tailTravelSpeed" var-class="variable" var-type="real">
+          <description>Tail of the beam velocity in meters per second</description>
+        </field>
+        <field name="timeBetweenAttacks" var-class="variable" var-type="int" var-default-value="100">
+          <description>Time between hits being to enemies in the beam (in milliseconds)</description>
+        </field>
+        <field name="travelSpeed" var-class="variable" var-type="real">
+          <description>Head of the beam velocity in meters per second</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

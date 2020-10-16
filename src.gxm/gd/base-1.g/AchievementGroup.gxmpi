@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="AchievementGroup">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="AchievementGroup">
+      <field name="achievements" />
+      <field name="button" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="SkillChanneled" path="SkillChanneled.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Activated" />
+      <inherit record="TemplateBase.Skill_Attack" />
+      <inherit record="TemplateBase.Skill_Spell" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SkillChanneled" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="canUseWhileMoving" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="duration" var-class="variable" var-type="real" var-default-value="0.2" />
+        <field name="useResetsDuration" var-class="variable" var-type="bool" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,37 @@
+﻿<partial>
+  <record-type name="Skill_AttackTelekinesis" path="Skill_AttackTelekinesis.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Attack" />
+      <inherit record="TemplateBase.Skill_Activated" />
+      <inherit record="TemplateBase.Skill_ProjectileBase" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_AttackTelekinesis" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="headVelocity" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="liftSpeed" var-class="variable" var-type="real" var-default-value="2.0" />
+        <field name="moveOverHeadVelocity" var-class="variable" var-type="real" var-default-value="6.0" />
+        <field name="moveSpeed" var-class="variable" var-type="real" var-default-value="8.0" />
+        <field name="skillProjectileHitTimeToLive" var-class="array" var-type="real" />
+        <field name="skillProjectileMissTimeToLive" var-class="array" var-type="real" />
+        <field name="skillProjectileName" var-class="variable" var-type="file_dbr" />
+        <field name="skillProjectileTargetGroundOnly" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="specialEndingAnimationName" var-class="variable" var-type="string" />
+        <field name="specialLoopingAnimationName" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Effects">
+        <field name="beamOriginCharFxPak" var-class="variable" var-type="file_dbr" />
+        <field name="chaosBeamName" var-class="variable" var-type="file_dbr" />
+        <field name="puppetName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Skill Sound">
+        <field name="chaosBeamSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

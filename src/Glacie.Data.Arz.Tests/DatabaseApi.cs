@@ -87,7 +87,7 @@ namespace Glacie.Data.Arz.Tests
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae0);
             var count = 0;
-            foreach (var _ in database.GetAll()) count++;
+            foreach (var _ in database.SelectAll()) count++;
             Assert.Equal(0, count);
         }
 
@@ -96,7 +96,7 @@ namespace Glacie.Data.Arz.Tests
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
             var count = 0;
-            foreach (var _ in database.GetAll()) count++;
+            foreach (var _ in database.SelectAll()) count++;
             Assert.Equal(1, count);
         }
 
@@ -107,7 +107,7 @@ namespace Glacie.Data.Arz.Tests
 
             var ex = Assert.Throws<InvalidOperationException>(() =>
                 {
-                    foreach (var _ in database.GetAll())
+                    foreach (var _ in database.SelectAll())
                     {
                         database.Add("some/record");
                     }
@@ -121,7 +121,7 @@ namespace Glacie.Data.Arz.Tests
 
             var ex = Assert.Throws<InvalidOperationException>(() =>
                 {
-                    foreach (var _ in database.GetAll())
+                    foreach (var _ in database.SelectAll())
                     {
                         Assert.True(database.Remove(TestData.GtdTqae2RawRecordNames[0]));
                     }
@@ -137,7 +137,7 @@ namespace Glacie.Data.Arz.Tests
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
 
-            var record = database.Get(TestData.GtdTqae1RawRecordName);
+            var record = database.GetRecord(TestData.GtdTqae1RawRecordName);
             Assert.NotNull(record);
         }
 
@@ -148,7 +148,7 @@ namespace Glacie.Data.Arz.Tests
             var nonExistentRecordName = Guid.NewGuid().ToString("N");
 
             var ex = Assert.Throws<ArzException>(() =>
-                database.Get(nonExistentRecordName)
+                database.GetRecord(nonExistentRecordName)
                 );
             Assert.Equal("RecordNotFound", ex.ErrorCode);
         }
@@ -165,7 +165,7 @@ namespace Glacie.Data.Arz.Tests
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
 
-            var result = database.TryGet(TestData.GtdTqae1RawRecordName, out var record);
+            var result = database.TryGetRecord(TestData.GtdTqae1RawRecordName, out var record);
             Assert.True(result);
             Assert.NotNull(record);
         }
@@ -176,7 +176,7 @@ namespace Glacie.Data.Arz.Tests
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
             var nonExistentRecordName = Guid.NewGuid().ToString("N");
 
-            var result = database.TryGet(nonExistentRecordName, out var record);
+            var result = database.TryGetRecord(nonExistentRecordName, out var record);
             Assert.False(result);
             Assert.Null(record);
         }
@@ -192,7 +192,7 @@ namespace Glacie.Data.Arz.Tests
         public void GetOrNullExisting()
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
-            var record = database.GetOrNull(TestData.GtdTqae1RawRecordName);
+            var record = database.GetRecordOrNull(TestData.GtdTqae1RawRecordName);
             Assert.NotNull(record);
         }
 
@@ -202,7 +202,7 @@ namespace Glacie.Data.Arz.Tests
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
             var nonExistentRecordName = Guid.NewGuid().ToString("N");
 
-            var record = database.GetOrNull(nonExistentRecordName);
+            var record = database.GetRecordOrNull(nonExistentRecordName);
             Assert.Null(record);
         }
 
@@ -248,7 +248,7 @@ namespace Glacie.Data.Arz.Tests
         {
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
             var count = 0;
-            foreach (var _ in database.GetAll()) count++;
+            foreach (var _ in database.SelectAll()) count++;
             Assert.True(count == database.Count);
             // TODO: This invariant should satisfied after any record add or remove.
         }
@@ -296,13 +296,13 @@ namespace Glacie.Data.Arz.Tests
             Assert.Equal("my/record.dbr", myRecord1.Name);
 
             // Triggers record map to be created.
-            Assert.Same(myRecord1, database.GetOrNull("my/record.dbr"));
+            Assert.Same(myRecord1, database.GetRecordOrNull("my/record.dbr"));
 
             var myRecord2 = database.Add("my/record2.dbr");
             Assert.Equal("my/record2.dbr", myRecord2.Name);
 
-            Assert.Same(myRecord1, database.GetOrNull("my/record.dbr"));
-            Assert.Same(myRecord2, database.GetOrNull("my/record2.dbr"));
+            Assert.Same(myRecord1, database.GetRecordOrNull("my/record.dbr"));
+            Assert.Same(myRecord2, database.GetRecordOrNull("my/record2.dbr"));
         }
 
         #endregion
@@ -347,12 +347,12 @@ namespace Glacie.Data.Arz.Tests
             using var database = ArzDatabase.Open(TestData.GtdTqae1);
 
             // Trigger record map to be created.
-            var record1 = database.Get(TestData.GtdTqae1RawRecordName);
+            var record1 = database.GetRecord(TestData.GtdTqae1RawRecordName);
 
             Assert.True(database.Remove(TestData.GtdTqae1RawRecordName));
             Assert.False(database.Remove(TestData.GtdTqae1RawRecordName));
 
-            Assert.Null(database.GetOrNull(TestData.GtdTqae1RawRecordName));
+            Assert.Null(database.GetRecordOrNull(TestData.GtdTqae1RawRecordName));
         }
 
         #endregion
@@ -377,7 +377,7 @@ namespace Glacie.Data.Arz.Tests
 
             var recordName = TestData.GtdTqae1RawRecordName;
             var recordToDelete = database1[recordName];
-            Assert.True(database2.GetOrNull(recordName) != null);
+            Assert.True(database2.GetRecordOrNull(recordName) != null);
 
             var ex = Assert.Throws<ArzException>(
                 () => database2.Remove(recordToDelete)

@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="BonusSharing" path="BonusSharing.tpl">
+    <expression-variables>
+      <expression-variable name="amountOfExperience" />
+      <expression-variable name="amountOfGold" />
+      <expression-variable name="evaluatingPartyMemberCount" />
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Equations">
+        <field name="ActiveExperience" var-class="variable" var-type="equation" />
+        <field name="ActiveGold" var-class="variable" var-type="equation" />
+        <field name="PassiveExperience" var-class="variable" var-type="equation" />
+        <field name="PassiveGold" var-class="variable" var-type="equation" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,72 @@
+﻿<partial>
+  <record-type name="InGameUI.CharStatsTab2_AE" path="InGameUI/CharStatsTab2 AE.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.Vec2" />
+      <inherit record="InGameUI.Includes.Ext2" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="tab1Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab2Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2CastSpeedNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2CastSpeedRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2CastSpeedText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2DefensiveAbilityNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2DefensiveAbilityRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2DefensiveAbilityText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2GreatestDamageDealtNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2GreatestDamageDealtRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2GreatestDamageDealtText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2GreatestMonsterKilledLevel" var-class="variable" var-type="file_dbr" />
+        <field name="tab2GreatestMonsterKilledName" var-class="variable" var-type="file_dbr" />
+        <field name="tab2GreatestMonsterKilledRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2GreatestMonsterKilledText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2LifeRegenNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2LifeRegenRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2LifeRegenText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2LowerBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ManaRegenNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ManaRegenRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ManaRegenText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2MonstersKilledNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2MonstersKilledRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2MonstersKilledText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2Name" var-class="variable" var-type="file_dbr" />
+        <field name="tab2OffensiveAbilityNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2OffensiveAbilityRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2OffensiveAbilityText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceBleedingBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceBleedingNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceBleedingRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceDisruptionBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceDisruptionNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceDisruptionRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceLifeBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceLifeNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceLifeRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceSecondaryText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceSpiritBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceSpiritNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceSpiritRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceStunBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceStunNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2ResistanceStunRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2RunSpeedNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2RunSpeedRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2RunSpeedText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2TotalDeathsNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2TotalDeathsRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2TotalDeathsText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2TotalPlaytimeNumber" var-class="variable" var-type="file_dbr" />
+        <field name="tab2TotalPlaytimeRollover" var-class="variable" var-type="file_dbr" />
+        <field name="tab2TotalPlaytimeText" var-class="variable" var-type="file_dbr" />
+        <field name="tab2UpperBarBitmap" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

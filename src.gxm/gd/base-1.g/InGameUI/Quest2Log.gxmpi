@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="InGameUI.Quest2Log">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Quest2Log">
+      <field name="background" />
+      <field name="tree" />
+    </var-group>
+  </record-type>
+</partial>

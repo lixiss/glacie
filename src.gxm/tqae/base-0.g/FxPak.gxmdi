@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="FxPak" path="FxPak.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="FxPak" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="activateSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="cameraShakeAmplitude" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>0.5 nominal</description>
+        </field>
+        <field name="cameraShakeDuration" var-class="variable" var-type="real" var-default-value="0">
+          <description>Seconds</description>
+        </field>
+        <field name="decal" var-class="variable" var-type="file_dbr" />
+        <field name="disturbanceRadius" var-class="variable" var-type="real" var-default-value="0">
+          <description>Meters</description>
+        </field>
+        <field name="meshEffectNames" var-class="array" var-type="file_dbr">
+          <description>Uses FxMesh.tpl</description>
+        </field>
+        <field name="particleEffectNames" var-class="array" var-type="file_dbr">
+          <description>Uses Effects.tpl</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

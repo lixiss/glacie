@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="Engine.FireLight">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Light Variables">
+      <field name="bobAmount" />
+      <field name="bobSpeed" />
+      <field name="color.b" />
+      <field name="color.g" />
+      <field name="color.r" />
+      <field name="expandSpeed" />
+      <field name="flickerMax" />
+      <field name="flickerMin" />
+      <field name="maxOff" />
+      <field name="maxOn" />
+      <field name="maxRadius" />
+      <field name="minOff" />
+      <field name="minOn" />
+      <field name="minRadius" />
+      <field name="shadowPriority" />
+    </var-group>
+  </record-type>
+</partial>

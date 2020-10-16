@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="GibEffectEntity">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="GibEffectEntity">
+      <field name="gibNames" />
+      <field name="launchDistance" />
+      <field name="maxGibScale" />
+      <field name="maxGibSpeed" />
+      <field name="maxGibs" />
+      <field name="minGibScale" />
+      <field name="minGibSpeed" />
+      <field name="minGibs" />
+      <field name="multipleGibs" />
+      <field name="selfCollide" />
+    </var-group>
+  </record-type>
+</partial>

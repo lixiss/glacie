@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="TemplateBase.RacialBonus">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Racial Bonus">
+      <field name="racialBonusAbsoluteDamage" />
+      <field name="racialBonusAbsoluteDefense" />
+      <field name="racialBonusPercentDamage" />
+      <field name="racialBonusPercentDefense" />
+      <field name="racialBonusRace" />
+    </var-group>
+  </record-type>
+</partial>

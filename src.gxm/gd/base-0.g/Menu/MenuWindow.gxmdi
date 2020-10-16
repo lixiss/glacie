@@ -1,0 +1,5 @@
+﻿<partial>
+  <record-type name="Menu.MenuWindow" path="Menu/MenuWindow.tpl">
+    <var-group />
+  </record-type>
+</partial>

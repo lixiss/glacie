@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="StaticTeleporter" path="StaticTeleporter.tpl">
+    <inherits>
+      <inherit record="BindingInteractable" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="StaticTeleporter" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="StaticTeleporter">
+        <field name="activeEffect" var-class="variable" var-type="file_dbr" />
+        <field name="activeSound" var-class="variable" var-type="file_dbr" />
+        <field name="dormantEffect" var-class="variable" var-type="file_dbr" />
+        <field name="dormantSound" var-class="variable" var-type="file_dbr" />
+        <field name="locked" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="lockedEffect" var-class="variable" var-type="file_dbr" />
+        <field name="lockedSound" var-class="variable" var-type="file_dbr" />
+        <field name="radius" var-class="variable" var-type="real" var-default-value="2.0">
+          <description>Radius of the teleporter for visibility</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

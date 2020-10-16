@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="Skill_SpawnPet">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="instantCast" />
+    </var-group>
+    <var-group name="Spawn Config">
+      <field name="petBurstSpawn" />
+      <field name="petLimit" />
+      <field name="revertTeamAfterMasterDeath" />
+      <field name="spawnObjectsTimeToLive" />
+      <field name="surviveAfterMasterDeath" />
+    </var-group>
+  </record-type>
+</partial>

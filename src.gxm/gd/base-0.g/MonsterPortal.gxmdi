@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="MonsterPortal" path="MonsterPortal.tpl">
+    <inherits>
+      <inherit record="Actor" />
+      <inherit record="MonsterSpawner" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="MonsterPortal" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="MonsterPortal">
+        <field name="activeEffect" var-class="variable" var-type="file_dbr">
+          <description>Effect to loop while active</description>
+        </field>
+        <field name="activeSound" var-class="variable" var-type="file_dbr">
+          <description>Sound to loop while active</description>
+        </field>
+        <field name="closeSound" var-class="variable" var-type="file_dbr">
+          <description>Sound to play then the portal closes</description>
+        </field>
+        <field name="dormantEffect" var-class="variable" var-type="file_dbr">
+          <description>Effect to loop while dormat</description>
+        </field>
+        <field name="dormantSound" var-class="variable" var-type="file_dbr">
+          <description>Sound to loop while dormant</description>
+        </field>
+        <field name="openSound" var-class="variable" var-type="file_dbr">
+          <description>Sound to play when the portal opens</description>
+        </field>
+        <field name="portalEnabled" var-class="variable" var-type="bool" var-default-value="1">
+          <description>True if this portal is operational</description>
+        </field>
+        <field name="resetOnChange" var-class="variable" var-type="bool" var-default-value="0">
+          <description>If true then the number of charges are reset during day/night transitions</description>
+        </field>
+        <field name="showInMinimap" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="spawnTime" var-class="picklist" var-type="string" var-default-value="Always;Day;Night">
+          <description>Time of day at which the portal spawns</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

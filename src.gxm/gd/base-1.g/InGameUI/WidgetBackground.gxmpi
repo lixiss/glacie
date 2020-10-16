@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="InGameUI.WidgetBackground">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="BLBitmap" />
+      <field name="BRBitmap" />
+      <field name="BottomBitmap" />
+      <field name="FillerBitmap" />
+      <field name="LeftBitmap" />
+      <field name="Padding" />
+      <field name="RightBitmap" />
+      <field name="TopBitmap" />
+      <field name="ULBitmap" />
+      <field name="URBitmap" />
+    </var-group>
+  </record-type>
+</partial>

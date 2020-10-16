@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="TemplateBase.FixedItem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Animation Sounds">
+      <field name="sound1" />
+      <field name="sound2" />
+      <field name="sound3" />
+      <field name="sound4" />
+      <field name="sound5" />
+    </var-group>
+    <var-group name="Config">
+      <field name="locked" />
+      <field name="lockedSound" />
+      <field name="lockedTextTag" />
+      <field name="perPartyMemberDropItemName" />
+    </var-group>
+    <var-group name="Skill">
+      <field name="skillDelay" />
+      <field name="skillName" />
+    </var-group>
+  </record-type>
+</partial>

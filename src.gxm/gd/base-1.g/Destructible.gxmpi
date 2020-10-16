@@ -1,0 +1,54 @@
+﻿<partial>
+  <record-type name="Destructible">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Destructible">
+      <field name="attackAnimation" />
+      <field name="breakEffectAttachpoints" />
+      <field name="breakEffects" />
+      <field name="breakForceMax" />
+      <field name="breakForceMin" />
+      <field name="breakMode" />
+      <field name="breakSound" />
+      <field name="brokenMesh" />
+      <field name="crushDamageEquation" />
+      <field name="crushDamageMax" />
+      <field name="crushDamageMin" />
+      <field name="door" />
+      <field name="fallDirectionX" />
+      <field name="fallDirectionY" />
+      <field name="fallDirectionZ" />
+      <field name="fixedStatics" />
+      <field name="impactSound" />
+      <field name="intactEffect" />
+      <field name="intactSound" />
+      <field name="invulnerable" />
+      <field name="life" />
+      <field name="maxLife" />
+      <field name="maxLifeEquation" />
+      <field name="maxNumRandomStatics" />
+      <field name="minNumRandomStatics" />
+      <field name="passableWhen" />
+      <field name="playerDamageOnly" />
+      <field name="playerOnly" />
+      <field name="randomStatics" />
+      <field name="removeAttachedEntities" />
+      <field name="rubbleFade" />
+      <field name="rubbleLife" />
+      <field name="selfCollide" />
+      <field name="splashSound" />
+      <field name="targetable" />
+      <field name="trailEffect" />
+    </var-group>
+    <var-group name="Loot">
+      <field name="lootChance" />
+      <field name="lootClassification" />
+      <field name="lootTable" />
+      <field name="maxLevel" />
+      <field name="minLevel" />
+    </var-group>
+  </record-type>
+</partial>

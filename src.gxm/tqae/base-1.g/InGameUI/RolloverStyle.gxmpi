@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="InGameUI.RolloverStyle">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="backgroundColorAlpha" />
+      <field name="backgroundColorBlue" />
+      <field name="backgroundColorGreen" />
+      <field name="backgroundColorRed" />
+      <field name="backgroundHighlightColorAlpha" />
+      <field name="backgroundHighlightColorBlue" />
+      <field name="backgroundHighlightColorGreen" />
+      <field name="backgroundHighlightColorRed" />
+    </var-group>
+  </record-type>
+</partial>

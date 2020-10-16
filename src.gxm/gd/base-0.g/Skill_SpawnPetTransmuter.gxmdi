@@ -1,0 +1,77 @@
+﻿<partial>
+  <record-type name="Skill_SpawnPetTransmuter" path="Skill_SpawnPetTransmuter.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_PassiveModifier" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_SpawnPetTransmuter" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="GDX1" />
+      </var-group>
+      <var-group name="Modifiers">
+        <field name="skillActiveDuration" var-class="array" var-type="real">
+          <description>Timed Skills</description>
+        </field>
+        <field name="skillActiveLifeCost" var-class="array" var-type="real">
+          <description>Self Buff Toggled Only</description>
+        </field>
+        <field name="skillActiveManaCost" var-class="array" var-type="real">
+          <description>Self Buff Toggled Only</description>
+        </field>
+        <field name="skillCooldownTime" var-class="array" var-type="real">
+          <description>Activated Skills Only</description>
+        </field>
+        <field name="skillManaCost" var-class="array" var-type="real">
+          <description>Activated Skills Only</description>
+        </field>
+        <field name="skillTargetAngle" var-class="array" var-type="real">
+          <description>Melee Radius config</description>
+        </field>
+        <field name="skillTargetNumber" var-class="array" var-type="int">
+          <description>Melee Radius config</description>
+        </field>
+        <field name="skillTargetRadius" var-class="array" var-type="real">
+          <description>Radius and Projectiles</description>
+        </field>
+        <field name="waveDistance" var-class="array" var-type="real" />
+        <field name="waveEndWidth" var-class="array" var-type="real" />
+        <field name="waveStartWidth" var-class="array" var-type="real" />
+      </var-group>
+      <var-group name="Projectile Config">
+        <field name="explosionRadius" var-class="array" var-type="real" />
+        <field name="projectileLaunchNumber" var-class="array" var-type="int" />
+        <field name="projectileLaunchRotation" var-class="array" var-type="real" />
+        <field name="projectilePiercing" var-class="array" var-type="real" />
+      </var-group>
+      <var-group name="Skill Effects">
+        <field name="charFxPakOtherNames" var-class="array" var-type="file_dbr">
+          <description>CharFxPak when modifier is attached to a buff other skill</description>
+        </field>
+        <field name="charFxPakSelfNames" var-class="array" var-type="file_dbr">
+          <description>CharFxPak when modifier is attached to a buff self skill</description>
+        </field>
+        <field name="fxChanges" var-class="array" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Spawn Config">
+        <field name="modSpawnObjects" var-class="array" var-type="file_dbr">
+          <description>overrides base skill</description>
+        </field>
+        <field name="modSpawnObjects2" var-class="array" var-type="file_dbr">
+          <description>overrides base skill</description>
+        </field>
+        <field name="modSpawnObjects3" var-class="array" var-type="file_dbr">
+          <description>overrides base skill</description>
+        </field>
+        <field name="modSpawnObjects4" var-class="array" var-type="file_dbr">
+          <description>overrides base skill</description>
+        </field>
+        <field name="modSpawnObjectsTimeToLive" var-class="array" var-type="real">
+          <description>overrides base skill (seconds) (-1 for permanent)</description>
+        </field>
+        <field name="petLimit" var-class="array" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

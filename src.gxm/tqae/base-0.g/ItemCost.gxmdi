@@ -1,0 +1,183 @@
+﻿<partial>
+  <record-type name="ItemCost" path="ItemCost.tpl">
+    <expression-variables>
+      <expression-variable name="charAttackSpeed" />
+      <expression-variable name="charAttackSpeedCount" />
+      <expression-variable name="charAttackSpeedMod" />
+      <expression-variable name="charAttackSpeedModCount" />
+      <expression-variable name="charAttrBase">
+        <description>Obsolete</description>
+      </expression-variable>
+      <expression-variable name="charAttrBonus">
+        <description>Obsolete</description>
+      </expression-variable>
+      <expression-variable name="charAttrBonusCount">
+        <description>Obsolete</description>
+      </expression-variable>
+      <expression-variable name="charAttrModifier">
+        <description>Obsolete</description>
+      </expression-variable>
+      <expression-variable name="charAttrSpeed">
+        <description>Obsolete</description>
+      </expression-variable>
+      <expression-variable name="charBonus" />
+      <expression-variable name="charBonusCount" />
+      <expression-variable name="charBonusMod" />
+      <expression-variable name="charBonusModCount" />
+      <expression-variable name="charOtherSpeed" />
+      <expression-variable name="charOtherSpeedCount" />
+      <expression-variable name="charOtherSpeedMod" />
+      <expression-variable name="charOtherSpeedModCount" />
+      <expression-variable name="charPrimaryAtt" />
+      <expression-variable name="charPrimaryAttCount" />
+      <expression-variable name="charPrimaryMod" />
+      <expression-variable name="charPrimaryModCount" />
+      <expression-variable name="charSecondaryAtt" />
+      <expression-variable name="charSecondaryAttCount" />
+      <expression-variable name="charSecondaryMod" />
+      <expression-variable name="charSecondaryModCount" />
+      <expression-variable name="damageAvgBase" />
+      <expression-variable name="damageAvgBonus" />
+      <expression-variable name="damageAvgOverTime" />
+      <expression-variable name="damageAvgPierceRatio" />
+      <expression-variable name="damageCount" />
+      <expression-variable name="damageMod" />
+      <expression-variable name="damageModDur" />
+      <expression-variable name="defenseAttrArmor" />
+      <expression-variable name="defenseAttrBase" />
+      <expression-variable name="defenseAttrBaseDuration" />
+      <expression-variable name="defenseAttrCount" />
+      <expression-variable name="defenseAttrMod" />
+      <expression-variable name="defenseAttrModDuration" />
+      <expression-variable name="itemAttrScale" />
+      <expression-variable name="itemBaseCost" />
+      <expression-variable name="itemLevel" />
+      <expression-variable name="itemPrefixCost" />
+      <expression-variable name="itemSuffixCost" />
+      <expression-variable name="petBonusCost" />
+      <expression-variable name="retaliationAvgBase">
+        <description>Obsolete</description>
+      </expression-variable>
+      <expression-variable name="retaliationAvgBonus" />
+      <expression-variable name="retaliationAvgOverTime" />
+      <expression-variable name="retaliationCount" />
+      <expression-variable name="retaliationMod" />
+      <expression-variable name="retaliationModDur" />
+      <expression-variable name="shieldBlockAbsorption" />
+      <expression-variable name="shieldBlockChance" />
+      <expression-variable name="shieldBlockDefense" />
+      <expression-variable name="shieldBlockRecoveryTime" />
+      <expression-variable name="skillAttrBase" />
+      <expression-variable name="skillAttrBonus" />
+      <expression-variable name="skillAttrBonusCount" />
+      <expression-variable name="skillAttrModifier" />
+      <expression-variable name="skillAugmentCount" />
+      <expression-variable name="skillAugmentLevel" />
+      <expression-variable name="totalAttCount" />
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Cost Equations">
+        <field name="armorCostEquation" var-class="variable" var-type="equation" />
+        <field name="jewelryCostEquation" var-class="variable" var-type="equation" />
+        <field name="shieldCostEquation" var-class="variable" var-type="equation" />
+        <field name="weaponCostEquation" var-class="variable" var-type="equation">
+          <description>Melee Weapon</description>
+        </field>
+        <field name="weaponRangedCostEquation" var-class="variable" var-type="equation">
+          <description>Ranged Weapon</description>
+        </field>
+      </var-group>
+      <var-group name="Requirement Equations">
+        <var-group name="Armor Forearm">
+          <field name="forearmDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="forearmIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="forearmLevelEquation" var-class="variable" var-type="equation" />
+          <field name="forearmStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Armor Head">
+          <field name="headDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="headIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="headLevelEquation" var-class="variable" var-type="equation" />
+          <field name="headStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Armor LowerBody">
+          <field name="lowerBodyDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="lowerBodyIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="lowerBodyLevelEquation" var-class="variable" var-type="equation" />
+          <field name="lowerBodyStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Armor UpperBody">
+          <field name="upperBodyDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="upperBodyIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="upperBodyLevelEquation" var-class="variable" var-type="equation" />
+          <field name="upperBodyStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Jewelry Amulet">
+          <field name="amuletDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="amuletIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="amuletLevelEquation" var-class="variable" var-type="equation" />
+          <field name="amuletStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Jewelry Bracelet">
+          <field name="braceletDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="braceletIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="braceletLevelEquation" var-class="variable" var-type="equation" />
+          <field name="braceletStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Jewelry Ring">
+          <field name="ringDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="ringIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="ringLevelEquation" var-class="variable" var-type="equation" />
+          <field name="ringStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Weapon Armor Shield">
+          <field name="shieldDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="shieldIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="shieldLevelEquation" var-class="variable" var-type="equation" />
+          <field name="shieldStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Weapon Axe">
+          <field name="axeDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="axeIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="axeLevelEquation" var-class="variable" var-type="equation" />
+          <field name="axeStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Weapon Bow">
+          <field name="bowDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="bowIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="bowLevelEquation" var-class="variable" var-type="equation" />
+          <field name="bowStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Weapon Mace">
+          <field name="maceDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="maceIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="maceLevelEquation" var-class="variable" var-type="equation" />
+          <field name="maceStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Weapon Spear">
+          <field name="spearDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="spearIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="spearLevelEquation" var-class="variable" var-type="equation" />
+          <field name="spearStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Weapon Staff">
+          <field name="staffDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="staffIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="staffLevelEquation" var-class="variable" var-type="equation" />
+          <field name="staffStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+        <var-group name="Weapon Sword">
+          <field name="swordDexterityEquation" var-class="variable" var-type="equation" />
+          <field name="swordIntelligenceEquation" var-class="variable" var-type="equation" />
+          <field name="swordLevelEquation" var-class="variable" var-type="equation" />
+          <field name="swordStrengthEquation" var-class="variable" var-type="equation" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

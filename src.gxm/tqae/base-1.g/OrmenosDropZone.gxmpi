@@ -1,0 +1,12 @@
+﻿<partial>
+  <record-type name="OrmenosDropZone">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="OrmenosDropZone">
+      <field name="radius" />
+    </var-group>
+  </record-type>
+</partial>

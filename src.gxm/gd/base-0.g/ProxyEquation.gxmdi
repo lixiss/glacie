@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="ProxyEquation" path="ProxyEquation.tpl">
+    <expression-variables>
+      <expression-variable name="availableChampionDifficulty">
+        <description>Proxy Pool Champion</description>
+      </expression-variable>
+      <expression-variable name="averagePlayerLevel">
+        <description>Proxy</description>
+      </expression-variable>
+      <expression-variable name="characterLevel">
+        <description>Proxy Pool Character</description>
+      </expression-variable>
+      <expression-variable name="entryDifficulty">
+        <description>Proxy Pool Character</description>
+      </expression-variable>
+      <expression-variable name="gameDifficulty">
+        <description>Proxy (0 to n)</description>
+      </expression-variable>
+      <expression-variable name="maxDifficulty">
+        <description>Proxy</description>
+      </expression-variable>
+      <expression-variable name="maxPlayerLevel">
+        <description>Proxy</description>
+      </expression-variable>
+      <expression-variable name="minDifficulty">
+        <description>Proxy</description>
+      </expression-variable>
+      <expression-variable name="minPlayerLevel">
+        <description>Proxy</description>
+      </expression-variable>
+      <expression-variable name="numberOfPlayers">
+        <description>Proxy</description>
+      </expression-variable>
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="championDifficultyEquation" var-class="variable" var-type="equation" />
+        <field name="characterDifficultyEquation" var-class="variable" var-type="equation" />
+        <field name="difficultyEquation" var-class="variable" var-type="equation" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

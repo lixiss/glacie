@@ -1,0 +1,49 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillPaneBase">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="blueBitmap" />
+      <field name="blueRoundBitmap" />
+      <field name="confirmButton" />
+      <field name="costPerPoint" />
+      <field name="costPerPointNumber" />
+      <field name="costPerPointNumberBitmap" />
+      <field name="descriptionScrollWindow" />
+      <field name="descriptionTextBox" />
+      <field name="goldBitmap" />
+      <field name="goldRoundBitmap" />
+      <field name="grayBitmap" />
+      <field name="grayRoundBitmap" />
+      <field name="greenBitmap" />
+      <field name="greenRoundBitmap" />
+      <field name="masteryMilestoneNumber1" />
+      <field name="masteryMilestoneNumber2" />
+      <field name="masteryMilestoneNumber3" />
+      <field name="masteryMilestoneNumber4" />
+      <field name="masteryMilestoneNumber5" />
+      <field name="masteryMilestoneNumber6" />
+      <field name="masteryMilestoneNumber7" />
+      <field name="masteryMilestoneValueMax" />
+      <field name="masterySkillButtonColorPulse" />
+      <field name="masterySkillLevel" />
+      <field name="playerGoldNumber" />
+      <field name="playerGoldNumberBitmap" />
+      <field name="pointsRemaining" />
+      <field name="pointsRemainingColorPulse" />
+      <field name="reallocationBitmap" />
+      <field name="redBitmap" />
+      <field name="redRoundBitmap" />
+      <field name="skillBorderBitmap" />
+      <field name="skillDecrementButton" />
+      <field name="skillIncrementButton" />
+      <field name="skillLevel" />
+      <field name="skillLevelBitmap" />
+      <field name="undoButton" />
+      <field name="undoMasterySelectionButton" />
+    </var-group>
+  </record-type>
+</partial>

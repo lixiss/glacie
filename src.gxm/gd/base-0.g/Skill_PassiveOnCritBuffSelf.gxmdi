@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="Skill_PassiveOnCritBuffSelf" path="Skill_PassiveOnCritBuffSelf.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Buff" />
+      <inherit record="TemplateBase.Skill_OnHit" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_PassiveOnCritBuffSelf" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="GDX1" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="skillActiveDuration" var-class="array" var-type="real" />
+        <field name="skillCooldownTime" var-class="array" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

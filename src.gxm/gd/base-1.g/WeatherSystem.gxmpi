@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="WeatherSystem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="WeatherSystem">
+      <field name="blending" />
+      <field name="name" />
+      <field name="particleLife" />
+      <field name="particleSize" />
+      <field name="particleSpeed" />
+      <field name="sound" />
+      <field name="spawnHeight" />
+      <field name="spawnRadius" />
+      <field name="texture" />
+      <field name="type" />
+    </var-group>
+  </record-type>
+</partial>

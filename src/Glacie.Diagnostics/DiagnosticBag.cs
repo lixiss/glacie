@@ -1,18 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Linq;
 using System.Threading;
 
 namespace Glacie.Diagnostics
 {
     /// <summary>
-    /// Represents a mutable bag of diagnostics. You can add diagnostics to the bag,
-    /// and also get all the diagnostics out of the bag (the bag implements
-    /// IEnumerable&lt;Diagnostics&gt;. Once added, diagnostics cannot be removed, and no ordering
-    /// is guaranteed.
+    /// Represents a mutable bag of diagnostics. You can add diagnostics to the
+    /// bag, and also get all the diagnostics out of the bag.  Once added,
+    /// diagnostics cannot be removed, and no ordering is guaranteed.
     /// </summary>
-    public sealed class DiagnosticBag : IEnumerable<Diagnostic>
+    public sealed class DiagnosticBag : IReadOnlyCollection<Diagnostic>
     {
         private ConcurrentQueue<Diagnostic>? _lazyItems;
 
@@ -21,6 +21,15 @@ namespace Glacie.Diagnostics
         public void Add(Diagnostic value)
         {
             GetItems().Enqueue(value);
+        }
+
+        public void AddRange(IEnumerable<Diagnostic> values)
+        {
+            var items = GetItems();
+            foreach (var value in values)
+            {
+                items.Enqueue(value);
+            }
         }
 
         public IEnumerator<Diagnostic> GetEnumerator()
@@ -33,6 +42,17 @@ namespace Glacie.Diagnostics
         }
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+
+        public ImmutableArray<Diagnostic> ToReadOnly()
+        {
+            if (_lazyItems == null || _lazyItems.Count == 0)
+                return ImmutableArray<Diagnostic>.Empty;
+
+            var diagnostics = ImmutableArray.CreateBuilder<Diagnostic>();
+            diagnostics.AddRange(_lazyItems);
+            return diagnostics.MoveToImmutable();
+        }
+
 
         private ConcurrentQueue<Diagnostic> GetItems()
         {

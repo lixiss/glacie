@@ -1,0 +1,7 @@
+﻿<partial>
+  <record-type name="InGameUI.SimpleRollover">
+    <var-group name="SimpleRollover">
+      <field name="defaultTextStyle" />
+    </var-group>
+  </record-type>
+</partial>

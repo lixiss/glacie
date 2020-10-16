@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="LevelParameters">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Experience Levels">
+      <field name="experienceLevels" />
+    </var-group>
+    <var-group name="Level Up Parameters">
+      <field name="characterModifierPoints" />
+      <field name="dexterityIncrement" />
+      <field name="initialSkillPoints" />
+      <field name="intelligenceIncrement" />
+      <field name="lifeIncrement" />
+      <field name="manaIncrement" />
+      <field name="skillModifierPoints" />
+      <field name="strengthIncrement" />
+    </var-group>
+  </record-type>
+</partial>

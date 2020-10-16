@@ -1,0 +1,35 @@
+﻿<partial>
+  <record-type name="InGameUI.EndlessHud" path="InGameUI/EndlessHud.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Endless Dungeon">
+        <field name="bonusTimeSound" var-class="variable" var-type="file_dbr" />
+        <field name="bossCompleteSound" var-class="variable" var-type="file_dbr" />
+        <field name="bossMusic" var-class="variable" var-type="file_dbr" />
+        <field name="endlessBackground" var-class="variable" var-type="file_dbr" />
+        <field name="endlessDungeonCounter" var-class="variable" var-type="file_dbr" />
+        <field name="endlessDungeonName" var-class="variable" var-type="file_dbr" />
+        <field name="endlessDungeonNameRollover" var-class="variable" var-type="file_dbr" />
+        <field name="endlessFloorCounter" var-class="variable" var-type="file_dbr" />
+        <field name="endlessFloorName" var-class="variable" var-type="file_dbr" />
+        <field name="endlessFloorNameRollover" var-class="variable" var-type="file_dbr" />
+        <field name="endlessLowTimeGlow" var-class="variable" var-type="file_dbr" />
+        <field name="endlessLowTimePulse" var-class="variable" var-type="file_dbr" />
+        <field name="endlessOrbBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="endlessProgressBar" var-class="variable" var-type="file_dbr" />
+        <field name="endlessTimer" var-class="variable" var-type="file_dbr" />
+        <field name="endlessTimerRollover" var-class="variable" var-type="file_dbr" />
+        <field name="floorCompleteSound" var-class="variable" var-type="file_dbr" />
+        <field name="timerFailedSound" var-class="variable" var-type="file_dbr" />
+        <field name="timerTenSecondsSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

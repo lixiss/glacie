@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="SkillSecondary_Tether">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="endEffect" />
+      <field name="endSound" />
+      <field name="hurtsTarget" />
+      <field name="loopSound" />
+      <field name="maxRange" />
+      <field name="startEffect" />
+      <field name="startSound" />
+      <field name="tetherDelay" />
+      <field name="tetherDuration" />
+      <field name="tetherLimit" />
+      <field name="tetherName" />
+      <field name="tetherThickness" />
+      <field name="timeBetweenAttacks" />
+    </var-group>
+  </record-type>
+</partial>

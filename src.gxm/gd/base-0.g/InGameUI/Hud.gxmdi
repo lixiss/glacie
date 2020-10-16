@@ -1,0 +1,161 @@
+﻿<partial>
+  <record-type name="InGameUI.Hud" path="InGameUI/Hud.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="floatingAreaNameY" var-class="variable" var-type="int" var-default-value="10" />
+        <field name="floatingMapTransparency" var-class="variable" var-type="real" var-default-value="0.75" />
+        <field name="floatingMarkerTransparency" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="hotSlotSelectDownButton" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlotSelectUpButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudAchievementsButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudAchievementsButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudActiveTeleportButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudAttackText" var-class="variable" var-type="file_dbr" />
+        <field name="hudBaseBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="hudButtonWeaponSwap" var-class="variable" var-type="file_dbr" />
+        <field name="hudButtonWeaponSwapRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudButtonWeaponSwapRolloverSpecial" var-class="variable" var-type="file_dbr" />
+        <field name="hudCharLevelBox" var-class="variable" var-type="file_dbr" />
+        <field name="hudCharacterButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudCharacterButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudControllerHotSlot1Bitmap" var-class="variable" var-type="file_dbr" />
+        <field name="hudExperienceAreaX" var-class="variable" var-type="int" />
+        <field name="hudExperienceAreaXSize" var-class="variable" var-type="int" />
+        <field name="hudExperienceAreaY" var-class="variable" var-type="int" />
+        <field name="hudExperienceAreaYSize" var-class="variable" var-type="int" />
+        <field name="hudExperienceBar" var-class="variable" var-type="file_dbr" />
+        <field name="hudExperienceBarRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudFacadeAreaX" var-class="variable" var-type="int" />
+        <field name="hudFacadeAreaXSize" var-class="variable" var-type="int" />
+        <field name="hudFacadeAreaY" var-class="variable" var-type="int" />
+        <field name="hudFacadeAreaYSize" var-class="variable" var-type="int" />
+        <field name="hudFactionButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudFactionButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudFont" var-class="variable" var-type="file_dbr" />
+        <field name="hudFontColorBlue" var-class="variable" var-type="real" />
+        <field name="hudFontColorGreen" var-class="variable" var-type="real" />
+        <field name="hudFontColorRed" var-class="variable" var-type="real" />
+        <field name="hudGameModeText" var-class="variable" var-type="file_dbr" />
+        <field name="hudGameTimeText" var-class="variable" var-type="file_dbr" />
+        <field name="hudHealthBar" var-class="variable" var-type="file_dbr" />
+        <field name="hudHealthBarColorPulse" var-class="variable" var-type="file_dbr" />
+        <field name="hudHealthBarOverlayBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="hudHealthBarRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudHealthBarStartFlashingAtRatio" var-class="variable" var-type="real" />
+        <field name="hudHealthGainBar" var-class="variable" var-type="file_dbr" />
+        <field name="hudHealthPotionSlot" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot1" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot2" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot3" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot4" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot5" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot6" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot7" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot8" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot9" var-class="variable" var-type="file_dbr" />
+        <field name="hudHotSlot10" var-class="variable" var-type="file_dbr" />
+        <field name="hudLeftEndCapBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="hudManaBar" var-class="variable" var-type="file_dbr" />
+        <field name="hudManaBarColorPulse" var-class="variable" var-type="file_dbr" />
+        <field name="hudManaBarOverlayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="hudManaBarRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudManaBarStartFlashingAtRatio" var-class="variable" var-type="real" />
+        <field name="hudManaPotionSlot" var-class="variable" var-type="file_dbr" />
+        <field name="hudManaReserveBar" var-class="variable" var-type="file_dbr" />
+        <field name="hudMenuOptionsButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudMenuOptionsButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudMenuText" var-class="variable" var-type="file_dbr" />
+        <field name="hudMiniMapAreaX" var-class="variable" var-type="int" />
+        <field name="hudMiniMapAreaXSize" var-class="variable" var-type="int" />
+        <field name="hudMiniMapAreaY" var-class="variable" var-type="int" />
+        <field name="hudMiniMapAreaYSize" var-class="variable" var-type="int" />
+        <field name="hudMiniMapButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudMiniMapButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudOverlayBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="hudPartyButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudPartyButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudPlayerPortrait" var-class="variable" var-type="file_dbr" />
+        <field name="hudPlayerStatusIcons" var-class="variable" var-type="file_dbr" />
+        <field name="hudPriPotionButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudPriSkillButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudQuestButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudQuestButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudRegionAreaX" var-class="variable" var-type="int" />
+        <field name="hudRegionAreaXSize" var-class="variable" var-type="int" />
+        <field name="hudRegionAreaY" var-class="variable" var-type="int" />
+        <field name="hudRegionAreaYSize" var-class="variable" var-type="int" />
+        <field name="hudRightEndCapBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="hudRollOverDelay" var-class="variable" var-type="real" />
+        <field name="hudScoreText" var-class="variable" var-type="file_dbr" />
+        <field name="hudSecPotionButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudSecSkillButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudSkillsButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudSkillsButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudSlotsText" var-class="variable" var-type="file_dbr" />
+        <field name="hudStatusAreaX" var-class="variable" var-type="int" />
+        <field name="hudStatusAreaXSize" var-class="variable" var-type="int" />
+        <field name="hudStatusAreaY" var-class="variable" var-type="int" />
+        <field name="hudStatusAreaYSize" var-class="variable" var-type="int" />
+        <field name="hudTalkButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudTalkButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudTeleportButton" var-class="variable" var-type="file_dbr" />
+        <field name="hudTeleportButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="hudTopBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="hudVoiceTransmitIcon" var-class="variable" var-type="file_dbr" />
+        <field name="hudWindowButtonColorPulse" var-class="variable" var-type="file_dbr" />
+        <field name="lowHealthEffectMinOpacity" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="lowHealthEffectPercentage" var-class="variable" var-type="real" var-default-value="0.5" />
+        <field name="playerPortraitLevelUpIndicatorBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="playerPortraitLevelUpIndicatorButton" var-class="variable" var-type="file_dbr" />
+        <field name="playerPortraitLevelUpIndicatorColorPulse" var-class="variable" var-type="file_dbr" />
+        <field name="playerPortraitLevelUpIndicatorRollover" var-class="variable" var-type="file_dbr" />
+        <field name="playerPortraitLowHealthIndicatorBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="playerPortraitLowHealthIndicatorColorPulse" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Windows">
+        <field name="hudAchievementsWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudCaravanWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudChallengeAreaWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudCharacterWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudCompass" var-class="variable" var-type="file_dbr" />
+        <field name="hudDevotionWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudEnchanterWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudEndGameDialogWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudEndlessDungeonWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudExitWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudFactionMarketWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudFactionsWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudGamepadWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudInfoIconWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudInventoryWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudLootFilterWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudMarketWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudMiniMapWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudNetworkAddressWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudNpcDialogWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudObjectiveWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudPartyWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudPortraitAndStatsSummary" var-class="variable" var-type="file_dbr" />
+        <field name="hudQuestRewardWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudQuestWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudShrineWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudSkillsWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudSlotConfigWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudSlotSelectWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudStackWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudStatusManager" var-class="variable" var-type="file_dbr" />
+        <field name="hudSurvivalWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudTeleportWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudToolbar" var-class="variable" var-type="file_dbr" />
+        <field name="hudTradeWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudTransmuterWindow" var-class="variable" var-type="file_dbr" />
+        <field name="hudTutorialWindow" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

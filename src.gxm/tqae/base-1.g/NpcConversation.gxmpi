@@ -1,0 +1,51 @@
+﻿<partial>
+  <record-type name="NpcConversation">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Conversation Dialog" system="true">
+      <field name="dialogSpeaker1" />
+      <field name="dialogSpeaker2" />
+      <field name="dialogSpeaker3" />
+      <field name="dialogSpeaker4" />
+      <field name="dialogSpeaker5" />
+      <field name="dialogSpeaker6" />
+      <field name="dialogSpeaker7" />
+      <field name="dialogSpeaker8" />
+      <field name="dialogSpeaker9" />
+      <field name="dialogSpeaker10" />
+      <field name="dialogSpeaker11" />
+      <field name="dialogSpeaker12" />
+      <field name="dialogSpeaker13" />
+      <field name="dialogSpeaker14" />
+      <field name="dialogSpeaker15" />
+      <field name="dialogSpeaker16" />
+      <field name="dialogSpeaker17" />
+      <field name="dialogSpeaker18" />
+      <field name="dialogSpeaker19" />
+      <field name="dialogSpeaker20" />
+      <field name="dialogTag1" />
+      <field name="dialogTag2" />
+      <field name="dialogTag3" />
+      <field name="dialogTag4" />
+      <field name="dialogTag5" />
+      <field name="dialogTag6" />
+      <field name="dialogTag7" />
+      <field name="dialogTag8" />
+      <field name="dialogTag9" />
+      <field name="dialogTag10" />
+      <field name="dialogTag11" />
+      <field name="dialogTag12" />
+      <field name="dialogTag13" />
+      <field name="dialogTag14" />
+      <field name="dialogTag15" />
+      <field name="dialogTag16" />
+      <field name="dialogTag17" />
+      <field name="dialogTag18" />
+      <field name="dialogTag19" />
+      <field name="dialogTag20" />
+    </var-group>
+  </record-type>
+</partial>

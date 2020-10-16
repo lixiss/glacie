@@ -3,9 +3,9 @@
 using Glacie.Cli.Arz.Templates;
 using Glacie.Data.Arz;
 using Glacie.Data.Dbr;
-using Glacie.Data.Metadata;
+using Glacie.Data.Metadata.V1;
 using Glacie.Logging;
-using Glacie.Metadata;
+using Glacie.Metadata.V1;
 
 using IO = System.IO;
 
@@ -55,7 +55,7 @@ namespace Glacie.Cli.Arz
                 throw DbrError("GX0103: DBR record without fields.");
             }
 
-            VirtualPath templateName;
+            Path1 templateName;
             RecordType? recordType = null;
             RecordType? fallbackRecordType = null;
             // First field is templateName - proceed.
@@ -67,8 +67,8 @@ namespace Glacie.Cli.Arz
                     throw DbrError("GX0105: DBR field templateName has invalid value (multiple values, but single value expected).");
                 }
 
-                templateName = fieldReader.GetStringValue(0);
-                record.Set(WellKnownFieldNames.TemplateName, templateName);
+                templateName = Path1.From(fieldReader.GetStringValue(0));
+                record.Set(WellKnownFieldNames.TemplateName, templateName.Value);
 
                 if (!_recordTypeProvider.TryGetByTemplateName(templateName, out recordType))
                 {

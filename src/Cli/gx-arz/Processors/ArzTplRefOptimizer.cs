@@ -31,7 +31,7 @@ namespace Glacie.Cli.Arz.Processors
             progress?.AddMaximumValue(_database.Count);
 
             var sw = Stopwatch.StartNew();
-            foreach (var record in _database.GetAll())
+            foreach (var record in _database.SelectAll())
             {
                 ProcessRecord(record);
 

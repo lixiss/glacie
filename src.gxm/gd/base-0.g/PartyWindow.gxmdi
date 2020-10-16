@@ -1,0 +1,57 @@
+﻿<partial>
+  <record-type name="PartyWindow" path="PartyWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="AcceptButton" var-class="variable" var-type="file_dbr" />
+        <field name="BackgroundImage" var-class="variable" var-type="file_dbr" />
+        <field name="BanButton" var-class="variable" var-type="file_dbr" />
+        <field name="ClassXOffset" var-class="variable" var-type="int" />
+        <field name="DarkTextStyle" var-class="variable" var-type="file_dbr" />
+        <field name="DenyButton" var-class="variable" var-type="file_dbr" />
+        <field name="ElapsedTimeText" var-class="variable" var-type="file_dbr" />
+        <field name="ExitButton" var-class="variable" var-type="file_dbr" />
+        <field name="GameStatsText" var-class="variable" var-type="file_dbr" />
+        <field name="GroupStartX" var-class="variable" var-type="int" />
+        <field name="GroupStartY" var-class="variable" var-type="int" />
+        <field name="GroupTitleBarImage" var-class="variable" var-type="file_tex" />
+        <field name="HighlightColorAlpha" var-class="variable" var-type="real" />
+        <field name="HighlightColorBlue" var-class="variable" var-type="real" />
+        <field name="HighlightColorGreen" var-class="variable" var-type="real" />
+        <field name="HighlightColorRed" var-class="variable" var-type="real" />
+        <field name="IconXOffset" var-class="variable" var-type="int" />
+        <field name="InviteButton" var-class="variable" var-type="file_dbr" />
+        <field name="ItemHeight" var-class="variable" var-type="int" />
+        <field name="ItemSpacing" var-class="variable" var-type="int" />
+        <field name="ItemWidth" var-class="variable" var-type="int" />
+        <field name="LeaveButton" var-class="variable" var-type="file_dbr" />
+        <field name="LevelXOffset" var-class="variable" var-type="int" />
+        <field name="MapNameText" var-class="variable" var-type="file_dbr" />
+        <field name="NameXOffset" var-class="variable" var-type="int" />
+        <field name="PartyIconStateGroupLeader" var-class="variable" var-type="file_tex" />
+        <field name="PartyIconStateGroupLeaderMe" var-class="variable" var-type="file_tex" />
+        <field name="PartyIconStateGrouped" var-class="variable" var-type="file_tex" />
+        <field name="PartyIconStateGroupedMe" var-class="variable" var-type="file_tex" />
+        <field name="PartyIconStateOtherGroup" var-class="variable" var-type="file_tex" />
+        <field name="PartyIconStateOtherGroupLeader" var-class="variable" var-type="file_tex" />
+        <field name="PartyIconStateUngrouped" var-class="variable" var-type="file_tex" />
+        <field name="PartyIconStateUngroupedMe" var-class="variable" var-type="file_tex" />
+        <field name="PingTimeText" var-class="variable" var-type="file_dbr" />
+        <field name="PositionX" var-class="variable" var-type="int" />
+        <field name="PositionY" var-class="variable" var-type="int" />
+        <field name="RemoveButton" var-class="variable" var-type="file_dbr" />
+        <field name="ServerAddressText" var-class="variable" var-type="file_dbr" />
+        <field name="ServerNameText" var-class="variable" var-type="file_dbr" />
+        <field name="TextStyle" var-class="variable" var-type="file_dbr" />
+        <field name="WindowTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

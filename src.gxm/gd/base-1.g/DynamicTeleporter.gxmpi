@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="DynamicTeleporter">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Dynamic Teleporter">
+      <field name="activationTime" />
+      <field name="active" />
+      <field name="activeDisturbance" />
+      <field name="activeEffect" />
+      <field name="activeSound" />
+      <field name="description" />
+      <field name="dormantEffect" />
+      <field name="dormantSound" />
+      <field name="radius" />
+      <field name="resetTargetLevel" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="ControllerMegalesios">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="DistressCalls">
+      <field name="ChanceToRespondToDistressCall" />
+      <field name="DistressResponseBehavior" />
+      <field name="DistressResponseGroup" />
+    </var-group>
+    <var-group name="Fleeing">
+      <field name="FleeBehavior" />
+      <field name="FleeChance" />
+      <field name="FleeDelay" />
+      <field name="FleeTarget" />
+      <field name="FleeTime" />
+      <field name="maxFleeCount" />
+    </var-group>
+    <var-group name="MegalesiosAttributes">
+      <field name="CheckForPlayerRadius" />
+    </var-group>
+    <var-group name="Patrolling">
+      <field name="ChanceToIdleOnPatrol" />
+      <field name="MaxPatrolIdleTime" />
+      <field name="MinPatrolIdleTime" />
+    </var-group>
+    <var-group name="Pursuit">
+      <field name="MaxPursuitDistance" />
+      <field name="PursuitTime" />
+    </var-group>
+    <var-group name="Roaming">
+      <field name="RoamBehavior" />
+      <field name="RoamDistance" />
+      <field name="TeleportToLeaderDistance" />
+      <field name="WanderDistance" />
+    </var-group>
+    <var-group name="SkillUsage">
+      <field name="BuffAllyBehavior" />
+      <field name="BuffAllyTargeting" />
+      <field name="BuffSelfBehavior" />
+      <field name="DebuffEnemyBehavior" />
+      <field name="healAllyHealthPercentage" />
+      <field name="healLeaderHealthPercentage" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,51 @@
+﻿<partial>
+  <record-type name="InGameUI.FactionsWindow" path="InGameUI/FactionsWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="factionBarRollover" var-class="variable" var-type="file_dbr" />
+        <field name="factionBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="factionBountyBox" var-class="variable" var-type="file_dbr" />
+        <field name="factionBountyBoxBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="factionBountyBoxTitle" var-class="variable" var-type="file_dbr" />
+        <field name="factionCloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="factionInfoBox" var-class="variable" var-type="file_dbr" />
+        <field name="factionInfoBoxStyle" var-class="variable" var-type="file_dbr" />
+        <field name="factionInfoBoxWidth" var-class="variable" var-type="int" />
+        <field name="factionLargeNegativeBar" var-class="variable" var-type="file_dbr" />
+        <field name="factionLargePositiveBar" var-class="variable" var-type="file_dbr" />
+        <field name="factionListItem" var-class="variable" var-type="file_dbr" />
+        <field name="factionLowerBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="factionNameText" var-class="variable" var-type="file_dbr" />
+        <field name="factionNegativeBar" var-class="variable" var-type="file_dbr" />
+        <field name="factionNegativeBarOverlay" var-class="variable" var-type="file_dbr" />
+        <field name="factionNegativeBooster" var-class="variable" var-type="file_dbr" />
+        <field name="factionNeutralBar" var-class="variable" var-type="file_dbr" />
+        <field name="factionPositiveBar" var-class="variable" var-type="file_dbr" />
+        <field name="factionPositiveBarOverlay" var-class="variable" var-type="file_dbr" />
+        <field name="factionPositiveBooster" var-class="variable" var-type="file_dbr" />
+        <field name="factionScrollWindow" var-class="variable" var-type="file_dbr" />
+        <field name="factionSmallSymbol" var-class="variable" var-type="file_dbr" />
+        <field name="factionSoundNameDown" var-class="variable" var-type="file_dbr" />
+        <field name="factionSymbol" var-class="variable" var-type="file_dbr" />
+        <field name="factionText" var-class="variable" var-type="file_dbr" />
+        <field name="factionTitleText" var-class="variable" var-type="file_dbr" />
+        <field name="factionUpperBarBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="negativeTier1" var-class="variable" var-type="file_dbr" />
+        <field name="negativeTier2" var-class="variable" var-type="file_dbr" />
+        <field name="negativeTier3" var-class="variable" var-type="file_dbr" />
+        <field name="positiveTier1" var-class="variable" var-type="file_dbr" />
+        <field name="positiveTier2" var-class="variable" var-type="file_dbr" />
+        <field name="positiveTier3" var-class="variable" var-type="file_dbr" />
+        <field name="positiveTier4" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

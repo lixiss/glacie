@@ -1,0 +1,34 @@
+﻿<partial>
+  <record-type name="FixedItemContainer" path="FixedItemContainer.tpl">
+    <inherits>
+      <inherit record="TemplateBase.FixedItem" />
+      <inherit record="ChestHookPack" />
+      <inherit record="QuestMarker" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="FixedItemContainer" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Container Config">
+        <field name="IdleEffect" var-class="variable" var-type="file_dbr" />
+        <field name="LockedClassification" var-class="picklist" var-type="string" var-default-value="Common;Champion;Hero;Boss;Quest;" />
+        <field name="LockedEffect" var-class="variable" var-type="file_dbr" />
+        <field name="LockedRadius" var-class="variable" var-type="real" />
+        <field name="countsAsOneShot" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="disableCollisions" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Disable from collisions</description>
+        </field>
+        <field name="idleAnimation" var-class="variable" var-type="file_anm" />
+        <field name="idleAnimationSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="loopIdleAnimation" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="openAnimation" var-class="variable" var-type="file_anm" />
+        <field name="openAnimationSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="openFxPakName" var-class="variable" var-type="file_dbr" />
+        <field name="openSound" var-class="variable" var-type="file_dbr" />
+        <field name="pathableWhenOpen" var-class="variable" var-type="bool" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

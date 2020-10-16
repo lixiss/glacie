@@ -1,0 +1,31 @@
+﻿<partial>
+  <record-type name="InGameUI.GamepadButtonsDescriptionBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Box config">
+      <field name="background" />
+      <field name="height" />
+      <field name="paddingLeft" />
+      <field name="percentageOfParentWidth" />
+      <field name="x" />
+      <field name="y" />
+    </var-group>
+    <var-group name="Button bitmaps">
+      <field name="XboxButtonA" />
+      <field name="XboxButtonB" />
+      <field name="XboxButtonLB" />
+      <field name="XboxButtonRB" />
+      <field name="XboxButtonX" />
+      <field name="XboxButtonY" />
+      <field name="buttonsYPosition" />
+    </var-group>
+    <var-group name="Text">
+      <var-group name="Config">
+        <field name="marginRight" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

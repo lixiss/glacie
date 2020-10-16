@@ -1,0 +1,49 @@
+﻿<partial>
+  <record-type name="Npc">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Map">
+      <field name="IncludeInMap" />
+    </var-group>
+    <var-group name="Npc Control Parameters">
+      <field name="AIType" />
+      <field name="alertAnim" />
+      <field name="alertAnimSpeed" />
+      <field name="alertSound" />
+      <field name="attractionTimeMax" />
+      <field name="attractionTimeMin" />
+      <field name="canBeAttracted" />
+      <field name="gameEndTag" />
+      <field name="idleBetweenWaypoints" />
+      <field name="isHerderFor" />
+      <field name="isInHerd" />
+      <field name="isNpcAttractor" />
+    </var-group>
+    <var-group name="Npc Message Parameters">
+      <field name="messageDialogTag" />
+      <field name="messageFileName" />
+      <field name="messageScrollRate" />
+      <field name="messageSoundFile" />
+    </var-group>
+    <var-group name="Npc Static Dialog">
+      <field name="dialogPak" />
+    </var-group>
+    <var-group name="Npc Waypoints">
+      <field name="wayPoint1X" />
+      <field name="wayPoint1Y" />
+      <field name="wayPoint1Z" />
+      <field name="wayPoint2X" />
+      <field name="wayPoint2Y" />
+      <field name="wayPoint2Z" />
+      <field name="wayPoint3X" />
+      <field name="wayPoint3Y" />
+      <field name="wayPoint3Z" />
+      <field name="wayPoint4X" />
+      <field name="wayPoint4Y" />
+      <field name="wayPoint4Z" />
+    </var-group>
+  </record-type>
+</partial>

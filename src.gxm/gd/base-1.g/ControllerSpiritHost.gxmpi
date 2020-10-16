@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="ControllerSpiritHost">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Spirit Host Parameters">
+      <field name="numSpiritsToAnimateMe" />
+      <field name="spiritThatCanAnimateMe" />
+    </var-group>
+  </record-type>
+</partial>

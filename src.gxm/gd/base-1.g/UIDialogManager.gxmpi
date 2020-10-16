@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="UIDialogManager">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Values">
+      <field name="Background" />
+      <field name="NoButton" />
+      <field name="OkButton" />
+      <field name="YesButton" />
+    </var-group>
+  </record-type>
+</partial>

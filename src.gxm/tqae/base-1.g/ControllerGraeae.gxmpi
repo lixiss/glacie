@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="ControllerGraeae">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="GraeaeParameters">
+      <field name="eyeDodgeChance" />
+      <field name="eyeFleeChance" />
+      <field name="eyeLeadChance" />
+      <field name="eyeRandomRepositionChance" />
+      <field name="eyeTimeMax" />
+      <field name="eyeTimeMin" />
+    </var-group>
+  </record-type>
+</partial>

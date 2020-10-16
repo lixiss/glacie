@@ -1,0 +1,32 @@
+﻿<partial>
+  <record-type name="InGameUI.Quest2Window">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Quest2Window">
+      <field name="closeButton" />
+      <field name="codexButton" />
+      <field name="codexJournal" />
+      <field name="codexLog" />
+      <field name="devotionButton" />
+      <field name="devotionJournal" />
+      <field name="helpButton" />
+      <field name="helpIndex" />
+      <field name="helpPage" />
+      <field name="loreCollectedSound" />
+      <field name="questAcceptSound" />
+      <field name="questButton" />
+      <field name="questCompleteButton" />
+      <field name="questCompleteSound" />
+      <field name="questFailedMsg" />
+      <field name="questFailedSound" />
+      <field name="questJournal" />
+      <field name="questLog" />
+      <field name="questUpdateSound" />
+      <field name="tutorialSound" />
+      <field name="windowTitle" />
+    </var-group>
+  </record-type>
+</partial>

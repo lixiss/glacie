@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="InGameUI.CheckBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="bitmapNameDownInFocus" />
+      <field name="rollover" />
+      <field name="style" />
+      <field name="textAlignmentX" />
+      <field name="textAlignmentY" />
+      <field name="textColorBlue" />
+      <field name="textColorGreen" />
+      <field name="textColorRed" />
+      <field name="textDropShadow" />
+      <field name="textFont" />
+      <field name="textTag" />
+    </var-group>
+  </record-type>
+</partial>

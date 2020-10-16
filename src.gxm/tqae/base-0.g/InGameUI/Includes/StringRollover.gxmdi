@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="InGameUI.Includes.StringRollover" path="InGameUI/Includes/StringRollover.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Rollover Config">
+        <field name="rolloverStyleName" var-class="variable" var-type="file_dbr" />
+        <field name="rolloverTag" var-class="variable" var-type="string" />
+        <field name="textStyleName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

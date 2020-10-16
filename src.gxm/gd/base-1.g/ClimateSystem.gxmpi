@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="ClimateSystem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Climate Data">
+      <field name="darknessAdjustment" />
+      <field name="fogColorAdjustment.B" />
+      <field name="fogColorAdjustment.G" />
+      <field name="fogColorAdjustment.R" />
+      <field name="fogDensityAdjustment" />
+      <field name="fogDistanceAdjustment" />
+      <field name="maxIntensity1" />
+      <field name="maxIntensity2" />
+      <field name="maxIntensity3" />
+      <field name="minIntensity1" />
+      <field name="minIntensity2" />
+      <field name="minIntensity3" />
+      <field name="system1" />
+      <field name="system2" />
+      <field name="system3" />
+      <field name="windIntensity" />
+    </var-group>
+  </record-type>
+</partial>

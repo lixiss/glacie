@@ -236,39 +236,36 @@ namespace Glacie.Data.Arc
             }
         }
 
-        public IEnumerable<ArcEntry> GetEntries()
+        public IEnumerable<ArcArchiveEntry> SelectAll()
         {
             ThrowIfDisposed();
             ReadEntriesIfNeed();
-            return GetEntriesCore();
-        }
 
-        private IEnumerable<ArcEntry> GetEntriesCore()
-        {
-            foreach (var entryId in _entryMap.Values)
+            foreach (var entryId in _entryMap!.Values)
             {
-                yield return new ArcEntry(this, entryId);
+                yield return new ArcArchiveEntry(this, entryId);
             }
         }
 
-        public ArcEntry GetEntry(string name)
+        // TODO: (Low) (ArcArchive) Naming consistency: GetEntry -> Get, TryGetEntry -> TryGet, GetEntryOrNull -> GetOrDefault, CreateEntry->Add.
+        public ArcArchiveEntry Get(string name)
         {
             ThrowIfDisposed();
             ReadEntriesIfNeed();
             if (_entryMap.TryGetValue(name, out var entryId))
             {
-                return new ArcEntry(this, entryId);
+                return new ArcArchiveEntry(this, entryId);
             }
             else throw ArcError.EntryNotFound(name);
         }
 
-        public bool TryGetEntry(string name, out ArcEntry entry)
+        public bool TryGet(string name, out ArcArchiveEntry entry)
         {
             ThrowIfDisposed();
             ReadEntriesIfNeed();
             if (_entryMap.TryGetValue(name, out var entryId))
             {
-                entry = new ArcEntry(this, entryId);
+                entry = new ArcArchiveEntry(this, entryId);
                 return true;
             }
             else
@@ -278,13 +275,13 @@ namespace Glacie.Data.Arc
             }
         }
 
-        public ArcEntry? GetEntryOrNull(string name)
+        public ArcArchiveEntry? GetOrDefault(string name)
         {
             ThrowIfDisposed();
             ReadEntriesIfNeed();
             if (_entryMap.TryGetValue(name, out var entryId))
             {
-                return new ArcEntry(this, entryId);
+                return new ArcArchiveEntry(this, entryId);
             }
             else
             {
@@ -294,10 +291,10 @@ namespace Glacie.Data.Arc
 
         public bool Exists(string name)
         {
-            return TryGetEntry(name, out var _);
+            return TryGet(name, out var _);
         }
 
-        public ArcEntry CreateEntry(string name)
+        public ArcArchiveEntry Add(string name)
         {
             ThrowIfDisposed();
             if (_mode != ArcArchiveMode.Create && _mode != ArcArchiveMode.Update)
@@ -314,7 +311,7 @@ namespace Glacie.Data.Arc
             var entryMap = GetEntryMap();
             entryMap.Add(name, entryId);
 
-            return new ArcEntry(this, entryId);
+            return new ArcArchiveEntry(this, entryId);
         }
 
         public ArcLayoutInfo GetLayoutInfo()

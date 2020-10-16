@@ -1,0 +1,62 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Activated" path="TemplateBase/Skill_Activated.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Parameters_Skill" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="distanceProfile" var-class="picklist" var-type="string" var-default-value="Melee;Short;Moderate;Long;Maximum;Boss;" />
+        <field name="propName" var-class="variable" var-type="file_dbr">
+          <description>Attaches between Swipe and Hit</description>
+        </field>
+        <field name="propName1" var-class="variable" var-type="file_dbr" />
+        <field name="propName2" var-class="variable" var-type="file_dbr" />
+        <field name="skillCooldownTime" var-class="array" var-type="real">
+          <description>Seconds</description>
+        </field>
+        <field name="skillManaCost" var-class="array" var-type="real" />
+      </var-group>
+      <var-group name="Skill Effects">
+        <field name="additionalProjectileFX" var-class="variable" var-type="file_dbr" />
+        <field name="cameraShakeAmplitude" var-class="variable" var-type="real" var-default-value="0.12" />
+        <field name="cameraShakeDurationSecs" var-class="variable" var-type="real">
+          <description>PS4Start PS4End</description>
+        </field>
+        <field name="particleEffectAttachPoint1" var-class="picklist" var-type="string" var-default-value="R Hand;L Hand;Upper Body;Lower Body;Head;Forearm;Particle1;Particle2;Particle3;Target;SpecialHit01;SpecialHit02;SpecialHit03;SpecialHit04;" />
+        <field name="particleEffectAttachPoint2" var-class="picklist" var-type="string" var-default-value="R Hand;L Hand;Upper Body;Lower Body;Head;Forearm;Particle1;Particle2;Particle3;Target;SpecialHit01;SpecialHit02;SpecialHit03;SpecialHit04;" />
+        <field name="particleEffectAttachPoint3" var-class="picklist" var-type="string" var-default-value="R Hand;L Hand;Upper Body;Lower Body;Head;Forearm;Particle1;Particle2;Particle3;Target;SpecialHit01;SpecialHit02;SpecialHit03;SpecialHit04;" />
+        <field name="particleEffectName1" var-class="variable" var-type="file_dbr">
+          <description>PS1Start PS1End</description>
+        </field>
+        <field name="particleEffectName2" var-class="variable" var-type="file_dbr">
+          <description>PS2Start PS2End</description>
+        </field>
+        <field name="particleEffectName3" var-class="variable" var-type="file_dbr">
+          <description>PS3Start PS3End</description>
+        </field>
+        <field name="targetFxFirstOnly" var-class="variable" var-type="bool" var-default-value="0">
+          <description>TargetFxPak only for first target hit in projectile explosions</description>
+        </field>
+      </var-group>
+      <var-group name="Skill Sound">
+        <field name="skillHitSound" var-class="variable" var-type="file_dbr">
+          <description>Played at Hit callback</description>
+        </field>
+        <field name="skillSound1" var-class="variable" var-type="file_dbr">
+          <description>Played at SkillSound1 callback</description>
+        </field>
+        <field name="skillSound2" var-class="variable" var-type="file_dbr">
+          <description>Played at SkillSound2 callback</description>
+        </field>
+        <field name="skillSwipeSound" var-class="variable" var-type="file_dbr">
+          <description>Played at Swipe callback</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,48 @@
+﻿<partial>
+  <record-type name="InGameUI.ShrineWindow" path="InGameUI/ShrineWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Shrine">
+        <field name="autoSenseX" var-class="variable" var-type="real" />
+        <field name="autoSenseXSize" var-class="variable" var-type="real" />
+        <field name="autoSenseY" var-class="variable" var-type="real" />
+        <field name="autoSenseYSize" var-class="variable" var-type="real" />
+        <field name="cancelButton" var-class="variable" var-type="file_dbr" />
+        <field name="closeButton" var-class="variable" var-type="file_dbr" />
+        <field name="endlessBlueBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="endlessCover1" var-class="variable" var-type="file_dbr" />
+        <field name="endlessCover2" var-class="variable" var-type="file_dbr" />
+        <field name="endlessCover3" var-class="variable" var-type="file_dbr" />
+        <field name="endlessDeathBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="endlessGreenBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="endlessInfo" var-class="variable" var-type="file_dbr" />
+        <field name="endlessRedBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="endlessTitle" var-class="variable" var-type="file_dbr" />
+        <field name="endlessYellowBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="shrineBox1" var-class="variable" var-type="file_dbr" />
+        <field name="shrineBox2" var-class="variable" var-type="file_dbr" />
+        <field name="shrineBox3" var-class="variable" var-type="file_dbr" />
+        <field name="shrineButton" var-class="variable" var-type="file_dbr" />
+        <field name="shrineButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="shrineCorruptedBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="shrineCorruptedTitle" var-class="variable" var-type="file_dbr" />
+        <field name="shrineCover1" var-class="variable" var-type="file_dbr" />
+        <field name="shrineCover2" var-class="variable" var-type="file_dbr" />
+        <field name="shrineCover3" var-class="variable" var-type="file_dbr" />
+        <field name="shrineInfo" var-class="variable" var-type="file_dbr" />
+        <field name="shrineRuinedBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="shrineSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="shrineTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

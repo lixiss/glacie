@@ -1,0 +1,128 @@
+﻿<partial>
+  <record-type name="SetPiecePool" path="SetPiecePool.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SetPiecePool" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Pool Config">
+        <field name="maxParts" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="maxToPlace" var-class="variable" var-type="int" var-default-value="3">
+          <description>Maximum objects to place</description>
+        </field>
+        <field name="minParts" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="minToPlace" var-class="variable" var-type="int" var-default-value="1">
+          <description>Minimum objects to place</description>
+        </field>
+        <field name="parts" var-class="array" var-type="file_dbr" />
+        <field name="placementRadius" var-class="variable" var-type="real" var-default-value="10">
+          <description>Radius in which to place objects</description>
+        </field>
+        <field name="placementScheme" var-class="picklist" var-type="string" var-default-value="Random;Grid;Camp" />
+      </var-group>
+      <var-group name="Pool Objects">
+        <field name="buffer1" var-class="variable" var-type="real" var-default-value="0.0">
+          <description>Additional pathable radius around objects in meters</description>
+        </field>
+        <field name="buffer2" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer3" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer4" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer5" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer6" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer7" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer8" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer9" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="buffer10" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="force1" var-class="variable" var-type="bool" var-default-value="0">
+          <description>True if an attempt must be made to place at least one of the object</description>
+        </field>
+        <field name="force2" var-class="variable" var-type="bool" />
+        <field name="force3" var-class="variable" var-type="bool" />
+        <field name="force4" var-class="variable" var-type="bool" />
+        <field name="force5" var-class="variable" var-type="bool" />
+        <field name="force6" var-class="variable" var-type="bool" />
+        <field name="force7" var-class="variable" var-type="bool" />
+        <field name="force8" var-class="variable" var-type="bool" />
+        <field name="force9" var-class="variable" var-type="bool" />
+        <field name="force10" var-class="variable" var-type="bool" />
+        <field name="limit1" var-class="variable" var-type="int" var-default-value="1">
+          <description>Max number of the objects to place</description>
+        </field>
+        <field name="limit2" var-class="variable" var-type="int" />
+        <field name="limit3" var-class="variable" var-type="int" />
+        <field name="limit4" var-class="variable" var-type="int" />
+        <field name="limit5" var-class="variable" var-type="int" />
+        <field name="limit6" var-class="variable" var-type="int" />
+        <field name="limit7" var-class="variable" var-type="int" />
+        <field name="limit8" var-class="variable" var-type="int" />
+        <field name="limit9" var-class="variable" var-type="int" />
+        <field name="limit10" var-class="variable" var-type="int" />
+        <field name="object1" var-class="array" var-type="file_dbr">
+          <description>DBR of the object to place</description>
+        </field>
+        <field name="object2" var-class="array" var-type="file_dbr" />
+        <field name="object3" var-class="array" var-type="file_dbr" />
+        <field name="object4" var-class="array" var-type="file_dbr" />
+        <field name="object5" var-class="array" var-type="file_dbr" />
+        <field name="object6" var-class="array" var-type="file_dbr" />
+        <field name="object7" var-class="array" var-type="file_dbr" />
+        <field name="object8" var-class="array" var-type="file_dbr" />
+        <field name="object9" var-class="array" var-type="file_dbr" />
+        <field name="object10" var-class="array" var-type="file_dbr" />
+        <field name="rotation1" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation2" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation3" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation4" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation5" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation6" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation7" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation8" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation9" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="rotation10" var-class="picklist" var-type="string" var-default-value="None;Y;XYZ;Aligned;FaceOut;FaceIn" />
+        <field name="scaleMax1" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="scaleMax2" var-class="variable" var-type="real" />
+        <field name="scaleMax3" var-class="variable" var-type="real" />
+        <field name="scaleMax4" var-class="variable" var-type="real" />
+        <field name="scaleMax5" var-class="variable" var-type="real" />
+        <field name="scaleMax6" var-class="variable" var-type="real" />
+        <field name="scaleMax7" var-class="variable" var-type="real" />
+        <field name="scaleMax8" var-class="variable" var-type="real" />
+        <field name="scaleMax9" var-class="variable" var-type="real" />
+        <field name="scaleMax10" var-class="variable" var-type="real" />
+        <field name="scaleMin1" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="scaleMin2" var-class="variable" var-type="real" />
+        <field name="scaleMin3" var-class="variable" var-type="real" />
+        <field name="scaleMin4" var-class="variable" var-type="real" />
+        <field name="scaleMin5" var-class="variable" var-type="real" />
+        <field name="scaleMin6" var-class="variable" var-type="real" />
+        <field name="scaleMin7" var-class="variable" var-type="real" />
+        <field name="scaleMin8" var-class="variable" var-type="real" />
+        <field name="scaleMin9" var-class="variable" var-type="real" />
+        <field name="scaleMin10" var-class="variable" var-type="real" />
+        <field name="tags1" var-class="array" var-type="string" />
+        <field name="tags2" var-class="array" var-type="string" />
+        <field name="tags3" var-class="array" var-type="string" />
+        <field name="tags4" var-class="array" var-type="string" />
+        <field name="tags5" var-class="array" var-type="string" />
+        <field name="tags6" var-class="array" var-type="string" />
+        <field name="tags7" var-class="array" var-type="string" />
+        <field name="tags8" var-class="array" var-type="string" />
+        <field name="tags9" var-class="array" var-type="string" />
+        <field name="tags10" var-class="array" var-type="string" />
+        <field name="weight1" var-class="variable" var-type="int" var-default-value="0">
+          <description>Weight for this object</description>
+        </field>
+        <field name="weight2" var-class="variable" var-type="int" />
+        <field name="weight3" var-class="variable" var-type="int" />
+        <field name="weight4" var-class="variable" var-type="int" />
+        <field name="weight5" var-class="variable" var-type="int" />
+        <field name="weight6" var-class="variable" var-type="int" />
+        <field name="weight7" var-class="variable" var-type="int" />
+        <field name="weight8" var-class="variable" var-type="int" />
+        <field name="weight9" var-class="variable" var-type="int" />
+        <field name="weight10" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

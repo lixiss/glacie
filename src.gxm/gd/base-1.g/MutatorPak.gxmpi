@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="MutatorPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Mutator Properties">
+      <field name="affectsPlayers" />
+      <field name="bitmapName" />
+      <field name="description" />
+      <field name="eliteMutator" />
+      <field name="mutatorName" />
+      <field name="normalMutator" />
+      <field name="ultimateMutator" />
+    </var-group>
+  </record-type>
+</partial>

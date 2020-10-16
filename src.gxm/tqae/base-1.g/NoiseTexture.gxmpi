@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="NoiseTexture">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="General">
+      <field name="levels" />
+      <field name="normalMap" />
+      <field name="rates" />
+      <field name="size" />
+    </var-group>
+  </record-type>
+</partial>

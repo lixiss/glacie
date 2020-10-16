@@ -1,0 +1,28 @@
+﻿<partial>
+  <record-type name="InGameUI.MiniMapWindow" path="InGameUI/MiniMapWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="detailMapDBR" var-class="variable" var-type="file_dbr" />
+        <field name="detailTabBitmap" var-class="variable" var-type="file_tex" />
+        <field name="mapAreaX" var-class="variable" var-type="int" />
+        <field name="mapAreaXSize" var-class="variable" var-type="int" />
+        <field name="mapAreaY" var-class="variable" var-type="int" />
+        <field name="mapAreaYSize" var-class="variable" var-type="int" />
+        <field name="miniMapBaseBitmap" var-class="variable" var-type="file_tex" />
+        <field name="miniMapCloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="miniMapDetailButton" var-class="variable" var-type="file_dbr" />
+        <field name="miniMapWorldButton" var-class="variable" var-type="file_dbr" />
+        <field name="worldMapDBR" var-class="variable" var-type="file_dbr" />
+        <field name="worldTabBitmap" var-class="variable" var-type="file_tex" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,409 @@
+﻿<partial>
+  <record-type name="ProxyPool" path="ProxyPool.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Champion Pool">
+        <field name="alwaysSpawnChampion1" var-class="variable" var-type="bool">
+          <description>force spawn of object</description>
+        </field>
+        <field name="alwaysSpawnChampion2" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion3" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion4" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion5" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion6" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion7" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion8" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion9" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion10" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion11" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion12" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion13" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion14" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion15" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion16" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion17" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion18" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion19" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion20" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion21" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion22" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion23" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion24" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion25" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion26" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion27" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion28" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion29" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawnChampion30" var-class="variable" var-type="bool" />
+        <field name="difficultyChampion1" var-class="variable" var-type="int">
+          <description>available if difficulty exceeds value</description>
+        </field>
+        <field name="difficultyChampion2" var-class="variable" var-type="int" />
+        <field name="difficultyChampion3" var-class="variable" var-type="int" />
+        <field name="difficultyChampion4" var-class="variable" var-type="int" />
+        <field name="difficultyChampion5" var-class="variable" var-type="int" />
+        <field name="difficultyChampion6" var-class="variable" var-type="int" />
+        <field name="difficultyChampion7" var-class="variable" var-type="int" />
+        <field name="difficultyChampion8" var-class="variable" var-type="int" />
+        <field name="difficultyChampion9" var-class="variable" var-type="int" />
+        <field name="difficultyChampion10" var-class="variable" var-type="int" />
+        <field name="difficultyChampion11" var-class="variable" var-type="int" />
+        <field name="difficultyChampion12" var-class="variable" var-type="int" />
+        <field name="difficultyChampion13" var-class="variable" var-type="int" />
+        <field name="difficultyChampion14" var-class="variable" var-type="int" />
+        <field name="difficultyChampion15" var-class="variable" var-type="int" />
+        <field name="difficultyChampion16" var-class="variable" var-type="int" />
+        <field name="difficultyChampion17" var-class="variable" var-type="int" />
+        <field name="difficultyChampion18" var-class="variable" var-type="int" />
+        <field name="difficultyChampion19" var-class="variable" var-type="int" />
+        <field name="difficultyChampion20" var-class="variable" var-type="int" />
+        <field name="difficultyChampion21" var-class="variable" var-type="int" />
+        <field name="difficultyChampion22" var-class="variable" var-type="int" />
+        <field name="difficultyChampion23" var-class="variable" var-type="int" />
+        <field name="difficultyChampion24" var-class="variable" var-type="int" />
+        <field name="difficultyChampion25" var-class="variable" var-type="int" />
+        <field name="difficultyChampion26" var-class="variable" var-type="int" />
+        <field name="difficultyChampion27" var-class="variable" var-type="int" />
+        <field name="difficultyChampion28" var-class="variable" var-type="int" />
+        <field name="difficultyChampion29" var-class="variable" var-type="int" />
+        <field name="difficultyChampion30" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion1" var-class="variable" var-type="int">
+          <description>not available if difficulty exceeds value</description>
+        </field>
+        <field name="difficultyCutoffChampion2" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion3" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion4" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion5" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion6" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion7" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion8" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion9" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion10" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion11" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion12" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion13" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion14" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion15" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion16" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion17" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion18" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion19" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion20" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion21" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion22" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion23" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion24" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion25" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion26" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion27" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion28" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion29" var-class="variable" var-type="int" />
+        <field name="difficultyCutoffChampion30" var-class="variable" var-type="int" />
+        <field name="limitChampion1" var-class="variable" var-type="int">
+          <description>number available to spawn</description>
+        </field>
+        <field name="limitChampion2" var-class="variable" var-type="int" />
+        <field name="limitChampion3" var-class="variable" var-type="int" />
+        <field name="limitChampion4" var-class="variable" var-type="int" />
+        <field name="limitChampion5" var-class="variable" var-type="int" />
+        <field name="limitChampion6" var-class="variable" var-type="int" />
+        <field name="limitChampion7" var-class="variable" var-type="int" />
+        <field name="limitChampion8" var-class="variable" var-type="int" />
+        <field name="limitChampion9" var-class="variable" var-type="int" />
+        <field name="limitChampion10" var-class="variable" var-type="int" />
+        <field name="limitChampion11" var-class="variable" var-type="int" />
+        <field name="limitChampion12" var-class="variable" var-type="int" />
+        <field name="limitChampion13" var-class="variable" var-type="int" />
+        <field name="limitChampion14" var-class="variable" var-type="int" />
+        <field name="limitChampion15" var-class="variable" var-type="int" />
+        <field name="limitChampion16" var-class="variable" var-type="int" />
+        <field name="limitChampion17" var-class="variable" var-type="int" />
+        <field name="limitChampion18" var-class="variable" var-type="int" />
+        <field name="limitChampion19" var-class="variable" var-type="int" />
+        <field name="limitChampion20" var-class="variable" var-type="int" />
+        <field name="limitChampion21" var-class="variable" var-type="int" />
+        <field name="limitChampion22" var-class="variable" var-type="int" />
+        <field name="limitChampion23" var-class="variable" var-type="int" />
+        <field name="limitChampion24" var-class="variable" var-type="int" />
+        <field name="limitChampion25" var-class="variable" var-type="int" />
+        <field name="limitChampion26" var-class="variable" var-type="int" />
+        <field name="limitChampion27" var-class="variable" var-type="int" />
+        <field name="limitChampion28" var-class="variable" var-type="int" />
+        <field name="limitChampion29" var-class="variable" var-type="int" />
+        <field name="limitChampion30" var-class="variable" var-type="int" />
+        <field name="nameChampion1" var-class="variable" var-type="file_dbr">
+          <description>spawn record</description>
+        </field>
+        <field name="nameChampion2" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion3" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion4" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion5" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion6" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion7" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion8" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion9" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion10" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion11" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion12" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion13" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion14" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion15" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion16" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion17" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion18" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion19" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion20" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion21" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion22" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion23" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion24" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion25" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion26" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion27" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion28" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion29" var-class="variable" var-type="file_dbr" />
+        <field name="nameChampion30" var-class="variable" var-type="file_dbr" />
+        <field name="weightChampion1" var-class="variable" var-type="int">
+          <description>pooled weight of selection</description>
+        </field>
+        <field name="weightChampion2" var-class="variable" var-type="int" />
+        <field name="weightChampion3" var-class="variable" var-type="int" />
+        <field name="weightChampion4" var-class="variable" var-type="int" />
+        <field name="weightChampion5" var-class="variable" var-type="int" />
+        <field name="weightChampion6" var-class="variable" var-type="int" />
+        <field name="weightChampion7" var-class="variable" var-type="int" />
+        <field name="weightChampion8" var-class="variable" var-type="int" />
+        <field name="weightChampion9" var-class="variable" var-type="int" />
+        <field name="weightChampion10" var-class="variable" var-type="int" />
+        <field name="weightChampion11" var-class="variable" var-type="int" />
+        <field name="weightChampion12" var-class="variable" var-type="int" />
+        <field name="weightChampion13" var-class="variable" var-type="int" />
+        <field name="weightChampion14" var-class="variable" var-type="int" />
+        <field name="weightChampion15" var-class="variable" var-type="int" />
+        <field name="weightChampion16" var-class="variable" var-type="int" />
+        <field name="weightChampion17" var-class="variable" var-type="int" />
+        <field name="weightChampion18" var-class="variable" var-type="int" />
+        <field name="weightChampion19" var-class="variable" var-type="int" />
+        <field name="weightChampion20" var-class="variable" var-type="int" />
+        <field name="weightChampion21" var-class="variable" var-type="int" />
+        <field name="weightChampion22" var-class="variable" var-type="int" />
+        <field name="weightChampion23" var-class="variable" var-type="int" />
+        <field name="weightChampion24" var-class="variable" var-type="int" />
+        <field name="weightChampion25" var-class="variable" var-type="int" />
+        <field name="weightChampion26" var-class="variable" var-type="int" />
+        <field name="weightChampion27" var-class="variable" var-type="int" />
+        <field name="weightChampion28" var-class="variable" var-type="int" />
+        <field name="weightChampion29" var-class="variable" var-type="int" />
+        <field name="weightChampion30" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Pool">
+        <field name="alwaysSpawn1" var-class="variable" var-type="bool">
+          <description>force spawn of object</description>
+        </field>
+        <field name="alwaysSpawn2" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn3" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn4" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn5" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn6" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn7" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn8" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn9" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn10" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn11" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn12" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn13" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn14" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn15" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn16" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn17" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn18" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn19" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn20" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn21" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn22" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn23" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn24" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn25" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn26" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn27" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn28" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn29" var-class="variable" var-type="bool" />
+        <field name="alwaysSpawn30" var-class="variable" var-type="bool" />
+        <field name="difficulty1" var-class="variable" var-type="int">
+          <description>available if difficulty exceeds value</description>
+        </field>
+        <field name="difficulty2" var-class="variable" var-type="int" />
+        <field name="difficulty3" var-class="variable" var-type="int" />
+        <field name="difficulty4" var-class="variable" var-type="int" />
+        <field name="difficulty5" var-class="variable" var-type="int" />
+        <field name="difficulty6" var-class="variable" var-type="int" />
+        <field name="difficulty7" var-class="variable" var-type="int" />
+        <field name="difficulty8" var-class="variable" var-type="int" />
+        <field name="difficulty9" var-class="variable" var-type="int" />
+        <field name="difficulty10" var-class="variable" var-type="int" />
+        <field name="difficulty11" var-class="variable" var-type="int" />
+        <field name="difficulty12" var-class="variable" var-type="int" />
+        <field name="difficulty13" var-class="variable" var-type="int" />
+        <field name="difficulty14" var-class="variable" var-type="int" />
+        <field name="difficulty15" var-class="variable" var-type="int" />
+        <field name="difficulty16" var-class="variable" var-type="int" />
+        <field name="difficulty17" var-class="variable" var-type="int" />
+        <field name="difficulty18" var-class="variable" var-type="int" />
+        <field name="difficulty19" var-class="variable" var-type="int" />
+        <field name="difficulty20" var-class="variable" var-type="int" />
+        <field name="difficulty21" var-class="variable" var-type="int" />
+        <field name="difficulty22" var-class="variable" var-type="int" />
+        <field name="difficulty23" var-class="variable" var-type="int" />
+        <field name="difficulty24" var-class="variable" var-type="int" />
+        <field name="difficulty25" var-class="variable" var-type="int" />
+        <field name="difficulty26" var-class="variable" var-type="int" />
+        <field name="difficulty27" var-class="variable" var-type="int" />
+        <field name="difficulty28" var-class="variable" var-type="int" />
+        <field name="difficulty29" var-class="variable" var-type="int" />
+        <field name="difficulty30" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff1" var-class="variable" var-type="int">
+          <description>not available if difficulty exceeds value</description>
+        </field>
+        <field name="difficultyCutoff2" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff3" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff4" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff5" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff6" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff7" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff8" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff9" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff10" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff11" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff12" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff13" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff14" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff15" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff16" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff17" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff18" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff19" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff20" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff21" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff22" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff23" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff24" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff25" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff26" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff27" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff28" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff29" var-class="variable" var-type="int" />
+        <field name="difficultyCutoff30" var-class="variable" var-type="int" />
+        <field name="limit1" var-class="variable" var-type="int">
+          <description>number available to spawn</description>
+        </field>
+        <field name="limit2" var-class="variable" var-type="int" />
+        <field name="limit3" var-class="variable" var-type="int" />
+        <field name="limit4" var-class="variable" var-type="int" />
+        <field name="limit5" var-class="variable" var-type="int" />
+        <field name="limit6" var-class="variable" var-type="int" />
+        <field name="limit7" var-class="variable" var-type="int" />
+        <field name="limit8" var-class="variable" var-type="int" />
+        <field name="limit9" var-class="variable" var-type="int" />
+        <field name="limit10" var-class="variable" var-type="int" />
+        <field name="limit11" var-class="variable" var-type="int" />
+        <field name="limit12" var-class="variable" var-type="int" />
+        <field name="limit13" var-class="variable" var-type="int" />
+        <field name="limit14" var-class="variable" var-type="int" />
+        <field name="limit15" var-class="variable" var-type="int" />
+        <field name="limit16" var-class="variable" var-type="int" />
+        <field name="limit17" var-class="variable" var-type="int" />
+        <field name="limit18" var-class="variable" var-type="int" />
+        <field name="limit19" var-class="variable" var-type="int" />
+        <field name="limit20" var-class="variable" var-type="int" />
+        <field name="limit21" var-class="variable" var-type="int" />
+        <field name="limit22" var-class="variable" var-type="int" />
+        <field name="limit23" var-class="variable" var-type="int" />
+        <field name="limit24" var-class="variable" var-type="int" />
+        <field name="limit25" var-class="variable" var-type="int" />
+        <field name="limit26" var-class="variable" var-type="int" />
+        <field name="limit27" var-class="variable" var-type="int" />
+        <field name="limit28" var-class="variable" var-type="int" />
+        <field name="limit29" var-class="variable" var-type="int" />
+        <field name="limit30" var-class="variable" var-type="int" />
+        <field name="name1" var-class="variable" var-type="file_dbr">
+          <description>spawn record</description>
+        </field>
+        <field name="name2" var-class="variable" var-type="file_dbr" />
+        <field name="name3" var-class="variable" var-type="file_dbr" />
+        <field name="name4" var-class="variable" var-type="file_dbr" />
+        <field name="name5" var-class="variable" var-type="file_dbr" />
+        <field name="name6" var-class="variable" var-type="file_dbr" />
+        <field name="name7" var-class="variable" var-type="file_dbr" />
+        <field name="name8" var-class="variable" var-type="file_dbr" />
+        <field name="name9" var-class="variable" var-type="file_dbr" />
+        <field name="name10" var-class="variable" var-type="file_dbr" />
+        <field name="name11" var-class="variable" var-type="file_dbr" />
+        <field name="name12" var-class="variable" var-type="file_dbr" />
+        <field name="name13" var-class="variable" var-type="file_dbr" />
+        <field name="name14" var-class="variable" var-type="file_dbr" />
+        <field name="name15" var-class="variable" var-type="file_dbr" />
+        <field name="name16" var-class="variable" var-type="file_dbr" />
+        <field name="name17" var-class="variable" var-type="file_dbr" />
+        <field name="name18" var-class="variable" var-type="file_dbr" />
+        <field name="name19" var-class="variable" var-type="file_dbr" />
+        <field name="name20" var-class="variable" var-type="file_dbr" />
+        <field name="name21" var-class="variable" var-type="file_dbr" />
+        <field name="name22" var-class="variable" var-type="file_dbr" />
+        <field name="name23" var-class="variable" var-type="file_dbr" />
+        <field name="name24" var-class="variable" var-type="file_dbr" />
+        <field name="name25" var-class="variable" var-type="file_dbr" />
+        <field name="name26" var-class="variable" var-type="file_dbr" />
+        <field name="name27" var-class="variable" var-type="file_dbr" />
+        <field name="name28" var-class="variable" var-type="file_dbr" />
+        <field name="name29" var-class="variable" var-type="file_dbr" />
+        <field name="name30" var-class="variable" var-type="file_dbr" />
+        <field name="weight1" var-class="variable" var-type="int">
+          <description>pooled weight of selection</description>
+        </field>
+        <field name="weight2" var-class="variable" var-type="int" />
+        <field name="weight3" var-class="variable" var-type="int" />
+        <field name="weight4" var-class="variable" var-type="int" />
+        <field name="weight5" var-class="variable" var-type="int" />
+        <field name="weight6" var-class="variable" var-type="int" />
+        <field name="weight7" var-class="variable" var-type="int" />
+        <field name="weight8" var-class="variable" var-type="int" />
+        <field name="weight9" var-class="variable" var-type="int" />
+        <field name="weight10" var-class="variable" var-type="int" />
+        <field name="weight11" var-class="variable" var-type="int" />
+        <field name="weight12" var-class="variable" var-type="int" />
+        <field name="weight13" var-class="variable" var-type="int" />
+        <field name="weight14" var-class="variable" var-type="int" />
+        <field name="weight15" var-class="variable" var-type="int" />
+        <field name="weight16" var-class="variable" var-type="int" />
+        <field name="weight17" var-class="variable" var-type="int" />
+        <field name="weight18" var-class="variable" var-type="int" />
+        <field name="weight19" var-class="variable" var-type="int" />
+        <field name="weight20" var-class="variable" var-type="int" />
+        <field name="weight21" var-class="variable" var-type="int" />
+        <field name="weight22" var-class="variable" var-type="int" />
+        <field name="weight23" var-class="variable" var-type="int" />
+        <field name="weight24" var-class="variable" var-type="int" />
+        <field name="weight25" var-class="variable" var-type="int" />
+        <field name="weight26" var-class="variable" var-type="int" />
+        <field name="weight27" var-class="variable" var-type="int" />
+        <field name="weight28" var-class="variable" var-type="int" />
+        <field name="weight29" var-class="variable" var-type="int" />
+        <field name="weight30" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Pool Config">
+        <field name="championChance" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="championMax" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="championMin" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="proxyPoolEquation" var-class="variable" var-type="file_dbr">
+          <description>ProxyPoolEquation record</description>
+        </field>
+        <field name="spawnMax" var-class="variable" var-type="int" var-default-value="1" />
+        <field name="spawnMin" var-class="variable" var-type="int" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

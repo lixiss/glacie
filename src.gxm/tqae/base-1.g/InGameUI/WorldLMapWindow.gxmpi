@@ -1,0 +1,43 @@
+﻿<partial>
+  <record-type name="InGameUI.WorldLMapWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="WorldWindow">
+      <field name="AtlantisButton" />
+      <field name="AtlantisMapImage" />
+      <field name="AtlantisZoneList" />
+      <field name="BackgroundImage" />
+      <field name="CloseButton" />
+      <field name="EgyptButton" />
+      <field name="EgyptMapImage" />
+      <field name="EgyptZoneList" />
+      <field name="GreeceButton" />
+      <field name="GreeceMapImage" />
+      <field name="GreeceZoneList" />
+      <field name="HadesButton" />
+      <field name="HadesImage" />
+      <field name="HadesZoneList" />
+      <field name="MapImageLocationX" />
+      <field name="MapImageLocationY" />
+      <field name="OlympusButton" />
+      <field name="OlympusMapImage" />
+      <field name="OlympusZoneList" />
+      <field name="OrientButton" />
+      <field name="OrientMapImage" />
+      <field name="OrientZoneList" />
+      <field name="ScandiaButton" />
+      <field name="ScandiaMapImage" />
+      <field name="ScandiaZoneList" />
+      <field name="WindowLocationX" />
+      <field name="WindowLocationY" />
+      <field name="WindowTitle" />
+      <field name="destinationCenterX" />
+      <field name="destinationCenterY" />
+      <field name="destinationStyle" />
+      <field name="destinationTitle" />
+    </var-group>
+  </record-type>
+</partial>

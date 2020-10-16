@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="ProxyAmbush">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Proxy Ambush">
+      <field name="alertArea" />
+      <field name="maxProxyPopulation" />
+      <field name="maxSpawnTime" />
+      <field name="minProxyPopulation" />
+      <field name="minSpawnTime" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="WaterType">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Depth">
+      <field name="maxDepth" />
+      <field name="maxDepthOpacity" />
+      <field name="minDepth" />
+      <field name="minDepthOpacity" />
+    </var-group>
+    <var-group name="Surface Parameters">
+      <field name="Direction" />
+      <field name="ScaleX" />
+      <field name="ScaleY" />
+      <field name="Smoothness" />
+      <field name="Speed" />
+    </var-group>
+    <var-group name="Textures">
+      <field name="NoiseTexture" />
+      <field name="ShaderName" />
+      <field name="Skymap" />
+    </var-group>
+  </record-type>
+</partial>

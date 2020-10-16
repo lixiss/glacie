@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="LineEffect2">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="LineEffect2">
+      <field name="color.a" />
+      <field name="color.b" />
+      <field name="color.g" />
+      <field name="color.r" />
+      <field name="endAlpha" />
+      <field name="fadeDistance" />
+      <field name="lineWidth" />
+      <field name="shader" />
+      <field name="texture" />
+      <field name="textureLength" />
+      <field name="textureSpeed" />
+    </var-group>
+  </record-type>
+</partial>

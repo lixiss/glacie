@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ControllerSpirit">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Spirit Parameters">
+      <field name="pursueBehavior" />
+      <field name="spiritTarget" />
+      <field name="verticalSpeed" />
+    </var-group>
+  </record-type>
+</partial>

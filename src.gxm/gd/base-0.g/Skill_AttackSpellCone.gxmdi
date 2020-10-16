@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="Skill_AttackSpellCone" path="Skill_AttackSpellCone.tpl">
+    <inherits>
+      <inherit record="SkillChanneled" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_AttackSpellCone" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="GDX1" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="coneDelay" var-class="variable" var-type="real">
+          <description>Delay before the cone starts (seconds)</description>
+        </field>
+        <field name="coneName" var-class="array" var-type="file_dbr" />
+        <field name="endSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak to play when a cone ends</description>
+        </field>
+        <field name="endWidth" var-class="array" var-type="real" var-default-value="2">
+          <description>Ending radius of cone</description>
+        </field>
+        <field name="loopSound" var-class="variable" var-type="file_dbr">
+          <description>Looping SoundPak to play while a beam is active</description>
+        </field>
+        <field name="maxRange" var-class="array" var-type="real" var-default-value="20">
+          <description>Maximum range of the cone (in meters)</description>
+        </field>
+        <field name="rotationSpeedMultiplier" var-class="variable" var-type="real" var-default-value="1.0">
+          <description>Multiplier applied to player rotation speed while skill is active</description>
+        </field>
+        <field name="startSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak to play when a cone starts</description>
+        </field>
+        <field name="startWidth" var-class="array" var-type="real" var-default-value="1">
+          <description>Starting radius of cone</description>
+        </field>
+        <field name="timeBetweenAttacks" var-class="variable" var-type="int" var-default-value="100">
+          <description>Time between hits being to enemies in the cone (in milliseconds)</description>
+        </field>
+        <field name="travelSpeed" var-class="variable" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

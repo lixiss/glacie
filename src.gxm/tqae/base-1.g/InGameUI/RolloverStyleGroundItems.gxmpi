@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="InGameUI.RolloverStyleGroundItems">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="backgroundColorAlpha" />
+      <field name="backgroundColorBlue" />
+      <field name="backgroundColorGreen" />
+      <field name="backgroundColorRed" />
+      <field name="backgroundHighlightColorAlpha" />
+      <field name="backgroundHighlightColorBlue" />
+      <field name="backgroundHighlightColorGreen" />
+      <field name="backgroundHighlightColorRed" />
+      <field name="borderCorrectionOffsetX" />
+      <field name="borderCorrectionOffsetXSize" />
+      <field name="borderCorrectionOffsetY" />
+      <field name="borderCorrectionOffsetYSize" />
+    </var-group>
+  </record-type>
+</partial>

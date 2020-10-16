@@ -1,0 +1,60 @@
+﻿<partial>
+  <record-type name="EndlessDungeonGenerator">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="bonusTimeBoss" />
+      <field name="bonusTimeHero" />
+      <field name="bonusTimeNemesis" />
+      <field name="bossFloorList" />
+      <field name="bossProxies" />
+      <field name="difficultyAdjustmentElite" />
+      <field name="difficultyAdjustmentNormal" />
+      <field name="difficultyAdjustmentUltimate" />
+      <field name="dyingPenalty" />
+      <field name="floorList" />
+      <field name="floorTotalElite" />
+      <field name="floorTotalNormal" />
+      <field name="floorTotalUltimate" />
+      <field name="floors" />
+      <field name="heroProxies" />
+      <field name="killCountBonusTime" />
+      <field name="killCountMinimum" />
+      <field name="killCountResetTime" />
+      <field name="maxShrines" />
+      <field name="nemesisProxyWeights" />
+      <field name="proxies" />
+      <field name="shrineProxyWeights" />
+      <field name="specialFloors" />
+      <field name="timerElite" />
+      <field name="timerNormal" />
+      <field name="timerUltimate" />
+      <field name="trapProxies" />
+    </var-group>
+    <var-group name="Drops">
+      <field name="allowedItems" />
+      <field name="blacklistedHeroes" />
+      <field name="championChance" />
+      <field name="commonChance" />
+      <field name="disableMonsterDrops" />
+      <field name="heroChance" />
+      <field name="itemNameChampion" />
+      <field name="itemNameCommon" />
+      <field name="itemNameHero" />
+      <field name="itemNameQuestBoss" />
+      <field name="questBossChance" />
+    </var-group>
+    <var-group name="Monster Overrides">
+      <field name="distressCallGroupOverride" />
+      <field name="distressCallRangeOverride" />
+      <field name="distressResponseGroupOverride" />
+      <field name="factionOverride" />
+      <field name="healthGainOnKillDifficulty" />
+      <field name="healthGainOnKillPct" />
+      <field name="viewDistanceOverride" />
+    </var-group>
+  </record-type>
+</partial>

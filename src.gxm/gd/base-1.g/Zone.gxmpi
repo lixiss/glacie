@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="Zone">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="TeleportNameTag" />
+      <field name="ZoneNameTag" />
+      <field name="hideUndiscovered" />
+      <field name="mapIndex" />
+    </var-group>
+    <var-group name="Widget">
+      <field name="ArrowLocationX" />
+      <field name="ArrowLocationY" />
+      <field name="WindowLocationX" />
+      <field name="WindowLocationY" />
+    </var-group>
+  </record-type>
+</partial>

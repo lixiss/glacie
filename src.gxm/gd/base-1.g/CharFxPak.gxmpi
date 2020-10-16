@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="CharFxPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="activeSound" />
+      <field name="colorBlue" />
+      <field name="colorGreen" />
+      <field name="colorRed" />
+      <field name="meshEffectNames" />
+      <field name="particleEffectAttachPoints" />
+      <field name="particleEffectNames" />
+      <field name="startSound" />
+      <field name="stopSound" />
+      <field name="useTintColor" />
+    </var-group>
+  </record-type>
+</partial>

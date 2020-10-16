@@ -1,0 +1,35 @@
+﻿<partial>
+  <record-type name="ParticleSystem" path="ParticleSystem.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ParticleSystem" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Configuration">
+        <field name="accelerationX" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="accelerationY" var-class="variable" var-type="real" var-default-value="4.0" />
+        <field name="accelerationZ" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="affectedByWind" var-class="variable" var-type="bool" />
+        <field name="alphaFunction" var-class="variable" var-type="string" />
+        <field name="bitmapName" var-class="variable" var-type="file_tex" />
+        <field name="blendMode" var-class="picklist" var-type="string" var-default-value="blendModeCombine;blendModeAdd;blendModeOther;" />
+        <field name="blueFunction" var-class="variable" var-type="string" />
+        <field name="emitInObjectSpace" var-class="variable" var-type="bool" />
+        <field name="emitterLifeTime" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="emitterSizeX" var-class="variable" var-type="real" var-default-value="0.10" />
+        <field name="emitterSizeY" var-class="variable" var-type="real" var-default-value="0.10" />
+        <field name="emitterSizeZ" var-class="variable" var-type="real" var-default-value="0.10" />
+        <field name="greenFunction" var-class="variable" var-type="string" />
+        <field name="particleLifeTime" var-class="variable" var-type="real" var-default-value="1000" />
+        <field name="particleSize" var-class="variable" var-type="string" />
+        <field name="redFunction" var-class="variable" var-type="string" />
+        <field name="spawnMaxSpeed" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="spawnMinSpeed" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="spawnMode" var-class="variable" var-type="string" />
+        <field name="spawnRate" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="sprayAngle" var-class="variable" var-type="real" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

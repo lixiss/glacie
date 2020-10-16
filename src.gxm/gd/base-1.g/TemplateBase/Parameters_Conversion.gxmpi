@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Conversion">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Conversion Parameters">
+      <field name="conversionInType" />
+      <field name="conversionInType2" />
+      <field name="conversionOutType" />
+      <field name="conversionOutType2" />
+      <field name="conversionPercentage" />
+      <field name="conversionPercentage2" />
+    </var-group>
+  </record-type>
+</partial>

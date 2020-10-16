@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="OneShot_EndlessDungeon" path="OneShot_EndlessDungeon.tpl">
+    <inherits>
+      <inherit record="TemplateBase.OneShot" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="OneShot_EndlessDungeon" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="OneShot_EndlessDungeon" />
+      </var-group>
+      <var-group name="Config">
+        <field name="progressAmount" var-class="variable" var-type="int">
+          <description>Dungeon floor progress per item</description>
+        </field>
+        <field name="skillIncrement" var-class="variable" var-type="int" />
+        <field name="skillName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

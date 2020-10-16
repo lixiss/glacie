@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="FxMesh" path="FxMesh.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="FxMesh" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="animationName" var-class="variable" var-type="file_anm" />
+        <field name="attachPoint" var-class="variable" var-type="string" />
+        <field name="disturbanceRadius" var-class="variable" var-type="real" var-default-value="2">
+          <description>use DisplaceGrass callback</description>
+        </field>
+        <field name="fadeInTime" var-class="variable" var-type="real">
+          <description>Seconds</description>
+        </field>
+        <field name="fadeOutTime" var-class="variable" var-type="real">
+          <description>Seconds</description>
+        </field>
+        <field name="loop" var-class="variable" var-type="bool" />
+        <field name="meshName" var-class="variable" var-type="file_msh" />
+        <field name="sound1" var-class="variable" var-type="file_dbr">
+          <description>sound triggered on callback of same name</description>
+        </field>
+        <field name="sound2" var-class="variable" var-type="file_dbr">
+          <description>sound triggered on callback of same name</description>
+        </field>
+        <field name="sound3" var-class="variable" var-type="file_dbr">
+          <description>sound triggered on callback of same name</description>
+        </field>
+        <field name="sound4" var-class="variable" var-type="file_dbr">
+          <description>sound triggered on callback of same name</description>
+        </field>
+        <field name="speed" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="stationaryAttachment" var-class="variable" var-type="bool">
+          <description>when attached, this will not rotate with character</description>
+        </field>
+        <field name="sustainTime" var-class="variable" var-type="real">
+          <description>Seconds</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

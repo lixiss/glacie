@@ -1,0 +1,80 @@
+﻿<partial>
+  <record-type name="StaticShrine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="StaticShrine Animations">
+      <field name="dormantAnimation" />
+      <field name="dormantAnimationSpeed" />
+      <field name="dormantToRestoredAnimation" />
+      <field name="dormantToRestoredAnimationSpeed" />
+      <field name="restoredAnimation" />
+      <field name="restoredAnimationSpeed" />
+    </var-group>
+    <var-group name="StaticShrine Config">
+      <var-group name="Awards">
+        <var-group name="Epic">
+          <field name="epicLootTable" />
+          <field name="epicXPReward" />
+        </var-group>
+        <var-group name="Legendary">
+          <field name="legendaryLootTable" />
+          <field name="legendaryXPReward" />
+        </var-group>
+        <var-group name="Normal">
+          <field name="normalLootTable" />
+          <field name="normalXPReward" />
+        </var-group>
+        <field name="devotionPoints" />
+      </var-group>
+      <var-group name="Requirements">
+        <var-group name="Epic">
+          <field name="epicMonsterSpawn" />
+          <field name="epicOffering1" />
+          <field name="epicOffering2" />
+          <field name="epicOffering3" />
+        </var-group>
+        <var-group name="Legendary">
+          <field name="legendaryMonsterSpawn" />
+          <field name="legendaryOffering1" />
+          <field name="legendaryOffering2" />
+          <field name="legendaryOffering3" />
+        </var-group>
+        <var-group name="Normal">
+          <field name="normalMonsterSpawn" />
+          <field name="normalOffering1" />
+          <field name="normalOffering2" />
+          <field name="normalOffering3" />
+        </var-group>
+      </var-group>
+      <field name="epicDisabled" />
+      <field name="epicLocked" />
+      <field name="hideMapIcon" />
+      <field name="journalTag" />
+      <field name="legendaryDisabled" />
+      <field name="legendaryLocked" />
+      <field name="lockedTextTag" />
+      <field name="normalDisabled" />
+      <field name="normalLocked" />
+    </var-group>
+    <var-group name="StaticShrine Effects">
+      <field name="activeLoopingAttachment" />
+      <field name="activeLoopingEffect" />
+      <field name="dormantLoopingAttachment" />
+      <field name="dormantLoopingEffect" />
+      <field name="dormantToRestoredEffect" />
+      <field name="dormantToRestoredEffectAttachment" />
+      <field name="dormantToRestoredFxPakName" />
+      <field name="restoredLoopingAttachment" />
+      <field name="restoredLoopingEffect" />
+    </var-group>
+    <var-group name="StaticShrine Sounds">
+      <field name="dormantSound" />
+      <field name="dormantToRestoredSound" />
+      <field name="proxyActivateSound" />
+      <field name="restoredSound" />
+    </var-group>
+  </record-type>
+</partial>

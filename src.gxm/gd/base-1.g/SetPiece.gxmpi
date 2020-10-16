@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="SetPiece">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="SetPiece Config">
+      <field name="placementChance" />
+    </var-group>
+    <var-group name="SetPiece Pools">
+      <field name="pool1" />
+      <field name="pool2" />
+      <field name="pool3" />
+      <field name="pool4" />
+      <field name="pool5" />
+      <field name="weight1" />
+      <field name="weight2" />
+      <field name="weight3" />
+      <field name="weight4" />
+      <field name="weight5" />
+    </var-group>
+  </record-type>
+</partial>

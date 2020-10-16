@@ -13,8 +13,6 @@ namespace Glacie.Data.Arz
     // However, i'm not sure what will like this. Generally i'm doesn't like to regular LINQ will be applied.
     // ArzDatabase provide GetAll method which easy and understandable.
 
-    // TODO: (Medium) (ArzDatabase) Naming of API. GetAll method might be better to SelectAll?
-
     public sealed class ArzDatabase : IArzDatabase,
         IDisposable,
         IDatabaseApi<ArzRecord, ArzRecord?, ArzRecord?>
@@ -61,22 +59,22 @@ namespace Glacie.Data.Arz
 
         public int Count => _records.Count;
 
-        public IEnumerable<ArzRecord> GetAll()
+        public IEnumerable<ArzRecord> SelectAll()
             => _records; // TODO: (ArzDatabase) This might be not optimal, return struct version like ArzStringTable.
 
         // TODO: (Medium) (ArzDatabase) Select by record Class. + set of classes.
         // TODO: (Medium) (ArzDatabase) Select by record Name by glob or regex.
 
-        public ArzRecord Get(string name)
-            => GetOrNull(name) ?? throw ArzError.RecordNotFound(name);
+        public ArzRecord GetRecord(string name)
+            => GetRecordOrNull(name) ?? throw ArzError.RecordNotFound(name);
 
-        public bool TryGet(string name, [NotNullWhen(returnValue: true)] out ArzRecord? record)
+        public bool TryGetRecord(string name, [NotNullWhen(returnValue: true)] out ArzRecord? result)
         {
-            record = GetOrNull(name);
-            return record != null;
+            result = GetRecordOrNull(name);
+            return result != null;
         }
 
-        public ArzRecord? GetOrNull(string name)
+        public ArzRecord? GetRecordOrNull(string name)
         {
             if (StringTable.TryGet(name, out var nameId))
             {
@@ -103,12 +101,12 @@ namespace Glacie.Data.Arz
         public ArzRecord this[string name]
         {
             [MethodImpl(MethodImplOptions.AggressiveInlining)]
-            get => Get(name);
+            get => GetRecord(name);
         }
 
         public ArzRecord Add(string name, string? @class = null)
         {
-            if (TryGet(name, out var _))
+            if (TryGetRecord(name, out var _))
             {
                 throw ArzError.RecordAlreadyExist(name);
             }
@@ -117,7 +115,7 @@ namespace Glacie.Data.Arz
 
         public ArzRecord GetOrAdd(string name, string? @class = null)
         {
-            if (TryGet(name, out var record))
+            if (TryGetRecord(name, out var record))
             {
                 // TODO: (High) (ArzDatabase) How this API should behave, when we call GetOrAdd, but already existing record has different class? Is this error?
                 // When @class == null -> we can don't care (like now)
@@ -145,7 +143,7 @@ namespace Glacie.Data.Arz
 
         public bool Remove(string name)
         {
-            if (TryGet(name, out var record))
+            if (TryGetRecord(name, out var record))
             {
                 return Remove(record);
             }
@@ -179,7 +177,7 @@ namespace Glacie.Data.Arz
             if (database == this) throw Error.Argument(nameof(database));
 
             var stringEncoder = new ArzStringEncoder(database.StringTable, StringTable);
-            foreach (var record in database.GetAll())
+            foreach (var record in database.SelectAll())
             {
                 ImportInternal(record, stringEncoder);
             }
@@ -222,7 +220,7 @@ namespace Glacie.Data.Arz
 
         private ArzRecord ImportInternal(ArzRecord record, ArzStringEncoder stringEncoder)
         {
-            if (TryGet(record.Name, out var internalRecord))
+            if (TryGetRecord(record.Name, out var internalRecord))
             {
                 internalRecord.Class = record.Class;
             }

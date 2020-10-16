@@ -42,7 +42,7 @@ namespace Glacie.Cli.Arc.Commands
             int nonCompressedEntryCount = 0;
             long totalLength = 0;
             long totalCompressedLength = 0;
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 totalLength += entry.Length;
                 totalCompressedLength += entry.CompressedLength;

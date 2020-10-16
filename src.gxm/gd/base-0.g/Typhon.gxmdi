@@ -1,0 +1,135 @@
+﻿<partial>
+  <record-type name="Typhon" path="Typhon.tpl">
+    <inherits>
+      <inherit record="Monster" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Typhon" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="ApolloSkills">
+        <field name="apolloSpecialAttack2Chance" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack2Delay" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack2Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="apolloSpecialAttack2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="apolloSpecialAttack2Timeout" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack3Chance" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack3Delay" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack3Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="apolloSpecialAttack3SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="apolloSpecialAttack3Timeout" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack4Chance" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack4Delay" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack4Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="apolloSpecialAttack4SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="apolloSpecialAttack4Timeout" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack5Chance" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack5Delay" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttack5Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="apolloSpecialAttack5SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="apolloSpecialAttack5Timeout" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttackChance" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttackDelay" var-class="variable" var-type="real" />
+        <field name="apolloSpecialAttackRange" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="apolloSpecialAttackSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="apolloSpecialAttackTimeout" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="DemeterSkills">
+        <field name="demeterSpecialAttack2Chance" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack2Delay" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack2Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="demeterSpecialAttack2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="demeterSpecialAttack2Timeout" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack3Chance" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack3Delay" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack3Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="demeterSpecialAttack3SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="demeterSpecialAttack3Timeout" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack4Chance" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack4Delay" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack4Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="demeterSpecialAttack4SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="demeterSpecialAttack4Timeout" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack5Chance" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack5Delay" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttack5Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="demeterSpecialAttack5SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="demeterSpecialAttack5Timeout" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttackChance" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttackDelay" var-class="variable" var-type="real" />
+        <field name="demeterSpecialAttackRange" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="demeterSpecialAttackSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="demeterSpecialAttackTimeout" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="HadesSkills">
+        <field name="hadesSpecialAttack2Chance" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack2Delay" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack2Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="hadesSpecialAttack2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="hadesSpecialAttack2Timeout" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack3Chance" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack3Delay" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack3Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="hadesSpecialAttack3SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="hadesSpecialAttack3Timeout" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack4Chance" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack4Delay" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack4Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="hadesSpecialAttack4SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="hadesSpecialAttack4Timeout" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack5Chance" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack5Delay" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttack5Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="hadesSpecialAttack5SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="hadesSpecialAttack5Timeout" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttackChance" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttackDelay" var-class="variable" var-type="real" />
+        <field name="hadesSpecialAttackRange" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="hadesSpecialAttackSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="hadesSpecialAttackTimeout" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="TyphonAttributes">
+        <field name="ApolloTransferSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="DemeterTransferSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="HadesTransferSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="ZeusTransferSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="apolloSkillEffect" var-class="variable" var-type="file_dbr" />
+        <field name="deathVortex" var-class="variable" var-type="file_dbr" />
+        <field name="demeterSkillEffect" var-class="variable" var-type="file_dbr" />
+        <field name="godRays" var-class="variable" var-type="file_dbr" />
+        <field name="hadesSkillEffect" var-class="variable" var-type="file_dbr" />
+        <field name="wisps" var-class="variable" var-type="file_dbr" />
+        <field name="zeusSkillEffect" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="ZeusSkills">
+        <field name="zeusSpecialAttack2Chance" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack2Delay" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack2Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="zeusSpecialAttack2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="zeusSpecialAttack2Timeout" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack3Chance" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack3Delay" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack3Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="zeusSpecialAttack3SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="zeusSpecialAttack3Timeout" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack4Chance" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack4Delay" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack4Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="zeusSpecialAttack4SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="zeusSpecialAttack4Timeout" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack5Chance" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack5Delay" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttack5Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="zeusSpecialAttack5SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="zeusSpecialAttack5Timeout" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttackChance" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttackDelay" var-class="variable" var-type="real" />
+        <field name="zeusSpecialAttackRange" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="zeusSpecialAttackSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="zeusSpecialAttackTimeout" var-class="variable" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

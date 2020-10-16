@@ -1,0 +1,185 @@
+﻿<partial>
+  <record-type name="FactionPack" path="FactionPack.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Factions">
+        <field name="bossKillPenaltyReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="bossKillPenaltyReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction decrease is reduced at this level</description>
+        </field>
+        <field name="bossMonsterGainReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="bossMonsterGainReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction increase is reduced at this level (Boss and Quest types)</description>
+        </field>
+        <field name="bountyEnabled" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Faction rep can be gained by doing bounties</description>
+        </field>
+        <field name="championKillPenaltyReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="championKillPenaltyReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction decrease is reduced at this level</description>
+        </field>
+        <field name="championMonsterGainReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="championMonsterGainReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction increase is reduced at this level</description>
+        </field>
+        <field name="commonKillPenaltyReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="commonKillPenaltyReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction decrease is reduced at this level</description>
+        </field>
+        <field name="commonMonsterGainReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="commonMonsterGainReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction increase is reduced at this level</description>
+        </field>
+        <field name="factionAetherials" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the aetherials feel about me</description>
+        </field>
+        <field name="factionBeasts" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Beasts feel about me</description>
+        </field>
+        <field name="factionCthonians" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Cthonians feel about me</description>
+        </field>
+        <field name="factionDrifters" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Drifters feel about me</description>
+        </field>
+        <field name="factionIcon" var-class="variable" var-type="file_tex" />
+        <field name="factionLargeIcon" var-class="variable" var-type="file_tex" />
+        <field name="factionNeutralNPC" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Neutral NPCs feel about me (should be neutral!)</description>
+        </field>
+        <field name="factionOutlaws" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Outlaws feel about me</description>
+        </field>
+        <field name="factionPlayer" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the player feels about me</description>
+        </field>
+        <field name="factionRewards" var-class="array" var-type="string">
+          <description>Faction rewards on bar tooltip</description>
+        </field>
+        <field name="factionSurvivors" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the survivors feel about me</description>
+        </field>
+        <field name="factionUser2" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the people of Homestead feel about me</description>
+        </field>
+        <field name="factionUser3" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the people of Salt Mine feel about me</description>
+        </field>
+        <field name="factionUser4" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Exile feels about me</description>
+        </field>
+        <field name="factionUser5" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Necromancers feel about me</description>
+        </field>
+        <field name="factionUser6" var-class="variable" var-type="real" var-default-value="0">
+          <description>How the Undead feel about me</description>
+        </field>
+        <field name="factionUser7" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser8" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser9" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser10" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser11" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser12" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser13" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser14" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser15" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser16" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser17" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser18" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser19" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="factionUser20" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="heroKillPenaltyReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="heroKillPenaltyReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction decrease is reduced at this level</description>
+        </field>
+        <field name="heroMonsterGainReduction" var-class="variable" var-type="real">
+          <description>Reduction amount multiplier</description>
+        </field>
+        <field name="heroMonsterGainReductionStart" var-class="picklist" var-type="string" var-default-value="Nemesis;Hated;Despised;Tolerated;Friendly;Respected;Honored;Revered">
+          <description>Killer's faction increase is reduced at this level</description>
+        </field>
+        <field name="killBonus1Boss" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus1Faction for boss/quest monsters of this faction</description>
+        </field>
+        <field name="killBonus1Champion" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus1Faction for champion monsters of this faction</description>
+        </field>
+        <field name="killBonus1Common" var-class="variable" var-type="real" var-default-value="0">
+          <description>Amount to increase killer's faction with killBonus1Faction for common monsters of this faction</description>
+        </field>
+        <field name="killBonus1Faction" var-class="picklist" var-type="string" var-default-value="Player;Survivors;Aetherials;Cthonians;Outlaws;Beasts;User0;User1;User2;User3;User4;User5;User6;User7;User8;User9;User10;User11;User12;User13;User14;User15;User16;User17;User18;User19;User20">
+          <description>First faction to which my killer receives a bonus</description>
+        </field>
+        <field name="killBonus1Hero" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus1Faction for hero monsters of this faction</description>
+        </field>
+        <field name="killBonus2Boss" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus2Faction for boss/quest monsters of this faction</description>
+        </field>
+        <field name="killBonus2Champion" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus2Faction for champion monsters of this faction</description>
+        </field>
+        <field name="killBonus2Common" var-class="variable" var-type="real" var-default-value="0">
+          <description>Amount to increase killer's faction with killBonus2Faction for common monsters of this faction</description>
+        </field>
+        <field name="killBonus2Faction" var-class="picklist" var-type="string" var-default-value="Player;Survivors;Aetherials;Cthonians;Outlaws;Beasts;User0;User1;User2;User3;User4;User5;User6;User7;User8;User9;User10;User11;User12;User13;User14;User15;User16;User17;User18;User19;User20">
+          <description>Second faction to which my killer receives a bonus</description>
+        </field>
+        <field name="killBonus2Hero" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus2Faction for hero monsters of this faction</description>
+        </field>
+        <field name="killBonus3Boss" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus3Faction for boss/quest monsters of this faction</description>
+        </field>
+        <field name="killBonus3Champion" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus3Faction for champion monsters of this faction</description>
+        </field>
+        <field name="killBonus3Common" var-class="variable" var-type="real" var-default-value="0">
+          <description>Amount to increase killer's faction with killBonus3Faction for common monsters of this faction</description>
+        </field>
+        <field name="killBonus3Faction" var-class="picklist" var-type="string" var-default-value="Player;Survivors;Aetherials;Cthonians;Outlaws;Beasts;User0;User1;User2;User3;User4;User5;User6;User7;User8;User9;User10;User11;User12;User13;User14;User15;User16;User17;User18;User19;User20">
+          <description>Third faction to which my killer receives a bonus</description>
+        </field>
+        <field name="killBonus3Hero" var-class="variable" var-type="real">
+          <description>Amount to increase killer's faction with killBonus3Faction for hero monsters of this faction</description>
+        </field>
+        <field name="killPenaltyBoss" var-class="variable" var-type="real" var-default-value="0">
+          <description>Point adjustment my killer receives to my faction for killing me if I am Boss (usually negative)</description>
+        </field>
+        <field name="killPenaltyChampion" var-class="variable" var-type="real" var-default-value="0">
+          <description>Point adjustment my killer receives to my faction for killing me if I am Champion (usually negative)</description>
+        </field>
+        <field name="killPenaltyCommon" var-class="variable" var-type="real" var-default-value="0">
+          <description>Point adjustment my killer receives to my faction for killing me if I am Common (usually negative)</description>
+        </field>
+        <field name="killPenaltyHero" var-class="variable" var-type="real" var-default-value="0">
+          <description>Point adjustment my killer receives to my faction for killing me if I am Hero (usually negative)</description>
+        </field>
+        <field name="myFaction" var-class="picklist" var-type="string" var-default-value="Alone;Invisible;GenericMonster;Player;Survivors;Aetherials;Cthonians;Outlaws;Beasts;Drifters;NeutralNPC;User0;User1;User2;User3;User4;User5;User6;User7;User8;User9;User10;User11;User12;User13;User14;User15;User16;User17;User18;User19;User20">
+          <description>Faction of this character</description>
+        </field>
+        <field name="questEnabled" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Faction rep can be gained by doing quests</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

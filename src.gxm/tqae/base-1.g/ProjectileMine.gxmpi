@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="ProjectileMine">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="explosionTriggerDistance" />
+      <field name="harmlessInFlight" />
+      <field name="launchAngle" />
+      <field name="notMoving" />
+      <field name="projectileVelocity" />
+    </var-group>
+    <var-group name="Projectile Effects">
+      <field name="inflightGroundFxDropTime" />
+      <field name="inflightGroundFxPakName" />
+    </var-group>
+    <var-group name="Projectile Sounds">
+      <field name="projectileBounceSound" />
+    </var-group>
+  </record-type>
+</partial>

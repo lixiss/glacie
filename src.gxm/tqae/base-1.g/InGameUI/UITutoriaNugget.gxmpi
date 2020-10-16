@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="InGameUI.UITutoriaNugget">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="Image" />
+      <field name="TextCentering" />
+      <field name="TextStyle" />
+      <field name="TextTag" />
+      <field name="TopSpacing" />
+    </var-group>
+  </record-type>
+</partial>

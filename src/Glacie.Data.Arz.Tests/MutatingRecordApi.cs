@@ -146,7 +146,7 @@ namespace Glacie.Data.Arz.Tests
         {
             var ex = Assert.Throws<InvalidOperationException>(() =>
             {
-                foreach (var _ in Record1.GetAll())
+                foreach (var _ in Record1.SelectAll())
                 {
                     Record1.Set("--gx-field", 123);
                 }
@@ -158,7 +158,7 @@ namespace Glacie.Data.Arz.Tests
         {
             var ex = Assert.Throws<InvalidOperationException>(() =>
             {
-                foreach (var x in Record1.GetAll())
+                foreach (var x in Record1.SelectAll())
                 {
                     Record1.Remove(x.Name);
                 }
@@ -167,7 +167,7 @@ namespace Glacie.Data.Arz.Tests
 
         private void VerifyFieldIsNotExist(ArzRecord record, string fieldName)
         {
-            foreach (var f in record.GetAll())
+            foreach (var f in record.SelectAll())
             {
                 Assert.NotEqual(fieldName, f.Name);
             }
@@ -179,7 +179,7 @@ namespace Glacie.Data.Arz.Tests
         private void VerifyFieldIsExist(ArzRecord record, string fieldName)
         {
             bool found = false;
-            foreach (var f in record.GetAll())
+            foreach (var f in record.SelectAll())
             {
                 if (fieldName == f.Name)
                 {
@@ -197,12 +197,12 @@ namespace Glacie.Data.Arz.Tests
         {
             // Count.
             var count = 0;
-            foreach (var _ in record.GetAll()) count++;
+            foreach (var _ in record.SelectAll()) count++;
             Assert.True(record.Count == count, "Record iterates more fields than reports by Count property.");
 
             // All fields has unique names.
             var fieldNames = new HashSet<string>(StringComparer.Ordinal);
-            foreach (var x in record.GetAll())
+            foreach (var x in record.SelectAll())
             {
                 var wasAdded = fieldNames.Add(x.Name);
                 if (!wasAdded)

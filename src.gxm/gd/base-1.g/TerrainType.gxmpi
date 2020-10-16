@@ -1,0 +1,44 @@
+﻿<partial>
+  <record-type name="TerrainType">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Blade Parameters">
+      <field name="BladeHeight" />
+      <field name="BladeVariations" />
+      <field name="BladeWidth" />
+    </var-group>
+    <var-group name="Distribution Parameters">
+      <field name="BladeSpacing" />
+      <field name="MinimumBladeOpacity" />
+      <field name="NoiseScale" />
+      <field name="VariationClumpiness" />
+      <field name="VariationProbability" />
+      <field name="affectedByWind" />
+      <field name="transparent" />
+    </var-group>
+    <var-group name="General">
+      <field name="surfaceType" />
+    </var-group>
+    <var-group name="Shader Parameters">
+      <field name="ShaderFileName" />
+      <field name="minimapBlue" />
+      <field name="minimapGreen" />
+      <field name="minimapRed" />
+    </var-group>
+    <var-group name="Textures and Bumpmaps">
+      <field name="BladeTextureFileName" />
+      <field name="BumpMapFileName1" />
+      <field name="BumpMapFileName2" />
+      <field name="BumpMapFileName3" />
+      <field name="BumpMapFileName4" />
+      <field name="TextureFileName1" />
+      <field name="TextureFileName2" />
+      <field name="TextureFileName3" />
+      <field name="TextureFileName4" />
+      <field name="clutterMesh" />
+    </var-group>
+  </record-type>
+</partial>

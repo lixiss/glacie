@@ -1,0 +1,138 @@
+﻿<partial>
+  <record-type name="LootItemTable_DynItemList" path="LootItemTable_DynItemList.tpl">
+    <inherits>
+      <inherit record="TemplateBase.LootItemTableRandomizer" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="LootItemTable_FixedWeight" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Loot">
+        <field name="lootLevelMax01" var-class="variable" var-type="int" />
+        <field name="lootLevelMax02" var-class="variable" var-type="int" />
+        <field name="lootLevelMax03" var-class="variable" var-type="int" />
+        <field name="lootLevelMax04" var-class="variable" var-type="int" />
+        <field name="lootLevelMax05" var-class="variable" var-type="int" />
+        <field name="lootLevelMax06" var-class="variable" var-type="int" />
+        <field name="lootLevelMax07" var-class="variable" var-type="int" />
+        <field name="lootLevelMax08" var-class="variable" var-type="int" />
+        <field name="lootLevelMax09" var-class="variable" var-type="int" />
+        <field name="lootLevelMax10" var-class="variable" var-type="int" />
+        <field name="lootLevelMax11" var-class="variable" var-type="int" />
+        <field name="lootLevelMax12" var-class="variable" var-type="int" />
+        <field name="lootLevelMax13" var-class="variable" var-type="int" />
+        <field name="lootLevelMax14" var-class="variable" var-type="int" />
+        <field name="lootLevelMax15" var-class="variable" var-type="int" />
+        <field name="lootLevelMax16" var-class="variable" var-type="int" />
+        <field name="lootLevelMax17" var-class="variable" var-type="int" />
+        <field name="lootLevelMax18" var-class="variable" var-type="int" />
+        <field name="lootLevelMax19" var-class="variable" var-type="int" />
+        <field name="lootLevelMax20" var-class="variable" var-type="int" />
+        <field name="lootLevelMax21" var-class="variable" var-type="int" />
+        <field name="lootLevelMax22" var-class="variable" var-type="int" />
+        <field name="lootLevelMax23" var-class="variable" var-type="int" />
+        <field name="lootLevelMax24" var-class="variable" var-type="int" />
+        <field name="lootLevelMax25" var-class="variable" var-type="int" />
+        <field name="lootLevelMax26" var-class="variable" var-type="int" />
+        <field name="lootLevelMax27" var-class="variable" var-type="int" />
+        <field name="lootLevelMax28" var-class="variable" var-type="int" />
+        <field name="lootLevelMax29" var-class="variable" var-type="int" />
+        <field name="lootLevelMax30" var-class="variable" var-type="int" />
+        <field name="lootLevelMin01" var-class="variable" var-type="int" />
+        <field name="lootLevelMin02" var-class="variable" var-type="int" />
+        <field name="lootLevelMin03" var-class="variable" var-type="int" />
+        <field name="lootLevelMin04" var-class="variable" var-type="int" />
+        <field name="lootLevelMin05" var-class="variable" var-type="int" />
+        <field name="lootLevelMin06" var-class="variable" var-type="int" />
+        <field name="lootLevelMin07" var-class="variable" var-type="int" />
+        <field name="lootLevelMin08" var-class="variable" var-type="int" />
+        <field name="lootLevelMin09" var-class="variable" var-type="int" />
+        <field name="lootLevelMin10" var-class="variable" var-type="int" />
+        <field name="lootLevelMin11" var-class="variable" var-type="int" />
+        <field name="lootLevelMin12" var-class="variable" var-type="int" />
+        <field name="lootLevelMin13" var-class="variable" var-type="int" />
+        <field name="lootLevelMin14" var-class="variable" var-type="int" />
+        <field name="lootLevelMin15" var-class="variable" var-type="int" />
+        <field name="lootLevelMin16" var-class="variable" var-type="int" />
+        <field name="lootLevelMin17" var-class="variable" var-type="int" />
+        <field name="lootLevelMin18" var-class="variable" var-type="int" />
+        <field name="lootLevelMin19" var-class="variable" var-type="int" />
+        <field name="lootLevelMin20" var-class="variable" var-type="int" />
+        <field name="lootLevelMin21" var-class="variable" var-type="int" />
+        <field name="lootLevelMin22" var-class="variable" var-type="int" />
+        <field name="lootLevelMin23" var-class="variable" var-type="int" />
+        <field name="lootLevelMin24" var-class="variable" var-type="int" />
+        <field name="lootLevelMin25" var-class="variable" var-type="int" />
+        <field name="lootLevelMin26" var-class="variable" var-type="int" />
+        <field name="lootLevelMin27" var-class="variable" var-type="int" />
+        <field name="lootLevelMin28" var-class="variable" var-type="int" />
+        <field name="lootLevelMin29" var-class="variable" var-type="int" />
+        <field name="lootLevelMin30" var-class="variable" var-type="int" />
+        <field name="lootName01" var-class="variable" var-type="file_dbr">
+          <description>Item or LootTable</description>
+        </field>
+        <field name="lootName02" var-class="variable" var-type="file_dbr" />
+        <field name="lootName03" var-class="variable" var-type="file_dbr" />
+        <field name="lootName04" var-class="variable" var-type="file_dbr" />
+        <field name="lootName05" var-class="variable" var-type="file_dbr" />
+        <field name="lootName06" var-class="variable" var-type="file_dbr" />
+        <field name="lootName07" var-class="variable" var-type="file_dbr" />
+        <field name="lootName08" var-class="variable" var-type="file_dbr" />
+        <field name="lootName09" var-class="variable" var-type="file_dbr" />
+        <field name="lootName10" var-class="variable" var-type="file_dbr" />
+        <field name="lootName11" var-class="variable" var-type="file_dbr" />
+        <field name="lootName12" var-class="variable" var-type="file_dbr" />
+        <field name="lootName13" var-class="variable" var-type="file_dbr" />
+        <field name="lootName14" var-class="variable" var-type="file_dbr" />
+        <field name="lootName15" var-class="variable" var-type="file_dbr" />
+        <field name="lootName16" var-class="variable" var-type="file_dbr" />
+        <field name="lootName17" var-class="variable" var-type="file_dbr" />
+        <field name="lootName18" var-class="variable" var-type="file_dbr" />
+        <field name="lootName19" var-class="variable" var-type="file_dbr" />
+        <field name="lootName20" var-class="variable" var-type="file_dbr" />
+        <field name="lootName21" var-class="variable" var-type="file_dbr" />
+        <field name="lootName22" var-class="variable" var-type="file_dbr" />
+        <field name="lootName23" var-class="variable" var-type="file_dbr" />
+        <field name="lootName24" var-class="variable" var-type="file_dbr" />
+        <field name="lootName25" var-class="variable" var-type="file_dbr" />
+        <field name="lootName26" var-class="variable" var-type="file_dbr" />
+        <field name="lootName27" var-class="variable" var-type="file_dbr" />
+        <field name="lootName28" var-class="variable" var-type="file_dbr" />
+        <field name="lootName29" var-class="variable" var-type="file_dbr" />
+        <field name="lootName30" var-class="variable" var-type="file_dbr" />
+        <field name="lootWeight01" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight02" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight03" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight04" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight05" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight06" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight07" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight08" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight09" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight10" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight11" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight12" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight13" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight14" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight15" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight16" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight17" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight18" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight19" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight20" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight21" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight22" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight23" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight24" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight25" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight26" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight27" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight28" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight29" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="lootWeight30" var-class="variable" var-type="int" var-default-value="0" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

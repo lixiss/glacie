@@ -1,0 +1,34 @@
+﻿<partial>
+  <record-type name="DynGridEntrance">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="AnimationSounds">
+      <field name="sound1" />
+      <field name="sound2" />
+      <field name="sound3" />
+      <field name="sound4" />
+      <field name="sound5" />
+    </var-group>
+    <var-group name="Animations">
+      <field name="openIdleAnimation" />
+      <field name="openIdleAnimationSpeed" />
+      <field name="openingAnimation" />
+      <field name="openingAnimationSpeed" />
+    </var-group>
+    <var-group name="Config">
+      <field name="visibilityMode" />
+    </var-group>
+    <var-group name="Fx">
+      <field name="lightAttachPointName" />
+      <field name="lightFadeInTime" />
+      <field name="lightName" />
+    </var-group>
+    <var-group name="Sounds" system="true">
+      <field name="openIdleSound" />
+      <field name="openingSound" />
+    </var-group>
+  </record-type>
+</partial>

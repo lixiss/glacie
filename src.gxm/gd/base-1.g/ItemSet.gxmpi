@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="ItemSet">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="itemLevel" />
+      <field name="setDescription" />
+      <field name="setMembers" />
+      <field name="setName" />
+    </var-group>
+    <var-group name="Pet Bonus">
+      <field name="petBonusLevel" />
+    </var-group>
+    <var-group name="Skill Augment">
+      <field name="itemSkillLevel" />
+    </var-group>
+    <var-group name="Skill Modifiers">
+      <field name="itemSkillModifierControl" />
+    </var-group>
+  </record-type>
+</partial>

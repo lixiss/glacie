@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="CharacterHookPack">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Scripts">
+      <field name="characterHooks" />
+      <field name="onAddItem" />
+      <field name="onCallbackDie" />
+      <field name="onDie" />
+      <field name="onHear" />
+      <field name="onHit" />
+      <field name="onKillFoe" />
+      <field name="onReachedMovementGoal" />
+      <field name="onRemoveItem" />
+      <field name="onSpawn" />
+      <field name="onUpdateFast" />
+      <field name="onUpdateRealtime" />
+      <field name="onUpdateSlow" />
+    </var-group>
+  </record-type>
+</partial>

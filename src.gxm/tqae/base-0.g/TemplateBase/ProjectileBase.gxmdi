@@ -1,0 +1,38 @@
+﻿<partial>
+  <record-type name="TemplateBase.ProjectileBase" path="TemplateBase/ProjectileBase.tpl">
+    <inherits>
+      <inherit record="Actor" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Projectile Config">
+        <field name="notificationRadius" var-class="variable" var-type="real" var-default-value="5.0" />
+        <field name="projectileDistance" var-class="variable" var-type="real" />
+        <field name="projectileHitTimeToLive" var-class="variable" var-type="real" />
+        <field name="projectileMissTimeToLive" var-class="variable" var-type="real" />
+        <field name="shouldSpin" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="spinX" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="spinY" var-class="variable" var-type="real" var-default-value="0.0" />
+        <field name="spinZ" var-class="variable" var-type="real" var-default-value="0.0" />
+      </var-group>
+      <var-group name="Projectile Effects">
+        <field name="projectileFlightAnimation" var-class="variable" var-type="file_anm" />
+        <field name="projectileFlightAnimationSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="projectileFlightFX" var-class="variable" var-type="file_dbr" />
+        <field name="projectileImpactFX" var-class="variable" var-type="file_dbr" />
+        <field name="projectileLaunchAnimation" var-class="variable" var-type="file_anm" />
+        <field name="projectileLaunchAnimationSpeed" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="projectileWeaponTrail" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Projectile Sounds">
+        <field name="projectileExplodingHitSound" var-class="variable" var-type="file_dbr" />
+        <field name="projectileHitSound" var-class="variable" var-type="file_dbr" />
+        <field name="projectileSwipeSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

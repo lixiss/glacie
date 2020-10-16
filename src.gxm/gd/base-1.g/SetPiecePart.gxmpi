@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="SetPiecePart">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Part Config">
+      <field name="blockPathing" />
+      <field name="buffer" />
+      <field name="maxScale" />
+      <field name="minScale" />
+      <field name="names" />
+      <field name="positionX" />
+      <field name="positionY" />
+      <field name="positionZ" />
+      <field name="weight" />
+    </var-group>
+  </record-type>
+</partial>

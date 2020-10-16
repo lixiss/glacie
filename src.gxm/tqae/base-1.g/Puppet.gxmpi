@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="Puppet">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="endAnimation" />
+      <field name="endAnimationSpeed" />
+      <field name="fadeInTime" />
+      <field name="fadeOutTime" />
+      <field name="idleAnimation" />
+      <field name="idleAnimationSpeed" />
+      <field name="startAnimation" />
+      <field name="startAnimationSpeed" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="InGameUI.StackWindow" path="InGameUI/StackWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Stack">
+        <field name="cancelButton" var-class="variable" var-type="file_dbr" />
+        <field name="decreaseButton" var-class="variable" var-type="file_dbr" />
+        <field name="increaseButton" var-class="variable" var-type="file_dbr" />
+        <field name="inputBox" var-class="variable" var-type="file_dbr" />
+        <field name="okButton" var-class="variable" var-type="file_dbr" />
+        <field name="stackBackground" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

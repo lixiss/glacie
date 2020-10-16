@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="Skill_WeaponPool_ChargedFinale">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Melee Config">
+      <field name="skillTargetAngle" />
+      <field name="skillTargetNumber" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="skillProjectileAngle" />
+      <field name="skillProjectileNumber" />
+    </var-group>
+  </record-type>
+</partial>

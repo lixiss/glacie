@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="InGameUI.WorldMapSection">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="WorldMapSection">
+      <field name="texture" />
+      <field name="xPosition" />
+      <field name="yPosition" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,25 @@
+﻿<partial>
+  <record-type name="InGameUI.DetailMapWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="slideTime" />
+      <field name="windowCenteredX" />
+      <field name="windowCenteredY" />
+    </var-group>
+    <var-group name="DetailWindow">
+      <field name="MapPaneHeight" />
+      <field name="MapPaneWidth" />
+      <field name="MapPaneX" />
+      <field name="MapPaneY" />
+      <field name="OverlayImage" />
+      <field name="WindowLocationX" />
+      <field name="WindowLocationY" />
+      <field name="WindowTitle" />
+      <field name="backgroundImage" />
+    </var-group>
+  </record-type>
+</partial>

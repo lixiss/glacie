@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillTabCtrl" path="InGameUI/SkillTabCtrl.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="blueBitmap" var-class="variable" var-type="file_tex" />
+        <field name="goldBitmap" var-class="variable" var-type="file_tex" />
+        <field name="grayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="greenBitmap" var-class="variable" var-type="file_tex" />
+        <field name="redBitmap" var-class="variable" var-type="file_tex" />
+        <field name="skillBorderBitmap" var-class="variable" var-type="file_tex" />
+        <field name="skillLevel" var-class="variable" var-type="file_dbr" />
+        <field name="skillLevelBitmap" var-class="variable" var-type="file_tex" />
+        <field name="tabSkillButtons" var-class="array" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="LootRandomizer">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Configuration">
+      <field name="brokenDropSound" />
+      <field name="itemClassification" />
+      <field name="levelRequirement" />
+      <field name="lootRandomizerCost" />
+      <field name="lootRandomizerJitter" />
+      <field name="lootRandomizerName" />
+      <field name="lootRandomizerScale" />
+      <field name="marketAdjustmentPercent" />
+    </var-group>
+  </record-type>
+</partial>

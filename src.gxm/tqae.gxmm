@@ -1,0 +1,4 @@
+<metadata-module>
+  <include path="./tqae/base-0.g.gxmd" />
+  <include path="./tqae/base-1.g.gxmp" />
+</metadata-module>

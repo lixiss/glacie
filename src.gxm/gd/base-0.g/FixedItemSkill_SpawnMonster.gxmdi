@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="FixedItemSkill_SpawnMonster" path="FixedItemSkill_SpawnMonster.tpl">
+    <inherits>
+      <inherit record="TemplateBase.FixedItemSkill_Base" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="FixedItemSkill_SpawnMonster" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="monsterName" var-class="variable" var-type="file_dbr" />
+        <field name="timeToLive" var-class="variable" var-type="real">
+          <description>Seconds (0 is forever)</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

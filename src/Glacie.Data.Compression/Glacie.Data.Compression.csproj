@@ -29,8 +29,8 @@
   <ItemGroup>
     <PackageReference Include="Glacie.Data.Compression.runtime.win-x64" Version="0.1.0" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
     <PackageReference Include="Glacie.Data.Compression.runtime.win-x86" Version="0.1.0" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
-    <PackageReference Include="K4os.Compression.LZ4" Version="1.1.11" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="K4os.Compression.LZ4" Version="1.2.6" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <PackageReference Include="MinVer" Version="2.3.1">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>

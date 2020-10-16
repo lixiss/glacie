@@ -8,40 +8,37 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="Database.RecordSlot.cs" />
-    <Compile Include="Database.RecordSlotTable.cs" />
-    <Compile Include="Field.cs" />
-    <Compile Include="Infrastructure\gx_record_id.cs" />
-    <Compile Include="Infrastructure\IDatabaseProvider.cs" />
-    <Compile Include="Abstractions\ITarget.cs" />
-    <Compile Include="Abstractions\ISource.cs" />
-    <Compile Include="Abstractions\ITargetBuilder.cs" />
-    <Compile Include="Abstractions\ISourceBuilder.cs" />
-    <Compile Include="Infrastructure\Source.cs" />
-    <Compile Include="Infrastructure\SourceOrTarget.cs" />
-    <Compile Include="Infrastructure\Target.cs" />
-    <Compile Include="Infrastructure\TargetBuilder.cs" />
-    <Compile Include="Infrastructure\SourceBuilder.cs" />
-    <Compile Include="Context.cs" />
-    <Compile Include="Infrastructure\ContextBuilder.cs" />
-    <Compile Include="Abstractions\IContextBuilder.cs" />
-    <Compile Include="Database.cs" />
-    <Compile Include="GxError.cs" />
-    <Compile Include="GlacieException.cs" />
-    <Compile Include="Record.cs" />
+    <Compile Include="Discovery\EngineTypeDiscoverer.cs" />
+    <Compile Include="Extensions\ResourceManagerExtensions.cs" />
+    <Compile Include="Metadata.Factories\MetadataProviderFactory.cs" />
+    <Compile Include="Metadata.Factories\ResourceBundleDiscoveryResult.cs" />
+    <Compile Include="Metadata.Factories\TemplatesResourceBundleDiscoverer.cs" />
+    <Compile Include="Validation\ContextValidationExtensions.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Glacie.Context\Glacie.Context.csproj" />
+    <ProjectReference Include="..\Glacie.Core.IoC.GX4\Glacie.Core.IoC.GX4.csproj" />
     <ProjectReference Include="..\Glacie.Core\Glacie.Core.csproj" />
-    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Data.Arc\Glacie.Data.Arc.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Metadata\Glacie.Data.Metadata.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Resources\Glacie.Data.Resources.csproj" />
+    <ProjectReference Include="..\Glacie.Data.Templates\Glacie.Data.Templates.csproj" />
+    <ProjectReference Include="..\Glacie.Diagnostics\Glacie.Diagnostics.csproj" />
+    <ProjectReference Include="..\Glacie.Logging\Glacie.Logging.csproj" />
+    <ProjectReference Include="..\Glacie.Metadata\Glacie.Metadata.csproj" />
     <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+    <ProjectReference Include="..\Glacie.Resources.GX1\Glacie.Resources.GX1.csproj" />
+    <ProjectReference Include="..\Glacie.Targeting.GX1\Glacie.Targeting.GX1.csproj" />
+    <ProjectReference Include="..\Glacie.Validation\Glacie.Validation.csproj" />
   </ItemGroup>
 
 </Project>

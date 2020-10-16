@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="InGameUI.ScrollBar">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="downButton" />
+      <field name="positionX" />
+      <field name="positionY" />
+      <field name="scrollBar" />
+      <field name="scrollTrack" />
+      <field name="upButton" />
+    </var-group>
+  </record-type>
+</partial>

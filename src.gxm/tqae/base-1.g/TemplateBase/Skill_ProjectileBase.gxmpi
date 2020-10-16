@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_ProjectileBase">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="projectileExplosionRadius" />
+      <field name="projectileFragmentsLaunchNumberMax" />
+      <field name="projectileFragmentsLaunchNumberMin" />
+      <field name="projectileFragmentsName" />
+      <field name="projectilePiercingChance" />
+    </var-group>
+  </record-type>
+</partial>

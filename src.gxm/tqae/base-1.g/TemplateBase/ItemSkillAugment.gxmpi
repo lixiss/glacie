@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="TemplateBase.ItemSkillAugment">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Augment">
+      <field name="augmentAllLevel" />
+      <field name="augmentMasteryLevel1" />
+      <field name="augmentMasteryLevel2" />
+      <field name="augmentMasteryName1" />
+      <field name="augmentMasteryName2" />
+      <field name="augmentSkillLevel1" />
+      <field name="augmentSkillLevel2" />
+      <field name="augmentSkillName1" />
+      <field name="augmentSkillName2" />
+      <field name="itemSkillAutoController" />
+      <field name="itemSkillLevel" />
+      <field name="itemSkillName" />
+    </var-group>
+  </record-type>
+</partial>

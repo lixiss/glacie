@@ -1,0 +1,21 @@
+﻿<partial>
+  <record-type name="InGameUI.FlexibleBorders" path="InGameUI/FlexibleBorders.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="bottomTexture" var-class="variable" var-type="file_tex" />
+        <field name="leftTexture" var-class="variable" var-type="file_tex" />
+        <field name="lowerLeftTexture" var-class="variable" var-type="file_tex" />
+        <field name="lowerRightTexture" var-class="variable" var-type="file_tex" />
+        <field name="rightTexture" var-class="variable" var-type="file_tex" />
+        <field name="topTexture" var-class="variable" var-type="file_tex" />
+        <field name="upperLeftTexture" var-class="variable" var-type="file_tex" />
+        <field name="upperRightTexture" var-class="variable" var-type="file_tex" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

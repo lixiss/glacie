@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="MusicPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Sound Properties">
+      <field name="randomize" />
+      <field name="tracks" />
+    </var-group>
+  </record-type>
+</partial>

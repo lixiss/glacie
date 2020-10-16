@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="ItemTransmuterSet">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Transmuter">
+      <field name="fullBitmap" />
+      <field name="transmuteDbrs" />
+      <field name="transmuteTag" />
+      <field name="useSound" />
+    </var-group>
+  </record-type>
+</partial>

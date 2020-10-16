@@ -1,0 +1,55 @@
+﻿<partial>
+  <record-type name="InGameUI.SceneView" path="InGameUI/SceneView.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="UISceneView" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="SceneView" />
+      </var-group>
+      <var-group name="Camera">
+        <field name="cameraFarPlane" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="cameraFov" var-class="variable" var-type="real" var-default-value="15" />
+        <field name="cameraNearPlane" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="targetOffset.x" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="targetOffset.y" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="targetOffset.z" var-class="variable" var-type="real" var-default-value="1" />
+        <field name="targetPoint.x" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="targetPoint.y" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="targetPoint.z" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="targetPointName" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="backgroundColor.b" var-class="variable" var-type="real" />
+        <field name="backgroundColor.g" var-class="variable" var-type="real" />
+        <field name="backgroundColor.r" var-class="variable" var-type="real" />
+        <field name="backgroundTexture" var-class="variable" var-type="file_tex" />
+        <field name="maskTexture" var-class="variable" var-type="file_tex" />
+        <field name="rollover" var-class="variable" var-type="file_dbr" />
+        <field name="x" var-class="variable" var-type="int">
+          <description>Upper Left Corner</description>
+        </field>
+        <field name="xSize" var-class="variable" var-type="int" />
+        <field name="y" var-class="variable" var-type="int">
+          <description>Upper Left Corner</description>
+        </field>
+        <field name="ySize" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Lighting">
+        <field name="groundAmbientColor.b" var-class="variable" var-type="real" var-default-value="0.27" />
+        <field name="groundAmbientColor.g" var-class="variable" var-type="real" var-default-value="0.36" />
+        <field name="groundAmbientColor.r" var-class="variable" var-type="real" var-default-value="0.50" />
+        <field name="lightColor.b" var-class="variable" var-type="real" var-default-value="0.70" />
+        <field name="lightColor.g" var-class="variable" var-type="real" var-default-value="0.87" />
+        <field name="lightColor.r" var-class="variable" var-type="real" var-default-value="0.96" />
+        <field name="lightDirection.x" var-class="variable" var-type="real" var-default-value="0.38907024" />
+        <field name="lightDirection.y" var-class="variable" var-type="real" var-default-value="0.76469511" />
+        <field name="lightDirection.z" var-class="variable" var-type="real" var-default-value="0.51367861" />
+        <field name="skyAmbientColor.b" var-class="variable" var-type="real" var-default-value="0.49" />
+        <field name="skyAmbientColor.g" var-class="variable" var-type="real" var-default-value="0.45" />
+        <field name="skyAmbientColor.r" var-class="variable" var-type="real" var-default-value="0.43" />
+        <field name="worldBackground" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="worldLighting" var-class="variable" var-type="bool" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

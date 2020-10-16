@@ -1,0 +1,66 @@
+﻿<partial>
+  <record-type name="MenuLight">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Camera">
+      <field name="cameraFOV" />
+      <field name="cameraFarPlane" />
+      <field name="cameraNearPlane" />
+      <field name="cameraPosition.x" />
+      <field name="cameraPosition.y" />
+      <field name="cameraPosition.z" />
+      <field name="cameraTarget.x" />
+      <field name="cameraTarget.y" />
+      <field name="cameraTarget.z" />
+    </var-group>
+    <var-group name="DayLights">
+      <field name="lightDay1.b" />
+      <field name="lightDay1.g" />
+      <field name="lightDay1.r" />
+      <field name="lightDay2.b" />
+      <field name="lightDay2.g" />
+      <field name="lightDay2.r" />
+      <field name="lightDay3.b" />
+      <field name="lightDay3.g" />
+      <field name="lightDay3.r" />
+      <field name="lightDay4.b" />
+      <field name="lightDay4.g" />
+      <field name="lightDay4.r" />
+      <field name="lightDay5.b" />
+      <field name="lightDay5.g" />
+      <field name="lightDay5.r" />
+    </var-group>
+    <var-group name="General">
+      <field name="backgroundColor.b" />
+      <field name="backgroundColor.g" />
+      <field name="backgroundColor.r" />
+      <field name="bloomParams.a" />
+      <field name="bloomParams.b" />
+      <field name="bloomParams.c" />
+      <field name="lightDirection.x" />
+      <field name="lightDirection.y" />
+      <field name="lightDirection.z" />
+      <field name="shadowSoftness" />
+    </var-group>
+    <var-group name="NightLights">
+      <field name="lightNight1.b" />
+      <field name="lightNight1.g" />
+      <field name="lightNight1.r" />
+      <field name="lightNight2.b" />
+      <field name="lightNight2.g" />
+      <field name="lightNight2.r" />
+      <field name="lightNight3.b" />
+      <field name="lightNight3.g" />
+      <field name="lightNight3.r" />
+      <field name="lightNight4.b" />
+      <field name="lightNight4.g" />
+      <field name="lightNight4.r" />
+      <field name="lightNight5.b" />
+      <field name="lightNight5.g" />
+      <field name="lightNight5.r" />
+    </var-group>
+  </record-type>
+</partial>

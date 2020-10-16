@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="InGameUI.Includes.StringRollover2Tags" path="InGameUI/Includes/StringRollover2Tags.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Rollover Config">
+        <field name="rolloverStyleName" var-class="variable" var-type="file_dbr" />
+        <field name="rolloverTag" var-class="variable" var-type="string" />
+        <field name="rolloverTag2" var-class="variable" var-type="string">
+          <description>Used if a rollover needs two options, such as for pluralization</description>
+        </field>
+        <field name="textStyleName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

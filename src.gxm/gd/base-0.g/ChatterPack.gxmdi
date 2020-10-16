@@ -1,0 +1,101 @@
+﻿<partial>
+  <record-type name="ChatterPack" path="ChatterPack.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ChatterPack" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="detectMonsters" var-class="picklist" var-type="string" var-default-value="Never;My Faction;Always">
+          <description>Detect monsters?</description>
+        </field>
+        <field name="detectOthers" var-class="picklist" var-type="string" var-default-value="Never;My Faction;Always">
+          <description>Detect others? (npcs, etc)</description>
+        </field>
+        <field name="detectPlayers" var-class="picklist" var-type="string" var-default-value="Never;My Faction;Always">
+          <description>Detect players?</description>
+        </field>
+        <field name="detectionRadius" var-class="variable" var-type="real" var-default-value="5.0">
+          <description>Radius in which to detect characters (in meters, larger values result in slower processing)</description>
+        </field>
+        <field name="maxChatterPeriod" var-class="variable" var-type="real" var-default-value="60">
+          <description>Maximum time to wait between chatter (seconds)</description>
+        </field>
+        <field name="minChatterPeriod" var-class="variable" var-type="real" var-default-value="30">
+          <description>Minimum time to wait between chatter (seconds)</description>
+        </field>
+        <field name="regreetOnFactionChange" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Regreet anyone who comes back with a different faction than what we remember?</description>
+        </field>
+        <field name="simpleExclamations" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="simpleGreetings" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="updatePeriod" var-class="variable" var-type="real" var-default-value="0.5">
+          <description>Time in seconds between checks for nearby characters (higher values are better for performance)</description>
+        </field>
+      </var-group>
+      <var-group name="Faction Speech">
+        <field name="exChances1" var-class="array" var-type="int" />
+        <field name="exChances2" var-class="array" var-type="int" />
+        <field name="exChances3" var-class="array" var-type="int" />
+        <field name="exChances4" var-class="array" var-type="int" />
+        <field name="exChances5" var-class="array" var-type="int" />
+        <field name="exChances6" var-class="array" var-type="int" />
+        <field name="exChances7" var-class="array" var-type="int" />
+        <field name="exChances8" var-class="array" var-type="int" />
+        <field name="exChances9" var-class="array" var-type="int" />
+        <field name="exChances10" var-class="array" var-type="int" />
+        <field name="exChances11" var-class="array" var-type="int" />
+        <field name="exclamations1" var-class="array" var-type="string" />
+        <field name="exclamations2" var-class="array" var-type="string" />
+        <field name="exclamations3" var-class="array" var-type="string" />
+        <field name="exclamations4" var-class="array" var-type="string" />
+        <field name="exclamations5" var-class="array" var-type="string" />
+        <field name="exclamations6" var-class="array" var-type="string" />
+        <field name="exclamations7" var-class="array" var-type="string" />
+        <field name="exclamations8" var-class="array" var-type="string" />
+        <field name="exclamations9" var-class="array" var-type="string" />
+        <field name="exclamations10" var-class="array" var-type="string" />
+        <field name="exclamations11" var-class="array" var-type="string" />
+        <field name="grChances1" var-class="array" var-type="int" />
+        <field name="grChances2" var-class="array" var-type="int" />
+        <field name="grChances3" var-class="array" var-type="int" />
+        <field name="grChances4" var-class="array" var-type="int" />
+        <field name="grChances5" var-class="array" var-type="int" />
+        <field name="grChances6" var-class="array" var-type="int" />
+        <field name="grChances7" var-class="array" var-type="int" />
+        <field name="grChances8" var-class="array" var-type="int" />
+        <field name="grChances9" var-class="array" var-type="int" />
+        <field name="grChances10" var-class="array" var-type="int" />
+        <field name="grChances11" var-class="array" var-type="int" />
+        <field name="greetings1" var-class="array" var-type="string" />
+        <field name="greetings2" var-class="array" var-type="string" />
+        <field name="greetings3" var-class="array" var-type="string" />
+        <field name="greetings4" var-class="array" var-type="string" />
+        <field name="greetings5" var-class="array" var-type="string" />
+        <field name="greetings6" var-class="array" var-type="string" />
+        <field name="greetings7" var-class="array" var-type="string" />
+        <field name="greetings8" var-class="array" var-type="string" />
+        <field name="greetings9" var-class="array" var-type="string" />
+        <field name="greetings10" var-class="array" var-type="string" />
+        <field name="greetings11" var-class="array" var-type="string" />
+      </var-group>
+      <var-group name="Speech">
+        <field name="defeatExclamationChances" var-class="array" var-type="int" />
+        <field name="defeatExclamations" var-class="array" var-type="string">
+          <description>Tags to speak when I am killed</description>
+        </field>
+        <field name="randomExclamationChances" var-class="array" var-type="int" />
+        <field name="randomExclamations" var-class="array" var-type="string">
+          <description>Random exclamations are used when nothing is going on</description>
+        </field>
+        <field name="victoryExclamationChances" var-class="array" var-type="int">
+          <description>Absolute percentage chance to use each tag</description>
+        </field>
+        <field name="victoryExclamations" var-class="array" var-type="string">
+          <description>Tags to speak when I kill an opponent</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

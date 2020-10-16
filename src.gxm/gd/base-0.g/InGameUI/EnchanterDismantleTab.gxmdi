@@ -1,0 +1,72 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterDismantleTab" path="InGameUI/EnchanterDismantleTab.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Dismantle Config">
+        <field name="commonItemBonus" var-class="variable" var-type="file_dbr">
+          <description>MasterTable</description>
+        </field>
+        <field name="commonItemBonusWeight" var-class="variable" var-type="real">
+          <description>Bonus weight for common item</description>
+        </field>
+        <field name="dismantleCost" var-class="variable" var-type="equation">
+          <description>Cost for dismantling</description>
+        </field>
+        <field name="epicItemBonus" var-class="variable" var-type="file_dbr">
+          <description>MasterTable</description>
+        </field>
+        <field name="epicItemBonusWeight" var-class="variable" var-type="real">
+          <description>Bonus weight for epic item</description>
+        </field>
+        <field name="itemGenerated" var-class="variable" var-type="file_dbr">
+          <description>Base Item DBR</description>
+        </field>
+        <field name="itemWeights" var-class="array" var-type="int">
+          <description>Index Position + 1 = Items Generated</description>
+        </field>
+        <field name="legendaryItemBonus" var-class="variable" var-type="file_dbr">
+          <description>MasterTable</description>
+        </field>
+        <field name="legendaryItemBonusWeight" var-class="variable" var-type="real">
+          <description>Bonus weight for legend item</description>
+        </field>
+        <field name="magicItemBonus" var-class="variable" var-type="file_dbr">
+          <description>MasterTable</description>
+        </field>
+        <field name="magicItemBonusWeight" var-class="variable" var-type="real">
+          <description>Bonus weight for magical item</description>
+        </field>
+        <field name="rareItemBonus" var-class="variable" var-type="file_dbr">
+          <description>MasterTable</description>
+        </field>
+        <field name="rareItemBonusWeight" var-class="variable" var-type="real">
+          <description>Bonus weight for rare item</description>
+        </field>
+      </var-group>
+      <var-group name="Dismantle Tab">
+        <field name="dismantleBox1" var-class="variable" var-type="file_dbr" />
+        <field name="dismantleBox2" var-class="variable" var-type="file_dbr" />
+        <field name="dismantleCostNumber" var-class="variable" var-type="file_dbr" />
+        <field name="dismantleCostText" var-class="variable" var-type="file_dbr" />
+        <field name="dismantleItemButton" var-class="variable" var-type="file_dbr" />
+        <field name="dismantleItemSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="dynamiteBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="dynamiteNotEnoughNumber" var-class="variable" var-type="file_dbr" />
+        <field name="dynamiteNumberBoxBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="dynamiteTotalNumber" var-class="variable" var-type="file_dbr" />
+        <field name="dynamiteTotalText" var-class="variable" var-type="file_dbr" />
+        <field name="itemBox" var-class="variable" var-type="file_dbr" />
+        <field name="tooExpensiveCostNumber" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

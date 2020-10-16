@@ -74,7 +74,7 @@ namespace Glacie.Cli.Arc.Commands
             }
 
             long totalLength = 0;
-            foreach (var entry in inputArchive.GetEntries())
+            foreach (var entry in inputArchive.SelectAll())
             {
                 totalLength += entry.Length;
             }
@@ -103,7 +103,7 @@ namespace Glacie.Cli.Arc.Commands
 
         private void CopyEntries(ArcArchive inputArchive, ArcArchive outputArchive, ProgressView? progress)
         {
-            foreach (var inputEntry in inputArchive.GetEntries())
+            foreach (var inputEntry in inputArchive.SelectAll())
             {
                 progress?.SetMessage(inputEntry.Name);
 
@@ -111,7 +111,7 @@ namespace Glacie.Cli.Arc.Commands
                         ? CompressionLevel.NoCompression
                         : (CompressionLevel?)null;
 
-                var outputEntry = outputArchive.CreateEntry(inputEntry.Name);
+                var outputEntry = outputArchive.Add(inputEntry.Name);
 
                 {
                     using var inputStream = inputEntry.Open();

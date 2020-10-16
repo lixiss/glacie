@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="RespawnPoint">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Respawn Parameters">
+      <field name="respawnBindingSound" />
+      <field name="respawnRadius" />
+    </var-group>
+  </record-type>
+</partial>

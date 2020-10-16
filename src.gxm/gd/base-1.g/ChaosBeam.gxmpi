@@ -1,0 +1,30 @@
+﻿<partial>
+  <record-type name="ChaosBeam">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="Alpha255" />
+      <field name="BeamCount" />
+      <field name="Blue255" />
+      <field name="DynamicScale" />
+      <field name="EndAlpha" />
+      <field name="EndScale" />
+      <field name="Green255" />
+      <field name="Red255" />
+      <field name="ScaleLengthPercent1" />
+      <field name="ScaleLengthPercent2" />
+      <field name="Shader" />
+      <field name="StartScale" />
+      <field name="Texture" />
+      <field name="TextureStretch" />
+      <field name="TotalAmplitude" />
+      <field name="TotalSegments" />
+      <field name="WaveAmplitude" />
+      <field name="WaveSpeed" />
+      <field name="Width" />
+    </var-group>
+  </record-type>
+</partial>

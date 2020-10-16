@@ -1,0 +1,10 @@
+﻿<partial>
+  <record-type name="InGameUI.TutorialTrigger">
+    <var-group name="Tutorial">
+      <field name="tutorialKey" />
+      <field name="tutorialOffsetY" />
+      <field name="tutorialTag" />
+      <field name="tutorialTrigger" />
+    </var-group>
+  </record-type>
+</partial>

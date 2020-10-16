@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="InGameUI.BarGraphAnimated">
+    <var-group name="Config">
+      <field name="framesPerSecond" />
+      <field name="renderBackground" />
+      <field name="textOffsetY" />
+      <field name="totalFrames" />
+      <field name="xFrames" />
+      <field name="xSpacing" />
+      <field name="yFrames" />
+      <field name="ySpacing" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="GoldGenerator">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="goldActors" />
+      <field name="goldAmountEquation" />
+      <field name="goldAmountEquation2" />
+      <field name="goldSplitMax" />
+      <field name="goldSplitMin" />
+      <field name="goldSplitSizeMin" />
+      <field name="goldValueMax" />
+      <field name="goldValueMin" />
+    </var-group>
+  </record-type>
+</partial>

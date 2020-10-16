@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 
+using Glacie.Data;
 using Glacie.Data.Arc;
 using Glacie.Data.Arz;
 using Glacie.Data.Compression;
@@ -109,6 +110,29 @@ namespace Glacie.Cli
                 case "auto":
                 case "automatic":
                     return ArzFileFormat.Automatic;
+
+                default:
+                    parsed.ErrorMessage = "Cannot parse argument '{0}' for option '{1}'.".FormatWith(tokenValue, parsed.Argument.Name);
+                    return default;
+            }
+        }
+
+        public static EngineClass ParseEngineClass(ArgumentResult parsed)
+        {
+            if (parsed.Tokens.Count == 0) return default;
+
+            var tokenValue = parsed.Tokens.Single().Value;
+
+            if (EngineClass.TryParse(tokenValue, out var result))
+            {
+                return result;
+            }
+
+            switch (tokenValue.ToLowerInvariant())
+            {
+                case "auto":
+                case "automatic":
+                    return default;
 
                 default:
                     parsed.ErrorMessage = "Cannot parse argument '{0}' for option '{1}'.".FormatWith(tokenValue, parsed.Argument.Name);

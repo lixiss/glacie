@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="Engine.DayNightLight">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Light Variables">
+      <field name="dayColor.b" />
+      <field name="dayColor.g" />
+      <field name="dayColor.r" />
+      <field name="nightColor.b" />
+      <field name="nightColor.g" />
+      <field name="nightColor.r" />
+      <field name="radius" />
+      <field name="shadowPriority" />
+    </var-group>
+  </record-type>
+</partial>

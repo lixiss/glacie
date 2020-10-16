@@ -1,0 +1,167 @@
+﻿<partial>
+  <record-type name="CharacterEnemy" path="CharacterEnemy.tpl">
+    <inherits>
+      <inherit record="Actor" />
+      <inherit record="TemplateBase.CharacterBioEnemy" />
+      <inherit record="TemplateBase.Reward" />
+      <inherit record="CharAnimationTable" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Character" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Animation Sets">
+        <field name="charAnimationTableName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Animation Sounds">
+        <field name="bodyFallSound" var-class="variable" var-type="file_dbr" />
+        <field name="bodyFallSoundChance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="criticalHitSound" var-class="variable" var-type="file_dbr" />
+        <field name="deathSound1" var-class="variable" var-type="file_dbr" />
+        <field name="deathSound2" var-class="variable" var-type="file_dbr" />
+        <field name="deathSound3" var-class="variable" var-type="file_dbr" />
+        <field name="genericSound1" var-class="variable" var-type="file_dbr" />
+        <field name="genericSound1Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="genericSound2" var-class="variable" var-type="file_dbr" />
+        <field name="genericSound2Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="genericSound3" var-class="variable" var-type="file_dbr" />
+        <field name="genericSound3Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="genericSound4" var-class="variable" var-type="file_dbr" />
+        <field name="genericSound4Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="specialAttackSound1" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttackSound1Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="specialAttackSound2" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttackSound2Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="specialAttackSound3" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttackSound3Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="specialAttackSound4" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttackSound4Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="voiceSound1" var-class="variable" var-type="file_dbr" />
+        <field name="voiceSound1Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="voiceSound2" var-class="variable" var-type="file_dbr" />
+        <field name="voiceSound2Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="voiceSound3" var-class="variable" var-type="file_dbr" />
+        <field name="voiceSound3Chance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="voxSound" var-class="variable" var-type="file_dbr" />
+        <field name="voxSoundChance" var-class="variable" var-type="real" var-default-value="100" />
+      </var-group>
+      <var-group name="Character">
+        <field name="LowerHealthDisplayPercentage" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="UpperHealthDisplayPercentage" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="angerMultiplier" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="causesAnger" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="characterGenderProfile" var-class="picklist" var-type="string" var-default-value="World;Male;Female;Native;BodyTypeA;BodyTypeB;BodyTypeC;" />
+        <field name="characterRacialProfile" var-class="array" var-type="string" />
+        <field name="combatManagerRecord" var-class="variable" var-type="file_dbr" />
+        <field name="deathAnimBlendTime" var-class="variable" var-type="real" var-default-value="250.0" />
+        <field name="defaultHeadPiece" var-class="variable" var-type="file_dbr" />
+        <field name="defaultTeamMajor" var-class="picklist" var-type="string" var-default-value="TeamMajor_Monster;TeamMajor_Human;TeamMajor_Friendly;TeamMajor_Hostile" />
+        <field name="defaultTeamMinor" var-class="picklist" var-type="string" var-default-value="TeamMinorMonster_Friendly;TeamMinorMonster_Hostile;TeamMinorMonster_Red;TeamMinorMonster_Orange;TeamMinorMonster_Yellow;TeamMinorMonster_Green;TeamMinorMonster_Blue;TeamMinorMonster_Indigo;TeamMinorMonster_Violet;TeamMinorHuman_Friendly" />
+        <field name="distressCall" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="distressCallGroup" var-class="picklist" var-type="string" var-default-value="Arachnos;CryptWorm;DuneRaider;Euronymus;Harpy;Ichthian;Jackalman;Maenad;Mantid;Minotaur;Neanderthal;Peng;Raptor;Ratman;Reptillian;Satyr;Skeleton;Sprite;Tigerman;Yerren" />
+        <field name="distressCallRange" var-class="variable" var-type="real" var-default-value="15.0" />
+        <field name="distressCallTime" var-class="variable" var-type="int" var-default-value="5000" />
+        <field name="experiencePoints" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="forcedUpdates" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="hiddenFromCombat" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Hide from UI and Combat</description>
+        </field>
+        <field name="invincible" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="maxDistressCalls" var-class="variable" var-type="int" var-default-value="1" />
+        <field name="numAttackSlots" var-class="variable" var-type="int" var-default-value="4" />
+        <field name="numDefenseSlots" var-class="variable" var-type="int" var-default-value="4" />
+        <field name="pathingSize" var-class="picklist" var-type="string" var-default-value="Small;Medium;Large" />
+        <field name="portraitName" var-class="variable" var-type="file_dbr" />
+        <field name="portraitTag" var-class="variable" var-type="int" />
+        <field name="startVisible" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="triggerBoundingVolumes" var-class="variable" var-type="bool" var-default-value="0">
+          <description>will this character trigger bounding volume events</description>
+        </field>
+        <field name="walkSpeed" var-class="variable" var-type="real" />
+        <field name="weaponScale" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="Character Effects">
+        <field name="dyingFxPak" var-class="variable" var-type="file_dbr" />
+        <field name="levelUpFx" var-class="variable" var-type="file_dbr">
+          <description>Effect Entity</description>
+        </field>
+        <field name="prespawnEffect" var-class="variable" var-type="file_dbr" />
+        <field name="spawnEffect" var-class="variable" var-type="file_dbr" />
+        <field name="spawnSoundEffect" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Character Sounds">
+        <field name="attackSound" var-class="variable" var-type="file_dbr" />
+        <field name="footSoundSand" var-class="variable" var-type="file_dbr" />
+        <field name="impactSound" var-class="variable" var-type="file_dbr" />
+        <field name="impactSoundChance" var-class="variable" var-type="real" var-default-value="100" />
+        <field name="levelUpSound" var-class="variable" var-type="file_dbr" />
+        <field name="loopingRunningSound" var-class="variable" var-type="file_dbr" />
+        <field name="loopingRunningSoundFadeTime" var-class="variable" var-type="int" var-default-value="1000">
+          <description>in milliseconds</description>
+        </field>
+        <field name="lootSound" var-class="variable" var-type="file_dbr" />
+        <field name="lowHealthResetLevel" var-class="variable" var-type="real" />
+        <field name="lowHealthSound" var-class="variable" var-type="file_dbr" />
+        <field name="lowHealthTriggerLevel" var-class="variable" var-type="real" />
+        <field name="splashSound" var-class="variable" var-type="file_dbr" />
+        <field name="stunSound" var-class="variable" var-type="file_dbr" />
+        <field name="swipeSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Death Parameters">
+        <field name="actorToSpawnForMyBones" var-class="variable" var-type="file_dbr" />
+        <field name="actorToSpawnOnDeath" var-class="variable" var-type="file_dbr" />
+        <field name="deathEffect" var-class="variable" var-type="file_dbr">
+          <description>effect that plays when character starts dying</description>
+        </field>
+        <field name="deleteBehavior" var-class="picklist" var-type="string" var-default-value="None;Delete;Dissolve;DissolveOnCallback;PlayEffect;PlaySound;Fade">
+          <description>if delete, removes actor on death, if dissolve - deletes actor with dissolve effect</description>
+        </field>
+        <field name="dissolveColorB" var-class="variable" var-type="int">
+          <description>range 0 to 255</description>
+        </field>
+        <field name="dissolveColorG" var-class="variable" var-type="int">
+          <description>range 0 to 255</description>
+        </field>
+        <field name="dissolveColorR" var-class="variable" var-type="int">
+          <description>range 0 to 255</description>
+        </field>
+        <field name="dissolveEffect" var-class="variable" var-type="file_dbr" />
+        <field name="dissolveLight" var-class="variable" var-type="file_dbr" />
+        <field name="dissolveTexture" var-class="variable" var-type="file_tex" />
+        <field name="dissolveTime" var-class="variable" var-type="real" var-default-value="2.0" />
+        <field name="doLateCrumple" var-class="variable" var-type="bool" />
+        <field name="overrideRagdollBehavior" var-class="picklist" var-type="string" var-default-value=";Crumple;TakeHit;Random" />
+        <field name="overrideRagdollSpeed" var-class="variable" var-type="real" />
+        <field name="waitForCallbackToSpawn" var-class="variable" var-type="bool" var-default-value="0" />
+      </var-group>
+      <var-group name="Footsteps">
+        <field name="footDirt" var-class="variable" var-type="file_dbr" />
+        <field name="footGrass" var-class="variable" var-type="file_dbr" />
+        <field name="footPrint" var-class="variable" var-type="file_dbr" />
+        <field name="footSand" var-class="variable" var-type="file_dbr" />
+        <field name="footSnow" var-class="variable" var-type="file_dbr" />
+        <field name="footStone" var-class="variable" var-type="file_dbr" />
+        <field name="footWater" var-class="variable" var-type="file_dbr" />
+        <field name="footWood" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Movement Parameters">
+        <field name="avoidForce" var-class="variable" var-type="real" var-default-value="0.5" />
+        <field name="dbIgnoreWhenPathing" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="disallowRotation" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="maxRotationSpeed" var-class="variable" var-type="real" var-default-value="12.0" />
+        <field name="minRotationSpeed" var-class="variable" var-type="real" var-default-value="9.0" />
+        <field name="pathGenerationStyle" var-class="picklist" var-type="string" var-default-value="Default;Sheep" />
+        <field name="pathMass" var-class="variable" var-type="real" var-default-value="1.0" />
+        <field name="rotateWhenChatting" var-class="variable" var-type="bool" var-default-value="1" />
+        <field name="tweakSpineOnTurn" var-class="variable" var-type="bool" />
+      </var-group>
+      <var-group name="Special Handlers">
+        <field name="specialCharHandlerNames" var-class="array" var-type="file_dbr">
+          <description>SpecialCharHandler records</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

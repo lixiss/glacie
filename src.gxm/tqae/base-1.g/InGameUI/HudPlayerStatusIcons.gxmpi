@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="InGameUI.HudPlayerStatusIcons">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="activeHudAreaSizeX" />
+      <field name="activeHudAreaSizeY" />
+      <field name="activeHudAreaX" />
+      <field name="activeHudAreaY" />
+      <field name="iconHorizSpace" />
+    </var-group>
+  </record-type>
+</partial>

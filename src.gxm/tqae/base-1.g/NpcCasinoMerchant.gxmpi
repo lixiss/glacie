@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="NpcCasinoMerchant">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="SpawnSound1" />
+      <field name="SpawnSound2" />
+      <field name="orbSpawnOffsetX" />
+      <field name="orbSpawnOffsetY" />
+      <field name="orbSpawnOffsetZ" />
+    </var-group>
+  </record-type>
+</partial>

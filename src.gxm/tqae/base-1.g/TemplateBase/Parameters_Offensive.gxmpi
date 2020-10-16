@@ -1,0 +1,475 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Offensive">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Offensive Parameters">
+      <var-group name="Offensive Absolute">
+        <var-group name="Item Base Damage">
+          <field name="offensiveBaseColdChance" />
+          <field name="offensiveBaseColdGlobal" />
+          <field name="offensiveBaseColdMax" />
+          <field name="offensiveBaseColdMin" />
+          <field name="offensiveBaseColdXOR" />
+          <field name="offensiveBaseFireChance" />
+          <field name="offensiveBaseFireGlobal" />
+          <field name="offensiveBaseFireMax" />
+          <field name="offensiveBaseFireMin" />
+          <field name="offensiveBaseFireXOR" />
+          <field name="offensiveBaseLifeChance" />
+          <field name="offensiveBaseLifeGlobal" />
+          <field name="offensiveBaseLifeMax" />
+          <field name="offensiveBaseLifeMin" />
+          <field name="offensiveBaseLifeXOR" />
+          <field name="offensiveBaseLightningChance" />
+          <field name="offensiveBaseLightningGlobal" />
+          <field name="offensiveBaseLightningMax" />
+          <field name="offensiveBaseLightningMin" />
+          <field name="offensiveBaseLightningXOR" />
+          <field name="offensiveBasePoisonChance" />
+          <field name="offensiveBasePoisonGlobal" />
+          <field name="offensiveBasePoisonMax" />
+          <field name="offensiveBasePoisonMin" />
+          <field name="offensiveBasePoisonXOR" />
+        </var-group>
+        <var-group name="Offensive Cold">
+          <field name="offensiveColdChance" />
+          <field name="offensiveColdGlobal" />
+          <field name="offensiveColdMax" />
+          <field name="offensiveColdMin" />
+          <field name="offensiveColdModifier" />
+          <field name="offensiveColdModifierChance" />
+          <field name="offensiveColdXOR" />
+        </var-group>
+        <var-group name="Offensive Disruption">
+          <field name="offensiveDisruptionChance" />
+          <field name="offensiveDisruptionGlobal" />
+          <field name="offensiveDisruptionMax" />
+          <field name="offensiveDisruptionMin" />
+          <field name="offensiveDisruptionXOR" />
+        </var-group>
+        <var-group name="Offensive Elemental">
+          <field name="offensiveElementalChance" />
+          <field name="offensiveElementalGlobal" />
+          <field name="offensiveElementalMax" />
+          <field name="offensiveElementalMin" />
+          <field name="offensiveElementalModifier" />
+          <field name="offensiveElementalModifierChance" />
+          <field name="offensiveElementalXOR" />
+        </var-group>
+        <var-group name="Offensive Fire">
+          <field name="offensiveFireChance" />
+          <field name="offensiveFireGlobal" />
+          <field name="offensiveFireMax" />
+          <field name="offensiveFireMin" />
+          <field name="offensiveFireModifier" />
+          <field name="offensiveFireModifierChance" />
+          <field name="offensiveFireXOR" />
+        </var-group>
+        <var-group name="Offensive Life">
+          <field name="offensiveLifeChance" />
+          <field name="offensiveLifeGlobal" />
+          <field name="offensiveLifeMax" />
+          <field name="offensiveLifeMin" />
+          <field name="offensiveLifeModifier" />
+          <field name="offensiveLifeModifierChance" />
+          <field name="offensiveLifeXOR" />
+        </var-group>
+        <var-group name="Offensive Life Leech">
+          <field name="offensiveLifeLeechChance" />
+          <field name="offensiveLifeLeechGlobal" />
+          <field name="offensiveLifeLeechMax" />
+          <field name="offensiveLifeLeechMin" />
+          <field name="offensiveLifeLeechXOR" />
+        </var-group>
+        <var-group name="Offensive Lightning">
+          <field name="offensiveLightningChance" />
+          <field name="offensiveLightningGlobal" />
+          <field name="offensiveLightningMax" />
+          <field name="offensiveLightningMin" />
+          <field name="offensiveLightningModifier" />
+          <field name="offensiveLightningModifierChance" />
+          <field name="offensiveLightningXOR" />
+        </var-group>
+        <var-group name="Offensive Mana Burn">
+          <field name="offensiveManaBurnChance" />
+          <field name="offensiveManaBurnDamageRatio" />
+          <field name="offensiveManaBurnDrainMax" />
+          <field name="offensiveManaBurnDrainMin" />
+          <field name="offensiveManaBurnGlobal" />
+          <field name="offensiveManaBurnRatioAdder" />
+          <field name="offensiveManaBurnRatioAdderChance" />
+          <field name="offensiveManaBurnXOR" />
+        </var-group>
+        <var-group name="Offensive Percent Current Life">
+          <field name="offensivePercentCurrentLifeChance" />
+          <field name="offensivePercentCurrentLifeGlobal" />
+          <field name="offensivePercentCurrentLifeMax" />
+          <field name="offensivePercentCurrentLifeMin" />
+          <field name="offensivePercentCurrentLifeXOR" />
+        </var-group>
+        <var-group name="Offensive Physical">
+          <field name="offensivePhysicalChance" />
+          <field name="offensivePhysicalGlobal" />
+          <field name="offensivePhysicalMax" />
+          <field name="offensivePhysicalMin" />
+          <field name="offensivePhysicalModifier" />
+          <field name="offensivePhysicalModifierChance" />
+          <field name="offensivePhysicalXOR" />
+        </var-group>
+        <var-group name="Offensive Pierce">
+          <field name="offensivePierceChance" />
+          <field name="offensivePierceGlobal" />
+          <field name="offensivePierceMax" />
+          <field name="offensivePierceMin" />
+          <field name="offensivePierceModifier" />
+          <field name="offensivePierceModifierChance" />
+          <field name="offensivePierceXOR" />
+        </var-group>
+        <var-group name="Offensive PierceRatio">
+          <field name="offensivePierceRatioChance" />
+          <field name="offensivePierceRatioGlobal" />
+          <field name="offensivePierceRatioMax" />
+          <field name="offensivePierceRatioMin" />
+          <field name="offensivePierceRatioModifier" />
+          <field name="offensivePierceRatioModifierChance" />
+          <field name="offensivePierceRatioXOR" />
+        </var-group>
+        <var-group name="Offensive Poison">
+          <field name="offensivePoisonChance" />
+          <field name="offensivePoisonGlobal" />
+          <field name="offensivePoisonMax" />
+          <field name="offensivePoisonMin" />
+          <field name="offensivePoisonModifier" />
+          <field name="offensivePoisonModifierChance" />
+          <field name="offensivePoisonXOR" />
+        </var-group>
+        <var-group name="Total Damage Modifier">
+          <field name="offensiveTotalDamageGlobal" />
+          <field name="offensiveTotalDamageModifier" />
+          <field name="offensiveTotalDamageModifierChance" />
+          <field name="offensiveTotalDamageXOR" />
+        </var-group>
+      </var-group>
+      <var-group name="Offensive Duration">
+        <var-group name="Offensive Fumble">
+          <field name="offensiveFumbleChance" />
+          <field name="offensiveFumbleDurationMax" />
+          <field name="offensiveFumbleDurationMin" />
+          <field name="offensiveFumbleGlobal" />
+          <field name="offensiveFumbleMax" />
+          <field name="offensiveFumbleMin" />
+          <field name="offensiveFumbleXOR" />
+        </var-group>
+        <var-group name="Offensive Projectile Fumble">
+          <field name="offensiveProjectileFumbleChance" />
+          <field name="offensiveProjectileFumbleDurationMax" />
+          <field name="offensiveProjectileFumbleDurationMin" />
+          <field name="offensiveProjectileFumbleGlobal" />
+          <field name="offensiveProjectileFumbleMax" />
+          <field name="offensiveProjectileFumbleMin" />
+          <field name="offensiveProjectileFumbleXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Attack Speed">
+          <field name="offensiveSlowAttackSpeedChance" />
+          <field name="offensiveSlowAttackSpeedDurationMax" />
+          <field name="offensiveSlowAttackSpeedDurationMin" />
+          <field name="offensiveSlowAttackSpeedDurationModifier" />
+          <field name="offensiveSlowAttackSpeedGlobal" />
+          <field name="offensiveSlowAttackSpeedMax" />
+          <field name="offensiveSlowAttackSpeedMin" />
+          <field name="offensiveSlowAttackSpeedModifier" />
+          <field name="offensiveSlowAttackSpeedModifierChance" />
+          <field name="offensiveSlowAttackSpeedXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Bleeding">
+          <field name="offensiveSlowBleedingChance" />
+          <field name="offensiveSlowBleedingDurationMax" />
+          <field name="offensiveSlowBleedingDurationMin" />
+          <field name="offensiveSlowBleedingDurationModifier" />
+          <field name="offensiveSlowBleedingGlobal" />
+          <field name="offensiveSlowBleedingMax" />
+          <field name="offensiveSlowBleedingMin" />
+          <field name="offensiveSlowBleedingModifier" />
+          <field name="offensiveSlowBleedingModifierChance" />
+          <field name="offensiveSlowBleedingXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Cold">
+          <field name="offensiveSlowColdChance" />
+          <field name="offensiveSlowColdDurationMax" />
+          <field name="offensiveSlowColdDurationMin" />
+          <field name="offensiveSlowColdDurationModifier" />
+          <field name="offensiveSlowColdGlobal" />
+          <field name="offensiveSlowColdMax" />
+          <field name="offensiveSlowColdMin" />
+          <field name="offensiveSlowColdModifier" />
+          <field name="offensiveSlowColdModifierChance" />
+          <field name="offensiveSlowColdXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Defensive Ability">
+          <field name="offensiveSlowDefensiveAbilityChance" />
+          <field name="offensiveSlowDefensiveAbilityDurationMax" />
+          <field name="offensiveSlowDefensiveAbilityDurationMin" />
+          <field name="offensiveSlowDefensiveAbilityDurationModifier" />
+          <field name="offensiveSlowDefensiveAbilityGlobal" />
+          <field name="offensiveSlowDefensiveAbilityMax" />
+          <field name="offensiveSlowDefensiveAbilityMin" />
+          <field name="offensiveSlowDefensiveAbilityModifier" />
+          <field name="offensiveSlowDefensiveAbilityModifierChance" />
+          <field name="offensiveSlowDefensiveAbilityXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Defensive Reduction">
+          <field name="offensiveSlowDefensiveReductionChance" />
+          <field name="offensiveSlowDefensiveReductionDurationMax" />
+          <field name="offensiveSlowDefensiveReductionDurationMin" />
+          <field name="offensiveSlowDefensiveReductionDurationModifier" />
+          <field name="offensiveSlowDefensiveReductionGlobal" />
+          <field name="offensiveSlowDefensiveReductionMax" />
+          <field name="offensiveSlowDefensiveReductionMin" />
+          <field name="offensiveSlowDefensiveReductionModifier" />
+          <field name="offensiveSlowDefensiveReductionModifierChance" />
+          <field name="offensiveSlowDefensiveReductionXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Fire">
+          <field name="offensiveSlowFireChance" />
+          <field name="offensiveSlowFireDurationMax" />
+          <field name="offensiveSlowFireDurationMin" />
+          <field name="offensiveSlowFireDurationModifier" />
+          <field name="offensiveSlowFireGlobal" />
+          <field name="offensiveSlowFireMax" />
+          <field name="offensiveSlowFireMin" />
+          <field name="offensiveSlowFireModifier" />
+          <field name="offensiveSlowFireModifierChance" />
+          <field name="offensiveSlowFireXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Life">
+          <field name="offensiveSlowLifeChance" />
+          <field name="offensiveSlowLifeDurationMax" />
+          <field name="offensiveSlowLifeDurationMin" />
+          <field name="offensiveSlowLifeDurationModifier" />
+          <field name="offensiveSlowLifeGlobal" />
+          <field name="offensiveSlowLifeMax" />
+          <field name="offensiveSlowLifeMin" />
+          <field name="offensiveSlowLifeModifier" />
+          <field name="offensiveSlowLifeModifierChance" />
+          <field name="offensiveSlowLifeXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Life Leach">
+          <field name="offensiveSlowLifeLeachChance" />
+          <field name="offensiveSlowLifeLeachDurationMax" />
+          <field name="offensiveSlowLifeLeachDurationMin" />
+          <field name="offensiveSlowLifeLeachDurationModifier" />
+          <field name="offensiveSlowLifeLeachGlobal" />
+          <field name="offensiveSlowLifeLeachMax" />
+          <field name="offensiveSlowLifeLeachMin" />
+          <field name="offensiveSlowLifeLeachModifier" />
+          <field name="offensiveSlowLifeLeachModifierChance" />
+          <field name="offensiveSlowLifeLeachXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Lightning">
+          <field name="offensiveSlowLightningChance" />
+          <field name="offensiveSlowLightningDurationMax" />
+          <field name="offensiveSlowLightningDurationMin" />
+          <field name="offensiveSlowLightningDurationModifier" />
+          <field name="offensiveSlowLightningGlobal" />
+          <field name="offensiveSlowLightningMax" />
+          <field name="offensiveSlowLightningMin" />
+          <field name="offensiveSlowLightningModifier" />
+          <field name="offensiveSlowLightningModifierChance" />
+          <field name="offensiveSlowLightningXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Mana Leach">
+          <field name="offensiveSlowManaLeachChance" />
+          <field name="offensiveSlowManaLeachDurationMax" />
+          <field name="offensiveSlowManaLeachDurationMin" />
+          <field name="offensiveSlowManaLeachDurationModifier" />
+          <field name="offensiveSlowManaLeachGlobal" />
+          <field name="offensiveSlowManaLeachMax" />
+          <field name="offensiveSlowManaLeachMin" />
+          <field name="offensiveSlowManaLeachModifier" />
+          <field name="offensiveSlowManaLeachModifierChance" />
+          <field name="offensiveSlowManaLeachXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Offensive Ability">
+          <field name="offensiveSlowOffensiveAbilityChance" />
+          <field name="offensiveSlowOffensiveAbilityDurationMax" />
+          <field name="offensiveSlowOffensiveAbilityDurationMin" />
+          <field name="offensiveSlowOffensiveAbilityDurationModifier" />
+          <field name="offensiveSlowOffensiveAbilityGlobal" />
+          <field name="offensiveSlowOffensiveAbilityMax" />
+          <field name="offensiveSlowOffensiveAbilityMin" />
+          <field name="offensiveSlowOffensiveAbilityModifier" />
+          <field name="offensiveSlowOffensiveAbilityModifierChance" />
+          <field name="offensiveSlowOffensiveAbilityXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Offensive Reduction">
+          <field name="offensiveSlowOffensiveReductionChance" />
+          <field name="offensiveSlowOffensiveReductionDurationMax" />
+          <field name="offensiveSlowOffensiveReductionDurationMin" />
+          <field name="offensiveSlowOffensiveReductionDurationModifier" />
+          <field name="offensiveSlowOffensiveReductionGlobal" />
+          <field name="offensiveSlowOffensiveReductionMax" />
+          <field name="offensiveSlowOffensiveReductionMin" />
+          <field name="offensiveSlowOffensiveReductionModifier" />
+          <field name="offensiveSlowOffensiveReductionModifierChance" />
+          <field name="offensiveSlowOffensiveReductionXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Physical">
+          <field name="offensiveSlowPhysicalChance" />
+          <field name="offensiveSlowPhysicalDurationMax" />
+          <field name="offensiveSlowPhysicalDurationMin" />
+          <field name="offensiveSlowPhysicalDurationModifier" />
+          <field name="offensiveSlowPhysicalGlobal" />
+          <field name="offensiveSlowPhysicalMax" />
+          <field name="offensiveSlowPhysicalMin" />
+          <field name="offensiveSlowPhysicalModifier" />
+          <field name="offensiveSlowPhysicalModifierChance" />
+          <field name="offensiveSlowPhysicalXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Poison">
+          <field name="offensiveSlowPoisonChance" />
+          <field name="offensiveSlowPoisonDurationMax" />
+          <field name="offensiveSlowPoisonDurationMin" />
+          <field name="offensiveSlowPoisonDurationModifier" />
+          <field name="offensiveSlowPoisonGlobal" />
+          <field name="offensiveSlowPoisonMax" />
+          <field name="offensiveSlowPoisonMin" />
+          <field name="offensiveSlowPoisonModifier" />
+          <field name="offensiveSlowPoisonModifierChance" />
+          <field name="offensiveSlowPoisonXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Run Speed">
+          <field name="offensiveSlowRunSpeedChance" />
+          <field name="offensiveSlowRunSpeedDurationMax" />
+          <field name="offensiveSlowRunSpeedDurationMin" />
+          <field name="offensiveSlowRunSpeedDurationModifier" />
+          <field name="offensiveSlowRunSpeedGlobal" />
+          <field name="offensiveSlowRunSpeedMax" />
+          <field name="offensiveSlowRunSpeedMin" />
+          <field name="offensiveSlowRunSpeedModifier" />
+          <field name="offensiveSlowRunSpeedModifierChance" />
+          <field name="offensiveSlowRunSpeedXOR" />
+        </var-group>
+        <var-group name="Offensive Slow Total Speed">
+          <field name="offensiveSlowTotalSpeedChance" />
+          <field name="offensiveSlowTotalSpeedDurationMax" />
+          <field name="offensiveSlowTotalSpeedDurationMin" />
+          <field name="offensiveSlowTotalSpeedGlobal" />
+          <field name="offensiveSlowTotalSpeedMax" />
+          <field name="offensiveSlowTotalSpeedMin" />
+          <field name="offensiveSlowTotalSpeedXOR" />
+        </var-group>
+        <var-group name="Total Damage Reduction Absolute">
+          <field name="offensiveTotalDamageReductionAbsoluteChance" />
+          <field name="offensiveTotalDamageReductionAbsoluteDurationMax" />
+          <field name="offensiveTotalDamageReductionAbsoluteDurationMin" />
+          <field name="offensiveTotalDamageReductionAbsoluteGlobal" />
+          <field name="offensiveTotalDamageReductionAbsoluteMax" />
+          <field name="offensiveTotalDamageReductionAbsoluteMin" />
+          <field name="offensiveTotalDamageReductionAbsoluteXOR" />
+        </var-group>
+        <var-group name="Total Damage Reduction Percent">
+          <field name="offensiveTotalDamageReductionPercentChance" />
+          <field name="offensiveTotalDamageReductionPercentDurationMax" />
+          <field name="offensiveTotalDamageReductionPercentDurationMin" />
+          <field name="offensiveTotalDamageReductionPercentGlobal" />
+          <field name="offensiveTotalDamageReductionPercentMax" />
+          <field name="offensiveTotalDamageReductionPercentMin" />
+          <field name="offensiveTotalDamageReductionPercentXOR" />
+        </var-group>
+        <var-group name="Total Resistance Reduction Absolute">
+          <field name="offensiveTotalResistanceReductionAbsoluteChance" />
+          <field name="offensiveTotalResistanceReductionAbsoluteDurationMax" />
+          <field name="offensiveTotalResistanceReductionAbsoluteDurationMin" />
+          <field name="offensiveTotalResistanceReductionAbsoluteGlobal" />
+          <field name="offensiveTotalResistanceReductionAbsoluteMax" />
+          <field name="offensiveTotalResistanceReductionAbsoluteMin" />
+          <field name="offensiveTotalResistanceReductionAbsoluteXOR" />
+        </var-group>
+        <var-group name="Total Resistance Reduction Percent">
+          <field name="offensiveTotalResistanceReductionPercentChance" />
+          <field name="offensiveTotalResistanceReductionPercentDurationMax" />
+          <field name="offensiveTotalResistanceReductionPercentDurationMin" />
+          <field name="offensiveTotalResistanceReductionPercentGlobal" />
+          <field name="offensiveTotalResistanceReductionPercentMax" />
+          <field name="offensiveTotalResistanceReductionPercentMin" />
+          <field name="offensiveTotalResistanceReductionPercentXOR" />
+        </var-group>
+      </var-group>
+      <var-group name="Offensive Global">
+        <field name="offensiveGlobalChance" />
+      </var-group>
+      <var-group name="Offensive Influence">
+        <var-group name="Confusion">
+          <field name="offensiveConfusionChance" />
+          <field name="offensiveConfusionGlobal" />
+          <field name="offensiveConfusionMax" />
+          <field name="offensiveConfusionMin" />
+          <field name="offensiveConfusionXOR" />
+        </var-group>
+        <var-group name="Convert">
+          <field name="offensiveConvertChance" />
+          <field name="offensiveConvertGlobal" />
+          <field name="offensiveConvertMax" />
+          <field name="offensiveConvertMin" />
+          <field name="offensiveConvertXOR" />
+        </var-group>
+        <var-group name="Fear">
+          <field name="offensiveFearChance" />
+          <field name="offensiveFearGlobal" />
+          <field name="offensiveFearMax" />
+          <field name="offensiveFearMin" />
+          <field name="offensiveFearXOR" />
+        </var-group>
+        <var-group name="Freeze">
+          <field name="offensiveFreezeChance" />
+          <field name="offensiveFreezeGlobal" />
+          <field name="offensiveFreezeMax" />
+          <field name="offensiveFreezeMin" />
+          <field name="offensiveFreezeXOR" />
+        </var-group>
+        <var-group name="Petrify">
+          <field name="offensivePetrifyChance" />
+          <field name="offensivePetrifyGlobal" />
+          <field name="offensivePetrifyMax" />
+          <field name="offensivePetrifyMin" />
+          <field name="offensivePetrifyXOR" />
+        </var-group>
+        <var-group name="Sleep">
+          <field name="offensiveSleepChance" />
+          <field name="offensiveSleepGlobal" />
+          <field name="offensiveSleepMax" />
+          <field name="offensiveSleepMin" />
+          <field name="offensiveSleepModifier" />
+          <field name="offensiveSleepModifierChance" />
+          <field name="offensiveSleepXOR" />
+        </var-group>
+        <var-group name="Stun">
+          <field name="offensiveStunChance" />
+          <field name="offensiveStunGlobal" />
+          <field name="offensiveStunMax" />
+          <field name="offensiveStunMin" />
+          <field name="offensiveStunModifier" />
+          <field name="offensiveStunModifierChance" />
+          <field name="offensiveStunXOR" />
+        </var-group>
+        <var-group name="Taunt">
+          <field name="offensiveTauntChance" />
+          <field name="offensiveTauntGlobal" />
+          <field name="offensiveTauntMax" />
+          <field name="offensiveTauntMin" />
+          <field name="offensiveTauntXOR" />
+        </var-group>
+        <var-group name="Trap">
+          <field name="offensiveTrapChance" />
+          <field name="offensiveTrapGlobal" />
+          <field name="offensiveTrapMax" />
+          <field name="offensiveTrapMin" />
+          <field name="offensiveTrapXOR" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

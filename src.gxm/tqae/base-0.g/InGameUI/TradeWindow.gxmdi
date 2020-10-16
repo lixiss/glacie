@@ -1,0 +1,28 @@
+﻿<partial>
+  <record-type name="InGameUI.TradeWindow" path="InGameUI/TradeWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="BackgroundImage" var-class="variable" var-type="file_tex" />
+        <field name="CancelButton" var-class="variable" var-type="file_dbr" />
+        <field name="CloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="GoldImageLeft" var-class="variable" var-type="file_tex" />
+        <field name="GoldImageRight" var-class="variable" var-type="file_tex" />
+        <field name="HisGoldText" var-class="variable" var-type="file_dbr" />
+        <field name="HisNameText" var-class="variable" var-type="file_dbr" />
+        <field name="MyGoldEditBox" var-class="variable" var-type="file_dbr" />
+        <field name="MyNameText" var-class="variable" var-type="file_dbr" />
+        <field name="TradeButton" var-class="variable" var-type="file_dbr" />
+        <field name="WindowLocationX" var-class="variable" var-type="int" />
+        <field name="WindowLocationY" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

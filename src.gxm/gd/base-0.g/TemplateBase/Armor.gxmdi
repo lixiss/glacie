@@ -1,0 +1,38 @@
+﻿<partial>
+  <record-type name="TemplateBase.Armor" path="TemplateBase/Armor.tpl">
+    <inherits>
+      <inherit record="TemplateBase.ItemEquipment" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Armor Parameters">
+        <field name="armorFemaleBaseTexture" var-class="variable" var-type="file_tex" />
+        <field name="armorFemaleBumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="armorFemaleMesh" var-class="variable" var-type="file_msh" />
+        <field name="armorJackalManBaseTextureName" var-class="variable" var-type="file_tex" />
+        <field name="armorJackalManBumpTextureName" var-class="variable" var-type="file_tex" />
+        <field name="armorJackalManMeshName" var-class="variable" var-type="file_msh" />
+        <field name="armorMaleBaseTexture" var-class="variable" var-type="file_tex" />
+        <field name="armorMaleBumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="armorMaleMesh" var-class="variable" var-type="file_msh" />
+        <field name="armorNativeBaseTexture" var-class="variable" var-type="file_tex" />
+        <field name="armorNativeBumpTexture" var-class="variable" var-type="file_tex" />
+        <field name="armorNativeMesh" var-class="variable" var-type="file_msh" />
+        <field name="armorSatyrBaseTextureName" var-class="variable" var-type="file_tex" />
+        <field name="armorSatyrBumpTextureName" var-class="variable" var-type="file_tex" />
+        <field name="armorSatyrMeshName" var-class="variable" var-type="file_msh" />
+        <field name="armorTigermanBaseTextureName" var-class="variable" var-type="file_tex" />
+        <field name="armorTigermanBumpTextureName" var-class="variable" var-type="file_tex" />
+        <field name="armorTigermanMeshName" var-class="variable" var-type="file_msh" />
+      </var-group>
+      <var-group name="Armor Sound">
+        <field name="blockSound" var-class="variable" var-type="file_dbr" />
+        <field name="impactSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

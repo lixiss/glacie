@@ -1,0 +1,52 @@
+﻿<partial>
+  <record-type name="InGameUI.ConversationWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Border">
+      <field name="objBottomTexture" />
+      <field name="objLeftTexture" />
+      <field name="objLowerLeftTexture" />
+      <field name="objLowerRightTexture" />
+      <field name="objRightTexture" />
+      <field name="objTopTexture" />
+      <field name="objUpperLeftTexture" />
+      <field name="objUpperRightTexture" />
+    </var-group>
+    <var-group name="ConversationWindow">
+      <field name="acceptBitmap" />
+      <field name="autosplit" />
+      <field name="bgColor.A" />
+      <field name="bgColor.B" />
+      <field name="bgColor.G" />
+      <field name="bgColor.R" />
+      <field name="closeButton" />
+      <field name="continueBitmap" />
+      <field name="declineBitmap" />
+      <field name="endBitmap" />
+      <field name="gamepadCloseButton" />
+      <field name="gamepadCloseLabel" />
+      <field name="hoverColor.A" />
+      <field name="hoverColor.B" />
+      <field name="hoverColor.G" />
+      <field name="hoverColor.R" />
+      <field name="nameBox" />
+      <field name="objBgColor.A" />
+      <field name="objBgColor.B" />
+      <field name="objBgColor.G" />
+      <field name="objBgColor.R" />
+      <field name="optionSpacing" />
+      <field name="optionStyle" />
+      <field name="portrait" />
+      <field name="portraitAngle" />
+      <field name="questOverview" />
+      <field name="rolloverStyle" />
+      <field name="rolloverTextStyle" />
+      <field name="rolloverTitleStyle" />
+      <field name="sectionSpacing" />
+      <field name="textBox" />
+    </var-group>
+  </record-type>
+</partial>

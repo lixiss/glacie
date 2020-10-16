@@ -1,0 +1,512 @@
+﻿<partial>
+  <record-type name="Menu.MenuConstants" path="Menu/MenuConstants.tpl">
+    <var-group>
+      <var-group name="Common">
+        <field name="backButtonBitmap" var-class="variable" var-type="file_tex">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="defaultButtonFontColorA" var-class="variable" var-type="real">
+          <description>Button</description>
+        </field>
+        <field name="defaultButtonFontColorB" var-class="variable" var-type="real">
+          <description>Button</description>
+        </field>
+        <field name="defaultButtonFontColorG" var-class="variable" var-type="real">
+          <description>Button</description>
+        </field>
+        <field name="defaultButtonFontColorR" var-class="variable" var-type="real">
+          <description>Button</description>
+        </field>
+        <field name="defaultControlFontName" var-class="variable" var-type="file_fnt">
+          <description>General</description>
+        </field>
+        <field name="defaultControlFontSize" var-class="variable" var-type="real">
+          <description>General</description>
+        </field>
+        <field name="dropboxBackColorA" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxBackColorB" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxBackColorG" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxBackColorR" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxBorder" var-class="variable" var-type="file_tex">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxButtonDownBitmap" var-class="variable" var-type="file_tex">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxButtonUpBitmap" var-class="variable" var-type="file_tex">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxDisabledColorA" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxDisabledColorB" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxDisabledColorG" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxDisabledColorR" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxFontSize" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectBorderColorA" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectBorderColorB" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectBorderColorG" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectBorderColorR" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectColorA" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectColorB" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectColorG" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="dropboxSelectColorR" var-class="variable" var-type="real">
+          <description>Dropbox</description>
+        </field>
+        <field name="largeButtonBitmap" var-class="variable" var-type="file_tex">
+          <description>Button</description>
+        </field>
+        <field name="largeButtonFont" var-class="variable" var-type="file_fnt">
+          <description>Button</description>
+        </field>
+        <field name="largeButtonFontSize" var-class="variable" var-type="real">
+          <description>Button</description>
+        </field>
+        <field name="longButtonBitmap" var-class="variable" var-type="file_txt">
+          <description>Button</description>
+        </field>
+        <field name="maxPlayerNameLength" var-class="variable" var-type="int">
+          <description>General</description>
+        </field>
+        <field name="menuBorder" var-class="variable" var-type="file_tex">
+          <description>General</description>
+        </field>
+        <field name="menuFontColorA" var-class="variable" var-type="real">
+          <description>General</description>
+        </field>
+        <field name="menuFontColorB" var-class="variable" var-type="real">
+          <description>General</description>
+        </field>
+        <field name="menuFontColorG" var-class="variable" var-type="real">
+          <description>General</description>
+        </field>
+        <field name="menuFontColorR" var-class="variable" var-type="real">
+          <description>General</description>
+        </field>
+        <field name="menuListDefaultColColorA" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListDefaultColColorB" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListDefaultColColorG" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListDefaultColColorR" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListOuterBorder" var-class="variable" var-type="file_tex">
+          <description>List</description>
+        </field>
+        <field name="menuListPanelBorder" var-class="variable" var-type="file_tex">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectBorderColorA" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectBorderColorB" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectBorderColorG" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectBorderColorR" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectColorA" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectColorB" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectColorG" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectColorR" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectedColColorA" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectedColColorB" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectedColColorG" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSelectedColColorR" var-class="variable" var-type="real">
+          <description>List</description>
+        </field>
+        <field name="menuListSortNubDown" var-class="variable" var-type="file_tex">
+          <description>List</description>
+        </field>
+        <field name="menuListSortNubUp" var-class="variable" var-type="file_tex">
+          <description>List</description>
+        </field>
+        <field name="messageDialogBorder" var-class="variable" var-type="file_tex">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="messageDialogFont" var-class="variable" var-type="file_fnt">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="messageDialogFontColorA" var-class="variable" var-type="real">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="messageDialogFontColorB" var-class="variable" var-type="real">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="messageDialogFontColorG" var-class="variable" var-type="real">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="messageDialogFontColorR" var-class="variable" var-type="real">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="messageDialogFontSize" var-class="variable" var-type="real">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="messageDialogFontSizeSmall" var-class="variable" var-type="real">
+          <description>Generic Message Dialog</description>
+        </field>
+        <field name="progressBarBackgroundCenter" var-class="variable" var-type="file_tex">
+          <description>Progress Bar</description>
+        </field>
+        <field name="progressBarBackgroundLeft" var-class="variable" var-type="file_tex">
+          <description>Progress Bar</description>
+        </field>
+        <field name="progressBarBackgroundRight" var-class="variable" var-type="file_tex">
+          <description>Progress Bar</description>
+        </field>
+        <field name="progressBarFillCenter" var-class="variable" var-type="file_tex">
+          <description>Progress Bar</description>
+        </field>
+        <field name="progressBarFillLeft" var-class="variable" var-type="file_tex">
+          <description>Progress Bar</description>
+        </field>
+        <field name="progressBarFillRight" var-class="variable" var-type="file_tex">
+          <description>Progress Bar</description>
+        </field>
+        <field name="runnerButtonFont" var-class="variable" var-type="file_fnt">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="runnerButtonFontColorA" var-class="variable" var-type="real">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="runnerButtonFontColorB" var-class="variable" var-type="real">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="runnerButtonFontColorG" var-class="variable" var-type="real">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="runnerButtonFontColorR" var-class="variable" var-type="real">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="runnerButtonFontSize" var-class="variable" var-type="real">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="scrollbarDownButtonDisabledBitmap" var-class="variable" var-type="file_tex">
+          <description>Scrollbar</description>
+        </field>
+        <field name="scrollbarDownButtonDownBitmap" var-class="variable" var-type="file_tex">
+          <description>Scrollbar</description>
+        </field>
+        <field name="scrollbarDownButtonUpBitmap" var-class="variable" var-type="file_tex">
+          <description>Scrollbar</description>
+        </field>
+        <field name="scrollbarSliderBitmap" var-class="variable" var-type="file_tex">
+          <description>Scrollbar</description>
+        </field>
+        <field name="scrollbarUpButtonDisabledBitmap" var-class="variable" var-type="file_tex">
+          <description>Scrollbar</description>
+        </field>
+        <field name="scrollbarUpButtonDownBitmap" var-class="variable" var-type="file_tex">
+          <description>Scrollbar</description>
+        </field>
+        <field name="scrollbarUpButtonUpBitmap" var-class="variable" var-type="file_tex">
+          <description>Scrollbar</description>
+        </field>
+        <field name="slideboxBorder" var-class="variable" var-type="file_tex">
+          <description>Slidebox</description>
+        </field>
+        <field name="slideboxButton" var-class="variable" var-type="file_tex">
+          <description>Slidebox</description>
+        </field>
+        <field name="slideboxFont" var-class="variable" var-type="file_fnt">
+          <description>Slidebox</description>
+        </field>
+        <field name="slideboxFontSize" var-class="variable" var-type="real">
+          <description>Slidebox</description>
+        </field>
+        <field name="smallButtonBitmap" var-class="variable" var-type="file_tex">
+          <description>Button</description>
+        </field>
+        <field name="smallButtonFont" var-class="variable" var-type="file_fnt">
+          <description>Button</description>
+        </field>
+        <field name="smallButtonFontSize" var-class="variable" var-type="real">
+          <description>Button</description>
+        </field>
+        <field name="startBackButtonTextOffset" var-class="variable" var-type="int">
+          <description>General</description>
+        </field>
+        <field name="startButtonBitmap" var-class="variable" var-type="file_tex">
+          <description>Bottom Runner</description>
+        </field>
+        <field name="tabBorder" var-class="variable" var-type="file_tex">
+          <description>Tab Control</description>
+        </field>
+        <field name="tabCenterBitmap" var-class="variable" var-type="file_tex">
+          <description>Tab Control</description>
+        </field>
+        <field name="tabLeftBitmap" var-class="variable" var-type="file_tex">
+          <description>Tab Control</description>
+        </field>
+        <field name="tabRightBitmap" var-class="variable" var-type="file_tex">
+          <description>Tab Control</description>
+        </field>
+        <field name="textBoxBackColorA" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxBackColorB" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxBackColorG" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxBackColorR" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxBorder" var-class="variable" var-type="file_tex">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxFontColorA" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxFontColorB" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxFontColorG" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxFontColorR" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxFontName" var-class="variable" var-type="file_fnt">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxFontSize" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableBackColorA" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableBackColorB" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableBackColorG" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableBackColorR" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableFontColorA" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableFontColorB" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableFontColorG" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textBoxUneditableFontColorR" var-class="variable" var-type="real">
+          <description>Text box</description>
+        </field>
+        <field name="textPlateBitmapName" var-class="variable" var-type="file_tex">
+          <description>Window Name Plate</description>
+        </field>
+        <field name="textPlateFont" var-class="variable" var-type="file_fnt">
+          <description>Window Name Plate</description>
+        </field>
+        <field name="textPlateFontColorA" var-class="variable" var-type="real">
+          <description>Window Name Plate</description>
+        </field>
+        <field name="textPlateFontColorB" var-class="variable" var-type="real">
+          <description>Window Name Plate</description>
+        </field>
+        <field name="textPlateFontColorG" var-class="variable" var-type="real">
+          <description>Window Name Plate</description>
+        </field>
+        <field name="textPlateFontColorR" var-class="variable" var-type="real">
+          <description>Window Name Plate</description>
+        </field>
+        <field name="textPlateFontSize" var-class="variable" var-type="real">
+          <description>Window Name Plate</description>
+        </field>
+        <field name="titleBackgroundRecordName" var-class="variable" var-type="file_dbr">
+          <description>General</description>
+        </field>
+      </var-group>
+      <var-group name="CreditsMenu">
+        <field name="creditsFontName" var-class="variable" var-type="file_fnt" />
+        <field name="creditsFontSize" var-class="variable" var-type="real" />
+        <field name="creditsMonsterAppearSound" var-class="variable" var-type="file_dbr" />
+        <field name="creditsMonsterDisappearSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="MainMenu">
+        <field name="mainButtonFontColorA" var-class="variable" var-type="real" />
+        <field name="mainButtonFontColorB" var-class="variable" var-type="real" />
+        <field name="mainButtonFontColorG" var-class="variable" var-type="real" />
+        <field name="mainButtonFontColorR" var-class="variable" var-type="real" />
+        <field name="mainButtonSetInterPad" var-class="variable" var-type="real" />
+        <field name="mainButtonSetTopPad" var-class="variable" var-type="real" />
+        <field name="mainMenuLeftPad" var-class="variable" var-type="real" />
+        <field name="mainMenuTopPad" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="OptionsMenu">
+        <field name="optionsBorderBitmap" var-class="variable" var-type="file_tex" />
+        <field name="optionsCheckboxBitmap" var-class="variable" var-type="file_tex" />
+        <field name="optionsFontColorA" var-class="variable" var-type="real" />
+        <field name="optionsFontColorB" var-class="variable" var-type="real" />
+        <field name="optionsFontColorG" var-class="variable" var-type="real" />
+        <field name="optionsFontColorR" var-class="variable" var-type="real" />
+        <field name="optionsFontName" var-class="variable" var-type="file_fnt" />
+        <field name="optionsFontSize" var-class="variable" var-type="real" />
+        <field name="optionsKeyBindingHeaderColorA" var-class="variable" var-type="real" />
+        <field name="optionsKeyBindingHeaderColorB" var-class="variable" var-type="real" />
+        <field name="optionsKeyBindingHeaderColorG" var-class="variable" var-type="real" />
+        <field name="optionsKeyBindingHeaderColorR" var-class="variable" var-type="real" />
+        <field name="optionsKeyBindingHeaderFontSize" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="PlayMenu">
+        <field name="dlcButtonBitmap" var-class="variable" var-type="file_tex" />
+        <field name="playArrowLeftBitmap" var-class="variable" var-type="file_tex" />
+        <field name="playArrowRightBitmap" var-class="variable" var-type="file_tex" />
+        <field name="playArrowSmallLeftBitmap" var-class="variable" var-type="file_tex" />
+        <field name="playArrowSmallRightBitmap" var-class="variable" var-type="file_tex" />
+        <field name="playCharacterInfoFont" var-class="variable" var-type="file_fnt" />
+        <field name="playCharacterInfoFontColorA" var-class="variable" var-type="real" />
+        <field name="playCharacterInfoFontColorB" var-class="variable" var-type="real" />
+        <field name="playCharacterInfoFontColorG" var-class="variable" var-type="real" />
+        <field name="playCharacterInfoFontColorR" var-class="variable" var-type="real" />
+        <field name="playCharacterInfoFontSize" var-class="variable" var-type="real" />
+        <field name="playCreateCharacterBorder" var-class="variable" var-type="file_tex" />
+        <field name="playFontName" var-class="variable" var-type="file_fnt" />
+        <field name="playFontSize" var-class="variable" var-type="real" />
+        <field name="playGameTypeBorder" var-class="variable" var-type="file_tex" />
+        <field name="playGemButtonName" var-class="variable" var-type="file_tex" />
+        <field name="playGemDifficulty1" var-class="variable" var-type="file_tex" />
+        <field name="playGemDifficulty2" var-class="variable" var-type="file_tex" />
+        <field name="playGemDifficulty3" var-class="variable" var-type="file_tex" />
+        <field name="playGemHardcore" var-class="variable" var-type="file_tex" />
+        <field name="playHostBorder" var-class="variable" var-type="file_tex" />
+        <field name="playLevelBorder" var-class="variable" var-type="file_tex" />
+        <field name="playRotateArrowLeftBitmap" var-class="variable" var-type="file_tex" />
+        <field name="playRotateArrowRightBitmap" var-class="variable" var-type="file_tex" />
+        <field name="playSelectCharacterBackgroundA" var-class="variable" var-type="real" />
+        <field name="playSelectCharacterBackgroundB" var-class="variable" var-type="real" />
+        <field name="playSelectCharacterBackgroundG" var-class="variable" var-type="real" />
+        <field name="playSelectCharacterBackgroundR" var-class="variable" var-type="real" />
+        <field name="playSelectCharacterBorder" var-class="variable" var-type="file_tex" />
+        <field name="playWindowPadY" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="ServerBrowser">
+        <field name="serverBrowserCharDetailsBackColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsBackColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsBackColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsBackColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionBulletBitmap" var-class="variable" var-type="file_tex" />
+        <field name="serverBrowserCharDetailsFactionHatedColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionHatedColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionHatedColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionHatedColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionLovedColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionLovedColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionLovedColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsFactionLovedColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsHeadingFontColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsHeadingFontColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsHeadingFontColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsHeadingFontColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsHeadingFontSize" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsItemFontColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsItemFontColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsItemFontColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsItemFontColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsItemFontSize" var-class="variable" var-type="real" />
+        <field name="serverBrowserCharDetailsTitleBitmap" var-class="variable" var-type="file_tex" />
+        <field name="serverBrowserCharDetailsTitleFontSize" var-class="variable" var-type="real" />
+        <field name="serverBrowserCheckButtonBitmap" var-class="variable" var-type="file_tex" />
+        <field name="serverBrowserColumnDividerColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserColumnDividerColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserColumnDividerColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserColumnDividerColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserColumnHeaderColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserColumnHeaderColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserColumnHeaderColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserColumnHeaderColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserFontColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserFontColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserFontColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserFontColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserFontName" var-class="variable" var-type="file_fnt" />
+        <field name="serverBrowserFontSize" var-class="variable" var-type="real" />
+        <field name="serverBrowserFriendsListFont" var-class="variable" var-type="file_fnt" />
+        <field name="serverBrowserFriendsListFontColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserFriendsListFontColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserFriendsListFontColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserFriendsListFontColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserFriendsListFontSize" var-class="variable" var-type="real" />
+        <field name="serverBrowserPaperdollBackColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserPaperdollBackColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserPaperdollBackColorR" var-class="variable" var-type="real" />
+        <field name="serverBrowserRefreshButtonBitmap" var-class="variable" var-type="file_tex" />
+        <field name="serverBrowserSummaryBackColorA" var-class="variable" var-type="real" />
+        <field name="serverBrowserSummaryBackColorB" var-class="variable" var-type="real" />
+        <field name="serverBrowserSummaryBackColorG" var-class="variable" var-type="real" />
+        <field name="serverBrowserSummaryBackColorR" var-class="variable" var-type="real" />
+      </var-group>
+      <var-group name="Sound">
+        <field name="defaultButtonClickSound" var-class="variable" var-type="file_dbr" />
+        <field name="defaultButtonRolloverSound" var-class="variable" var-type="file_dbr" />
+        <field name="gemButtonClickSound" var-class="variable" var-type="file_dbr" />
+        <field name="gemButtonRolloverSound" var-class="variable" var-type="file_dbr" />
+        <field name="mainButtonClickSound" var-class="variable" var-type="file_dbr" />
+        <field name="mainButtonRolloverSound" var-class="variable" var-type="file_dbr" />
+        <field name="startButtonClickSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="System">
+        <field name="newCharFemale" var-class="variable" var-type="file_dbr" />
+        <field name="newCharMale" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

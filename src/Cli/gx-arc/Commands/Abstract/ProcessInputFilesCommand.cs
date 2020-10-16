@@ -137,7 +137,7 @@ namespace Glacie.Cli.Arc.Commands
 
         private string CreateEntryName(string path)
         {
-            var relativePath = Path.GetRelativePath(RelativeToPath, path);
+            var relativePath = System.IO.Path.GetRelativePath(RelativeToPath, path);
             relativePath = relativePath.Replace('\\', '/');
             if (!PreserveCase) relativePath = relativePath.ToLowerInvariant();
             return relativePath;

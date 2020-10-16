@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="FactionMarket">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Market Config">
+      <field name="marketCostAdjustment" />
+      <field name="marketDepreciation" />
+      <field name="marketRefreshTimeMax" />
+      <field name="marketRefreshTimeMin" />
+      <field name="maxPlayerPurchase" />
+    </var-group>
+    <var-group name="Market Tables">
+      <var-group name="Normal">
+        <field name="friendlyNormalTable" />
+        <field name="honoredNormalTable" />
+        <field name="respectedNormalTable" />
+        <field name="reveredNormalTable" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

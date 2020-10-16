@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="FixedItemGravestone">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Gravestone Properties">
+      <field name="GraveEffect" />
+      <field name="closeAnimation" />
+      <field name="closeAnimationSpeed" />
+      <field name="closeSound" />
+      <field name="dissolveTimeMS" />
+      <field name="openAnimation" />
+      <field name="openAnimationSpeed" />
+      <field name="openSound" />
+    </var-group>
+  </record-type>
+</partial>

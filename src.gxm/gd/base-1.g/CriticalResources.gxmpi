@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="CriticalResources">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="CriticalResources">
+      <field name="fonts" />
+      <field name="shaders" />
+      <field name="sounds" />
+      <field name="textures" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,71 @@
+﻿<partial>
+  <record-type name="InGameUI.TransmuterWindow" path="InGameUI/TransmuterWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Transmuter">
+        <field name="backgroundBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="characterView" var-class="variable" var-type="file_dbr" />
+        <field name="closeButton" var-class="variable" var-type="file_dbr" />
+        <field name="costBoxBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="costNumber" var-class="variable" var-type="file_dbr" />
+        <field name="costText" var-class="variable" var-type="file_dbr" />
+        <field name="displayBox" var-class="variable" var-type="file_dbr" />
+        <field name="displayBoxColumns" var-class="variable" var-type="int" />
+        <field name="displayBoxCount" var-class="variable" var-type="int" />
+        <field name="displayBoxRows" var-class="variable" var-type="int" />
+        <field name="displayBoxSpacingX" var-class="variable" var-type="int" />
+        <field name="displayBoxSpacingY" var-class="variable" var-type="int" />
+        <field name="equipChest" var-class="variable" var-type="file_dbr" />
+        <field name="equipFeet" var-class="variable" var-type="file_dbr" />
+        <field name="equipHandLeft" var-class="variable" var-type="file_dbr" />
+        <field name="equipHandRight" var-class="variable" var-type="file_dbr" />
+        <field name="equipHands" var-class="variable" var-type="file_dbr" />
+        <field name="equipHead" var-class="variable" var-type="file_dbr" />
+        <field name="equipLegs" var-class="variable" var-type="file_dbr" />
+        <field name="equipMedal" var-class="variable" var-type="file_dbr" />
+        <field name="equipShoulders" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap1LeftButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap1RightButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap2LeftButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwap2RightButton" var-class="variable" var-type="file_dbr" />
+        <field name="equipSwapButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="lowerLeftCornerOverlayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="lowerRightCornerOverlayBitmap" var-class="variable" var-type="file_tex" />
+        <field name="nextPageButton" var-class="variable" var-type="file_dbr" />
+        <field name="pageText" var-class="variable" var-type="file_dbr" />
+        <field name="previousPageButton" var-class="variable" var-type="file_dbr" />
+        <field name="revertItemSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="rotateLeftButton" var-class="variable" var-type="file_dbr" />
+        <field name="rotateRightButton" var-class="variable" var-type="file_dbr" />
+        <field name="selectCharacterItemSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="selectTransmuteItemSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="tooExpensiveNumber" var-class="variable" var-type="file_dbr" />
+        <field name="totalGoldBoxBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="totalGoldNumber" var-class="variable" var-type="file_dbr" />
+        <field name="totalGoldText" var-class="variable" var-type="file_dbr" />
+        <field name="transmuteButton" var-class="variable" var-type="file_dbr" />
+        <field name="transmuteCost" var-class="variable" var-type="equation">
+          <description>per item</description>
+        </field>
+        <field name="transmuteSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak</description>
+        </field>
+        <field name="transmutedBitmap" var-class="variable" var-type="file_tex" />
+        <field name="windowTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

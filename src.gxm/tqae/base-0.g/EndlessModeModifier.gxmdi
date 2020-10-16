@@ -1,0 +1,38 @@
+﻿<partial>
+  <record-type name="EndlessModeModifier" path="EndlessModeModifier.tpl">
+    <inherits>
+      <inherit record="SkillBuff_Passive" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SkillBuff_Passive" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Endless Mode Specials">
+        <var-group name="Enemy Modifiers">
+          <field name="actorToSpawnOnDeath" var-class="variable" var-type="file_dbr">
+            <description>Spawns actor when enemies die</description>
+          </field>
+          <field name="aggroRangeIncrease" var-class="variable" var-type="int" var-default-value="0">
+            <description>Increases/decreases the ememies view distance</description>
+          </field>
+          <field name="dyingSkillName" var-class="variable" var-type="file_dbr">
+            <description>Skill to be executed when enemy dies</description>
+          </field>
+          <field name="enemyScaleModifier" var-class="variable" var-type="real" var-default-value="1">
+            <description>Scales the enemies</description>
+          </field>
+        </var-group>
+        <var-group name="Player Modifiers">
+          <field name="disallowPets" var-class="variable" var-type="bool" var-default-value="0">
+            <description>Pets can not be spawned (existing will despawn)</description>
+          </field>
+          <field name="potionCooldownIncrease" var-class="array" var-type="int">
+            <description>Increases the potion cooldown between min and max seconds</description>
+          </field>
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,684 @@
+﻿<partial>
+  <record-type name="TemplateBase.Parameters_Offensive" path="TemplateBase/Parameters_Offensive.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ParameterStoreOffensive" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Offensive Parameters">
+        <var-group name="Offensive Absolute">
+          <var-group name="Crit Damage Modifier">
+            <field name="offensiveCritDamageGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveCritDamageModifier" var-class="array" var-type="real" />
+            <field name="offensiveCritDamageModifierChance" var-class="array" var-type="real" />
+            <field name="offensiveCritDamageXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Damage Multiplier">
+            <field name="offensiveDamageMultGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveDamageMultModifier" var-class="array" var-type="real" />
+            <field name="offensiveDamageMultModifierChance" var-class="array" var-type="real" />
+            <field name="offensiveDamageMultXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Item Base Damage">
+            <field name="offensiveBaseAetherChance" var-class="array" var-type="real" />
+            <field name="offensiveBaseAetherGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseAetherMax" var-class="array" var-type="real" />
+            <field name="offensiveBaseAetherMin" var-class="array" var-type="real" />
+            <field name="offensiveBaseAetherXOR" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseChaosChance" var-class="array" var-type="real" />
+            <field name="offensiveBaseChaosGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseChaosMax" var-class="array" var-type="real" />
+            <field name="offensiveBaseChaosMin" var-class="array" var-type="real" />
+            <field name="offensiveBaseChaosXOR" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseColdChance" var-class="array" var-type="real" />
+            <field name="offensiveBaseColdGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseColdMax" var-class="array" var-type="real" />
+            <field name="offensiveBaseColdMin" var-class="array" var-type="real" />
+            <field name="offensiveBaseColdXOR" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseFireChance" var-class="array" var-type="real" />
+            <field name="offensiveBaseFireGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseFireMax" var-class="array" var-type="real" />
+            <field name="offensiveBaseFireMin" var-class="array" var-type="real" />
+            <field name="offensiveBaseFireXOR" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseLifeChance" var-class="array" var-type="real" />
+            <field name="offensiveBaseLifeGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseLifeMax" var-class="array" var-type="real" />
+            <field name="offensiveBaseLifeMin" var-class="array" var-type="real" />
+            <field name="offensiveBaseLifeXOR" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseLightningChance" var-class="array" var-type="real" />
+            <field name="offensiveBaseLightningGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveBaseLightningMax" var-class="array" var-type="real" />
+            <field name="offensiveBaseLightningMin" var-class="array" var-type="real" />
+            <field name="offensiveBaseLightningXOR" var-class="variable" var-type="bool" />
+            <field name="offensiveBasePoisonChance" var-class="array" var-type="real" />
+            <field name="offensiveBasePoisonGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveBasePoisonMax" var-class="array" var-type="real" />
+            <field name="offensiveBasePoisonMin" var-class="array" var-type="real" />
+            <field name="offensiveBasePoisonXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Aether">
+            <field name="offensiveAetherChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveAetherGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveAetherMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveAetherMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveAetherModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveAetherModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveAetherXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Chaos">
+            <field name="offensiveChaosChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveChaosGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveChaosMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveChaosMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveChaosModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveChaosModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveChaosXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Cold">
+            <field name="offensiveColdChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveColdGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveColdMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveColdMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveColdModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveColdModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveColdXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Disruption">
+            <field name="offensiveDisruptionChance" var-class="array" var-type="real" />
+            <field name="offensiveDisruptionGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveDisruptionMax" var-class="array" var-type="real" />
+            <field name="offensiveDisruptionMin" var-class="array" var-type="real">
+              <description>Time (in Seconds)</description>
+            </field>
+            <field name="offensiveDisruptionXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Elemental">
+            <field name="offensiveElementalChance" var-class="array" var-type="real" />
+            <field name="offensiveElementalGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveElementalMax" var-class="array" var-type="real" />
+            <field name="offensiveElementalMin" var-class="array" var-type="real" />
+            <field name="offensiveElementalModifier" var-class="array" var-type="real" />
+            <field name="offensiveElementalModifierChance" var-class="array" var-type="real" />
+            <field name="offensiveElementalXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Fire">
+            <field name="offensiveFireChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveFireGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveFireMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveFireMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveFireModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveFireModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveFireXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Life">
+            <field name="offensiveLifeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLifeGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveLifeMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLifeMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLifeModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLifeModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLifeXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Life Leech">
+            <field name="offensiveLifeLeechChance" var-class="array" var-type="real" />
+            <field name="offensiveLifeLeechGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveLifeLeechMax" var-class="array" var-type="real" />
+            <field name="offensiveLifeLeechMin" var-class="array" var-type="real" />
+            <field name="offensiveLifeLeechXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Lightning">
+            <field name="offensiveLightningChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLightningGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveLightningMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLightningMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLightningModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLightningModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveLightningXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Mana Burn">
+            <field name="offensiveManaBurnChance" var-class="array" var-type="real" />
+            <field name="offensiveManaBurnDamageRatio" var-class="array" var-type="real">
+              <description>Percent of Drain causes Burn</description>
+            </field>
+            <field name="offensiveManaBurnDrainMax" var-class="array" var-type="real">
+              <description>Drain</description>
+            </field>
+            <field name="offensiveManaBurnDrainMin" var-class="array" var-type="real">
+              <description>Drain</description>
+            </field>
+            <field name="offensiveManaBurnGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveManaBurnRatioAdder" var-class="array" var-type="real">
+              <description>Adds to Damage Ratio</description>
+            </field>
+            <field name="offensiveManaBurnRatioAdderChance" var-class="array" var-type="real" />
+            <field name="offensiveManaBurnXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Percent Current Life">
+            <field name="offensivePercentCurrentLifeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePercentCurrentLifeGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensivePercentCurrentLifeMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePercentCurrentLifeMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePercentCurrentLifeXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Physical">
+            <field name="offensivePhysicalChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePhysicalGlobal" var-class="variable" var-type="bool" var-default-value="0">
+              <description>0 = Individual; 1 = Global</description>
+            </field>
+            <field name="offensivePhysicalMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePhysicalMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePhysicalModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePhysicalModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePhysicalXOR" var-class="variable" var-type="bool" var-default-value="0">
+              <description>0 = AND; 1 = XOR</description>
+            </field>
+          </var-group>
+          <var-group name="Offensive Pierce">
+            <field name="offensivePierceChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensivePierceMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive PierceRatio">
+            <field name="offensivePierceRatioChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceRatioGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensivePierceRatioMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceRatioMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceRatioModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceRatioModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePierceRatioXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Poison">
+            <field name="offensivePoisonChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePoisonGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensivePoisonMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePoisonMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePoisonModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePoisonModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensivePoisonXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Total Damage Modifier">
+            <field name="offensiveTotalDamageGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveTotalDamageModifier" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageModifierChance" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageXOR" var-class="variable" var-type="bool" />
+          </var-group>
+        </var-group>
+        <var-group name="Offensive Duration">
+          <var-group name="Elemental Damage Reduction Percent">
+            <field name="offensiveElementalReductionPercentChance" var-class="array" var-type="real" />
+            <field name="offensiveElementalReductionPercentDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveElementalReductionPercentDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveElementalReductionPercentGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveElementalReductionPercentMax" var-class="array" var-type="real" />
+            <field name="offensiveElementalReductionPercentMin" var-class="array" var-type="real" />
+            <field name="offensiveElementalReductionPercentXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Elemental Resistance Reduction Absolute">
+            <field name="offensiveElementalResistanceReductionAbsoluteChance" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionAbsoluteDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionAbsoluteDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionAbsoluteGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveElementalResistanceReductionAbsoluteMax" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionAbsoluteMin" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionAbsoluteXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Elemental Resistance Reduction Percent">
+            <field name="offensiveElementalResistanceReductionPercentChance" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionPercentDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionPercentDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionPercentGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveElementalResistanceReductionPercentMax" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionPercentMin" var-class="array" var-type="real" />
+            <field name="offensiveElementalResistanceReductionPercentXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Fumble">
+            <field name="offensiveFumbleChance" var-class="array" var-type="real" />
+            <field name="offensiveFumbleDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveFumbleDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveFumbleGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveFumbleMax" var-class="array" var-type="real" />
+            <field name="offensiveFumbleMin" var-class="array" var-type="real" />
+            <field name="offensiveFumbleXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Projectile Fumble">
+            <field name="offensiveProjectileFumbleChance" var-class="array" var-type="real" />
+            <field name="offensiveProjectileFumbleDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveProjectileFumbleDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveProjectileFumbleGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveProjectileFumbleMax" var-class="array" var-type="real" />
+            <field name="offensiveProjectileFumbleMin" var-class="array" var-type="real" />
+            <field name="offensiveProjectileFumbleXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Offensive Slow Attack Speed">
+            <field name="offensiveSlowAttackSpeedChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowAttackSpeedDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowAttackSpeedDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowAttackSpeedDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowAttackSpeedGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowAttackSpeedMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowAttackSpeedMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowAttackSpeedModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowAttackSpeedModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowAttackSpeedXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Bleeding">
+            <field name="offensiveSlowBleedingChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowBleedingDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowBleedingDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowBleedingDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowBleedingGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowBleedingMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowBleedingMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowBleedingModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowBleedingModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowBleedingXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Cold">
+            <field name="offensiveSlowColdChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowColdDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowColdDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowColdDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowColdGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowColdMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowColdMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowColdModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowColdModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowColdXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Defensive Ability">
+            <field name="offensiveSlowDefensiveAbilityChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveAbilityDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowDefensiveAbilityDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowDefensiveAbilityDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveAbilityGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowDefensiveAbilityMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveAbilityMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveAbilityModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveAbilityModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveAbilityXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Defensive Reduction">
+            <field name="offensiveSlowDefensiveReductionChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveReductionDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowDefensiveReductionDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowDefensiveReductionDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveReductionGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowDefensiveReductionMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveReductionMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveReductionModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveReductionModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowDefensiveReductionXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Fire">
+            <field name="offensiveSlowFireChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowFireDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowFireDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowFireDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowFireGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowFireMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowFireMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowFireModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowFireModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowFireXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Life">
+            <field name="offensiveSlowLifeChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowLifeDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowLifeDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowLifeMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Life Leach">
+            <field name="offensiveSlowLifeLeachChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeLeachDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowLifeLeachDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowLifeLeachDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeLeachGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowLifeLeachMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeLeachMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeLeachModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeLeachModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLifeLeachXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Lightning">
+            <field name="offensiveSlowLightningChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLightningDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowLightningDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowLightningDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLightningGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowLightningMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLightningMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLightningModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLightningModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowLightningXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Mana Leach">
+            <field name="offensiveSlowManaLeachChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowManaLeachDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowManaLeachDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowManaLeachDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowManaLeachGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowManaLeachMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowManaLeachMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowManaLeachModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowManaLeachModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowManaLeachXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Offensive Ability">
+            <field name="offensiveSlowOffensiveAbilityChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveAbilityDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowOffensiveAbilityDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowOffensiveAbilityDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveAbilityGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowOffensiveAbilityMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveAbilityMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveAbilityModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveAbilityModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveAbilityXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Offensive Reduction">
+            <field name="offensiveSlowOffensiveReductionChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveReductionDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowOffensiveReductionDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowOffensiveReductionDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveReductionGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowOffensiveReductionMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveReductionMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveReductionModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveReductionModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowOffensiveReductionXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Physical">
+            <field name="offensiveSlowPhysicalChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPhysicalDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowPhysicalDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowPhysicalDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPhysicalGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowPhysicalMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPhysicalMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPhysicalModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPhysicalModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPhysicalXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Poison">
+            <field name="offensiveSlowPoisonChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPoisonDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowPoisonDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowPoisonDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPoisonGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowPoisonMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPoisonMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPoisonModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPoisonModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowPoisonXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Run Speed">
+            <field name="offensiveSlowRunSpeedChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowRunSpeedDurationMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowRunSpeedDurationMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveSlowRunSpeedDurationModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowRunSpeedGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveSlowRunSpeedMax" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowRunSpeedMin" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowRunSpeedModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowRunSpeedModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveSlowRunSpeedXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Offensive Slow Total Speed">
+            <field name="offensiveSlowTotalSpeedChance" var-class="array" var-type="real" />
+            <field name="offensiveSlowTotalSpeedDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveSlowTotalSpeedDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveSlowTotalSpeedGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveSlowTotalSpeedMax" var-class="array" var-type="real" />
+            <field name="offensiveSlowTotalSpeedMin" var-class="array" var-type="real" />
+            <field name="offensiveSlowTotalSpeedXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Physical Damage Reduction Percent">
+            <field name="offensivePhysicalReductionPercentChance" var-class="array" var-type="real" />
+            <field name="offensivePhysicalReductionPercentDurationMax" var-class="array" var-type="real" />
+            <field name="offensivePhysicalReductionPercentDurationMin" var-class="array" var-type="real" />
+            <field name="offensivePhysicalReductionPercentGlobal" var-class="variable" var-type="bool" />
+            <field name="offensivePhysicalReductionPercentMax" var-class="array" var-type="real" />
+            <field name="offensivePhysicalReductionPercentMin" var-class="array" var-type="real" />
+            <field name="offensivePhysicalReductionPercentXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Physical Resistance Reduction Absolute">
+            <field name="offensivePhysicalResistanceReductionAbsoluteChance" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionAbsoluteDurationMax" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionAbsoluteDurationMin" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionAbsoluteGlobal" var-class="variable" var-type="bool" />
+            <field name="offensivePhysicalResistanceReductionAbsoluteMax" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionAbsoluteMin" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionAbsoluteXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Physical Resistance Reduction Percent">
+            <field name="offensivePhysicalResistanceReductionPercentChance" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionPercentDurationMax" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionPercentDurationMin" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionPercentGlobal" var-class="variable" var-type="bool" />
+            <field name="offensivePhysicalResistanceReductionPercentMax" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionPercentMin" var-class="array" var-type="real" />
+            <field name="offensivePhysicalResistanceReductionPercentXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Total Damage Reduction Absolute">
+            <field name="offensiveTotalDamageReductionAbsoluteChance" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionAbsoluteDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionAbsoluteDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionAbsoluteGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveTotalDamageReductionAbsoluteMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionAbsoluteMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionAbsoluteXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Total Damage Reduction Percent">
+            <field name="offensiveTotalDamageReductionPercentChance" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionPercentDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionPercentDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionPercentGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveTotalDamageReductionPercentMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionPercentMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalDamageReductionPercentXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Total Resistance Reduction Absolute">
+            <field name="offensiveTotalResistanceReductionAbsoluteChance" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionAbsoluteDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionAbsoluteDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionAbsoluteGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveTotalResistanceReductionAbsoluteMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionAbsoluteMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionAbsoluteXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Total Resistance Reduction Percent">
+            <field name="offensiveTotalResistanceReductionPercentChance" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionPercentDurationMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionPercentDurationMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionPercentGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveTotalResistanceReductionPercentMax" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionPercentMin" var-class="array" var-type="real" />
+            <field name="offensiveTotalResistanceReductionPercentXOR" var-class="variable" var-type="bool" />
+          </var-group>
+        </var-group>
+        <var-group name="Offensive Global">
+          <field name="offensiveGlobalChance" var-class="array" var-type="real" var-default-value="0" />
+        </var-group>
+        <var-group name="Offensive Influence">
+          <var-group name="Confusion">
+            <field name="offensiveConfusionChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveConfusionGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveConfusionMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveConfusionMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveConfusionXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Convert">
+            <field name="offensiveConvertChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveConvertGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveConvertMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveConvertMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveConvertXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Fear">
+            <field name="offensiveFearChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveFearGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveFearMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveFearMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveFearXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Freeze">
+            <field name="offensiveFreezeChance" var-class="array" var-type="real" />
+            <field name="offensiveFreezeGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveFreezeMax" var-class="array" var-type="real" />
+            <field name="offensiveFreezeMin" var-class="array" var-type="real" />
+            <field name="offensiveFreezeModifier" var-class="array" var-type="real" />
+            <field name="offensiveFreezeModifierChance" var-class="array" var-type="real" />
+            <field name="offensiveFreezeXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Knockdown">
+            <field name="offensiveKnockdownChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveKnockdownGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveKnockdownMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveKnockdownMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveKnockdownModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveKnockdownModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveKnockdownXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Petrify">
+            <field name="offensivePetrifyChance" var-class="array" var-type="real" />
+            <field name="offensivePetrifyGlobal" var-class="variable" var-type="bool" />
+            <field name="offensivePetrifyMax" var-class="array" var-type="real" />
+            <field name="offensivePetrifyMin" var-class="array" var-type="real" />
+            <field name="offensivePetrifyModifier" var-class="array" var-type="real" />
+            <field name="offensivePetrifyModifierChance" var-class="array" var-type="real" />
+            <field name="offensivePetrifyXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Sleep">
+            <field name="offensiveSleepChance" var-class="array" var-type="real" />
+            <field name="offensiveSleepGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveSleepMax" var-class="array" var-type="real" />
+            <field name="offensiveSleepMin" var-class="array" var-type="real" />
+            <field name="offensiveSleepModifier" var-class="array" var-type="real" />
+            <field name="offensiveSleepModifierChance" var-class="array" var-type="real" />
+            <field name="offensiveSleepXOR" var-class="variable" var-type="bool" />
+          </var-group>
+          <var-group name="Stun">
+            <field name="offensiveStunChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveStunGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveStunMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveStunMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveStunModifier" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveStunModifierChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveStunXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Taunt">
+            <field name="offensiveTauntChance" var-class="array" var-type="real" var-default-value="0" />
+            <field name="offensiveTauntGlobal" var-class="variable" var-type="bool" var-default-value="0" />
+            <field name="offensiveTauntMax" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveTauntMin" var-class="array" var-type="real" var-default-value="0">
+              <description>Seconds</description>
+            </field>
+            <field name="offensiveTauntXOR" var-class="variable" var-type="bool" var-default-value="0" />
+          </var-group>
+          <var-group name="Trap">
+            <field name="offensiveTrapChance" var-class="array" var-type="real" />
+            <field name="offensiveTrapGlobal" var-class="variable" var-type="bool" />
+            <field name="offensiveTrapMax" var-class="array" var-type="real" />
+            <field name="offensiveTrapMin" var-class="array" var-type="real" />
+            <field name="offensiveTrapModifier" var-class="array" var-type="real" />
+            <field name="offensiveTrapModifierChance" var-class="array" var-type="real" />
+            <field name="offensiveTrapXOR" var-class="variable" var-type="bool" />
+          </var-group>
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

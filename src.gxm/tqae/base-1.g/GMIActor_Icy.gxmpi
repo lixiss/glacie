@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="GMIActor_Icy">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="deflationQuick" />
+      <field name="deflationSlow" />
+      <field name="expansionTarget" />
+      <field name="icyTextureName" />
+      <field name="inflationRate" />
+      <field name="particleFxName" />
+    </var-group>
+  </record-type>
+</partial>

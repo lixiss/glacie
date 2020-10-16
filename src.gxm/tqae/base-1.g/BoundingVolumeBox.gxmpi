@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="BoundingVolumeBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Volume Variables">
+      <field name="sizeX" />
+      <field name="sizeY" />
+      <field name="sizeZ" />
+    </var-group>
+  </record-type>
+</partial>

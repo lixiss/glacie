@@ -1,0 +1,140 @@
+﻿<partial>
+  <record-type name="TemplateBase.MonsterSkillManager" path="TemplateBase/MonsterSkillManager.tpl">
+    <expression-variables>
+      <expression-variable name="charLevel" />
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Configuration">
+        <field name="attackSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="berserkSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="buffOther2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="buffOther3SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="buffOtherSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="buffSelf2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="buffSelf3SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="buffSelfSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="chainBehavior" var-class="picklist" var-type="string" var-default-value="UseOnCurrentEnemy;UseOnLeader;UseOnSelf;UseOnAllies" />
+        <field name="chainInitialSkill" var-class="variable" var-type="file_dbr" />
+        <field name="chainNextSkill" var-class="variable" var-type="file_dbr" />
+        <field name="dyingSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="healSkillDelay" var-class="variable" var-type="real" />
+        <field name="healSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="initial2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="initialSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="longRangeMax" var-class="variable" var-type="real" var-default-value="20" />
+        <field name="longRangeMin" var-class="variable" var-type="real" var-default-value="8" />
+        <field name="mediumRangeMax" var-class="variable" var-type="real" var-default-value="15" />
+        <field name="mediumRangeMin" var-class="variable" var-type="real" var-default-value="4" />
+        <field name="nightBuffSkill" var-class="variable" var-type="file_dbr" />
+        <field name="shortRangeMax" var-class="variable" var-type="real" var-default-value="4" />
+        <field name="shortRangeMin" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="specialAttack2Chance" var-class="variable" var-type="real">
+          <description>[0..100]</description>
+        </field>
+        <field name="specialAttack2Delay" var-class="variable" var-type="real" />
+        <field name="specialAttack2Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="specialAttack2SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttack2Timeout" var-class="variable" var-type="real" />
+        <field name="specialAttack3Chance" var-class="variable" var-type="real">
+          <description>[0..100]</description>
+        </field>
+        <field name="specialAttack3Delay" var-class="variable" var-type="real" />
+        <field name="specialAttack3Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="specialAttack3SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttack3Timeout" var-class="variable" var-type="real" />
+        <field name="specialAttack4Chance" var-class="variable" var-type="real" />
+        <field name="specialAttack4Delay" var-class="variable" var-type="real" />
+        <field name="specialAttack4Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="specialAttack4SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttack4Timeout" var-class="variable" var-type="real" />
+        <field name="specialAttack5Chance" var-class="variable" var-type="real" />
+        <field name="specialAttack5Delay" var-class="variable" var-type="real" />
+        <field name="specialAttack5Range" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="specialAttack5SkillName" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttack5Timeout" var-class="variable" var-type="real" />
+        <field name="specialAttackChance" var-class="variable" var-type="real">
+          <description>[0..100]</description>
+        </field>
+        <field name="specialAttackDelay" var-class="variable" var-type="real">
+          <description>Seconds - delay for special skill use</description>
+        </field>
+        <field name="specialAttackRange" var-class="picklist" var-type="string" var-default-value="AnyRange;ShortRange;MediumRange;LongRange" />
+        <field name="specialAttackSkillName" var-class="variable" var-type="file_dbr" />
+        <field name="specialAttackTimeout" var-class="variable" var-type="real">
+          <description>Seconds - time out for all skill use</description>
+        </field>
+      </var-group>
+      <var-group name="Skill Tree">
+        <field name="skillLevel1" var-class="variable" var-type="equation" />
+        <field name="skillLevel2" var-class="variable" var-type="equation" />
+        <field name="skillLevel3" var-class="variable" var-type="equation" />
+        <field name="skillLevel4" var-class="variable" var-type="equation" />
+        <field name="skillLevel5" var-class="variable" var-type="equation" />
+        <field name="skillLevel6" var-class="variable" var-type="equation" />
+        <field name="skillLevel7" var-class="variable" var-type="equation" />
+        <field name="skillLevel8" var-class="variable" var-type="equation" />
+        <field name="skillLevel9" var-class="variable" var-type="equation" />
+        <field name="skillLevel10" var-class="variable" var-type="equation" />
+        <field name="skillLevel11" var-class="variable" var-type="equation" />
+        <field name="skillLevel12" var-class="variable" var-type="equation" />
+        <field name="skillLevel13" var-class="variable" var-type="equation" />
+        <field name="skillLevel14" var-class="variable" var-type="equation" />
+        <field name="skillLevel15" var-class="variable" var-type="equation" />
+        <field name="skillLevel16" var-class="variable" var-type="equation" />
+        <field name="skillLevel17" var-class="variable" var-type="equation" />
+        <field name="skillLevel18" var-class="variable" var-type="equation" />
+        <field name="skillLevel19" var-class="variable" var-type="equation" />
+        <field name="skillLevel20" var-class="variable" var-type="equation" />
+        <field name="skillLevel21" var-class="variable" var-type="equation" />
+        <field name="skillLevel22" var-class="variable" var-type="equation" />
+        <field name="skillLevel23" var-class="variable" var-type="equation" />
+        <field name="skillLevel24" var-class="variable" var-type="equation" />
+        <field name="skillLevel25" var-class="variable" var-type="equation" />
+        <field name="skillLevel26" var-class="variable" var-type="equation" />
+        <field name="skillLevel27" var-class="variable" var-type="equation" />
+        <field name="skillLevel28" var-class="variable" var-type="equation" />
+        <field name="skillLevel29" var-class="variable" var-type="equation" />
+        <field name="skillLevel30" var-class="variable" var-type="equation" />
+        <field name="skillLevel31" var-class="variable" var-type="equation" />
+        <field name="skillLevel32" var-class="variable" var-type="equation" />
+        <field name="skillName1" var-class="variable" var-type="file_dbr" />
+        <field name="skillName2" var-class="variable" var-type="file_dbr" />
+        <field name="skillName3" var-class="variable" var-type="file_dbr" />
+        <field name="skillName4" var-class="variable" var-type="file_dbr" />
+        <field name="skillName5" var-class="variable" var-type="file_dbr" />
+        <field name="skillName6" var-class="variable" var-type="file_dbr" />
+        <field name="skillName7" var-class="variable" var-type="file_dbr" />
+        <field name="skillName8" var-class="variable" var-type="file_dbr" />
+        <field name="skillName9" var-class="variable" var-type="file_dbr" />
+        <field name="skillName10" var-class="variable" var-type="file_dbr" />
+        <field name="skillName11" var-class="variable" var-type="file_dbr" />
+        <field name="skillName12" var-class="variable" var-type="file_dbr" />
+        <field name="skillName13" var-class="variable" var-type="file_dbr" />
+        <field name="skillName14" var-class="variable" var-type="file_dbr" />
+        <field name="skillName15" var-class="variable" var-type="file_dbr" />
+        <field name="skillName16" var-class="variable" var-type="file_dbr" />
+        <field name="skillName17" var-class="variable" var-type="file_dbr" />
+        <field name="skillName18" var-class="variable" var-type="file_dbr" />
+        <field name="skillName19" var-class="variable" var-type="file_dbr" />
+        <field name="skillName20" var-class="variable" var-type="file_dbr" />
+        <field name="skillName21" var-class="variable" var-type="file_dbr" />
+        <field name="skillName22" var-class="variable" var-type="file_dbr" />
+        <field name="skillName23" var-class="variable" var-type="file_dbr" />
+        <field name="skillName24" var-class="variable" var-type="file_dbr" />
+        <field name="skillName25" var-class="variable" var-type="file_dbr" />
+        <field name="skillName26" var-class="variable" var-type="file_dbr" />
+        <field name="skillName27" var-class="variable" var-type="file_dbr" />
+        <field name="skillName28" var-class="variable" var-type="file_dbr" />
+        <field name="skillName29" var-class="variable" var-type="file_dbr" />
+        <field name="skillName30" var-class="variable" var-type="file_dbr" />
+        <field name="skillName31" var-class="variable" var-type="file_dbr" />
+        <field name="skillName32" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

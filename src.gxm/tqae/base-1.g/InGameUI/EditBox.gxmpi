@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="InGameUI.EditBox">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="ErrorStyle" />
+      <field name="Height" />
+      <field name="InvertedStyle" />
+      <field name="LocationX" />
+      <field name="LocationY" />
+      <field name="NumericOnly" />
+      <field name="Style" />
+      <field name="Width" />
+    </var-group>
+  </record-type>
+</partial>

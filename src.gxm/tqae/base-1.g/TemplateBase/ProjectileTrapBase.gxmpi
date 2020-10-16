@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="TemplateBase.ProjectileTrapBase">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="idleMesh" />
+      <field name="trapActiveAnimation" />
+      <field name="trapActiveAnimationSpeed" />
+      <field name="trapDeployAnimation" />
+      <field name="trapDeployAnimationSpeed" />
+      <field name="trapIdleAnimation" />
+      <field name="trapIdleAnimationSpeed" />
+    </var-group>
+    <var-group name="Projectile Sounds">
+      <field name="projectileActivateSound" />
+      <field name="projectileDestructSound" />
+    </var-group>
+  </record-type>
+</partial>

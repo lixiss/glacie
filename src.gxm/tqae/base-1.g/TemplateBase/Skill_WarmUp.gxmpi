@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_WarmUp">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="skillAllowsWarmUp" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="warmUpEffectAttachPoint" />
+      <field name="warmUpEffectName" />
+    </var-group>
+    <var-group name="Skill Sound">
+      <field name="skillWarmUpSound" />
+    </var-group>
+  </record-type>
+</partial>

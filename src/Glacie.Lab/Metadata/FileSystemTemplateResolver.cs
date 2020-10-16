@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-using Glacie.Data.Tpl;
+using Glacie.Data.Templates;
 
 namespace Glacie.Lab.Metadata
 {
@@ -35,9 +35,9 @@ namespace Glacie.Lab.Metadata
             // Normalize
             name = name.ToLowerInvariant().Replace('\\', '/');
 
-            var templatePath = Path.Combine(_templatesDir, name);
+            var templatePath = System.IO.Path.Combine(_templatesDir, name);
 
-            var template = _templateReader.Read(templatePath);
+            var template = _templateReader.Read(Path1.From(templatePath));
             return template;
         }
 

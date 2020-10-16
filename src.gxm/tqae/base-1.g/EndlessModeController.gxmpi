@@ -1,0 +1,37 @@
+﻿<partial>
+  <record-type name="EndlessModeController">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Endless mode variables">
+      <field name="ArenaTimer" />
+      <field name="Arenas" />
+      <field name="BossLevel" />
+      <field name="BossPortals" />
+      <field name="ChampionChanceIncrement" />
+      <field name="CycleDifficultyIncrement" />
+      <field name="EnemyBuffs" />
+      <field name="HubLevel" />
+      <field name="HubPortals" />
+      <field name="LoopLength" />
+      <field name="MinDifficultyLevel" />
+      <field name="PlayerBuffs" />
+      <field name="PortalList" />
+      <field name="monsterGeneralScaleEquation" />
+      <field name="monsterHealthScaleEquation" />
+      <field name="uniqueLootChanceEquation" />
+    </var-group>
+    <var-group name="Sound Variables">
+      <field name="ArenaClearFanfare" />
+      <field name="BattleMusic" />
+      <field name="BattleStartFanfare" />
+      <field name="GameOverFanfare" />
+      <field name="TartarusBabble" />
+      <field name="TartarusVictoryFanfare" />
+      <field name="WaitingPling" />
+      <field name="WaitingPlingInterval" />
+    </var-group>
+  </record-type>
+</partial>

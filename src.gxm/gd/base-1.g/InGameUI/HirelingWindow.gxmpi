@@ -1,0 +1,30 @@
+﻿<partial>
+  <record-type name="InGameUI.HirelingWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="backgroundBitmap" />
+      <field name="characterView" />
+      <field name="closebutton" />
+      <field name="equipArtifact" />
+      <field name="equipChest" />
+      <field name="equipFeet" />
+      <field name="equipFinger1" />
+      <field name="equipFinger2" />
+      <field name="equipHandLeft" />
+      <field name="equipHandRight" />
+      <field name="equipHands" />
+      <field name="equipHead" />
+      <field name="equipLegs" />
+      <field name="equipMedal" />
+      <field name="equipNeck" />
+      <field name="equipShoulders" />
+      <field name="equipWaist" />
+      <field name="rotateLeftButton" />
+      <field name="rotateRightButton" />
+    </var-group>
+  </record-type>
+</partial>

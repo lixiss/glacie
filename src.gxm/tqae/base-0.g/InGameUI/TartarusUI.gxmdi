@@ -1,0 +1,52 @@
+﻿<partial>
+  <record-type name="InGameUI.TartarusUI" path="InGameUI/TartarusUI.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="Tartarus Hud" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="ActiveMods" var-class="variable" var-type="file_dbr" />
+        <field name="ActiveModsTitleText" var-class="variable" var-type="string" />
+        <field name="ActiveMonsterMod" var-class="variable" var-type="file_dbr" />
+        <field name="ActivePlayerMod" var-class="variable" var-type="file_dbr" />
+        <field name="ArenaClearedText" var-class="variable" var-type="string" />
+        <field name="ArenaFormatText" var-class="variable" var-type="string">
+          <description>%i in the string will be replaced by arena number</description>
+        </field>
+        <field name="ArenaStartText" var-class="variable" var-type="string" />
+        <field name="ArenaTimer" var-class="variable" var-type="file_dbr" />
+        <field name="BuffWidget" var-class="variable" var-type="file_dbr">
+          <description>widget for the buff names</description>
+        </field>
+        <field name="CounterBackgroundBitmap" var-class="variable" var-type="file_dbr">
+          <description>Background</description>
+        </field>
+        <field name="FontStyle" var-class="variable" var-type="file_dbr">
+          <description>Font for tartarus</description>
+        </field>
+        <field name="LootChance" var-class="variable" var-type="file_dbr" />
+        <field name="LootChanceFormatText" var-class="variable" var-type="string">
+          <description>%i in the string will be replaced by loot chance</description>
+        </field>
+        <field name="NoModifierText" var-class="variable" var-type="string" />
+        <field name="NumberCount" var-class="variable" var-type="file_dbr">
+          <description>Name of NPC</description>
+        </field>
+        <field name="OtherPlayersWaitingText" var-class="variable" var-type="string" />
+        <field name="PlayerDeadText" var-class="variable" var-type="string" />
+        <field name="RewardDecisionText" var-class="variable" var-type="string" />
+        <field name="RewardTitle" var-class="variable" var-type="file_dbr" />
+        <field name="RewardTitleText" var-class="variable" var-type="string" />
+        <field name="TartarusKillsFormatText" var-class="variable" var-type="string">
+          <description>%i in the string will be replaced by the number of kills</description>
+        </field>
+        <field name="WaitingForPlayersText" var-class="variable" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

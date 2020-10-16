@@ -1,0 +1,9 @@
+﻿<partial>
+  <record-type name="InGameUI.SimpleRollover" path="InGameUI/SimpleRollover.tpl">
+    <var-group>
+      <var-group name="SimpleRollover">
+        <field name="defaultTextStyle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="SetPiecePart" path="SetPiecePart.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="SetPiecePart" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Part Config">
+        <field name="blockPathing" var-class="variable" var-type="bool" />
+        <field name="buffer" var-class="variable" var-type="real" />
+        <field name="maxScale" var-class="variable" var-type="real" />
+        <field name="minScale" var-class="variable" var-type="real" />
+        <field name="names" var-class="array" var-type="file_dbr">
+          <description>List objects that will spawn at location.</description>
+        </field>
+        <field name="positionX" var-class="variable" var-type="real" />
+        <field name="positionY" var-class="variable" var-type="real" />
+        <field name="positionZ" var-class="variable" var-type="real" />
+        <field name="weight" var-class="variable" var-type="int" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

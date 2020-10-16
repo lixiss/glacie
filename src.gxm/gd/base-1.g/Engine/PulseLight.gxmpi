@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="Engine.PulseLight">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Light Variables">
+      <field name="colorPeriod" />
+      <field name="expandSpeed" />
+      <field name="firstColor.b" />
+      <field name="firstColor.g" />
+      <field name="firstColor.r" />
+      <field name="maxRadius" />
+      <field name="minRadius" />
+      <field name="secondColor.b" />
+      <field name="secondColor.g" />
+      <field name="secondColor.r" />
+      <field name="shadowPriority" />
+    </var-group>
+  </record-type>
+</partial>

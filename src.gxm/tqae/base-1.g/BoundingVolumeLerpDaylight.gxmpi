@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="BoundingVolumeLerpDaylight">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Daylight Management" system="true">
+      <field name="endHour" />
+      <field name="radiusToEndHour" />
+      <field name="startHour" />
+    </var-group>
+  </record-type>
+</partial>

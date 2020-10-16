@@ -1,0 +1,49 @@
+﻿<partial>
+  <record-type name="ItemRelic">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Relic Config">
+      <field name="bonusTableName" />
+      <field name="completedRelicLevel" />
+      <field name="itemOverlayBitmap" />
+      <field name="itemOverlayBitmapPartial" />
+      <field name="itemOverlayBitmapPartialSmall" />
+      <field name="itemOverlayBitmapSmall" />
+      <field name="relicBitmap" />
+      <field name="relicCompleteSound" />
+      <field name="relicToItemSound" />
+      <field name="relicToRelicSound" />
+      <field name="shardBitmap" />
+    </var-group>
+    <var-group name="Relic Qualifiers">
+      <field name="amulet" />
+      <field name="axe" />
+      <field name="axe2h" />
+      <field name="bracelet" />
+      <field name="chest" />
+      <field name="dagger" />
+      <field name="feet" />
+      <field name="hands" />
+      <field name="head" />
+      <field name="legs" />
+      <field name="mace" />
+      <field name="mace2h" />
+      <field name="medal" />
+      <field name="offhand" />
+      <field name="ranged1h" />
+      <field name="ranged2h" />
+      <field name="ring" />
+      <field name="scepter" />
+      <field name="shield" />
+      <field name="shoulders" />
+      <field name="spear" />
+      <field name="staff" />
+      <field name="sword" />
+      <field name="sword2h" />
+      <field name="waist" />
+    </var-group>
+  </record-type>
+</partial>

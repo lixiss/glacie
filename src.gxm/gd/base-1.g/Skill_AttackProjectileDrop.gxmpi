@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="Skill_AttackProjectileDrop">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Drop">
+      <field name="dropHeight" />
+      <field name="dropRadius" />
+      <field name="dropVariation" />
+      <field name="launchAboveTarget" />
+      <field name="numProjectiles" />
+    </var-group>
+  </record-type>
+</partial>

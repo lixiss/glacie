@@ -1,0 +1,44 @@
+﻿<partial>
+  <record-type name="TemplateBase.QuestStep" path="TemplateBase/QuestStep.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="QuestStep" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Step Action">
+        <field name="questStepActionName" var-class="variable" var-type="file_dbr">
+          <description>QuestAction</description>
+        </field>
+        <field name="questStepActionSound" var-class="variable" var-type="file_dbr" />
+      </var-group>
+      <var-group name="Step Parameters">
+        <field name="questStepBitmapName" var-class="variable" var-type="string">
+          <description>Display bitmap</description>
+        </field>
+        <field name="questStepDialogSoundName" var-class="variable" var-type="file_dbr">
+          <description>File name for display dialog sound</description>
+        </field>
+        <field name="questStepDialogSpeed" var-class="variable" var-type="real" var-default-value="1">
+          <description>Speed of scrolling</description>
+        </field>
+        <field name="questStepDialogText" var-class="variable" var-type="string">
+          <description>File name for display dialog</description>
+        </field>
+        <field name="questStepHidden" var-class="variable" var-type="bool">
+          <description>Step will not show on Display</description>
+        </field>
+        <field name="questStepQualifyingObjectName" var-class="variable" var-type="string">
+          <description>TBD</description>
+        </field>
+        <field name="questStepRequired" var-class="variable" var-type="bool">
+          <description>Step must be performed</description>
+        </field>
+        <field name="questStepSound" var-class="variable" var-type="file_dbr" />
+        <field name="questStepText" var-class="variable" var-type="string">
+          <description>File name for display text</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

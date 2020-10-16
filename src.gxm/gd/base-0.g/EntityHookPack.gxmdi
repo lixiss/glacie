@@ -1,0 +1,26 @@
+﻿<partial>
+  <record-type name="EntityHookPack" path="EntityHookPack.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Scripts">
+        <field name="entityHooks" var-class="variable" var-type="file_dbr" />
+        <field name="onAddToWorld" var-class="variable" var-type="string">
+          <description>Called when the entity is added to the world,</description>
+        </field>
+        <field name="onDestroy" var-class="variable" var-type="string">
+          <description>Called when the object is destroyed.</description>
+        </field>
+        <field name="onInitialUpdate" var-class="variable" var-type="string">
+          <description>Called at the end of the first entity update.</description>
+        </field>
+        <field name="onRemoveFromWorld" var-class="variable" var-type="string">
+          <description>Called when the entity is removed from the world.</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

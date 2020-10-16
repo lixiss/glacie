@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="MenuSound">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Sound files">
+      <field name="ambientSound" />
+      <field name="introMusic" />
+      <field name="loopingCreditsMusic" />
+      <field name="loopingMusic" />
+      <field name="rockingCreditsMusic" />
+    </var-group>
+  </record-type>
+</partial>

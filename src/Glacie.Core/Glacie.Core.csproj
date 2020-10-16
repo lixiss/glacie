@@ -28,12 +28,29 @@
     <Compile Include="Data\Arz\ArzValueType.cs" />
     <Compile Include="Data\Compression\CompressionAlgorithm.cs" />
     <Compile Include="Data\Compression\CompressionLevel.cs" />
-    <Compile Include="Data\GXGameType.cs" />
+    <Compile Include="Data\EngineClass.cs" />
+    <Compile Include="Domain\ResourceType.cs" />
+    <Compile Include="Domain\ResourceTypeUtilities.cs" />
+    <Compile Include="Path\PathConversions.cs" />
+    <Compile Include="Path\PathInternal.cs" />
+    <Compile Include="Path\Path.Utilities.cs" />
+    <Compile Include="Path\Path.cs" />
+    <Compile Include="Path\PathComparer.cs" />
+    <Compile Include="Path\PathComparison.cs" />
+    <Compile Include="Path\PathValidations.cs" />
     <Compile Include="ICumulativeProgress.cs" />
     <Compile Include="IIncrementalProgress.cs" />
     <Compile Include="Data.Dbr\DbrFieldReader.cs" />
-    <Compile Include="IVirtualPathMapper.cs" />
+    <Compile Include="Path1\Path1.cs" />
+    <Compile Include="Path\PathBuilder.cs" />
+    <Compile Include="Path1\Path1Comparison.cs" />
+    <Compile Include="Path1\Path1Form.cs" />
+    <Compile Include="Path1\IPath1Mapper.cs" />
+    <Compile Include="Path1\Path1Mapper.cs" />
     <Compile Include="NaturalOrderStringComparer.cs" />
+    <Compile Include="Resolution\ResolutionToken.cs" />
+    <Compile Include="Resolution\ResolutionTokenId.cs" />
+    <Compile Include="Resolution\Resolution.cs" />
     <Compile Include="Variant.cs" />
     <Compile Include="VariantType.cs" />
     <Compile Include="Data\Arz\ArzError.cs" />
@@ -41,9 +58,6 @@
     <Compile Include="Data\Arz\Infrastructure\ArzBitConverter.cs" />
     <Compile Include="Data\Arz\Features.cs" />
     <Compile Include="InternalsVisibleTo.cs" />
-    <Compile Include="VirtualPath.cs" />
-    <Compile Include="VirtualPathNormalization.cs" />
-    <Compile Include="VirtualPathComparison.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,7 +65,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MinVer" Version="2.3.0">
+    <PackageReference Include="MinVer" Version="2.3.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>

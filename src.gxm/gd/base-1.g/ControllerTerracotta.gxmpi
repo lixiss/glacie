@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="ControllerTerracotta">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="TerracottaAttributes">
+      <field name="AttackRange" />
+      <field name="MarchRange" />
+    </var-group>
+  </record-type>
+</partial>

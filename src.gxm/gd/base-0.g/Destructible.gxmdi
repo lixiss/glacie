@@ -1,0 +1,111 @@
+﻿<partial>
+  <record-type name="Destructible" path="Destructible.tpl">
+    <inherits>
+      <inherit record="Decoration" />
+      <inherit record="TemplateBase.Reward" />
+      <inherit record="QuestMarker" />
+      <inherit record="DestructibleHookPack" />
+    </inherits>
+    <expression-variables>
+      <expression-variable name="level" />
+    </expression-variables>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Destructible" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Destructible">
+        <field name="attackAnimation" var-class="picklist" var-type="string" var-default-value="Attack;Kick" />
+        <field name="breakEffectAttachpoints" var-class="array" var-type="string" var-default-value="FXBreak01">
+          <description>Attachpoint names to attach the break effects to</description>
+        </field>
+        <field name="breakEffects" var-class="array" var-type="file_dbr">
+          <description>List of effects to play when the destructible breaks (EffectEntity)</description>
+        </field>
+        <field name="breakForceMax" var-class="variable" var-type="real" var-default-value="4">
+          <description>Maximum speed at which pieces come apart (N)</description>
+        </field>
+        <field name="breakForceMin" var-class="variable" var-type="real" var-default-value="2">
+          <description>Minimum speed at which pieces come apart (N)</description>
+        </field>
+        <field name="breakMode" var-class="picklist" var-type="string" var-default-value="React;Explode;Fall;Crumple">
+          <description>Type of break (default = Explode)</description>
+        </field>
+        <field name="breakSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak to play when the destructible breaks</description>
+        </field>
+        <field name="brokenMesh" var-class="variable" var-type="file_msh">
+          <description>Broken mesh</description>
+        </field>
+        <field name="crushDamageEquation" var-class="variable" var-type="equation">
+          <description>Amount of crush damage to apply where the pieces land</description>
+        </field>
+        <field name="crushDamageMax" var-class="variable" var-type="real" var-default-value="1000000" />
+        <field name="crushDamageMin" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="door" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="fallDirectionX" var-class="variable" var-type="real" var-default-value="1">
+          <description>Direction to fall in (object space) if breakMode is Fall</description>
+        </field>
+        <field name="fallDirectionY" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="fallDirectionZ" var-class="variable" var-type="real" var-default-value="0" />
+        <field name="fixedStatics" var-class="array" var-type="string">
+          <description>Names of bones which are always static</description>
+        </field>
+        <field name="impactSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak to play when a piece impacts ground</description>
+        </field>
+        <field name="intactEffect" var-class="variable" var-type="file_dbr" />
+        <field name="intactSound" var-class="variable" var-type="file_dbr" />
+        <field name="invulnerable" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="life" var-class="variable" var-type="int" var-default-value="95" />
+        <field name="maxLife" var-class="variable" var-type="int" var-default-value="100">
+          <description>Number of hitpoints</description>
+        </field>
+        <field name="maxLifeEquation" var-class="variable" var-type="string" />
+        <field name="maxNumRandomStatics" var-class="variable" var-type="int" var-default-value="0">
+          <description>Maximum number of random statics to pick (0 = all)</description>
+        </field>
+        <field name="minNumRandomStatics" var-class="variable" var-type="int" var-default-value="0">
+          <description>Minimum number of randoms tatics to pick</description>
+        </field>
+        <field name="passableWhen" var-class="picklist" var-type="string" var-default-value="Intact;Broken;Always;Never">
+          <description>When can the object be pathed through?</description>
+        </field>
+        <field name="playerDamageOnly" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="playerOnly" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Can only be broken by players?</description>
+        </field>
+        <field name="randomStatics" var-class="array" var-type="string">
+          <description>Names of bones to randomly make static</description>
+        </field>
+        <field name="removeAttachedEntities" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Remove any attached entities when broken</description>
+        </field>
+        <field name="rubbleFade" var-class="variable" var-type="real" var-default-value="3">
+          <description>Fade out time (seconds)</description>
+        </field>
+        <field name="rubbleLife" var-class="variable" var-type="real" var-default-value="5">
+          <description>Time before fade out starts (seconds)</description>
+        </field>
+        <field name="selfCollide" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="splashSound" var-class="variable" var-type="file_dbr">
+          <description>SoundPak to play when a piece impacts water</description>
+        </field>
+        <field name="targetable" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="trailEffect" var-class="variable" var-type="file_dbr">
+          <description>Effect to attach to the broken pieces (EffectEntity)</description>
+        </field>
+      </var-group>
+      <var-group name="Loot">
+        <field name="lootChance" var-class="variable" var-type="int" var-default-value="100">
+          <description>Chance to drop loot (percent)</description>
+        </field>
+        <field name="lootClassification" var-class="picklist" var-type="string" var-default-value="Common;Champion;Hero;Boss;" />
+        <field name="lootTable" var-class="array" var-type="file_dbr" />
+        <field name="maxLevel" var-class="variable" var-type="int" var-default-value="100" />
+        <field name="minLevel" var-class="variable" var-type="int" var-default-value="1" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,60 @@
+﻿<partial>
+  <record-type name="Achievement" path="Achievement.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Achievement">
+        <field name="description" var-class="variable" var-type="string">
+          <description>Description Tag</description>
+        </field>
+        <field name="hidden" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Hidden Until Unlocked?</description>
+        </field>
+        <field name="id" var-class="variable" var-type="string">
+          <description>Achievement Identifier</description>
+        </field>
+        <field name="lockedIcon" var-class="variable" var-type="file_tex">
+          <description>Achievement icon when locked</description>
+        </field>
+        <field name="title" var-class="variable" var-type="string">
+          <description>Title Tag</description>
+        </field>
+        <field name="type" var-class="picklist" var-type="string" var-default-value="Unlock;Token;Kill;Stat;Faction">
+          <description>Achievement Type</description>
+        </field>
+        <field name="unlockedIcon" var-class="variable" var-type="file_tex">
+          <description>Achievement icon when unlocked</description>
+        </field>
+        <field name="xb1" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Faction">
+        <field name="factionCount" var-class="variable" var-type="int" />
+        <field name="factionNames" var-class="array" var-type="string" />
+        <field name="factionValue" var-class="variable" var-type="int" />
+      </var-group>
+      <var-group name="Kill">
+        <field name="killCount" var-class="variable" var-type="int" var-default-value="1" />
+        <field name="killDbrs" var-class="array" var-type="file_dbr" />
+        <field name="killDifficulty" var-class="variable" var-type="int" var-default-value="0">
+          <description>0=Normal;1=Veteran;2=Elite;3=Ultimate</description>
+        </field>
+        <field name="killHardcore" var-class="variable" var-type="bool" var-default-value="0" />
+      </var-group>
+      <var-group name="Stat">
+        <field name="skillNames" var-class="array" var-type="file_dbr">
+          <description>(SKILL_TRACKING) Associated skills, if any</description>
+        </field>
+        <field name="statCount" var-class="variable" var-type="int" />
+        <field name="statName" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Token">
+        <field name="tokenName" var-class="array" var-type="string">
+          <description>If player has one of these tokens (OR'ed), achievement is unlocked.</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

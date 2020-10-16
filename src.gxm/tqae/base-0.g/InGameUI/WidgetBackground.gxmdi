@@ -1,0 +1,23 @@
+﻿<partial>
+  <record-type name="InGameUI.WidgetBackground" path="InGameUI/WidgetBackground.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Properties">
+        <field name="BLBitmap" var-class="variable" var-type="file_tex" />
+        <field name="BRBitmap" var-class="variable" var-type="file_tex" />
+        <field name="BottomBitmap" var-class="variable" var-type="file_tex" />
+        <field name="FillerBitmap" var-class="variable" var-type="file_tex" />
+        <field name="LeftBitmap" var-class="variable" var-type="file_tex" />
+        <field name="Padding" var-class="variable" var-type="int" />
+        <field name="RightBitmap" var-class="variable" var-type="file_tex" />
+        <field name="TopBitmap" var-class="variable" var-type="file_tex" />
+        <field name="ULBitmap" var-class="variable" var-type="file_tex" />
+        <field name="URBitmap" var-class="variable" var-type="file_tex" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

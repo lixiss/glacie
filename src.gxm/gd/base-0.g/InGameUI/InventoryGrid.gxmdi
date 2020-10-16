@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="InGameUI.InventoryGrid" path="InGameUI/InventoryGrid.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="backgroundShadeColorAlpha" var-class="variable" var-type="real" />
+        <field name="backgroundShadeColorBlue" var-class="variable" var-type="real" />
+        <field name="backgroundShadeColorGreen" var-class="variable" var-type="real" />
+        <field name="backgroundShadeColorRed" var-class="variable" var-type="real" />
+        <field name="backgroundShadeReduction" var-class="variable" var-type="int" />
+        <field name="failsRequirementsColorAlpha" var-class="variable" var-type="real" />
+        <field name="failsRequirementsColorBlue" var-class="variable" var-type="real" />
+        <field name="failsRequirementsColorGreen" var-class="variable" var-type="real" />
+        <field name="failsRequirementsColorRed" var-class="variable" var-type="real" />
+        <field name="inventoryX" var-class="variable" var-type="int" />
+        <field name="inventoryXSize" var-class="variable" var-type="int" />
+        <field name="inventoryY" var-class="variable" var-type="int" />
+        <field name="inventoryYSize" var-class="variable" var-type="int" />
+        <field name="pickUpSoundName" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

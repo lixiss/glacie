@@ -1,0 +1,39 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterDismantleTab">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Dismantle Config">
+      <field name="commonItemBonus" />
+      <field name="commonItemBonusWeight" />
+      <field name="dismantleCost" />
+      <field name="epicItemBonus" />
+      <field name="epicItemBonusWeight" />
+      <field name="itemGenerated" />
+      <field name="itemWeights" />
+      <field name="legendaryItemBonus" />
+      <field name="legendaryItemBonusWeight" />
+      <field name="magicItemBonus" />
+      <field name="magicItemBonusWeight" />
+      <field name="rareItemBonus" />
+      <field name="rareItemBonusWeight" />
+    </var-group>
+    <var-group name="Dismantle Tab">
+      <field name="dismantleBox1" />
+      <field name="dismantleBox2" />
+      <field name="dismantleCostNumber" />
+      <field name="dismantleCostText" />
+      <field name="dismantleItemButton" />
+      <field name="dismantleItemSound" />
+      <field name="dynamiteBitmap" />
+      <field name="dynamiteNotEnoughNumber" />
+      <field name="dynamiteNumberBoxBitmap" />
+      <field name="dynamiteTotalNumber" />
+      <field name="dynamiteTotalText" />
+      <field name="itemBox" />
+      <field name="tooExpensiveCostNumber" />
+    </var-group>
+  </record-type>
+</partial>

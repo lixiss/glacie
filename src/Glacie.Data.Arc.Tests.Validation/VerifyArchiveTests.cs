@@ -25,14 +25,14 @@ namespace Glacie.Data.Arc.Tests.Validation
                 Mode = ArcArchiveMode.Read,
             });
 
-            foreach (var entry in archive.GetEntries())
+            foreach (var entry in archive.SelectAll())
             {
                 var result = VerifyEntry(entry);
                 Assert.True(result);
             }
         }
 
-        private bool VerifyEntry(ArcEntry entry)
+        private bool VerifyEntry(ArcArchiveEntry entry)
         {
             var buffer = ArrayPool<byte>.Shared.Rent(16 * 1024);
             try

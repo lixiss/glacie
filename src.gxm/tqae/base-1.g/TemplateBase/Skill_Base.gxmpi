@@ -1,0 +1,50 @@
+﻿<partial>
+  <record-type name="TemplateBase.Skill_Base">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Qualifying Weapons">
+      <field name="Axe" />
+      <field name="Bow" />
+      <field name="Mace" />
+      <field name="Magical" />
+      <field name="RangedOneHand" />
+      <field name="Shield" />
+      <field name="Spear" />
+      <field name="Staff" />
+      <field name="Sword" />
+      <field name="dualWieldOnly" />
+      <field name="meleeOnly" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="excludeRacialDamage" />
+      <field name="exclusiveSkill" />
+      <field name="skillMasteryLevelRequired" />
+      <field name="skillMaxLevel" />
+      <field name="skillSpecialAnimationName" />
+      <field name="skillTier" />
+      <field name="skillUltimateLevel" />
+    </var-group>
+    <var-group name="Skill Dependancy">
+      <field name="skillDependancy" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="targetFxPakName" />
+      <field name="warmupFxPakName" />
+    </var-group>
+    <var-group name="UI Infomation">
+      <field name="isPetDisplayable" />
+      <field name="skillBaseDescription" />
+      <field name="skillConnectionAtlantisOff" />
+      <field name="skillConnectionAtlantisOn" />
+      <field name="skillConnectionOff" />
+      <field name="skillConnectionOn" />
+      <field name="skillConnectionSpacing" />
+      <field name="skillDisplayName" />
+      <field name="skillDownBitmapName" />
+      <field name="skillUpBitmapName" />
+    </var-group>
+  </record-type>
+</partial>

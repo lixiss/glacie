@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="Skill_ProjectileModifier">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Modifiers">
+      <field name="projectileLaunchNumber" />
+      <field name="projectileLaunchRotation" />
+      <field name="skillActiveDuration" />
+      <field name="skillActiveLifeCost" />
+      <field name="skillActiveManaCost" />
+      <field name="skillCooldownTime" />
+      <field name="skillManaCost" />
+      <field name="skillTargetRadius" />
+    </var-group>
+    <var-group name="Skill Effects">
+      <field name="projModImpactFxPakName" />
+    </var-group>
+  </record-type>
+</partial>

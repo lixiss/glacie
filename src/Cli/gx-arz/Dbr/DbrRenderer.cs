@@ -20,7 +20,7 @@ namespace Glacie.Cli.Arz
             // TODO: Need option to sort fields. templateName then rest. also option to use numerical sort.
             // However, ArzWriter also need option to sort fields, so this function may be part of ArzRecord.
 
-            foreach (var field in record.GetAll())
+            foreach (var field in record.SelectAll())
             {
                 _builder.Append(field.Name);
                 _builder.Append(',');

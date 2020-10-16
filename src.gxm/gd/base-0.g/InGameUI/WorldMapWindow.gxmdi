@@ -1,0 +1,460 @@
+﻿<partial>
+  <record-type name="InGameUI.WorldMapWindow" path="InGameUI/WorldMapWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="WorldWindow">
+        <field name="Region001ShrineList" var-class="array" var-type="file_dbr" />
+        <field name="Region001ZoneList" var-class="array" var-type="file_dbr" />
+        <field name="Region002ShrineList" var-class="array" var-type="file_dbr" />
+        <field name="Region002ZoneList" var-class="array" var-type="file_dbr" />
+        <field name="Region003ShrineList" var-class="array" var-type="file_dbr" />
+        <field name="Region003ZoneList" var-class="array" var-type="file_dbr" />
+        <field name="Region004ShrineList" var-class="array" var-type="file_dbr" />
+        <field name="Region004ZoneList" var-class="array" var-type="file_dbr" />
+        <field name="Region005ShrineList" var-class="array" var-type="file_dbr" />
+        <field name="Region005ZoneList" var-class="array" var-type="file_dbr" />
+        <field name="backgroundImage" var-class="variable" var-type="file_tex" />
+        <field name="cleansedShrine" var-class="variable" var-type="file_tex" />
+        <field name="cleansedShrineHover" var-class="variable" var-type="file_tex" />
+        <field name="closeButton" var-class="variable" var-type="file_dbr" />
+        <field name="corruptedShrine" var-class="variable" var-type="file_tex" />
+        <field name="corruptedShrineHover" var-class="variable" var-type="file_tex" />
+        <field name="currentZoneNameStyle" var-class="variable" var-type="file_dbr" />
+        <field name="destinationTitle" var-class="variable" var-type="file_dbr" />
+        <field name="iconSpacing" var-class="variable" var-type="int" var-default-value="18" />
+        <field name="labelPrimaryStyle" var-class="variable" var-type="file_dbr" />
+        <field name="labelSecondaryStyle" var-class="variable" var-type="file_dbr" />
+        <field name="labelStyle0" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle1" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle2" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle3" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle4" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle5" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle6" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle7" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle8" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle9" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle10" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle11" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle12" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle13" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle14" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle15" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle16" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle17" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle18" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle19" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle20" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle21" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle22" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle23" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle24" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle25" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle26" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle27" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle28" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle29" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle30" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle31" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle32" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle33" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle34" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle35" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle36" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle37" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle38" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle39" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle40" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle41" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle42" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle43" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle44" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle45" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle46" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle47" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle48" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle49" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle50" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle51" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle52" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle53" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle54" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle55" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle56" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle57" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle58" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle59" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle60" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle61" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle62" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle63" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle64" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle65" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle66" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle67" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle68" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle69" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle70" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle71" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle72" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle73" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle74" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle75" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle76" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle77" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle78" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle79" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle80" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle81" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle82" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle83" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle84" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle85" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle86" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle87" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle88" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle89" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle90" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle91" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle92" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle93" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle94" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle95" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle96" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle97" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle98" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelStyle99" var-class="picklist" var-type="string" var-default-value="Primary;Secondary" />
+        <field name="labelTag0" var-class="variable" var-type="string" />
+        <field name="labelTag1" var-class="variable" var-type="string" />
+        <field name="labelTag2" var-class="variable" var-type="string" />
+        <field name="labelTag3" var-class="variable" var-type="string" />
+        <field name="labelTag4" var-class="variable" var-type="string" />
+        <field name="labelTag5" var-class="variable" var-type="string" />
+        <field name="labelTag6" var-class="variable" var-type="string" />
+        <field name="labelTag7" var-class="variable" var-type="string" />
+        <field name="labelTag8" var-class="variable" var-type="string" />
+        <field name="labelTag9" var-class="variable" var-type="string" />
+        <field name="labelTag10" var-class="variable" var-type="string" />
+        <field name="labelTag11" var-class="variable" var-type="string" />
+        <field name="labelTag12" var-class="variable" var-type="string" />
+        <field name="labelTag13" var-class="variable" var-type="string" />
+        <field name="labelTag14" var-class="variable" var-type="string" />
+        <field name="labelTag15" var-class="variable" var-type="string" />
+        <field name="labelTag16" var-class="variable" var-type="string" />
+        <field name="labelTag17" var-class="variable" var-type="string" />
+        <field name="labelTag18" var-class="variable" var-type="string" />
+        <field name="labelTag19" var-class="variable" var-type="string" />
+        <field name="labelTag20" var-class="variable" var-type="string" />
+        <field name="labelTag21" var-class="variable" var-type="string" />
+        <field name="labelTag22" var-class="variable" var-type="string" />
+        <field name="labelTag23" var-class="variable" var-type="string" />
+        <field name="labelTag24" var-class="variable" var-type="string" />
+        <field name="labelTag25" var-class="variable" var-type="string" />
+        <field name="labelTag26" var-class="variable" var-type="string" />
+        <field name="labelTag27" var-class="variable" var-type="string" />
+        <field name="labelTag28" var-class="variable" var-type="string" />
+        <field name="labelTag29" var-class="variable" var-type="string" />
+        <field name="labelTag30" var-class="variable" var-type="string" />
+        <field name="labelTag31" var-class="variable" var-type="string" />
+        <field name="labelTag32" var-class="variable" var-type="string" />
+        <field name="labelTag33" var-class="variable" var-type="string" />
+        <field name="labelTag34" var-class="variable" var-type="string" />
+        <field name="labelTag35" var-class="variable" var-type="string" />
+        <field name="labelTag36" var-class="variable" var-type="string" />
+        <field name="labelTag37" var-class="variable" var-type="string" />
+        <field name="labelTag38" var-class="variable" var-type="string" />
+        <field name="labelTag39" var-class="variable" var-type="string" />
+        <field name="labelTag40" var-class="variable" var-type="string" />
+        <field name="labelTag41" var-class="variable" var-type="string" />
+        <field name="labelTag42" var-class="variable" var-type="string" />
+        <field name="labelTag43" var-class="variable" var-type="string" />
+        <field name="labelTag44" var-class="variable" var-type="string" />
+        <field name="labelTag45" var-class="variable" var-type="string" />
+        <field name="labelTag46" var-class="variable" var-type="string" />
+        <field name="labelTag47" var-class="variable" var-type="string" />
+        <field name="labelTag48" var-class="variable" var-type="string" />
+        <field name="labelTag49" var-class="variable" var-type="string" />
+        <field name="labelTag50" var-class="variable" var-type="string" />
+        <field name="labelTag51" var-class="variable" var-type="string" />
+        <field name="labelTag52" var-class="variable" var-type="string" />
+        <field name="labelTag53" var-class="variable" var-type="string" />
+        <field name="labelTag54" var-class="variable" var-type="string" />
+        <field name="labelTag55" var-class="variable" var-type="string" />
+        <field name="labelTag56" var-class="variable" var-type="string" />
+        <field name="labelTag57" var-class="variable" var-type="string" />
+        <field name="labelTag58" var-class="variable" var-type="string" />
+        <field name="labelTag59" var-class="variable" var-type="string" />
+        <field name="labelTag60" var-class="variable" var-type="string" />
+        <field name="labelTag61" var-class="variable" var-type="string" />
+        <field name="labelTag62" var-class="variable" var-type="string" />
+        <field name="labelTag63" var-class="variable" var-type="string" />
+        <field name="labelTag64" var-class="variable" var-type="string" />
+        <field name="labelTag65" var-class="variable" var-type="string" />
+        <field name="labelTag66" var-class="variable" var-type="string" />
+        <field name="labelTag67" var-class="variable" var-type="string" />
+        <field name="labelTag68" var-class="variable" var-type="string" />
+        <field name="labelTag69" var-class="variable" var-type="string" />
+        <field name="labelTag70" var-class="variable" var-type="string" />
+        <field name="labelTag71" var-class="variable" var-type="string" />
+        <field name="labelTag72" var-class="variable" var-type="string" />
+        <field name="labelTag73" var-class="variable" var-type="string" />
+        <field name="labelTag74" var-class="variable" var-type="string" />
+        <field name="labelTag75" var-class="variable" var-type="string" />
+        <field name="labelTag76" var-class="variable" var-type="string" />
+        <field name="labelTag77" var-class="variable" var-type="string" />
+        <field name="labelTag78" var-class="variable" var-type="string" />
+        <field name="labelTag79" var-class="variable" var-type="string" />
+        <field name="labelTag80" var-class="variable" var-type="string" />
+        <field name="labelTag81" var-class="variable" var-type="string" />
+        <field name="labelTag82" var-class="variable" var-type="string" />
+        <field name="labelTag83" var-class="variable" var-type="string" />
+        <field name="labelTag84" var-class="variable" var-type="string" />
+        <field name="labelTag85" var-class="variable" var-type="string" />
+        <field name="labelTag86" var-class="variable" var-type="string" />
+        <field name="labelTag87" var-class="variable" var-type="string" />
+        <field name="labelTag88" var-class="variable" var-type="string" />
+        <field name="labelTag89" var-class="variable" var-type="string" />
+        <field name="labelTag90" var-class="variable" var-type="string" />
+        <field name="labelTag91" var-class="variable" var-type="string" />
+        <field name="labelTag92" var-class="variable" var-type="string" />
+        <field name="labelTag93" var-class="variable" var-type="string" />
+        <field name="labelTag94" var-class="variable" var-type="string" />
+        <field name="labelTag95" var-class="variable" var-type="string" />
+        <field name="labelTag96" var-class="variable" var-type="string" />
+        <field name="labelTag97" var-class="variable" var-type="string" />
+        <field name="labelTag98" var-class="variable" var-type="string" />
+        <field name="labelTag99" var-class="variable" var-type="string" />
+        <field name="labelX0" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX1" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX2" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX3" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX4" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX5" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX6" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX7" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX8" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX9" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX10" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX11" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX12" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX13" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX14" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX15" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX16" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX17" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX18" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX19" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX20" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX21" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX22" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX23" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX24" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX25" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX26" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX27" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX28" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX29" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX30" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX31" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX32" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX33" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX34" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX35" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX36" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX37" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX38" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX39" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX40" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX41" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX42" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX43" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX44" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX45" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX46" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX47" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX48" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX49" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX50" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX51" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX52" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX53" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX54" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX55" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX56" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX57" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX58" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX59" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX60" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX61" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX62" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX63" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX64" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX65" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX66" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX67" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX68" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX69" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX70" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX71" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX72" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX73" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX74" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX75" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX76" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX77" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX78" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX79" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX80" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX81" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX82" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX83" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX84" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX85" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX86" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX87" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX88" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX89" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX90" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX91" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX92" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX93" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX94" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX95" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX96" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX97" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX98" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelX99" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY0" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY1" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY2" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY3" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY4" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY5" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY6" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY7" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY8" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY9" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY10" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY11" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY12" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY13" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY14" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY15" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY16" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY17" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY18" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY19" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY20" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY21" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY22" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY23" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY24" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY25" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY26" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY27" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY28" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY29" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY30" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY31" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY32" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY33" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY34" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY35" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY36" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY37" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY38" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY39" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY40" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY41" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY42" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY43" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY44" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY45" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY46" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY47" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY48" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY49" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY50" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY51" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY52" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY53" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY54" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY55" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY56" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY57" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY58" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY59" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY60" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY61" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY62" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY63" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY64" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY65" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY66" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY67" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY68" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY69" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY70" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY71" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY72" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY73" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY74" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY75" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY76" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY77" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY78" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY79" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY80" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY81" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY82" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY83" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY84" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY85" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY86" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY87" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY88" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY89" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY90" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY91" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY92" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY93" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY94" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY95" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY96" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY97" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY98" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="labelY99" var-class="variable" var-type="int" var-default-value="0" />
+        <field name="mapPositionX" var-class="variable" var-type="int" />
+        <field name="mapPositionY" var-class="variable" var-type="int" />
+        <field name="mapSections" var-class="array" var-type="file_dbr">
+          <description>WorldMapSection</description>
+        </field>
+        <field name="mapSizeX" var-class="variable" var-type="int" />
+        <field name="mapSizeY" var-class="variable" var-type="int" />
+        <field name="panDownImage" var-class="variable" var-type="file_tex" />
+        <field name="panLeftImage" var-class="variable" var-type="file_tex" />
+        <field name="panRightImage" var-class="variable" var-type="file_tex" />
+        <field name="panUpImage" var-class="variable" var-type="file_tex" />
+        <field name="personalPortal" var-class="variable" var-type="file_tex" />
+        <field name="personalPortalCurrent" var-class="variable" var-type="file_tex" />
+        <field name="personalPortalHover" var-class="variable" var-type="file_tex" />
+        <field name="ruinedShrine" var-class="variable" var-type="file_tex" />
+        <field name="ruinedShrineHover" var-class="variable" var-type="file_tex" />
+        <field name="staticPortal" var-class="variable" var-type="file_tex" />
+        <field name="staticPortalCurrent" var-class="variable" var-type="file_tex" />
+        <field name="staticPortalHover" var-class="variable" var-type="file_tex" />
+        <field name="textIconSpacing" var-class="variable" var-type="int" var-default-value="3" />
+        <field name="undiscovered" var-class="variable" var-type="file_tex" />
+        <field name="zoneNameLocation" var-class="picklist" var-type="string" var-default-value="Left;Right;Top;Bottom;Hidden" />
+        <field name="zoneNameStyle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

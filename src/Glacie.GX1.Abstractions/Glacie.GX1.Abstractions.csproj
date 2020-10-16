@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Glacie.GX1.Abstractions</AssemblyName>
+    <RootNamespace>Glacie.GX1.Abstractions</RootNamespace>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Domain\EngineFamily.cs" />
+    <Compile Include="Hosting\IHost.cs" />
+    <Compile Include="Localization\LanguageInfo.cs" />
+    <Compile Include="Localization\LanguageSymbol.cs" />
+    <Compile Include="Modules\Module.cs" />
+    <Compile Include="ProjectSystem\Builder\ProjectBuilder.cs" />
+    <Compile Include="ProjectSystem\ProjectContext.cs" />
+    <Compile Include="ProjectSystem\Configuration_or_Model_for_xml_file\ProjectConfiguration.cs" />
+    <Compile Include="ProjectSystem\Project.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="2.3.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Glacie.Data.Arz\Glacie.Data.Arz.csproj" />
+    <ProjectReference Include="..\Glacie.Private.Core\Glacie.Private.Core.csproj" PrivateAssets="Compile;ContentFiles;Analyzers;Build" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Logging\" />
+    <Folder Include="Diagnostics\" />
+  </ItemGroup>
+
+</Project>

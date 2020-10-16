@@ -1,0 +1,33 @@
+﻿<partial>
+  <record-type name="ParticleSystem">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Configuration">
+      <field name="accelerationX" />
+      <field name="accelerationY" />
+      <field name="accelerationZ" />
+      <field name="affectedByWind" />
+      <field name="alphaFunction" />
+      <field name="bitmapName" />
+      <field name="blendMode" />
+      <field name="blueFunction" />
+      <field name="emitInObjectSpace" />
+      <field name="emitterLifeTime" />
+      <field name="emitterSizeX" />
+      <field name="emitterSizeY" />
+      <field name="emitterSizeZ" />
+      <field name="greenFunction" />
+      <field name="particleLifeTime" />
+      <field name="particleSize" />
+      <field name="redFunction" />
+      <field name="spawnMaxSpeed" />
+      <field name="spawnMinSpeed" />
+      <field name="spawnMode" />
+      <field name="spawnRate" />
+      <field name="sprayAngle" />
+    </var-group>
+  </record-type>
+</partial>

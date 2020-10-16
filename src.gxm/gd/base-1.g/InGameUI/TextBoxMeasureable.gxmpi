@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="InGameUI.TextBoxMeasureable">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="fontStyle" />
+      <field name="positionX" />
+      <field name="positionY" />
+      <field name="textAlignmentX" />
+      <field name="textBoxHeight" />
+      <field name="textBoxWidth" />
+      <field name="textTag" />
+    </var-group>
+  </record-type>
+</partial>

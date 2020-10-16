@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="BoundingVolumeChangePlaylists">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Playlists" system="true">
+      <field name="ambientPlaylist" />
+      <field name="musicPlaylist" />
+    </var-group>
+  </record-type>
+</partial>

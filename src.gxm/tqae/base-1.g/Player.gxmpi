@@ -1,0 +1,50 @@
+﻿<partial>
+  <record-type name="Player">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Character Bio">
+      <field name="acceleratedLifeRegenPercent" />
+      <field name="defaultGold" />
+    </var-group>
+    <var-group name="Level Up Parameters">
+      <field name="levelFileName" />
+    </var-group>
+    <var-group name="Player Sounds">
+      <field name="invalidEquipmentSound" />
+      <field name="inventoryFullSound" />
+      <field name="lockedChestSound" />
+      <field name="lockedDoorSound" />
+      <field name="lockedQuestObjectSound" />
+      <field name="lockedShrineSound" />
+      <field name="notEnoughManaSound" />
+      <field name="pickUpSoundName" />
+      <field name="skillCooldownSound" />
+    </var-group>
+    <var-group name="Player Variables">
+      <field name="maxMoveToRatio" />
+      <field name="playerLight" />
+      <field name="playerTextures" />
+    </var-group>
+    <var-group name="Special Player Animations">
+      <var-group name="Player Animation Speeds">
+        <field name="fallAnimSpeed" />
+        <field name="idleTransitionAnimSpeed" />
+        <field name="longIdleTransitionTime" />
+        <field name="riseAnimSpeed" />
+      </var-group>
+      <var-group name="Player Animations">
+        <field name="axe2IdleTransitionAnim" />
+        <field name="axeIdleTransitionAnim" />
+        <field name="fallAnim" />
+        <field name="nwIdleTransitionAnim" />
+        <field name="rangedSpellIdleTransitionAnim" />
+        <field name="rangedWeaponIdleTransitionAnim" />
+        <field name="riseAnim" />
+        <field name="swordIdleTransitionAnim" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

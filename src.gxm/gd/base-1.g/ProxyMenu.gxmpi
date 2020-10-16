@@ -1,0 +1,90 @@
+﻿<partial>
+  <record-type name="ProxyMenu">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Accessory">
+      <var-group name="Epic Acc">
+        <field name="accessoryEpic1" />
+      </var-group>
+      <var-group name="Legendary Acc">
+        <field name="accessoryLegendary1" />
+      </var-group>
+      <var-group name="Normal Acc">
+        <field name="accessory1" />
+      </var-group>
+    </var-group>
+    <var-group name="Proxy Config">
+      <field name="chanceToRun" />
+      <field name="delayedRun" />
+      <field name="difficultyLimitsFile" />
+      <field name="maxWaitTime" />
+      <field name="minWaitTime" />
+      <field name="placementExtents" />
+    </var-group>
+    <var-group name="Proxy Tables">
+      <var-group name="Epic">
+        <field name="poolEpic1" />
+        <field name="poolEpic2" />
+        <field name="poolEpic3" />
+        <field name="poolEpic4" />
+        <field name="poolEpic5" />
+        <field name="poolEpic6" />
+        <field name="timeEpic1" />
+        <field name="timeEpic2" />
+        <field name="timeEpic3" />
+        <field name="timeEpic4" />
+        <field name="timeEpic5" />
+        <field name="timeEpic6" />
+        <field name="weightEpic1" />
+        <field name="weightEpic2" />
+        <field name="weightEpic3" />
+        <field name="weightEpic4" />
+        <field name="weightEpic5" />
+        <field name="weightEpic6" />
+      </var-group>
+      <var-group name="Legendary">
+        <field name="poolLegendary1" />
+        <field name="poolLegendary2" />
+        <field name="poolLegendary3" />
+        <field name="poolLegendary4" />
+        <field name="poolLegendary5" />
+        <field name="poolLegendary6" />
+        <field name="timeLegendary1" />
+        <field name="timeLegendary2" />
+        <field name="timeLegendary3" />
+        <field name="timeLegendary4" />
+        <field name="timeLegendary5" />
+        <field name="timeLegendary6" />
+        <field name="weightLegendary1" />
+        <field name="weightLegendary2" />
+        <field name="weightLegendary3" />
+        <field name="weightLegendary4" />
+        <field name="weightLegendary5" />
+        <field name="weightLegendary6" />
+      </var-group>
+      <var-group name="Normal">
+        <field name="pool1" />
+        <field name="pool2" />
+        <field name="pool3" />
+        <field name="pool4" />
+        <field name="pool5" />
+        <field name="pool6" />
+        <field name="time1" />
+        <field name="time2" />
+        <field name="time3" />
+        <field name="time4" />
+        <field name="time5" />
+        <field name="time6" />
+        <field name="weight1" />
+        <field name="weight2" />
+        <field name="weight3" />
+        <field name="weight4" />
+        <field name="weight5" />
+        <field name="weight6" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

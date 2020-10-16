@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="WeaponArmor_Shield">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Shield Config">
+      <field name="blockAbsorption" />
+      <field name="blockRecoveryTime" />
+      <field name="defensiveBlock" />
+      <field name="defensiveBlockChance" />
+    </var-group>
+    <var-group name="Shield Sound">
+      <field name="blockSound" />
+    </var-group>
+  </record-type>
+</partial>

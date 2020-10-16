@@ -1,0 +1,20 @@
+﻿<partial>
+  <record-type name="Skill_BuffAttackRadiusDuration" path="Skill_BuffAttackRadiusDuration.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Buff" />
+      <inherit record="TemplateBase.Skill_Activated" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_BuffAttackRadiusDuration" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Skill Config">
+        <field name="skillActiveDuration" var-class="array" var-type="real" />
+        <field name="skillTargetRadius" var-class="array" var-type="real" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

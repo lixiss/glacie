@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="Skill_AttackProjectile">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="projectileUsesAllDamage" />
+      <field name="skillProjectileHitTimeToLive" />
+      <field name="skillProjectileMissTimeToLive" />
+      <field name="skillProjectileName" />
+      <field name="skillProjectileNumber" />
+      <field name="skillProjectileTargetGroundOnly" />
+    </var-group>
+  </record-type>
+</partial>

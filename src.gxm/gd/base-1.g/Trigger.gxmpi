@@ -1,0 +1,50 @@
+﻿<partial>
+  <record-type name="Trigger">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Actors Dependent on this Trigger">
+      <field name="dependent1" />
+      <field name="dependent2" />
+      <field name="dependent3" />
+      <field name="dependent4" />
+      <field name="dependent5" />
+      <field name="dependent6" />
+      <field name="dependent7" />
+      <field name="dependent8" />
+      <field name="dependent9" />
+      <field name="dependent10" />
+      <field name="dependent11" />
+      <field name="dependent12" />
+      <field name="dependent13" />
+      <field name="dependent14" />
+      <field name="dependent15" />
+      <field name="dependent16" />
+    </var-group>
+    <var-group name="Camera Control Parameters">
+      <field name="cameraDistance" />
+      <field name="cameraFOV" />
+      <field name="cameraFarPlane" />
+      <field name="cameraPitch" />
+      <field name="cameraYaw" />
+    </var-group>
+    <var-group name="Light Control Parameters">
+      <field name="ambientLightBlue" />
+      <field name="ambientLightGreen" />
+      <field name="ambientLightRed" />
+      <field name="lightBlue" />
+      <field name="lightGreen" />
+      <field name="lightRed" />
+    </var-group>
+    <var-group name="Trigger Parameters" system="true">
+      <field name="directional" />
+      <field name="retriggerable" />
+      <field name="transitionTime" />
+      <field name="triggerRadius" />
+      <field name="triggerSound" />
+      <field name="triggerType" />
+    </var-group>
+  </record-type>
+</partial>

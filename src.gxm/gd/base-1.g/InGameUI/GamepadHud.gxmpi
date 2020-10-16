@@ -1,0 +1,31 @@
+﻿<partial>
+  <record-type name="InGameUI.GamepadHud">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="achievementsWindow" />
+      <field name="characterWindow" />
+      <field name="devotionWindow" />
+      <field name="factionsWindow" />
+      <field name="lootFilterWindow" />
+      <field name="lowerBitmap" />
+      <field name="mapWindow" />
+      <field name="nextTabButton" />
+      <field name="previousTabButton" />
+      <field name="skillWheelWindow" />
+      <field name="skillsWindow" />
+      <field name="tab1Button" />
+      <field name="tab2Button" />
+      <field name="tab3Button" />
+      <field name="tab4Button" />
+      <field name="tab5Button" />
+      <field name="tab6Button" />
+      <field name="transmuterWindow" />
+      <field name="upperBitmap" />
+      <field name="worldMapWindow" />
+    </var-group>
+  </record-type>
+</partial>

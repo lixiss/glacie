@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="Skill_OrmenosChainLaser" path="Skill_OrmenosChainLaser.tpl">
+    <inherits>
+      <inherit record="TemplateBase.Skill_Base" />
+      <inherit record="TemplateBase.Skill_Activated" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_OrmenosChainLaser" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="SkillTransferProperties">
+        <field name="beamVelocity" var-class="variable" var-type="real" var-default-value="3.0" />
+        <field name="chainLaserBeam" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

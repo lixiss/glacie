@@ -1,0 +1,52 @@
+﻿<partial>
+  <record-type name="PartyWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="AcceptButton" />
+      <field name="BackgroundImage" />
+      <field name="BanButton" />
+      <field name="ClassXOffset" />
+      <field name="DarkTextStyle" />
+      <field name="DenyButton" />
+      <field name="ElapsedTimeText" />
+      <field name="ExitButton" />
+      <field name="GameStatsText" />
+      <field name="GroupStartX" />
+      <field name="GroupStartY" />
+      <field name="GroupTitleBarImage" />
+      <field name="HighlightColorAlpha" />
+      <field name="HighlightColorBlue" />
+      <field name="HighlightColorGreen" />
+      <field name="HighlightColorRed" />
+      <field name="IconXOffset" />
+      <field name="InviteButton" />
+      <field name="ItemHeight" />
+      <field name="ItemSpacing" />
+      <field name="ItemWidth" />
+      <field name="LeaveButton" />
+      <field name="LevelXOffset" />
+      <field name="MapNameText" />
+      <field name="NameXOffset" />
+      <field name="PartyIconStateGroupLeader" />
+      <field name="PartyIconStateGroupLeaderMe" />
+      <field name="PartyIconStateGrouped" />
+      <field name="PartyIconStateGroupedMe" />
+      <field name="PartyIconStateOtherGroup" />
+      <field name="PartyIconStateOtherGroupLeader" />
+      <field name="PartyIconStateUngrouped" />
+      <field name="PartyIconStateUngroupedMe" />
+      <field name="PingTimeText" />
+      <field name="PositionX" />
+      <field name="PositionY" />
+      <field name="RemoveButton" />
+      <field name="ServerAddressText" />
+      <field name="ServerNameText" />
+      <field name="TextStyle" />
+      <field name="WindowTitle" />
+    </var-group>
+  </record-type>
+</partial>

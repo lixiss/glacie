@@ -1,0 +1,17 @@
+﻿<partial>
+  <record-type name="ControllerNpc">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Npc Idle Control">
+      <field name="npcAlertRadius" />
+      <field name="npcIdleTimeMax" />
+      <field name="npcIdleTimeMin" />
+      <field name="npcLockDelay" />
+      <field name="npcSocialRadius" />
+      <field name="npcWanderRadius" />
+    </var-group>
+  </record-type>
+</partial>

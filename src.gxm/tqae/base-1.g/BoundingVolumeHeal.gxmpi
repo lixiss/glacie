@@ -1,0 +1,16 @@
+﻿<partial>
+  <record-type name="BoundingVolumeHeal">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Heal Properties">
+      <field name="healthIncrement" />
+      <field name="manaIncrement" />
+      <field name="particleEffect" />
+      <field name="teamMajor" />
+      <field name="teamMinor" />
+    </var-group>
+  </record-type>
+</partial>

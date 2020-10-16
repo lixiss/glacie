@@ -1,0 +1,45 @@
+﻿<partial>
+  <record-type name="Actor">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Actor Variables">
+      <field name="actorHeight" />
+      <field name="actorRadius" />
+      <field name="allowTransparency" />
+      <field name="alternateMesh" />
+      <field name="baseTexture" />
+      <field name="baseTextures" />
+      <field name="bumpTexture" />
+      <field name="bumpTextures" />
+      <field name="castsShadows" />
+      <field name="description" />
+      <field name="glowTexture" />
+      <field name="glowTextures" />
+      <field name="interactIconPosition" />
+      <field name="mapNuggetCustom" />
+      <field name="mapNuggetType" />
+      <field name="maxTransparency" />
+      <field name="mesh" />
+      <field name="miniMapEntity" />
+      <field name="outlineThickness" />
+      <field name="quest" />
+      <field name="ragdollDecal" />
+      <field name="scale" />
+      <field name="shader" />
+      <field name="shadowBias" />
+      <field name="specTexture" />
+      <field name="specTextures" />
+      <field name="transparentShader" />
+      <field name="unloadedBoundingBoxExtents" />
+    </var-group>
+    <var-group name="Physics">
+      <field name="collisionShape" />
+      <field name="physicsFriction" />
+      <field name="physicsMass" />
+      <field name="physicsRestitution" />
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,66 @@
+﻿<partial>
+  <record-type name="Monster">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Ambush Parameters">
+      <field name="ambushDissolveTexture" />
+      <field name="ambushDissolveTime" />
+    </var-group>
+    <var-group name="Monster Parameters">
+      <var-group name="Music">
+        <field name="MonsterMusic" />
+        <field name="MonsterMusicRadius" />
+      </var-group>
+      <field name="StatusIcon" />
+      <field name="StatusIconRed" />
+      <field name="alertAnimChance" />
+      <field name="alertSound" />
+      <field name="alertSoundChance" />
+      <field name="aliveSound" />
+      <field name="ambientPeriodMax" />
+      <field name="ambientPeriodMin" />
+      <field name="ambientSound" />
+      <field name="controller" />
+      <field name="controllerAggressive" />
+      <field name="controllerDefensive" />
+      <field name="deathFromEnemyDelay" />
+      <field name="deathFromEnemyRange" />
+      <field name="dropItems" />
+      <field name="emoteSound" />
+      <field name="fleeAnimChance" />
+      <field name="fleeSound" />
+      <field name="fleeSoundChance" />
+      <field name="forceCollision" />
+      <field name="forceNoCollision" />
+      <field name="giveXP" />
+      <field name="healthGainOnKillDifficulty" />
+      <field name="healthGainOnKillPct" />
+      <field name="lifeTime" />
+      <field name="monsterBaseTexture" />
+      <field name="monsterBumpTexture" />
+      <field name="monsterClassification" />
+      <field name="monsterIconHeight" />
+      <field name="monsterMesh" />
+      <field name="perPartyMemberDropChance" />
+      <field name="perPartyMemberDropItemName" />
+      <field name="petAcknowledgeSound" />
+      <field name="petAttackSound" />
+      <field name="rallyAnimChance" />
+      <field name="rallySound" />
+      <field name="rallySoundChance" />
+      <field name="rampageSound" />
+      <field name="rampageSoundChance" />
+      <field name="rampageSoundDelay" />
+      <field name="removeOnUnload" />
+      <field name="showStatusWidgetWhenPet" />
+      <field name="stunResistanceInc" />
+      <field name="treasureProxyName" />
+      <field name="waitingAnimChance" />
+      <field name="waitingAnimDelay" />
+      <field name="waitingAnimSound" />
+    </var-group>
+  </record-type>
+</partial>

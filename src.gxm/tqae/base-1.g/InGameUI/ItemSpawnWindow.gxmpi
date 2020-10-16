@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="InGameUI.ItemSpawnWindow">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="BackgroundImage" />
+      <field name="CancelButton" />
+      <field name="CloseButton" />
+      <field name="CodeEditBox" />
+      <field name="InfoBox" />
+      <field name="ItemMasterList" />
+      <field name="OKButton" />
+      <field name="WindowTitle" />
+    </var-group>
+  </record-type>
+</partial>

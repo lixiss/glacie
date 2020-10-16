@@ -60,7 +60,7 @@ namespace Glacie.Cli.Arc.Commands
                         normalizedEntryName = normalizedEntryName.ToLowerInvariant();
                     }
 
-                    if (archive.TryGetEntry(normalizedEntryName, out var entry))
+                    if (archive.TryGet(normalizedEntryName, out var entry))
                     {
                         var realEntryName = entry.Name;
 

@@ -1,0 +1,124 @@
+﻿<partial>
+  <record-type name="TemplateBase.DoppelgangerLoot" path="TemplateBase/DoppelgangerLoot.tpl">
+    <var-group>
+      <var-group name="Initial Equipment">
+        <var-group name="Finger1">
+          <field name="chanceToEquipFinger1" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipFinger1Item1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootFinger1Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Finger2">
+          <field name="chanceToEquipFinger2" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipFinger2Item1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootFinger2Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+        </var-group>
+        <var-group name="Forearm">
+          <field name="chanceToEquipForearm" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="chanceToEquipForearmItem1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootForearmItem1" var-class="array" var-type="file_dbr">
+            <description>if not doppelGear</description>
+          </field>
+        </var-group>
+        <var-group name="Head">
+          <field name="chanceToEquipHead" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="chanceToEquipHeadItem1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootHeadItem1" var-class="array" var-type="file_dbr">
+            <description>if not doppelGear</description>
+          </field>
+        </var-group>
+        <var-group name="Left Hand" system="true">
+          <field name="chanceToEquipLeftHand" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipLeftHandItem1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootLeftHandItem1" var-class="array" var-type="file_dbr">
+            <description>if not doppelGear</description>
+          </field>
+        </var-group>
+        <var-group name="Lower Body">
+          <field name="chanceToEquipLowerBody" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="chanceToEquipLowerBodyItem1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootLowerBodyItem1" var-class="array" var-type="file_dbr">
+            <description>if not doppelGear</description>
+          </field>
+        </var-group>
+        <var-group name="Misc">
+          <field name="chanceToEquipMisc1" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc1Item2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item1" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc2Item2" var-class="variable" var-type="int" var-default-value="0" />
+          <field name="chanceToEquipMisc3" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipMisc3Item1" var-class="variable" var-type="int" var-default-value="0">
+            <description>doppelGear</description>
+          </field>
+          <field name="chanceToEquipMisc3Item2" var-class="variable" var-type="int" var-default-value="0">
+            <description>doppelGear</description>
+          </field>
+          <field name="chanceToEquipMisc3Item3" var-class="variable" var-type="int" var-default-value="0">
+            <description>doppled</description>
+          </field>
+          <field name="chanceToEquipMisc3Item4" var-class="variable" var-type="int" var-default-value="0">
+            <description>doppelGear</description>
+          </field>
+          <field name="chanceToEquipMisc3Item5" var-class="variable" var-type="int" var-default-value="0">
+            <description>doppelGear</description>
+          </field>
+          <field name="chanceToEquipMisc3Item6" var-class="variable" var-type="int" var-default-value="0">
+            <description>doppelGear</description>
+          </field>
+          <field name="lootMisc1Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc1Item2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item1" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc2Item2" var-class="array" var-type="file_dbr">
+            <description>Index by game mode</description>
+          </field>
+          <field name="lootMisc3Item1" var-class="array" var-type="file_dbr" var-default-value="Nossink!">
+            <description>filled by GetPlayerEquippedItem</description>
+          </field>
+          <field name="lootMisc3Item2" var-class="array" var-type="file_dbr" var-default-value="Nossink!">
+            <description>filled by GetPlayerEquippedItem</description>
+          </field>
+          <field name="lootMisc3Item3" var-class="array" var-type="file_dbr" var-default-value="Nossink!">
+            <description>filled by GetPlayerEquippedItem</description>
+          </field>
+          <field name="lootMisc3Item4" var-class="array" var-type="file_dbr" var-default-value="Nossink!">
+            <description>filled by GetPlayerEquippedItem</description>
+          </field>
+          <field name="lootMisc3Item5" var-class="array" var-type="file_dbr" var-default-value="Nossink!">
+            <description>filled by GetPlayerEquippedItem</description>
+          </field>
+          <field name="lootMisc3Item6" var-class="array" var-type="file_dbr" var-default-value="Nossink!">
+            <description>filled by GetPlayerEquippedItem</description>
+          </field>
+        </var-group>
+        <var-group name="Right Hand">
+          <field name="chanceToEquipRightHand" var-class="variable" var-type="real" var-default-value="0" />
+          <field name="chanceToEquipRightHandItem1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootRightHandItem1" var-class="array" var-type="file_dbr">
+            <description>if not doppelGear</description>
+          </field>
+        </var-group>
+        <var-group name="Torso">
+          <field name="chanceToEquipTorso" var-class="variable" var-type="real" var-default-value="100" />
+          <field name="chanceToEquipTorsoItem1" var-class="variable" var-type="int" var-default-value="100" />
+          <field name="lootTorsoItem1" var-class="array" var-type="file_dbr">
+            <description>if not doppelGear</description>
+          </field>
+        </var-group>
+        <field name="doppelGear" var-class="variable" var-type="bool" var-default-value="1">
+          <description>copy player gear</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

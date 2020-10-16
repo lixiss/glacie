@@ -1,0 +1,15 @@
+﻿<partial>
+  <record-type name="InGameUI.MarketInventoryGrid">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="unaffordableBackgroundColorAlpha" />
+      <field name="unaffordableBackgroundColorBlue" />
+      <field name="unaffordableBackgroundColorGreen" />
+      <field name="unaffordableBackgroundColorRed" />
+    </var-group>
+  </record-type>
+</partial>

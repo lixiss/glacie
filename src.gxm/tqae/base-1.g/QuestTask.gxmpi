@@ -1,0 +1,24 @@
+﻿<partial>
+  <record-type name="QuestTask">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Step List">
+      <field name="stepName1" />
+      <field name="stepName2" />
+      <field name="stepName3" />
+      <field name="stepName4" />
+      <field name="stepName5" />
+      <field name="stepName6" />
+      <field name="stepName7" />
+      <field name="stepName8" />
+      <field name="stepName9" />
+      <field name="stepName10" />
+      <field name="stepName11" />
+      <field name="stepName12" />
+      <field name="stepName13" />
+    </var-group>
+  </record-type>
+</partial>

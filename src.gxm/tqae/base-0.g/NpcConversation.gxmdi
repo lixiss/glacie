@@ -1,0 +1,53 @@
+﻿<partial>
+  <record-type name="NpcConversation" path="NpcConversation.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Conversation Dialog" system="true">
+        <field name="dialogSpeaker1" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker2" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker3" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker4" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker5" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker6" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker7" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker8" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker9" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker10" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker11" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker12" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker13" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker14" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker15" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker16" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker17" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker18" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker19" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogSpeaker20" var-class="picklist" var-type="int" var-default-value="1;2;3;4" />
+        <field name="dialogTag1" var-class="variable" var-type="string" />
+        <field name="dialogTag2" var-class="variable" var-type="string" />
+        <field name="dialogTag3" var-class="variable" var-type="string" />
+        <field name="dialogTag4" var-class="variable" var-type="string" />
+        <field name="dialogTag5" var-class="variable" var-type="string" />
+        <field name="dialogTag6" var-class="variable" var-type="string" />
+        <field name="dialogTag7" var-class="variable" var-type="string" />
+        <field name="dialogTag8" var-class="variable" var-type="string" />
+        <field name="dialogTag9" var-class="variable" var-type="string" />
+        <field name="dialogTag10" var-class="variable" var-type="string" />
+        <field name="dialogTag11" var-class="variable" var-type="string" />
+        <field name="dialogTag12" var-class="variable" var-type="string" />
+        <field name="dialogTag13" var-class="variable" var-type="string" />
+        <field name="dialogTag14" var-class="variable" var-type="string" />
+        <field name="dialogTag15" var-class="variable" var-type="string" />
+        <field name="dialogTag16" var-class="variable" var-type="string" />
+        <field name="dialogTag17" var-class="variable" var-type="string" />
+        <field name="dialogTag18" var-class="variable" var-type="string" />
+        <field name="dialogTag19" var-class="variable" var-type="string" />
+        <field name="dialogTag20" var-class="variable" var-type="string" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

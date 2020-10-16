@@ -1,0 +1,38 @@
+﻿<partial>
+  <record-type name="Achievement">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Achievement">
+      <field name="description" />
+      <field name="hidden" />
+      <field name="id" />
+      <field name="lockedIcon" />
+      <field name="title" />
+      <field name="type" />
+      <field name="unlockedIcon" />
+      <field name="xb1" />
+    </var-group>
+    <var-group name="Faction">
+      <field name="factionCount" />
+      <field name="factionNames" />
+      <field name="factionValue" />
+    </var-group>
+    <var-group name="Kill">
+      <field name="killCount" />
+      <field name="killDbrs" />
+      <field name="killDifficulty" />
+      <field name="killHardcore" />
+    </var-group>
+    <var-group name="Stat">
+      <field name="skillNames" />
+      <field name="statCount" />
+      <field name="statName" />
+    </var-group>
+    <var-group name="Token">
+      <field name="tokenName" />
+    </var-group>
+  </record-type>
+</partial>

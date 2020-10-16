@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="ProjectileInverse">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Projectile Config">
+      <field name="projectileDuration" />
+      <field name="projectileFollow" />
+      <field name="projectileStartDistance" />
+    </var-group>
+  </record-type>
+</partial>

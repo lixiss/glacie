@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="SkillSecondary_AttackProjectileOrbiting">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Skill Config">
+      <field name="projectileDirection" />
+      <field name="projectilePeriod" />
+      <field name="projectileStart" />
+    </var-group>
+  </record-type>
+</partial>

@@ -7,6 +7,8 @@ using System.Threading;
 
 using Glacie.Data.Arz;
 using Glacie.Data.Compression;
+using Glacie.Lab.Analysis;
+using Glacie.Lab.Core;
 using Glacie.Lab.Metadata;
 using Glacie.Logging;
 
@@ -27,7 +29,11 @@ namespace Glacie.Cli.Lab
 
             using var terminal = TerminalFactory.GetDefaultTerminal();
 
-            var cmd = Glacie.Lab.Command.Create<CreateMetadataCommand>(terminal);
+
+            var cmd = Glacie.Lab.Command.Create<PathHashingCommand>(terminal);
+            // var cmd = Glacie.Lab.Command.Create<ScanForDbrReferencesCommand>(terminal);
+            // var cmd = Glacie.Lab.Command.Create<CreateMetadataCommand>(terminal);
+            // var cmd = Glacie.Lab.Command.Create<ResourceCountByTypeCommand>(terminal);
             cmd.Run();
 
 

@@ -1,0 +1,41 @@
+﻿<partial>
+  <record-type name="InGameUI.SkillWheelWindow" path="InGameUI/SkillWheelWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="configButton01" var-class="variable" var-type="file_dbr" />
+        <field name="configButton02" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot01" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot02" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot03" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot04" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot05" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot06" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot07" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot08" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot09" var-class="variable" var-type="file_dbr" />
+        <field name="hotSlot10" var-class="variable" var-type="file_dbr" />
+        <field name="skillSelect" var-class="variable" var-type="file_dbr" />
+        <field name="skillSelectSound" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight01" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight02" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight03" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight04" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight05" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight06" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight07" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight08" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight09" var-class="variable" var-type="file_dbr" />
+        <field name="slotHighlight10" var-class="variable" var-type="file_dbr" />
+        <field name="wheelBackground" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -1,0 +1,50 @@
+﻿<partial>
+  <record-type name="DialogPak">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Additional Dialog">
+      <field name="dialogAnimation1" />
+      <field name="dialogAnimation2" />
+      <field name="dialogAnimation3" />
+      <field name="dialogAnimation4" />
+      <field name="dialogAnimation5" />
+      <field name="dialogSoundFile1" />
+      <field name="dialogSoundFile2" />
+      <field name="dialogSoundFile3" />
+      <field name="dialogSoundFile4" />
+      <field name="dialogSoundFile5" />
+      <field name="dialogSoundVolume1" />
+      <field name="dialogSoundVolume2" />
+      <field name="dialogSoundVolume3" />
+      <field name="dialogSoundVolume4" />
+      <field name="dialogSoundVolume5" />
+      <field name="dialogTextTag1" />
+      <field name="dialogTextTag2" />
+      <field name="dialogTextTag3" />
+      <field name="dialogTextTag4" />
+      <field name="dialogTextTag5" />
+    </var-group>
+    <var-group name="Default Dialog" system="true">
+      <field name="defaultDialogAnimation" />
+      <field name="defaultDialogSoundFile" />
+      <field name="defaultDialogSoundVolume" />
+      <field name="defaultDialogTextTag" />
+    </var-group>
+    <var-group name="Irritation Dialog" system="true">
+      <field name="irritationDialogAnimation" />
+      <field name="irritationDialogSoundFile" />
+      <field name="irritationDialogTextTag" />
+      <field name="irritationDialogVolume" />
+      <field name="irritationRoundTrips" />
+    </var-group>
+    <var-group name="Settings">
+      <field name="replayDefaultDialog" />
+      <field name="resetDistance" />
+      <field name="resetTimeout" />
+      <field name="sequential" />
+    </var-group>
+  </record-type>
+</partial>

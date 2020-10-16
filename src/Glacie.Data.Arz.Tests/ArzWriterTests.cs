@@ -597,7 +597,7 @@ namespace Glacie.Data.Arz.Tests
 
             using var oDatabase = ArzDatabase.Open(outputStream);
             Assert.Equal(1, oDatabase.Count);
-            var r = oDatabase.Get(TestData.GtdTqae2RawRecordNames[0]);
+            var r = oDatabase.GetRecord(TestData.GtdTqae2RawRecordNames[0]);
             Assert.Equal(TestData.GtdTqae2RawRecordNames[0], r.Name);
         }
 
@@ -607,7 +607,7 @@ namespace Glacie.Data.Arz.Tests
         {
             Assert.Equal(expectedDatabase.Count, actualDatabase.Count);
 
-            foreach (var expectedRecord in expectedDatabase.GetAll())
+            foreach (var expectedRecord in expectedDatabase.SelectAll())
             {
                 var actualRecord = actualDatabase[expectedRecord.Name];
                 AssertRecordEqual(expectedRecord, actualRecord);
@@ -620,7 +620,7 @@ namespace Glacie.Data.Arz.Tests
             if (!ignoreClass) Assert.Equal(expectedRecord.Class, actualRecord.Class);
             Assert.Equal(expectedRecord.Count, actualRecord.Count);
 
-            foreach (var expectedField in expectedRecord.GetAll())
+            foreach (var expectedField in expectedRecord.SelectAll())
             {
                 var actualField = actualRecord.Get(expectedField.Name);
 

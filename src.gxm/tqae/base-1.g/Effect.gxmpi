@@ -1,0 +1,14 @@
+﻿<partial>
+  <record-type name="Effect">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <field name="Anchored" />
+    <field name="boneList" />
+    <field name="effectFile" />
+    <field name="emitterType" />
+    <field name="localOrientFix" />
+  </record-type>
+</partial>

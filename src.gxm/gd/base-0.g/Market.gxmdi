@@ -1,0 +1,103 @@
+﻿<partial>
+  <record-type name="Market" path="Market.tpl">
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Market Config">
+        <field name="marketCostAdjustment" var-class="variable" var-type="real" var-default-value="0">
+          <description>Percent +-</description>
+        </field>
+        <field name="marketDepreciation" var-class="variable" var-type="real" var-default-value="20">
+          <description>Percent</description>
+        </field>
+        <field name="marketRefreshTimeMax" var-class="variable" var-type="real" var-default-value="10">
+          <description>Minutes</description>
+        </field>
+        <field name="marketRefreshTimeMin" var-class="variable" var-type="real" var-default-value="5">
+          <description>Minutes</description>
+        </field>
+        <field name="maxPlayerPurchase" var-class="array" var-type="int" var-default-value="0">
+          <description>Per Difficulty</description>
+        </field>
+      </var-group>
+      <var-group name="Market Tables">
+        <var-group name="Armor">
+          <field name="marketChestTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketFeetTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketHandsTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketHeadTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketLegsTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketNumChestMax" var-class="variable" var-type="int" />
+          <field name="marketNumChestMin" var-class="variable" var-type="int" />
+          <field name="marketNumFeetMax" var-class="variable" var-type="int" />
+          <field name="marketNumFeetMin" var-class="variable" var-type="int" />
+          <field name="marketNumHandsMax" var-class="variable" var-type="int" />
+          <field name="marketNumHandsMin" var-class="variable" var-type="int" />
+          <field name="marketNumHeadMax" var-class="variable" var-type="int" />
+          <field name="marketNumHeadMin" var-class="variable" var-type="int" />
+          <field name="marketNumLegsMax" var-class="variable" var-type="int" />
+          <field name="marketNumLegsMin" var-class="variable" var-type="int" />
+          <field name="marketNumShieldMax" var-class="variable" var-type="int" />
+          <field name="marketNumShieldMin" var-class="variable" var-type="int" />
+          <field name="marketNumShouldersMax" var-class="variable" var-type="int" />
+          <field name="marketNumShouldersMin" var-class="variable" var-type="int" />
+          <field name="marketNumWaistMax" var-class="variable" var-type="int" />
+          <field name="marketNumWaistMin" var-class="variable" var-type="int" />
+          <field name="marketShieldTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketShouldersTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketWaistTable" var-class="variable" var-type="file_dbr" />
+        </var-group>
+        <var-group name="Misc">
+          <field name="marketAmuletTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketMedalTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketNumAmuletMax" var-class="variable" var-type="int" />
+          <field name="marketNumAmuletMin" var-class="variable" var-type="int" />
+          <field name="marketNumMedalMax" var-class="variable" var-type="int" />
+          <field name="marketNumMedalMin" var-class="variable" var-type="int" />
+          <field name="marketNumPotionMax" var-class="variable" var-type="int" />
+          <field name="marketNumPotionMin" var-class="variable" var-type="int" />
+          <field name="marketNumRingMax" var-class="variable" var-type="int" />
+          <field name="marketNumRingMin" var-class="variable" var-type="int" />
+          <field name="marketNumScrollDuplicates" var-class="variable" var-type="int" />
+          <field name="marketNumScrollMax" var-class="variable" var-type="int" />
+          <field name="marketNumScrollMin" var-class="variable" var-type="int" />
+          <field name="marketPotionTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketRingTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketScrollTable" var-class="variable" var-type="file_dbr" />
+        </var-group>
+        <var-group name="Weapons">
+          <field name="marketAxeTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketDaggerTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketMaceTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketNumAxeMax" var-class="variable" var-type="int" />
+          <field name="marketNumAxeMin" var-class="variable" var-type="int" />
+          <field name="marketNumDaggerMax" var-class="variable" var-type="int" />
+          <field name="marketNumDaggerMin" var-class="variable" var-type="int" />
+          <field name="marketNumMaceMax" var-class="variable" var-type="int" />
+          <field name="marketNumMaceMin" var-class="variable" var-type="int" />
+          <field name="marketNumRanged1hMax" var-class="variable" var-type="int" />
+          <field name="marketNumRanged1hMin" var-class="variable" var-type="int" />
+          <field name="marketNumRanged2hMax" var-class="variable" var-type="int" />
+          <field name="marketNumRanged2hMin" var-class="variable" var-type="int" />
+          <field name="marketNumScepterMax" var-class="variable" var-type="int" />
+          <field name="marketNumScepterMin" var-class="variable" var-type="int" />
+          <field name="marketNumSpearMax" var-class="variable" var-type="int" />
+          <field name="marketNumSpearMin" var-class="variable" var-type="int" />
+          <field name="marketNumStaffMax" var-class="variable" var-type="int" />
+          <field name="marketNumStaffMin" var-class="variable" var-type="int" />
+          <field name="marketNumSwordMax" var-class="variable" var-type="int" />
+          <field name="marketNumSwordMin" var-class="variable" var-type="int" />
+          <field name="marketRanged1hTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketRanged2hTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketScepterTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketSpearTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketStaffTable" var-class="variable" var-type="file_dbr" />
+          <field name="marketSwordTable" var-class="variable" var-type="file_dbr" />
+        </var-group>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

@@ -409,6 +409,11 @@ namespace Glacie.Data.Arz
 
         #region API
 
+        /// <summary>
+        /// Returns internal record version.
+        /// </summary>
+        public int Version => _version;
+
         // TODO: (Medium) (ArzRecord) Reorganize file layout. It mixes everything now...
 
         public string Name => StringTable[_nameId];
@@ -455,7 +460,7 @@ namespace Glacie.Data.Arz
 
         public int Count => HasCount ? _fieldCount : GetCountSlow();
 
-        public IEnumerable<ArzField> GetAll()
+        public IEnumerable<ArzField> SelectAll()
         {
             // TODO: (Low) (ArzRecord) Create specialized struct-based field enumerator instead of yield return.
             LoadFieldDataIfNeed();

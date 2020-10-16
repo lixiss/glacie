@@ -1,0 +1,18 @@
+﻿<partial>
+  <record-type name="TyphonChains">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="ChainEffects">
+      <field name="burstFX" />
+      <field name="dissolveColorB" />
+      <field name="dissolveColorG" />
+      <field name="dissolveColorR" />
+      <field name="dissolveEffect" />
+      <field name="dissolveTexture" />
+      <field name="dissolveTime" />
+    </var-group>
+  </record-type>
+</partial>

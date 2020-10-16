@@ -1,0 +1,22 @@
+﻿<partial>
+  <record-type name="Skill_AttackProjectileDrop" path="Skill_AttackProjectileDrop.tpl">
+    <inherits>
+      <inherit record="Skill_AttackProjectileAreaEffect" />
+      <inherit record="TemplateBase.Skill_Radius" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="Skill_AttackProjectileDrop" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Drop">
+        <field name="dropHeight" var-class="variable" var-type="real" var-default-value="14.0" />
+        <field name="dropRadius" var-class="variable" var-type="real" var-default-value="10.0" />
+        <field name="dropVariation" var-class="variable" var-type="real" var-default-value="3.0" />
+        <field name="launchAboveTarget" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="numProjectiles" var-class="variable" var-type="int" var-default-value="3" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

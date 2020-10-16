@@ -1,0 +1,58 @@
+﻿<partial>
+  <record-type name="InGameUI.EnchanterWindow" path="InGameUI/EnchanterWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <var-group name="Crafter">
+          <field name="crafterHeadingText" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab1Button" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab1ButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab2Button" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab2ButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab3Button" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab3ButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab4Button" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTab4ButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTabArtifactButton" var-class="variable" var-type="file_dbr" />
+          <field name="craftingTabArtifactButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterArtifactTab" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterArtifactTabBitmap" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterArtifactTabButton" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterArtifactTabButtonRollover" var-class="variable" var-type="file_dbr" />
+        </var-group>
+        <var-group name="Enchanter">
+          <field name="enchanterConvertTab" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterConvertTabBitmap" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterConvertTabButton" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterConvertTabButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterDismantleTab" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterDismantleTabBitmap" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterDismantleTabButton" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterDismantleTabButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterHeadingText" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterRecoverTab" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterRecoverTabBitmap" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterRecoverTabButton" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterRecoverTabButtonRollover" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterTinkerTab" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterTinkerTabBitmap" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterTinkerTabButton" var-class="variable" var-type="file_dbr" />
+          <field name="enchanterTinkerTabButtonRollover" var-class="variable" var-type="file_dbr" />
+        </var-group>
+        <field name="enchanterBaseBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="enchanterCloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="enchanterHeadingBar" var-class="variable" var-type="file_dbr" />
+        <field name="enchanterHeadingRollover" var-class="variable" var-type="file_dbr" />
+        <field name="enchanterNameText" var-class="variable" var-type="file_dbr" />
+        <field name="enchanterWindowTitle" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

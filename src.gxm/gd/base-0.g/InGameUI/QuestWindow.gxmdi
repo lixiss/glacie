@@ -1,0 +1,54 @@
+﻿<partial>
+  <record-type name="InGameUI.QuestWindow" path="InGameUI/QuestWindow.tpl">
+    <inherits>
+      <inherit record="InGameUI.Includes.WidgetWindow" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Config">
+        <field name="beginQuestSoundPak" var-class="variable" var-type="file_dbr" />
+        <field name="completeQuestSoundPak" var-class="variable" var-type="file_dbr" />
+        <field name="journalUpdateText" var-class="variable" var-type="string" />
+        <field name="questAcceptButton" var-class="variable" var-type="file_dbr" />
+        <field name="questAddedText" var-class="variable" var-type="string" />
+        <field name="questCloseButton" var-class="variable" var-type="file_dbr" />
+        <field name="questCompleteText" var-class="variable" var-type="string" />
+        <field name="questDeclineButton" var-class="variable" var-type="file_dbr" />
+        <field name="questJournalEntryTab" var-class="variable" var-type="file_dbr" />
+        <field name="questJournalParchmentBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="questJournalTreeWindow" var-class="variable" var-type="file_dbr" />
+        <field name="questJournalWindowBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="questLocationButton1" var-class="variable" var-type="file_dbr" />
+        <field name="questLocationButton2" var-class="variable" var-type="file_dbr" />
+        <field name="questLocationButton3" var-class="variable" var-type="file_dbr" />
+        <field name="questLocationButton4" var-class="variable" var-type="file_dbr" />
+        <field name="questLogDialogButton" var-class="variable" var-type="file_dbr" />
+        <field name="questLogDialogTab" var-class="variable" var-type="file_dbr" />
+        <field name="questLogSummaryButton" var-class="variable" var-type="file_dbr" />
+        <field name="questLogSummaryTab" var-class="variable" var-type="file_dbr" />
+        <field name="questLogWindowBitmap" var-class="variable" var-type="file_dbr" />
+        <field name="questMapBitmap1" var-class="variable" var-type="file_dbr" />
+        <field name="questMapBitmap2" var-class="variable" var-type="file_dbr" />
+        <field name="questMapBitmap3" var-class="variable" var-type="file_dbr" />
+        <field name="questMapBitmap4" var-class="variable" var-type="file_dbr" />
+        <field name="questTabJournalButton" var-class="variable" var-type="file_dbr" />
+        <field name="questTabJournalButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="questTabLogButton" var-class="variable" var-type="file_dbr" />
+        <field name="questTabLogButtonRollover" var-class="variable" var-type="file_dbr" />
+        <field name="questUnsolvableLogText" var-class="variable" var-type="string">
+          <description>This shows up in the quest log</description>
+        </field>
+        <field name="questUnsolvableText" var-class="variable" var-type="string">
+          <description>This shows up in the UI notifcation</description>
+        </field>
+        <field name="questUpdateText" var-class="variable" var-type="string" />
+        <field name="unsolvableQuestSoundPak" var-class="variable" var-type="file_dbr" />
+        <field name="updateQuestSoundPak" var-class="variable" var-type="file_dbr" />
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

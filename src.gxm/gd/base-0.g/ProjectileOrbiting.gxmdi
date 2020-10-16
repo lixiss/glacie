@@ -1,0 +1,34 @@
+﻿<partial>
+  <record-type name="ProjectileOrbiting" path="ProjectileOrbiting.tpl">
+    <inherits>
+      <inherit record="ProjectileFireballLike" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" var-default-value="ProjectileOrbiting" />
+        <field name="FileDescription" var-class="variable" var-type="string" />
+      </var-group>
+      <var-group name="Projectile Config">
+        <field name="disableCollision" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Disables terrain collision</description>
+        </field>
+        <field name="inverse" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Stop projectile when it reaches owner</description>
+        </field>
+        <field name="projectileDuration" var-class="variable" var-type="real" var-default-value="3">
+          <description>Time to live (seconds)</description>
+        </field>
+        <field name="projectileFollow" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Projectile follows the owner</description>
+        </field>
+        <field name="projectileOrbitRate" var-class="variable" var-type="real" var-default-value="0">
+          <description>Speed at which projectile orbits (degrees/sec)</description>
+        </field>
+        <field name="projectileStartDistance" var-class="variable" var-type="real" var-default-value="0">
+          <description>Distance from owner when launched</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>

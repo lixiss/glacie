@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="InGameUI.ItemBoxHand">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Config">
+      <field name="fancyBottomX" />
+      <field name="fancyBottomXSize" />
+      <field name="fancyBottomY" />
+      <field name="fancyBottomYSize" />
+      <field name="fancyTopX" />
+      <field name="fancyTopXSize" />
+      <field name="fancyTopY" />
+      <field name="fancyTopYSize" />
+    </var-group>
+  </record-type>
+</partial>

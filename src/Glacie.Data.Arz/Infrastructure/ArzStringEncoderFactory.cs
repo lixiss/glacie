@@ -56,7 +56,7 @@ namespace Glacie.Data.Arz.Infrastructure
 
                     // TODO: this should be ArzRecord's method which iterate over
                     // field values and encode them.
-                    foreach (var field in record.GetAll())
+                    foreach (var field in record.SelectAll())
                     {
                         stringEncoder.Encode(field.NameId);
 

@@ -1,0 +1,13 @@
+﻿<partial>
+  <record-type name="DestructibleHookPack">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Scripts">
+      <field name="destructibleHooks" />
+      <field name="onBroken" />
+    </var-group>
+  </record-type>
+</partial>

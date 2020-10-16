@@ -1,0 +1,19 @@
+﻿<partial>
+  <record-type name="ChaosBeam">
+    <var-group name="Header" system="true">
+      <field name="ActorName" />
+      <field name="Class" />
+      <field name="FileDescription" />
+    </var-group>
+    <var-group name="Properties">
+      <field name="Alpha256" />
+      <field name="Blue256" />
+      <field name="Green256" />
+      <field name="Red256" />
+      <field name="Shader" />
+      <field name="Texture" />
+      <field name="TextureStretch" />
+      <field name="Width" />
+    </var-group>
+  </record-type>
+</partial>

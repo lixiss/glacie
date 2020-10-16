@@ -1,0 +1,27 @@
+﻿<partial>
+  <record-type name="InGameUI.ButtonHiddenText" path="InGameUI/ButtonHiddenText.tpl">
+    <inherits>
+      <inherit record="InGameUI.ButtonHidden" />
+    </inherits>
+    <var-group>
+      <var-group name="Header" system="true">
+        <field name="ActorName" var-class="variable" var-type="string" />
+        <field name="Class" var-class="static" var-type="string" />
+        <field name="FileDescription" var-class="variable" var-type="string" var-default-value="ButtonHiddenText" />
+      </var-group>
+      <var-group name="Config">
+        <field name="rollover" var-class="variable" var-type="file_dbr" />
+        <field name="style" var-class="variable" var-type="file_dbr" />
+        <field name="textColorBlue" var-class="variable" var-type="real" />
+        <field name="textColorGreen" var-class="variable" var-type="real" />
+        <field name="textColorRed" var-class="variable" var-type="real" />
+        <field name="textDropShadow" var-class="variable" var-type="bool" var-default-value="0" />
+        <field name="textFont" var-class="variable" var-type="file_dbr" />
+        <field name="textTag" var-class="variable" var-type="string" />
+        <field name="useTextBox" var-class="variable" var-type="bool" var-default-value="0">
+          <description>Do we use the bounding box of the text instead of the whole button?</description>
+        </field>
+      </var-group>
+    </var-group>
+  </record-type>
+</partial>
